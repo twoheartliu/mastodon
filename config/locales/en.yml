@@ -1240,8 +1240,10 @@ en:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     contrast: Mastodon (High contrast)
+    cyberpunk-neon: Cyberpunk Neon
     default: Mastodon (Dark)
     mastodon-light: Mastodon (Light)
+    pastel-gradient: Pastel Gradient
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
