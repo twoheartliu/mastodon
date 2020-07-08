@@ -1226,6 +1226,7 @@ zh-CN:
     default: Mastodon（暗色主题）
     mastodon-light: Mastodon（亮色主题）
     pastel-gradient: 春日渐变
+    purple-haze: 紫色薄雾
   time:
     formats:
       default: "%Y年%-m月%d日 %H:%M"

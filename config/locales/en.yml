@@ -1244,6 +1244,7 @@ en:
     default: Mastodon (Dark)
     mastodon-light: Mastodon (Light)
     pastel-gradient: Pastel Gradient
+    purple-haze: Purple Haze
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
