@@ -1235,8 +1235,11 @@ zh-CN:
     title: "%{instance} 使用条款和隐私权政策"
   themes:
     contrast: Mastodon（高对比度）
+    cyberpunk-neon: 赛博朋克
     default: Mastodon（暗色主题）
     mastodon-light: Mastodon（亮色主题）
+    pastel-gradient: 春日渐变
+    purple-haze: 紫色薄雾
   time:
     formats:
       default: "%Y年%-m月%d日 %H:%M"

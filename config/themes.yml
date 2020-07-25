@@ -1,3 +1,6 @@
 default: styles/application.scss
 contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
+pastel-gradient: styles/pastel-gradient.scss
+cyberpunk-neon: styles/cyberpunk-neon.scss
+purple-haze: styles/purple-haze.scss
