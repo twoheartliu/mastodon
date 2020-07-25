@@ -41,3 +41,21 @@ cat compose_form.js
 nano compose_form.js
 >>>>>>> downstream/master
 exit
+git status
+git add -A
+rm -rf /opt/mastodon/.git/index.lock
+git add -A
+git commit -m "upgrade"
+git remote add https://github.com/pullopen/mastodon
+git remote add downstream https://github.com/pullopen/mastodon
+git fetch downstream
+git merge downstream/master
+git rebase downstream/master
+git status
+git add .bash_history
+git status
+git commit -m "merge to v3.2.0rc2"
+git branch
+git status
+RAILS_ENV=production bundle exec rails assets:precompile
+exit
