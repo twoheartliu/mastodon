@@ -1240,6 +1240,7 @@ zh-CN:
     mastodon-light: Mastodon（亮色主题）
     pastel-gradient: 春日渐变
     purple-haze: 紫色薄雾
+    witches-town: 巫师小镇
   time:
     formats:
       default: "%Y年%-m月%d日 %H:%M"

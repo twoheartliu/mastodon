@@ -1261,6 +1261,7 @@ en:
     mastodon-light: Mastodon (Light)
     pastel-gradient: Pastel Gradient
     purple-haze: Purple Haze
+    witches-town: Witches Town
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
