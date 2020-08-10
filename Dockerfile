@@ -97,7 +97,7 @@ RUN apt update && \
 
 # Install mastodon runtime deps
 RUN apt -y --no-install-recommends install \
-	  libssl1.1 libpq5 imagemagick ffmpeg \
+	  libssl1.1 libpq5 imagemagick ffmpeg git vim nano \
 	  libicu66 libprotobuf17 libidn11 libyaml-0-2 \
 	  file ca-certificates tzdata libreadline8 && \
 	apt -y install gcc && \
