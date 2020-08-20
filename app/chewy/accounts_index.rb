@@ -4,7 +4,7 @@ class AccountsIndex < Chewy::Index
   settings index: { refresh_interval: '5m' }, analysis: {
     analyzer: {
       content: {
-        tokenizer: 'ik_max_word',
+        tokenizer: 'whitespace',
         filter: %w(lowercase asciifolding cjk_width),
       },
 
