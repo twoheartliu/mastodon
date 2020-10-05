@@ -1236,10 +1236,13 @@ zh-CN:
   themes:
     contrast: Mastodon（高对比度）
     cyberpunk-neon: 赛博朋克
+    dark-green: 墨绿
     default: Mastodon（暗色主题）
+    forest: 森林
     mastodon-light: Mastodon（亮色主题）
     pastel-gradient: 春日渐变
     purple-haze: 紫色薄雾
+    strawberry: 草莓象
     witches-town: 巫师小镇
   time:
     formats:

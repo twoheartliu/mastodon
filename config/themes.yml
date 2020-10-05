@@ -5,3 +5,6 @@ pastel-gradient: styles/pastel-gradient.scss
 cyberpunk-neon: styles/cyberpunk-neon.scss
 purple-haze: styles/purple-haze.scss
 witches-town: styles/witches-town.scss
+dark-green: styles/dark-green.scss
+forest: styles/forest.scss
+strawberry: styles/strawberry.scss

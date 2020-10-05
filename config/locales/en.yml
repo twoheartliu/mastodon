@@ -1257,10 +1257,13 @@ en:
   themes:
     contrast: Mastodon (High contrast)
     cyberpunk-neon: Cyberpunk Neon
+    dark-green: Dark Green
     default: Mastodon (Dark)
+    forest: Forest
     mastodon-light: Mastodon (Light)
     pastel-gradient: Pastel Gradient
     purple-haze: Purple Haze
+    strawberry: Strawberry
     witches-town: Witches Town
   time:
     formats:
