@@ -1,7 +1,7 @@
 $ui-base-color: #130368; // darkest
-$ui-highlight-color: #1f71fd; // vibrant
-$ui-secondary-color: #bccfdf; // lightest
-$ui-primary-color: #d7e2eb; // lighter
+$ui-highlight-color: #5c82c2; // vibrant
+$ui-secondary-color: #b5c6d4; // lightest
+$ui-primary-color: #afc5d6; // lighter
 $ui-primary-color-alt: #9498be; // darker, for external pages
 $ui-link-text-color: #85d7ee;
 
@@ -264,7 +264,7 @@ $about-page-text: lighten($ui-base-color, 50%);
 }
 
 .column > .scrollable {
-  background-color: rgba(27,27,27,0.9);
+  background-color: #0C023DDE;
 }
 
 .drawer__inner, .drawer__inner__mastodon {
