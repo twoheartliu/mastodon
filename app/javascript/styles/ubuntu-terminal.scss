@@ -4,14 +4,14 @@ $black: #000000;
 $classic-base-color: #2C001E;
 $classic-primary-color: #5E2750;
 $classic-secondary-color: #77216F;
-$classic-highlight-color: #E95420;
+$classic-highlight-color: #e220e9;
 
 $ui-base-color: $classic-base-color !default;
 $ui-primary-color: $classic-primary-color !default;
 $ui-secondary-color: $classic-secondary-color !default;
 
 // Differences
-$ui-highlight-color: #E95420;
+$ui-highlight-color: #e220e9;
 
 $darker-text-color: lighten($ui-primary-color, 20%) !default;
 $dark-text-color: lighten($ui-primary-color, 12%) !default;

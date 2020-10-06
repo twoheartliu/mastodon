@@ -111,6 +111,10 @@ body{
     opacity: 1 !important;
 }
 
+.getting-started__trends h4, .getting-started__trends .trends__item__current, .trends__item__name a {
+    color: #373737
+}
+
 /*.footer {
     background: $ui-base-color;
     @include opacity-setting();

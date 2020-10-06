@@ -1256,14 +1256,26 @@ en:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     contrast: Mastodon (High contrast)
+    cybre-light: Cyber Light Pink
     cyberpunk-neon: Cyberpunk Neon
-    dark-green: Dark Green
+    deep-green: Deep Green
     default: Mastodon (Dark)
     forest: Forest
+    geodude: Spring Earth
+    luxury: Luxury Purple
     mastodon-light: Mastodon (Light)
+    meemu-org: Seaside Twilight
+    neoncity: Neon City
+    new-year: Chinese New Year
+    nga: Light Yellow
     pastel-gradient: Pastel Gradient
     purple-haze: Purple Haze
+    royal-tenenbaums: Rock Cyan
+    sakura: Sakura
+    sleeping-town: Sleeping Town
     strawberry: Strawberry
+    ubuntu-light: Light Hazel
+    ubuntu-terminal: Dark Purple
     witches-town: Witches Town
   time:
     formats:

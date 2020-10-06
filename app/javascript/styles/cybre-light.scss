@@ -30,9 +30,21 @@ $gold-star: $ui-highlight-color;
   background-repeat:no-repeat;
 }
 
-.ui, body {
+.ui {
   background: $ui-base-color;
   background-attachment: fixed;
+}
+
+body, body.about-body {
+  background: $ui-base-color url('../images/background-cybre-light.png');
+}
+
+body.about-body {
+  // basics.scss &.about-body
+  background: darken($ui-base-color, 8%) url('../images/background-cybre-light.png');
+
+  background-position-y: 200px;
+  background-position-x: center;
 }
 
 .drawer__inner__mastodon {

@@ -3,9 +3,9 @@ $black: #000000;
 $white: #ffffff;
 
 $classic-base-color: #000000;
-$classic-primary-color: #df744a;
+$classic-primary-color: #df4a95;
 $classic-secondary-color: #bfd8d2;
-$classic-highlight-color: #fedcd2;
+$classic-highlight-color: #fed2e4;
 
 // Differences
 $success-green: lighten(#3c754d, 8%);
@@ -15,9 +15,9 @@ $valid-value-color: $success-green !default;
 
 $ui-base-color: $classic-secondary-color !default;
 $ui-base-lighter-color: #b0c0cf;
-$ui-primary-color: #fedcd2;
+$ui-primary-color: #fed2e4;
 $ui-secondary-color: $classic-base-color !default;
-$ui-highlight-color: #df744a;
+$ui-highlight-color: #df4a95;
 
 $primary-text-color: $black !default;
 $darker-text-color: $classic-base-color !default;
