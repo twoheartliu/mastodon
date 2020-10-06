@@ -47,10 +47,6 @@ body.about-body {
   background-position-x: center;
 }
 
-.drawer__inner__mastodon {
-  display: none;
-}
-
 .landing-page .header-wrapper {
     background-image:url('../themes/cybrelight/header-cybre-alt.jpg');
     background-size:cover;
@@ -213,6 +209,16 @@ body.about-body {
       }
   }
 
+  .column .static-content.getting-started {
+    background-image: url('../images/logo-cybre.png'), url('../images/background-cybre-light.png');
+    background-size:auto 50%, cover;
+    background-position: 50% 75%, center center;
+    background-repeat:no-repeat, no-repeat;
+  }
+  
+  .columns-area {
+    background: $ui-base-color url('../images/background-cybre-light.png');
+  }
   #mastodon-timeline {
     .column-header {
       color:white;
