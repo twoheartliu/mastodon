@@ -1,4 +1,4 @@
-$ui-base-color: #130368; // darkest
+$ui-base-color: #0C023D; // darkest
 $ui-highlight-color: #5c82c2; // vibrant
 $ui-secondary-color: #b5c6d4; // lightest
 $ui-primary-color: #afc5d6; // lighter
@@ -8,6 +8,7 @@ $ui-link-text-color: #85d7ee;
 $about-page-text: lighten($ui-base-color, 50%);
 
 @import 'neon-base';
+@import 'contrast/diff';
 
 @keyframes floating {
   from {
