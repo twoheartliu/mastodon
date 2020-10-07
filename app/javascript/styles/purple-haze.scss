@@ -672,7 +672,6 @@ html {
   
   .public-layout .public-account-header__image {
           background: #F7EFFF;
-          height: 540px;
   }
   .public-layout .public-account-header__image::after {
        -webkit-box-shadow: inset 0 0 2px 0.5px rgba(125, 33, 189, .23);
@@ -2142,3 +2141,12 @@ html {
   .getting-started__trends {
       background-color: transparent !important;
   }
+
+body, .account__header__bar {
+    background: #72607c !important;
+}
+
+.endorsements-widget h4, .endorsements-widget .account {
+    background: #fbf6ff !important;
+    border-radius: 4px;
+}

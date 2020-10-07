@@ -15,7 +15,7 @@ $valid-value-color: $success-green !default;
 
 $ui-base-color: $classic-secondary-color !default;
 $ui-base-lighter-color: #d1cac0;
-$ui-primary-color: #333;
+$ui-primary-color: rgb(172, 165, 165);
 $ui-secondary-color: $classic-base-color !default;
 $ui-highlight-color: #423523;
 
@@ -51,7 +51,7 @@ $emojis-requiring-inversion: 'chains';
 }
 
 .directory__tag > a {
-    background: #b7b1aa !important;
+    background: #b3a38e !important;
 }
 
 .detailed-status, .detailed-status__action-bar, .getting-started__footer {

@@ -25,11 +25,11 @@ $ui-highlight-color: #dfc657;
 }
 
 // Hide followers count
-.account__action-bar__tab:nth-child(3) > strong > span,
+/* .account__action-bar__tab:nth-child(3) > strong > span,
 .counter:nth-child(3) > a > .counter-number {
   visibility: hidden;
   white-space: nowrap;
-}
+} */
 
 .status__content {
   color: lighten($ui-primary-color, 6%) !important;

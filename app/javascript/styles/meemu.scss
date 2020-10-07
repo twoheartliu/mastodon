@@ -5,7 +5,7 @@ $classic-secondary-color: #FF6AD5;
 $classic-highlight-color: #2b90d9;*/
 @import 'fonts/press-start';
 
-$classic-base-color: #282c37;
+$classic-base-color: #1d146e;
 $ui-base-color: $classic-base-color;
 /*$ui-base-lighter-color: #b0c0cf;
 $ui-primary-color: #9bcbed;
@@ -26,12 +26,12 @@ $ui-highlight-color: #2b5fd9;
 }
 
 @mixin opacity-setting{
-    opacity:0.8 !important;
+    opacity:0.86 !important;
 }
 
 .form-container{
     background: $ui-base-color;
-    opacity: 0.8;
+    opacity: 0.86;
 }
 
 .columns-area{
@@ -62,7 +62,7 @@ body{
 }
 
 .scrollable, .drawer__inner{
-    opacity: 0.8;
+    opacity: 0.86;
     @include corner-rounded();
 }
 .empty-column-indicator{

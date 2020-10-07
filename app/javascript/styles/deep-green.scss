@@ -131,7 +131,7 @@ body {
 .muted .status__content a {
     /*通知本文*/
 
-    color: #26c7b7;
+    color: #189487;
 }
 .account {
     /*通知した文*/
@@ -183,4 +183,13 @@ body {
 }
 .search-results__section h5 {
     background: #091a1c;
+}
+
+.account__header__bar, body, .activity-stream--under-tabs, .public-layout .header {
+    background: #0b2226 !important;
+}
+
+
+.activity-stream .entry,.public-layout .public-account-bio, .public-layout .hero-widget__text, .directory__tag > a, .public-layout .public-account-header__bar::before, .grid-4 .landing-page__call-to-action, .contact-widget, .box-widget, .table-of-contents {
+    background: transparent !important;
 }

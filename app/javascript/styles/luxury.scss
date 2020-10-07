@@ -11,7 +11,7 @@ $ui-primary-color: $classic-primary-color !default;
 $ui-secondary-color: $classic-secondary-color !default;
 
 // Differences
-$ui-highlight-color: #e9d5be;
+$ui-highlight-color: #c79f72;
 
 $darker-text-color: lighten($ui-primary-color, 20%) !default;
 $dark-text-color: lighten($ui-primary-color, 12%) !default;
@@ -24,7 +24,6 @@ $lighter-text-color: darken($ui-base-color, 6%) !default;
 $light-text-color: darken($ui-primary-color, 40%) !default;
 
 @import 'application';
-@import 'contrast/diff';
 
 .status__content {
     color: lighten($ui-primary-color, 6%) !important;
