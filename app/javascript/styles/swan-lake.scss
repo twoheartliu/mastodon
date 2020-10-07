@@ -8,7 +8,6 @@ $ui-link-text-color: #85d7ee;
 $about-page-text: lighten($ui-base-color, 50%);
 
 @import 'neon-base';
-@import 'contrast/diff';
 
 @keyframes floating {
   from {
@@ -28,12 +27,16 @@ $about-page-text: lighten($ui-base-color, 50%);
 
 .muted {
   .status__content p, .status__content a {
-    color: lighten($ui-base-color, 35%);
+    color: lighten($ui-base-color, 60%);
   }
 
   .status__display-name strong {
-    color: lighten($ui-base-color, 35%);
+    color: lighten($ui-base-color, 60%);
   }
+}
+
+.status__content__read-more-button {
+  color: lighten($ui-base-color, 60%) !important;
 }
 
 .compose-form__buttons button.active:last-child {
@@ -320,4 +323,19 @@ body, .landing-page, .public-layout {
 
 .account__section-headline {
   background-color: #0C023D;
+}
+
+.hashtag:hover, .mention:hover {
+  text-shadow: 0 0 8px #fff;
+}
+.status-link:hover {
+  text-shadow: 0 0 8px #8ca6f6;
+}
+
+.button:hover {
+  text-shadow: 0 0 8px #fcfcf6 !important;
+}
+
+.status__content__read-more-button:hover {
+text-shadow: 0 0 8px #A59BD6 !important;
 }
