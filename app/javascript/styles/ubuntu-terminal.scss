@@ -26,3 +26,11 @@ $light-text-color: darken($ui-primary-color, 40%) !default;
 
 @import 'application';
 @import 'contrast/diff';
+
+.status__content {
+    color: lighten($ui-primary-color, 6%) !important;
+  }
+  
+.status__display-name strong {
+    color: lighten($ui-primary-color, 15%) !important;
+  }

@@ -315,8 +315,16 @@ body, .landing-page, .public-layout {
   color: darken($ui-base-lighter-color, 15%);
 }
 
-.column > .scrollable {
-  background: $ui-base-alt;
+.column > .scrollable, .activity-stream .entry {
+  background: #f9f2f5B5;
+}
+
+.drawer__inner, .drawer__inner__mastodon, .getting-started, .layout-single-column .navigation-panel {
+  opacity: 0.8;
+}
+
+.landing__grid {
+  opacity: 0.9;
 }
 
 .compose-form {
@@ -707,8 +715,8 @@ button.icon-button {
 }
 
 .drawer .drawer__inner {
-  overflow: visible;
-  height:inherit;
+  /* overflow: visible;
+  height:inherit; */
   background:$ui-base-alt;
 }
 
@@ -716,9 +724,9 @@ button.icon-button {
   color: $ui-highlight-color;
 }
 
-.drawer__pager {
+/* .drawer__pager {
   overflow-y:auto;
-}
+} */
 
 .drawer .drawer__header {
   background: $ui-base-color;
@@ -991,4 +999,15 @@ button.icon-button {
 
 .bookmark-icon.active {
   color: #ff5050;
+}
+
+
+/* Octagonal avatars, because ???? */
+.account__avatar,
+.account__avatar-overlay-base,
+.account__header__avatar,
+.account__avatar-overlay-overlay {
+    border-radius:0px !important;
+    -webkit-clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
+    clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
 }

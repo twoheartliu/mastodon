@@ -2,7 +2,7 @@
 $black: #000000;
 
 $classic-base-color: #18121e;
-$classic-primary-color: #984b43;
+$classic-primary-color: #aaa449;
 $classic-secondary-color: #eac67a;
 $classic-highlight-color: #233237;
 
@@ -11,7 +11,7 @@ $ui-primary-color: $classic-primary-color !default;
 $ui-secondary-color: $classic-secondary-color !default;
 
 // Differences
-$ui-highlight-color: #984b43;
+$ui-highlight-color: #ccd186;
 
 $darker-text-color: lighten($ui-primary-color, 20%) !default;
 $dark-text-color: lighten($ui-primary-color, 12%) !default;
@@ -25,3 +25,12 @@ $light-text-color: darken($ui-primary-color, 40%) !default;
 
 @import 'application';
 @import 'contrast/diff';
+
+.status__content {
+    color: lighten($ui-primary-color, 6%) !important;
+  }
+  
+.status__display-name strong {
+    color: lighten($ui-primary-color, 15%) !important;
+  }
+  

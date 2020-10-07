@@ -31,6 +31,14 @@ $ui-highlight-color: #5ecc86;
   white-space: nowrap;
 }
 
+.status__content {
+  color: lighten($ui-primary-color, 6%) !important;
+}
+
+.status__display-name strong {
+  color: lighten($ui-primary-color, 15%) !important;
+}
+
 // Boost icon
 @function hex-color($color) {
   @if type-of($color) == 'color' {
