@@ -24,7 +24,7 @@ $gold-star: $ui-highlight-color;
 /* cybre-specific additions */
 
 .column .static-content.getting-started {
-  background-image: url('../themes/cybrelight/logo-cybre-light.png');
+  background-image: url('../images/cybrelight/logo-cybre-light.png');
   background-size:auto 50%;
   background-position: 50% 75%;
   background-repeat:no-repeat;
@@ -36,7 +36,7 @@ $gold-star: $ui-highlight-color;
 }
 
 body, .landing-page, .public-layout {
-  background-image: url('../images/background-cybre-light.png');
+  background-image: url('../images/cybrelight/background-cybre-light.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -44,13 +44,13 @@ body, .landing-page, .public-layout {
 }
 
 .landing-page .header-wrapper {
-    background-image:url('../themes/cybrelight/header-cybre-alt.jpg');
+    background-image:url('../images/cybrelight/header-cybre-alt.jpg');
     background-size:cover;
     background-position:50% 50%;
 }
 
 .landing-page.alternative .header {
-    background-image:url('../themes/cybrelight/header-cybre-colour.jpg');
+    background-image:url('../images/cybrelight/header-cybre-colour.jpg');
     background-repeat: repeat-x;
     background-size:contain;
     height:45vh;
