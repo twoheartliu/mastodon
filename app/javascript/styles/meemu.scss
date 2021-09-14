@@ -115,6 +115,10 @@ body{
     color: #373737 !important;
 }
 
+.icon-button.active {
+    color: #F187EA !important;
+}
+
 /*.footer {
     background: $ui-base-color;
     @include opacity-setting();

@@ -33,3 +33,6 @@ $light-text-color: darken($ui-primary-color, 40%) !default;
     color: lighten($ui-primary-color, 15%) !important;
   }
   
+.icon-button.active {
+    color: #DA9F08 !important;
+}

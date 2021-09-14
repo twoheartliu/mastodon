@@ -9,3 +9,6 @@ $about-page-text: lighten($ui-base-color, 50%);
 
 @import 'application';
 
+.icon-button.active {
+    color: #77EDBC !important;
+}

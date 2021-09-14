@@ -46,3 +46,7 @@ $ui-highlight-color: #dfc657;
   }
   @return '%23' + unquote($color)
 }
+
+.icon-button.active {
+  color: #FF1010 !important;
+}

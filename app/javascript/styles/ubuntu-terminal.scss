@@ -33,3 +33,7 @@ $light-text-color: darken($ui-primary-color, 40%) !default;
 .status__display-name strong {
     color: lighten($ui-primary-color, 15%) !important;
   }
+
+.icon-button.active {
+    color: #DE1481 !important;
+}
