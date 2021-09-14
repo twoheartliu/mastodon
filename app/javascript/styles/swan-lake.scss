@@ -3,7 +3,7 @@ $ui-highlight-color: #5c82c2; // vibrant
 $ui-secondary-color: #b5c6d4; // lightest
 $ui-primary-color: #afc5d6; // lighter
 $ui-primary-color-alt: #b0cae7; // darker, for external pages
-$ui-link-text-color: #edfaa6;
+$ui-link-text-color: #C6CD9D;
 
 $about-page-text: lighten($ui-base-color, 50%);
 
@@ -340,7 +340,7 @@ body, .landing-page, .public-layout {
 text-shadow: 0 0 8px #A59BD6 !important;
 }
 
-.icon-button, .status__prepend .status__display-name strong, .status__prepend, .status__display-name, .notification__relative_time, .status__relative-time, .detailed-status__application, .detailed-status__datetime, .detailed-status__meta, .getting-started__footer p, .rich-formatting table thead tr, .rules-list li {
+.icon-button, .status__prepend .status__display-name strong, .status__prepend, .status__display-name, .notification__relative_time, .status__relative-time, .detailed-status__application, .detailed-status__datetime, .detailed-status__meta, .getting-started__footer p, .rich-formatting table thead tr, .rules-list li, .load-more, .loading-indicator, .status__wrapper--filtered, .column-subheading {
   color: #2599bd;
 }
 
