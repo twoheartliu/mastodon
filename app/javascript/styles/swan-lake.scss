@@ -283,6 +283,17 @@ body, .landing-page, .public-layout {
   background-attachment: fixed;
 }
 
+/* mobile */
+@media (max-width: 630px) {    
+  .columns-area {
+background-image: url("../images/swan-lake/swan-lake-mobile.jpg");
+background-size:     cover;
+background-position: center bottom;
+background-repeat: no-repeat;
+background-attachment: fixed;      
+  }
+}
+
 .layout-single-column .navigation-panel {
   //background-color: $ui-highlight-color;
   opacity: 0.8;
