@@ -286,10 +286,10 @@ body, .landing-page, .public-layout {
 /* mobile */
 @media (max-width: 630px) {    
   .columns-area {
-background-image: url("../images/swan-lake/swan-lake-mobile.jpg");
-background-size:     cover;
-background-position: center bottom;
-background-attachment: fixed;      
+      background-image: url("../images/swan-lake/swan-lake-mobile.jpg");
+      background-size:     cover;
+      background-position: center bottom;
+      background-attachment: fixed;      
   }
 }
 
