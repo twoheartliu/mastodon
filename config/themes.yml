@@ -23,6 +23,6 @@ purple-haze: styles/purple-haze.scss
 ubuntu-terminal: styles/ubuntu-terminal.scss
 win95: styles/win95.scss
 to-the-moon: styles/to-the-moon.scss
-infinity-bridge: styles/infinity-bridge.scss
+# infinity-bridge: styles/infinity-bridge.scss
 stardew-valley: styles/stardew-valley.scss
 # cybrespace: styles/cybre.scss
