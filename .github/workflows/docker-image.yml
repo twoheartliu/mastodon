@@ -1,26 +1,53 @@
-name: Docker Image CI
+name: Build Prod Image
+
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-    paths:
-      - .github/workflows/docker-image.yml
-      - Dockerfile
+    branches:
+      - main
 
 jobs:
   docker-build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: docker/setup-qemu-action@v1
-      - uses: docker/setup-buildx-action@v1
-    
-      - name: Push to Docker Hub
-        uses: docker/build-push-action@v2
-        
+      - name: 🔍 Checkout code
+        uses: actions/checkout@v2
+
+      - name: 🏗️ Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: 🔑 Login to DockerHub
+        uses: docker/login-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: twoheart/mastodon
-          tags: latest
+
+      - name: 🎃 Set up outputs
+        id: vars
+        run: |
+          echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+
+      - name: ⚓ Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          pull: true
+          push: true
+          # build-args: |
+          #   arg1=value1
+          #   arg2=value2
+          # cache-from: type=registry,ref=mashirozx/mastodon:alpha
+          # cache-to: type=inline
+          # tags: mashirozx/mastodon:alpha
+          tags: |
+            twoheart/mastodon:latest
+            # mashirozx/mastodon:latest
+            # mashirozx/mastodon:sha-${{steps.vars.outputs.sha_short}}
+
+      # - name: ⚓ Build and push Docker images
+      #   uses: docker/build-push-action@v1
+      #   with:
+      #     username: ${{ secrets.DOCKER_USERNAME }}
+      #     password: ${{ secrets.DOCKER_PASSWORD }}
+      #     repository: mashirozx/mastodon
+      #     tags: alpha
