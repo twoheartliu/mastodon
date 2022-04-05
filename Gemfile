@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# frozen_string_literal: truey
 
 source 'https://rubygems.org'
 ruby '>= 2.5.0', '< 3.1.0'
@@ -39,6 +39,8 @@ end
 
 gem 'net-ldap', '~> 0.17'
 gem 'omniauth-cas', '~> 2.0'
+gem 'omniauth-github', '~> 1.4'
+gem 'omniauth-gitlab', '~> 1.0.2'
 gem 'omniauth-saml', '~> 1.10'
 gem 'gitlab-omniauth-openid-connect', '~>0.5.0', require: 'omniauth_openid_connect'
 gem 'omniauth', '~> 1.9'
@@ -58,6 +60,9 @@ gem 'http_accept_language', '~> 2.1'
 gem 'httplog', '~> 1.5.0'
 gem 'idn-ruby', require: 'idn'
 gem 'kaminari', '~> 1.2'
+gem 'kramdown', '~> 2.3'
+gem 'kramdown-parser-gfm', '~> 1.1'
+gem 'rouge', '~> 3.28'
 gem 'link_header', '~> 0.0'
 gem 'mime-types', '~> 3.4.1', require: 'mime/types/columnar'
 gem 'nokogiri', '~> 1.13'
@@ -82,6 +87,7 @@ gem 'sidekiq', '~> 6.4'
 gem 'sidekiq-scheduler', '~> 3.1'
 gem 'sidekiq-unique-jobs', '~> 7.1'
 gem 'sidekiq-bulk', '~>0.2.0'
+gem 'sidekiq-prometheus-exporter', '~> 0.1'
 gem 'simple-navigation', '~> 4.3'
 gem 'simple_form', '~> 5.1'
 gem 'sprockets-rails', '~> 3.4', require: 'sprockets/railtie'
@@ -152,4 +158,6 @@ end
 gem 'concurrent-ruby', require: false
 gem 'connection_pool', require: false
 
+gem 'rucaptcha', git: 'https://github.com/huacnlee/rucaptcha', ref: '3e8361a06521c45811d1487cceb41dc524ab9b69', branch: 'main'
+gem "sidekiq-statistic"
 gem 'xorcist', '~> 1.1'
