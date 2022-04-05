@@ -41,8 +41,6 @@ jobs:
           # tags: mashirozx/mastodon:alpha
           tags: |
             twoheart/mastodon:latest
-            # mashirozx/mastodon:latest
-            # mashirozx/mastodon:sha-${{steps.vars.outputs.sha_short}}
 
       # - name: ⚓ Build and push Docker images
       #   uses: docker/build-push-action@v1
