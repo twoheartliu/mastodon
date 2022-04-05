@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/huacnlee/rucaptcha
+  revision: 3e8361a06521c45811d1487cceb41dc524ab9b69
+  ref: 3e8361a06521c45811d1487cceb41dc524ab9b69
+  branch: main
+  specs:
+    rucaptcha (2.5.5)
+      railties (>= 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -341,6 +350,10 @@ GEM
       activerecord
       kaminari-core (= 1.2.2)
     kaminari-core (1.2.2)
+    kramdown (2.3.2)
+      rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     kt-paperclip (7.1.1)
       activemodel (>= 4.2.0)
       activesupport (>= 4.2.0)
@@ -389,6 +402,7 @@ GEM
     minitest (5.15.0)
     msgpack (1.4.4)
     multi_json (1.15.0)
+    multi_xml (0.6.0)
     multipart-post (2.1.1)
     net-ldap (0.17.0)
     net-scp (3.0.0)
@@ -403,6 +417,12 @@ GEM
       concurrent-ruby (~> 1.0, >= 1.0.2)
       sidekiq (>= 3.5)
       statsd-ruby (~> 1.4, >= 1.4.0)
+    oauth2 (1.4.7)
+      faraday (>= 0.8, < 2.0)
+      jwt (>= 1.0, < 3.0)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (>= 1.2, < 3)
     oj (3.13.11)
     omniauth (1.9.1)
       hashie (>= 3.4.6)
@@ -411,6 +431,15 @@ GEM
       addressable (~> 2.3)
       nokogiri (~> 1.5)
       omniauth (~> 1.2)
+    omniauth-github (1.4.0)
+      omniauth (~> 1.5)
+      omniauth-oauth2 (>= 1.4.0, < 2.0)
+    omniauth-gitlab (1.0.4)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.0)
+    omniauth-oauth2 (1.7.2)
+      oauth2 (~> 1.4)
+      omniauth (>= 1.9, < 3)
     omniauth-rails_csrf_protection (0.1.2)
       actionpack (>= 4.2)
       omniauth (>= 1.3.1)
@@ -459,7 +488,7 @@ GEM
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     public_suffix (4.0.6)
-    puma (5.6.4)
+    puma (5.6.2)
       nio4r (~> 2.0)
     pundit (2.2.0)
       activesupport (>= 3.0.0)
@@ -532,6 +561,7 @@ GEM
       railties (>= 5.0)
     rexml (3.2.5)
     rotp (6.2.0)
+    rouge (3.28.0)
     rpam2 (4.0.2)
     rqrcode (2.1.1)
       chunky_png (~> 1.0)
@@ -597,6 +627,8 @@ GEM
       redis (>= 4.2.0)
     sidekiq-bulk (0.2.0)
       sidekiq
+    sidekiq-prometheus-exporter (0.1.15)
+      sidekiq (>= 3.3.1)
     sidekiq-scheduler (3.1.1)
       e2mmap
       redis (>= 3, < 5)
@@ -604,6 +636,9 @@ GEM
       sidekiq (>= 3)
       thwait
       tilt (>= 1.4.0)
+    sidekiq-statistic (1.4.0)
+      sidekiq (>= 5.0)
+      tilt (~> 2.0)
     sidekiq-unique-jobs (7.1.15)
       brpoplpush-redis_script (> 0.1.1, <= 2.0.0)
       concurrent-ruby (~> 1.0, >= 1.0.5)
@@ -769,6 +804,8 @@ DEPENDENCIES
   json-ld
   json-ld-preloaded (~> 3.2)
   kaminari (~> 1.2)
+  kramdown (~> 2.3)
+  kramdown-parser-gfm (~> 1.1)
   kt-paperclip (~> 7.1)
   letter_opener (~> 1.8)
   letter_opener_web (~> 2.0)
@@ -785,6 +822,8 @@ DEPENDENCIES
   oj (~> 3.13)
   omniauth (~> 1.9)
   omniauth-cas (~> 2.0)
+  omniauth-github (~> 1.4)
+  omniauth-gitlab (~> 1.0.2)
   omniauth-rails_csrf_protection (~> 0.1)
   omniauth-saml (~> 1.10)
   ox (~> 2.14)
@@ -810,6 +849,7 @@ DEPENDENCIES
   redis (~> 4.5)
   redis-namespace (~> 1.8)
   rexml (~> 3.2)
+  rouge (~> 3.28)
   rqrcode (~> 2.1)
   rspec-rails (~> 5.1)
   rspec-sidekiq (~> 3.1)
@@ -817,11 +857,14 @@ DEPENDENCIES
   rubocop (~> 1.26)
   rubocop-rails (~> 2.14)
   ruby-progressbar (~> 1.11)
+  rucaptcha!
   sanitize (~> 6.0)
   scenic (~> 1.6)
   sidekiq (~> 6.4)
   sidekiq-bulk (~> 0.2.0)
+  sidekiq-prometheus-exporter (~> 0.1)
   sidekiq-scheduler (~> 3.1)
+  sidekiq-statistic
   sidekiq-unique-jobs (~> 7.1)
   simple-navigation (~> 4.3)
   simple_form (~> 5.1)
@@ -840,9 +883,9 @@ DEPENDENCIES
   webpacker (~> 5.4)
   webpush (~> 0.3)
   xorcist (~> 1.1)
-  
+
 RUBY VERSION
-   ruby 3.0.3
+   ruby 3.0.2p107
 
 BUNDLED WITH
-   2.1.4
+   2.2.32
