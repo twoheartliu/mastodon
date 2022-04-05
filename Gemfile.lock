@@ -842,7 +842,7 @@ DEPENDENCIES
   xorcist (~> 1.1)
   
 RUBY VERSION
-   ruby 2.7.2p137
+   ruby 3.0.3
 
 BUNDLED WITH
    2.1.4
