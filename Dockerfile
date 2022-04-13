@@ -1,4 +1,4 @@
-FROM ubuntu:20.04 as build-dep
+ROM ubuntu:20.04 as build-dep
 
 # Use bash for the shell
 SHELL ["/bin/bash", "-c"]
