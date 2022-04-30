@@ -10,23 +10,25 @@ class NotificationMailer < ApplicationMailer
     @me     = recipient
     @status = notification.target_status
 
-    return unless @me.user.functional? && @status.present?
+    return
+#    return unless @me.user.functional? && @status.present?
 
-    locale_for_account(@me) do
-      thread_by_conversation(@status.conversation)
-      mail to: @me.user.email, subject: I18n.t('notification_mailer.mention.subject', name: @status.account.acct)
-    end
+#    locale_for_account(@me) do
+#      thread_by_conversation(@status.conversation)
+#      mail to: @me.user.email, subject: I18n.t('notification_mailer.mention.subject', name: @status.account.acct)
+#    end
   end
 
   def follow(recipient, notification)
     @me      = recipient
     @account = notification.from_account
 
-    return unless @me.user.functional?
+    return
+#    return unless @me.user.functional?
 
-    locale_for_account(@me) do
-      mail to: @me.user.email, subject: I18n.t('notification_mailer.follow.subject', name: @account.acct)
-    end
+#    locale_for_account(@me) do
+#      mail to: @me.user.email, subject: I18n.t('notification_mailer.follow.subject', name: @account.acct)
+#    end
   end
 
   def favourite(recipient, notification)
@@ -34,12 +36,13 @@ class NotificationMailer < ApplicationMailer
     @account = notification.from_account
     @status  = notification.target_status
 
-    return unless @me.user.functional? && @status.present?
+    return
+#    return unless @me.user.functional? && @status.present?
 
-    locale_for_account(@me) do
-      thread_by_conversation(@status.conversation)
-      mail to: @me.user.email, subject: I18n.t('notification_mailer.favourite.subject', name: @account.acct)
-    end
+#    locale_for_account(@me) do
+#      thread_by_conversation(@status.conversation)
+#      mail to: @me.user.email, subject: I18n.t('notification_mailer.favourite.subject', name: @account.acct)
+#    end
   end
 
   def reblog(recipient, notification)
@@ -47,23 +50,25 @@ class NotificationMailer < ApplicationMailer
     @account = notification.from_account
     @status  = notification.target_status
 
-    return unless @me.user.functional? && @status.present?
+    return
+#    return unless @me.user.functional? && @status.present?
 
-    locale_for_account(@me) do
-      thread_by_conversation(@status.conversation)
-      mail to: @me.user.email, subject: I18n.t('notification_mailer.reblog.subject', name: @account.acct)
-    end
+#    locale_for_account(@me) do
+#      thread_by_conversation(@status.conversation)
+#      mail to: @me.user.email, subject: I18n.t('notification_mailer.reblog.subject', name: @account.acct)
+#    end
   end
 
   def follow_request(recipient, notification)
     @me      = recipient
     @account = notification.from_account
 
-    return unless @me.user.functional?
+    return
+#    return unless @me.user.functional?
 
-    locale_for_account(@me) do
-      mail to: @me.user.email, subject: I18n.t('notification_mailer.follow_request.subject', name: @account.acct)
-    end
+#    locale_for_account(@me) do
+#      mail to: @me.user.email, subject: I18n.t('notification_mailer.follow_request.subject', name: @account.acct)
+#    end
   end
 
   def digest(recipient, **opts)
