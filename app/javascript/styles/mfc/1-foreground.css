@@ -8,7 +8,7 @@ base background and text
 
 /* status columns */
 .column>.scrollable,
-.status,
+.status__wrapper,
     .status__content,
 .detailed-status,
     .detailed-status__action-bar,
