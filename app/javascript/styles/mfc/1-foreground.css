@@ -275,3 +275,7 @@ color: var(--textMuted)
 
 .account__section-headline a.active::after, .account__section-headline button.active::after, .notification__filter-bar a.active::after, .notification__filter-bar button.active::after
 {border-color: transparent transparent var(--bg)}
+
+.status__wrapper {
+    background: transparent;
+}
