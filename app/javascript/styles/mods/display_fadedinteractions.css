@@ -6,4 +6,4 @@ Fade out faved/boosted toots in notifications:
 author: trwnh
 license: Public Domain
 */
-.status.muted {opacity: 0.5}
+.status.muted {opacity: 0.8}
