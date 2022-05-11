@@ -8,7 +8,7 @@
 * via using these variables with rgba(). Hex codes currently do not
 * work with rgba(), so no transparency mods are included except for
 * those defined in absolute terms (i.e., non-variable colors).
-* 
+*
 * Foreground Colors:
 *            --bg: | Background for foreground elements.
 *          --text: | A color that stands out against bg.
@@ -39,15 +39,15 @@
 *     It is now possible to use a dark bgPage and light bg, or vice-versa.
 ------------------------------------------------------------------------------*/
 
-/* infinity bridge
- * palette author https://github.com/RiverIntheSky/
+/* stardew valley
+ * palette author https://github.com/rararwg/
  */
 
 :root {
     --bg: rgba(255,210,132,0.9);
     --text: rgba(86,22,12);
     --textBold: rgba(75,45,44);
-    --textMuted: rgba(86,22,12,0.5);
+    --textMuted: rgba(86,22,12);
 
     --bgPage: rgba(0, 0, 0, 0);
     --textPage: var(--text);
