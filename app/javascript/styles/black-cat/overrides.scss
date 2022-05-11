@@ -65,6 +65,10 @@ body.app-body.layout-multiple-columns {
   box-shadow: 0 0 2px #000;
 }
 
+.dropdown-menu.bottom, .dropdown-menu.top {
+  background: #282c37;
+}
+
 /* mobile, by komma */
 @media (max-width: 630px) {
     .columns-area__panels {
