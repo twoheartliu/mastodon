@@ -1,0 +1,102 @@
+$bg: rgba(43, 52, 40, 0.7);
+$fg: rgb(77, 102, 78);
+$accent: #e6b863;
+$text: #f2f2f2;
+
+//.drawer__inner__mastodon > img {display: none;}
+
+body, body.lighter .landing-page, .public-layout, .columns-area__panels {
+    background: url('../images/flora/flora.jpg') !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+}
+
+body.app-body.layout-multiple-columns {
+    .columns-area {
+	background: url('../images/flora/flora.jpg');
+	background-position: center center;
+	background-attachment: fixed;
+    }
+}
+
+/* vignette on headers and dropdowns */
+.column-header { box-shadow: inset 0 0 8px 8px rgba(0,0,0,0.1);}
+
+.navigation-panel, .column-header {
+    border-radius: 8px 8px 0 0;
+}
+
+.account-authorize__wrapper, .conversation, .follow_requests-unlocked_explanation, .status, .search__input {
+    border-radius: 8px;
+}
+
+.status__content__text {
+    margin-left: 0.25em;
+}
+
+.compose-form__buttons-wrapper {
+    border-radius: 0px 0px 4px 4px;
+}
+
+.column-header__button {background: transparent !important;}
+.column-header__collapsible-inner {box-shadow: inset 0 0 10em 10em rgba(0,0,0,0.1);}
+
+.columns-area--mobile .status {
+    padding: 0;
+}
+
+.status {
+    padding: 15px 8px 8px 8px !important;
+}
+
+.notification-favourite .status,
+.notification-poll .status,
+.notification-reblog .status {
+    padding: 15px 8px 8px 78px !important;
+}
+
+.status__info {
+    padding: 5px 0px 10px 60px !important;
+}
+
+.tabs-bar__wrapper {
+    padding: 0;
+}
+
+.privacy-dropdown__dropdown, .emoji-mart-scroll,
+.getting-started__footer, .emoji-mart-category-label span,
+.emoji-mart-search {
+    background: var(--bg);
+}
+
+.emoji-mart-bar:first-child {
+    background: var(--bgHead);
+}
+
+.compose-form__uploads-wrapper {
+    padding: 15px;
+}
+
+@media (max-width: 630px) {
+    .columns-area__panels, body {
+	background: url('../images/flora/flora.jpg');
+	background-size: auto 100%;
+	background-attachment: fixed;
+	background-position: center;
+    }
+}
+
+.status__expand {
+    height: 68px;
+}
+
+
+.form-container {
+    background: var(--bg);
+    color: var(--text);
+    border-radius: 8px;
+}
+
+code {
+    background-color: darken($bg, 5%);
+}

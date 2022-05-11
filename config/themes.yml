@@ -28,3 +28,4 @@ stardew-valley: styles/stardew-valley.scss
 # cybrespace: styles/cybre.scss
 black-cat: styles/black-cat.scss
 cafe: styles/café.scss
+flora: styles/flora.scss
