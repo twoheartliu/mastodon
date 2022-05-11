@@ -52,6 +52,13 @@ body.app-body.layout-multiple-columns {
 .column-header__button {background: transparent !important;}
 .column-header__collapsible-inner {box-shadow: inset 0 0 10em 10em rgba(0,0,0,0.1);}
 
+.notification .account {
+  background: #2b313f;
+  margin: 8px;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #000;
+}
+
 /* mobile, by komma */
 @media (max-width: 630px) {
     .columns-area__panels {
