@@ -10,6 +10,7 @@ base background and text
 .column>.scrollable,
 .status__wrapper,
     .status__content,
+.notification, 
 .detailed-status,
     .detailed-status__action-bar,
     .focusable:focus .detailed-status,

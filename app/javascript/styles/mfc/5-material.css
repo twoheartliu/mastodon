@@ -5,6 +5,7 @@ material design overrides
 /* turn statuses into cards */
 .drawer__inner darker {filter: drop-shadow(0 0 2px black)}
 .status__wrapper,
+.notification, 
 .conversation,
 .account-authorize__wrapper,
 .follow_requests-unlocked_explanation
