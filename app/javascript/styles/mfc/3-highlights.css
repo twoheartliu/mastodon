@@ -123,7 +123,6 @@ accented buttons
         .dashboard__counters > div > a:focus .dashboard__counters__label,
         .dashboard__counters > div > a:active .dashboard__counters__label,
 /* video player ui */
-    .video-player__seek__buffer,
     .video-player__seek__progress,
     .video-player__volume__current,
     .video-player__volume__handle,
