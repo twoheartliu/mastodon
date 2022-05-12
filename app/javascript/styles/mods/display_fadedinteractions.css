@@ -7,3 +7,6 @@ author: trwnh
 license: Public Domain
 */
 .status.muted {opacity: 0.8}
+.status__wrapper {
+    background: transparent;
+}
