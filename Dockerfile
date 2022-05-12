@@ -87,7 +87,7 @@ RUN apt-get update && \
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 RUN apt-get update && \
   apt-get -y --no-install-recommends install \
-	  libssl1.1 libpq5 imagemagick ffmpeg libjemalloc2 \
+	  libssl1.1 libpq5 imagemagick ffmpeg libjemalloc2 git nano \
 	  libicu66 libidn11 libyaml-0-2 \
 	  file ca-certificates tzdata libreadline8 gcc tini apt-utils && \
 	ln -s /opt/mastodon /mastodon && \
