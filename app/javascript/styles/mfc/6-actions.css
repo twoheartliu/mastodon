@@ -61,7 +61,6 @@
 .status__action-bar-button.icon-button:nth-child(3):hover,
 .status__action-bar-button.icon-button:nth-child(3):active,
 .status__action-bar-button.icon-button:nth-child(3).active,
-.status__action-bar-button.icon-button:nth-child(3):focus,
 .detailed-status__action-bar .detailed-status__button:nth-child(3) .icon-button:hover,
 .detailed-status__action-bar .detailed-status__button:nth-child(3) .icon-button:active,
 .detailed-status__action-bar .detailed-status__button:nth-child(3) .icon-button.active,
