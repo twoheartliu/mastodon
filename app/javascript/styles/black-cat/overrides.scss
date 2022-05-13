@@ -154,13 +154,19 @@ body.app-body.layout-multiple-columns {
 
 // Boost icon
 
-.icon-button.star-icon.active:hover {
-  color: #ca8f04;
+.status__action-bar-button.icon-button:nth-child(3):focus {
+  color: #606984
 }
 
-.icon-button:hover {
-  color: #9E9DD0;
-}
+.status__action-bar-button.icon-button:nth-child(3):hover,
+.status__action-bar-button.icon-button:nth-child(3):active,
+.status__action-bar-button.icon-button:nth-child(3).active,
+.detailed-status__action-bar .detailed-status__button:nth-child(3) .icon-button:hover,
+.detailed-status__action-bar .detailed-status__button:nth-child(3) .icon-button:active,
+.detailed-status__action-bar .detailed-status__button:nth-child(3) .icon-button.active,
+
+.notification__favourite-icon-wrapper .star-icon
+{color: #f90;}
 
 @function hex-color($color) {
   @if type-of($color) == 'color' {
