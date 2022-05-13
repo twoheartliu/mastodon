@@ -223,6 +223,5 @@ accented links
 /* focus fix */
 .focusable:focus
 {
-  background: transparent;
   border: 2px solid var(--accent);
 }
