@@ -370,6 +370,12 @@ button.icon-button:hover i.fa-retweet {
     color: #ffea88;
 }
 
+.status__action-bar-button.icon-button:nth-child(3):hover,
+.detailed-status__action-bar .detailed-status__button:nth-child(3) .icon-button:hover {
+    color: #2599bd;
+    background: #66666650;
+}
+
 .getting-started__footer p a, .trends__item__name {
     color: #C6CD9D;
 }
