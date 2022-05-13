@@ -109,7 +109,7 @@ button.icon-button:hover i.fa-retweet,
         drop-shadow(0px 1px 0px rgba(0,0,0,0.6))
 }
 
-/* post notivication bell on profile */
+/* post notification bell on profile */
 
 .account__header__tabs__buttons .icon-button:focus,
 .account__header__tabs__buttons .icon-button:hover {

@@ -189,3 +189,13 @@ button.icon-button i.fa-retweet {
   }
 }
 
+
+.account__header__tabs__buttons .icon-button:focus,
+.account__header__tabs__buttons .icon-button:hover {
+    color: var(--textMuted);
+}
+
+.account__header__tabs__buttons .icon-button:active,
+.account__header__tabs__buttons .icon-button.active {
+    color: var(--accent);
+}
