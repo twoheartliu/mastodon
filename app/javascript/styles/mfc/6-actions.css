@@ -58,6 +58,10 @@
 {color: #0bf;}
 
 /* favourites */
+.status__action-bar-button.icon-button:nth-child(3):focus {
+    color: var(--textMuted)
+}
+
 .status__action-bar-button.icon-button:nth-child(3):hover,
 .status__action-bar-button.icon-button:nth-child(3):active,
 .status__action-bar-button.icon-button:nth-child(3).active,
