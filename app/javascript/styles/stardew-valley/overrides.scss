@@ -116,3 +116,7 @@ body.app-body.layout-multiple-columns {
 .notification__filter-bar, .column-subheading {
     background: #fcd084;
 }
+
+.poll__option input[type="text"], .compose-form__poll-wrapper .poll__footer select {
+    color: #56160c;
+}
