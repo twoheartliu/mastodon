@@ -13,6 +13,7 @@
 
 .navigation-panel {
   background: #e2f2da;
+  border-radius: 4px;
 }
 
 .getting-started__footer {
@@ -21,6 +22,7 @@
 
 .search__input {
   background: #fff;
+  border-radius: 4px;
 }
 
 .tabs-bar__wrapper {
@@ -44,4 +46,18 @@
 
 article:hover {
   background: #f5f5f5;
+}
+
+.navigation-bar {
+  background: #fff;
+  border-radius: 4px;
+}
+
+.compose-form {
+  padding: 10px 0;
+  border-radius: 4px;
+}
+
+.column-header {
+  border-radius: 4px 4px 0 0;
 }
