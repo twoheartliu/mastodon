@@ -1,9 +1,19 @@
+// author: twoheart
+
 @import 'mastodon-light/variables';
 @import 'application';
 @import 'mastodon-light/diff';
 
 
 .columns-area__panels {
+  background-color: #acdae5;
+  background-image: url(https://static.fanfou.com/img/bg/0.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top left;
+}
+
+.tabs-bar__wrapper {
   background-color: #acdae5;
   background-image: url(https://static.fanfou.com/img/bg/0.png);
   background-repeat: no-repeat;
@@ -42,6 +52,11 @@
 .column-link--transparent {
   background: transparent;
   color: #0066cc;
+}
+
+.column-link--transparent:hover {
+  color: #000;
+  background: hsla(0,0%,100%,.5);
 }
 
 article:hover {
