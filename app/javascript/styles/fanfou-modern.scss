@@ -1,0 +1,21 @@
+@import 'modern/light';
+@import 'application';
+@import 'modern/style';
+@import 'mastodon-light/diff';
+
+.layout-multiple-columns .column {
+	flex-grow: 1;
+	max-width: 500px;
+}
+
+.columns-area__panels {
+  background-color: #acdae5;
+  background-image: url(https://static.fanfou.com/img/bg/0.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top left;
+}
+
+.navigation-panel {
+  background: #e2f2da;
+}
