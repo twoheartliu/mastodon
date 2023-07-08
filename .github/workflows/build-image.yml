@@ -2,8 +2,6 @@ name: Build container image
 on:
   workflow_dispatch:
   push:
-    branches:
-      - 'main'
     tags:
       - '*'
   pull_request:
@@ -33,7 +31,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-        if: github.repository == 'mastodon/mastodon' && github.event_name != 'pull_request'
+        if: github.repository == 'twoheartliu/mastodon' && github.event_name != 'pull_request'
 
       - name: Log in to the Github Container registry
         uses: docker/login-action@v2
@@ -41,27 +39,23 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-        if: github.repository == 'mastodon/mastodon' && github.event_name != 'pull_request'
+        if: github.repository == 'twoheartliu/mastodon' && github.event_name != 'pull_request'
 
       - uses: docker/metadata-action@v4
         id: meta
         with:
-          images: |
-            tootsuite/mastodon
-            ghcr.io/mastodon/mastodon
-          # Only tag with latest when ran against the latest stable branch
-          # This needs to be updated after each minor version release
+          images: twoheart/mastodon
           flavor: |
             latest=${{ startsWith(github.ref, 'refs/tags/v4.1.') && 'auto' || 'false' }}
           tags: |
-            type=edge,branch=main
+            type=edge,branch=nofan.xyz-main
             type=pep440,pattern={{raw}}
             type=pep440,pattern=v{{major}}.{{minor}}
             type=ref,event=pr
 
       - name: Generate version suffix
         id: version_vars
-        if: github.repository == 'mastodon/mastodon' && github.event_name == 'push' && github.ref_name == 'main'
+        if: github.repository == 'twoheartliu/mastodon' && github.event_name == 'push' && github.ref_name == 'nofan.xyz-main'
         run: |
           echo mastodon_version_suffix=+edge-$(git rev-parse --short HEAD) >> $GITHUB_OUTPUT
 
@@ -72,7 +66,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           provenance: false
           builder: ${{ steps.buildx.outputs.name }}
-          push: ${{ github.repository == 'mastodon/mastodon' && github.event_name != 'pull_request' }}
+          push: ${{ github.repository == 'twoheartliu/mastodon' && github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha

@@ -1690,9 +1690,40 @@ en:
   tags:
     does_not_match_previous_name: does not match the previous name
   themes:
+    black-cat: Black Cat
+    cafe: Café
     contrast: Mastodon (High contrast)
+    cybre-light: Cyber Light Pink
+    cyberpunk-neon: Cyberpunk Neon
+    deep-green: Deep Green
     default: Mastodon (Dark)
+    fanfou-classic: Fanfou(Classic)
+    fanfou-modern: Fanfou(Modern)
+    flora: Flora
+    forest: Forest
+    geodude: Spring Earth
+    luxury: Luxury Purple
     mastodon-light: Mastodon (Light)
+    meemu-org: Seaside Twilight
+    modern-contrast: Modern(High contrast)
+    modern-dark: Modern(Dark)
+    modern-light: Modern(Light)
+    neoncity: Neon City
+    new-year: Chinese New Year
+    nga: Light Yellow
+    pastel-gradient: Pastel Gradient
+    purple-haze: Purple Haze
+    royal-tenenbaums: Rock Cyan
+    sakura: Sakura
+    sleeping-town: Sleeping Town
+    stardew-valley: Stardew Valley
+    strawberry: Strawberry
+    swan-lake: Swan Lake
+    to-the-moon: To the Moon
+    ubuntu-light: Light Hazel
+    ubuntu-terminal: Dark Purple
+    win95: Windows 95
+    witches-town: Witches Town
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

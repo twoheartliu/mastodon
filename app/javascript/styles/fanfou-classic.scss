@@ -1,0 +1,74 @@
+// author: twoheart
+
+@import 'mastodon-light/variables';
+@import 'application';
+@import 'mastodon-light/diff';
+
+
+.columns-area__panels {
+  background-color: #acdae5;
+  background-image: url(https://static.fanfou.com/img/bg/0.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top left;
+}
+
+.tabs-bar__wrapper {
+  background-color: #acdae5;
+  background-image: url(https://static.fanfou.com/img/bg/0.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top left;
+}
+
+.navigation-panel {
+  background: #e2f2da;
+  border-radius: 4px;
+}
+
+.getting-started__footer {
+  display: none;
+}
+
+.search__input {
+  background: #fff;
+  border-radius: 4px;
+}
+
+.status {
+  border-bottom: 1px solid #eee;
+}
+
+//  ##0066cc
+.column-link--transparent.active {
+  color: #000;
+  background: hsla(0,0%,100%,.5);
+}
+
+.column-link--transparent {
+  background: transparent;
+  color: #0066cc;
+}
+
+.column-link--transparent:hover {
+  color: #000;
+  background: hsla(0,0%,100%,.5);
+}
+
+article:hover {
+  background: #f5f5f5;
+}
+
+.navigation-bar {
+  background: #fff;
+  border-radius: 4px;
+}
+
+.compose-form {
+  padding: 10px 0;
+  border-radius: 4px;
+}
+
+.column-header {
+  border-radius: 4px 4px 0 0;
+}
