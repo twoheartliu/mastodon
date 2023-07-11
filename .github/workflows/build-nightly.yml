@@ -1,5 +1,9 @@
 name: Build nightly container image
 on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
   workflow_dispatch:
   schedule:
     - cron: '0 2 * * *' # run at 2 AM UTC
