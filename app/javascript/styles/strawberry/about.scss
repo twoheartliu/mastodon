@@ -82,3 +82,16 @@
 .landing-page__information .account {
 	box-shadow: none;
 }
+.column-link--transparent:hover {
+  color: #ff5050 !important;
+}
+
+.notification__message {
+  padding: 16px !important;
+}
+
+@media screen and (max-width: 1174px) {
+  .columns-area__panels__pane--navigational .navigation-panel {
+    background: #ecded2 !important;
+  }
+}
