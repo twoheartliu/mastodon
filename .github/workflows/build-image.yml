@@ -1,73 +1,99 @@
-name: Build container image
 on:
-  workflow_dispatch:
-  push:
-    tags:
-      - '*'
-  pull_request:
-    paths:
-      - .github/workflows/build-image.yml
-      - Dockerfile
-permissions:
-  contents: read
-  packages: write
+  workflow_call:
+    inputs:
+      platforms:
+        required: true
+        type: string
+      cache:
+        type: boolean
+        default: true
+      use_native_arm64_builder:
+        type: boolean
+      push_to_images:
+        type: string
+      version_prerelease:
+        type: string
+      version_metadata:
+        type: string
+      flavor:
+        type: string
+      tags:
+        type: string
+      labels:
+        type: string
 
 jobs:
   build-image:
     runs-on: ubuntu-latest
 
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: true
-
     steps:
-      - uses: actions/checkout@v3
-      - uses: hadolint/hadolint-action@v3.1.0
+      - uses: actions/checkout@v4
+
       - uses: docker/setup-qemu-action@v2
+        if: contains(inputs.platforms, 'linux/arm64') && !inputs.use_native_arm64_builder
+
       - uses: docker/setup-buildx-action@v2
+        id: buildx
+        if: ${{ !(inputs.use_native_arm64_builder && contains(inputs.platforms, 'linux/arm64')) }}
+
+      - name: Start a local Docker Builder
+        if: inputs.use_native_arm64_builder && contains(inputs.platforms, 'linux/arm64')
+        run: |
+          docker run --rm -d --name buildkitd -p 1234:1234 --privileged moby/buildkit:latest --addr tcp://0.0.0.0:1234
+
+      - uses: docker/setup-buildx-action@v2
+        id: buildx-native
+        if: inputs.use_native_arm64_builder && contains(inputs.platforms, 'linux/arm64')
+        with:
+          driver: remote
+          endpoint: tcp://localhost:1234
+          platforms: linux/amd64
+          append: |
+            - endpoint: tcp://${{ vars.DOCKER_BUILDER_HETZNER_ARM64_01_HOST }}:13865
+              platforms: linux/arm64
+              name: mastodon-docker-builder-arm64-01
+              driver-opts:
+                - servername=mastodon-docker-builder-arm64-01
+        env:
+          BUILDER_NODE_1_AUTH_TLS_CACERT: ${{ secrets.DOCKER_BUILDER_HETZNER_ARM64_01_CACERT }}
+          BUILDER_NODE_1_AUTH_TLS_CERT: ${{ secrets.DOCKER_BUILDER_HETZNER_ARM64_01_CERT }}
+          BUILDER_NODE_1_AUTH_TLS_KEY: ${{ secrets.DOCKER_BUILDER_HETZNER_ARM64_01_KEY }}
 
       - name: Log in to Docker Hub
+        if: contains(inputs.push_to_images, 'twoheart')
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-        if: github.repository == 'twoheartliu/mastodon' && github.event_name != 'pull_request'
 
       - name: Log in to the Github Container registry
+        if: contains(inputs.push_to_images, 'ghcr.io')
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-        if: github.repository == 'twoheartliu/mastodon' && github.event_name != 'pull_request'
 
       - uses: docker/metadata-action@v4
         id: meta
+        if: ${{ inputs.push_to_images != '' }}
         with:
-          images: twoheart/mastodon
-          flavor: |
-            latest=${{ startsWith(github.ref, 'refs/tags/v4.1.') && 'auto' || 'false' }}
-          tags: |
-            type=edge,branch=nofan.xyz-main
-            type=pep440,pattern={{raw}}
-            type=pep440,pattern=v{{major}}.{{minor}}
-            type=ref,event=pr
-
-      - name: Generate version suffix
-        id: version_vars
-        if: github.repository == 'twoheartliu/mastodon' && github.event_name == 'push' && github.ref_name == 'nofan.xyz-main'
-        run: |
-          echo mastodon_version_suffix=+edge-$(git rev-parse --short HEAD) >> $GITHUB_OUTPUT
+          images: ${{ inputs.push_to_images }}
+          flavor: ${{ inputs.flavor }}
+          tags: ${{ inputs.tags }}
+          labels: ${{ inputs.labels }}
 
       - uses: docker/build-push-action@v4
         with:
           context: .
-          build-args: MASTODON_VERSION_SUFFIX=${{ steps.version_vars.outputs.mastodon_version_suffix }}
-          platforms: linux/amd64,linux/arm64
+          build-args: |
+            MASTODON_VERSION_PRERELEASE=${{ inputs.version_prerelease }}
+            MASTODON_VERSION_METADATA=${{ inputs.version_metadata }}
+          platforms: ${{ inputs.platforms }}
           provenance: false
-          builder: ${{ steps.buildx.outputs.name }}
-          push: ${{ github.repository == 'twoheartliu/mastodon' && github.event_name != 'pull_request' }}
+          builder: ${{ steps.buildx.outputs.name || steps.buildx-native.outputs.name }}
+          push: ${{ inputs.push_to_images != '' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          cache-from: ${{ inputs.cache && 'type=gha' || '' }}
+          cache-to: ${{ inputs.cache && 'type=gha,mode=max' || '' }}
