@@ -47,15 +47,15 @@ jobs:
         id: buildx-native
         if: inputs.use_native_arm64_builder && contains(inputs.platforms, 'linux/arm64')
         with:
-          driver: remote
-          endpoint: tcp://localhost:1234
-          platforms: linux/amd64
-          append: |
-            - endpoint: tcp://${{ vars.DOCKER_BUILDER_HETZNER_ARM64_01_HOST }}:13865
-              platforms: linux/arm64
-              name: mastodon-docker-builder-arm64-01
-              driver-opts:
-                - servername=mastodon-docker-builder-arm64-01
+          driver: docker
+          #endpoint: tcp://localhost:1234
+          #platforms: linux/amd64
+          #append: |
+          #  - endpoint: tcp://${{ vars.DOCKER_BUILDER_HETZNER_ARM64_01_HOST }}:13865
+          #    platforms: linux/arm64
+          #    name: mastodon-docker-builder-arm64-01
+          #    driver-opts:
+          #      - servername=mastodon-docker-builder-arm64-01
         env:
           BUILDER_NODE_1_AUTH_TLS_CACERT: ${{ secrets.DOCKER_BUILDER_HETZNER_ARM64_01_CACERT }}
           BUILDER_NODE_1_AUTH_TLS_CERT: ${{ secrets.DOCKER_BUILDER_HETZNER_ARM64_01_CERT }}
