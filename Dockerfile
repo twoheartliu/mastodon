@@ -69,6 +69,8 @@ RUN apt-get update && \
         libpq5 \
         imagemagick \
         ffmpeg \
+        git \
+        nano \
         libjemalloc2 \
         libicu72 \
         libidn12 \
