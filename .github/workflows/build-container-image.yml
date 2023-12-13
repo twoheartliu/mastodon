@@ -48,6 +48,7 @@ jobs:
         if: inputs.use_native_arm64_builder && contains(inputs.platforms, 'linux/arm64')
         with:
           driver: docker
+          driver-opts: 'tls=false'
 
       - name: Log in to Docker Hub
         if: contains(inputs.push_to_images, 'twoheart')
