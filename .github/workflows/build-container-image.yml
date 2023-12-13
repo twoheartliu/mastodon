@@ -94,7 +94,8 @@ jobs:
             MASTODON_VERSION_METADATA=${{ inputs.version_metadata }}
           platforms: ${{ inputs.platforms }}
           provenance: false
-          builder: ${{ steps.buildx.outputs.name || steps.buildx-native.outputs.name }}
+          #builder: ${{ steps.buildx.outputs.name || steps.buildx-native.outputs.name }}
+          builder: ${{ steps.buildx.outputs.name}}
           push: ${{ inputs.push_to_images != '' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
