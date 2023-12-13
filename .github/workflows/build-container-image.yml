@@ -35,6 +35,8 @@ jobs:
       - uses: docker/setup-buildx-action@v2
         id: buildx
         if: ${{ !(inputs.use_native_arm64_builder && contains(inputs.platforms, 'linux/arm64')) }}
+        with:
+          driver-opts: 'tls=false'
 
       - name: Start a local Docker Builder
         if: inputs.use_native_arm64_builder && contains(inputs.platforms, 'linux/arm64')
