@@ -7,6 +7,10 @@
   --shadow: 0 10px 40px -10px rgba(0,0,0,0.15);
   --shadow-low: 0 8px 16px -10px rgba(0,0,0,0.4);
 }
+// 以应对媒体文件空白高度bug
+[style*="aspect-ratio"] {
+  aspect-ratio: 0 !important;
+}
 #mastodon .button--block,
 .public-layout .button--block {
   font-weight: 700;
