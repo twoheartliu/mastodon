@@ -47,7 +47,7 @@ Rails.application.config.content_security_policy do |p|
   p.frame_ancestors :none
   p.font_src        :self, assets_host
   p.img_src         :self, :https, :data, :blob, assets_host
-  p.style_src       :self, assets_host, "'unsafe-hashes'"
+  p.style_src       :self, assets_host, "'unsafe-inline' 'unsafe-hashes'"
   p.media_src       :self, :https, :data, assets_host
   p.frame_src       :self, :https
   p.manifest_src    :self, assets_host
@@ -80,7 +80,7 @@ end
 
 Rails.application.config.content_security_policy_nonce_generator = -> request { SecureRandom.base64(16) }
 
-Rails.application.config.content_security_policy_nonce_directives = %w(style-src)
+# Rails.application.config.content_security_policy_nonce_directives = %w(style-src)
 
 Rails.application.reloader.to_prepare do
   PgHero::HomeController.content_security_policy do |p|
