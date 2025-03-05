@@ -2,6 +2,64 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.2.17] - 2025-02-27
+
+### Security
+
+- Update dependencies
+
+### Removed
+
+- Remove support for Ruby 3.0
+
+## [4.2.16] - 2025-02-27
+
+### Security
+
+- Update dependencies
+- Change HTML sanitization to remove unusable and unused `embed` tag (#34021 by @ClearlyClaire, [GHSA-mq2m-hr29-8gqf](https://github.com/mastodon/mastodon/security/advisories/GHSA-mq2m-hr29-8gqf))
+- Fix rate-limit on sign-up email verification ([GHSA-v39f-c9jj-8w7h](https://github.com/mastodon/mastodon/security/advisories/GHSA-v39f-c9jj-8w7h))
+- Fix improper disclosure of domain blocks to unverified users ([GHSA-94h4-fj37-c825](https://github.com/mastodon/mastodon/security/advisories/GHSA-94h4-fj37-c825))
+
+### Fixed
+
+- Fix emoji rewrite adding unnecessary curft to the DOM for most emoji (#33818 by @ClearlyClaire)
+- Fix incorrect signature after HTTP redirect (#33757 and #33769 by @ClearlyClaire)
+- Fix polls not being validated on edition (#33755 by @ClearlyClaire)
+- Fix featured tags for remote accounts not being kept up to date (#33372, #33406, and #33425 by @ClearlyClaire and @mjankowski)
+- Fix exclusive lists interfering with notifications (#28162 by @ShadowJonathan)
+
+## [4.2.15] - 2025-01-16
+
+### Security
+
+- Fix insufficient validation of account URIs ([GHSA-5wxh-3p65-r4g6](https://github.com/mastodon/mastodon/security/advisories/GHSA-5wxh-3p65-r4g6))
+- Update dependencies
+
+### Fixed
+
+- Fix `libyaml` missing from `Dockerfile` build stage (#33591 by @vmstan)
+- Fix deletion of unconfirmed users with Webauthn set (#33186 by @ClearlyClaire)
+
+## [4.2.14] - 2024-02-03
+
+### Added
+
+- Add `tootctl feeds vacuum` (#33065 by @ClearlyClaire)
+
+### Fixed
+
+- Fix inactive users' timelines being backfilled on follow and unsuspend (#33094 by @ClearlyClaire)
+- Fix direct inbox delivery pushing posts into inactive followers' timelines (#33067 by @ClearlyClaire)
+- Fix `TagFollow` records not being correctly handled in account operations (#33063 by @ClearlyClaire)
+- Fix pushing hashtag-followed posts to feeds of inactive users (#33018 by @Gargron)
+- Fix and improve batch attachment deletion handling when using OpenStack Swift (#32637 by @hugogameiro)
+- Fix tl language native name (#32606 by @seav)
+
+### Security
+
+- Update dependencies
+
 ## [4.2.13] - 2024-09-30
 
 ### Security
