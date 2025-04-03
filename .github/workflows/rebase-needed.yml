@@ -1,8 +1,14 @@
 name: PR Needs Rebase
 
+# 禁用此工作流，不再执行任务
+# 原触发条件已注释掉
+# on:
+#   schedule:
+#     - cron: '0 * * * *'
+
+# 使用一个不会触发的条件
 on:
-  schedule:
-    - cron: '0 * * * *'
+  workflow_dispatch:  # 只有手动触发才会执行，实际上不会自动执行
 
 permissions:
   pull-requests: write
@@ -10,7 +16,8 @@ permissions:
 jobs:
   label-rebase-needed:
     runs-on: ubuntu-latest
-    if: github.repository == 'mastodon/mastodon'
+    # 添加一个始终为 false 的条件，确保即使手动触发也不会执行
+    if: ${{ false }}
 
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
