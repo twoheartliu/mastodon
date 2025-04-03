@@ -96,6 +96,19 @@ class AccountsController < ApplicationController
     path_without_format.end_with?(Addressable::URI.parse("/tagged/#{params[:tag]}").normalize)
   end
 
+  def cached_filtered_status_page
+    if user_signed_in?
+      cache_collection_paginated_by_id(
+        filtered_statuses,
+        Status,
+        PAGE_SIZE,
+        params_slice(:max_id, :min_id, :since_id)
+      )
+    else
+      cache_collection(filtered_statuses.limit(5), Status)
+    end
+  end
+
   def path_without_format
     request.path.split('.').first
   end
