@@ -97,17 +97,17 @@ class AccountsController < ApplicationController
   end
 
   def cached_filtered_status_page
-    if user_signed_in?
-      cache_collection_paginated_by_id(
-        filtered_statuses,
-        Status,
-        PAGE_SIZE,
-        params_slice(:max_id, :min_id, :since_id)
-      )
-    else
-      cache_collection(filtered_statuses.limit(5), Status)
-    end
+  if user_signed_in?
+    preload_collection_paginated_by_id(
+      filtered_statuses,
+      Status,
+      PAGE_SIZE,
+      params_slice(:max_id, :min_id, :since_id)
+    )
+  else
+    preload_collection(filtered_statuses.limit(5), Status)
   end
+end
 
   def path_without_format
     request.path.split('.').first
