@@ -8,17 +8,17 @@ neoncity: styles/neon-city.scss
 cybre-light: styles/cybre-light.scss
 cyberpunk-neon: styles/cyberpunk-neon.scss
 meemu-org: styles/meemu.scss
-sakura: styles/sakura.scss
-forest: styles/forest.scss
-sleeping-town: styles/sleeping-town.scss
-deep-green: styles/deep-green.scss
-new-year: styles/new-year.scss
-geodude: styles/geodude.scss
-royal-tenenbaums: styles/royal-tenenbaums.scss
-nga: styles/nga.scss
-ubuntu-light: styles/ubuntu-light.scss
-luxury: styles/luxury.scss
-purple-haze: styles/purple-haze.scss
-ubuntu-terminal: styles/ubuntu-terminal.scss
-win95: styles/win95.scss
+# sakura: styles/sakura.scss
+# forest: styles/forest.scss
+# sleeping-town: styles/sleeping-town.scss
+# deep-green: styles/deep-green.scss
+# new-year: styles/new-year.scss
+# geodude: styles/geodude.scss
+# royal-tenenbaums: styles/royal-tenenbaums.scss
+# nga: styles/nga.scss
+# ubuntu-light: styles/ubuntu-light.scss
+# luxury: styles/luxury.scss
+# purple-haze: styles/purple-haze.scss
+# ubuntu-terminal: styles/ubuntu-terminal.scss
+# win95: styles/win95.scss
 fanfou-classic: styles/fanfou-classic.scss
