@@ -33,7 +33,7 @@ import { IconWithBadge } from 'mastodon/components/icon_with_badge';
 import { WordmarkLogo } from 'mastodon/components/logo';
 import { NavigationPortal } from 'mastodon/components/navigation_portal';
 import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { timelinePreview, trendsEnabled } from 'mastodon/initial_state';
+import { timelinePreview, trendsEnabled, me } from 'mastodon/initial_state';
 import { transientSingleColumn } from 'mastodon/is_mobile';
 import { canManageReports, canViewAdminDashboard } from 'mastodon/permissions';
 import { selectUnreadNotificationGroupsCount } from 'mastodon/selectors/notifications';
@@ -61,6 +61,10 @@ const messages = defineMessages({
   advancedInterface: { id: 'navigation_bar.advanced_interface', defaultMessage: 'Open in advanced web interface' },
   openedInClassicInterface: { id: 'navigation_bar.opened_in_classic_interface', defaultMessage: 'Posts, accounts, and other specific pages are opened by default in the classic web interface.' },
   followRequests: { id: 'navigation_bar.follow_requests', defaultMessage: 'Follow requests' },
+  myProfile: { id: 'navigation_bar.my_profile', defaultMessage: 'My profile' },
+  followers: { id: 'navigation_bar.followers', defaultMessage: 'Followers' },
+  following: { id: 'navigation_bar.following', defaultMessage: 'Following' },
+  posts: { id: 'navigation_bar.posts', defaultMessage: 'Posts' },
 });
 
 const NotificationsLink = () => {
@@ -104,6 +108,46 @@ const FollowRequestsLink = () => {
   );
 };
 
+// 新增的用户信息组件
+const UserInfoPanel = ({ account, intl }) => {
+  if (!account) return null;
+
+  const followersCount = account.get('followers_count');
+  const followingCount = account.get('following_count');
+  const statusesCount = account.get('statuses_count');
+
+  return (
+    <div className='user-info-panel'>
+      <div className='user-info-panel__header'>
+        <Link to={`/@${account.get('acct')}`} className='user-info-panel__avatar'>
+          <img src={account.get('avatar')} alt={account.get('username')} />
+        </Link>
+        <div className='user-info-panel__names'>
+          <Link to={`/@${account.get('acct')}`} className='user-info-panel__display-name'>{account.get('display_name')}</Link>
+          <Link to={`/@${account.get('acct')}`} className='user-info-panel__username'>@{account.get('acct')}</Link>
+        </div>
+      </div>
+
+      <div className='user-info-panel__stats'>
+        <Link to={`/@${account.get('acct')}`} className='user-info-panel__stat'>
+          <span className='user-info-panel__stat-value'>{statusesCount}</span>
+          <span className='user-info-panel__stat-label'>{intl.formatMessage(messages.posts)}</span>
+        </Link>
+
+        <Link to={`/@${account.get('acct')}/followers`} className='user-info-panel__stat'>
+          <span className='user-info-panel__stat-value'>{followersCount}</span>
+          <span className='user-info-panel__stat-label'>{intl.formatMessage(messages.followers)}</span>
+        </Link>
+
+        <Link to={`/@${account.get('acct')}/following`} className='user-info-panel__stat'>
+          <span className='user-info-panel__stat-value'>{followingCount}</span>
+          <span className='user-info-panel__stat-label'>{intl.formatMessage(messages.following)}</span>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
 class NavigationPanel extends Component {
   static propTypes = {
     identity: identityContextPropShape,
@@ -117,6 +161,9 @@ class NavigationPanel extends Component {
   render () {
     const { intl } = this.props;
     const { signedIn, disabledAccountId, permissions } = this.props.identity;
+
+    // 获取当前用户账号信息
+    const account = this.props.account;
 
     let banner = undefined;
 
@@ -143,6 +190,11 @@ class NavigationPanel extends Component {
             {banner}
           </div>
         }
+
+        {/* 添加用户信息面板 */}
+        {signedIn && account && (
+          <UserInfoPanel account={account} intl={intl} />
+        )}
 
         <div className='navigation-panel__menu'>
           {signedIn && (
@@ -200,7 +252,13 @@ class NavigationPanel extends Component {
       </div>
     );
   }
-
 }
 
-export default injectIntl(withIdentity(NavigationPanel));
+// 使用connect连接到Redux存储来获取当前用户账号信息
+import { connect } from 'react-redux';
+
+const mapStateToProps = (state) => ({
+  account: state.getIn(['accounts', me]),
+});
+
+export default connect(mapStateToProps)(injectIntl(withIdentity(NavigationPanel)));
