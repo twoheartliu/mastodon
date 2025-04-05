@@ -295,10 +295,10 @@ class ComposeForm extends ImmutablePureComponent {
                 <PollButtonContainer />
                 <SpoilerButtonContainer />
                 <EmojiPickerDropdown onPickEmoji={this.handleEmojiPick} />
-                <CharacterCounter max={maxChars} text={this.getFulltextForCharacterCounting()} />
               </div>
 
               <div className='compose-form__submit'>
+                <CharacterCounter max={maxChars} text={this.getFulltextForCharacterCounting()} />
                 <Button
                   type='submit'
                   text={intl.formatMessage(this.props.isEditing ? messages.saveChanges : (this.props.isInReply ? messages.reply : messages.publish))}

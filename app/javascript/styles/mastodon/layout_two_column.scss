@@ -66,7 +66,6 @@
 
 // 添加撰写区域到主内容区的样式
 .mobile-compose-panel {
-  margin-bottom: 20px;
   background: var(--background-color);
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -76,14 +75,31 @@
 
 // 媒体查询
 @media screen and (min-width: 1175px) {
+  // 主面板
   .compose-panel {
     width: 100%;
   }
+  // 原头像导航不可见
   .navigation-bar {
     display: none;
   }
+  // footer 设为不可见
   .link-footer {
     display: none;
+  }
+  // 搜索栏
+  .search {
+    margin-bottom: 0;
+  }
+  .compose-form__buttons {
+    gap: 24px;
+  }
+  .compose-form__submit {
+    gap: 12px;
+  }
+  .compose-form__actions .button {
+    max-width: 127px;
+    padding: 0;
   }
   // 主容器修改
   .columns-area__panels {
@@ -153,7 +169,7 @@
 
   // 隐藏多余的滚动条
   .columns-area {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   // 调整头像和用户信息区域
