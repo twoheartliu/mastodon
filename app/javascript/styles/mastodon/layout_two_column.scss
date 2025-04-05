@@ -76,6 +76,15 @@
 
 // 媒体查询
 @media screen and (min-width: 1175px) {
+  .compose-panel {
+    width: 100%;
+  }
+  .navigation-bar {
+    display: none;
+  }
+  .link-footer {
+    display: none;
+  }
   // 主容器修改
   .columns-area__panels {
     display: grid;
@@ -89,7 +98,7 @@
   // 左侧主内容区域
   .columns-area__panels__main {
     grid-column: 1;
-    width: 100%;
+    max-width: 100%;
     // 使用flex布局确保撰写面板在顶部
     display: flex;
     flex-direction: column;
