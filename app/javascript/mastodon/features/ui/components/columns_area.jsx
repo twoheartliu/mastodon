@@ -118,19 +118,18 @@ export default class ColumnsArea extends ImmutablePureComponent {
     const { columns, children, singleColumn, isModalOpen } = this.props
     const { renderComposePanel } = this.state
 
-    // 找到render方法中的singleColumn条件分支，修改如下：
-
     if (singleColumn) {
       return (
         <div className='columns-area__panels'>
           <div className='columns-area__panels__main'>
             <div className='tabs-bar__wrapper'><TabsBarPortal /></div>
-            <div className='columns-area columns-area--mobile'>{children}</div>
 
-            {/* 添加撰写区域到主内容区 */}
+            {/* 添加撰写区域到主内容区顶部 */}
             {renderComposePanel && <div className='mobile-compose-panel'>
               <ComposePanel />
             </div>}
+
+            <div className='columns-area columns-area--mobile'>{children}</div>
           </div>
 
           <div className='columns-area__panels__pane columns-area__panels__pane--start columns-area__panels__pane--navigational'>
@@ -166,5 +165,4 @@ export default class ColumnsArea extends ImmutablePureComponent {
       </div>
     )
   }
-
 }

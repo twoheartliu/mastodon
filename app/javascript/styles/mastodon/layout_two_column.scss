@@ -70,6 +70,8 @@
   background: var(--background-color);
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  // 确保在主栏顶部显示
+  order: -1;
 }
 
 // 媒体查询
@@ -88,6 +90,9 @@
   .columns-area__panels__main {
     grid-column: 1;
     width: 100%;
+    // 使用flex布局确保撰写面板在顶部
+    display: flex;
+    flex-direction: column;
   }
 
   // 右侧边栏
