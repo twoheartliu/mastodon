@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types'
-import { Component, useEffect } from 'react'
+import { Component, useEffect, memo } from 'react'
 
 import { defineMessages, injectIntl, useIntl } from 'react-intl'
-
 import { Link } from 'react-router-dom'
-
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, useDispatch, connect } from 'react-redux'
+import ImmutablePropTypes from 'react-immutable-proptypes'
 
 import AlternateEmailIcon from '@/material-icons/400-24px/alternate_email.svg?react'
 import BookmarksActiveIcon from '@/material-icons/400-24px/bookmarks-fill.svg?react'
@@ -28,6 +27,7 @@ import SearchIcon from '@/material-icons/400-24px/search.svg?react'
 import SettingsIcon from '@/material-icons/400-24px/settings.svg?react'
 import StarActiveIcon from '@/material-icons/400-24px/star-fill.svg?react'
 import StarIcon from '@/material-icons/400-24px/star.svg?react'
+
 import { fetchFollowRequests } from 'mastodon/actions/accounts'
 import { IconWithBadge } from 'mastodon/components/icon_with_badge'
 import { WordmarkLogo } from 'mastodon/components/logo'
@@ -55,24 +55,15 @@ const messages = defineMessages({
   preferences: { id: 'navigation_bar.preferences', defaultMessage: 'Preferences' },
   administration: { id: 'navigation_bar.administration', defaultMessage: 'Administration' },
   moderation: { id: 'navigation_bar.moderation', defaultMessage: 'Moderation' },
-  followsAndFollowers: { id: 'navigation_bar.follows_and_followers', defaultMessage: 'Follows and followers' },
   about: { id: 'navigation_bar.about', defaultMessage: 'About' },
   search: { id: 'navigation_bar.search', defaultMessage: 'Search' },
   advancedInterface: { id: 'navigation_bar.advanced_interface', defaultMessage: 'Open in advanced web interface' },
   openedInClassicInterface: { id: 'navigation_bar.opened_in_classic_interface', defaultMessage: 'Posts, accounts, and other specific pages are opened by default in the classic web interface.' },
   followRequests: { id: 'navigation_bar.follow_requests', defaultMessage: 'Follow requests' },
-  myProfile: { id: 'navigation_bar.my_profile', defaultMessage: 'My profile' },
-  followers: { id: 'navigation_bar.followers', defaultMessage: 'Followers' },
-  following: { id: 'navigation_bar.following', defaultMessage: 'Following' },
-  posts: { id: 'navigation_bar.posts', defaultMessage: 'Posts' },
-  // 新增用户信息面板需要的国际化消息
-  userInfoPanelPosts: { id: 'navigation_bar.posts', defaultMessage: 'Posts' },
-  userInfoPanelFollowers: { id: 'navigation_bar.followers', defaultMessage: 'Followers' },
-  userInfoPanelFollowing: { id: 'navigation_bar.following', defaultMessage: 'Following' },
 })
 
+// Notifications link component with unread count badge
 const NotificationsLink = () => {
-
   const count = useSelector(selectUnreadNotificationGroupsCount)
   const intl = useIntl()
 
@@ -88,6 +79,7 @@ const NotificationsLink = () => {
   )
 }
 
+// Follow requests link component with count badge
 const FollowRequestsLink = () => {
   const count = useSelector(state => state.getIn(['user_lists', 'follow_requests', 'items'])?.size ?? 0)
   const intl = useIntl()
@@ -112,8 +104,8 @@ const FollowRequestsLink = () => {
   )
 }
 
-// 优化后的用户信息组件，使用 useIntl 钩子
-const UserInfoPanel = ({ account }) => {
+// User information panel component
+const UserInfoPanel = memo(({ account }) => {
   const intl = useIntl()
 
   if (!account) return null
@@ -139,32 +131,32 @@ const UserInfoPanel = ({ account }) => {
       <div className='user-info-panel__stats'>
         <Link to={`/@${acct}`} className='user-info-panel__stat'>
           <span className='user-info-panel__stat-value'>{statusesCount}</span>
-          <span className='user-info-panel__stat-label'>{intl.formatMessage(messages.userInfoPanelPosts)}</span>
+          <span className='user-info-panel__stat-label'>{intl.formatMessage({ id: 'account.posts' })}</span>
         </Link>
 
         <Link to={`/@${acct}/followers`} className='user-info-panel__stat'>
           <span className='user-info-panel__stat-value'>{followersCount}</span>
-          <span className='user-info-panel__stat-label'>{intl.formatMessage(messages.userInfoPanelFollowers)}</span>
+          <span className='user-info-panel__stat-label'>{intl.formatMessage({ id: 'account.followers' })}</span>
         </Link>
 
         <Link to={`/@${acct}/following`} className='user-info-panel__stat'>
           <span className='user-info-panel__stat-value'>{followingCount}</span>
-          <span className='user-info-panel__stat-label'>{intl.formatMessage(messages.userInfoPanelFollowing)}</span>
+          <span className='user-info-panel__stat-label'>{intl.formatMessage({ id: 'account.following' })}</span>
         </Link>
       </div>
     </div>
   )
-}
+})
 
 UserInfoPanel.propTypes = {
-  account: PropTypes.object,
+  account: ImmutablePropTypes.map,
 }
 
 class NavigationPanel extends Component {
   static propTypes = {
     identity: identityContextPropShape,
     intl: PropTypes.object.isRequired,
-    account: PropTypes.object,
+    account: ImmutablePropTypes.map,
   };
 
   isFirehoseActive = (match, location) => {
@@ -172,11 +164,8 @@ class NavigationPanel extends Component {
   };
 
   render () {
-    const { intl } = this.props
+    const { intl, account } = this.props
     const { signedIn, disabledAccountId, permissions } = this.props.identity
-
-    // 获取当前用户账号信息
-    const account = this.props.account
 
     let banner = undefined
 
@@ -204,7 +193,7 @@ class NavigationPanel extends Component {
           </div>
         }
 
-        {/* 添加用户信息面板 */}
+        {/* User information panel */}
         {signedIn && account && (
           <UserInfoPanel account={account} />
         )}
@@ -266,9 +255,6 @@ class NavigationPanel extends Component {
     )
   }
 }
-
-// 使用connect连接到Redux存储来获取当前用户账号信息
-import { connect } from 'react-redux'
 
 const mapStateToProps = (state) => ({
   account: state.getIn(['accounts', me]),

@@ -27,6 +27,7 @@ import ComposePanel from './compose_panel'
 import DrawerLoading from './drawer_loading'
 import NavigationPanel from './navigation_panel'
 
+// Component mapping for different column types
 const componentMap = {
   'COMPOSE': Compose,
   'HOME': HomeTimeline,
@@ -42,6 +43,7 @@ const componentMap = {
   'DIRECTORY': Directory,
 }
 
+// Portal component for tabs bar to allow dynamic positioning
 const TabsBarPortal = () => {
   const { setTabsBarElement } = useColumnsContext()
 
@@ -70,6 +72,7 @@ export default class ColumnsArea extends ImmutablePureComponent {
 
   componentDidMount () {
     if (this.mediaQuery) {
+      // Use modern or legacy event listener based on browser support
       if (this.mediaQuery.addEventListener) {
         this.mediaQuery.addEventListener('change', this.handleLayoutChange)
       } else {
@@ -83,6 +86,7 @@ export default class ColumnsArea extends ImmutablePureComponent {
 
   componentWillUnmount () {
     if (this.mediaQuery) {
+      // Clean up event listeners
       if (this.mediaQuery.removeEventListener) {
         this.mediaQuery.removeEventListener('change', this.handleLayoutChange)
       } else {
@@ -91,6 +95,7 @@ export default class ColumnsArea extends ImmutablePureComponent {
     }
   }
 
+  // Handle content changes and scroll accordingly for RTL/LTR layouts
   handleChildrenContentChange () {
     if (!this.props.singleColumn) {
       const modifier = this.isRtlLayout ? -1 : 1
@@ -98,6 +103,7 @@ export default class ColumnsArea extends ImmutablePureComponent {
     }
   }
 
+  // Update state when layout changes (mobile/desktop)
   handleLayoutChange = (e) => {
     this.setState({ renderComposePanel: !e.matches })
   };
@@ -124,10 +130,12 @@ export default class ColumnsArea extends ImmutablePureComponent {
           <div className='columns-area__panels__main'>
             <div className='tabs-bar__wrapper'><TabsBarPortal /></div>
 
-            {/* 添加撰写区域到主内容区顶部 */}
-            {renderComposePanel && <div className='mobile-compose-panel'>
-              <ComposePanel />
-            </div>}
+            {/* Add compose area to the top of main content */}
+            {renderComposePanel && (
+              <div className='inline-compose-panel'>
+                <ComposePanel />
+              </div>
+            )}
 
             <div className='columns-area columns-area--mobile'>{children}</div>
           </div>
@@ -138,12 +146,14 @@ export default class ColumnsArea extends ImmutablePureComponent {
             </div>
           </div>
 
-          {/* 保留原来的撰写面板，但在CSS中隐藏 */}
-          <div className='columns-area__panels__pane columns-area__panels__pane--compositional'>
-            <div className='columns-area__panels__pane__inner'>
-              {renderComposePanel && <ComposePanel />}
+          {/* Conditionally render compositional pane for better performance */}
+          {renderComposePanel && (
+            <div className='columns-area__panels__pane columns-area__panels__pane--compositional'>
+              <div className='columns-area__panels__pane__inner'>
+                <ComposePanel />
+              </div>
             </div>
-          </div>
+          )}
         </div>
       )
     }
