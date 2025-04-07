@@ -89,114 +89,117 @@
 
 // Media queries for responsive layout
 @media screen and (min-width: 1175px) {
-  // Main container layout
-  .columns-area__panels {
+  // 两列布局的主容器
+  .columns-area__panels--two-column {
     display: grid;
     grid-template-columns: 1fr 350px;
     grid-gap: 10px;
     padding: 0 10px;
     max-width: 1200px;
     margin: 0 auto;
+
+    // 左侧主内容区
+    .columns-area__panels__main {
+      grid-column: 1;
+      max-width: 100%;
+      // 使用 flex 布局确保撰写面板在顶部
+      display: flex;
+      flex-direction: column;
+    }
+
+    // 右侧边栏
+    .columns-area__panels__pane--navigational {
+      grid-column: 2;
+      position: sticky;
+      top: 10px;
+      height: calc(100vh - 20px);
+      display: flex;
+      flex-direction: column;
+      background: var(--background-color);
+      border-radius: 4px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    // 隐藏在两列布局中不需要的元素
+    .columns-area__panels__pane--compositional,
+    .navigation-bar,
+    .link-footer {
+      display: none;
+    }
   }
 
-  // Left main content area
-  .columns-area__panels__main {
-    grid-column: 1;
-    max-width: 100%;
-    // Use flex layout to ensure compose panel is at the top
-    display: flex;
-    flex-direction: column;
-  }
-
-  // Right sidebar
-  .columns-area__panels__pane--navigational {
-    grid-column: 2;
-    position: sticky;
-    top: 10px;
-    height: calc(100vh - 20px);
-    display: flex;
-    flex-direction: column;
-    background: var(--background-color);
-    border-radius: 4px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-
-  // Hide elements that are not needed in two-column layout
-  .columns-area__panels__pane--compositional,
-  .navigation-bar,
-  .link-footer {
-    display: none;
-  }
-
-  // Compose panel styles
-  .compose-panel {
-    width: 100%;
-  }
-
-  // Search bar adjustments
-  .search {
-    margin-bottom: 0;
-  }
-
-  // Compose form button adjustments
-  .compose-form__buttons {
-    gap: 24px;
-  }
-
-  .compose-form__submit {
-    gap: 12px;
-  }
-
-  .compose-form__actions .button {
-    max-width: 127px;
-    padding: 5px 12px;
-  }
-
-  // Navigation panel adjustments
-  .navigation-panel {
-    width: 100%;
-    height: auto;
-  }
-
-  // Column adjustments
-  .column {
-    padding: 0;
-    margin-bottom: 10px;
-    width: 100%;
-    flex: 0 0 100%;
-  }
-
-  // Show compose area
-  .inline-compose-panel {
-    display: block;
-  }
-
-  // Adjust compose form
-  .compose-form {
-    max-width: 100%;
-  }
-
-  // Adjust tabs bar position
-  .tabs-bar {
-    margin-bottom: 10px;
-  }
-
-  // Hide unnecessary scrollbars
-  .columns-area {
+  // 两列布局的列区域
+  .columns-area--two-column {
     overflow: hidden;
+
+    .column {
+      padding: 0;
+      margin-bottom: 10px;
+      width: 100%;
+      flex: 0 0 100%;
+    }
   }
 
-  // Adjust account header styles
-  .account__header__image {
-    height: 200px;
-  }
+  // 两列布局中的共享样式
+  .columns-area__panels--two-column,
+  .columns-area--two-column {
+    // 撰写面板样式
+    .compose-panel {
+      width: 100%;
+    }
 
-  .account__header__info {
-    padding: 20px;
+    // 搜索栏调整
+    .search {
+      margin-bottom: 0;
+    }
+
+    // 撰写表单按钮调整
+    .compose-form__buttons {
+      gap: 24px;
+    }
+
+    .compose-form__submit {
+      gap: 12px;
+    }
+
+    .compose-form__actions .button {
+      max-width: 127px;
+      padding: 5px 12px;
+    }
+
+    // 导航面板调整
+    .navigation-panel {
+      width: 100%;
+      height: auto;
+    }
+
+    // 显示撰写区域
+    .inline-compose-panel {
+      display: block;
+    }
+
+    // 调整撰写表单
+    .compose-form {
+      max-width: 100%;
+    }
+
+    // 调整标签栏位置
+    .tabs-bar {
+      margin-bottom: 10px;
+    }
+
+    // 调整账户头部样式
+    .account__header__image {
+      height: 200px;
+    }
+
+    .account__header__info {
+      padding: 20px;
+    }
   }
 }
 
-// Hide user info panel and compose area on small screens
+// 在小屏幕上隐藏用户信息面板和撰写区域
 @media screen and (max-width: 1174px) {
   .user-info-panel,
   .inline-compose-panel {

@@ -61,6 +61,7 @@ export default class ColumnsArea extends ImmutablePureComponent {
     isModalOpen: PropTypes.bool.isRequired,
     singleColumn: PropTypes.bool,
     children: PropTypes.node,
+    layoutType: PropTypes.string,
   };
 
   // Corresponds to (max-width: $no-gap-breakpoint - 1px) in SCSS
@@ -121,12 +122,15 @@ export default class ColumnsArea extends ImmutablePureComponent {
   };
 
   render () {
-    const { columns, children, singleColumn, isModalOpen } = this.props
+    const { columns, children, singleColumn, isModalOpen, layoutType } = this.props
     const { renderComposePanel } = this.state
+
+    // 使用两列布局如果在设置中指定
+    const useTwoColumnLayout = layoutType === 'two_column'
 
     if (singleColumn) {
       return (
-        <div className='columns-area__panels'>
+        <div className={`columns-area__panels ${useTwoColumnLayout ? 'columns-area__panels--two-column' : ''}`}>
           <div className='columns-area__panels__main'>
             <div className='tabs-bar__wrapper'><TabsBarPortal /></div>
 
@@ -147,7 +151,7 @@ export default class ColumnsArea extends ImmutablePureComponent {
           </div>
 
           {/* Conditionally render compositional pane for better performance */}
-          {renderComposePanel && (
+          {renderComposePanel && !useTwoColumnLayout && (
             <div className='columns-area__panels__pane columns-area__panels__pane--compositional'>
               <div className='columns-area__panels__pane__inner'>
                 <ComposePanel />
@@ -159,7 +163,7 @@ export default class ColumnsArea extends ImmutablePureComponent {
     }
 
     return (
-      <div className={`columns-area ${isModalOpen ? 'unscrollable' : ''}`} ref={this.setRef}>
+     <div className={`columns-area ${isModalOpen ? 'unscrollable' : ''} ${useTwoColumnLayout ? 'columns-area--two-column' : ''}`} ref={this.setRef}>
         {columns.map(column => {
           const params = column.get('params', null) === null ? null : column.get('params').toJS()
           const other = params && params.other ? params.other : {}

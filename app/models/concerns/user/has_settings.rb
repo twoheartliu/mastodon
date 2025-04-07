@@ -134,4 +134,12 @@ module User::HasSettings
   def hide_all_media?
     settings['web.display_media'] == 'hide_all'
   end
+
+  def setting_layout
+    settings['web.layout'] || (settings['web.advanced_layout'] ? 'advanced' : 'classic')
+  end
+
+  def setting_advanced_layout
+    setting_layout == 'advanced'
+  end
 end
