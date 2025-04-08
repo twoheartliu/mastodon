@@ -11,6 +11,25 @@ body {
   background-position: top left;
 }
 
+// #5ba0ea
+.button {
+  background-color: #5ba0ea;
+  border-color: #5ba0ea;
+  color: #fff;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #2267b1;
+    border-color: #2267b1;
+    color: #fff;
+  }
+}
+
+.column-link.active {
+  color: #2267b1;
+}
+
 .columns-area__panels__main {
   background-color: #fff;
 }
@@ -104,7 +123,9 @@ article:hover {
     border-radius: 10px !important;
   }
 
-  .compose-form .autosuggest-textarea__textarea {
-    padding: 10px 20px;
+  .inline-compose-panel {
+    .compose-form .autosuggest-textarea__textarea {
+      padding: 10px 20px;
+    }
   }
 }

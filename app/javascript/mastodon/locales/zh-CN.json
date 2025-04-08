@@ -162,7 +162,7 @@
   "compose_form.poll.switch_to_multiple": "将投票改为多选",
   "compose_form.poll.switch_to_single": "将投票改为单选",
   "compose_form.poll.type": "类型",
-  "compose_form.publish": "发布",
+  "compose_form.publish": "发送",
   "compose_form.publish_form": "发嘟",
   "compose_form.reply": "回复",
   "compose_form.save_changes": "更改",
