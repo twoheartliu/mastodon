@@ -566,10 +566,7 @@ class UI extends PureComponent {
     const { children, isComposing, location, layout } = this.props;
 
     // 计算singleColumn，同时考虑layout和layoutType的影响
-    const isSingleColumn = layout === 'mobile' ||
-                           layout === 'single-column' ||
-                           layoutType === 'single_column' ||
-                           layoutType === 'two_column';
+    const isSingleColumn = layout === 'mobile' || layoutType !== 'advance';
 
     console.log('layoutType', layoutType);
     console.log('layout', layout);

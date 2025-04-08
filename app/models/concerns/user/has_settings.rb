@@ -138,7 +138,7 @@ module User::HasSettings
   def setting_layout
     web_layout = settings['web.layout']
     if web_layout.nil?
-      settings['web.advanced_layout'] ? 'advanced' : 'classic'
+      settings['web.advanced_layout'] ? 'advanced' : 'single-column'
     else
       web_layout
     end
