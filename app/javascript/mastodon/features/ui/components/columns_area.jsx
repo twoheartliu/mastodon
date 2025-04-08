@@ -124,14 +124,48 @@ export default class ColumnsArea extends ImmutablePureComponent {
   };
 
   render () {
-    const { columns, children, isModalOpen, layoutType } = this.props;
+    const { columns, children, isModalOpen, singleColumn,  layoutType } = this.props;
     const { renderComposePanel } = this.state;
 
     console.log('layoutType columns', layoutType);
     // 使用两列布局如果在设置中指定
     const useTwoColumnLayout = layoutType === 'two_column';
 
-    if (layoutType === 'single_column') {
+    if (singleColumn) {
+      if  (layoutType === 'two_column') {
+        return (
+          <div className={`columns-area__panels columns-area__panels--two-column`}>
+            <div className='columns-area__panels__main'>
+              <div className='tabs-bar__wrapper'><TabsBarPortal /></div>
+
+              {/* Add compose area to the top of main content */}
+              {renderComposePanel && (
+                <div className='inline-compose-panel'>
+                  <ComposePanel />
+                </div>
+              )}
+
+              <div className='columns-area columns-area--mobile'>{children}</div>
+            </div>
+
+            <div className='columns-area__panels__pane columns-area__panels__pane--start columns-area__panels__pane--navigational'>
+              <div className='columns-area__panels__pane__inner'>
+                <NavigationPanel />
+              </div>
+            </div>
+
+            {/* Conditionally render compositional pane for better performance */}
+            {renderComposePanel && !useTwoColumnLayout && (
+              <div className='columns-area__panels__pane columns-area__panels__pane--compositional'>
+                <div className='columns-area__panels__pane__inner'>
+                  <ComposePanel />
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      }
+
       return (
         <div className='columns-area__panels'>
           <div className='columns-area__panels__pane columns-area__panels__pane--compositional'>
@@ -150,38 +184,6 @@ export default class ColumnsArea extends ImmutablePureComponent {
               <NavigationPanel />
             </div>
           </div>
-        </div>
-      );
-    } else if  (layoutType === 'two_column') {
-      return (
-        <div className={`columns-area__panels columns-area__panels--two-column`}>
-          <div className='columns-area__panels__main'>
-            <div className='tabs-bar__wrapper'><TabsBarPortal /></div>
-
-            {/* Add compose area to the top of main content */}
-            {renderComposePanel && (
-              <div className='inline-compose-panel'>
-                <ComposePanel />
-              </div>
-            )}
-
-            <div className='columns-area columns-area--mobile'>{children}</div>
-          </div>
-
-          <div className='columns-area__panels__pane columns-area__panels__pane--start columns-area__panels__pane--navigational'>
-            <div className='columns-area__panels__pane__inner'>
-              <NavigationPanel />
-            </div>
-          </div>
-
-          {/* Conditionally render compositional pane for better performance */}
-          {renderComposePanel && !useTwoColumnLayout && (
-            <div className='columns-area__panels__pane columns-area__panels__pane--compositional'>
-              <div className='columns-area__panels__pane__inner'>
-                <ComposePanel />
-              </div>
-            </div>
-          )}
         </div>
       );
     } else {

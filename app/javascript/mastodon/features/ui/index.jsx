@@ -137,23 +137,23 @@ class SwitchingColumnsArea extends PureComponent {
   }
 
   UNSAFE_componentWillMount () {
-    if(layoutType === 'single_column') {
-      document.body.classList.toggle('layout-single-column', true);
-      document.body.classList.toggle('layout-multiple-columns', false);
-    } else if (layoutType === 'two_column') {
-      document.body.classList.toggle('layout-single-column', true);
-      document.body.classList.toggle('layout-multiple-columns', false);
-    } else {
-      document.body.classList.toggle('layout-single-column', false);
-      document.body.classList.toggle('layout-multiple-columns', true);
-    }
-    // if (this.props.singleColumn) {
+    // if(layoutType === 'single_column') {
+    //   document.body.classList.toggle('layout-single-column', true);
+    //   document.body.classList.toggle('layout-multiple-columns', false);
+    // } else if (layoutType === 'two_column') {
     //   document.body.classList.toggle('layout-single-column', true);
     //   document.body.classList.toggle('layout-multiple-columns', false);
     // } else {
     //   document.body.classList.toggle('layout-single-column', false);
     //   document.body.classList.toggle('layout-multiple-columns', true);
     // }
+    if (this.props.singleColumn) {
+      document.body.classList.toggle('layout-single-column', true);
+      document.body.classList.toggle('layout-multiple-columns', false);
+    } else {
+      document.body.classList.toggle('layout-single-column', false);
+      document.body.classList.toggle('layout-multiple-columns', true);
+    }
   }
 
   componentDidUpdate (prevProps) {
