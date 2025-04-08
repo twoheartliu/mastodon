@@ -130,6 +130,7 @@ export default class ColumnsArea extends ImmutablePureComponent {
     console.log('layoutType columns', layoutType);
     // 使用两列布局如果在设置中指定
     const useTwoColumnLayout = layoutType === 'two_column';
+    console.log('singleColumn', singleColumn);
 
     if (singleColumn) {
       if  (layoutType === 'two_column') {

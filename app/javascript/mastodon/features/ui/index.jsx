@@ -137,16 +137,6 @@ class SwitchingColumnsArea extends PureComponent {
   }
 
   UNSAFE_componentWillMount () {
-    // if(layoutType === 'single_column') {
-    //   document.body.classList.toggle('layout-single-column', true);
-    //   document.body.classList.toggle('layout-multiple-columns', false);
-    // } else if (layoutType === 'two_column') {
-    //   document.body.classList.toggle('layout-single-column', true);
-    //   document.body.classList.toggle('layout-multiple-columns', false);
-    // } else {
-    //   document.body.classList.toggle('layout-single-column', false);
-    //   document.body.classList.toggle('layout-multiple-columns', true);
-    // }
     if (this.props.singleColumn) {
       document.body.classList.toggle('layout-single-column', true);
       document.body.classList.toggle('layout-multiple-columns', false);
@@ -575,8 +565,16 @@ class UI extends PureComponent {
     const { draggingOver } = this.state;
     const { children, isComposing, location, layout } = this.props;
 
+    // 计算singleColumn，同时考虑layout和layoutType的影响
+    const isSingleColumn = layout === 'mobile' ||
+                           layout === 'single-column' ||
+                           layoutType === 'single_column' ||
+                           layoutType === 'two_column';
+
     console.log('layoutType', layoutType);
     console.log('layout', layout);
+    console.log('isSingleColumn', isSingleColumn);
+
     const handlers = {
       help: this.handleHotkeyToggleHelp,
       new: this.handleHotkeyNew,
@@ -606,7 +604,7 @@ class UI extends PureComponent {
           <SwitchingColumnsArea
             identity={this.props.identity}
             location={location}
-            singleColumn={layout === 'mobile' || layout === 'single-column'}
+            singleColumn={isSingleColumn}
           >
             {children}
           </SwitchingColumnsArea>
