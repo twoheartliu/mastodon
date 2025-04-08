@@ -43,6 +43,7 @@
  * @property {boolean=} use_pending_items
  * @property {string} version
  * @property {string} sso_redirect
+ * @property {string} layout_type
  */
 
 /**
@@ -93,6 +94,7 @@ export const displayMedia = getMeta('display_media');
 export const domain = getMeta('domain');
 export const expandSpoilers = getMeta('expand_spoilers');
 export const forceSingleColumn = !getMeta('advanced_layout');
+export const layoutType = getMeta('layout_type');
 export const limitedFederationMode = getMeta('limited_federation_mode');
 export const mascot = getMeta('mascot');
 export const me = getMeta('me');
@@ -118,6 +120,7 @@ export const criticalUpdatesPending = initialState?.critical_updates_pending;
 // @ts-expect-error
 export const statusPageUrl = getMeta('status_page_url');
 export const sso_redirect = getMeta('sso_redirect');
+
 
 /**
  * @returns {string | undefined}

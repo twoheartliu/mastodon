@@ -1050,6 +1050,8 @@ zh-CN:
       guide_link: https://crowdin.com/project/mastodon
       guide_link_text: 每个人都可以参与翻译。
     sensitive_content: 敏感内容
+    web_interface_layout: 网页布局
+    web_interface_layout_hint: 选择网页界面布局。
   application_mailer:
     notification_preferences: 更改邮件偏好
     salutation: "%{name}："

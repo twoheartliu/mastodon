@@ -3,10 +3,14 @@
   padding: 15px;
   border-bottom: 1px solid var(--background-border-color);
 
+  .navigation-bar {
+    width: 100%;
+  }
+
   &__header {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin: 20px 0 30px 0;
   }
 
   &__avatar {
@@ -69,6 +73,7 @@
 
   &__stat-value {
     font-weight: bold;
+    font-size: 16px;
     color: $primary-text-color;
   }
 
@@ -85,6 +90,10 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   // Ensure it appears at the top of the main column
   order: -1;
+
+  .navigation-bar {
+    display: none;
+  }
 }
 
 // Media queries for responsive layout
@@ -122,7 +131,6 @@
 
     // 隐藏在两列布局中不需要的元素
     .columns-area__panels__pane--compositional,
-    .navigation-bar,
     .link-footer {
       display: none;
     }

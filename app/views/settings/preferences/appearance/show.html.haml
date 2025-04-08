@@ -35,15 +35,15 @@
       #{t 'appearance.localization.body'} #{content_tag(:a, t('appearance.localization.guide_link_text'), href: t('appearance.localization.guide_link'), target: '_blank', rel: 'noopener')}
 
   = f.simple_fields_for :settings, current_user.settings do |ff|
-    %h4= t 'appearance.interface_layout'
+    %h4= t 'appearance.web_interface_layout'
 
-    %p.hint= t 'appearance.interface_layout_hint'
+    %p.hint= t 'appearance.web_interface_layout_hint'
 
     .fields-group
       = ff.input :'web.layout',
                  as: :radio_buttons,
                  collection_wrapper_tag: 'ul',
-                 collection: %w(classic two_column advanced),
+                 collection: %w(single_column two_column advanced),
                  hint: false,
                  item_wrapper_tag: 'li',
                  label_method: ->(item) { t("simple_form.hints.defaults.setting_layout_#{item}") },

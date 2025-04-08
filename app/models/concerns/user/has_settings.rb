@@ -136,10 +136,11 @@ module User::HasSettings
   end
 
   def setting_layout
-    if settings.key?('web.layout')
-      settings['web.layout']
-    else
+    web_layout = settings['web.layout']
+    if web_layout.nil?
       settings['web.advanced_layout'] ? 'advanced' : 'classic'
+    else
+      web_layout
     end
   end
 end

@@ -16,19 +16,20 @@ class InitialStateSerializer < ActiveModel::Serializer
     store = default_meta_store
 
     if object.current_account
-      store[:me]                = object.current_account.id.to_s
-      store[:boost_modal]       = object_account_user.setting_boost_modal
-      store[:delete_modal]      = object_account_user.setting_delete_modal
-      store[:auto_play_gif]     = object_account_user.setting_auto_play_gif
-      store[:display_media]     = object_account_user.setting_display_media
-      store[:expand_spoilers]   = object_account_user.setting_expand_spoilers
-      store[:reduce_motion]     = object_account_user.setting_reduce_motion
-      store[:disable_swiping]   = object_account_user.setting_disable_swiping
+      store[:me]                  = object.current_account.id.to_s
+      store[:boost_modal]         = object_account_user.setting_boost_modal
+      store[:delete_modal]        = object_account_user.setting_delete_modal
+      store[:auto_play_gif]       = object_account_user.setting_auto_play_gif
+      store[:display_media]       = object_account_user.setting_display_media
+      store[:expand_spoilers]     = object_account_user.setting_expand_spoilers
+      store[:reduce_motion]       = object_account_user.setting_reduce_motion
+      store[:disable_swiping]     = object_account_user.setting_disable_swiping
       store[:disable_hover_cards] = object_account_user.setting_disable_hover_cards
-      store[:advanced_layout]   = object_account_user.setting_advanced_layout
-      store[:use_blurhash]      = object_account_user.setting_use_blurhash
-      store[:use_pending_items] = object_account_user.setting_use_pending_items
-      store[:show_trends]       = Setting.trends && object_account_user.setting_trends
+      store[:advanced_layout]     = object_account_user.setting_advanced_layout
+      store[:layout_type]         = object_account_user.setting_layout
+      store[:use_blurhash]        = object_account_user.setting_use_blurhash
+      store[:use_pending_items]   = object_account_user.setting_use_pending_items
+      store[:show_trends]         = Setting.trends && object_account_user.setting_trends
     else
       store[:auto_play_gif] = Setting.auto_play_gif
       store[:display_media] = Setting.display_media

@@ -19,7 +19,7 @@ class UserSettings
   setting_inverse_alias :indexable, :noindex
 
   namespace :web do
-    setting :layout, default: 'classic', in: %w(classic two_column advanced)
+    setting :layout, default: 'single_column', in: %w(single_column two_column advanced)
     setting :advanced_layout, default: false
     setting :trends, default: true
     setting :use_blurhash, default: true

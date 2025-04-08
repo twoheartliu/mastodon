@@ -1,47 +1,50 @@
-import PropTypes from 'prop-types'
-import { Component, useEffect, memo } from 'react'
+import PropTypes from 'prop-types';
+import { Component, useEffect, memo } from 'react';
 
-import { defineMessages, injectIntl, useIntl } from 'react-intl'
-import { Link } from 'react-router-dom'
-import { useSelector, useDispatch, connect } from 'react-redux'
-import ImmutablePropTypes from 'react-immutable-proptypes'
+import { defineMessages, injectIntl, useIntl } from 'react-intl';
 
-import AlternateEmailIcon from '@/material-icons/400-24px/alternate_email.svg?react'
-import BookmarksActiveIcon from '@/material-icons/400-24px/bookmarks-fill.svg?react'
-import BookmarksIcon from '@/material-icons/400-24px/bookmarks.svg?react'
-import ExploreActiveIcon from '@/material-icons/400-24px/explore-fill.svg?react'
-import ExploreIcon from '@/material-icons/400-24px/explore.svg?react'
-import ModerationIcon from '@/material-icons/400-24px/gavel.svg?react'
-import HomeActiveIcon from '@/material-icons/400-24px/home-fill.svg?react'
-import HomeIcon from '@/material-icons/400-24px/home.svg?react'
-import ListAltActiveIcon from '@/material-icons/400-24px/list_alt-fill.svg?react'
-import ListAltIcon from '@/material-icons/400-24px/list_alt.svg?react'
-import AdministrationIcon from '@/material-icons/400-24px/manufacturing.svg?react'
-import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react'
-import NotificationsActiveIcon from '@/material-icons/400-24px/notifications-fill.svg?react'
-import NotificationsIcon from '@/material-icons/400-24px/notifications.svg?react'
-import PersonAddActiveIcon from '@/material-icons/400-24px/person_add-fill.svg?react'
-import PersonAddIcon from '@/material-icons/400-24px/person_add.svg?react'
-import PublicIcon from '@/material-icons/400-24px/public.svg?react'
-import SearchIcon from '@/material-icons/400-24px/search.svg?react'
-import SettingsIcon from '@/material-icons/400-24px/settings.svg?react'
-import StarActiveIcon from '@/material-icons/400-24px/star-fill.svg?react'
-import StarIcon from '@/material-icons/400-24px/star.svg?react'
+import { Link } from 'react-router-dom';
 
-import { fetchFollowRequests } from 'mastodon/actions/accounts'
-import { IconWithBadge } from 'mastodon/components/icon_with_badge'
-import { WordmarkLogo } from 'mastodon/components/logo'
-import { NavigationPortal } from 'mastodon/components/navigation_portal'
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context'
-import { timelinePreview, trendsEnabled, me } from 'mastodon/initial_state'
-import { transientSingleColumn } from 'mastodon/is_mobile'
-import { canManageReports, canViewAdminDashboard } from 'mastodon/permissions'
-import { selectUnreadNotificationGroupsCount } from 'mastodon/selectors/notifications'
+import ImmutablePropTypes from 'react-immutable-proptypes';
+import { useSelector, useDispatch, connect } from 'react-redux';
 
-import ColumnLink from './column_link'
-import DisabledAccountBanner from './disabled_account_banner'
-import { ListPanel } from './list_panel'
-import SignInBanner from './sign_in_banner'
+
+import AlternateEmailIcon from '@/material-icons/400-24px/alternate_email.svg?react';
+import BookmarksActiveIcon from '@/material-icons/400-24px/bookmarks-fill.svg?react';
+import BookmarksIcon from '@/material-icons/400-24px/bookmarks.svg?react';
+import ExploreActiveIcon from '@/material-icons/400-24px/explore-fill.svg?react';
+import ExploreIcon from '@/material-icons/400-24px/explore.svg?react';
+import ModerationIcon from '@/material-icons/400-24px/gavel.svg?react';
+import HomeActiveIcon from '@/material-icons/400-24px/home-fill.svg?react';
+import HomeIcon from '@/material-icons/400-24px/home.svg?react';
+import ListAltActiveIcon from '@/material-icons/400-24px/list_alt-fill.svg?react';
+import ListAltIcon from '@/material-icons/400-24px/list_alt.svg?react';
+import AdministrationIcon from '@/material-icons/400-24px/manufacturing.svg?react';
+import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
+import NotificationsActiveIcon from '@/material-icons/400-24px/notifications-fill.svg?react';
+import NotificationsIcon from '@/material-icons/400-24px/notifications.svg?react';
+import PersonAddActiveIcon from '@/material-icons/400-24px/person_add-fill.svg?react';
+import PersonAddIcon from '@/material-icons/400-24px/person_add.svg?react';
+import PublicIcon from '@/material-icons/400-24px/public.svg?react';
+import SearchIcon from '@/material-icons/400-24px/search.svg?react';
+import SettingsIcon from '@/material-icons/400-24px/settings.svg?react';
+import StarActiveIcon from '@/material-icons/400-24px/star-fill.svg?react';
+import StarIcon from '@/material-icons/400-24px/star.svg?react';
+import { fetchFollowRequests } from 'mastodon/actions/accounts';
+import { IconWithBadge } from 'mastodon/components/icon_with_badge';
+import { WordmarkLogo } from 'mastodon/components/logo';
+import { NavigationPortal } from 'mastodon/components/navigation_portal';
+import { NavigationBar } from 'mastodon/features/compose/components/navigation_bar';
+import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
+import { timelinePreview, trendsEnabled, me, layoutType } from 'mastodon/initial_state';
+import { transientSingleColumn } from 'mastodon/is_mobile';
+import { canManageReports, canViewAdminDashboard } from 'mastodon/permissions';
+import { selectUnreadNotificationGroupsCount } from 'mastodon/selectors/notifications';
+
+import ColumnLink from './column_link';
+import DisabledAccountBanner from './disabled_account_banner';
+import { ListPanel } from './list_panel';
+import SignInBanner from './sign_in_banner';
 
 const messages = defineMessages({
   home: { id: 'tabs_bar.home', defaultMessage: 'Home' },
@@ -60,12 +63,12 @@ const messages = defineMessages({
   advancedInterface: { id: 'navigation_bar.advanced_interface', defaultMessage: 'Open in advanced web interface' },
   openedInClassicInterface: { id: 'navigation_bar.opened_in_classic_interface', defaultMessage: 'Posts, accounts, and other specific pages are opened by default in the classic web interface.' },
   followRequests: { id: 'navigation_bar.follow_requests', defaultMessage: 'Follow requests' },
-})
+});
 
 // Notifications link component with unread count badge
 const NotificationsLink = () => {
-  const count = useSelector(selectUnreadNotificationGroupsCount)
-  const intl = useIntl()
+  const count = useSelector(selectUnreadNotificationGroupsCount);
+  const intl = useIntl();
 
   return (
     <ColumnLink
@@ -76,21 +79,21 @@ const NotificationsLink = () => {
       activeIcon={<IconWithBadge id='bell' icon={NotificationsActiveIcon} count={count} className='column-link__icon' />}
       text={intl.formatMessage(messages.notifications)}
     />
-  )
-}
+  );
+};
 
 // Follow requests link component with count badge
 const FollowRequestsLink = () => {
-  const count = useSelector(state => state.getIn(['user_lists', 'follow_requests', 'items'])?.size ?? 0)
-  const intl = useIntl()
-  const dispatch = useDispatch()
+  const count = useSelector(state => state.getIn(['user_lists', 'follow_requests', 'items'])?.size ?? 0);
+  const intl = useIntl();
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchFollowRequests())
-  }, [dispatch])
+    dispatch(fetchFollowRequests());
+  }, [dispatch]);
 
   if (count === 0) {
-    return null
+    return null;
   }
 
   return (
@@ -101,31 +104,24 @@ const FollowRequestsLink = () => {
       activeIcon={<IconWithBadge id='user-plus' icon={PersonAddActiveIcon} count={count} className='column-link__icon' />}
       text={intl.formatMessage(messages.followRequests)}
     />
-  )
-}
+  );
+};
 
 // User information panel component
 const UserInfoPanel = memo(({ account }) => {
-  const intl = useIntl()
+  const intl = useIntl();
 
-  if (!account) return null
+  if (!account) return null;
 
-  const followersCount = account.get('followers_count')
-  const followingCount = account.get('following_count')
-  const statusesCount = account.get('statuses_count')
-  const displayNameHtml = { __html: account.get('display_name_html') }
-  const acct = account.get('acct')
+  const followersCount = account.get('followers_count');
+  const followingCount = account.get('following_count');
+  const statusesCount = account.get('statuses_count');
+  const acct = account.get('acct');
 
   return (
     <div className='user-info-panel'>
       <div className='user-info-panel__header'>
-        <Link to={`/@${acct}`} className='user-info-panel__avatar'>
-          <img src={account.get('avatar')} alt={account.get('username')} />
-        </Link>
-        <div className='user-info-panel__names'>
-          <span dangerouslySetInnerHTML={displayNameHtml} />
-          <Link to={`/@${acct}`} className='user-info-panel__username'>@{acct}</Link>
-        </div>
+        <NavigationBar />
       </div>
 
       <div className='user-info-panel__stats'>
@@ -145,12 +141,12 @@ const UserInfoPanel = memo(({ account }) => {
         </Link>
       </div>
     </div>
-  )
-})
+  );
+});
 
 UserInfoPanel.propTypes = {
   account: ImmutablePropTypes.map,
-}
+};
 
 class NavigationPanel extends Component {
   static propTypes = {
@@ -160,14 +156,14 @@ class NavigationPanel extends Component {
   };
 
   isFirehoseActive = (match, location) => {
-    return match || location.pathname.startsWith('/public')
+    return match || location.pathname.startsWith('/public');
   };
 
   render () {
-    const { intl, account } = this.props
-    const { signedIn, disabledAccountId, permissions } = this.props.identity
+    const { intl, account } = this.props;
+    const { signedIn, disabledAccountId, permissions } = this.props.identity;
 
-    let banner = undefined
+    let banner = undefined;
 
     if (transientSingleColumn) {
       banner = (
@@ -178,7 +174,7 @@ class NavigationPanel extends Component {
             {intl.formatMessage(messages.advancedInterface)}
           </a>
         </div>
-      )
+      );
     }
 
     return (
@@ -194,7 +190,7 @@ class NavigationPanel extends Component {
         }
 
         {/* User information panel */}
-        {signedIn && account && (
+        {signedIn && account && (layoutType === 'two_column') &&(
           <UserInfoPanel account={account} />
         )}
 
@@ -252,12 +248,12 @@ class NavigationPanel extends Component {
 
         <NavigationPortal />
       </div>
-    )
+    );
   }
 }
 
 const mapStateToProps = (state) => ({
   account: state.getIn(['accounts', me]),
-})
+});
 
-export default connect(mapStateToProps)(injectIntl(withIdentity(NavigationPanel)))
+export default connect(mapStateToProps)(injectIntl(withIdentity(NavigationPanel)));

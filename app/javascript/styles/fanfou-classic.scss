@@ -4,55 +4,65 @@
 @import 'application';
 @import 'mastodon-light/diff';
 
-
-.columns-area__panels {
+body {
   background-color: #acdae5;
-  background-image: url(https://static.fanfou.com/img/bg/0.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top left;
 }
 
-.tabs-bar__wrapper {
-  background-color: #acdae5;
-  background-image: url(https://static.fanfou.com/img/bg/0.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top left;
+.columns-area__panels__main {
+  background-color: #fff;
 }
 
 .navigation-panel {
-  background: #e2f2da;
-  border-radius: 4px;
+  background-color: #e2f2da;
 }
+
+.columns-area__panels__pane--navigational {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  // margin: 20px 0 !important;
+}
+// #e2f2da
 
 .getting-started__footer {
   display: none;
 }
 
+.search {
+  margin: 10px;
+}
+
+.layout-single-column {
+  .search {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
 .search__input {
   background: #fff;
-  border-radius: 4px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.compose-form__highlightable {
+  border: none;
+}
+.column-header {
+  border: none;
+  // border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .status {
   border-bottom: 1px solid #eee;
 }
 
-//  ##0066cc
-.column-link--transparent.active {
-  color: #000;
-  background: hsla(0,0%,100%,.5);
-}
-
 .column-link--transparent {
   background: transparent;
   color: #0066cc;
-}
-
-.column-link--transparent:hover {
-  color: #000;
-  background: hsla(0,0%,100%,.5);
 }
 
 article:hover {
@@ -70,4 +80,31 @@ article:hover {
 
 .navigation-panel__logo {
   display: none !important;
+}
+
+.columns-area--mobile {
+  padding: 0;
+}
+
+@media screen and (min-width: 1175px) {
+  .columns-area__panels__main {
+    margin: 20px 0;
+  }
+
+  .columns-area__panels__pane__inner {
+    margin-top: 10px;
+  }
+
+  .columns-area__panels__main {
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .navigation-panel {
+    border-radius: 10px !important;
+  }
+
+  .compose-form .autosuggest-textarea__textarea {
+    padding: 10px 20px;
+  }
 }
