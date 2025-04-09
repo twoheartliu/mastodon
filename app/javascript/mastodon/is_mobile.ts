@@ -13,11 +13,7 @@ export const isMobile = (width: number) => width <= LAYOUT_BREAKPOINT;
 
 export const transientSingleColumn = !forceSingleColumn && !hasMultiColumnPath;
 
-export type LayoutType =
-  | 'mobile'
-  | 'single-column'
-  | 'multi-column'
-  | 'two-column';
+export type LayoutType = 'mobile' | 'single-column' | 'advanced' | 'two-column';
 export const layoutFromWindow = (): LayoutType => {
   if (isMobile(window.innerWidth)) {
     return 'mobile';
@@ -26,7 +22,7 @@ export const layoutFromWindow = (): LayoutType => {
     if (layoutType === 'two_column') {
       return 'two-column';
     } else {
-      return 'multi-column'; // advanced 或其他情况使用多列布局
+      return 'advanced'; // advanced 或其他情况使用多列布局
     }
   } else {
     return 'single-column';

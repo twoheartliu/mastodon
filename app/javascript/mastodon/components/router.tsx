@@ -50,7 +50,7 @@ function normalizePath(
   }
 
   if (
-    layoutFromWindow() === 'multi-column' &&
+    layoutFromWindow() === 'advanced' &&
     location.pathname &&
     !location.pathname.startsWith('/deck')
   ) {
