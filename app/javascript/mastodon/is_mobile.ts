@@ -17,14 +17,16 @@ export type LayoutType = 'mobile' | 'single-column' | 'advanced' | 'two-column';
 export const layoutFromWindow = (): LayoutType => {
   if (isMobile(window.innerWidth)) {
     return 'mobile';
-  } else if (!forceSingleColumn && !transientSingleColumn) {
-    // 根据用户设置返回不同的布局类型
-    if (layoutType === 'two_column') {
-      return 'two-column';
-    } else {
-      return 'advanced'; // advanced 或其他情况使用多列布局
-    }
   } else {
+    if (layoutType === 'two-column') return 'two-column';
+    if (layoutType === 'single-column') return 'single-column';
+    if (
+      layoutType === 'advanced' &&
+      !forceSingleColumn &&
+      !transientSingleColumn
+    ) {
+      return 'advanced';
+    }
     return 'single-column';
   }
 };
