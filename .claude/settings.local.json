@@ -4,7 +4,13 @@
       "Bash(git checkout:*)",
       "Bash(git merge:*)",
       "Bash(git add:*)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(yarn install)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(git commit:*)",
+      "Bash(grep:*)",
+      "Bash(corepack enable)"
     ],
     "deny": [],
     "ask": []
