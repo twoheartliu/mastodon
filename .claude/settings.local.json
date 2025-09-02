@@ -18,7 +18,9 @@
       "Bash(yarn:*)",
       "Bash(pkill:*)",
       "Bash(timeout 30s yarn vite build)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(bundle exec rails assets:precompile:*)",
+      "Read(/Users/liuzhaofeng/**)"
     ],
     "deny": [],
     "ask": []
