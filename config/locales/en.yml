@@ -1940,6 +1940,7 @@ en:
   themes:
     contrast: Mastodon (High contrast)
     default: Mastodon (Dark)
+    fanfou-classic: Fanfou(Classic)
     mastodon-light: Mastodon (Light)
     system: Automatic (use system theme)
   time:
