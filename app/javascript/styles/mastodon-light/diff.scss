@@ -1,4 +1,4 @@
-/* stylelint-disable scss/load-no-partial-leading-underscore */
+/* stylelint-disable scss/load-no-partial-leading-underscore -- Legacy import path required for compatibility */
 // Notes!
 // Sass color functions, "darken" and "lighten" are automatically replaced.
 @use 'sass:color';
