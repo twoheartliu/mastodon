@@ -14,7 +14,11 @@
       "Bash(yarn lint:js:*)",
       "Bash(yarn build:*)",
       "Bash(ruby:*)",
-      "Bash(git grep:*)"
+      "Bash(git grep:*)",
+      "Bash(yarn:*)",
+      "Bash(pkill:*)",
+      "Bash(timeout 30s yarn vite build)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []

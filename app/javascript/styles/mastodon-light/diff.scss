@@ -2,7 +2,9 @@
 // Sass color functions, "darken" and "lighten" are automatically replaced.
 @use 'sass:color';
 @use '../mastodon/functions' as *;
-@use '../mastodon/variables' as *;
+// Variables are inherited from mastodon-light/variables via @use in mastodon-light.scss
+// Since mastodon-light/variables uses @use '../mastodon/variables' with overrides,
+// all variables are available in this scope when imported by @use parent chain
 
 .simple_form .button.button-tertiary {
   color: $highlight-text-color;

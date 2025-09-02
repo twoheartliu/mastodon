@@ -44,3 +44,6 @@ $classic-highlight-color: $blurple-500;
   $action-button-color: hsl(240deg, 16%, 45%),
   $emojis-requiring-inversion: 'chains'
 );
+
+// Forward all variables to make them available to importing modules
+@forward '../mastodon/variables';
