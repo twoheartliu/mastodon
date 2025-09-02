@@ -10,7 +10,9 @@
       "Bash(npm install:*)",
       "Bash(git commit:*)",
       "Bash(grep:*)",
-      "Bash(corepack enable)"
+      "Bash(corepack enable)",
+      "Bash(yarn lint:js:*)",
+      "Bash(yarn build:*)"
     ],
     "deny": [],
     "ask": []
