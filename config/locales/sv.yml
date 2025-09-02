@@ -270,17 +270,12 @@ sv:
         destroy_user_role_html: "%{name} raderade rollen %{target}"
         disable_2fa_user_html: "%{name} inaktiverade tvåfaktorsautentiseringskrav för användaren %{target}"
         disable_custom_emoji_html: "%{name} inaktiverade emoji %{target}"
-<<<<<<< HEAD
-        disable_sign_in_token_auth_user_html: "%{name} inaktiverade e-posttokenautentisering för %{target}"
-        disable_user_html: "%{name} stängde av inloggning för användaren %{target}"
-        enable_custom_emoji_html: "%{name} aktiverade emoji %{target}"
-=======
         disable_relay_html: "%{name} inaktiverade ombudet %{target}"
         disable_sign_in_token_auth_user_html: "%{name} inaktiverade e-posttokenautentisering för %{target}"
         disable_user_html: "%{name} stängde av inloggning för användaren %{target}"
         enable_custom_emoji_html: "%{name} aktiverade emoji %{target}"
         enable_relay_html: "%{name} aktiverat ombudet %{target}"
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user_html: "%{name} aktiverade e-posttokenautentisering för %{target}"
         enable_user_html: "%{name} aktiverade inloggning för användaren %{target}"
         memorialize_account_html: "%{name} gjorde %{target}s konto till en minnessida"
@@ -1247,11 +1242,8 @@ sv:
     set_new_password: Skriv in nytt lösenord
     setup:
       email_below_hint_html: Kolla din skräppost-mapp eller begär en ny. Du kan korrigera din e-postadress om den är fel.
-<<<<<<< HEAD
-      email_settings_hint_html: Klicka på länken som vi har skickat till dig för att bekräfta %{email}. Vi väntar här.
-=======
       email_settings_hint_html: Klicka på länken vi skickade till %{email} för att börja använda Mastodon. Vi väntar här.
->>>>>>> v4.4.3
+
       link_not_received: Fick du ingen länk?
       new_confirmation_instructions_sent: Du kommer att få ett nytt e-postmeddelande med bekräftelselänken om några minuter!
       title: Kolla din inkorg

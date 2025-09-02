@@ -42,10 +42,8 @@
   "account.follows.empty": "ਇਹ ਵਰਤੋਂਕਾਰ ਹਾਲੇ ਕਿਸੇ ਨੂੰ ਫ਼ਾਲੋ ਨਹੀਂ ਕਰਦਾ ਹੈ।",
   "account.follows_you": "ਤੁਹਾਨੂੰ ਫ਼ਾਲੋ ਕਰਦੇ ਹਨ",
   "account.go_to_profile": "ਪਰੋਫਾਇਲ ਉੱਤੇ ਜਾਓ",
-<<<<<<< HEAD
-=======
   "account.hide_reblogs": "{name} ਵਲੋਂ ਬੂਸਟ ਨੂੰ ਲੁਕਾਓ",
->>>>>>> v4.4.3
+
   "account.joined_short": "ਜੁਆਇਨ ਕੀਤਾ",
   "account.media": "ਮੀਡੀਆ",
   "account.mention": "@{name} ਦਾ ਜ਼ਿਕਰ",
@@ -77,9 +75,6 @@
   "admin.dashboard.retention.cohort_size": "ਨਵੇਂ ਵਰਤੋਂਕਾਰ",
   "alert.unexpected.title": "ਓਹੋ!",
   "alt_text_badge.title": "ਬਦਲੀ ਲਿਖਤ",
-<<<<<<< HEAD
-  "announcement.announcement": "ਹੋਕਾ",
-=======
   "alt_text_modal.cancel": "ਰੱਦ ਕਰੋ",
   "alt_text_modal.done": "ਮੁਕੰਮਲ",
   "announcement.announcement": "ਹੋਕਾ",
@@ -93,7 +88,7 @@
   "annual_report.summary.most_used_hashtag.none": "ਕੋਈ ਨਹੀਂ",
   "annual_report.summary.new_posts.new_posts": "ਨਵੀਆਂ ਪੋਸਟਾਂ",
   "annual_report.summary.thanks": "Mastodon ਦਾ ਹਿੱਸਾ ਬਣਨ ਵਾਸਤੇ ਧੰਨਵਾਦ ਹੈ!",
->>>>>>> v4.4.3
+
   "audio.hide": "ਆਡੀਓ ਨੂੰ ਲੁਕਾਓ",
   "block_modal.show_less": "ਘੱਟ ਦਿਖਾਓ",
   "block_modal.show_more": "ਵੱਧ ਦਿਖਾਓ",
@@ -116,10 +111,8 @@
   "column.direct": "ਨਿੱਜੀ ਜ਼ਿਕਰ",
   "column.directory": "ਪ੍ਰੋਫਾਈਲਾਂ ਨੂੰ ਦੇਖੋ",
   "column.domain_blocks": "ਪਾਬੰਦੀ ਲਾਏ ਡੋਮੇਨ",
-<<<<<<< HEAD
-=======
   "column.edit_list": "ਸੂਚੀ ਨੂੰ ਸੋਧੋ",
->>>>>>> v4.4.3
+
   "column.favourites": "ਮਨਪਸੰਦ",
   "column.firehose": "ਲਾਈਵ ਫੀਡ",
   "column.follow_requests": "ਫ਼ਾਲੋ ਦੀਆਂ ਬੇਨਤੀਆਂ",
@@ -152,15 +145,10 @@
   "compose_form.lock_disclaimer.lock": "ਲਾਕ ਹੈ",
   "compose_form.placeholder": "ਤੁਹਾਡੇ ਮਨ ਵਿੱਚ ਕੀ ਹੈ?",
   "compose_form.poll.option_placeholder": "{number} ਚੋਣ",
-<<<<<<< HEAD
-  "compose_form.poll.type": "ਸਟਾਈਲ",
-  "compose_form.publish": "ਪੋਸਟ",
-  "compose_form.publish_form": "ਨਵੀਂ ਪੋਸਟ",
-=======
   "compose_form.poll.single": "ਇਕੱਲੀ ਚੋਣ",
   "compose_form.poll.type": "ਸਟਾਈਲ",
   "compose_form.publish": "ਪੋਸਟ",
->>>>>>> v4.4.3
+
   "compose_form.reply": "ਜਵਾਬ ਦਿਓ",
   "compose_form.save_changes": "ਅੱਪਡੇਟ",
   "compose_form.spoiler.marked": "ਸਮੱਗਰੀ ਚੇਤਾਵਨੀ ਨੂੰ ਹਟਾਓ",
@@ -180,17 +168,12 @@
   "confirmations.logout.confirm": "ਬਾਹਰ ਹੋਵੋ",
   "confirmations.logout.message": "ਕੀ ਤੁਸੀਂ ਲਾਗ ਆਉਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
   "confirmations.logout.title": "ਲਾਗ ਆਉਟ ਕਰਨਾ ਹੈ?",
-<<<<<<< HEAD
-  "confirmations.mute.confirm": "ਮੌਨ ਕਰੋ",
-  "confirmations.redraft.confirm": "ਹਟਾਓ ਤੇ ਮੁੜ-ਡਰਾਫਟ",
-  "confirmations.reply.confirm": "ਜਵਾਬ ਦੇਵੋ",
-=======
   "confirmations.missing_alt_text.secondary": "ਕਿਵੇਂ ਵੀ ਪੋਸਟ ਕਰੋ",
   "confirmations.mute.confirm": "ਮੌਨ ਕਰੋ",
   "confirmations.redraft.confirm": "ਹਟਾਓ ਤੇ ਮੁੜ-ਡਰਾਫਟ",
   "confirmations.remove_from_followers.confirm": "ਫ਼ਾਲੋਅਰ ਨੂੰ ਹਟਾਓ",
   "confirmations.remove_from_followers.title": "ਫ਼ਾਲੋਅਰ ਨੂੰ ਹਟਾਉਣਾ ਹੈ?",
->>>>>>> v4.4.3
+
   "confirmations.unfollow.confirm": "ਅਣ-ਫ਼ਾਲੋ",
   "confirmations.unfollow.message": "ਕੀ ਤੁਸੀਂ {name} ਨੂੰ ਅਣ-ਫ਼ਾਲੋ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
   "confirmations.unfollow.title": "ਵਰਤੋਂਕਾਰ ਨੂੰ ਅਣ-ਫ਼ਾਲੋ ਕਰਨਾ ਹੈ?",
@@ -210,11 +193,7 @@
   "disabled_account_banner.account_settings": "ਖਾਤੇ ਦੀਆਂ ਸੈਟਿੰਗਾਂ",
   "disabled_account_banner.text": "ਤੁਹਾਡਾ ਖਾਤਾ {disabledAccount} ਇਸ ਵੇਲੇ ਅਸਮਰੱਥ ਕੀਤਾ ਹੈ।",
   "dismissable_banner.dismiss": "ਰੱਦ ਕਰੋ",
-<<<<<<< HEAD
-  "dismissable_banner.explore_links": "These news stories are being talked about by people on this and other servers of the decentralized network right now.",
-  "dismissable_banner.explore_tags": "These hashtags are gaining traction among people on this and other servers of the decentralized network right now.",
-=======
->>>>>>> v4.4.3
+
   "domain_block_modal.block": "ਸਰਵਰ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਓ",
   "domain_block_modal.block_account_instead": "ਇਸ ਦੀ ਬਜਾਏ @{name} ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਓ",
   "domain_block_modal.title": "ਡੋਮੇਨ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਉਣੀ ਹੈ?",
@@ -254,14 +233,12 @@
   "explore.trending_links": "ਖ਼ਬਰਾਂ",
   "explore.trending_statuses": "ਪੋਸਟਾਂ",
   "explore.trending_tags": "ਹੈਸ਼ਟੈਗ",
-<<<<<<< HEAD
-=======
   "featured_carousel.header": "{count, plural, one {ਟੰਗੀ ਹੋਈ ਪੋਸਟ} other {ਟੰਗੀਆਂ ਹੋਈਆਂ ਪੋਸਟਾਂ}}",
   "featured_carousel.next": "ਅੱਗੇ",
   "featured_carousel.post": "ਪੋਸਟ",
   "featured_carousel.previous": "ਪਿੱਛੇ",
   "featured_carousel.slide": "{total} ਵਿੱਚੋਂ {index}",
->>>>>>> v4.4.3
+
   "filter_modal.added.expired_title": "ਫਿਲਟਰ ਦੀ ਮਿਆਦ ਪੁੱਗੀ!",
   "filter_modal.added.review_and_configure_title": "ਫਿਲਟਰ ਸੈਟਿੰਗਾਂ",
   "filter_modal.added.settings_link": "ਸੈਟਿੰਗਾਂ ਸਫ਼ਾ",
@@ -312,29 +289,22 @@
   "home.column_settings.show_replies": "ਜਵਾਬਾਂ ਨੂੰ ਵੇਖੋ",
   "home.hide_announcements": "ਐਲਾਨਾਂ ਨੂੰ ਓਹਲੇ ਕਰੋ",
   "home.pending_critical_update.link": "ਅੱਪਡੇਟ ਵੇਖੋ",
-<<<<<<< HEAD
-  "ignore_notifications_modal.ignore": "ਨੋਟਫਿਕੇਸ਼ਨਾਂ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰੋ",
-  "interaction_modal.login.action": "ਮੈਨੂੰ ਮੁੱਖ ਸਫ਼ੇ ਉੱਤੇ ਲੈ ਜਾਓ",
-  "interaction_modal.no_account_yet": "Mastodon ਉੱਤੇ ਨਹੀਂ ਹੋ?",
-=======
   "home.pending_critical_update.title": "ਗੰਭੀਰ ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ!",
   "home.show_announcements": "ਐਲਾਨਾਂ ਨੂੰ ਵੇਖਾਓ",
   "ignore_notifications_modal.ignore": "ਨੋਟਫਿਕੇਸ਼ਨਾਂ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰੋ",
   "info_button.label": "ਮਦਦ",
   "interaction_modal.go": "ਜਾਓ",
   "interaction_modal.no_account_yet": "ਹਾਲੇ ਖਾਤਾ ਨਹੀਂ ਹੈ?",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "ਵੱਖਰੇ ਸਰਵਰ ਉੱਤੇ",
   "interaction_modal.on_this_server": "ਇਸ ਸਰਵਰ ਉੱਤੇ",
   "interaction_modal.title.favourite": "{name} ਦੀ ਪੋਸਟ ਨੂੰ ਪਸੰਦ ਕਰੋ",
   "interaction_modal.title.follow": "{name} ਨੂੰ ਫ਼ਾਲੋ ਕਰੋ",
   "interaction_modal.title.reblog": "{name} ਦੀ ਪੋਸਟ ਨੂੰ ਬੂਸਟ ਕਰੋ",
   "interaction_modal.title.reply": "{name} ਦੀ ਪੋਸਟ ਦਾ ਜਵਾਬ ਦਿਓ",
-<<<<<<< HEAD
-=======
   "interaction_modal.title.vote": "{name} ਦੀ ਚੋਣ ਵਾਸਤੇ ਵੋਟ ਪਾਓ",
   "interaction_modal.username_prompt": "ਜਿਵੇਂ {example}",
->>>>>>> v4.4.3
+
   "intervals.full.days": "{number, plural, one {# ਦਿਨ} other {# ਦਿਨ}}",
   "intervals.full.hours": "{number, plural, one {# ਘੰਟਾ} other {# ਘੰਟੇ}}",
   "intervals.full.minutes": "{number, plural, one {# ਮਿੰਟ} other {# ਮਿੰਟ}}",
@@ -379,12 +349,6 @@
   "link_preview.author": "{name} ਵਲੋਂ",
   "link_preview.more_from_author": "{name} ਵਲੋਂ ਹੋਰ",
   "link_preview.shares": "{count, plural, one {{counter} ਪੋਸਟ} other {{counter} ਪੋਸਟਾਂ}}",
-<<<<<<< HEAD
-  "lists.account.add": "ਸੂਚੀ ਵਿੱਚ ਜੋੜੋ",
-  "lists.account.remove": "ਸੂਚੀ ਵਿਚੋਂ ਹਟਾਓ",
-  "lists.delete": "ਸੂਚੀ ਹਟਾਓ",
-  "lists.edit": "ਸੂਚੀ ਨੂੰ ਸੋਧੋ",
-=======
   "lists.add_member": "ਜੋੜੋ",
   "lists.add_to_list": "ਸੂਚੀ ਵਿੱਚ ਜੋੜੋ",
   "lists.create": "ਬਣਾਓ",
@@ -400,7 +364,7 @@
   "lists.no_members_yet": "ਹਾਲੇ ਮੈਂਬਰ ਨਹੀਂ ਹਨ।",
   "lists.no_results_found": "ਕੋਈ ਨਤੀਜਾ ਨਹੀਂ ਮਿਲਿਆ।",
   "lists.remove_member": "ਹਟਾਓ",
->>>>>>> v4.4.3
+
   "lists.replies_policy.followed": "ਕੋਈ ਵੀ ਫ਼ਾਲੋ ਕੀਤਾ ਵਰਤੋਂਕਾਰ",
   "lists.replies_policy.list": "ਸੂਚੀ ਦੇ ਮੈਂਬਰ",
   "lists.replies_policy.none": "ਕੋਈ ਨਹੀਂ",
@@ -410,13 +374,10 @@
   "media_gallery.hide": "ਲੁਕਾਓ",
   "mute_modal.hide_from_notifications": "ਨੋਟੀਫਿਕੇਸ਼ਨਾਂ ਵਿੱਚੋਂ ਲੁਕਾਓ",
   "mute_modal.show_options": "ਚੋਣਾਂ ਨੂੰ ਵੇਖਾਓ",
-<<<<<<< HEAD
-  "navigation_bar.about": "ਇਸ ਬਾਰੇ",
-=======
   "mute_modal.title": "ਵਰਤੋਂਕਾਰ ਨੂੰ ਮੌਨ ਕਰਨਾ ਹੈ?",
   "navigation_bar.about": "ਇਸ ਬਾਰੇ",
   "navigation_bar.account_settings": "ਪਾਸਵਰਡ ਅਤੇ ਸੁਰੱਖਿਆ",
->>>>>>> v4.4.3
+
   "navigation_bar.administration": "ਪਰਸ਼ਾਸ਼ਨ",
   "navigation_bar.advanced_interface": "ਤਕਨੀਕੀ ਵੈੱਬ ਇੰਟਰਫੇਸ ਵਿੱਚ ਖੋਲ੍ਹੋ",
   "navigation_bar.automated_deletion": "ਆਪਣੇ-ਆਪ ਹਟਾਈ ਪੋਸਟ",
@@ -439,11 +400,9 @@
   "navigation_bar.search_trends": "ਖੋਜ / ਰੁਝਾਨ",
   "not_signed_in_indicator.not_signed_in": "ਇਹ ਸਰੋਤ ਵਰਤਣ ਲਈ ਤੁਹਾਨੂੰ ਲਾਗਇਨ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।",
   "notification.admin.sign_up": "{name} ਨੇ ਸਾਈਨ ਅੱਪ ਕੀਤਾ",
-<<<<<<< HEAD
-=======
   "notification.favourite": "{name} ਨੇ ਤੁਹਾਡੀ ਪੋਸਟ ਨੂੰ ਪਸੰਦ ਕੀਤਾ",
   "notification.favourite_pm": "{name} ਨੇ ਤੁਹਾਡੇ ਨਿੱਜੀ ਜ਼ਿਕਰ ਨੂੰ ਪਸੰਦ ਕੀਤਾ",
->>>>>>> v4.4.3
+
   "notification.follow": "{name} ਨੇ ਤੁਹਾਨੂੰ ਫ਼ਾਲੋ ਕੀਤਾ",
   "notification.follow.name_and_others": "{name} ਅਤੇ <a>{count, plural, one {# ਹੋਰ} other {# ਹੋਰਾਂ}}</a> ਨੇ ਤੁਹਾਨੂੰ ਫ਼ਾਲੋ ਕੀਤਾ",
   "notification.follow_request": "{name} ਨੇ ਤੁਹਾਨੂੰ ਫ਼ਾਲੋ ਕਰਨ ਦੀ ਬੇਨਤੀ ਕੀਤੀ ਹੈ",
@@ -458,10 +417,8 @@
   "notification.moderation_warning.action_silence": "ਤੁਹਾਡੇ ਖਾਤੇ ਨੂੰ ਸੀਮਿਤ ਕੀਤਾ ਗਿਆ ਹੈ।",
   "notification.moderation_warning.action_suspend": "ਤੁਹਾਡੇ ਖਾਤੇ ਨੂੰ ਮੁਅੱਤਲ ਕੀਤਾ ਗਿਆ ਹੈ।",
   "notification.reblog": "{name} boosted your status",
-<<<<<<< HEAD
-=======
   "notification.relationships_severance_event": "{name} ਨਾਲ ਕਨੈਕਸ਼ਨ ਗੁਆਚੇ",
->>>>>>> v4.4.3
+
   "notification.relationships_severance_event.learn_more": "ਹੋਰ ਜਾਣੋ",
   "notification.status": "{name} ਨੇ ਹੁਣੇ ਪੋਸਟ ਕੀਤਾ",
   "notification.update": "{name} ਨੋ ਪੋਸਟ ਨੂੰ ਸੋਧਿਆ",
@@ -505,16 +462,10 @@
   "notifications.policy.filter_not_followers_title": "ਲੋਕ ਤੁਹਾਨੂੰ ਫ਼ਾਲੋ ਨਹੀਂ ਕਰਦੇ",
   "notifications.policy.filter_not_following_hint": "ਜਦ ਤੱਕ ਤੁਸੀਂ ਉਹਨਾਂ ਨੂੰ ਖੁਦ ਮਨਜ਼ੂਰੀ ਨਹੀਂ ਦਿੰਦੇ",
   "notifications_permission_banner.enable": "ਡੈਸਕਟਾਪ ਸੂਚਨਾਵਾਂ ਸਮਰੱਥ ਕਰੋ",
-<<<<<<< HEAD
-  "onboarding.actions.go_to_explore": "ਮੈਨੂੰ ਰੁਝਾਨ ਵੇਖਾਓ",
-  "onboarding.actions.go_to_home": "ਮੇਰੀ ਮੁੱਖ ਫੀਡ ਉੱਤੇ ਲੈ ਜਾਓ",
-  "onboarding.follows.lead": "",
-  "onboarding.follows.title": "ਆਪਣੀ ਹੋਮ ਫੀਡ ਨੂੰ ਨਿੱਜੀ ਬਣਾਓ",
-=======
   "onboarding.follows.back": "ਪਿੱਛੇ",
   "onboarding.follows.done": "ਮੁਕੰਮਲ",
   "onboarding.follows.search": "ਖੋਜੋ",
->>>>>>> v4.4.3
+
   "onboarding.profile.note": "ਜਾਣਕਾਰੀ",
   "onboarding.profile.save_and_continue": "ਸੰਭਾਲੋ ਅਤੇ ਜਾਰੀ ਰੱਖੋ",
   "onboarding.profile.title": "ਪਰੋਫਾਈਲ ਸੈਟਅੱਪ",
@@ -526,10 +477,7 @@
   "poll.voted": "ਤੁਸੀਂ ਇਸ ਜਵਾਬ ਲਈ ਵੋਟ ਕੀਤਾ",
   "privacy.change": "ਪੋਸਟ ਦੀ ਪਰਦੇਦਾਰੀ ਨੂੰ ਬਦਲੋ",
   "privacy.direct.long": "ਪੋਸਟ ਵਿੱਚ ਜ਼ਿਕਰ ਕੀਤੇ ਹਰ ਕੋਈ",
-<<<<<<< HEAD
-  "privacy.direct.short": "ਖਾਸ ਲੋਕ",
-=======
->>>>>>> v4.4.3
+
   "privacy.private.long": "ਸਿਰਫ਼ ਤੁਹਾਡੇ ਫ਼ਾਲੋਅਰ ਹੀ",
   "privacy.private.short": "ਫ਼ਾਲੋਅਰ",
   "privacy.public.short": "ਜਨਤਕ",
@@ -537,11 +485,8 @@
   "privacy_policy.title": "ਪਰਦੇਦਾਰੀ ਨੀਤੀ",
   "recommended": "ਸਿਫ਼ਾਰਸ਼ੀ",
   "refresh": "ਤਾਜ਼ਾ ਕਰੋ",
-<<<<<<< HEAD
-  "regeneration_indicator.label": "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ...",
-=======
   "regeneration_indicator.please_stand_by": "ਕਿਰਪਾ ਕਰਕੇ ਉਡੀਕੋ।",
->>>>>>> v4.4.3
+
   "relative_time.days": "{number}ਦਿਨ",
   "relative_time.full.days": "{number, plural, one {# ਦਿਨ} other {# ਦਿਨ}} ਪਹਿਲਾਂ",
   "relative_time.full.hours": "{number, plural, one {# ਘੰਟਾ} other {# ਘੰਟੇ}} ਪਹਿਲਾਂ",
@@ -601,10 +546,7 @@
   "search_results.no_results": "ਕੋਈ ਨਤੀਜੇ ਨਹੀਂ ਹਨ।",
   "search_results.see_all": "ਸਭ ਵੇਖੋ",
   "search_results.statuses": "ਪੋਸਟਾਂ",
-<<<<<<< HEAD
-  "search_results.title": "{q} ਲਈ ਖੋਜ",
-=======
->>>>>>> v4.4.3
+
   "server_banner.active_users": "ਸਰਗਰਮ ਵਰਤੋਂਕਾਰ",
   "sign_in_banner.create_account": "ਖਾਤਾ ਬਣਾਓ",
   "sign_in_banner.sign_in": "ਲਾਗਇਨ",
@@ -638,10 +580,8 @@
   "status.reblogs.empty": "No one has boosted this toot yet. When someone does, they will show up here.",
   "status.redraft": "ਹਟਾਓ ਤੇ ਮੁੜ-ਡਰਾਫਟ",
   "status.remove_bookmark": "ਬੁੱਕਮਾਰਕ ਨੂੰ ਹਟਾਓ",
-<<<<<<< HEAD
-=======
   "status.remove_favourite": "ਮਨਪਸੰਦ ਵਿੱਚੋਂ ਹਟਾਓ",
->>>>>>> v4.4.3
+
   "status.replied_in_thread": "ਮਾਮਲੇ ਵਿੱਚ ਜਵਾਬ ਦਿਓ",
   "status.replied_to": "{name} ਨੂੰ ਜਵਾਬ ਦਿੱਤਾ",
   "status.reply": "ਜਵਾਬ ਦੇਵੋ",
@@ -661,12 +601,10 @@
   "tabs_bar.home": "ਘਰ",
   "tabs_bar.menu": "ਮੇਨੂ",
   "tabs_bar.notifications": "ਸੂਚਨਾਵਾਂ",
-<<<<<<< HEAD
-=======
   "tabs_bar.publish": "ਨਵੀਂ ਪੋਸਟ",
   "tabs_bar.search": "ਖੋਜੋ",
   "terms_of_service.title": "ਸੇਵਾ ਦੀਆਂ ਸ਼ਰਤਾਂ",
->>>>>>> v4.4.3
+
   "time_remaining.days": "{number, plural, one {# ਦਿਨ} other {# ਦਿਨ}} ਬਾਕੀ",
   "time_remaining.hours": "{number, plural, one {# ਘੰਟਾ} other {# ਘੰਟੇ}} ਬਾਕੀ",
   "time_remaining.minutes": "{number, plural, one {# ਮਿੰਟ} other {# ਮਿੰਟ}} ਬਾਕੀ",
@@ -676,11 +614,7 @@
   "units.short.million": "{count}ਮਿ",
   "units.short.thousand": "{count}ਹਜ਼ਾਰ",
   "upload_button.label": "ਚਿੱਤਰ, ਵੀਡੀਓ ਜਾਂ ਆਡੀਓ ਫਾਇਲ ਨੂੰ ਜੋੜੋ",
-<<<<<<< HEAD
-  "upload_form.audio_description": "ਬੋਲ਼ੇ ਜਾਂ ਸੁਣਨ ਵਿੱਚ ਮੁਸ਼ਕਿਲ ਵਾਲੇ ਲੋਕਾਂ ਲਈ ਵੇਰਵੇ",
-  "upload_form.description": "ਅੰਨ੍ਹੇ ਜਾਂ ਦੇਖਣ ਲਈ ਮੁਸ਼ਕਲ ਵਾਲੇ ਲੋਕਾਂ ਲਈ ਵੇਰਵੇ",
-=======
->>>>>>> v4.4.3
+
   "upload_form.edit": "ਸੋਧ",
   "upload_progress.label": "ਅੱਪਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
   "upload_progress.processing": "ਕਾਰਵਾਈ ਚੱਲ ਰਹੀ ਹੈ…",
@@ -691,16 +625,10 @@
   "video.expand": "ਵੀਡੀਓ ਨੂੰ ਫੈਲਾਓ",
   "video.fullscreen": "ਪੂਰੀ ਸਕਰੀਨ",
   "video.hide": "ਵੀਡੀਓ ਨੂੰ ਲੁਕਾਓ",
-<<<<<<< HEAD
-  "video.mute": "ਆਵਾਜ਼ ਨੂੰ ਬੰਦ ਕਰੋ",
-  "video.pause": "ਠਹਿਰੋ",
-  "video.play": "ਚਲਾਓ",
-  "video.unmute": "ਆਵਾਜ਼ ਨੂੰ ਸੁਣਾਓ"
-=======
   "video.mute": "ਮੌਨ",
   "video.pause": "ਠਹਿਰੋ",
   "video.play": "ਚਲਾਓ",
   "video.volume_down": "ਅਵਾਜ਼ ਘਟਾਓ",
   "video.volume_up": "ਅਵਾਜ਼ ਵਧਾਓ"
->>>>>>> v4.4.3
+
 }

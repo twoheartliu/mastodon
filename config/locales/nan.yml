@@ -10,14 +10,6 @@ nan:
     followers:
       other: 跟tuè ê
     following: Leh跟tuè
-<<<<<<< HEAD
-    last_active: 頂kái活動ê時間
-    link_verified_on: Tsit ê連結ê所有權佇 %{date} 受檢查
-    posts:
-      other: PO文
-    posts_tab_heading: PO文
-  admin:
-=======
     instance_actor_flash: Tsit ê口座是虛ê，用來代表tsit臺服侍器，毋是個人用者ê。伊用來做聯邦ê路用，毋好kā伊ê權限停止。
     last_active: 頂kái活動ê時間
     link_verified_on: Tsit ê連結ê所有權佇 %{date} 受檢查
@@ -34,14 +26,12 @@ nan:
       already_silenced: Tsit ê口座有受著限制。
       already_suspended: Tsit ê口座ê權限已經hōo lâng停止。
       title: Kā %{acct} 做審核ê動作
->>>>>>> v4.4.3
+
     account_moderation_notes:
       create: 留記錄
       created_msg: 管理記錄成功建立！
       destroyed_msg: 管理記錄成功thâi掉！
     accounts:
-<<<<<<< HEAD
-=======
       add_email_domain_block: 封鎖電子phue ê網域
       approve: 允准
       approved_msg: 成功審核 %{username} ê註冊申請ah
@@ -66,17 +56,14 @@ nan:
       confirming: Teh確認
       custom: 自訂
       delete: Thâi資料
->>>>>>> v4.4.3
+
       deleted: Thâi掉ah
       demote: 降級
       destroyed_msg: Teh-beh thâi掉 %{username} ê資料
       disable: 冷凍
       disable_sign_in_token_auth: 停止用電子phue ê token認證
-<<<<<<< HEAD
-      disable_two_factor_authentication: 停止用2FA
-=======
       disable_two_factor_authentication: 停止用雙因素認證
->>>>>>> v4.4.3
+
       disabled: 冷凍起來ah
       display_name: 顯示ê名
       domain: 域名
@@ -84,8 +71,6 @@ nan:
       email: 電子phue箱
       email_status: 電子phue ê狀態
       enable: 取消冷凍
-<<<<<<< HEAD
-=======
       enable_sign_in_token_auth: 啟用電子phue ê token認證
       enabled: 啟用ah
       enabled_msg: 成功kā %{username} ê口座退冰
@@ -97,20 +82,12 @@ nan:
       invited_by: 邀請ê lâng
       ip: IP
       joined: 加入ê時
->>>>>>> v4.4.3
+
       location:
         all: Kui ê
         local: 本地
         remote: 別ê站
         title: 位置
-<<<<<<< HEAD
-    instances:
-      dashboard:
-        instance_languages_dimension: Tsia̍p用ê語言
-    statuses:
-      language: 語言
-      title: 口座ê PO文
-=======
       login_status: 登入ê狀態
       media_attachments: 媒體ê附件
       memorialize: 變做故人ê口座
@@ -716,30 +693,11 @@ nan:
         manage_announcements: 管理公告
     statuses:
       language: 語言
->>>>>>> v4.4.3
+
     trends:
       tags:
         dashboard:
           tag_languages_dimension: Tsia̍p用ê語言
-<<<<<<< HEAD
-  auth:
-    privacy_policy_agreement_html: 我有讀，同意<a href="%{privacy_policy_path}" target="_blank">隱私權政策</a>
-    setup:
-      email_settings_hint_html: 請點gún所送ê連結來驗證 %{email}。Gún tī tsia等lí。
-    sign_up:
-      preamble: 用tī tsit臺Mastodon服侍器ê口座，lí thang跟tuè其他佇tsit ê網路ê lâng，無論in ê口座khǹg tī tueh。
-  imports:
-    overwrite_preambles:
-      blocking_html: Lí teh-beh用<strong>%{filename}</strong> 內底ê <strong>%{total_items} ê口座</strong>，替換lí ê封鎖列單。
-    preambles:
-      muting_html: Lí teh-beh kā <strong>%{filename}</strong>內底ê<strong>%{total_items} ê口座</strong><strong>消音</strong>。
-  scheduled_statuses:
-    too_soon: 預定PO文ê時間kan-ta tī未來
-  statuses:
-    default_language: Kap界面ê語言sio kâng
-  user_mailer:
-    welcome:
-=======
   scheduled_statuses:
     too_soon: Tio̍h用未來ê日期。
   statuses:
@@ -749,5 +707,5 @@ nan:
   user_mailer:
     welcome:
       feature_creativity: Mastodon支持聲音、影kap圖片êPO文、容易使用性ê描述、投票、內容ê警告、動畫ê標頭、自訂ê繪文字kap裁縮小圖ê控制等等，幫tsān lí展現家己。無論beh發表藝術作品、音樂，á是podcast，Mastodon佇tsia為lí服務。
->>>>>>> v4.4.3
+
       sign_in_action: 登入

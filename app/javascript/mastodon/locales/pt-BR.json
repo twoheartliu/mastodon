@@ -266,14 +266,8 @@
   "disabled_account_banner.text": "Sua conta {disabledAccount} está desativada no momento.",
   "dismissable_banner.community_timeline": "Estas são as publicações públicas mais recentes das pessoas cujas contas são hospedadas por {domain}.",
   "dismissable_banner.dismiss": "Dispensar",
-<<<<<<< HEAD
-  "dismissable_banner.explore_links": "Estas novas histórias estão sendo contadas por pessoas neste e em outros servidores da rede descentralizada no momento.",
-  "dismissable_banner.explore_statuses": "Estas são postagens de toda a rede social que estão ganhando tração hoje. Postagens mais recentes com mais impulsos e favoritos têm classificações mais altas.",
-  "dismissable_banner.explore_tags": "Estas hashtags estão ganhando popularidade no momento entre as pessoas deste e de outros servidores da rede descentralizada.",
-  "dismissable_banner.public_timeline": "Estas são as publicações públicas mais recentes de pessoas na rede social que pessoas em {domain} seguem.",
-=======
   "dismissable_banner.public_timeline": "Estas são as publicações mais recentes das pessoas no fediverse que as pessoas do {domain} seguem.",
->>>>>>> v4.4.3
+
   "domain_block_modal.block": "Bloquear servidor",
   "domain_block_modal.block_account_instead": "Bloquear @{name}",
   "domain_block_modal.they_can_interact_with_old_posts": "Pessoas deste servidor podem interagir com suas publicações antigas.",
@@ -691,49 +685,21 @@
   "onboarding.follows.back": "Voltar",
   "onboarding.follows.done": "Feito",
   "onboarding.follows.empty": "Infelizmente, não é possível mostrar resultados agora. Você pode tentar usar a busca ou navegar na página de exploração para encontrar pessoas para seguir, ou tentar novamente mais tarde.",
-<<<<<<< HEAD
-  "onboarding.follows.lead": "Sua página inicial é a principal forma de explorar o Mastodon. Quanto mais pessoas você seguir, mais ativo e interessante ele será. Para começar, aqui estão algumas sugestões:",
-  "onboarding.follows.title": "Personalize sua página inicial",
-=======
   "onboarding.follows.search": "Buscar",
   "onboarding.follows.title": "Comece seguindo pessoas",
->>>>>>> v4.4.3
+
   "onboarding.profile.discoverable": "Tornar meu perfil descobrível",
   "onboarding.profile.discoverable_hint": "Quando você aceita a capacidade de descoberta no Mastodon, suas postagens podem aparecer nos resultados de pesquisa e nas tendências, e seu perfil pode ser sugerido a pessoas com interesses similares aos seus.",
   "onboarding.profile.display_name": "Nome de exibição",
   "onboarding.profile.display_name_hint": "Seu nome completo ou apelido…",
-<<<<<<< HEAD
-  "onboarding.profile.lead": "Você pode completar isso mais tarde nas configurações, onde ainda mais opções de personalização estão disponíveis.",
-=======
->>>>>>> v4.4.3
+
   "onboarding.profile.note": "Biografia",
   "onboarding.profile.note_hint": "Você pode @mencionar outras pessoas ou usar #hashtags…",
   "onboarding.profile.save_and_continue": "Salvar e continuar",
   "onboarding.profile.title": "Configuração do perfil",
   "onboarding.profile.upload_avatar": "Enviar imagem de perfil",
   "onboarding.profile.upload_header": "Carregar cabeçalho do perfil",
-<<<<<<< HEAD
-  "onboarding.share.lead": "Deixe as pessoas saberem como elas podem te encontrar no Mastodon!",
-  "onboarding.share.message": "Eu sou {username} no #Mastodon! Me siga em {url}",
-  "onboarding.share.next_steps": "Possíveis próximos passos:",
-  "onboarding.share.title": "Compartilhe seu perfil",
-  "onboarding.start.lead": "Agora você faz parte do Mastodon, uma plataforma de mídia social única e descentralizada, onde você — e não um algoritmo — define sua própria experiência. Vamos ajudá-lo a começar nessa nova fronteira social:",
-  "onboarding.start.skip": "Não precisa de ajuda para começar?",
-  "onboarding.start.title": "Você conseguiu!",
-  "onboarding.steps.follow_people.body": "Seguir pessoas interessantes é o que o Mastodon tem de melhor.",
-  "onboarding.steps.follow_people.title": "Personalize sua página inicial",
-  "onboarding.steps.publish_status.body": "Diga olá para o mundo com texto, fotos, videos ou enquetes {emoji}",
-  "onboarding.steps.publish_status.title": "Crie sua primeira publicação",
-  "onboarding.steps.setup_profile.body": "Aumente suas interações com um perfil completo.",
-  "onboarding.steps.setup_profile.title": "Personalize seu perfil",
-  "onboarding.steps.share_profile.body": "Deixe seus amigos saberem como encontrar você no Mastodon",
-  "onboarding.steps.share_profile.title": "Compartilhe seu perfil no Mastodon",
-  "onboarding.tips.2fa": "<strong>Você sabia?</strong> Você pode proteger sua conta configurando a autenticação de dois fatores nas configurações de conta. Ela funciona com qualquer aplicativo de autenticação de sua escolha, nenhum número de telefone é necessário!",
-  "onboarding.tips.accounts_from_other_servers": "<strong>Você sabia?</strong> Como o Mastodon é descentralizado, alguns perfis que você encontrar serão hospedados em outros servidores que não os seus. E ainda assim você pode interagir com eles perfeitamente! O servidor deles está na segunda metade do nome de usuário!",
-  "onboarding.tips.migration": "<strong>Você sabia?</strong> Se você sente que {domain} não é uma boa escolha de servidor para você no futuro, você pode mudar para outro servidor do Mastodon sem perder seus seguidores. Você pode até mesmo hospedar seu próprio servidor!",
-  "onboarding.tips.verification": "<strong>Você sabia?</strong> Você pode verificar sua conta colocando um link para o seu perfil do Mastodon no seu próprio site e adicionando o site ao seu perfil. Não são necessárias taxas ou documentos!",
-=======
->>>>>>> v4.4.3
+
   "password_confirmation.exceeds_maxlength": "A confirmação da senha excede o tamanho máximo de senha",
   "password_confirmation.mismatching": "A confirmação de senha não corresponde",
   "picture_in_picture.restore": "Por de volta",
@@ -908,10 +874,8 @@
   "status.reblogs.empty": "Nada aqui. Quando alguém der boost, o usuário aparecerá aqui.",
   "status.redraft": "Excluir e rascunhar",
   "status.remove_bookmark": "Remover do Salvos",
-<<<<<<< HEAD
-=======
   "status.remove_favourite": "Remover dos favoritos",
->>>>>>> v4.4.3
+
   "status.replied_in_thread": "Respondido na conversa",
   "status.replied_to": "Em resposta a {name}",
   "status.reply": "Responder",
@@ -951,11 +915,7 @@
   "upload_button.label": "Adicionar mídia",
   "upload_error.limit": "Limite de anexação alcançado.",
   "upload_error.poll": "Mídias não podem ser anexadas em toots com enquetes.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Descrever para deficientes auditivos",
-  "upload_form.description": "Descrever para deficientes visuais",
-=======
->>>>>>> v4.4.3
+
   "upload_form.drag_and_drop.instructions": "Para pegar um anexo de mídia, pressione espaço ou enter. Enquanto arrastar, use as setas do teclado para mover o anexo de mídia em qualquer direção. Pressione espaço ou insira novamente para soltar o anexo de mídia em sua nova posição, ou pressione escape para cancelar.",
   "upload_form.drag_and_drop.on_drag_cancel": "O arrastamento foi cancelado. O anexo da mídia {item} foi descartado.",
   "upload_form.drag_and_drop.on_drag_end": "O anexo {item} foi removido.",

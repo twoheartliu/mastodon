@@ -60,12 +60,9 @@
   "account.mute_notifications_short": "Apklusināt paziņojumus",
   "account.mute_short": "Apklusināt",
   "account.muted": "Apklusināts",
-<<<<<<< HEAD
-  "account.mutual": "Abpusēji",
-=======
   "account.muting": "Apklusināts",
   "account.mutual": "Jūs sekojat viens otram",
->>>>>>> v4.4.3
+
   "account.no_bio": "Apraksts nav sniegts.",
   "account.open_original_page": "Atvērt pirmavota lapu",
   "account.posts": "Ieraksti",
@@ -102,8 +99,6 @@
   "alert.unexpected.message": "Radās negaidīta kļūda.",
   "alert.unexpected.title": "Ups!",
   "alt_text_badge.title": "Alt teksts",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Pievienot aprakstošo tekstu",
   "alt_text_modal.add_text_from_image": "Pievienot tekstu no attēla",
   "alt_text_modal.cancel": "Atcelt",
@@ -111,7 +106,7 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Aprakstīt šo cilvēkiem ar dzirdes traucējumiem…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "Aprakstīt šo cilvēkiem ar redzes traucējumiem…",
   "alt_text_modal.done": "Gatavs",
->>>>>>> v4.4.3
+
   "announcement.announcement": "Paziņojums",
   "annual_report.summary.archetype.lurker": "Glūņa",
   "annual_report.summary.archetype.oracle": "Orākuls",
@@ -190,11 +185,8 @@
   "community.column_settings.remote_only": "Tikai attālinātie",
   "compose.language.change": "Mainīt valodu",
   "compose.language.search": "Meklēt valodas...",
-<<<<<<< HEAD
-  "compose.published.body": "Ieraksts izveidots.",
-=======
   "compose.published.body": "Ieraksts pievienots.",
->>>>>>> v4.4.3
+
   "compose.published.open": "Atvērt",
   "compose.saved.body": "Ieraksts saglabāts.",
   "compose_form.direct_message_warning_learn_more": "Uzzināt vairāk",
@@ -211,10 +203,7 @@
   "compose_form.poll.switch_to_single": "Mainīt aptaujas veidu, lai atļautu vienu izvēli",
   "compose_form.poll.type": "Stils",
   "compose_form.publish": "Nosūtīt",
-<<<<<<< HEAD
-  "compose_form.publish_form": "Jauns ieraksts",
-=======
->>>>>>> v4.4.3
+
   "compose_form.reply": "Atbildēt",
   "compose_form.save_changes": "Atjaunināt",
   "compose_form.spoiler.marked": "Noņemt satura brīdinājumu",
@@ -259,11 +248,8 @@
   "conversation.with": "Ar {names}",
   "copy_icon_button.copied": "Ievietots starpliktuvē",
   "copypaste.copied": "Nokopēts",
-<<<<<<< HEAD
-  "copypaste.copy_to_clipboard": "Kopēt uz starpliktuvi",
-=======
   "copypaste.copy_to_clipboard": "Ievietot starpliktuvē",
->>>>>>> v4.4.3
+
   "directory.federated": "No zināma fediversa",
   "directory.local": "Tikai no {domain}",
   "directory.new_arrivals": "Jaunpienācēji",
@@ -272,14 +258,8 @@
   "disabled_account_banner.text": "Tavs konts {disabledAccount} pašlaik ir atspējots.",
   "dismissable_banner.community_timeline": "Šie ir jaunākie publiskie ieraksti no cilvēkiem, kuru konti ir mitināti {domain}.",
   "dismissable_banner.dismiss": "Atcelt",
-<<<<<<< HEAD
-  "dismissable_banner.explore_links": "Par šiem jaunumiem šobrīd runā cilvēki šajā un citos decentralizētā tīkla serveros.",
-  "dismissable_banner.explore_statuses": "Šie ir ieraksti, kas šodien gūst arvien lielāku ievērību visā sociālajā tīklā. Augstāk tiek kārtoti jaunāki ieraksti, kuri tiek vairāk pastiprināti un ievietoti izlasēs.",
-  "dismissable_banner.explore_tags": "Šie ir tēmturi, kas šodien gūst uzmanību sabiedriskajā tīmeklī. Tēmturi, kurus izmanto vairāk dažādu cilvēku, tiek vērtēti augstāk.",
-  "dismissable_banner.public_timeline": "Šie ir jaunākie publiskie ieraksti no lietotājiem sociālajā tīmeklī, kuriem {domain} seko cilvēki.",
-=======
   "dismissable_banner.public_timeline": "Šie ir jaunākie Fediverse lietotāju publiskie ieraksti, kuriem {domain} seko cilvēki.",
->>>>>>> v4.4.3
+
   "domain_block_modal.block": "Bloķēt serveri",
   "domain_block_modal.block_account_instead": "Tā vietā liegt @{name}",
   "domain_block_modal.they_cant_follow": "Neviens šajā serverī nevar Tev sekot.",
@@ -359,13 +339,9 @@
   "filter_modal.select_filter.prompt_new": "Jauna kategorija: {name}",
   "filter_modal.select_filter.search": "Meklēt vai izveidot",
   "filter_modal.select_filter.subtitle": "Izmanto esošu kategoriju vai izveido jaunu",
-<<<<<<< HEAD
-  "filter_modal.select_filter.title": "Filtrēt šo ziņu",
-  "filter_modal.title.status": "Filtrēt ziņu",
-=======
   "filter_modal.select_filter.title": "Atlasīt šo ierakstu",
   "filter_modal.title.status": "Atlasīt ziņu",
->>>>>>> v4.4.3
+
   "filtered_notifications_banner.title": "Filtrētie paziņojumi",
   "firehose.all": "Visi",
   "firehose.local": "Šis serveris",
@@ -419,10 +395,8 @@
   "hints.profiles.see_more_posts": "Skatīt vairāk ierakstu {domain}",
   "hints.threads.replies_may_be_missing": "Var trūkt atbilžu no citiem serveriem.",
   "hints.threads.see_more": "Skatīt vairāk atbilžu {domain}",
-<<<<<<< HEAD
-=======
   "home.column_settings.show_quotes": "Rādīt citātus",
->>>>>>> v4.4.3
+
   "home.column_settings.show_reblogs": "Rādīt pastiprinātos ierakstus",
   "home.column_settings.show_replies": "Rādīt atbildes",
   "home.hide_announcements": "Slēpt paziņojumus",
@@ -431,15 +405,6 @@
   "home.pending_critical_update.title": "Ir pieejams būtisks drošības atjauninājums.",
   "home.show_announcements": "Rādīt paziņojumus",
   "ignore_notifications_modal.ignore": "Neņemt vērā paziņojumus",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "Ar Mastodon kontu tu vari pievienot šo ziņu izlasei, lai informētu autoru, ka to novērtē, un saglabātu to vēlākai lasīšanai.",
-  "interaction_modal.description.follow": "Ar Mastodon kontu Tu vari sekot {name}, lai saņemtu lietotāja ierakstus savā mājas plūsmā.",
-  "interaction_modal.description.reblog": "Ar Mastodon kontu Tu vari izvirzīt šo ierakstu, lai kopīgotu to ar saviem sekotājiem.",
-  "interaction_modal.description.reply": "Ar Mastodon kontu tu vari atbildēt uz šo ziņu.",
-  "interaction_modal.login.action": "Nogādāt mani mājās",
-  "interaction_modal.login.prompt": "Tavas mājvietas servera domēns, piem., mastodon.social",
-  "interaction_modal.no_account_yet": "Neesi Mastodon?",
-=======
   "ignore_notifications_modal.not_following_title": "Neņemt vērā paziņojumus no cilvēkiem, kuriem neseko?",
   "info_button.label": "Palīdzība",
   "interaction_modal.action.favourite": "Lai turpinātu, nepieciešams pievienot sava konta izlasei.",
@@ -449,7 +414,7 @@
   "interaction_modal.action.vote": "Lai turpinātu, nepieciešams balsot no sava konta.",
   "interaction_modal.go": "Aiziet",
   "interaction_modal.no_account_yet": "Vēl nav konta?",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "Citā serverī",
   "interaction_modal.on_this_server": "Šajā serverī",
   "interaction_modal.title.favourite": "Pievienot {name} ierakstu izlasei",
@@ -517,14 +482,9 @@
   "lists.replies_policy.followed": "Jebkuram sekotajam lietotājam",
   "lists.replies_policy.list": "Saraksta dalībniekiem",
   "lists.replies_policy.none": "Nevienam",
-<<<<<<< HEAD
-  "lists.replies_policy.title": "Rādīt atbildes:",
-  "lists.search": "Meklēt starp cilvēkiem, kuriem tu seko",
-  "lists.subheading": "Tavi saraksti",
-=======
   "lists.save": "Saglabāt",
   "lists.search": "Meklēt",
->>>>>>> v4.4.3
+
   "load_pending": "{count, plural, zero{# jaunu vienumu} one {# jauns vienums} other {# jauni vienumi}}",
   "loading_indicator.label": "Ielādē…",
   "media_gallery.hide": "Paslēpt",
@@ -629,20 +589,10 @@
   "notifications_permission_banner.enable": "Iespējot darbvirsmas paziņojumus",
   "notifications_permission_banner.how_to_control": "Lai saņemtu paziņojumus, kad Mastodon nav atvērts, jāiespējo darbvirsmas paziņojumi. Var pārvaldīt, tieši kāda veida mijiedarbības rada darbvirsmas paziņojumus, izmantojot augstāk redzamo pogu {icon}, tiklīdz tie būs iespējoti.",
   "notifications_permission_banner.title": "Nekad nepalaid neko garām",
-<<<<<<< HEAD
-  "onboarding.action.back": "Aizved mani atpakaļ",
-  "onboarding.actions.back": "Aizved mani atpakaļ",
-  "onboarding.actions.go_to_explore": "Skatīt tendences",
-  "onboarding.actions.go_to_home": "Doties uz manu sākuma plūsmu",
-  "onboarding.compose.template": "Sveiki, #Mastodon!",
-  "onboarding.follows.empty": "Diemžēl pašlaik nevar parādīt rezultātus. Vari mēģināt izmantot meklēšanu vai pārlūkot izpētes lapu, lai atrastu cilvēkus, kuriem sekot, vai vēlāk mēģināt vēlreiz.",
-  "onboarding.follows.lead": "Tava sākuma plūsma ir galvenais veids, kā pieredzēt Mastodon. Jo vairāk cilvēkiem sekosi, jo dzīvīgāka un aizraujošāka tā būs. Lai sāktu, šeit ir daži ieteikumi:",
-  "onboarding.follows.title": "Pielāgo savu mājas barotni",
-=======
   "onboarding.follows.back": "Atpakaļ",
   "onboarding.follows.empty": "Diemžēl pašlaik nevar parādīt rezultātus. Vari mēģināt izmantot meklēšanu vai pārlūkot izpētes lapu, lai atrastu cilvēkus, kuriem sekot, vai vēlāk mēģināt vēlreiz.",
   "onboarding.follows.search": "Meklēt",
->>>>>>> v4.4.3
+
   "onboarding.profile.discoverable": "Padarīt manu profilu atklājamu",
   "onboarding.profile.display_name": "Attēlojamais vārds",
   "onboarding.profile.display_name_hint": "Tavs pilnais vārds vai Tavs joku vārds…",
@@ -653,28 +603,7 @@
   "onboarding.profile.title": "Profila iestatīšana",
   "onboarding.profile.upload_avatar": "Augšupielādēt profila attēlu",
   "onboarding.profile.upload_header": "Augšupielādēt profila galveni",
-<<<<<<< HEAD
-  "onboarding.share.lead": "Dari cilvēkiem zināmu, ka viņi var Tevi atrast Mastodon!",
-  "onboarding.share.message": "Es esmu {username} #Mastodon! Nāc sekot man uz {url}",
-  "onboarding.share.next_steps": "Iespējamie nākamie soļi:",
-  "onboarding.share.title": "Kopīgo savu profilu",
-  "onboarding.start.lead": "Tagad Tu esi daļa no Mastodon — vienreizējas, decentralizētas sociālās mediju platformas, kurā Tu, nevis algoritms, veido Tavu pieredzi. Sāksim darbu šajā jaunajā sociālajā jomā:",
-  "onboarding.start.skip": "Nav nepieciešama palīdzība darba sākšanai?",
-  "onboarding.start.title": "Tev tas izdevās!",
-  "onboarding.steps.follow_people.body": "Sekošana aizraujošiem cilvēkiem ir tas, par ko ir Mastodon.",
-  "onboarding.steps.follow_people.title": "Pielāgo savu mājas barotni",
-  "onboarding.steps.publish_status.body": "Pasveicini pasauli ar tekstu, attēliem, video vai aptaujām {emoji}",
-  "onboarding.steps.publish_status.title": "Izveido savu pirmo ziņu",
-  "onboarding.steps.setup_profile.body": "Palielini mijiedarbību ar aptverošu profilu!",
-  "onboarding.steps.setup_profile.title": "Pielāgo savu profilu",
-  "onboarding.steps.share_profile.body": "Dari saviem draugiem zināmu, kā Tevi atrast Mastodon!",
-  "onboarding.steps.share_profile.title": "Kopīgo savu Mastodon profilu",
-  "onboarding.tips.2fa": "<strong>Vai zināji?</strong> Tu vari aizsargāt savu kontu, konta iestatījumos iestatot divpakāpju autentifikāciju. Tas darbojas ar jebkuru Tevis izvēlētu TOTP lietotni, nav nepieciešams tālruņa numurs!",
-  "onboarding.tips.accounts_from_other_servers": "<strong>Vai zināji?</strong> Tā kā Mastodon ir decentralizēts, daži profili, ar kuriem saskaraties, tiks mitināti citos, nevis tavos serveros. Un tomēr tu varat sazināties ar viņiem nevainojami! Viņu serveris atrodas viņu lietotājvārda otrajā pusē!",
-  "onboarding.tips.migration": "<strong>Vai zināji?</strong> Ja uzskati, ka {domain} nākotnē nav lieliska servera izvēle, vari pāriet uz citu Mastodon serveri, nezaudējot savus sekotājus. Tu pat vari mitināt savu serveri!",
-  "onboarding.tips.verification": "<strong>Vai zināji?</strong> Tu vari apliecināt savu kontu, ievietojot savā tīmekļvietnē saiti uz savu Mastodon profilu un pievienojot tīmekļvietni savam profilam. Nav nepieciešami nekādi maksājumi vai dokumenti.",
-=======
->>>>>>> v4.4.3
+
   "password_confirmation.exceeds_maxlength": "Paroles apstiprināšana pārsniedz maksimālo paroles garumu",
   "password_confirmation.mismatching": "Paroles apstiprinājums neatbilst",
   "picture_in_picture.restore": "Novietot atpakaļ",
@@ -799,11 +728,8 @@
   "status.block": "Bloķēt @{name}",
   "status.bookmark": "Grāmatzīme",
   "status.cancel_reblog_private": "Nepastiprināt",
-<<<<<<< HEAD
-  "status.cannot_reblog": "Šo ziņu nevar izcelt",
-=======
   "status.cannot_reblog": "Šo ierakstu nevar pastiprināt",
->>>>>>> v4.4.3
+
   "status.continued_thread": "Turpināts pavediens",
   "status.copy": "Ievietot ieraksta saiti starpliktuvē",
   "status.delete": "Dzēst",
@@ -828,16 +754,13 @@
   "status.mute_conversation": "Apklusināt sarunu",
   "status.open": "Izvērst šo ierakstu",
   "status.pin": "Piespraust profilam",
-<<<<<<< HEAD
-  "status.pinned": "Piesprausts ieraksts",
-=======
   "status.quote_error.not_found": "Šo ierakstu nevar parādīt.",
   "status.quote_error.pending_approval": "Šis ieraksts gaida apstiprinājumu no tā autora.",
   "status.quote_error.rejected": "Šo ierakstu nevar parādīt, jo tā autors neļauj to citēt.",
   "status.quote_error.removed": "Šo ierakstu noņēma tā autors.",
   "status.quote_error.unauthorized": "Šo ierakstu nevar parādīt, jo jums nav atļaujas to skatīt.",
   "status.quote_post_author": "Publicēja {name}",
->>>>>>> v4.4.3
+
   "status.read_more": "Lasīt vairāk",
   "status.reblog": "Pastiprināt",
   "status.reblog_private": "Pastiprināt ar sākotnējo redzamību",

@@ -141,11 +141,8 @@ eo:
       security_measures:
         only_password: Nur pasvorto
         password_and_2fa: Pasvorto kaj 2FA
-<<<<<<< HEAD
-      sensitive: Tikla
-=======
       sensitive: Devigite tikla
->>>>>>> v4.4.3
+
       sensitized: Markita kiel tikla
       shared_inbox_url: URL de kunhavigita leterkesto
       show:
@@ -209,17 +206,12 @@ eo:
         destroy_user_role: Detrui Rolon
         disable_2fa_user: Malebligi 2FA
         disable_custom_emoji: Malŝalti Proprajn Bildosignojn
-<<<<<<< HEAD
-        disable_sign_in_token_auth_user: Malebligi aŭtentigon per retpoŝta ĵetono por la uzanto
-        disable_user: Neebligi la uzanton
-        enable_custom_emoji: Ebligi Propran Emoĝion
-=======
         disable_relay: Malebligi Relajson
         disable_sign_in_token_auth_user: Malebligi aŭtentigon per retpoŝta ĵetono por la uzanto
         disable_user: Neebligi la uzanton
         enable_custom_emoji: Ebligi Propran Emoĝion
         enable_relay: Ebligi Relajson
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user: Ebligi aŭtentigon per retpoŝta ĵetono por la uzanto
         enable_user: Ebligi uzanton
         memorialize_account: Memorigu Konton
@@ -233,11 +225,8 @@ eo:
         reset_password_user: Restarigi Pasvorton
         resolve_report: Solvitaj reporto
         sensitive_account: Marki tikla la aŭdovidaĵojn de via konto
-<<<<<<< HEAD
-        silence_account: Silentigi Konton
-=======
         silence_account: Limigi Konton
->>>>>>> v4.4.3
+
         suspend_account: Suspendi Konton
         unassigned_report: Malatribui Raporton
         unblock_email_account: Malbloki retpoŝtadreson
@@ -284,17 +273,12 @@ eo:
         destroy_user_role_html: "%{name} forigis rolon de %{target}"
         disable_2fa_user_html: "%{name} malebligis dufaktoran aŭtentigon por uzanto %{target}"
         disable_custom_emoji_html: "%{name} malebligis la bildosignon %{target}"
-<<<<<<< HEAD
-        disable_sign_in_token_auth_user_html: "%{name} malebligis la aŭtentigon de retpoŝta ĵetono por %{target}"
-        disable_user_html: "%{name} malebligis ensaluton por uzanto %{target}"
-        enable_custom_emoji_html: "%{name} ebligis la bildosignon %{target}"
-=======
         disable_relay_html: "%{name} malebligis la relajson %{target}"
         disable_sign_in_token_auth_user_html: "%{name} malebligis la aŭtentigon de retpoŝta ĵetono por %{target}"
         disable_user_html: "%{name} malebligis ensaluton por uzanto %{target}"
         enable_custom_emoji_html: "%{name} ebligis la bildosignon %{target}"
         enable_relay_html: "%{name} ebligis la relajson %{target}"
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user_html: "%{name} ebligis la aŭtentigon de retpoŝta ĵetono por %{target}"
         enable_user_html: "%{name} ebligis ensaluton por uzanto %{target}"
         memorialize_account_html: "%{name} ŝanĝis la konton de %{target} al memora paĝo"
@@ -329,10 +313,8 @@ eo:
       title: Ĵurnalo de revizo
       unavailable_instance: "(domajna nomo nedisponebla)"
     announcements:
-<<<<<<< HEAD
-=======
       back: Reen al anoncoj
->>>>>>> v4.4.3
+
       destroyed_msg: La anonco sukcese forigita!
       edit:
         title: Redakti anoncon
@@ -925,11 +907,9 @@ eo:
     system_checks:
       database_schema_check:
         message_html: Estas pritraktataj datumbazaj migradoj. Bonvolu ekzekuti ilin por certigi, ke la apliko kondutas kiel atendite
-<<<<<<< HEAD
-=======
       elasticsearch_analysis_index_mismatch:
         message_html: Agordoj de la indeksa analizilo estas malmodernaj. Bonvolu plenumi <code>tootctl search deploy --only-mapping --only=%{value}</code>
->>>>>>> v4.4.3
+
       elasticsearch_health_red:
         message_html: Elasticsearch peniko estas malsana (ruĝa statuso), trajtoj de serĉo malhaveblas
       elasticsearch_health_yellow:
@@ -1250,11 +1230,8 @@ eo:
     set_new_password: Elekti novan pasvorton
     setup:
       email_below_hint_html: Kontrolu vian spam-dosierujon aŭ petu novan. Se necese, vi povas korekti vian retadreson.
-<<<<<<< HEAD
-      email_settings_hint_html: Enklaku la ligilon, ke ni sendis al vi por kontroli %{email}. Ni estos tien.
-=======
       email_settings_hint_html: Alklaku la ligilon, kiun ni sendis al %{email} por komenci uzi Mastodon. Ni atendos ĝuste ĉi tie.
->>>>>>> v4.4.3
+
       link_not_received: Ĉu vi ne ricevis ligilon?
       new_confirmation_instructions_sent: Vi ricevos novan retpoŝton kun la konfirma ligilo post kelkaj minutoj!
       title: Kontrolu vian retpoŝta enirkesto
@@ -1263,17 +1240,11 @@ eo:
       title: Saluti en %{domain}
     sign_up:
       manual_review: Enskriboj en %{domain} havas manan superrigardon, farita de niaj moderistoj. Por helpi nin por procezi vian enskribon, skribu ion pri vi mem, kaj kial vi volas konton en %{domain}.
-<<<<<<< HEAD
-      preamble: Per konto ĉe ĉi tiu Mastodon-servilo, vi povas sekvi ajn personojn en la reto.
-      title: Ni pretigu vin ĉe %{domain}.
-    status:
-      account_status: Statuso de la konto
-=======
       preamble: Per konto ĉe ĉi tiu Mastodon-servilo, vi povos sekvi ajnan alian personon ĉe la fediverso, sendepende de kie ilia konto estas gastigita.
       title: Ni pretigu vin ĉe %{domain}.
     status:
       account_status: Stato de la konto
->>>>>>> v4.4.3
+
       confirming: Atendante ke retpoŝta konfirmo estos kompletigita.
       functional: Via konto estas tute funkcia.
       pending: Via apliko estas superrigardata de niaj teamo. Ĉi tiu povas bezoni iom da tempo. Vi ricevos retpoŝton, se via apliko estas konsentita.
@@ -1491,21 +1462,6 @@ eo:
       overwrite: Anstataŭigi
       overwrite_long: Anstataŭigi la nunajn registrojn per la novaj
     overwrite_preambles:
-<<<<<<< HEAD
-      blocking_html: Vi estas <strong>anstataŭonta vian blokliston</strong> per ĝis <strong>%{total_items} kontoj</strong> de <strong>%{filename}</strong>.
-      bookmarks_html: Vi estas <strong>anstataŭonta viajn legosignojn</strong> per ĝis <strong>%{total_items} afiŝoj</strong> de <strong>%{filename}</strong>.
-      domain_blocking_html: Vi estas <strong>anstataŭonta vian domajnan blokliston</strong> per ĝis <strong>%{total_items} domajnoj</strong> de <strong>%{filename}</strong>.
-      following_html: Vi estas <strong>sekvonta</strong> ĝis <strong>%{total_items} kontoj</strong> de <strong>%{filename}</strong> kaj <strong>ĉesos sekvi iun alian</strong>.
-      lists_html: Vi estas <strong>anstataŭonta viajn listojn</strong> per enhavo de <strong>%{filename}</strong>. Ĝis <strong>%{total_items} kontoj</strong> estos aldonitaj al novaj listoj.
-      muting_html: Vi estas <strong>anstataŭonta viajn listojn de silentigitaj kontoj</strong> per ĝis<strong>%{total_items} kontoj</strong> de <strong>%{filename}</strong>.
-    preambles:
-      blocking_html: Vi estas <strong>blokonta</strong> ĝis <strong>%{total_items} kontoj</strong> de <strong>%{filename}</strong>.
-      bookmarks_html: Vi estas aldononta ĝis <strong>%{total_items} afiŝojn</strong> de <strong>%{filename}</strong> al viaj <strong>legosignoj</strong>.
-      domain_blocking_html: Vi estas <strong>blokonta</strong> ĝis <strong>%{total_items} domajnoj</strong> de <strong>%{filename}</strong>.
-      following_html: Vi estas <strong>sekvonta</strong> ĝis <strong>%{total_items} kontoj</strong> de <strong>%{filename}</strong>.
-      lists_html: Vi estas aldononta ĝis <strong>%{total_items} kontojn</strong> de <strong>%{filename}</strong> al viaj <strong>listoj</strong>. Novaj listoj estos kreitaj se ne estas listo por aldoni.
-      muting_html: Vi estas <strong>silentonta</strong> ĝis <strong>%{total_items} kontoj</strong> de <strong>%{filename}</strong>.
-=======
       blocking_html:
         one: Vi tuj <strong>anstataŭas vian blokliston</strong>, kun ĝis <strong>%{count} kontoj</strong> de <strong>%{filename}</strong>.
         other: Vi tuj <strong>anstataŭas vian blokliston</strong> ĝis <strong>%{count} kontoj</strong> de <strong>%{filename}</strong>.
@@ -1543,7 +1499,7 @@ eo:
       muting_html:
         one: Vi tuj<strong>silentas</strong> ĝis <strong>%{count} kontoj</strong> de <strong>%{filename}</strong>.
         other: Vi tuj<strong>silentas</strong> ĝis <strong>%{count} kontoj</strong> de <strong>%{filename}</strong>.
->>>>>>> v4.4.3
+
     preface: Vi povas importi datumojn, kiujn vi eksportis el alia servilo, kiel liston de homoj, kiujn vi sekvas aŭ blokas.
     recent_imports: Lastatempaj importoj
     states:
@@ -1866,11 +1822,8 @@ eo:
     import_and_export: Importi kaj eksporti
     migrate: Konta migrado
     notifications: Retpoŝtaj sciigoj
-<<<<<<< HEAD
-    preferences: Preferoj
-=======
     preferences: Agordoj
->>>>>>> v4.4.3
+
     profile: Publika profilo
     relationships: Sekvatoj kaj sekvantoj
     severed_relationships: Finitaj rilatoj

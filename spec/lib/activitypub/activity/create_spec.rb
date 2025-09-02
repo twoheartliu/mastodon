@@ -682,14 +682,8 @@ RSpec.describe ActivityPub::Activity::Create do
 
       context 'with featured hashtags' do
         let(:object_json) do
-<<<<<<< HEAD
-          {
-            id: [ActivityPub::TagManager.instance.uri_for(sender), '#bar'].join,
-            type: 'Note',
-            content: 'Lorem ipsum',
-=======
           build_object(
->>>>>>> v4.4.3
+
             to: 'https://www.w3.org/ns/activitystreams#Public',
             tag: [
               {
@@ -697,13 +691,9 @@ RSpec.describe ActivityPub::Activity::Create do
                 href: 'http://example.com/blah',
                 name: '#test',
               },
-<<<<<<< HEAD
-            ],
-          }
-=======
             ]
           )
->>>>>>> v4.4.3
+
         end
 
         before do

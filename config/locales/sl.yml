@@ -1250,11 +1250,9 @@ sl:
       view_strikes: Pokaži pretekle ukrepe proti mojemu računu
     too_fast: Obrazec oddan prehitro, poskusite znova.
     use_security_key: Uporabi varnostni ključ
-<<<<<<< HEAD
-=======
     user_agreement_html: Prebral/a sem <a href="%{terms_of_service_path}" target="_blank">pogoje uporabe</a> in <a href="%{privacy_policy_path}" target="_blank">politiko zasebnosti</a> in z obojim soglašam
     user_privacy_agreement_html: Prebral sem <a href="%{privacy_policy_path}" target="_blank">politiko zasebnosti</a> in soglašam z njo
->>>>>>> v4.4.3
+
   author_attribution:
     example_title: Vzorčno besedilo
     hint_html: Ali pišete novičke ali spletni dnevnik kje drugje poleg Mastodona? Poskrbite, da bo vaše avtorstvo pravilno navedeno, ko bo kdo delil vaše delo na Mastodonu.

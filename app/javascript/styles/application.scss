@@ -5,28 +5,6 @@
 @use 'fonts/roboto';
 @use 'fonts/roboto-mono';
 
-<<<<<<< HEAD
-@import 'mastodon/reset';
-@import 'mastodon/basics';
-@import 'mastodon/branding';
-@import 'mastodon/containers';
-@import 'mastodon/lists';
-@import 'mastodon/widgets';
-@import 'mastodon/forms';
-@import 'mastodon/accounts';
-@import 'mastodon/components';
-@import 'mastodon/polls';
-@import 'mastodon/modal';
-@import 'mastodon/emoji_picker';
-@import 'mastodon/about';
-@import 'mastodon/tables';
-@import 'mastodon/admin';
-@import 'mastodon/dashboard';
-@import 'mastodon/rtl';
-@import 'mastodon/accessibility';
-@import 'mastodon/rich_text';
-@import 'mastodon/layout_two_column';
-=======
 @use 'mastodon/reset';
 @use 'mastodon/basics';
 @use 'mastodon/branding';
@@ -47,4 +25,4 @@
 @use 'mastodon/rtl';
 @use 'mastodon/accessibility';
 @use 'mastodon/rich_text';
->>>>>>> v4.4.3
+

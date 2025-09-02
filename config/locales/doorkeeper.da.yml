@@ -130,19 +130,12 @@ da:
         crypto: Ende-til-ende kryptering
         favourites: Favoritter
         filters: Filtre
-<<<<<<< HEAD
-        follow: Fulgte, skjjulte og blokerede kontoer
-        follows: Følger
-        lists: Lister
-        media: Medievedhæftninger
-        mutes: Skjulte kontoer
-=======
         follow: Fulgte, skjulte og blokerede konti
         follows: Følger
         lists: Lister
         media: Medievedhæftninger
         mutes: Skjulte
->>>>>>> v4.4.3
+
         notifications: Notifikationer
         profile: Din Mastodon-profil
         push: Push-notifikationer
@@ -185,11 +178,8 @@ da:
       read:filters: se dine filtre
       read:follows: se dine følger
       read:lists: se dine lister
-<<<<<<< HEAD
-      read:mutes: se dine skjulte kontoer
-=======
       read:mutes: se dine skjulte konti
->>>>>>> v4.4.3
+
       read:notifications: se dine notifikationer
       read:reports: se dine anmeldelser
       read:search: søg på dine vegne

@@ -4,11 +4,8 @@ class Admin::Trends::TagsController < Admin::BaseController
   def index
     authorize :tag, :review?
 
-<<<<<<< HEAD
-    @pending_tags_count = Tag.pending_review.async_count
-=======
     @pending_tags_count = pending_tags.async_count
->>>>>>> v4.4.3
+
     @tags = filtered_tags.page(params[:page])
     @form = Trends::TagBatch.new
   end

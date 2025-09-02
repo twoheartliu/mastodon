@@ -3,22 +3,16 @@ pt-PT:
   simple_form:
     hints:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Um por linha. Protege contra falsas atribuições.
-=======
         attribution_domains: Um por linha. Protege contra falsas atribuições.
->>>>>>> v4.4.3
+
         discoverable: As suas publicações e perfil públicos podem ser destacados ou recomendados em várias áreas do Mastodon e o seu perfil pode ser sugerido a outros utilizadores.
         display_name: O seu nome completo ou o seu nome divertido.
         fields: A sua página inicial, os seus pronomes, idade e tudo o que quiser.
         indexable: As suas mensagens públicas podem aparecer nos resultados da pesquisa no Mastodon. Independentemente disso, as pessoas que interagiram com as suas publicações podem ser capazes de as pesquisar.
         note: 'Pode @mencionar outras pessoas e usar #etiquetas.'
         show_collections: As pessoas podem navegar pelas listas das pessoas que segue e dos seus seguidores. Independentemente disso, as pessoas que segue verão que você as segue.
-<<<<<<< HEAD
-        unlocked: As pessoas podem seguir-te sem pedir a tua aprovação. Desmarca se quiseres rever os pedidos para seguir e escolher se aceitas ou rejeitas os novos seguidores.
-=======
         unlocked: As pessoas poderão segui-lo sem pedir aprovação. Desmarque se pretender rever os pedidos de seguimento e escolha se pretende aceitar ou rejeitar novos seguidores.
->>>>>>> v4.4.3
+
       account_alias:
         acct: Especifique o utilizador@domínio da conta de onde você deseja migrar
       account_migration:
@@ -68,10 +62,8 @@ pt-PT:
         setting_display_media_default: Esconder multimédia marcada como sensível
         setting_display_media_hide_all: Esconder sempre toda a multimédia
         setting_display_media_show_all: Mostrar sempre a multimédia
-<<<<<<< HEAD
-=======
         setting_system_scrollbars_ui: Aplica-se apenas a navegadores de desktop baseados no Safari e Chrome
->>>>>>> v4.4.3
+
         setting_use_blurhash: Os gradientes são baseados nas cores das imagens escondidas, mas ofuscam quaisquer pormenores
         setting_use_pending_items: Ocultar as atualizações da cronologia após um clique em vez de percorrer automaticamente a cronologia
         username: Podes utilizar letras, números e traços inferiores (_)
@@ -175,11 +167,8 @@ pt-PT:
         url: Para onde os eventos serão enviados
     labels:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Sites autorizados a atribuir-lhe crédito
-=======
         attribution_domains: Websites autorizados a atribuir-lhe crédito
->>>>>>> v4.4.3
+
         discoverable: Destacar perfil e publicações nos algoritmos de descoberta
         fields:
           name: Rótulo
@@ -246,10 +235,8 @@ pt-PT:
         setting_boost_modal: Mostrar caixa de diálogo de confirmação antes de impulsionar
         setting_default_language: Idioma de publicação
         setting_default_privacy: Privacidade da publicação
-<<<<<<< HEAD
-=======
         setting_default_quote_policy: Quem pode citar
->>>>>>> v4.4.3
+
         setting_default_sensitive: Marcar sempre os multimédia como sensíveis
         setting_delete_modal: Solicitar confirmação antes de eliminar uma publicação
         setting_disable_hover_cards: Desativar visualização de perfil ao passar o cursor
@@ -260,10 +247,8 @@ pt-PT:
         setting_display_media_show_all: Mostrar todos
         setting_expand_spoilers: Expandir sempre as publicações marcadas com avisos de conteúdo
         setting_hide_network: Esconder a tua rede
-<<<<<<< HEAD
-=======
         setting_missing_alt_text_modal: Mostrar janela de confirmação antes de publicar multimédia sem texto alternativo
->>>>>>> v4.4.3
+
         setting_reduce_motion: Reduzir movimento em animações
         setting_system_font_ui: Usar o tipo de letra padrão do sistema
         setting_system_scrollbars_ui: Utilizar a barra de deslocação predefinida do sistema
@@ -299,10 +284,8 @@ pt-PT:
         favicon: Ícone de favoritos
         mascot: Mascote personalizada (legado)
         media_cache_retention_period: Período de retenção de ficheiros multimédia em cache
-<<<<<<< HEAD
-=======
         min_age: Idade mínima requerida
->>>>>>> v4.4.3
+
         peers_api_enabled: Publicar lista de servidores descobertos na API
         profile_directory: Ativar o diretório de perfis
         registrations_mode: Quem se pode inscrever
@@ -364,10 +347,6 @@ pt-PT:
       tag:
         listable: Permitir que esta etiqueta apareça em pesquisas e no diretório de perfis
         name: Etiqueta
-<<<<<<< HEAD
-        trendable: Permitir que esta etiqueta apareça nas tendências
-        usable: Permitir que as publicações usem esta etiqueta localmente
-=======
         trendable: Permitir que esta etiqueta apareça nos destaques
         usable: Permitir que as publicações usem esta etiqueta localmente
       terms_of_service:
@@ -384,7 +363,7 @@ pt-PT:
         domain: Domínio
         jurisdiction: Jurisdição legal
         min_age: Idade mínima
->>>>>>> v4.4.3
+
       user:
         date_of_birth_1i: Dia
         date_of_birth_2i: Mês

@@ -26,10 +26,7 @@
   "account.enable_notifications": "Avisame cuando @{name} espublice artículos",
   "account.endorse": "Destacar nel perfil",
   "account.featured_tags.last_status_never": "Nun hai nenguna publicación",
-<<<<<<< HEAD
-  "account.featured_tags.title": "Etiquetes destacaes de: {name}",
-=======
->>>>>>> v4.4.3
+
   "account.follow": "Siguir",
   "account.follow_back": "Siguir tamién",
   "account.followers": "Siguidores",
@@ -71,12 +68,10 @@
   "alert.unexpected.message": "Prodúxose un error inesperáu.",
   "alert.unexpected.title": "¡Meca!",
   "alt_text_badge.title": "Testu alternativu",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Amestar testu alternativu",
   "alt_text_modal.cancel": "Encaboxar",
   "alt_text_modal.done": "Fecho",
->>>>>>> v4.4.3
+
   "announcement.announcement": "Anunciu",
   "annual_report.summary.followers.followers": "siguidores",
   "annual_report.summary.here_it_is": "Equí ta'l to resume de {year}:",
@@ -98,10 +93,7 @@
   "bundle_column_error.routing.body": "Nun se pudo atopar la páxina solicitada. ¿De xuru que la URL de la barra de direiciones ta bien escrita?",
   "bundle_column_error.routing.title": "404",
   "bundle_modal_error.close": "Zarrar",
-<<<<<<< HEAD
-  "bundle_modal_error.message": "Asocedió daqué malo mentanto se cargaba esti componente.",
-=======
->>>>>>> v4.4.3
+
   "bundle_modal_error.retry": "Retentar",
   "closed_registrations.other_server_instructions": "Darréu que Mastodon ye una rede social descentralizada, pues crear una cuenta n'otru sirvidor y siguir interactuando con esti.",
   "closed_registrations_modal.description": "Anguaño nun ye posible crear cuentes en {domain}, mas ten en cuenta que nun precises una cuenta nesti sirvidor pa usar Mastodon.",
@@ -115,10 +107,8 @@
   "column.create_list": "Crear llista",
   "column.direct": "Menciones privaes",
   "column.domain_blocks": "Dominios bloquiaos",
-<<<<<<< HEAD
-=======
   "column.edit_list": "Editar la llista",
->>>>>>> v4.4.3
+
   "column.favourites": "Favoritos",
   "column.firehose": "Feed en direuto",
   "column.follow_requests": "Solicitúes de siguimientu",
@@ -150,10 +140,7 @@
   "compose_form.poll.option_placeholder": "Opción {number}",
   "compose_form.poll.type": "Tipu",
   "compose_form.publish": "Espublizar",
-<<<<<<< HEAD
-  "compose_form.publish_form": "Publicación nueva",
-=======
->>>>>>> v4.4.3
+
   "compose_form.reply": "Responder",
   "confirmation_modal.cancel": "Encaboxar",
   "confirmations.block.confirm": "Bloquiar",
@@ -164,17 +151,6 @@
   "confirmations.delete_list.message": "¿De xuru que quies desaniciar permanentemente esta llista?",
   "confirmations.delete_list.title": "¿Quies desaniciar la llista?",
   "confirmations.discard_edit_media.confirm": "Escartar",
-<<<<<<< HEAD
-  "confirmations.edit.confirm": "Editar",
-  "confirmations.edit.message": "La edición va sobrescribir el mensaxe que tas escribiendo. ¿De xuru que quies siguir?",
-  "confirmations.logout.confirm": "Zarrar la sesión",
-  "confirmations.logout.message": "¿De xuru que quies zarrar la sesión?",
-  "confirmations.logout.title": "¿Quies zarrar la sesión?",
-  "confirmations.redraft.confirm": "Desaniciar y reeditar",
-  "confirmations.redraft.title": "¿Desaniciar y reeditar la publicación?",
-  "confirmations.reply.confirm": "Responder",
-  "confirmations.reply.message": "Responder agora va sobrescribir el mensaxe que tas componiendo anguaño. ¿De xuru que quies siguir?",
-=======
   "confirmations.follow_to_list.title": "¿Siguir al usuariu?",
   "confirmations.logout.confirm": "Zarrar la sesión",
   "confirmations.logout.message": "¿De xuru que quies zarrar la sesión?",
@@ -183,7 +159,7 @@
   "confirmations.missing_alt_text.title": "¿Quies amestar testu alternativu?",
   "confirmations.redraft.confirm": "Desaniciar y reeditar",
   "confirmations.redraft.title": "¿Desaniciar y reeditar la publicación?",
->>>>>>> v4.4.3
+
   "confirmations.unfollow.confirm": "Dexar de siguir",
   "confirmations.unfollow.message": "¿De xuru que quies dexar de siguir a {name}?",
   "confirmations.unfollow.title": "¿Dexar de siguir al usuariu?",
@@ -204,11 +180,7 @@
   "disabled_account_banner.account_settings": "Axustes de la cuenta",
   "dismissable_banner.community_timeline": "Esta seición contién los artículos públicos más actuales de los perfiles agospiaos nel dominiu {domain}.",
   "dismissable_banner.dismiss": "Escartar",
-<<<<<<< HEAD
-  "dismissable_banner.explore_tags": "Esta seición contién les etiquetes del fediversu que tán ganando popularidá güei. Les etiquetes más usaes polos perfiles apaecen no cimero.",
-  "dismissable_banner.public_timeline": "Esta seición contién los artículos más nuevos de les persones na web social que les persones de {domain} siguen.",
-=======
->>>>>>> v4.4.3
+
   "domain_block_modal.block": "Bloquiar el sirvidor",
   "domain_block_modal.they_cant_follow": "Naide d'esti sirvidor pue siguite.",
   "domain_block_modal.title": "Bloquiar el dominiu?",
@@ -306,23 +278,16 @@
   "home.column_settings.show_replies": "Amosar les rempuestes",
   "home.pending_critical_update.body": "¡Anueva'l sirvidor de Mastodon namás que puedas!",
   "home.show_announcements": "Amosar anuncios",
-<<<<<<< HEAD
-  "interaction_modal.description.follow": "Con una cuenta de Mastodon, pues siguir a {name} pa recibir los artículos de so nel to feed d'aniciu.",
-  "interaction_modal.description.reblog": "Con una cuenta de Mastodon, pues compartir esta publicación colos perfiles que te sigan.",
-  "interaction_modal.description.reply": "Con una cuenta de Mastodon, pues responder a esta publicación.",
-=======
   "info_button.label": "Ayuda",
   "interaction_modal.go": "Dir",
   "interaction_modal.no_account_yet": "¿Tovía nun tienes una cuenta?",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "N'otru sirvidor",
   "interaction_modal.on_this_server": "Nesti sirvidor",
   "interaction_modal.title.follow": "Siguir a {name}",
   "interaction_modal.title.reply": "Rempuesta a la publicación de: {name}",
-<<<<<<< HEAD
-=======
   "interaction_modal.title.vote": "Vota na encuesta de {name}",
->>>>>>> v4.4.3
+
   "intervals.full.days": "{number, plural, one {# día} other {# díes}}",
   "intervals.full.hours": "{number, plural, one {# hora} other {# hores}}",
   "intervals.full.minutes": "{number, plural, one {# minutu} other {# minutos}}",
@@ -361,16 +326,12 @@
   "limited_account_hint.action": "Amosar el perfil de toes toes",
   "link_preview.author": "Por {name}",
   "link_preview.more_from_author": "Más de {name}",
-<<<<<<< HEAD
-  "lists.account.add": "Amestar a la llista",
-  "lists.account.remove": "Desaniciar de la llista",
-=======
   "lists.add_member": "Amestar",
   "lists.add_to_list": "Amestar a la llista",
   "lists.add_to_lists": "Amestar {name} a la llista",
   "lists.create": "Crear",
   "lists.create_list": "Crear llista",
->>>>>>> v4.4.3
+
   "lists.delete": "Desaniciar la llista",
   "lists.done": "Fecho",
   "lists.edit": "Editar la llista",
@@ -388,10 +349,7 @@
   "navigation_bar.bookmarks": "Marcadores",
   "navigation_bar.direct": "Menciones privaes",
   "navigation_bar.domain_blocks": "Dominios bloquiaos",
-<<<<<<< HEAD
-  "navigation_bar.explore": "Esploración",
-=======
->>>>>>> v4.4.3
+
   "navigation_bar.favourites": "Favoritos",
   "navigation_bar.filters": "Pallabres desactivaes",
   "navigation_bar.follow_requests": "Solicitúes de siguimientu",
@@ -402,11 +360,7 @@
   "navigation_bar.moderation": "Moderación",
   "navigation_bar.mutes": "Perfiles colos avisos desactivaos",
   "navigation_bar.opened_in_classic_interface": "Los artículos, les cuentes y otres páxines específiques ábrense por defeutu na interfaz web clásica.",
-<<<<<<< HEAD
-  "navigation_bar.personal": "Personal",
-  "navigation_bar.pins": "Artículos fixaos",
-=======
->>>>>>> v4.4.3
+
   "navigation_bar.preferences": "Preferencies",
   "not_signed_in_indicator.not_signed_in": "Tienes d'aniciar la sesión p'acceder a esti recursu.",
   "notification.admin.report": "{name} informó de: {target}",
@@ -452,10 +406,8 @@
   "notifications.permission_required": "Los avisos d'escritoriu nun tán disponibles porque nun se concedió'l permisu riquíu.",
   "notifications.policy.accept": "Aceptar",
   "notifications.policy.accept_hint": "Amosar n'avisos",
-<<<<<<< HEAD
-=======
   "onboarding.follows.done": "Fecho",
->>>>>>> v4.4.3
+
   "onboarding.profile.note": "Biografía",
   "onboarding.profile.note_hint": "Pues @mentar a otros perfiles o poner #etiquetes…",
   "password_confirmation.exceeds_maxlength": "La contraseña de confirmación supera la llongura de caráuteres máxima",
@@ -469,11 +421,8 @@
   "poll_button.add_poll": "Amestar una encuesta",
   "poll_button.remove_poll": "Quitar la encuesta",
   "privacy.change": "Configurar la privacidá de la publicación",
-<<<<<<< HEAD
-  "privacy.direct.short": "Perfiles específicos",
-=======
   "privacy.direct.short": "Mención privada",
->>>>>>> v4.4.3
+
   "privacy.private.short": "Siguidores",
   "privacy.public.short": "Publicación pública",
   "privacy_policy.last_updated": "Data del últimu anovamientu: {date}",
@@ -553,10 +502,7 @@
   "search_results.hashtags": "Etiquetes",
   "search_results.see_all": "Ver too",
   "search_results.statuses": "Artículos",
-<<<<<<< HEAD
-  "search_results.title": "Busca de: {q}",
-=======
->>>>>>> v4.4.3
+
   "server_banner.is_one_of_many": "{domain} ye unu de los munchos sirvidores independientes de Mastodon que pues usar pa participar nel fediversu.",
   "server_banner.server_stats": "Estadístiques del sirvidor:",
   "sign_in_banner.create_account": "Crear una cuenta",
@@ -586,10 +532,7 @@
   "status.mute_conversation": "Desactivar los avisos de la conversación",
   "status.open": "Espander esta publicación",
   "status.pin": "Fixar nel perfil",
-<<<<<<< HEAD
-  "status.pinned": "Publicación fixada",
-=======
->>>>>>> v4.4.3
+
   "status.read_more": "Lleer más",
   "status.reblog": "Compartir",
   "status.reblogged_by": "{name} compartió",
@@ -627,15 +570,7 @@
   "upload_button.label": "Amestar ficheros multimedia",
   "upload_error.poll": "La xuba de ficheros nun ta permitida coles encuestes.",
   "upload_form.edit": "Editar",
-<<<<<<< HEAD
-  "upload_modal.analyzing_picture": "Analizando la semeya…",
-  "upload_modal.apply": "Aplicar",
-  "upload_modal.applying": "Aplicando…",
-  "upload_modal.detect_text": "Detectar el testu de la semeya",
-  "upload_modal.edit_media": "Edición",
-  "upload_modal.hint": "Calca o arrastra'l círculu de la previsualización pa escoyer el puntu d'enfoque que siempre va tar a la vista en toles miniatures.",
-=======
->>>>>>> v4.4.3
+
   "upload_progress.label": "Xubiendo…",
   "upload_progress.processing": "Procesando…",
   "video.close": "Zarrar el videu",
@@ -644,10 +579,7 @@
   "video.expand": "Espander el videu",
   "video.fullscreen": "Pantalla completa",
   "video.hide": "Esconder el videu",
-<<<<<<< HEAD
-  "video.mute": "Desactivar el soníu",
-=======
->>>>>>> v4.4.3
+
   "video.pause": "Posar",
   "video.play": "Reproducir"
 }

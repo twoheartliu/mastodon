@@ -2173,10 +2173,8 @@ body > [data-popper-placement] {
   display: block;
   position: relative;
   border-radius: var(--avatar-border-radius);
-<<<<<<< HEAD
-=======
   background: var(--surface-background-color);
->>>>>>> v4.4.3
+
 
   img {
     width: 100%;
@@ -2878,10 +2876,8 @@ a.account__display-name {
       display: flex;
       flex-direction: column;
       contain: inline-size layout paint style;
-<<<<<<< HEAD
-=======
       container: column / inline-size;
->>>>>>> v4.4.3
+
 
       @media screen and (min-width: $no-gap-breakpoint) {
         max-width: 600px;
@@ -8010,95 +8006,7 @@ noscript {
   background: rgba($base-overlay-background, 0.5);
 }
 
-<<<<<<< HEAD
-.list-adder,
-.list-editor {
-  backdrop-filter: var(--background-filter);
-  background: var(--modal-background-color);
-  border: 1px solid var(--modal-border-color);
-  flex-direction: column;
-  border-radius: 8px;
-  width: 380px;
-  overflow: hidden;
 
-  @media screen and (width <= 420px) {
-    width: 90%;
-  }
-}
-
-.list-adder {
-  &__lists {
-    height: 50vh;
-    border-radius: 0 0 8px 8px;
-    overflow-y: auto;
-  }
-
-  .list {
-    padding: 10px;
-    border-bottom: 1px solid var(--background-border-color);
-  }
-
-  .list__wrapper {
-    display: flex;
-  }
-
-  .list__display-name {
-    flex: 1 1 auto;
-    overflow: hidden;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-}
-
-.list-editor {
-  h4 {
-    padding: 15px 0;
-    background: lighten($ui-base-color, 13%);
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    border-radius: 8px 8px 0 0;
-  }
-
-  .drawer__pager {
-    height: 50vh;
-    border: 0;
-  }
-
-  .drawer__inner {
-    &.backdrop {
-      width: calc(100% - 60px);
-      box-shadow: 2px 4px 15px rgba($base-shadow-color, 0.4);
-      border-radius: 0 0 0 8px;
-    }
-  }
-
-  &__accounts {
-    background: unset;
-    overflow-y: auto;
-  }
-
-  .account__display-name {
-    &:hover strong {
-      text-decoration: none;
-    }
-  }
-
-  .account__avatar {
-    cursor: default;
-  }
-
-  .search {
-    margin-bottom: 0;
-  }
-}
-
-=======
->>>>>>> v4.4.3
 .focal-point {
   position: relative;
   cursor: grab;
@@ -11171,15 +11079,10 @@ noscript {
 .content-warning {
   display: block;
   box-sizing: border-box;
-<<<<<<< HEAD
-  background: rgba($ui-highlight-color, 0.05);
-  color: $secondary-text-color;
-  border: 1px solid rgba($ui-highlight-color, 0.15);
-=======
   background: var(--nested-card-background);
   color: var(--nested-card-text);
   border: var(--nested-card-border);
->>>>>>> v4.4.3
+
   border-radius: 8px;
   padding: 8px (5px + 8px);
   position: relative;
@@ -11209,8 +11112,6 @@ noscript {
       font-weight: 500;
       color: $secondary-text-color;
     }
-<<<<<<< HEAD
-=======
   }
 }
 
@@ -11346,6 +11247,6 @@ noscript {
       width: 16px;
       height: 16px;
     }
->>>>>>> v4.4.3
+
   }
 }

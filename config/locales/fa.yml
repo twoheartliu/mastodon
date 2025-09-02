@@ -193,11 +193,8 @@ fa:
         demote_user: تنزل کاربر
         destroy_announcement: حذف اعلامیه
         destroy_canonical_email_block: حذف انسداد رایانامه
-<<<<<<< HEAD
-        destroy_custom_emoji: حذف اموجی سفارشی
-=======
         destroy_custom_emoji: حذف شکلک سفارشی
->>>>>>> v4.4.3
+
         destroy_domain_allow: حذف اجازهٔ دامنه
         destroy_domain_block: حذف انسداد دامنه
         destroy_email_domain_block: حذف انسداد دامنهٔ رایانامه
@@ -208,19 +205,13 @@ fa:
         destroy_unavailable_domain: حذف دامنهٔ ناموجود
         destroy_user_role: نابودی نقش
         disable_2fa_user: از کار انداختن ورود دومرحله‌ای
-<<<<<<< HEAD
-        disable_custom_emoji: از کار انداختن اموجی سفارشی
-        disable_sign_in_token_auth_user: از کار انداختن تأیید هویت ژتون رایانامه‌ای برای کاربر
-        disable_user: از کار انداختن کاربر
-        enable_custom_emoji: به کار انداختن اموجی سفارشی
-=======
         disable_custom_emoji: از کار انداختن شکلک سفارشی
         disable_relay: غیرفعال‌سازی رله
         disable_sign_in_token_auth_user: از کار انداختن تأیید هویت ژتون رایانامه‌ای برای کاربر
         disable_user: از کار انداختن کاربر
         enable_custom_emoji: به کار انداختن شکلک سفارشی
         enable_relay: فعال‌سازی رله
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user: به کار انداختن تأیید هویت ژتون رایانامه‌ای برای کاربر
         enable_user: به کار انداختن کاربر
         memorialize_account: یادسپاری حساب
@@ -258,11 +249,8 @@ fa:
         create_account_warning_html: "%{name} هشداری برای %{target} فرستاد"
         create_announcement_html: "%{name} اعلامیه‌ای جدید ایجاد کرد %{target}"
         create_canonical_email_block_html: "%{name} رایانامه با درهم‌ریزی %{target} را مسدود کرد"
-<<<<<<< HEAD
-        create_custom_emoji_html: "%{name} اموجی تازهٔ %{target} را بارگذاشت"
-=======
         create_custom_emoji_html: "%{name} شکلک تازهٔ %{target} را بارگذاشت"
->>>>>>> v4.4.3
+
         create_domain_allow_html: "%{name} دامنهٔ %{target} را مجاز کرد"
         create_domain_block_html: "%{name} دامنهٔ %{target} را مسدود کرد"
         create_email_domain_block_html: "%{name} دامنهٔ رایانامهٔ %{target} را مسدود کرد"
@@ -285,17 +273,12 @@ fa:
         destroy_user_role_html: "%{name} نقش %{target} را حذف کرد"
         disable_2fa_user_html: "%{name} ضرورت ورود دو مرحله‌ای را برای کاربر %{target} غیر فعال کرد"
         disable_custom_emoji_html: "%{name} شکلک %{target} را غیرفعال کرد"
-<<<<<<< HEAD
-        disable_sign_in_token_auth_user_html: "%{name}، احراز هویت با توکن رایانامه را برای %{target} غیرفعال کرد"
-        disable_user_html: "%{name} ورود را برای کاربر %{target} غیرفعال کرد"
-        enable_custom_emoji_html: "%{name} شکلک %{target} را فعال کرد"
-=======
         disable_relay_html: "%{name} رله %{target} را غیرفعال کرد"
         disable_sign_in_token_auth_user_html: "%{name}، احراز هویت با توکن رایانامه را برای %{target} غیرفعال کرد"
         disable_user_html: "%{name} ورود را برای کاربر %{target} غیرفعال کرد"
         enable_custom_emoji_html: "%{name} شکلک %{target} را فعال کرد"
         enable_relay_html: "%{name} رله %{target} را فعال کرد"
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user_html: "%{name}، احراز هویت با توکن رایانامه را برای %{target} فعال کرد"
         enable_user_html: "%{name} ورود را برای کاربر %{target} فعال کرد"
         memorialize_account_html: "%{name} حساب %{target} را تبدیل به صفحهٔ یادمان کرد"
@@ -674,13 +657,9 @@ fa:
         mark_as_sensitive_description_html: رسانهٔ درون فرستهٔ گزارش شده به عنوان حسّاس علامت خورده و شکایتی ضبط خواهد شد تا بتوانید خلاف‌های آینده از همین حساب را بهتر مدیریت کنید.
         other_description_html: دیدن انتخاب های بیشتر برای کنترل رفتار حساب و سفارشی سازی ارتباط با حساب گزارش شده.
         resolve_description_html: هیچ کنشی علیه حساب گزارش شده انجام نخواهد شد. هیچ شکایتی ضبط نشده و گزارش بسته خواهد شد.
-<<<<<<< HEAD
-        silence_description_html: این حساب فقط برای کسانی قابل مشاهده خواهد بود که قبلاً آن را دنبال می کنند یا به صورت دستی آن را جستجو می کنند و دسترسی آن را به شدت محدود می کند. همیشه می توان برگرداند. همه گزارش‌های مربوط به این حساب را می‌بندد.
-        suspend_description_html: اکانت و تمامی محتویات آن غیرقابل دسترسی و در نهایت حذف خواهد شد و تعامل با آن غیر ممکن خواهد بود. قابل برگشت در عرض 30 روز همه گزارش‌های مربوط به این حساب را می‌بندد.
-=======
         silence_description_html: حساب فقط برای کسانی که از پیش پی می‌گرفتندش یا به صورت دستی به دنیالش گشته‌اند نمایان خواهد بود که رسشش را شدیداً محدود می‌کند. همواره برگشت‌پذیر است. همهٔ گزارش‌ها علیه این حساب را خواهد بست.
         suspend_description_html: حساب و همهٔ محتوایش غیرقابل دسترس شده و در نهایت حذف خواهند شد. تعامل با آن ممکن نخواهد بود. بازگشت‌پذیر تا ۳۰ روز. همهٔ گزارش‌ها علیه این حساب را خواهد بست.
->>>>>>> v4.4.3
+
       actions_description_html: تصمیم گیری کنش اقدامی برای حل این گزارش. در صورت انجام کنش تنبیهی روی حساب گزارش شده، غیر از زمان یکه دستهٔ <strong>هرزنامه</strong> گزیده باشد، برایش آگاهی رایانامه‌ای فرستاده خواهد شد.
       actions_description_remote_html: تصمیم بگیرید که چه اقدامی برای حل این گزارش انجام دهید. این فقط بر نحوه ارتباط سرور <strong>شما</strong> با این حساب راه دور و مدیریت محتوای آن تأثیر می گذارد.
       actions_no_posts: این گزارش هیچ پست مرتبطی برای حذف ندارد
@@ -740,11 +719,8 @@ fa:
         actions:
           delete_html: پست های توهین آمیز را حذف کنید
           mark_as_sensitive_html: رسانه پست های توهین آمیز را به عنوان حساس علامت گذاری کنید
-<<<<<<< HEAD
-          silence_html: دسترسی <strong>@%{acct}</strong> را به شدت محدود کنید و نمایه و محتویات آنها را فقط برای افرادی که قبلاً آنها را دنبال می‌کنند قابل مشاهده کنید یا به صورت دستی نمایه آن را جستجو کنید
-=======
           silence_html: محدودیت شدید رسش <strong>‪@%{acct}‬</strong> با نمایان کردن نماگر و محتوایش فقط به افرادی که از پیش پی می‌گرفتندش و به صورت دستی به دنبالش گشته‌اند
->>>>>>> v4.4.3
+
           suspend_html: تعلیق <strong>@%{acct}</strong>، غیرقابل دسترس کردن نمایه و محتوای آنها و تعامل با آنها غیر ممکن
         close_report: 'علامت گذاری گزارش #%{id} به عنوان حل شده است'
         close_reports_html: "<strong>همه</strong> گزارش‌ها در برابر <strong>@%{acct}</strong> را به‌عنوان حل‌وفصل علامت‌گذاری کنید"
@@ -862,10 +838,8 @@ fa:
       discovery:
         follow_recommendations: پیروی از پیشنهادها
         preamble: ارائه محتوای جالب در جذب کاربران جدیدی که ممکن است کسی ماستودون را نشناسند، مفید است. نحوه عملکرد ویژگی‌های کشف مختلف روی سرور خود را کنترل کنید.
-<<<<<<< HEAD
-=======
         privacy: محرمانگی
->>>>>>> v4.4.3
+
         profile_directory: شاخهٔ نمایه
         public_timelines: خط زمانی‌های عمومی
         publish_statistics: انتشار آمار
@@ -952,11 +926,9 @@ fa:
     system_checks:
       database_schema_check:
         message_html: تعداد مهاجرت پایگاه داده در انتظار انجام هستند. لطفا آن‌ها را اجرا کنید تا اطمینان یابید که برنامه مطابق انتظار رفتار خواهد کرد
-<<<<<<< HEAD
-=======
       elasticsearch_analysis_index_mismatch:
         message_html: تنظیمات تحلیلگر اندیس Elasticsearch منقضی شده. لطفاً <code>tootctl search deploy --only-mapping --only=%{value}</code> را اجرا کنید
->>>>>>> v4.4.3
+
       elasticsearch_health_red:
         message_html: خوشه Elasticsearch ناسالم است (وضعیت قرمز)، ویژگی های جستجو در دسترس نیستند
       elasticsearch_health_yellow:
@@ -1277,11 +1249,8 @@ fa:
     set_new_password: تعین گذرواژه جدید
     setup:
       email_below_hint_html: بررسی شاخهٔ هرزنامه یا درخواست رایانامه‌ای دیگر. در صورت اشتباه بودن نشانی رایانامه می‌توانید تصحیحش کنید.
-<<<<<<< HEAD
-      email_settings_hint_html: برای تأیید %{email}، روی پیوندی که برای شما ارسال کردیم ضربه بزنید. همین جا منتظر می‌مانیم.
-=======
       email_settings_hint_html: برای شروع استفاده از ماستودون روی پیوندی که به %{email} فرستادیم کلیک کنید. همین جا منتظر می مانیم.
->>>>>>> v4.4.3
+
       link_not_received: پیوندی نگرفتید؟
       new_confirmation_instructions_sent: تا چند دقیقهٔ دیگر رایانامه‌ای جدید با پیوند تأییدیه خواهید گرفت!
       title: صندوق ورودیتان را بررسی کنید
@@ -1290,11 +1259,8 @@ fa:
       title: ورود به %{domain}
     sign_up:
       manual_review: ثبت‌نام‌ها در %{domain} از طریق بازبینی دستی توسط گردانندگان ما انجام می‌شود. برای کمک به ما در پردازش ثبت نام خود، کمی در مورد خودتان و اینکه چرا می خواهید یک حساب در %{domain} داشته باشید، بنویسید.
-<<<<<<< HEAD
-      preamble: با داشتن یک حساب کاربری در این سرور ماستودون، می‌توانید هر شخص دیگری را در شبکه دنبال کنید، صرف نظر از اینکه حساب او در کجا میزبانی می‌شود.
-=======
       preamble: با داشتن یک حساب کاربری در این سرور ماستودون، می‌توانید هر شخص دیگری را در فدیورس دنبال کنید، صرف نظر از اینکه حساب او در کجا میزبانی می‌شود.
->>>>>>> v4.4.3
+
       title: بیایید روی %{domain} برپایتان کنیم.
     status:
       account_status: وضعیت حساب
@@ -1513,21 +1479,6 @@ fa:
       overwrite: بازنویسی
       overwrite_long: داده‌های فعلی را پاک کنید و داده‌های تازه‌ای بیفزایید
     overwrite_preambles:
-<<<<<<< HEAD
-      blocking_html: شما می‌خواهید <strong>فهرست مسدود خود را</strong> با حداکثر <strong>%{total_items} حساب</strong> از <strong>%{filename}</strong> جایگزین کنید.
-      bookmarks_html: شما می‌خواهید <strong>نشانک‌های خود را</strong> با حداکثر <strong>%{total_items} پست</strong> از <strong>%{filename}</strong> جایگزین کنید.
-      domain_blocking_html: شما می‌خواهید <strong>لیست مسدودی دامنه خود را</strong> با حداکثر <strong>%{total_items} دامنه</strong> از <strong>%{filename}</strong> جایگزین کنید.
-      following_html: شما در شرف <strong>دنبال کردن</strong> حداکثر <strong>%{total_items} حساب</strong> از <strong>%{filename}</strong> هستید و <strong>دنبال کردن افراد دیگری را متوقف می‌کنید</strong>.
-      lists_html: شما می خواهید <strong>لیست های خود را</strong> با محتوای <strong>%{filename}</strong> جایگزین کنید. حداکثر <strong>%{total_items} حساب</strong> به لیست‌های جدید اضافه می‌شود.
-      muting_html: شما می‌خواهید <strong>لیست حساب‌های بی‌صدا را جایگزین کنید</strong> با حداکثر <strong>%{total_items} حساب</strong> از <strong>%{filename}</strong>.
-    preambles:
-      blocking_html: شما در شرف <strong>مسدود کردن</strong> حداکثر <strong>%{total_items} حساب</strong> از <strong>%{filename}</strong> هستید.
-      bookmarks_html: شما می‌خواهید تا <strong>%{total_items} پست</strong> از <strong>%{filename}</strong> را به <strong>نشانک‌ها</strong> خود اضافه کنید.
-      domain_blocking_html: شما در شرف <strong>مسدود کردن</strong> تا <strong>%{total_items} دامنه</strong> از <strong>%{filename}</strong> هستید.
-      following_html: شما در شرف <strong>دنبال کردن</strong> حداکثر <strong>%{total_items} حساب</strong> از <strong>%{filename}</strong> هستید.
-      lists_html: شما می‌خواهید تا <strong>%{total_items} حساب</strong> از <strong>%{filename}</strong> را به <strong>فهرست‌های</strong> خود اضافه کنید. اگر لیستی برای افزودن وجود نداشته باشد، لیست های جدیدی ایجاد می شود.
-      muting_html: شما در شرف <strong>بی صدا کردن</strong> تا <strong>%{total_items} حساب</strong> از <strong>%{filename}</strong> هستید.
-=======
       blocking_html:
         one: می‌خواهید <strong>فهرست مسدود</strong> خود را با حداکثر <strong>%{count} حساب</strong> از <strong>%{filename}</strong> جایگزین کنید.
         other: شما می‌خواهید <strong>فهرست مسدود خود را</strong> با حداکثر <strong>%{count} حساب</strong> از <strong>%{filename}</strong> جایگزین کنید.
@@ -1565,7 +1516,7 @@ fa:
       muting_html:
         one: شما در حال <strong>بی صدا کردن</strong> تا <strong>%{count} حساب</strong> از <strong>%{filename}</strong> هستید.
         other: شما در حال <strong>بی صدا کردن</strong> تا <strong>%{count} حساب</strong> از <strong>%{filename}</strong> هستید.
->>>>>>> v4.4.3
+
     preface: می‌توانید داده‌هایی را که از کارسازی دیگر برون‌ریخته‌اید، چون سیاهه‌ای از افرادی که پی گرفته یا مسدود می‌کنید را درون‌ریزی کنید.
     recent_imports: واردشده‌های اخیر
     states:
@@ -2056,11 +2007,8 @@ fa:
       details: 'جزییات ورود:'
       explanation: ما ورود به حساب شما را از یک آدرس آی پی جدید شناسایی کرده ایم.
       further_actions_html: اگر این شما نبودید، توصیه می کنیم فورا %{action} را فعال کنید و برای ایمن نگه داشتن حساب خود، احراز هویت دو مرحله ای را فعال کنید.
-<<<<<<< HEAD
-      subject: حساب شما از یک آدرس آی پی جدید قابل دسترسی است
-=======
       subject: نشانی آی‌پی جدیدی به حسابتان دسترسی پیدا کرده
->>>>>>> v4.4.3
+
       title: یک ورود جدید
     terms_of_service_changed:
       agreement: با ادامه استفاده از %{domain}، با این شرایط موافقت می کنید. اگر با شرایط به‌روزرسانی شده مخالف هستید، می‌توانید در هر زمان با حذف حساب خود، قرارداد خود را با %{domain} فسخ کنید.
@@ -2137,10 +2085,7 @@ fa:
       post_action: ایجاد
       post_step: سلام کردن به جهان با متن، عکس، ویدیو یا نظرسنجی.
       post_title: ساخت نخستین نظرسنجیتان
-<<<<<<< HEAD
-      share_action: هم‌رسانی
-=======
->>>>>>> v4.4.3
+
       share_step: بگذارید دوستانتان بدانند چگونه روی ماستودون بیابندتان.
       share_title: هم‌رسانی نمایهٔ ماستودونتان
       sign_in_action: ورود

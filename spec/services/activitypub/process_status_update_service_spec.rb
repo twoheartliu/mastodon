@@ -5,11 +5,8 @@ require 'rails_helper'
 RSpec.describe ActivityPub::ProcessStatusUpdateService do
   subject { described_class.new }
 
-<<<<<<< HEAD
-  let!(:status) { Fabricate(:status, text: 'Hello world', account: Fabricate(:account, domain: 'example.com')) }
-=======
   let!(:status) { Fabricate(:status, text: 'Hello world', uri: 'https://example.com/statuses/1234', account: Fabricate(:account, domain: 'example.com')) }
->>>>>>> v4.4.3
+
   let(:bogus_mention) { 'https://example.com/users/erroringuser' }
   let(:payload) do
     {
@@ -273,11 +270,8 @@ RSpec.describe ActivityPub::ProcessStatusUpdateService do
 
       it 'updates tags and featured tags' do
         expect { subject.call(status, json, json) }
-<<<<<<< HEAD
-          .to change { status.tags.reload.pluck(:name) }.from(%w(test foo)).to(%w(foo bar))
-=======
           .to change { status.tags.reload.pluck(:name) }.from(contain_exactly('test', 'foo')).to(contain_exactly('foo', 'bar'))
->>>>>>> v4.4.3
+
           .and change { status.account.featured_tags.find_by(name: 'test').statuses_count }.by(-1)
           .and change { status.account.featured_tags.find_by(name: 'bar').statuses_count }.by(1)
           .and change { status.account.featured_tags.find_by(name: 'bar').last_status_at }.from(nil).to(be_present)
@@ -443,8 +437,6 @@ RSpec.describe ActivityPub::ProcessStatusUpdateService do
     end
   end
 
-<<<<<<< HEAD
-=======
   context 'when the status has an existing unverified quote and adds an approval link through an implicit update' do
     let(:quoted_account) { Fabricate(:account, domain: 'quoted.example.com') }
     let(:quoted_status) { Fabricate(:status, account: quoted_account) }
@@ -988,7 +980,7 @@ RSpec.describe ActivityPub::ProcessStatusUpdateService do
     end
   end
 
->>>>>>> v4.4.3
+
   def poll_option_json(name, votes)
     { type: 'Note', name: name, replies: { type: 'Collection', totalItems: votes } }
   end

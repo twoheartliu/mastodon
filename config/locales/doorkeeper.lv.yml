@@ -123,11 +123,8 @@ lv:
         admin/accounts: Kontu pārvaldīšana
         admin/all: Visas administrēšanas funkcijas
         admin/reports: Ziņojumu pārvaldīšana
-<<<<<<< HEAD
-        all: Pilna piekļuve tavam Mastodon kontam
-=======
         all: Pilna piekļuve Tavam Mastodon kontam
->>>>>>> v4.4.3
+
         blocks: Bloķētie
         bookmarks: Grāmatzīmes
         conversations: Sarunas

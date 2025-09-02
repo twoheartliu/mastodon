@@ -137,40 +137,6 @@ RUN \
   --mount=type=cache,id=apt-lib-${TARGETPLATFORM},target=/var/lib/apt,sharing=locked \
   # Install build tools and bundler dependencies from APT
   apt-get install -y --no-install-recommends \
-<<<<<<< HEAD
-    autoconf \
-    automake \
-    build-essential \
-    cmake \
-    git \
-    libgdbm-dev \
-    libglib2.0-dev \
-    libgmp-dev \
-    libicu-dev \
-    libidn-dev \
-    libpq-dev \
-    libssl-dev \
-    libtool \
-    libyaml-dev \
-    meson \
-    nasm \
-    pkg-config \
-    shared-mime-info \
-    xz-utils \
-	# libvips components
-    libcgif-dev \
-    libexif-dev \
-    libexpat1-dev \
-    libgirepository1.0-dev \
-    libheif-dev/bookworm-backports \
-    libimagequant-dev \
-    libjpeg62-turbo-dev \
-    liblcms2-dev \
-    liborc-dev \
-    libspng-dev \
-    libtiff-dev \
-    libwebp-dev \
-=======
   autoconf \
   automake \
   build-essential \
@@ -203,7 +169,7 @@ RUN \
   libspng-dev \
   libtiff-dev \
   libwebp-dev \
->>>>>>> v4.4.3
+
   # ffmpeg components
   libdav1d-dev \
   liblzma-dev \
@@ -370,20 +336,6 @@ RUN \
   libssl3 \
   libyaml-0-2 \
   # libvips components
-<<<<<<< HEAD
-    libcgif0 \
-    libexif12 \
-    libheif1/bookworm-backports \
-    libimagequant0 \
-    libjpeg62-turbo \
-    liblcms2-2 \
-    liborc-0.4-0 \
-    libspng0 \
-    libtiff6 \
-    libwebp7 \
-    libwebpdemux2 \
-    libwebpmux3 \
-=======
   libcgif0 \
   libexif12 \
   libheif1/bookworm-backports \
@@ -396,7 +348,7 @@ RUN \
   libwebp7 \
   libwebpdemux2 \
   libwebpmux3 \
->>>>>>> v4.4.3
+
   # ffmpeg components
   libdav1d6 \
   libmp3lame0 \

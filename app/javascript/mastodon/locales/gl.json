@@ -445,14 +445,6 @@
   "ignore_notifications_modal.not_followers_title": "Ignorar notificacións de persoas que non te seguen?",
   "ignore_notifications_modal.not_following_title": "Ignorar notificacións de persoas que non segues?",
   "ignore_notifications_modal.private_mentions_title": "Ignorar notificacións de Mencións Privadas non solicitadas?",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "Cunha conta Mastodon podes favorecer esta publicación e facerlle saber á autora que che gustou e que a gardas para máis tarde.",
-  "interaction_modal.description.follow": "Cunha conta en Mastodon, poderás seguir a {name} e recibir as súas publicacións na túa cronoloxía de inicio.",
-  "interaction_modal.description.reblog": "Cunha conta en Mastodon, poderás promover esta publicación para compartila con quen te siga.",
-  "interaction_modal.description.reply": "Cunha conta en Mastodon, poderás responder a esta publicación.",
-  "interaction_modal.login.action": "Seguir desde alá",
-  "interaction_modal.login.prompt": "Dominio do teu servidor de inicio, ex. mastodon.social",
-=======
   "info_button.label": "Axuda",
   "info_button.what_is_alt_text": "<h1>Que é o Texto Alternativo?</h1> <p>O Text Alt proporciona a descrición das imaxes para as persoas con deficiencias visuais, conexións a internet de baixa calidade ou para engadir contexto ás mesmas.</p> <p>Podes mellorar a accesibilidade e a comprensión da publicación ao escribir un texto alternativo claro, conciso e obxectivo.</p> <ul> <li>Identifica os elementos importantes</li> <li>Inclúe o texto que apareza nas imaxes</li> <li>Utiliza sintaxe estándar nas frases</li> <li>Evita información redundante</li> <li>Céntrate nos elementos principais cando sexan imaxes complexas (como diagramas ou mapas)</li> </ul>",
   "interaction_modal.action.favourite": "Para continuar, debes favorecer desde a túa conta.",
@@ -461,7 +453,7 @@
   "interaction_modal.action.reply": "Para continuar, debes responder desde a túa conta.",
   "interaction_modal.action.vote": "Para continuar, debes votar desde a túa conta.",
   "interaction_modal.go": "Ir",
->>>>>>> v4.4.3
+
   "interaction_modal.no_account_yet": "Aínda non tes unha conta?",
   "interaction_modal.on_another_server": "Nun servidor diferente",
   "interaction_modal.on_this_server": "Neste servidor",
@@ -528,12 +520,6 @@
   "lists.delete": "Eliminar listaxe",
   "lists.done": "Feito",
   "lists.edit": "Editar listaxe",
-<<<<<<< HEAD
-  "lists.edit.submit": "Mudar o título",
-  "lists.exclusive": "Agocha estas publicacións no Inicio",
-  "lists.new.create": "Engadir listaxe",
-  "lists.new.title_placeholder": "Título da nova listaxe",
-=======
   "lists.exclusive": "Ocultar membros no Inicio",
   "lists.exclusive_hint": "Se alguén está nesta lista non aparerá na cronoloxía de Inicio para evitar duplicidades das publicacións.",
   "lists.find_users_to_add": "Buscar persoas que engadir",
@@ -544,7 +530,7 @@
   "lists.no_members_yet": "Aínda non hai membros.",
   "lists.no_results_found": "Non se atoparon resultados.",
   "lists.remove_member": "Retirar",
->>>>>>> v4.4.3
+
   "lists.replies_policy.followed": "Calquera usuaria que siga",
   "lists.replies_policy.list": "Membros da lista",
   "lists.replies_policy.none": "Ninguén",
@@ -743,11 +729,8 @@
   "poll_button.remove_poll": "Eliminar enquisa",
   "privacy.change": "Axustar privacidade",
   "privacy.direct.long": "Todas as mencionadas na publicación",
-<<<<<<< HEAD
-  "privacy.direct.short": "Persoas mencionadas",
-=======
   "privacy.direct.short": "Mención privada",
->>>>>>> v4.4.3
+
   "privacy.private.long": "Só para seguidoras",
   "privacy.private.short": "Seguidoras",
   "privacy.public.long": "Para todas dentro e fóra de Mastodon",

@@ -30,11 +30,9 @@ class SessionActivation < ApplicationRecord
 
   DEFAULT_SCOPES = %w(read write follow).freeze
 
-<<<<<<< HEAD
-=======
   scope :latest, -> { order(id: :desc) }
 
->>>>>>> v4.4.3
+
   class << self
     def active?(id)
       id && exists?(session_id: id)

@@ -266,14 +266,8 @@
   "disabled_account_banner.text": "Kontoen din, {disabledAccount} er for tida deaktivert.",
   "dismissable_banner.community_timeline": "Dette er dei nylegaste offentlege innlegga frå personar med kontoar frå {domain}.",
   "dismissable_banner.dismiss": "Avvis",
-<<<<<<< HEAD
-  "dismissable_banner.explore_links": "Desse nyhendesakene snakkast om av folk på denne og andre tenarar på det desentraliserte nettverket no.",
-  "dismissable_banner.explore_statuses": "Dette er innlegg frå det sosiale nettet som er populære i dag. Nye innlegg med mange favorittmerkingar og framhevingar er rangert høgare.",
-  "dismissable_banner.explore_tags": "Desse emneknaggane er populære blant folk på denne tenaren og andre tenarar i det desentraliserte nettverket nett no.",
-  "dismissable_banner.public_timeline": "Dette er dei nyaste offentlege innlegga frå menneske på det sosiale nettet som folk på {domain} fylgjer.",
-=======
   "dismissable_banner.public_timeline": "Dette er dei nyaste offentlege innlegga frå menneske på allheimen som folk på {domain} fylgjer.",
->>>>>>> v4.4.3
+
   "domain_block_modal.block": "Blokker tenaren",
   "domain_block_modal.block_account_instead": "Blokker @{name} i staden",
   "domain_block_modal.they_can_interact_with_old_posts": "Folk på denne tenaren kan samhandla med dei gamle innlegga dine.",

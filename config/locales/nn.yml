@@ -21,11 +21,8 @@ nn:
       one: Tut
       other: Tut
     posts_tab_heading: Tut
-<<<<<<< HEAD
-    self_follow_error: Det er ikkje tillate å følgje din eigen konto
-=======
     self_follow_error: Du kan ikkje fylgja deg sjølv
->>>>>>> v4.4.3
+
   admin:
     account_actions:
       action: Utfør

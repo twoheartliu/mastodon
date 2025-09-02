@@ -25,11 +25,8 @@
   "account.copy": "Копиране на връзка към профила",
   "account.direct": "Частно споменаване на @{name}",
   "account.disable_notifications": "Спиране на известяване при публикуване от @{name}",
-<<<<<<< HEAD
-  "account.domain_blocked": "Блокиран домейн",
-=======
   "account.domain_blocking": "Блокиране на домейн",
->>>>>>> v4.4.3
+
   "account.edit_profile": "Редактиране на профила",
   "account.enable_notifications": "Известяване при публикуване от @{name}",
   "account.endorse": "Представи в профила",
@@ -164,10 +161,8 @@
   "column.blocks": "Блокирани потребители",
   "column.bookmarks": "Отметки",
   "column.community": "Локална хронология",
-<<<<<<< HEAD
-=======
   "column.create_list": "Създаване на списък",
->>>>>>> v4.4.3
+
   "column.direct": "Частни споменавания",
   "column.directory": "Разглеждане на профили",
   "column.domain_blocks": "Блокирани домейни",
@@ -272,14 +267,8 @@
   "disabled_account_banner.text": "Вашият акаунт {disabledAccount} сега е изключен.",
   "dismissable_banner.community_timeline": "Ето най-скорошните публични публикации от хора, чиито акаунти са разположени в {domain}.",
   "dismissable_banner.dismiss": "Отхвърляне",
-<<<<<<< HEAD
-  "dismissable_banner.explore_links": "Има новинарски истории, които са най-споделяните в социалната мрежа днес. По-нови новинарски истории, публикувани от повече различни хора са класирани по-напред.",
-  "dismissable_banner.explore_statuses": "Има публикации през социалната мрежа, които днес набират популярност. По-новите публикации с повече подсилвания и любими са класирани по-високо.",
-  "dismissable_banner.explore_tags": "Тези хаштагове сега набират популярност сред хората в този и други сървъри на децентрализирата мрежа.",
-  "dismissable_banner.public_timeline": "Ето най-новите обществени публикации от хора в социална мрежа, която хората в {domain} следват.",
-=======
   "dismissable_banner.public_timeline": "Ето най-новите обществени публикации от хора във федивселената, която хората в {domain} следват.",
->>>>>>> v4.4.3
+
   "domain_block_modal.block": "Блокиране на сървър",
   "domain_block_modal.block_account_instead": "Вместо това блокиране на @{name}",
   "domain_block_modal.they_can_interact_with_old_posts": "Хората от този сървър могат да взаимодействат с ваши стари публикации.",
@@ -454,15 +443,6 @@
   "ignore_notifications_modal.not_followers_title": "Пренебрегвате ли известията от хора, които не са ви последвали?",
   "ignore_notifications_modal.not_following_title": "Пренебрегвате ли известията от хора, които не сте последвали?",
   "ignore_notifications_modal.private_mentions_title": "Пренебрегвате ли известия от непоискани лични споменавания?",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "Имайки акаунт в Mastodon, може да сложите тази публикации в любими, за да позволите на автора да узнае, че я цените и да я запазите за по-късно.",
-  "interaction_modal.description.follow": "С акаунт в Mastodon може да последвате {name}, за да получавате публикациите от този акаунт в началния си инфоканал.",
-  "interaction_modal.description.reblog": "С акаунт в Mastodon може да подсилите тази публикация, за да я споделите с последователите си.",
-  "interaction_modal.description.reply": "С акаунт в Mastodon може да добавите отговор към тази публикация.",
-  "interaction_modal.login.action": "Към началото",
-  "interaction_modal.login.prompt": "Домейнът на сървъра ви, примерно, mastodon.social",
-  "interaction_modal.no_account_yet": "Още ли не сте в Mastodon?",
-=======
   "info_button.label": "Помощ",
   "info_button.what_is_alt_text": "<h1>Какво е алтернативен текст?</h1> <p>Алтернативният текст осигурява описания на изображение за хора със зрителни увреждания, връзки с ниска честотна лента или търсещите допълнителен контекст.</p> <p>Може да подобрите достъпността и разбираемостта за всеки, пишейки ясен, кратък и обективен алтернативен текст.</p> <ul> <li>Уловете важните елементи</li> <li>Обобщете текста в образите</li> <li>Употребявайте правилна структура на изречението</li> <li>Избягвайте излишна информация</li> <li>Съсредоточете се върху тенденциите и ключови констатации в сложни онагледявания (като диаграми и карти)</li> </ul>",
   "interaction_modal.action.favourite": "Трябва да направите любимо от акаунта си, за да продължите.",
@@ -472,7 +452,7 @@
   "interaction_modal.action.vote": "Трябва да гласувате от акаунта си, за да продължите.",
   "interaction_modal.go": "Напред",
   "interaction_modal.no_account_yet": "Още ли нямате акаунт?",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "На различен сървър",
   "interaction_modal.on_this_server": "На този сървър",
   "interaction_modal.title.favourite": "Означавам публикация на {name} като любима",
@@ -574,11 +554,7 @@
   "navigation_bar.automated_deletion": "Автоматично изтриване на публикации",
   "navigation_bar.blocks": "Блокирани потребители",
   "navigation_bar.bookmarks": "Отметки",
-<<<<<<< HEAD
-  "navigation_bar.community_timeline": "Локална хронология",
-  "navigation_bar.compose": "Съставяне на нова публикация",
-=======
->>>>>>> v4.4.3
+
   "navigation_bar.direct": "Частни споменавания",
   "navigation_bar.domain_blocks": "Блокирани домейни",
   "navigation_bar.favourites": "Любими",
@@ -715,58 +691,24 @@
   "notifications_permission_banner.enable": "Включване на известията на работния плот",
   "notifications_permission_banner.how_to_control": "За да получавате известия, когато Mastodon не е отворен, включете известията на работния плот. Може да управлявате точно кои видове взаимодействия пораждат известия на работния плот чрез бутона {icon} по-горе, след като бъдат включени.",
   "notifications_permission_banner.title": "Никога не пропускайте нищо",
-<<<<<<< HEAD
-  "onboarding.action.back": "Върнете ме обратно",
-  "onboarding.actions.back": "Върнете ме обратно",
-  "onboarding.actions.go_to_explore": "Виж тенденции",
-  "onboarding.actions.go_to_home": "Към началния ми инфоканал",
-  "onboarding.compose.template": "Здравейте, #Mastodon!",
-  "onboarding.follows.empty": "За съжаление, в момента не могат да се показват резултати. Може да опитате посредством търсене или сърфиране да разгледате страницата, за да намерите хора за последване, или опитайте пак по-късно.",
-  "onboarding.follows.lead": "Може да бъдете куратор на началния си инфоканал. Последвайки повече хора, по-деен и по-интересен ще става. Тези профили може да са добра начална точка, от която винаги по-късно да спрете да следвате!",
-  "onboarding.follows.title": "Популярно в Mastodon",
-=======
   "onboarding.follows.back": "Назад",
   "onboarding.follows.done": "Готово",
   "onboarding.follows.empty": "За съжаление, в момента не могат да се показват резултати. Може да опитате посредством търсене или сърфиране да разгледате страницата, за да намерите хора за последване, или опитайте пак по-късно.",
   "onboarding.follows.search": "Търсене",
   "onboarding.follows.title": "Последвайте хора, за да започнете",
->>>>>>> v4.4.3
+
   "onboarding.profile.discoverable": "Правене на моя профил откриваем",
   "onboarding.profile.discoverable_hint": "Включвайки откриваемостта в Mastodon, вашите публикации може да се появят при резултатите от търсене и изгряващи неща, и вашия профил може да бъде предложен на хора с подобни интереси като вашите.",
   "onboarding.profile.display_name": "Показвано име",
   "onboarding.profile.display_name_hint": "Вашето пълно име или псевдоним…",
-<<<<<<< HEAD
-  "onboarding.profile.lead": "Винаги може да завършите това по-късно в настройките, където дори има повече възможности за настройване.",
-=======
->>>>>>> v4.4.3
+
   "onboarding.profile.note": "Биография",
   "onboarding.profile.note_hint": "Може да @споменавате други хора или #хаштагове…",
   "onboarding.profile.save_and_continue": "Запазване и продължаване",
   "onboarding.profile.title": "Настройване на профила",
   "onboarding.profile.upload_avatar": "Качване на снимка на профила",
   "onboarding.profile.upload_header": "Качване на заглавка на профила",
-<<<<<<< HEAD
-  "onboarding.share.lead": "Позволете на хората да знаят, че могат да ви намерят в Mastodon!",
-  "onboarding.share.message": "Аз съм {username} в #Mastodon! Елате да ме последвате при {url}",
-  "onboarding.share.next_steps": "Възможни следващи стъпки:",
-  "onboarding.share.title": "Споделяне на профила ви",
-  "onboarding.start.lead": "Вашият нов акаунт в Mastodon е готов за употреба. Ето как може да се възползвате по най-добрия начин от него:",
-  "onboarding.start.skip": "Желаете ли да прескочите?",
-  "onboarding.start.title": "Успяхте!",
-  "onboarding.steps.follow_people.body": "Може да бъдете куратор на инфоканала си. Хайде да го запълним с интересни хора.",
-  "onboarding.steps.follow_people.title": "Персонализиране на началния ви инфоканал",
-  "onboarding.steps.publish_status.body": "Поздравете целия свят.",
-  "onboarding.steps.publish_status.title": "Направете първата си публикация",
-  "onboarding.steps.setup_profile.body": "Подсилете взаимодействията си, имайки изчерпателен профил.",
-  "onboarding.steps.setup_profile.title": "Пригодете профила си",
-  "onboarding.steps.share_profile.body": "Позволете на приятелите си да знаят как да ви намират в Mastodon!",
-  "onboarding.steps.share_profile.title": "Споделяне на профила ви",
-  "onboarding.tips.2fa": "<strong>Знаете ли, че?</strong> Може да защитите акаунта си, настройвайки двуфакторното удостоверяване в настройките на акаунта си. То работи с всяко приложение TOTP по ваш избор, не е необходим номер телефона!",
-  "onboarding.tips.accounts_from_other_servers": "<strong>Знаете ли, че?</strong> Откак Mastodon е децентрализиран, някои профили, които срещате ще бъдат разположени на сървъри различен от вашия. И още може да взаимодействате с тях безпроблемно! Сървърът им е втората половина от потребителското им име!",
-  "onboarding.tips.migration": "<strong>Знаете ли, че?</strong> Ако се чувствате, че {domain} не е чудесен избор на сървър в бъдуще, може да се преместите на друг сървър на Mastodon без да загубите последователите си. Дори може да сте съдържатели на свой собствен сървър!",
-  "onboarding.tips.verification": "<strong>Знаете ли, че?</strong> Може да потвърдите акаунта си, слагайки връзка към профила си в Mastodon на уебсайта си и добавите уебсайта в профила си. Не са необходими документи или такси!",
-=======
->>>>>>> v4.4.3
+
   "password_confirmation.exceeds_maxlength": "Потвърждаването на паролата превишава максимално допустимата дължина за парола",
   "password_confirmation.mismatching": "Потвърждаването на паролата не съвпада",
   "picture_in_picture.restore": "Връщане обратно",
@@ -942,10 +884,8 @@
   "status.reblogs.empty": "Още никого не е подсилвал публикацията. Подсилващият ще се покаже тук.",
   "status.redraft": "Изтриване и преработване",
   "status.remove_bookmark": "Премахване на отметката",
-<<<<<<< HEAD
-=======
   "status.remove_favourite": "Премахване от любими",
->>>>>>> v4.4.3
+
   "status.replied_in_thread": "Отговорено в нишката",
   "status.replied_to": "В отговор до {name}",
   "status.reply": "Отговор",
@@ -988,11 +928,7 @@
   "upload_button.label": "Добавете файл с образ, видео или звук",
   "upload_error.limit": "Превишено ограничението за качване на файлове.",
   "upload_error.poll": "Качването на файлове не е позволено с анкети.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Опишете за хора, които са глухи или трудно чуват",
-  "upload_form.description": "Опишете за хора, които са слепи или имат слабо зрение",
-=======
->>>>>>> v4.4.3
+
   "upload_form.drag_and_drop.instructions": "Натиснете интервал или enter, за да подберете мултимедийно прикачване. Провлачвайки, ползвайте клавишите със стрелки, за да премествате мултимедията във всяка дадена посока. Натиснете пак интервал или enter, за да се стовари мултимедийното прикачване в новото си положение или натиснете Esc за отмяна.",
   "upload_form.drag_and_drop.on_drag_cancel": "Провлачването е отменено. Мултимедийното прикачване {item} е спуснато.",
   "upload_form.drag_and_drop.on_drag_end": "Мултимедийното прикачване {item} е спуснато.",

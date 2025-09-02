@@ -26,11 +26,8 @@
   "account.copy": "Kopiera länk till profil",
   "account.direct": "Nämn @{name} privat",
   "account.disable_notifications": "Sluta meddela mig när @{name} skriver ett inlägg",
-<<<<<<< HEAD
-  "account.domain_blocked": "Domän blockerad",
-=======
   "account.domain_blocking": "Blockerad domän",
->>>>>>> v4.4.3
+
   "account.edit_profile": "Redigera profil",
   "account.enable_notifications": "Notifiera mig när @{name} gör inlägg",
   "account.endorse": "Visa på profil",
@@ -104,9 +101,6 @@
   "alert.unexpected.message": "Ett oväntat fel uppstod.",
   "alert.unexpected.title": "Hoppsan!",
   "alt_text_badge.title": "Alt-Text",
-<<<<<<< HEAD
-  "announcement.announcement": "Meddelande",
-=======
   "alt_text_modal.add_alt_text": "Lägg till alt-text",
   "alt_text_modal.add_text_from_image": "Lägg till text från bild",
   "alt_text_modal.cancel": "Avbryt",
@@ -134,7 +128,7 @@
   "annual_report.summary.percentile.text": "<topLabel>Det placerar dig i topp</topLabel><percentage></percentage><bottomLabel>bland {domain} användare.</bottomLabel>",
   "annual_report.summary.percentile.we_wont_tell_bernie": "Vi berättar inte för Bernie.",
   "annual_report.summary.thanks": "Tack för att du är en del av Mastodon!",
->>>>>>> v4.4.3
+
   "attachments_list.unprocessed": "(obehandlad)",
   "audio.hide": "Dölj audio",
   "block_modal.remote_users_caveat": "Vi kommer att be servern {domain} att respektera ditt beslut. Dock garanteras inte efterlevnad eftersom vissa servrar kan hantera blockeringar på olika sätt. Offentliga inlägg kan fortfarande vara synliga för icke-inloggade användare.",
@@ -169,10 +163,8 @@
   "column.blocks": "Blockerade användare",
   "column.bookmarks": "Bokmärken",
   "column.community": "Lokal tidslinje",
-<<<<<<< HEAD
-=======
   "column.create_list": "Skapa lista",
->>>>>>> v4.4.3
+
   "column.direct": "Privata omnämnande",
   "column.directory": "Bläddra bland profiler",
   "column.domain_blocks": "Blockerade domäner",
@@ -456,15 +448,6 @@
   "ignore_notifications_modal.not_followers_title": "Vill du ignorera aviseringar från personer som inte följer dig?",
   "ignore_notifications_modal.not_following_title": "Vill du blockera aviseringar från personer som du inte följer dig?",
   "ignore_notifications_modal.private_mentions_title": "Vill du ignorera aviseringar från oombedda privata omnämnanden?",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "Med ett Mastodon-konto kan du favoritmarkera detta inlägg för att visa författaren att du gillar det och för att spara det till senare.",
-  "interaction_modal.description.follow": "Med ett Mastodon-konto kan du följa {name} för att se deras inlägg i ditt hemflöde.",
-  "interaction_modal.description.reblog": "Med ett Mastodon-konto kan du boosta detta inlägg för att dela den med dina egna följare.",
-  "interaction_modal.description.reply": "Med ett Mastodon-konto kan du svara på detta inlägg.",
-  "interaction_modal.login.action": "Ta mig hem",
-  "interaction_modal.login.prompt": "Domän för din hemserver, t.ex. mastodon.social",
-  "interaction_modal.no_account_yet": "Inte på Mastodon?",
-=======
   "info_button.label": "Hjälp",
   "info_button.what_is_alt_text": "<h1>Vad är alt-text?</h1> <p>alt-text ger bildbeskrivningar för personer med synnedsättning, anslutningar med låg bandbredd eller de som söker extra sammanhang.</p> <p>Du kan förbättra tillgängligheten och förståelsen för alla genom att skriva en tydlig, koncis och objektiv alt-text.</p> <ul> <li>Fånga viktiga element</li> <li>Sammanfatta text i bilder</li> <li>Använd vanlig meningsstruktur</li> <li>Undvik överflödig information</li> <li>Fokus på trender och viktiga resultat i komplexa bilder (som diagram eller kartor)</li> </ul>",
   "interaction_modal.action.favourite": "För att fortsätta, måste du favoritmarkera från ditt konto.",
@@ -474,7 +457,7 @@
   "interaction_modal.action.vote": "För att fortsätta, måste du rösta från ditt konto.",
   "interaction_modal.go": "Vidare",
   "interaction_modal.no_account_yet": "Har du inget konto än?",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "På en annan server",
   "interaction_modal.on_this_server": "På denna server",
   "interaction_modal.title.favourite": "Favoritmarkera {name}s inlägg",
@@ -518,10 +501,8 @@
   "keyboard_shortcuts.toggle_hidden": "Visa/gömma text bakom CW",
   "keyboard_shortcuts.toggle_sensitivity": "Visa/gömma media",
   "keyboard_shortcuts.toot": "Starta nytt inlägg",
-<<<<<<< HEAD
-=======
   "keyboard_shortcuts.translate": "för att översätta ett inlägg",
->>>>>>> v4.4.3
+
   "keyboard_shortcuts.unfocus": "Avfokusera skrivfält/sökfält",
   "keyboard_shortcuts.up": "Flytta uppåt i listan",
   "lightbox.close": "Stäng",
@@ -573,23 +554,15 @@
   "mute_modal.you_wont_see_mentions": "Du kommer inte att se inlägg som nämner dem.",
   "mute_modal.you_wont_see_posts": "De kan fortfarande se dina inlägg, men du kan inte se deras.",
   "navigation_bar.about": "Om",
-<<<<<<< HEAD
-=======
   "navigation_bar.account_settings": "Lösenord och säkerhet",
->>>>>>> v4.4.3
+
   "navigation_bar.administration": "Administration",
   "navigation_bar.advanced_interface": "Öppna i avancerat webbgränssnitt",
   "navigation_bar.automated_deletion": "Automatisk radering av inlägg",
   "navigation_bar.blocks": "Blockerade användare",
   "navigation_bar.bookmarks": "Bokmärken",
-<<<<<<< HEAD
-  "navigation_bar.community_timeline": "Lokal tidslinje",
-  "navigation_bar.compose": "Författa nytt inlägg",
   "navigation_bar.direct": "Privata omnämnande",
-  "navigation_bar.discover": "Upptäck",
-=======
-  "navigation_bar.direct": "Privata omnämnande",
->>>>>>> v4.4.3
+
   "navigation_bar.domain_blocks": "Dolda domäner",
   "navigation_bar.favourites": "Favoriter",
   "navigation_bar.filters": "Tystade ord",
@@ -602,10 +575,8 @@
   "navigation_bar.live_feed_public": "Direkt flöde (publikt)",
   "navigation_bar.logout": "Logga ut",
   "navigation_bar.moderation": "Moderering",
-<<<<<<< HEAD
-=======
   "navigation_bar.more": "Fler",
->>>>>>> v4.4.3
+
   "navigation_bar.mutes": "Tystade användare",
   "navigation_bar.opened_in_classic_interface": "Inlägg, konton och andra specifika sidor öppnas som standard i det klassiska webbgränssnittet.",
   "navigation_bar.preferences": "Inställningar",
@@ -734,22 +705,12 @@
   "notifications_permission_banner.enable": "Aktivera skrivbordsaviseringar",
   "notifications_permission_banner.how_to_control": "För att ta emot aviseringar när Mastodon inte är öppet, aktivera skrivbordsaviseringar. När de är aktiverade kan du styra exakt vilka typer av interaktioner som aviseras via {icon} -knappen ovan.",
   "notifications_permission_banner.title": "Missa aldrig något",
-<<<<<<< HEAD
-  "onboarding.action.back": "Ta mig tillbaka",
-  "onboarding.actions.back": "Ta mig tillbaka",
-  "onboarding.actions.go_to_explore": "See what's trending",
-  "onboarding.actions.go_to_home": "Ta mig till mitt hemflöde",
-  "onboarding.compose.template": "Hallå #Mastodon!",
-  "onboarding.follows.empty": "Tyvärr kan inga resultat visas just nu. Du kan prova att använda sökfunktionen eller utforska sidan för att hitta personer att följa, eller försök igen senare.",
-  "onboarding.follows.lead": "Ditt hemflöde är det primära sättet att uppleva Mastodon. Ju fler människor du följer, desto mer aktiv och intressant blir det. För att komma igång, är här några förslag:",
-  "onboarding.follows.title": "Anpassa ditt hemflöde",
-=======
   "onboarding.follows.back": "Tillbaka",
   "onboarding.follows.done": "Färdig",
   "onboarding.follows.empty": "Tyvärr kan inga resultat visas just nu. Du kan prova att använda sökfunktionen eller utforska sidan för att hitta personer att följa, eller försök igen senare.",
   "onboarding.follows.search": "Sök",
   "onboarding.follows.title": "Följ människor för att komma igång",
->>>>>>> v4.4.3
+
   "onboarding.profile.discoverable": "Gör min profil upptäckbar",
   "onboarding.profile.discoverable_hint": "När du väljer att vara upptäckbar på Mastodon kan dina inlägg visas i sök- och trendresultat, och din profil kan föreslås för personer med liknande intressen som du.",
   "onboarding.profile.display_name": "Visningsnamn",
@@ -760,28 +721,7 @@
   "onboarding.profile.title": "Konfiguration av profil",
   "onboarding.profile.upload_avatar": "Ladda upp profilbild",
   "onboarding.profile.upload_header": "Ladda upp profilbanner",
-<<<<<<< HEAD
-  "onboarding.share.lead": "Låt folk veta hur de kan hitta dig på Mastodon!",
-  "onboarding.share.message": "Jag är {username} på #Mastodon! Följ mig på {url}",
-  "onboarding.share.next_steps": "Möjliga nästa steg:",
-  "onboarding.share.title": "Dela din profil",
-  "onboarding.start.lead": "Your new Mastodon account is ready to go. Here's how you can make the most of it:",
-  "onboarding.start.skip": "Want to skip right ahead?",
-  "onboarding.start.title": "Du klarade det!",
-  "onboarding.steps.follow_people.body": "You curate your own feed. Lets fill it with interesting people.",
-  "onboarding.steps.follow_people.title": "Follow {count, plural, one {one person} other {# people}}",
-  "onboarding.steps.publish_status.body": "Säg hej till världen med text, foton, videor eller omröstningar {emoji}",
-  "onboarding.steps.publish_status.title": "Gör ditt första inlägg",
-  "onboarding.steps.setup_profile.body": "Others are more likely to interact with you with a filled out profile.",
-  "onboarding.steps.setup_profile.title": "Customize your profile",
-  "onboarding.steps.share_profile.body": "Let your friends know how to find you on Mastodon!",
-  "onboarding.steps.share_profile.title": "Dela din profil",
-  "onboarding.tips.2fa": "<strong>Visste du att?</strong> Du kan säkra ditt konto genom att ställa in tvåfaktorsautentisering i dina kontoinställningar. Det fungerar med valfri TOTP-app; inget telefonnummer behövs!",
-  "onboarding.tips.accounts_from_other_servers": "<strong>Visste du att?</strong> Eftersom Mastodon är decentraliserat kommer vissa profiler som du stöter på att finnas på andra servrar än dina. Ändå kan du interagera med dem sömlöst! Deras server är i den andra halvan av deras användarnamn!",
-  "onboarding.tips.migration": "<strong>Visste du?</strong> Om du känner för att {domain} inte är ett bra serverval för dig i framtiden, kan du flytta till en annan Mastodon-server utan att förlora dina följare. Du kan även vara värd för din egen server!",
-  "onboarding.tips.verification": "<strong>Visste du?</strong> Du kan verifiera ditt konto genom att sätta en länk till din Mastodon-profil på din egen webbplats och lägga till webbplatsen i din profil. Inga avgifter eller dokument behövs!",
-=======
->>>>>>> v4.4.3
+
   "password_confirmation.exceeds_maxlength": "Lösenordsbekräftelsen överskrider den maximala längden på lösenordet",
   "password_confirmation.mismatching": "Lösenordsbekräftelsen matchar inte",
   "picture_in_picture.restore": "Lägg tillbaka det",
@@ -957,10 +897,8 @@
   "status.reblogs.empty": "Ingen har boostat detta inlägg än. När någon gör det kommer de synas här.",
   "status.redraft": "Radera & gör om",
   "status.remove_bookmark": "Ta bort bokmärke",
-<<<<<<< HEAD
-=======
   "status.remove_favourite": "Ta bort från Favoriter",
->>>>>>> v4.4.3
+
   "status.replied_in_thread": "Svarade i tråden",
   "status.replied_to": "Svarade på {name}",
   "status.reply": "Svara",
@@ -1003,11 +941,7 @@
   "upload_button.label": "Lägg till media",
   "upload_error.limit": "Filöverföringsgränsen överskriden.",
   "upload_error.poll": "Filuppladdning tillåts inte med omröstningar.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Beskriv för personer med hörselnedsättning",
-  "upload_form.description": "Beskriv för synskadade",
-=======
->>>>>>> v4.4.3
+
   "upload_form.drag_and_drop.instructions": "För att plocka upp en mediebilaga, tryck på mellanslag eller enter. Använd piltangenterna för att flytta mediebilagan. Tryck på mellanslag eller enter igen för att släppa mediebilagan i sin nya position, eller tryck på escape för att avbryta.",
   "upload_form.drag_and_drop.on_drag_cancel": "Flytten avbröts. Mediebilagan {item} släpptes.",
   "upload_form.drag_and_drop.on_drag_end": "Mediebilagan {item} släpptes.",

@@ -3,11 +3,8 @@ sl:
   simple_form:
     hints:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Ena na vrstico. Ščiti pred napačno navedbo avtorstva.
-=======
         attribution_domains: Ena na vrstico. Ščiti pred napačno navedbo avtorstva.
->>>>>>> v4.4.3
+
         discoverable: Vaše javne objave in profil so lahko predstavljeni ali priporočeni v različnih delih Mastodona, vaš profil pa je lahko predlagan drugim uporabnikom.
         display_name: Vaše polno ime ali lažno ime.
         fields: Vaša domača stran, starost, kar koli.
@@ -163,11 +160,8 @@ sl:
         url: Kam bodo poslani dogodki
     labels:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Spletna mesta, ki vas smejo navajati kot avtorja/ico
-=======
         attribution_domains: Spletna mesta, ki vas smejo navajati kot avtorja/ico
->>>>>>> v4.4.3
+
         discoverable: Izpostavljaj profile in objave v algoritmih odkrivanja
         fields:
           name: Oznaka

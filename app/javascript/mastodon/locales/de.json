@@ -6,11 +6,8 @@
   "about.domain_blocks.no_reason_available": "Grund unbekannt",
   "about.domain_blocks.preamble": "Mastodon erlaubt es dir grundsätzlich, alle Inhalte von allen Nutzer*innen auf allen Servern im Fediverse zu sehen und mit ihnen zu interagieren. Für diesen Server gibt es aber ein paar Ausnahmen.",
   "about.domain_blocks.silenced.explanation": "Standardmäßig werden von diesem Server keine Inhalte oder Profile angezeigt. Du kannst die Profile und Inhalte aber dennoch sehen, wenn du explizit nach diesen suchst oder diesen folgst.",
-<<<<<<< HEAD
-  "about.domain_blocks.silenced.title": "Stummgeschaltet",
-=======
   "about.domain_blocks.silenced.title": "Ausgeblendet",
->>>>>>> v4.4.3
+
   "about.domain_blocks.suspended.explanation": "Es werden keine Daten von diesem Server verarbeitet, gespeichert oder ausgetauscht, sodass eine Interaktion oder Kommunikation mit Nutzer*innen dieses Servers nicht möglich ist.",
   "about.domain_blocks.suspended.title": "Gesperrt",
   "about.language_label": "Sprache",
@@ -25,10 +22,8 @@
   "account.block_domain": "{domain} sperren",
   "account.block_short": "Blockieren",
   "account.blocked": "Blockiert",
-<<<<<<< HEAD
-=======
   "account.blocking": "Blockiert",
->>>>>>> v4.4.3
+
   "account.cancel_follow_request": "Follower-Anfrage zurückziehen",
   "account.copy": "Link zum Profil kopieren",
   "account.direct": "@{name} privat erwähnen",
@@ -370,11 +365,8 @@
   "filter_modal.select_filter.title": "Diesen Beitrag filtern",
   "filter_modal.title.status": "Beitrag per Filter ausblenden",
   "filter_warning.matches_filter": "Übereinstimmend mit dem Filter „<span>{title}</span>“",
-<<<<<<< HEAD
-  "filtered_notifications_banner.pending_requests": "Von {count, plural, =0 {keinem, den} one {einer Person, die} other {# Personen, die}} du möglicherweise kennst",
-=======
   "filtered_notifications_banner.pending_requests": "Von {count, plural, =0 {keinem Profil, das dir möglicherweise bekannt ist} one {einem Profil, das dir möglicherweise bekannt ist} other {# Profilen, die dir möglicherweise bekannt sind}}",
->>>>>>> v4.4.3
+
   "filtered_notifications_banner.title": "Gefilterte Benachrichtigungen",
   "firehose.all": "Alle Server",
   "firehose.local": "Dieser Server",
@@ -598,17 +590,13 @@
   "notification.admin.report_statuses_other": "{name} meldete {target}",
   "notification.admin.sign_up": "{name} registrierte sich",
   "notification.admin.sign_up.name_and_others": "{name} und {count, plural, one {# weiteres Profil} other {# weitere Profile}} registrierten sich",
-<<<<<<< HEAD
-  "notification.favourite": "{name} favorisierte deinen Beitrag",
-  "notification.favourite.name_and_others_with_link": "{name} und <a>{count, plural, one {# weiteres Profil} other {# weitere Profile}}</a> favorisierten deinen Beitrag",
-=======
   "notification.annual_report.message": "Dein #Wrapstodon für {year} erwartet dich! Lass deine Highlights und unvergesslichen Momente auf Mastodon erneut aufleben!",
   "notification.annual_report.view": "#Wrapstodon ansehen",
   "notification.favourite": "{name} favorisierte deinen Beitrag",
   "notification.favourite.name_and_others_with_link": "{name} und <a>{count, plural, one {# weiteres Profil} other {# weitere Profile}}</a> favorisierten deinen Beitrag",
   "notification.favourite_pm": "{name} favorisierte deine private Erwähnung",
   "notification.favourite_pm.name_and_others_with_link": "{name} und <a>{count, plural, one {# weiteres Profil} other {# weitere Profile}}</a> favorisierten deine private Erwähnung",
->>>>>>> v4.4.3
+
   "notification.follow": "{name} folgt dir",
   "notification.follow.name_and_others": "{name} und <a>{count, plural, one {# weiteres Profil} other {# weitere Profile}}</a> folgen dir",
   "notification.follow_request": "{name} möchte dir folgen",
@@ -743,11 +731,8 @@
   "poll_button.remove_poll": "Umfrage entfernen",
   "privacy.change": "Sichtbarkeit anpassen",
   "privacy.direct.long": "Alle in diesem Beitrag erwähnten Profile",
-<<<<<<< HEAD
-  "privacy.direct.short": "Ausgewählte Profile",
-=======
   "privacy.direct.short": "Private Erwähnung",
->>>>>>> v4.4.3
+
   "privacy.private.long": "Nur deine Follower",
   "privacy.private.short": "Follower",
   "privacy.public.long": "Alle in und außerhalb von Mastodon",

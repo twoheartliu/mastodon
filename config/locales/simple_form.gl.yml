@@ -3,11 +3,8 @@ gl:
   simple_form:
     hints:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Un por liña. Protéxete das atribucións falsas.
-=======
         attribution_domains: Un por liña. Como protección para falsas atribucións.
->>>>>>> v4.4.3
+
         discoverable: As túas publicacións públicas e perfil poden mostrarse ou recomendarse en varias zonas de Mastodon e o teu perfil ser suxerido a outras usuarias.
         display_name: O teu nome completo ou un nome divertido.
         fields: Páxina web, pronome, idade, o que ti queiras.
@@ -169,11 +166,8 @@ gl:
         url: A onde se enviarán os eventos
     labels:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Sitios web que poden acreditarte
-=======
         attribution_domains: Sitios web que dan fe sobre ti
->>>>>>> v4.4.3
+
         discoverable: Perfil destacado e publicacións nos algoritmos de descubrimento
         fields:
           name: Etiqueta

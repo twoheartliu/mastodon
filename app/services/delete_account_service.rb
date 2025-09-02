@@ -51,11 +51,8 @@ class DeleteAccountService < BaseService
     scheduled_statuses
     status_pins
     tag_follows
-<<<<<<< HEAD
-  )
-=======
   ).freeze
->>>>>>> v4.4.3
+
 
   ASSOCIATIONS_ON_DESTROY = %w(
     reports

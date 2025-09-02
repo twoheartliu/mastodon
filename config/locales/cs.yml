@@ -211,17 +211,12 @@ cs:
         destroy_user_role: Zničit roli
         disable_2fa_user: Vypnout 2FA
         disable_custom_emoji: Zakázat vlastní emoji
-<<<<<<< HEAD
-        disable_sign_in_token_auth_user: Zrušit uživatelovo ověřování e-mailovým tokenem
-        disable_user: Deaktivovat uživatele
-        enable_custom_emoji: Povolit vlastní emoji
-=======
         disable_relay: Deaktivovat relay
         disable_sign_in_token_auth_user: Zrušit uživatelovo ověřování e-mailovým tokenem
         disable_user: Deaktivovat uživatele
         enable_custom_emoji: Povolit vlastní emoji
         enable_relay: Aktivovat relay
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user: Povolit uživatelovo ověřování e-mailovým tokenem
         enable_user: Povolit uživatele
         memorialize_account: Změna na „in memoriam“
@@ -282,17 +277,12 @@ cs:
         destroy_user_role_html: "%{name} odstranil %{target} roli"
         disable_2fa_user_html: Uživatel %{name} vypnul dvoufázové ověřování pro uživatele %{target}
         disable_custom_emoji_html: Uživatel %{name} zakázal emoji %{target}
-<<<<<<< HEAD
-        disable_sign_in_token_auth_user_html: "%{name} deaktivoval*a ověřování e-mailovým tokenem pro %{target}"
-        disable_user_html: Uživatel %{name} zakázal přihlašování pro uživatele %{target}
-        enable_custom_emoji_html: Uživatel %{name} povolil emoji %{target}
-=======
         disable_relay_html: "%{name} deaktivoval*a relay %{target}"
         disable_sign_in_token_auth_user_html: "%{name} deaktivoval*a ověřování e-mailovým tokenem pro %{target}"
         disable_user_html: Uživatel %{name} zakázal přihlašování pro uživatele %{target}
         enable_custom_emoji_html: Uživatel %{name} povolil emoji %{target}
         enable_relay_html: "%{name} aktivoval*a relay %{target}"
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user_html: "%{name} aktivoval*a ověřování e-mailovým tokenem pro %{target}"
         enable_user_html: Uživatel %{name} povolil přihlašování pro uživatele %{target}
         memorialize_account_html: Uživatel %{name} změnil účet %{target} na „in memoriam“ stránku
@@ -1291,11 +1281,8 @@ cs:
     set_new_password: Nastavit nové heslo
     setup:
       email_below_hint_html: Zkontrolujte složku se spamem, nebo požádejte o další. Svou e-mailovou adresu si můžete opravit, pokud je špatně.
-<<<<<<< HEAD
-      email_settings_hint_html: Klikněte na odkaz, který jsme Vám poslali k ověření %{email}. Budeme zde čekat.
-=======
       email_settings_hint_html: Kliknutím na odkaz, který jsme poslali do %{email}, začnete používat Mastodon. Budeme tu čekat.
->>>>>>> v4.4.3
+
       link_not_received: Nedostali jste odkaz?
       new_confirmation_instructions_sent: Za několik minut obdržíte nový e-mail s potvrzovacím odkazem!
       title: Zkontrolujte doručenou poštu
@@ -1316,11 +1303,9 @@ cs:
       view_strikes: Zobrazit minulé prohřešky vašeho účtu
     too_fast: Formulář byl odeslán příliš rychle, zkuste to znovu.
     use_security_key: Použít bezpečnostní klíč
-<<<<<<< HEAD
-=======
     user_agreement_html: Přečetl jsem si a souhlasím s <a href="%{terms_of_service_path}" target="_blank">podmínkami služby</a> a <a href="%{privacy_policy_path}" target="_blank">ochranou osobních údajů</a>
     user_privacy_agreement_html: Četl jsem a souhlasím se zásadami <a href="%{privacy_policy_path}" target="_blank">ochrany osobních údajů</a>
->>>>>>> v4.4.3
+
   author_attribution:
     example_title: Ukázkový text
     hint_html: Píšete novinové články nebo blog mimo Mastodon? Kontrolujte, jak Vám bude připisováno autorství, když jsou sdíleny na Mastodonu.

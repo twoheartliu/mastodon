@@ -71,14 +71,12 @@
   "alert.unexpected.message": "Una error s’es producha.",
   "alert.unexpected.title": "Ops !",
   "alt_text_badge.title": "Tèxt alternatiu",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Inserir tèxte alteratiu",
   "alt_text_modal.add_text_from_image": "Apondre tèxte de l’imatge",
   "alt_text_modal.cancel": "Anullar",
   "alt_text_modal.change_thumbnail": "Cambiar de miniatura",
   "alt_text_modal.done": "Acabat",
->>>>>>> v4.4.3
+
   "announcement.announcement": "Anóncia",
   "annual_report.summary.followers.followers": "seguidors",
   "annual_report.summary.followers.total": "{count} en total",
@@ -139,10 +137,7 @@
   "compose_form.poll.switch_to_single": "Cambiar lo sondatge per permetre una sola causida",
   "compose_form.poll.type": "Estil",
   "compose_form.publish": "Publicar",
-<<<<<<< HEAD
-  "compose_form.publish_form": "Publicar",
-=======
->>>>>>> v4.4.3
+
   "compose_form.reply": "Respondre",
   "compose_form.save_changes": "Actualizar",
   "compose_form.spoiler.marked": "Lo tèxte es rescondut jos l’avertiment",

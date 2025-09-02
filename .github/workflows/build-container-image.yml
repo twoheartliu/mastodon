@@ -130,11 +130,8 @@ jobs:
           merge-multiple: true
 
       - name: Log in to Docker Hub
-<<<<<<< HEAD
-        if: contains(inputs.push_to_images, 'twoheart')
-=======
         if: contains(inputs.push_to_images, 'tootsuite')
->>>>>>> v4.4.3
+
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}

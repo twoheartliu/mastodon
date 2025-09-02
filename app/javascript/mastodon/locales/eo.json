@@ -26,12 +26,6 @@
   "account.copy": "Kopii ligilon al profilo",
   "account.direct": "Private mencii @{name}",
   "account.disable_notifications": "Ĉesu sciigi min kiam @{name} afiŝas",
-<<<<<<< HEAD
-  "account.domain_blocked": "Domajno blokita",
-  "account.edit_profile": "Redakti la profilon",
-  "account.enable_notifications": "Sciigu min kiam @{name} afiŝos",
-  "account.endorse": "Prezenti ĉe via profilo",
-=======
   "account.domain_blocking": "Blokas domajnon",
   "account.edit_profile": "Redakti la profilon",
   "account.enable_notifications": "Sciigu min kiam @{name} afiŝos",
@@ -39,7 +33,7 @@
   "account.featured": "Montrita",
   "account.featured.accounts": "Profiloj",
   "account.featured.hashtags": "Kradvortoj",
->>>>>>> v4.4.3
+
   "account.featured_tags.last_status_at": "Lasta afîŝo je {date}",
   "account.featured_tags.last_status_never": "Neniu afiŝo",
   "account.follow": "Sekvi",
@@ -56,13 +50,9 @@
   "account.in_memoriam": "Memore.",
   "account.joined_short": "Aliĝis",
   "account.languages": "Ŝanĝi la abonitajn lingvojn",
-<<<<<<< HEAD
-  "account.link_verified_on": "Propreco de tiu ligilo estis konfirmita je {date}",
-  "account.locked_info": "Tiu konto estas privatigita. La posedanto mane akceptas tiun, kiu povas sekvi rin.",
-=======
   "account.link_verified_on": "La posedanto de tiu ligilo estis kontrolita je {date}",
   "account.locked_info": "La privateco de tiu konto estas elektita kiel fermita. La posedanto povas mane akcepti tiun, kiu povas sekvi rin.",
->>>>>>> v4.4.3
+
   "account.media": "Aŭdovidaĵoj",
   "account.mention": "Mencii @{name}",
   "account.moved_to": "{name} indikis, ke ria nova konto estas nun:",
@@ -76,10 +66,8 @@
   "account.open_original_page": "Malfermi la originalan paĝon",
   "account.posts": "Afiŝoj",
   "account.posts_with_replies": "Afiŝoj kaj respondoj",
-<<<<<<< HEAD
-=======
   "account.remove_from_followers": "Forigi {name}-n de sekvantoj",
->>>>>>> v4.4.3
+
   "account.report": "Raporti @{name}",
   "account.requested": "Atendo de aprobo. Klaku por nuligi la peton por sekvado",
   "account.requested_follow": "{name} petis sekvi vin",
@@ -92,13 +80,9 @@
   "account.unblock_domain_short": "Malbloki",
   "account.unblock_short": "Malbloki",
   "account.unendorse": "Ne plu rekomendi ĉe la profilo",
-<<<<<<< HEAD
-  "account.unfollow": "Ĉesi sekvi",
-  "account.unmute": "Ne plu silentigi @{name}",
-=======
   "account.unfollow": "Ne plu sekvi",
   "account.unmute": "Malsilentigi @{name}",
->>>>>>> v4.4.3
+
   "account.unmute_notifications_short": "Malsilentigu sciigojn",
   "account.unmute_short": "Ne plu silentigi",
   "account_note.placeholder": "Alklaku por aldoni noton",
@@ -116,9 +100,6 @@
   "alert.unexpected.message": "Neatendita eraro okazis.",
   "alert.unexpected.title": "Ups!",
   "alt_text_badge.title": "Alt-teksto",
-<<<<<<< HEAD
-  "announcement.announcement": "Anonco",
-=======
   "alt_text_modal.add_alt_text": "Aldoni alttekston",
   "alt_text_modal.add_text_from_image": "Aldoni tekston de bildo",
   "alt_text_modal.cancel": "Nuligi",
@@ -146,7 +127,7 @@
   "annual_report.summary.percentile.text": "<topLabel>Tion metas vin en la plej</topLabel><percentage></percentage><bottomLabel>de {domain} uzantoj.</bottomLabel>",
   "annual_report.summary.percentile.we_wont_tell_bernie": "Ni ne diros al Zamenhof.",
   "annual_report.summary.thanks": "Dankon pro esti parto de Mastodon!",
->>>>>>> v4.4.3
+
   "attachments_list.unprocessed": "(neprilaborita)",
   "audio.hide": "Kaŝi aŭdion",
   "block_modal.remote_users_caveat": "Ni petos al la servilo {domain} respekti vian elekton. Tamen, plenumo ne estas garantiita ĉar iuj serviloj eble manipulas blokojn malsame. Publikaj afiŝoj eble ankoraŭ estas videbla por ne-ensalutintaj uzantoj.",
@@ -170,11 +151,8 @@
   "bundle_column_error.routing.body": "La celita paĝo ne troveblas. Ĉu vi certas, ke la retadreso (URL) en via retfoliumilo estas ĝusta?",
   "bundle_column_error.routing.title": "404",
   "bundle_modal_error.close": "Fermi",
-<<<<<<< HEAD
-  "bundle_modal_error.message": "Io misfunkciis en la ŝargado de ĉi tiu elemento.",
-=======
   "bundle_modal_error.message": "Io misfunkciis dum ŝarĝo de ĉi tiu ekrano.",
->>>>>>> v4.4.3
+
   "bundle_modal_error.retry": "Provu denove",
   "closed_registrations.other_server_instructions": "Ĉar Mastodon estas malcentraliza, vi povas krei konton ĉe alia servilo kaj ankoraŭ komuniki kun ĉi tiu.",
   "closed_registrations_modal.description": "Krei konton ĉe {domain} aktuale ne eblas, tamen bonvole rimarku, ke vi ne bezonas konton specife ĉe {domain} por uzi Mastodon.",
@@ -209,11 +187,8 @@
   "column_header.unpin": "Malfiksi",
   "column_search.cancel": "Nuligi",
   "community.column_settings.local_only": "Nur loka",
-<<<<<<< HEAD
-  "community.column_settings.media_only": "Nur vidaŭdaĵoj",
-=======
   "community.column_settings.media_only": "Nur aŭdovidaĵoj",
->>>>>>> v4.4.3
+
   "community.column_settings.remote_only": "Nur fora",
   "compose.language.change": "Ŝanĝi lingvon",
   "compose.language.search": "Serĉi lingvojn...",
@@ -233,12 +208,8 @@
   "compose_form.poll.switch_to_multiple": "Ŝanĝi la balotenketon por permesi multajn elektojn",
   "compose_form.poll.switch_to_single": "Ŝanĝi la balotenketon por permesi unu solan elekton",
   "compose_form.poll.type": "Stilo",
-<<<<<<< HEAD
-  "compose_form.publish": "Afiŝo",
-  "compose_form.publish_form": "Nova afiŝo",
-=======
   "compose_form.publish": "Afiŝi",
->>>>>>> v4.4.3
+
   "compose_form.reply": "Respondi",
   "compose_form.save_changes": "Ĝisdatigi",
   "compose_form.spoiler.marked": "Forigi la averton de enhavo",
@@ -254,15 +225,10 @@
   "confirmations.delete_list.title": "Ĉu forigi liston?",
   "confirmations.discard_edit_media.confirm": "Forĵeti",
   "confirmations.discard_edit_media.message": "Vi havas nekonservitajn ŝanĝojn de la priskribo aŭ la antaŭvidigo de la vidaŭdaĵo, ĉu vi forĵetu ilin malgraŭe?",
-<<<<<<< HEAD
-  "confirmations.edit.confirm": "Redakti",
-  "confirmations.edit.message": "Redakti nun anstataŭigos la skribatan afiŝon. Ĉu vi certas, ke vi volas daŭrigi?",
-  "confirmations.edit.title": "Ĉu superskribi afiŝon?",
-=======
   "confirmations.follow_to_list.confirm": "Sekvi kaj aldoni al listo",
   "confirmations.follow_to_list.message": "Vi devas sekvi {name} por aldoni ilin al listo.",
   "confirmations.follow_to_list.title": "Ĉu sekvi uzanton?",
->>>>>>> v4.4.3
+
   "confirmations.logout.confirm": "Elsaluti",
   "confirmations.logout.message": "Ĉu vi certas, ke vi volas elsaluti?",
   "confirmations.logout.title": "Ĉu elsaluti?",
@@ -298,14 +264,8 @@
   "disabled_account_banner.text": "Via konto {disabledAccount} estas nune malvalidigita.",
   "dismissable_banner.community_timeline": "Jen la plej novaj publikaj afiŝoj de uzantoj, kies kontojn gastigas {domain}.",
   "dismissable_banner.dismiss": "Eksigi",
-<<<<<<< HEAD
-  "dismissable_banner.explore_links": "Tiuj novaĵoj estas aktuale priparolataj de uzantoj en tiu ĉi kaj aliaj serviloj, sur la malcentrigita reto.",
-  "dismissable_banner.explore_statuses": "Jen afiŝoj en la socia reto kiuj populariĝis hodiaŭ. Novaj afiŝoj kun pli da diskonigoj kaj stelumoj aperas pli alte.",
-  "dismissable_banner.explore_tags": "Ĉi tiuj kradvostoj populariĝas en ĉi tiu kaj aliaj serviloj en la malcentraliza reto nun.",
-  "dismissable_banner.public_timeline": "Ĉi tiuj estas la plej lastatempaj publikaj afiŝoj de homoj en la socia reto, kiujn homoj sur {domain} sekvas.",
-=======
   "dismissable_banner.public_timeline": "Ĉi tiuj estas la plej ĵusaj publikaj afiŝoj de homoj en la fediverso, kiujn la homoj en {domain} sekvas.",
->>>>>>> v4.4.3
+
   "domain_block_modal.block": "Bloki servilon",
   "domain_block_modal.block_account_instead": "Bloki @{name} anstataŭe",
   "domain_block_modal.they_can_interact_with_old_posts": "Homoj de ĉi tiu servilo povas interagi kun viaj malnovaj afiŝoj.",
@@ -426,10 +386,7 @@
   "footer.about": "Pri",
   "footer.directory": "Profilujo",
   "footer.get_app": "Akiri la apon",
-<<<<<<< HEAD
-  "footer.invite": "Inviti homojn",
-=======
->>>>>>> v4.4.3
+
   "footer.keyboard_shortcuts": "Fulmoklavoj",
   "footer.privacy_policy": "Politiko de privateco",
   "footer.source_code": "Montri fontkodon",
@@ -452,10 +409,8 @@
   "hashtag.counter_by_accounts": "{count, plural,one {{counter} partoprenanto} other {{counter} partoprenantoj}}",
   "hashtag.counter_by_uses": "{count, plural,one {{counter} afiŝo} other {{counter} afiŝoj}}",
   "hashtag.counter_by_uses_today": "{count, plural,one {{counter} afiŝo} other {{counter} afiŝoj}} hodiaŭ",
-<<<<<<< HEAD
-=======
   "hashtag.feature": "Prezenti en profilo",
->>>>>>> v4.4.3
+
   "hashtag.follow": "Sekvi la kradvorton",
   "hashtag.mute": "Silentigi #{hashtag}",
   "hashtag.unfeature": "Ne prezenti en profilo",
@@ -488,15 +443,6 @@
   "ignore_notifications_modal.not_followers_title": "Ĉu ignori sciigojn de homoj, kiuj ne sekvas vin?",
   "ignore_notifications_modal.not_following_title": "Ĉu ignori sciigojn de homoj, kiujn vi ne sekvas?",
   "ignore_notifications_modal.private_mentions_title": "Ĉu ignori sciigojn de nepetitaj privataj mencioj?",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "Per konto ĉe Mastodon, vi povas stelumi ĉi tiun afiŝon por sciigi la afiŝanton ke vi sâtas kaj konservas ĝin por poste.",
-  "interaction_modal.description.follow": "Kun konto ĉe Mastodon, vi povas sekvi {name} por ricevi iliajn afiŝojn en via hejma fluo.",
-  "interaction_modal.description.reblog": "Kun konto ĉe Mastodon, vi povas diskonigi ĉi tiun afiŝon, por ke viaj propraj sekvantoj vidu ĝin.",
-  "interaction_modal.description.reply": "Kun konto ĉe Mastodon, vi povos respondi al ĉi tiu afiŝo.",
-  "interaction_modal.login.action": "Prenu min hejmen",
-  "interaction_modal.login.prompt": "Domajno de via hejma servilo, ekz. mastodon.social",
-  "interaction_modal.no_account_yet": "Ĉu ne estas ĉe Mastodon?",
-=======
   "info_button.label": "Helpo",
   "info_button.what_is_alt_text": "<h1>Kio estas la alternativa teksto?</h1> <p>La alternativa teksto ofertas priskribojn de la bildoj por individuoj kun vidaj malfacilaĵoj, konektoj kun malalta larĝa bando aŭ kiuj serĉas plian kuntekston.</p> <p>Vi povas plibonigi alireblecon kaj komprenon por ĉiuj per skribado de klaraj, koncizaj, kaj objektivaj alternativaj tekstoj.</p><ul><li>Kaptu gravajn elementojn.</li><li> Resumu tekston en bildoj.</li> <li>Uzu regulan frazstrukturon.</li> <li>Evitu redundan informon.</li><li>Fokusu sur tendencoj kaj ĉefaj trovoj en kompleksaj visualoj (kiel diagramoj aŭ mapoj).</li></ul>",
   "interaction_modal.action.favourite": "Por daŭrigi, vi devas stelumi el via konto.",
@@ -506,7 +452,7 @@
   "interaction_modal.action.vote": "Por daŭrigi, vi devas voĉdoni el via konto.",
   "interaction_modal.go": "Iru",
   "interaction_modal.no_account_yet": "Ĉu vi ankoraŭ ne havas konton?",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "En alia servilo",
   "interaction_modal.on_this_server": "En ĉi tiu servilo",
   "interaction_modal.title.favourite": "Stelumi la afiŝon de {name}",
@@ -550,10 +496,8 @@
   "keyboard_shortcuts.toggle_hidden": "Montri/kaŝi tekston malantaŭ CW",
   "keyboard_shortcuts.toggle_sensitivity": "Montri/kaŝi vidaŭdaĵojn",
   "keyboard_shortcuts.toot": "Komencu novan afiŝon",
-<<<<<<< HEAD
-=======
   "keyboard_shortcuts.translate": "Traduki afiŝon",
->>>>>>> v4.4.3
+
   "keyboard_shortcuts.unfocus": "Senfokusigi verki tekstareon/serĉon",
   "keyboard_shortcuts.up": "Movu supren en la listo",
   "lightbox.close": "Fermi",
@@ -611,14 +555,8 @@
   "navigation_bar.automated_deletion": "Aŭtomata forigo de afiŝoj",
   "navigation_bar.blocks": "Blokitaj uzantoj",
   "navigation_bar.bookmarks": "Legosignoj",
-<<<<<<< HEAD
-  "navigation_bar.community_timeline": "Loka templinio",
-  "navigation_bar.compose": "Redakti novan afiŝon",
   "navigation_bar.direct": "Privataj mencioj",
-  "navigation_bar.discover": "Malkovri",
-=======
-  "navigation_bar.direct": "Privataj mencioj",
->>>>>>> v4.4.3
+
   "navigation_bar.domain_blocks": "Blokitaj domajnoj",
   "navigation_bar.favourites": "Stelumoj",
   "navigation_bar.filters": "Silentigitaj vortoj",
@@ -632,11 +570,7 @@
   "navigation_bar.more": "Pli",
   "navigation_bar.mutes": "Silentigitaj uzantoj",
   "navigation_bar.opened_in_classic_interface": "Afiŝoj, kontoj, kaj aliaj specifaj paĝoj kiuj estas malfermititaj defaulta en la klasika reta interfaco.",
-<<<<<<< HEAD
-  "navigation_bar.personal": "Persone",
-  "navigation_bar.pins": "Alpinglitaj afiŝoj",
-=======
->>>>>>> v4.4.3
+
   "navigation_bar.preferences": "Preferoj",
   "navigation_bar.privacy_and_reach": "Privateco kaj atingo",
   "navigation_bar.search": "Serĉi",
@@ -648,11 +582,9 @@
   "notification.admin.report_statuses_other": "{name} raportis {target}",
   "notification.admin.sign_up": "{name} kreis konton",
   "notification.admin.sign_up.name_and_others": "{name} kaj {count, plural, one {# alia} other {# aliaj}} kreis konton",
-<<<<<<< HEAD
-=======
   "notification.annual_report.message": "Via {year} #Wrapstodon atendas! Malkovru viajn bonaĵojn kaj memorindajn momentojn en Mastodon!",
   "notification.annual_report.view": "Vidu #Wrapstodon",
->>>>>>> v4.4.3
+
   "notification.favourite": "{name} ŝatis vian afiŝon",
   "notification.favourite.name_and_others_with_link": "{name} kaj <a>{count, plural, one {# alia} other {# aliaj}}</a> ŝatis vian afiŝon",
   "notification.favourite_pm": "{name} ŝatis vian privatan mencion",
@@ -761,16 +693,9 @@
   "notifications_permission_banner.enable": "Ŝalti retumilajn sciigojn",
   "notifications_permission_banner.how_to_control": "Por ricevi sciigojn kiam Mastodon ne estas malfermita, ebligu labortablajn sciigojn. Vi povas regi precize kiuj specoj de interagoj generas labortablajn sciigojn per la supra butono {icon} post kiam ili estas ebligitaj.",
   "notifications_permission_banner.title": "Neniam preterlasas iun ajn",
-<<<<<<< HEAD
-  "onboarding.action.back": "Prenu min reen",
-  "onboarding.actions.back": "Prenu min reen",
-  "onboarding.actions.go_to_explore": "Konduku min al tendenco",
-  "onboarding.actions.go_to_home": "Konduku min al mia hejma fluo",
-  "onboarding.compose.template": "Saluton #Mastodon!",
-=======
   "onboarding.follows.back": "Reen",
   "onboarding.follows.done": "Farita",
->>>>>>> v4.4.3
+
   "onboarding.follows.empty": "Bedaŭrinde, neniu rezulto estas montrebla nuntempe. Vi povas provi serĉi aŭ foliumi la esploran paĝon por trovi kontojn por sekvi, aŭ retrovi baldaŭ.",
   "onboarding.follows.search": "Serĉi",
   "onboarding.follows.title": "Sekvi homojn por komenci",
@@ -784,28 +709,7 @@
   "onboarding.profile.title": "Profila fikso",
   "onboarding.profile.upload_avatar": "Alŝuti profilbildon",
   "onboarding.profile.upload_header": "Alŝuti profilkapbildon",
-<<<<<<< HEAD
-  "onboarding.share.lead": "Sciigi personojn pri kiel ili povas trovi vin ĉe Mastodon!",
-  "onboarding.share.message": "Mi estas {username} en #Mastodon! Sekvu min ĉe {url}",
-  "onboarding.share.next_steps": "Eblaj malantauaj paŝoj:",
-  "onboarding.share.title": "Disvastigi vian profilon",
-  "onboarding.start.lead": "Vi nun estas parto de Mastodon, unika, malcentralizita socia amaskomunikilara platformo, kie vi—ne algoritmo—zorgas vian propran sperton. Ni komencu vin sur ĉi tiu nova socia limo:",
-  "onboarding.start.skip": "Ĉu vi ne bezonas helpon por komenci?",
-  "onboarding.start.title": "Vi atingas ĝin!",
-  "onboarding.steps.follow_people.body": "You curate your own feed. Lets fill it with interesting people.",
-  "onboarding.steps.follow_people.title": "Agordu vian hejman fluon",
-  "onboarding.steps.publish_status.body": "Salutu la mondon per teksto, fotoj, filmetoj aŭ balotenketoj {emoji}",
-  "onboarding.steps.publish_status.title": "Fari vian unuan afiŝon",
-  "onboarding.steps.setup_profile.body": "Diskonigu viajn interagojn havante ampleksan profilon.",
-  "onboarding.steps.setup_profile.title": "Agordu vian profilon",
-  "onboarding.steps.share_profile.body": "Sciigu viajn amikojn kiel trovi vin sur Mastodon",
-  "onboarding.steps.share_profile.title": "Kunhavigu vian Mastodon-profilon",
-  "onboarding.tips.2fa": "<strong>Ĉu vi scias?</strong> Vi povas sekurigi vian konton per efektivigi dufaktora autentigo en via kontoagordoj.",
-  "onboarding.tips.accounts_from_other_servers": "<strong>Ĉu vi scias?</strong> Ĉar Mastodon estas sencentra, kelkaj profiloj kiujn vi trovi estas gastigitaj ĉe aliaj serviloj kiuj ne estas via.",
-  "onboarding.tips.migration": "<strong>Ĉu vi scias?</strong> Se vi sentas ke {domain} ne estas bona servilelekto por vi en la estonteco, vi povas translokiĝi al alia servilo de Mastodon sen malgajni viajn sekvantojn.",
-  "onboarding.tips.verification": "<strong>Ĉu vi sciis?</strong> Vi povas kontroli vian konton metante ligilon al via Mastodon-profilo en via propra retejo kaj aldonante la retejon al via profilo. Neniuj kotizoj aŭ dokumentoj necesaj!",
-=======
->>>>>>> v4.4.3
+
   "password_confirmation.exceeds_maxlength": "Pasvorto-konfirmo superas la maksimuman pasvortan longon",
   "password_confirmation.mismatching": "Pasvorto konfirmo ne kongruas",
   "picture_in_picture.restore": "Remetu ĝin",
@@ -919,12 +823,9 @@
   "search_results.accounts": "Profiloj",
   "search_results.all": "Ĉiuj",
   "search_results.hashtags": "Kradvortoj",
-<<<<<<< HEAD
-  "search_results.nothing_found": "Povis trovi nenion por ĉi tiuj serĉaj terminoj",
-=======
   "search_results.no_results": "Ne estas rezultoj.",
   "search_results.no_search_yet": "Provu serĉi afiŝojn, profilojn aŭ kradvortojn.",
->>>>>>> v4.4.3
+
   "search_results.see_all": "Vidi ĉiujn",
   "search_results.statuses": "Afiŝoj",
   "search_results.title": "Serĉu \"{q}\"",
@@ -970,13 +871,10 @@
   "status.mute_conversation": "Silentigi konversacion",
   "status.open": "Pligrandigu ĉi tiun afiŝon",
   "status.pin": "Alpingli al la profilo",
-<<<<<<< HEAD
-  "status.pinned": "Alpinglita afiŝo",
-=======
   "status.quote_error.not_found": "Ĉi tiu afiŝo ne povas esti montrata.",
   "status.quote_error.rejected": "Ĉi tiu afiŝo ne povas esti montrata ĉar la originala aŭtoro ne permesas ĝian citadon.",
   "status.quote_error.removed": "Ĉi tiu afiŝo estis forigita de ĝia aŭtoro.",
->>>>>>> v4.4.3
+
   "status.read_more": "Legi pli",
   "status.reblog": "Diskonigi",
   "status.reblog_private": "Diskonigi kun la sama videbleco",
@@ -1034,21 +932,7 @@
   "upload_form.drag_and_drop.on_drag_over": "Amaskomunikila aldonaĵo {item} estis movita.",
   "upload_form.drag_and_drop.on_drag_start": "Prenis amaskomunikilan aldonaĵon {item}.",
   "upload_form.edit": "Redakti",
-<<<<<<< HEAD
-  "upload_form.thumbnail": "Ŝanĝi etigita bildo",
-  "upload_form.video_description": "Priskribi por homoj kiuj malfacile aŭdi aŭ vidi",
-  "upload_modal.analyzing_picture": "Bilda analizado…",
-  "upload_modal.apply": "Apliki",
-  "upload_modal.applying": "Apliki…",
-  "upload_modal.choose_image": "Elekti bildon",
-  "upload_modal.description_placeholder": "Laŭ Ludoviko Zamenhof bongustas freŝa ĉeĥa manĝaĵo kun spicoj",
-  "upload_modal.detect_text": "Detekti tekston de la bildo",
-  "upload_modal.edit_media": "Redakti la vidaŭdaĵojn",
-  "upload_modal.hint": "Klaku aŭ trenu la cirklon en la antaŭvidilo por elekti la fokuspunkton kiu ĉiam videblos en ĉiuj etigitaj bildoj.",
-  "upload_modal.preparing_ocr": "Preparante OSR…",
-  "upload_modal.preview_label": "Antaŭvido ({ratio})",
-=======
->>>>>>> v4.4.3
+
   "upload_progress.label": "Alŝutante...",
   "upload_progress.processing": "Traktante…",
   "username.taken": "La uzantnomo estas jam posedita. Provu alion",

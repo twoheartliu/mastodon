@@ -214,10 +214,8 @@ pt-PT:
         enable_user: Ativar utilizador
         memorialize_account: Transformar conta num memorial
         promote_user: Promover utilizador
-<<<<<<< HEAD
-=======
         publish_terms_of_service: Publicar Termos de Serviço
->>>>>>> v4.4.3
+
         reject_appeal: Rejeitar contestação
         reject_user: Rejeitar utilizador
         remove_avatar_user: Remover imagem de perfil
@@ -282,10 +280,8 @@ pt-PT:
         enable_user_html: "%{name} ativou o início de sessão para o utilizador %{target}"
         memorialize_account_html: "%{name} transformou a conta de %{target} num memorial"
         promote_user_html: "%{name} promoveu o utilizador %{target}"
-<<<<<<< HEAD
-=======
         publish_terms_of_service_html: "%{name} publicou a atualização dos termos de serviço"
->>>>>>> v4.4.3
+
         reject_appeal_html: "%{name} rejeitou a contestação da decisão de moderação de %{target}"
         reject_user_html: "%{name} rejeitou a inscrição de %{target}"
         remove_avatar_user_html: "%{name} removeu a imagem de perfil de %{target}"
@@ -315,10 +311,8 @@ pt-PT:
       title: Registo de auditoria
       unavailable_instance: "(nome de domínio indisponível)"
     announcements:
-<<<<<<< HEAD
-=======
       back: Voltar às mensagem de manutenção
->>>>>>> v4.4.3
+
       destroyed_msg: Mensagem de manutenção eliminada com sucesso!
       edit:
         title: Editar mensagem de manutenção
@@ -327,13 +321,11 @@ pt-PT:
       new:
         create: Criar mensagem de manutenção
         title: Nova mensagem de manutenção
-<<<<<<< HEAD
-=======
       preview:
         disclaimer: Dado que os utilizadores não podem opor-se a elas, as notificações por e-mail devem ser limitadas a anúncios importantes, como notificações de violação de dados pessoais ou de encerramento de servidores.
         explanation_html: 'O e-mail será enviado para <strong>%{display_count} utilizadores</strong>. O texto seguinte será incluído na mensagem de e-mail:'
         title: Pré-visualização da mensagem de manutenção
->>>>>>> v4.4.3
+
       publish: Publicar
       published_msg: Mensagem de manutenção publicada com sucesso!
       scheduled_for: Agendado para %{time}
@@ -590,8 +582,6 @@ pt-PT:
         all: Todas
         limited: Limitadas
         title: Moderação
-<<<<<<< HEAD
-=======
       moderation_notes:
         create: Adicionar Nota de Moderação
         created_msg: Nota de moderação da instância criada com sucesso!
@@ -599,7 +589,7 @@ pt-PT:
         destroyed_msg: Nota de moderação da instância eliminada com sucesso!
         placeholder: Informações sobre esta instância, ações tomadas ou qualquer outra informação que o ajude na moderação desta instância no futuro.
         title: Notas de Moderação
->>>>>>> v4.4.3
+
       private_comment: Comentário privado
       public_comment: Comentário público
       purge: Purgar
@@ -813,28 +803,23 @@ pt-PT:
       description_html: Embora a maioria afirme ter lido e concordado com os termos de serviço, geralmente as pessoas só os leem depois de lhes surgir um problema. <strong>Torne fácil a leitura rápida das regras do seu servidor, apresentando-as numa lista de tópicos.</strong> Tente que cada regra seja sucinta e simples, mas tente também não dividi-las num número excessivo de tópicos separados.
       edit: Editar regra
       empty: Ainda não foi definida nenhuma regra do servidor.
-<<<<<<< HEAD
-      title: Regras do servidor
-=======
       move_down: Mover para baixo
       move_up: Mover para cima
       title: Regras do servidor
       translation: Tradução
       translations: Traduções
       translations_explanation: Opcionalmente, pode adicionar traduções para as regras do servidor. A versão predefinida será apresentada se não estiver disponível uma versão traduzida. Certifique-se sempre de que qualquer tradução fornecida está em sincronia com a versão predefinida.
->>>>>>> v4.4.3
+
     settings:
       about:
         manage_rules: Gerir regras do servidor
         preamble: Forneça informações aprofundadas sobre como o servidor é operado, moderado, financiado.
         rules_hint: Existe uma área dedicada às regras a que os teus utilizadores devem aderir.
         title: Sobre
-<<<<<<< HEAD
-=======
       allow_referrer_origin:
         desc: Quando os seus utilizadores clicam em links para sites externos, o navegador deles pode enviar o endereço do seu servidor Mastodon como referenciador. Desative esta opção se isso identificar inequivocamente os seus utilizadores, por exemplo, se este for um servidor Mastodon pessoal.
         title: Permitir que sites externos vejam o seu servidor Mastodon como uma fonte de tráfego
->>>>>>> v4.4.3
+
       appearance:
         preamble: Personaliza a interface web do Mastodon.
         title: Aparência
@@ -854,10 +839,8 @@ pt-PT:
       discovery:
         follow_recommendations: Recomendações de contas
         preamble: Revelar conteúdos interessantes é fundamental para a entrada de novos utilizadores que podem não conhecer ninguém no Mastodon. Controla como os vários recursos de descoberta funcionam no teu servidor.
-<<<<<<< HEAD
-=======
         privacy: Privacidade
->>>>>>> v4.4.3
+
         profile_directory: Diretório de perfis
         public_timelines: Cronologias públicas
         publish_statistics: Publicar estatísticas
@@ -921,18 +904,13 @@ pt-PT:
       open: Abrir publicação
       original_status: Publicação original
       reblogs: Impulsos
-<<<<<<< HEAD
-      status_changed: Publicação alterada
-      title: Publicações da conta
-      trending: Em tendência
-=======
       replied_to_html: Respondeu a %{acct_link}
       status_changed: Publicação alterada
       status_title: Publicado por @%{name}
       title: Publicações da conta - @%{name}
       trending: Em destaque
       view_publicly: Visualizar publicamente
->>>>>>> v4.4.3
+
       visibility: Visibilidade
       with_media: Com multimédia
     strikes:
@@ -950,11 +928,9 @@ pt-PT:
     system_checks:
       database_schema_check:
         message_html: Existem migrações de bases de dados pendentes. Execute-as para garantir que a aplicação se comporta como esperado
-<<<<<<< HEAD
-=======
       elasticsearch_analysis_index_mismatch:
         message_html: As definições do analisador de índices do Elasticsearch estão desactualizadas. Por favor, execute <code>tootctl search deploy --only-mapping --only=%{value}</code>
->>>>>>> v4.4.3
+
       elasticsearch_health_red:
         message_html: O cluster elasticsearch não está de boa saúde (estado vermelho), as funcionalidades de pesquisa não estão disponíveis
       elasticsearch_health_yellow:
@@ -1073,15 +1049,10 @@ pt-PT:
       only_allowed: Apenas permitidos
       pending_review: Pendente de revisão
       preview_card_providers:
-<<<<<<< HEAD
-        allowed: As hiperligações deste editor podem ser tendência
-        description_html: Estes são os domínios a partir dos quais hiperligações são frequentemente partilhadas no seu servidor. As suas hiperligações não serão colocadas em alta a menos que o seu domínio de origem seja aprovado. A sua aprovação (ou rejeição) estende-se a subdomínios.
-        rejected: As hiperligações deste editor não podem ser tendência
-=======
         allowed: As hiperligações deste editor podem ser destaque
         description_html: Estes são os domínios a partir dos quais hiperligações são frequentemente partilhadas no seu servidor. As hiperligações não serão colocadas em destaque sem que o seu domínio de origem seja aprovado. A sua aprovação (ou rejeição) estende-se a subdomínios.
         rejected: As hiperligações deste editor não podem ser destaque
->>>>>>> v4.4.3
+
         title: Editores
       rejected: Rejeitado
       statuses:
@@ -1091,11 +1062,8 @@ pt-PT:
         confirm_allow_account: Tem a certeza que pretende aceitar as contas selecionadas?
         confirm_disallow: Tem a certeza que pretende rejeitar os estados selecionados?
         confirm_disallow_account: Tem a certeza que pretende rejeitar as contas selecionadas?
-<<<<<<< HEAD
-        description_html: Estas são publicações que o seu servidor conhece e que estão a ser muito partilhadas e adicionadas aos favoritos neste momento. Pode ajudar os seus utilizadores novos e antigos a encontrar mais pessoas para seguir. Nenhuma publicação é apresentada publicamente até que o autor seja aprovado e o autor permita que a sua conta seja sugerida a outros. Também pode permitir ou rejeitar mensagens individuais.
-=======
         description_html: Estas são publicações que o seu servidor conhece e que estão a ser muito partilhadas e adicionadas aos favoritos neste momento. Pode ajudar os seus utilizadores novos e que estão a regressar a encontrar mais pessoas para seguir. Nenhuma publicação é apresentada publicamente até que o autor seja aprovado e o autor permita que a sua conta seja sugerida a outros. Também pode permitir ou rejeitar mensagens individuais.
->>>>>>> v4.4.3
+
         disallow: Não permitir publicação
         disallow_account: Não permitir autor
         no_status_selected: Não foram alteradas quaisquer publicações em destaque, uma vez que nenhuma foi selecionada
@@ -1103,11 +1071,8 @@ pt-PT:
         shared_by:
           one: Partilhada ou adicionada aos favoritos uma vez
           other: Partilhada ou adicionada aos favoritos %{friendly_count} vezes
-<<<<<<< HEAD
-        title: Publicações em tendência
-=======
         title: Publicações em destaque
->>>>>>> v4.4.3
+
       tags:
         current_score: Pontuação atual %{score}
         dashboard:
@@ -1123,13 +1088,9 @@ pt-PT:
         not_trendable: Não aparecerá nas tendências
         not_usable: Não pode ser utilizada
         peaked_on_and_decaying: No auge em %{date}, agora em declínio
-<<<<<<< HEAD
-        title: Etiquetas em tendência
-        trendable: Pode aparecer nas tendências
-=======
         title: Etiquetas em destaques
         trendable: Pode aparecer nos destaques
->>>>>>> v4.4.3
+
         trending_rank: 'Tendência #%{rank}'
         usable: Pode ser utilizada
         usage_comparison: Utilizada %{today} vezes hoje, em comparação com %{yesterday} ontem
@@ -1200,13 +1161,9 @@ pt-PT:
       new_trending_statuses:
         title: Publicações em destaque
       new_trending_tags:
-<<<<<<< HEAD
-        title: Etiquetas em tendência
-      subject: Novas tendências para serem revistas em %{instance}
-=======
         title: Etiquetas em destaque
       subject: Novos destaques para revisão em %{instance}
->>>>>>> v4.4.3
+
   aliases:
     add_new: Criar pseudónimo
     created_msg: Criaste com sucesso um novo pseudónimo. Podes agora iniciar a migração da conta antiga.
@@ -1299,11 +1256,8 @@ pt-PT:
     set_new_password: Editar palavra-passe
     setup:
       email_below_hint_html: Verifique a sua pasta de spam ou solicite outra. Pode corrigir o seu endereço de e-mail se estiver errado.
-<<<<<<< HEAD
-      email_settings_hint_html: Clica na hiperligação que enviamos para verificar %{email}. Esperaremos aqui.
-=======
       email_settings_hint_html: Clique na hiperligação que enviámos para %{email} para começar a utilizar o Mastodon. Estaremos à espera aqui mesmo.
->>>>>>> v4.4.3
+
       link_not_received: Não recebeu uma hiperligação?
       new_confirmation_instructions_sent: Irá receber uma nova mensagem de e-mail com a hiperligação de confirmação dentro de alguns minutos!
       title: Verifique a caixa de entrada do seu e-mail
@@ -1312,11 +1266,8 @@ pt-PT:
       title: Iniciar sessão em %{domain}
     sign_up:
       manual_review: As inscrições em %{domain} passam por uma revisão manual pelos nossos moderadores. Para nos ajudar a processar o teu pedido de inscrição, escreve um pouco sobre ti e o motivo para quereres uma conta em %{domain}.
-<<<<<<< HEAD
-      preamble: Com uma conta neste servidor Mastodon, poderás seguir qualquer outra pessoa na rede, independentemente do servidor onde a conta esteja hospedada.
-=======
       preamble: Com uma conta neste servidor Mastodon, poderás seguir qualquer outra pessoa no fediverso, independentemente do local onde a tua conta está alojada.
->>>>>>> v4.4.3
+
       title: Vamos lá inscrever-te em %{domain}.
     status:
       account_status: Estado da conta
@@ -1535,21 +1486,6 @@ pt-PT:
       overwrite: Substituir
       overwrite_long: Substituir os registos atuais pelos novos
     overwrite_preambles:
-<<<<<<< HEAD
-      blocking_html: Estás prestes a <strong>substituir a tua lista de bloqueios</strong> com até <strong>%{total_items} contas</strong> de <strong>%{filename}</strong>.
-      bookmarks_html: Estás prestes a <strong>substituir os teus marcadores</strong> com até <strong>%{total_items} publicações</strong> de <strong>%{filename}</strong>.
-      domain_blocking_html: Estás prestes a <strong>substituir a tua lista de bloqueios de domínio</strong> com até <strong>%{total_items} domínios</strong> de <strong>%{filename}</strong>.
-      following_html: Estás prestes a <strong>seguir</strong> até <strong>%{total_items} contas</strong> de <strong>%{filename}</strong> e <strong>parar de seguir quaisquer outras contas</strong>.
-      lists_html: Estás prestes a substituir <strong>as tuas listas</strong> pelo conteúdo de <strong>%{filename}</strong>. Até <strong>%{total_items} contas</strong> serão adicionadas a novas listas.
-      muting_html: Estás prestes a <strong>substituir a tua lista de contas ocultadas</strong> com até <strong>%{total_items} contas</strong> de <strong>%{filename}</strong>.
-    preambles:
-      blocking_html: Estás prestes a <strong>bloquear</strong> até <strong>%{total_items} contas</strong> de <strong>%{filename}</strong>.
-      bookmarks_html: Estás prestes a adicionar até <strong>%{total_items} publicações</strong> de <strong>%{filename}</strong> aos teus <strong>marcadores</strong>.
-      domain_blocking_html: Estás prestes a <strong>bloquear</strong> até <strong>%{total_items} domínios</strong> de <strong>%{filename}</strong>.
-      following_html: Estás prestes a <strong>seguir</strong> até <strong>%{total_items} contas</strong> de <strong>%{filename}</strong>.
-      lists_html: Estás prestes a adicionar até <strong>%{total_items} contas</strong> do ficheiro <strong>%{filename}</strong> para <strong>as tuas listas</strong>. Novas listas serão criadas se não existir uma lista onde as adicionar.
-      muting_html: Estás prestes a <strong>ocultar</strong> até <strong>%{total_items} contas</strong> de <strong>%{filename}</strong>.
-=======
       blocking_html:
         one: Estás prestes a substituir a <strong>tua lista de bloqueios</strong> com até <strong>conta%{count}</strong> de <strong>%{filename}</strong>.
         other: Estás prestes a <strong>substituir a tua lista de bloqueios</strong> com até <strong>%{count} contas</strong> de <strong>%{filename}</strong>.
@@ -1587,7 +1523,7 @@ pt-PT:
       muting_html:
         one: Estás prestes a <strong>ocultar</strong> até <strong>%{count} conta</strong> de <strong>%{filename}</strong>.
         other: Estás prestes a <strong>ocultar</strong> até <strong>%{count} contas</strong> de <strong>%{filename}</strong>.
->>>>>>> v4.4.3
+
     preface: Podes importar dados que tenhas exportado de outra instância, como a lista de pessoas que segues ou bloqueadas.
     recent_imports: Importações recentes
     states:
@@ -1844,11 +1780,8 @@ pt-PT:
   scheduled_statuses:
     over_daily_limit: Excedeste o limite de %{limit} publicações agendadas para hoje
     over_total_limit: Excedeste o limite de %{limit} publicações agendadas
-<<<<<<< HEAD
-    too_soon: A data de agendamento tem de ser futura
-=======
     too_soon: a data tem de ser no futuro
->>>>>>> v4.4.3
+
   self_destruct:
     lead_html: Infelizmente, <strong>%{domain}</strong> vai fechar definitivamente. Se tinhas conta nele, não podes continuar a usá-lo, mas ainda podes pedir uma cópia dos teus dados.
     title: Este servidor vai fechar
@@ -1960,11 +1893,9 @@ pt-PT:
       limit: Já fixaste a quantidade máxima de publicações
       ownership: Não podem ser fixadas publicações de outras pessoas
       reblog: Não é possível fixar um impulso
-<<<<<<< HEAD
-=======
     quote_policies:
       public: Todos
->>>>>>> v4.4.3
+
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Direto
@@ -2162,10 +2093,7 @@ pt-PT:
       post_action: Compor
       post_step: Diz olá para o mundo com texto, fotos, vídeos ou sondagens.
       post_title: Faz a tua primeira publicação
-<<<<<<< HEAD
-      share_action: Partilhar
-=======
->>>>>>> v4.4.3
+
       share_step: Diz aos teus amigos como te podem encontrar no Mastodon.
       share_title: Partilha o teu perfil de Mastodon
       sign_in_action: Iniciar sessão

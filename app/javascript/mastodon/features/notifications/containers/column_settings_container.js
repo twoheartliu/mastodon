@@ -60,11 +60,8 @@ const mapDispatchToProps = (dispatch) => ({
       dispatch(changeSetting(['notifications', ...path], checked));
 
       if(path[0] === 'group' && path[1] === 'follow') {
-<<<<<<< HEAD
-        dispatch(initializeNotifications());
-=======
         dispatch(fetchNotifications());
->>>>>>> v4.4.3
+
       }
     }
   },

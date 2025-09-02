@@ -18,11 +18,9 @@ ar:
       attributes:
         domain:
           invalid: ليس بإسم نطاق صالح
-<<<<<<< HEAD
-=======
       messages:
         invalid_domain_on_line: "%{value} ليس إسم نطاق صالح"
->>>>>>> v4.4.3
+
       models:
         account:
           attributes:

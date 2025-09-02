@@ -100,8 +100,6 @@
   "alert.unexpected.message": "Upp kom óvænt villa.",
   "alert.unexpected.title": "Úbbs!",
   "alt_text_badge.title": "Hjálpartexti mynda",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Bæta við hjálpartexta",
   "alt_text_modal.add_text_from_image": "Bæta við texta úr mynd",
   "alt_text_modal.cancel": "Hætta við",
@@ -109,7 +107,7 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Lýstu þessu fyrir fólk með skerta heyrn…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "Lýstu þessu fyrir fólk með skerta sjón…",
   "alt_text_modal.done": "Lokið",
->>>>>>> v4.4.3
+
   "announcement.announcement": "Auglýsing",
   "annual_report.summary.archetype.booster": "Svali gaurinn",
   "annual_report.summary.archetype.lurker": "Lurkurinn",
@@ -933,11 +931,7 @@
   "upload_button.label": "Bæta við myndum, myndskeiði eða hljóðskrá",
   "upload_error.limit": "Fór yfir takmörk á innsendingum skráa.",
   "upload_error.poll": "Innsending skráa er ekki leyfð í könnunum.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Lýstu þessu fyrir heyrnarskerta",
-  "upload_form.description": "Lýstu þessu fyrir sjónskerta",
-=======
->>>>>>> v4.4.3
+
   "upload_form.drag_and_drop.instructions": "Til að taka í myndefnisviðhengi skaltu ýta á bilslána eða Enter. Til að draga geturðu notað örvalyklana til að færa viðhengið í samsvarandi áttir. Ýttu aftur á bilslána eða Enter til að sleppa viðhenginu á nýja staðinn, eða ýttu á Escape til að hætta við.",
   "upload_form.drag_and_drop.on_drag_cancel": "Hætt var við að draga. Myndefnisviðhenginu {item} var sleppt.",
   "upload_form.drag_and_drop.on_drag_end": "Myndefnisviðhenginu {item} var sleppt.",

@@ -880,10 +880,8 @@ fi:
         add_to_report: Lisää raporttiin nro %{id}
         remove_from_report: Poista raportista
         report: Raportoi
-<<<<<<< HEAD
-=======
       contents: Sisältö
->>>>>>> v4.4.3
+
       deleted: Poistettu
       favourites: Suosikit
       history: Versiohistoria
@@ -899,12 +897,9 @@ fi:
       reblogs: Edelleen jako
       replied_to_html: Vastaus käyttäjälle %{acct_link}
       status_changed: Julkaisua muutettu
-<<<<<<< HEAD
-      title: Tilin julkaisut
-=======
       status_title: Julkaisu käyttäjältä @%{name}
       title: Tilin julkaisut - @%{name}
->>>>>>> v4.4.3
+
       trending: Suosituttua
       view_publicly: Näytä julkisesti
       visibility: Näkyvyys

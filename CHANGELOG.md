@@ -2,11 +2,6 @@
 
 All notable changes to this project will be documented in this file.
 
-<<<<<<< HEAD
-## [4.3.7] - 2025-04-02
-
-### Add
-=======
 ## [4.4.3] - 2025-08-05
 
 ### Security
@@ -376,7 +371,7 @@ All notable changes to this project will be documented in this file.
 ## [4.3.7] - 2025-04-02
 
 ### Added
->>>>>>> v4.4.3
+
 
 - Add delay to profile updates to debounce them (#34137 by @ClearlyClaire)
 - Add support for paginating partial collections in `SynchronizeFollowersService` (#34272 and #34277 by @ClearlyClaire)

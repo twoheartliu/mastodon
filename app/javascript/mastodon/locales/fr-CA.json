@@ -1,10 +1,8 @@
 {
   "about.blocks": "Serveurs modérés",
   "about.contact": "Contact :",
-<<<<<<< HEAD
-=======
   "about.default_locale": "Défaut",
->>>>>>> v4.4.3
+
   "about.disclaimer": "Mastodon est un logiciel open-source gratuit et une marque déposée de Mastodon gGmbH.",
   "about.domain_blocks.no_reason_available": "Raison non disponible",
   "about.domain_blocks.preamble": "Mastodon vous permet généralement de visualiser le contenu et d'interagir avec des comptes de n'importe quel serveur dans le fediverse. Voici les exceptions qui ont été faites sur ce serveur en particulier.",
@@ -103,8 +101,6 @@
   "alert.unexpected.message": "Une erreur inattendue s’est produite.",
   "alert.unexpected.title": "Oups!",
   "alt_text_badge.title": "Texte alternatif",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Ajouter un texte alternatif",
   "alt_text_modal.add_text_from_image": "Ajouter le texte provenant de l'image",
   "alt_text_modal.cancel": "Annuler",
@@ -112,7 +108,7 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Décrire pour les personnes ayant des difficultés d’audition…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "Décrire pour les personnes ayant des problèmes de vue…",
   "alt_text_modal.done": "Terminé",
->>>>>>> v4.4.3
+
   "announcement.announcement": "Annonce",
   "annual_report.summary.archetype.booster": "Le chasseur de sang-froid",
   "annual_report.summary.archetype.lurker": "Le faucheur",
@@ -926,11 +922,7 @@
   "upload_button.label": "Ajouter des images, une vidéo ou un fichier audio",
   "upload_error.limit": "Taille maximale d'envoi de fichier dépassée.",
   "upload_error.poll": "L’envoi de fichiers n’est pas autorisé avec les sondages.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Décrire pour les personnes ayant des difficultés d’audition",
-  "upload_form.description": "Décrire pour les malvoyants",
-=======
->>>>>>> v4.4.3
+
   "upload_form.drag_and_drop.instructions": "Pour choisir un média joint, appuyez sur la touche espace ou entrée. Tout en faisant glisser, utilisez les touches fléchées pour déplacer le fichier média dans une direction donnée. Appuyez à nouveau sur la touche espace ou entrée pour déposer le fichier média dans sa nouvelle position, ou appuyez sur la touche Echap pour annuler.",
   "upload_form.drag_and_drop.on_drag_cancel": "Le glissement a été annulé. La pièce jointe {item} n'a pas été ajoutée.",
   "upload_form.drag_and_drop.on_drag_end": "La pièce jointe du média {item} a été déplacée.",

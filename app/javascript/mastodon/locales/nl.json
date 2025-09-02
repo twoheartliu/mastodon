@@ -587,17 +587,13 @@
   "notification.admin.report_statuses_other": "{name} rapporteerde {target}",
   "notification.admin.sign_up": "{name} heeft zich geregistreerd",
   "notification.admin.sign_up.name_and_others": "{name} en {count, plural, one {# ander persoon} other {# andere personen}} hebben zich geregistreerd",
-<<<<<<< HEAD
-  "notification.favourite": "{name} markeerde jouw bericht als favoriet",
-  "notification.favourite.name_and_others_with_link": "{name} en <a>{count, plural, one {# ander persoon} other {# andere personen}}</a> hebben jouw bericht als favoriet gemarkeerd",
-=======
   "notification.annual_report.message": "Jouw {year} #Wrapstodon staat klaar! Laat de hoogtepunten en memorabele momenten van jouw jaar zien op Mastodon!",
   "notification.annual_report.view": "#Wrapstodon bekijken",
   "notification.favourite": "{name} markeerde jouw bericht als favoriet",
   "notification.favourite.name_and_others_with_link": "{name} en <a>{count, plural, one {# ander persoon} other {# andere personen}}</a> hebben jouw bericht als favoriet gemarkeerd",
   "notification.favourite_pm": "{name} heeft je privébericht als favoriet gemarkeerd",
   "notification.favourite_pm.name_and_others_with_link": "{name} en <a>{count, plural, one {# ander} other {# anderen}}</a> hebben je privébericht als favoriet gemarkeerd",
->>>>>>> v4.4.3
+
   "notification.follow": "{name} volgt jou nu",
   "notification.follow.name_and_others": "{name} en <a>{count, plural, one {# ander persoon} other {# andere personen}}</a> volgen jou nou",
   "notification.follow_request": "{name} wil jou graag volgen",
@@ -941,21 +937,7 @@
   "upload_form.drag_and_drop.on_drag_over": "Mediabijlage {item} is verplaatst.",
   "upload_form.drag_and_drop.on_drag_start": "Mediabijlage {item} is opgepakt.",
   "upload_form.edit": "Bewerken",
-<<<<<<< HEAD
-  "upload_form.thumbnail": "Miniatuur wijzigen",
-  "upload_form.video_description": "Omschrijf dit voor dove, slechthorende, blinde of slechtziende mensen",
-  "upload_modal.analyzing_picture": "Afbeelding analyseren…",
-  "upload_modal.apply": "Toepassen",
-  "upload_modal.applying": "Aan het toepassen…",
-  "upload_modal.choose_image": "Kies een afbeelding",
-  "upload_modal.description_placeholder": "Pa's wijze lynx bezag vroom het fikse aquaduct",
-  "upload_modal.detect_text": "Tekst in een afbeelding detecteren",
-  "upload_modal.edit_media": "Media bewerken",
-  "upload_modal.hint": "Klik of sleep de cirkel in de voorvertoning naar een centraal focuspunt in de afbeelding dat altijd zichtbaar moet blijven.",
-  "upload_modal.preparing_ocr": "OCR voorbereiden…",
-  "upload_modal.preview_label": "Voorvertoning ({ratio})",
-=======
->>>>>>> v4.4.3
+
   "upload_progress.label": "Uploaden...",
   "upload_progress.processing": "Bezig…",
   "username.taken": "Die gebruikersnaam is al in gebruik. Probeer een andere",

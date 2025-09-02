@@ -412,10 +412,8 @@
   "hashtag.counter_by_accounts": "{count, plural, other {참여자 {counter}명}}",
   "hashtag.counter_by_uses": "{count, plural, other {게시물 {counter}개}}",
   "hashtag.counter_by_uses_today": "오늘 {count, plural, other {{counter} 개의 게시물}}",
-<<<<<<< HEAD
-=======
   "hashtag.feature": "프로필에 추천하기",
->>>>>>> v4.4.3
+
   "hashtag.follow": "해시태그 팔로우",
   "hashtag.mute": "#{hashtag} 뮤트",
   "hashtag.unfeature": "프로필에 추천하지 않기",
@@ -522,12 +520,6 @@
   "lists.delete": "리스트 삭제",
   "lists.done": "완료",
   "lists.edit": "리스트 편집",
-<<<<<<< HEAD
-  "lists.edit.submit": "제목 수정",
-  "lists.exclusive": "홈에서 이 게시물들 숨기기",
-  "lists.new.create": "리스트 추가",
-  "lists.new.title_placeholder": "새 리스트의 이름",
-=======
   "lists.exclusive": "구성원을 홈에서 숨기기",
   "lists.exclusive_hint": "누군가가 이 리스트에 있으면 홈 피드에서는 숨겨 게시물을 두 번 보는 것을 방지합니다.",
   "lists.find_users_to_add": "추가할 사용자 검색",
@@ -538,7 +530,7 @@
   "lists.no_members_yet": "아직 구성원이 없습니다.",
   "lists.no_results_found": "결과가 없습니다.",
   "lists.remove_member": "삭제",
->>>>>>> v4.4.3
+
   "lists.replies_policy.followed": "팔로우 한 사용자 누구나에게",
   "lists.replies_policy.list": "리스트의 구성원에게",
   "lists.replies_policy.none": "모두 제외",

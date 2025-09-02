@@ -205,17 +205,12 @@ io:
         destroy_user_role: Destruktez rolo
         disable_2fa_user: Desebligar 2FA
         disable_custom_emoji: Desebligar personesigita emocimajo
-<<<<<<< HEAD
-        disable_sign_in_token_auth_user: Desebligar retpostofichyurizo por uzanto
-        disable_user: Desaktivigar uzanto
-        enable_custom_emoji: Ebligar personesigita emocimajo
-=======
         disable_relay: Desebligar relayo
         disable_sign_in_token_auth_user: Desebligar retpostofichyurizo por uzanto
         disable_user: Desaktivigar uzanto
         enable_custom_emoji: Ebligar personesigita emocimajo
         enable_relay: Ebligar relayo
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user: Ebligar retpostofichyurizo por uzanto
         enable_user: Aktivigez uzanto
         memorialize_account: Memorializez konto
@@ -276,17 +271,12 @@ io:
         destroy_user_role_html: "%{name} efacis rolo di %{target}"
         disable_2fa_user_html: "%{name} desebligis dufaktora bezono por uzanto %{target}"
         disable_custom_emoji_html: "%{name} desebligis emocimajo %{target}"
-<<<<<<< HEAD
-        disable_sign_in_token_auth_user_html: "%{name} desebligis retpostofichyurizo por %{target}"
-        disable_user_html: "%{name} desebligis eniro por uzanto %{target}"
-        enable_custom_emoji_html: "%{name} ebligis emocimajo %{target}"
-=======
         disable_relay_html: "%{name} desebligis la relayo %{target}"
         disable_sign_in_token_auth_user_html: "%{name} desebligis retpostofichyurizo por %{target}"
         disable_user_html: "%{name} desebligis eniro por uzanto %{target}"
         enable_custom_emoji_html: "%{name} ebligis emocimajo %{target}"
         enable_relay_html: "%{name} ebligis la relayo %{target}"
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user_html: "%{name} ebligis retpostofishyurizo por %{target}"
         enable_user_html: "%{name} ebligis eniro por uzanto %{target}"
         memorialize_account_html: "%{name} kauzigis konto di %{target} divenar memorialpagino"
@@ -936,8 +926,6 @@ io:
       search: Serchar
       title: Gretvorti
       updated_msg: Gretvortpreferaji tildatigesis sucese
-<<<<<<< HEAD
-=======
     terms_of_service:
       back: Retroirar ad servtermini
       changelog: Quo chanjesis
@@ -965,7 +953,7 @@ io:
       published_on_html: Publikigita ye %{date}
       save_draft: Konservar skiso
       title: Servtermini
->>>>>>> v4.4.3
+
     title: Administro
     trends:
       allow: Permisez
@@ -1195,11 +1183,8 @@ io:
     set_new_password: Selektar nova pasvorto
     setup:
       email_below_hint_html: Kontrolez vua spamdosieruyo, o demandez altra ligilo.
-<<<<<<< HEAD
-      email_settings_hint_html: Uzez la ligilo quan ni sendis a vu por verifikar %{email}. Ni vartos hike.
-=======
       email_settings_hint_html: Klikez la ligilo quan ni sendis ad %{email} por komencar uzar Mastodon.
->>>>>>> v4.4.3
+
       link_not_received: Ka vu ne recevis ligilo?
       new_confirmation_instructions_sent: Vu recevos nova retposto kun la konfirmligilo pos kelka minuti!
       title: Kontrolez vua retposti
@@ -1220,11 +1205,9 @@ io:
       view_strikes: Videz antea streki kontre vua konto
     too_fast: Formulario sendesis tro rapide, probez itere.
     use_security_key: Uzes sekuresklefo
-<<<<<<< HEAD
-=======
     user_agreement_html: Me lektas e asentas <a href="%{terms_of_service_path}" target="_blank">servtermini</a> e <a href="%{privacy_policy_path}" target="_blank">privatesguidilo</a>
     user_privacy_agreement_html: Me lektas e konsentas <a href="%{privacy_policy_path}" target="_blank">privatesguidilo</a>
->>>>>>> v4.4.3
+
   author_attribution:
     example_title: Exemplotexto
     hint_html: Ka vu skribas novaji o blogartikli ne en Mastodon?

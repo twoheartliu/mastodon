@@ -156,11 +156,8 @@ vi:
       admin:read:domain_blocks: đọc thông tin nhạy cảm của mọi máy chủ chặn
       admin:read:email_domain_blocks: đọc thông tin nhạy cảm của mọi tên miền email chặn
       admin:read:ip_blocks: đọc thông tin nhạy cảm của mọi IP chặn
-<<<<<<< HEAD
-      admin:read:reports: đọc thông tin của các báo cáo và các tài khoản bị báo cáo
-=======
       admin:read:reports: đọc thông tin nhạy cảm của mọi báo cáo
->>>>>>> v4.4.3
+
       admin:write: sửa đổi tất cả dữ liệu trên máy chủ
       admin:write:accounts: áp đặt hành động kiểm duyệt trên tài khoản
       admin:write:canonical_email_blocks: áp đặt kiểm duyệt đối với chặn email biến thể

@@ -32,8 +32,6 @@ class FeedManager
     "feed:#{type}:#{id}:#{subtype}"
   end
 
-<<<<<<< HEAD
-=======
   # The number of items in the given timeline
   # @param [Symbol] type
   # @param [Integer] id
@@ -43,7 +41,7 @@ class FeedManager
     redis.zcard(key(type, id, subtype))
   end
 
->>>>>>> v4.4.3
+
   # The filter result of the status to a particular feed
   # @param [Symbol] timeline_type
   # @param [Status] status

@@ -28,10 +28,7 @@
   "account.endorse": "Promovează pe profil",
   "account.featured_tags.last_status_at": "Ultima postare pe {date}",
   "account.featured_tags.last_status_never": "Fără postări",
-<<<<<<< HEAD
-  "account.featured_tags.title": "Haștagurile recomandate de {name}",
-=======
->>>>>>> v4.4.3
+
   "account.follow": "Urmărește",
   "account.follow_back": "Urmăreşte înapoi",
   "account.followers": "Urmăritori",
@@ -199,13 +196,7 @@
   "disabled_account_banner.text": "Contul tău {disabledAccount} este momentan dezactivat.",
   "dismissable_banner.community_timeline": "Acestea sunt cele mai recente postări publice de la persoane ale căror conturi sunt găzduite de {domain}.",
   "dismissable_banner.dismiss": "Renunțare",
-<<<<<<< HEAD
-  "dismissable_banner.explore_links": "În acest moment, oamenii vorbesc despre aceste știri, pe acesta dar și pe alte servere ale rețelei descentralizate.",
-  "dismissable_banner.explore_statuses": "Acestea sunt postări de peste tot din rețeaua de socializare care câștigă teren azi. Postările mai noi cu mai multe amplificări și favorite sunt clasate mai sus.",
-  "dismissable_banner.explore_tags": "Aceste hashtag-uri câștigă teren în rândul oamenilor de pe acesta și pe alte servere ale rețelei descentralizate chiar acum.",
-  "dismissable_banner.public_timeline": "Acestea sunt cele mai recente postări publice de la persoane de pe social web pe care le urmăresc oamenii de pe {domain}.",
-=======
->>>>>>> v4.4.3
+
   "embed.instructions": "Integrează această postare în site-ul tău copiind codul de mai jos.",
   "embed.preview": "Iată cum va arăta:",
   "emoji_button.activity": "Activități",
@@ -354,13 +345,7 @@
   "link_preview.author": "De {name}",
   "lists.delete": "Șterge lista",
   "lists.edit": "Modifică lista",
-<<<<<<< HEAD
-  "lists.edit.submit": "Schimbă titlul",
-  "lists.exclusive": "Ascundeți aceste postări de acasă",
-  "lists.new.create": "Adaugă o listă",
-  "lists.new.title_placeholder": "Titlu pentru noua listă",
-=======
->>>>>>> v4.4.3
+
   "lists.replies_policy.followed": "Tuturor persoanelor la care te-ai abonat",
   "lists.replies_policy.list": "Membrilor din listă",
   "lists.replies_policy.none": "Nu afișa nimănui",
@@ -424,31 +409,7 @@
   "notifications_permission_banner.how_to_control": "Pentru a primi notificări când Mastodon nu este deschis, activează notificările pe desktop. Poți controla exact ce tipuri de interacțiuni generează notificări pe desktop apăsând pe butonul {icon} de mai sus odată ce sunt activate.",
   "notifications_permission_banner.title": "Rămâne la curent",
   "onboarding.follows.empty": "Din păcate, nu pot fi afișate rezultate chiar acum. Poți încerca să cauți sau să navighezi pe pagina de explorare pentru a găsi oameni pe care să-i urmărești sau încearcă iar mai târziu.",
-<<<<<<< HEAD
-  "onboarding.follows.lead": "You curate your own home feed. The more people you follow, the more active and interesting it will be. These profiles may be a good starting point—you can always unfollow them later!",
-  "onboarding.follows.title": "Popular on Mastodon",
-  "onboarding.profile.lead": "Puteți completa întotdeauna acest lucru mai târziu în setări, unde sunt disponibile și mai multe opțiuni de personalizare.",
-  "onboarding.share.lead": "Spune-le oamenilor cum te pot găsi pe Mastodon!",
-  "onboarding.share.message": "Sunt {username} pe #Mastodon! Vino și urmărește-mă pe {url}",
-  "onboarding.share.next_steps": "Pașii următori posibili:",
-  "onboarding.share.title": "Partajați-vă profilul",
-  "onboarding.start.lead": "Your new Mastodon account is ready to go. Here's how you can make the most of it:",
-  "onboarding.start.skip": "Want to skip right ahead?",
-  "onboarding.start.title": "Ați reușit!",
-  "onboarding.steps.follow_people.body": "You curate your own feed. Lets fill it with interesting people.",
-  "onboarding.steps.follow_people.title": "Follow {count, plural, one {one person} other {# people}}",
-  "onboarding.steps.publish_status.body": "Say hello to the world.",
-  "onboarding.steps.publish_status.title": "Fă-ți prima postare",
-  "onboarding.steps.setup_profile.body": "Others are more likely to interact with you with a filled out profile.",
-  "onboarding.steps.setup_profile.title": "Customize your profile",
-  "onboarding.steps.share_profile.body": "Let your friends know how to find you on Mastodon!",
-  "onboarding.steps.share_profile.title": "Share your profile",
-  "onboarding.tips.2fa": "<strong>Știați că?</strong> Vă puteți securiza contul prin configurarea autentificării cu doi factori în setările contului dvs. Funcționează cu orice aplicație TOTP la alegerea dvs., niciun număr de telefon nu este necesar!",
-  "onboarding.tips.accounts_from_other_servers": "<strong>Știați că?</strong> Deoarece Mastodon este decentralizat, unele profiluri pe care le întâlniți vor fi găzduite pe alte servere decât ale dvs. Și totuși puteți interacționa cu ele fără probleme! Serverul lor se află în a doua jumătate a numelui lor de utilizator!",
-  "onboarding.tips.migration": "<strong>Știai că?</strong> Dacă simți că {domain} nu este o alegere bună de server in viitor, te poți muta pe un alt server de Mastodon fără a-ți pierde urmăritorii. Poți găzdui chiar si propriul server!",
-  "onboarding.tips.verification": "<strong>Știați că?</strong> Puteți să vă verificați contul punând un link către profilul dumneavoastră Mastodon pe propriul site și adăugând site-ul web la profilul dvs. Nu sunt necesare taxe sau documente!",
-=======
->>>>>>> v4.4.3
+
   "picture_in_picture.restore": "Pune-l înapoi",
   "poll.closed": "Închis",
   "poll.refresh": "Reîncarcă",

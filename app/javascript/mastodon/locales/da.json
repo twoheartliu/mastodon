@@ -38,10 +38,7 @@
   "account.featured.hashtags": "Hashtags",
   "account.featured_tags.last_status_at": "Seneste indlæg {date}",
   "account.featured_tags.last_status_never": "Ingen indlæg",
-<<<<<<< HEAD
-  "account.featured_tags.title": "{name}s fremhævede etiketter",
-=======
->>>>>>> v4.4.3
+
   "account.follow": "Følg",
   "account.follow_back": "Følg tilbage",
   "account.followers": "Følgere",
@@ -66,12 +63,9 @@
   "account.mute_notifications_short": "Sluk for notifikationer",
   "account.mute_short": "Skjul",
   "account.muted": "Skjult",
-<<<<<<< HEAD
-  "account.mutual": "Fælles",
-=======
   "account.muting": "Skjuler",
   "account.mutual": "I følger hinanden",
->>>>>>> v4.4.3
+
   "account.no_bio": "Ingen beskrivelse til rådighed.",
   "account.open_original_page": "Åbn oprindelig side",
   "account.posts": "Indlæg",
@@ -86,20 +80,13 @@
   "account.statuses_counter": "{count, plural, one {{counter} indlæg} other {{counter} indlæg}}",
   "account.unblock": "Fjern blokering af @{name}",
   "account.unblock_domain": "Fjern blokering af domænet {domain}",
-<<<<<<< HEAD
-  "account.unblock_short": "Fjern blokering",
-  "account.unendorse": "Fjern visning på din profil",
-  "account.unfollow": "Følg ikke længere",
-  "account.unmute": "Vis @{name} igen",
-  "account.unmute_notifications_short": "Tænd for notifikationer",
-=======
   "account.unblock_domain_short": "Afblokér",
   "account.unblock_short": "Fjern blokering",
   "account.unendorse": "Vis ikke på profil",
   "account.unfollow": "Følg ikke længere",
   "account.unmute": "Vis @{name} igen",
   "account.unmute_notifications_short": "Vis notifikationer igen",
->>>>>>> v4.4.3
+
   "account.unmute_short": "Vis igen",
   "account_note.placeholder": "Klik for at tilføje notat",
   "admin.dashboard.daily_retention": "Brugerfastholdelsesrate pr. dag efter tilmelding",
@@ -199,11 +186,8 @@
   "column_header.pin": "Fastgør",
   "column_header.show_settings": "Vis indstillinger",
   "column_header.unpin": "Frigør",
-<<<<<<< HEAD
-  "column_subheading.settings": "Indstillinger",
-=======
   "column_search.cancel": "Annullér",
->>>>>>> v4.4.3
+
   "community.column_settings.local_only": "Kun lokalt",
   "community.column_settings.media_only": "Kun medier",
   "community.column_settings.remote_only": "Kun udefra",
@@ -254,15 +238,6 @@
   "confirmations.logout.confirm": "Log ud",
   "confirmations.logout.message": "Er du sikker på, at du vil logge ud?",
   "confirmations.logout.title": "Log ud?",
-<<<<<<< HEAD
-  "confirmations.mute.confirm": "Skjul",
-  "confirmations.redraft.confirm": "Slet og omformulér",
-  "confirmations.redraft.message": "Sikker på, at dette indlæg skal slettes og omskrives? Favoritter og fremhævelser går tabt, og svar til det oprindelige indlæg mister tilknytningen.",
-  "confirmations.redraft.title": "Slet og omformulér indlæg?",
-  "confirmations.reply.confirm": "Svar",
-  "confirmations.reply.message": "Hvis du svarer nu, vil det overskrive den besked, du er ved at skrive. Fortsæt alligevel?",
-  "confirmations.reply.title": "Overskriv indlæg?",
-=======
   "confirmations.missing_alt_text.confirm": "Tilføj alt-tekst",
   "confirmations.missing_alt_text.message": "Indlægget indeholder medier uden alt-tekst. Tilføjelse af beskrivelser bidrager til at gøre indholdet tilgængeligt for flere brugere.",
   "confirmations.missing_alt_text.secondary": "Læg op alligevel",
@@ -274,7 +249,7 @@
   "confirmations.remove_from_followers.confirm": "Fjern følger",
   "confirmations.remove_from_followers.message": "{name} vil ikke længere følge dig. Er du sikker på, at du vil fortsætte?",
   "confirmations.remove_from_followers.title": "Fjern følger?",
->>>>>>> v4.4.3
+
   "confirmations.unfollow.confirm": "Følg ikke længere",
   "confirmations.unfollow.message": "Er du sikker på, at du ikke længere vil følge {name}?",
   "confirmations.unfollow.title": "Følg ikke længere bruger?",
@@ -288,11 +263,8 @@
   "copy_icon_button.copied": "Kopieret til udklipsholderen",
   "copypaste.copied": "Kopieret",
   "copypaste.copy_to_clipboard": "Kopiér til udklipsholder",
-<<<<<<< HEAD
-  "directory.federated": "Fra kendt fødivers",
-=======
   "directory.federated": "Fra kendt fediverse",
->>>>>>> v4.4.3
+
   "directory.local": "Kun fra {domain}",
   "directory.new_arrivals": "Nyankomne",
   "directory.recently_active": "Aktive for nyligt",
@@ -300,14 +272,8 @@
   "disabled_account_banner.text": "Din konto {disabledAccount} er pt. deaktiveret.",
   "dismissable_banner.community_timeline": "Disse er de seneste offentlige indlæg fra personer med konti hostet af {domain}.",
   "dismissable_banner.dismiss": "Afvis",
-<<<<<<< HEAD
-  "dismissable_banner.explore_links": "Der tales lige nu om disse nyhedshistorier af folk på denne og andre servere i det decentraliserede netværk.",
-  "dismissable_banner.explore_statuses": "Disse indlæg fra diverse sociale netværk vinder fodfæste i dag. Nyere indlæg med flere fremhævelser og favoritter rangeres højere.",
-  "dismissable_banner.explore_tags": "Disse etiketter vinder lige nu fodfæste blandt folk på denne og andre servere i det decentraliserede netværk.",
-  "dismissable_banner.public_timeline": "Dette er de seneste offentlige indlæg fra folk på det sociale netværk, som folk på {domain} følger.",
-=======
   "dismissable_banner.public_timeline": "Dette er de seneste offentlige indlæg fra personer på fediverset, som folk på {domain} følger.",
->>>>>>> v4.4.3
+
   "domain_block_modal.block": "Blokér server",
   "domain_block_modal.block_account_instead": "Blokér i stedet @{name}",
   "domain_block_modal.they_can_interact_with_old_posts": "Folk fra denne server kan interagere med de gamle indlæg.",
@@ -320,16 +286,6 @@
   "domain_pill.activitypub_lets_connect": "Det muliggører at forbinde og interagere med folk, ikke kun på Mastodon, men også på tværs af forskellige sociale apps.",
   "domain_pill.activitypub_like_language": "ActivityPub er \"sproget\", som Mastodon taler med andre sociale netværk.",
   "domain_pill.server": "Server",
-<<<<<<< HEAD
-  "domain_pill.their_handle": "Deres greb:",
-  "domain_pill.their_server": "Det digitale hjem, hvor alle indlæggene findes.",
-  "domain_pill.their_username": "Entydig identifikator på denne server. Det er muligt at finde brugere med samme brugernavn på forskellige servere.",
-  "domain_pill.username": "Brugernavn",
-  "domain_pill.whats_in_a_handle": "Hvad er der i et greb?",
-  "domain_pill.who_they_are": "Da et greb fortæller, hvem nogen er, og hvor de er, kan man interagere med folk på tværs af det sociale net af <button>ActivityPub-drevne platforme</button>.",
-  "domain_pill.who_you_are": "Da et greb fortæller, hvem man er, og hvor man er, kan man interagere med folk på tværs af det sociale net af <button>ActivityPub-drevne platforme</button>.",
-  "domain_pill.your_handle": "Dit greb:",
-=======
   "domain_pill.their_handle": "Deres handle:",
   "domain_pill.their_server": "Det digitale hjem, hvor alle indlæggene findes.",
   "domain_pill.their_username": "Entydig identifikator på denne server. Det er muligt at finde brugere med samme brugernavn på forskellige servere.",
@@ -338,7 +294,7 @@
   "domain_pill.who_they_are": "Da et handle fortæller, hvem nogen er, og hvor de er, kan du interagere med folk på tværs af det sociale net af <button>ActivityPub-drevne platforme</button>.",
   "domain_pill.who_you_are": "Fordi dit handle fortæller, hvem du er, og hvor du er, kan du interagere med folk på tværs af det sociale net af <button>ActivityPub-drevne platforme</button>.",
   "domain_pill.your_handle": "Dit handle:",
->>>>>>> v4.4.3
+
   "domain_pill.your_server": "Dit digitale hjem, hvor alle dine indlæg lever. Synes ikke om den her server? Du kan til enhver tid rykke over på en anden server og beholde dine følgere.",
   "domain_pill.your_username": "Din entydige identifikator på denne server. Det er muligt at finde brugere med samme brugernavn på forskellige servere.",
   "embed.instructions": "Indlejr dette indlæg på din hjemmeside ved at kopiere nedenstående kode.",
@@ -368,23 +324,6 @@
   "empty_column.blocks": "Ingen brugere blokeret endnu.",
   "empty_column.bookmarked_statuses": "Du har ingen bogmærkede indlæg endnu. Når du bogmærker ét, vil det dukke op hér.",
   "empty_column.community": "Den lokale tidslinje er tom. Skriv noget offentligt for at sætte tingene i gang!",
-<<<<<<< HEAD
-  "empty_column.direct": "Der er endnu ingen private omtaler. Når en sendes eller modtages, dukker den op her.",
-  "empty_column.domain_blocks": "Ingen blokerede domæner endnu.",
-  "empty_column.explore_statuses": "Ingen nye tendenser lige nu. Tjek igen senere!",
-  "empty_column.favourited_statuses": "Du har endnu ingen favoritindlæg. Når du føjer et opslag til favoritter, vil det dukke op her.",
-  "empty_column.favourites": "Ingen har endnu føjet dette indlæg til favoritter. Når nogen gør det, vil det dukke op her.",
-  "empty_column.follow_requests": "Du har endnu ingen følgeanmodninger. Når du modtager én, vil den dukke op her.",
-  "empty_column.followed_tags": "Ingen etiketter følges endnu. Når det sker, vil de fremgå her.",
-  "empty_column.hashtag": "Der er intet med denne etiket endnu.",
-  "empty_column.home": "Din hjemmetidslinje er tom! Følg nogle personer, for at fylde den op.",
-  "empty_column.list": "Der er ikke noget på denne liste endnu. Når medlemmer af listen udgiver nye indlæg vil de fremgå her.",
-  "empty_column.lists": "Du har endnu ingen lister. Når du opretter én, vil den fremgå hér.",
-  "empty_column.mutes": "Du har endnu ikke skjult nogle brugere.",
-  "empty_column.notification_requests": "Alt er klar! Der er intet her. Når der modtages nye notifikationer, fremgår de her jævnfør dine indstillinger.",
-  "empty_column.notifications": "Du har endnu ingen notifikationer. Når andre interagerer med dig, vil det fremgå her.",
-  "empty_column.public": "Der er intet her! Skriv noget offentligt eller følg manuelt brugere fra andre servere for at se indhold",
-=======
   "empty_column.direct": "Du har ikke nogen private omtaler endnu. Når du sender eller modtager en, vil den blive vist her.",
   "empty_column.domain_blocks": "Ingen blokerede domæner endnu.",
   "empty_column.explore_statuses": "Ingen nye trends lige nu. Tjek igen senere!",
@@ -399,7 +338,7 @@
   "empty_column.notification_requests": "Alt er klar! Der er intet her. Når der modtages nye notifikationer, fremgår de her jævnfør dine indstillinger.",
   "empty_column.notifications": "Du har endnu ingen notifikationer. Når andre interagerer med dig, vil det fremgå her.",
   "empty_column.public": "Der er ikke noget her! Skriv noget offentligt, eller følg manuelt brugere fra andre servere for at se indhold",
->>>>>>> v4.4.3
+
   "error.unexpected_crash.explanation": "Grundet en fejl i vores kode, eller en netlæser-kompatibilitetsfejl, kunne siden ikke vises korrekt.",
   "error.unexpected_crash.explanation_addons": "Denne side kunne ikke vises korrekt. Fejlen skyldes sandsynligvis en browsertilføjelse eller automatiske oversættelsesværktøjer.",
   "error.unexpected_crash.next_steps": "Prøv at opfriske siden. Hjælper dette ikke, kan Mastodon muligvis stadig bruges via en anden netlæser eller app.",
@@ -410,16 +349,13 @@
   "explore.title": "Trender",
   "explore.trending_links": "Nyheder",
   "explore.trending_statuses": "Indlæg",
-<<<<<<< HEAD
-  "explore.trending_tags": "Etiketter",
-=======
   "explore.trending_tags": "Hashtags",
   "featured_carousel.header": "{count, plural, one {Fastgjort indlæg} other {Fastgjorte indlæg}}",
   "featured_carousel.next": "Næste",
   "featured_carousel.post": "Indlæg",
   "featured_carousel.previous": "Foregående",
   "featured_carousel.slide": "{index} af {total}",
->>>>>>> v4.4.3
+
   "filter_modal.added.context_mismatch_explanation": "Denne filterkategori omfatter ikke konteksten, hvorunder dette indlæg er tilgået. Redigér filteret, hvis indlægget også ønskes filtreret i denne kontekst.",
   "filter_modal.added.context_mismatch_title": "Kontekstmisforhold!",
   "filter_modal.added.expired_explanation": "Denne filterkategori er udløbet. Ændr dens udløbsdato, for at anvende den.",
@@ -437,11 +373,8 @@
   "filter_modal.select_filter.title": "Filtrér dette indlæg",
   "filter_modal.title.status": "Filtrér et indlæg",
   "filter_warning.matches_filter": "Matcher filteret “<span>{title}</span>”",
-<<<<<<< HEAD
-  "filtered_notifications_banner.pending_requests": "Fra {count, plural, =0 {ingen} one {én person} other {# personer}}, man måske kender",
-=======
   "filtered_notifications_banner.pending_requests": "Fra {count, plural, =0 {ingen} one {én person} other {# personer}}, du måske kender",
->>>>>>> v4.4.3
+
   "filtered_notifications_banner.title": "Filtrerede notifikationer",
   "firehose.all": "Alle",
   "firehose.local": "Denne server",
@@ -464,11 +397,8 @@
   "follow_suggestions.similar_to_recently_followed_longer": "Minder om profiler, du har fulgt for nylig",
   "follow_suggestions.view_all": "Vis alle",
   "follow_suggestions.who_to_follow": "Hvem, som skal følges",
-<<<<<<< HEAD
-  "followed_tags": "Etiketter, som følges",
-=======
   "followed_tags": "Hashtags, som følges",
->>>>>>> v4.4.3
+
   "footer.about": "Om",
   "footer.directory": "Profiloversigt",
   "footer.get_app": "Hent appen",
@@ -494,16 +424,12 @@
   "hashtag.counter_by_accounts": "{count, plural, one {{counter} deltager} other {{counter} deltagere}}",
   "hashtag.counter_by_uses": "{count, plural, one {{counter} indlæg} other {{counter} indlæg}}",
   "hashtag.counter_by_uses_today": "{count, plural, one {{counter} indlæg} other {{counter} indlæg}} i dag",
-<<<<<<< HEAD
-  "hashtag.follow": "Følg etiket",
-  "hashtag.unfollow": "Stop med at følge etiket",
-=======
   "hashtag.feature": "Fremhæv på profil",
   "hashtag.follow": "Følg hashtag",
   "hashtag.mute": "Skjul #{hashtag}",
   "hashtag.unfeature": "Fremhæv ikke på profil",
   "hashtag.unfollow": "Følg ikke længere hashtag",
->>>>>>> v4.4.3
+
   "hashtags.and_other": "…og {count, plural, one {}other {# flere}}",
   "hints.profiles.followers_may_be_missing": "Der kan mangle følgere for denne profil.",
   "hints.profiles.follows_may_be_missing": "Fulgte kan mangle for denne profil.",
@@ -513,10 +439,8 @@
   "hints.profiles.see_more_posts": "Se flere indlæg på {domain}",
   "hints.threads.replies_may_be_missing": "Der kan mangle svar fra andre servere.",
   "hints.threads.see_more": "Se flere svar på {domain}",
-<<<<<<< HEAD
-=======
   "home.column_settings.show_quotes": "Vis citater",
->>>>>>> v4.4.3
+
   "home.column_settings.show_reblogs": "Vis fremhævelser",
   "home.column_settings.show_replies": "Vis svar",
   "home.hide_announcements": "Skjul bekendtgørelser",
@@ -524,15 +448,10 @@
   "home.pending_critical_update.link": "Se opdateringer",
   "home.pending_critical_update.title": "Kritisk sikkerhedsopdatering tilgængelig!",
   "home.show_announcements": "Vis bekendtgørelser",
-<<<<<<< HEAD
-  "ignore_notifications_modal.disclaimer": "Mastodon kan ikke informere brugere om, at man har ignoreret deres notifikationer. Ignorerer man notifikationer, forhindrer det ikke selve beskedafsendelsen.",
-  "ignore_notifications_modal.filter_instead": "Filtrér i stedet",
-  "ignore_notifications_modal.filter_to_act_users": "Man vil stadig kunne acceptere, afvise eller anmelde brugere",
-=======
   "ignore_notifications_modal.disclaimer": "Mastodon kan ikke informere brugere om, at du har ignoreret deres notifikationer. At ignorere notifikationer forhindrer ikke selve beskederne i at blive sendt.",
   "ignore_notifications_modal.filter_instead": "Filtrér i stedet",
   "ignore_notifications_modal.filter_to_act_users": "Du vil stadig kunne acceptere, afvise eller anmelde brugere",
->>>>>>> v4.4.3
+
   "ignore_notifications_modal.filter_to_avoid_confusion": "Filtrering medvirker til at undgå potentiel forvirring",
   "ignore_notifications_modal.filter_to_review_separately": "Du kan gennemgå filtrerede notifikationer separat",
   "ignore_notifications_modal.ignore": "Ignorér notifikationer",
@@ -552,11 +471,7 @@
   "interaction_modal.no_account_yet": "Har endnu ingen konto?",
   "interaction_modal.on_another_server": "På en anden server",
   "interaction_modal.on_this_server": "På denne server",
-<<<<<<< HEAD
-  "interaction_modal.sign_in": "Du er ikke logget ind på denne server. Hvor hostes din konto?",
-  "interaction_modal.sign_in_hint": "Tip: Det er webstedet, hvor du tilmeldte dig. Har du glemt det, så kig efter velkomstmailen i indbakken. Du kan også angive dit fulde brugernavn! (f.eks. @Mastodon@mastodon.social)",
-=======
->>>>>>> v4.4.3
+
   "interaction_modal.title.favourite": "Føj {name}s indlæg til favoritter",
   "interaction_modal.title.follow": "Følg {name}",
   "interaction_modal.title.reblog": "Fremhæv {name}s indlæg",
@@ -593,15 +508,10 @@
   "keyboard_shortcuts.reply": "Besvar indlægget",
   "keyboard_shortcuts.requests": "Åbn liste over følgeanmodninger",
   "keyboard_shortcuts.search": "Fokusér søgebjælke",
-<<<<<<< HEAD
-  "keyboard_shortcuts.spoilers": "Vis/skjul emnefelt",
-  "keyboard_shortcuts.start": "Åbn \"komme i gang\"-kolonne",
-  "keyboard_shortcuts.toggle_hidden": "Vis/skjul tekst bag emnefelt",
-=======
   "keyboard_shortcuts.spoilers": "Vis/skjul indholdsadvarsel-felt",
   "keyboard_shortcuts.start": "Åbn \"komme i gang\"-kolonne",
   "keyboard_shortcuts.toggle_hidden": "Vis/skjul tekst bag indholdsadvarsel",
->>>>>>> v4.4.3
+
   "keyboard_shortcuts.toggle_sensitivity": "Vis/skjul medier",
   "keyboard_shortcuts.toot": "Påbegynd nyt indlæg",
   "keyboard_shortcuts.translate": "for at oversætte et indlæg",
@@ -650,16 +560,6 @@
   "mute_modal.hide_options": "Skjul valgmuligheder",
   "mute_modal.indefinite": "Indtil jeg vælger at se dem igen",
   "mute_modal.show_options": "Vis valgmuligheder",
-<<<<<<< HEAD
-  "mute_modal.they_can_mention_and_follow": "De kan omtale og følge dig, men du vil ikke se dem.",
-  "mute_modal.they_wont_know": "De vil ikke vide, at de er blevet skjult.",
-  "mute_modal.title": "Skjul bruger?",
-  "mute_modal.you_wont_see_mentions": "Du vil ikke se indlæg som omtaler dem.",
-  "mute_modal.you_wont_see_posts": "De kan stadig se dine indlæg, men du vil ikke se deres.",
-  "navigation_bar.about": "Om",
-  "navigation_bar.administration": "Administration",
-  "navigation_bar.advanced_interface": "Åbn i avanceret netgrænseflade",
-=======
   "mute_modal.they_can_mention_and_follow": "Vedkommende kan nævne og følge dig, men vil ikke blive vist.",
   "mute_modal.they_wont_know": "De vil ikke vide, at de er blevet skjult.",
   "mute_modal.title": "Skjul bruger?",
@@ -670,7 +570,7 @@
   "navigation_bar.administration": "Administration",
   "navigation_bar.advanced_interface": "Åbn i avanceret netgrænseflade",
   "navigation_bar.automated_deletion": "Automatiseret sletning af indlæg",
->>>>>>> v4.4.3
+
   "navigation_bar.blocks": "Blokerede brugere",
   "navigation_bar.bookmarks": "Bogmærker",
   "navigation_bar.direct": "Private omtaler",
@@ -678,11 +578,8 @@
   "navigation_bar.favourites": "Favoritter",
   "navigation_bar.filters": "Skjulte ord",
   "navigation_bar.follow_requests": "Følgeanmodninger",
-<<<<<<< HEAD
-  "navigation_bar.followed_tags": "Etiketter, som følges",
-=======
   "navigation_bar.followed_tags": "Hashtags, som følges",
->>>>>>> v4.4.3
+
   "navigation_bar.follows_and_followers": "Følges og følgere",
   "navigation_bar.import_export": "Import og eksport",
   "navigation_bar.lists": "Lister",
@@ -690,10 +587,8 @@
   "navigation_bar.live_feed_public": "Live feed (offentligt)",
   "navigation_bar.logout": "Log af",
   "navigation_bar.moderation": "Moderering",
-<<<<<<< HEAD
-=======
   "navigation_bar.more": "Mere",
->>>>>>> v4.4.3
+
   "navigation_bar.mutes": "Skjulte brugere",
   "navigation_bar.opened_in_classic_interface": "Indlæg, konti og visse andre sider åbnes som standard i den klassiske webgrænseflade.",
   "navigation_bar.preferences": "Præferencer",
@@ -712,17 +607,13 @@
   "notification.admin.report_statuses_other": "{name} anmeldte {target}",
   "notification.admin.sign_up": "{name} tilmeldte sig",
   "notification.admin.sign_up.name_and_others": "{name} og {count, plural, one {# anden} other {# andre}} tilmeldte sig",
-<<<<<<< HEAD
-  "notification.favourite": "{name} føjede dit indlæg til favoritter",
-  "notification.favourite.name_and_others_with_link": "{name} og <a>{count, plural, one {# anden} other {# andre}}</a> føjede dit indlæg til favoritter",
-=======
   "notification.annual_report.message": "{year} #Wrapstodon venter! Afslør årets højdepunkter og mindeværdige øjeblikke på Mastodon!",
   "notification.annual_report.view": "Vis #Wrapstodon",
   "notification.favourite": "{name} føjede dit indlæg til favoritter",
   "notification.favourite.name_and_others_with_link": "{name} og <a>{count, plural, one {# anden} other {# andre}}</a> føjede dit indlæg til favoritter",
   "notification.favourite_pm": "{name} føjede din private omtale til favoritter",
   "notification.favourite_pm.name_and_others_with_link": "{name} og <a>{count, plural, one {# anden} other {# andre}}</a> føjede dit indlæg til favoritter",
->>>>>>> v4.4.3
+
   "notification.follow": "{name} begyndte at følge dig",
   "notification.follow.name_and_others": "{name} og <a>{count, plural, one {# andre} other {# andre}}</a> begyndte at følge dig",
   "notification.follow_request": "{name} har anmodet om at følge dig",
@@ -756,17 +647,11 @@
   "notification_requests.accept": "Acceptér",
   "notification_requests.accept_multiple": "{count, plural, one {Acceptér # anmodning…} other {Acceptér # anmodninger…}}",
   "notification_requests.confirm_accept_multiple.button": "{count, plural, one {Acceptér anmodning} other {Acceptér anmodninger}}",
-<<<<<<< HEAD
-  "notification_requests.confirm_accept_multiple.message": "{count, plural, one {En notifikationsanmodning} other {# notifikationsanmodninger}} er ved at blive accepteret. Er du sikker på, at du vil fortsætte?",
-  "notification_requests.confirm_accept_multiple.title": "Acceptér notifikationsanmodninger?",
-  "notification_requests.confirm_dismiss_multiple.button": "{count, plural, one {Afvis anmodning} other {Afvis anmodninger}}",
-  "notification_requests.confirm_dismiss_multiple.message": "{count, plural, one {En notifikationsanmodning} other {# notifikationsanmodninger}} er ved at blive afvist, hvorfor man ikke nemt vil kunne tilgå {count, plural, one {den} other {dem}} igen. Er du sikker på, at du vil fortsætte?",
-=======
   "notification_requests.confirm_accept_multiple.message": "Du er ved at acceptere {count, plural, one {en notifikationsanmodning} other {# notifikationsanmodninger}}. Er du sikker på, at du vil fortsætte?",
   "notification_requests.confirm_accept_multiple.title": "Acceptér notifikationsanmodninger?",
   "notification_requests.confirm_dismiss_multiple.button": "{count, plural, one {Afvis anmodning} other {Afvis anmodninger}}",
   "notification_requests.confirm_dismiss_multiple.message": "Du er ved at afvise {count, plural, one {en notifikationsanmodning} other {# notifikationsanmodninger}}. Du vil derfor ikke nemt kunne tilgå {count, plural, one {den} other {dem}} igen. Er du sikker på, at du vil fortsætte?",
->>>>>>> v4.4.3
+
   "notification_requests.confirm_dismiss_multiple.title": "Afvis notifikationsanmodninger?",
   "notification_requests.dismiss": "Afvis",
   "notification_requests.dismiss_multiple": "{count, plural, one {Afvis # anmodning…} other {Afvis # anmodninger…}}",
@@ -843,40 +728,14 @@
   "onboarding.profile.discoverable_hint": "Når man vælger at være synlig på Mastodon, kan ens indlæg fremgå i søgeresultater og tendenser, og profilen kan blive foreslået til andre med tilsvarende interesse.",
   "onboarding.profile.display_name": "Vist navn",
   "onboarding.profile.display_name_hint": "Dit fulde navn eller dit sjove navn…",
-<<<<<<< HEAD
-  "onboarding.profile.lead": "Dette kan altid færdiggøres senere i indstillingerne, hvor endnu flere tilpasningsmuligheder forefindes.",
-  "onboarding.profile.note": "Bio",
-  "onboarding.profile.note_hint": "Man kan @omtale andre personer eller #etiketter…",
-=======
   "onboarding.profile.note": "Bio",
   "onboarding.profile.note_hint": "Du kan @omtale andre personer eller #hashtags…",
->>>>>>> v4.4.3
+
   "onboarding.profile.save_and_continue": "Gem og fortsæt",
   "onboarding.profile.title": "Profilopsætning",
   "onboarding.profile.upload_avatar": "Upload profilbillede",
   "onboarding.profile.upload_header": "Upload profilbanner",
-<<<<<<< HEAD
-  "onboarding.share.lead": "Lad folk vide, hvordan de kan finde dig på Mastodon!",
-  "onboarding.share.message": "Jeg er {username} på #Mastodon! Følg mig på {url}",
-  "onboarding.share.next_steps": "Mulige næste trin:",
-  "onboarding.share.title": "Del profilen",
-  "onboarding.start.lead": "Den nye Mastodon konto er klar til brug. Sådan kan man få mest muligt ud af den:",
-  "onboarding.start.skip": "Vil springe længere frem?",
-  "onboarding.start.title": "Du klarede det!",
-  "onboarding.steps.follow_people.body": "Man kurerer sit eget feed. Lad os fylde det med interessante personer.",
-  "onboarding.steps.follow_people.title": "Følg {count, plural, one {en person} other {# personer}}",
-  "onboarding.steps.publish_status.body": "Sig hej til verden med tekst, billeder, videoer eller afstemninger {emoji}",
-  "onboarding.steps.publish_status.title": "Skriv dit første indlæg",
-  "onboarding.steps.setup_profile.body": "Andre er mere tilbøjelige til at interagere, hvis man har udfyldt sin profil.",
-  "onboarding.steps.setup_profile.title": "Tilpas profilen",
-  "onboarding.steps.share_profile.body": "Lad vennerne vide, hvordan de finder dig på Mastodon!",
-  "onboarding.steps.share_profile.title": "Del profilen",
-  "onboarding.tips.2fa": "<strong>Vidste du?</strong> Man kan sikre sin konto ved at opsætte tofaktorgodkendelse i kontoindstillingerne. Det virker med enhver valgt TOTP-app, intet telefonnummer nødvendigt!",
-  "onboarding.tips.accounts_from_other_servers": "<strong>Vidste du?</strong> Da Mastodon er decentraliseret, vil nogle af de profiler, man støder på, være hostet på andre servere end ens egen. Alligevel kan man interagere med dem problemfrit! Deres servernavn udgør anden halvdel af deres brugernavn!",
-  "onboarding.tips.migration": "<strong>Vidste du?</strong> Synes man ikke, at {domain} er et godt servervalg fremadrettet, kan man flytte til en anden Mastodon-server uden at miste sine følgere. Man kan endda hoste sin egen server!",
-  "onboarding.tips.verification": "<strong>Vidste du det?</strong> Man kan bekræfte sin konto ved at placere sit Mastodon-profillink på sin egen websted og føje webstedet til sin profil. Ingen gebyrer eller dokumenter påkrævet!",
-=======
->>>>>>> v4.4.3
+
   "password_confirmation.exceeds_maxlength": "Adgangskodebekræftelse overstiger maks. adgangskodelængde",
   "password_confirmation.mismatching": "Adgangskodebekræftelse matcher ikke",
   "picture_in_picture.restore": "Indsæt det igen",
@@ -892,24 +751,16 @@
   "poll_button.remove_poll": "Fjern afstemning",
   "privacy.change": "Tilpas indlægsfortrolighed",
   "privacy.direct.long": "Alle omtalt i indlægget",
-<<<<<<< HEAD
-  "privacy.direct.short": "Bestemte personer",
-=======
   "privacy.direct.short": "Privat omtale",
->>>>>>> v4.4.3
+
   "privacy.private.long": "Kun dine følgere",
   "privacy.private.short": "Følgere",
   "privacy.public.long": "Alle på og udenfor Mastodon",
   "privacy.public.short": "Offentlig",
-<<<<<<< HEAD
-  "privacy.unlisted.additional": "Dette er præcis som offentlig adfærd, dog vises indlægget ikke i tidslinjer, under etiketter, udforsk eller Mastodon-søgning, selv hvis du ellers har sagt at dine opslag godt må være søgbare.",
-  "privacy.unlisted.long": "Færre algoritmiske fanfarer",
-  "privacy.unlisted.short": "Stille offentligt",
-=======
   "privacy.unlisted.additional": "Dette svarer til offentlig, bortset fra at indlægget ikke vises i live-feeds eller hashtags, udforsk eller Mastodon-søgning, selvom du har tilvalgt dette for kontoen.",
   "privacy.unlisted.long": "Færre algoritmiske fanfarer",
   "privacy.unlisted.short": "Offentlig (stille)",
->>>>>>> v4.4.3
+
   "privacy_policy.last_updated": "Senest opdateret {date}",
   "privacy_policy.title": "Privatlivspolitik",
   "recommended": "Anbefalet",
@@ -969,13 +820,9 @@
   "report.thanks.title": "Ønsker ikke at se dette?",
   "report.thanks.title_actionable": "Tak for anmeldelsen, der vil blive set nærmere på dette.",
   "report.unfollow": "Følg ikke længere @{name}",
-<<<<<<< HEAD
-  "report.unfollow_explanation": "Du følger denne konto. For ikke længere at se vedkommendes indlæg i din hjemmestrøm, kan du stoppe med at følge dem.",
-  "report_notification.attached_statuses": "{count, plural, one {{count} post} other {{count} poster}} vedhæftet",
-=======
   "report.unfollow_explanation": "Du følger denne konto. Hvis du ikke længere vil se vedkommendes indlæg i dit hjem-feed, så stop med at følge dem.",
   "report_notification.attached_statuses": "{count, plural, one {{count} indlæg} other {{count} indlæg}} vedhæftet",
->>>>>>> v4.4.3
+
   "report_notification.categories.legal": "Juridisk",
   "report_notification.categories.legal_sentence": "ikke-tilladt indhold",
   "report_notification.categories.other": "Andre",
@@ -1004,25 +851,18 @@
   "search_popout.user": "bruger",
   "search_results.accounts": "Profiler",
   "search_results.all": "Alle",
-<<<<<<< HEAD
-  "search_results.hashtags": "Etiketter",
-  "search_results.nothing_found": "Ingen resultater for disse søgeord",
-=======
   "search_results.hashtags": "Hashtags",
   "search_results.no_results": "Ingen resultater.",
   "search_results.no_search_yet": "Prøv at søge efter indlæg, profiler eller hashtags.",
->>>>>>> v4.4.3
+
   "search_results.see_all": "Vis alle",
   "search_results.statuses": "Indlæg",
   "search_results.title": "Søg efter \"{q}\"",
   "server_banner.about_active_users": "Personer, som brugte denne server de seneste 30 dage (månedlige aktive brugere)",
   "server_banner.active_users": "aktive brugere",
   "server_banner.administered_by": "Håndteres af:",
-<<<<<<< HEAD
-  "server_banner.is_one_of_many": "{domain} er en af de mange uafhængige Mastodon-servere, man kan bruge for at deltage i fødiverset.",
-=======
   "server_banner.is_one_of_many": "{domain} er en af de mange uafhængige Mastodon-servere, du kan bruge for at deltage i fediverset.",
->>>>>>> v4.4.3
+
   "server_banner.server_stats": "Serverstatstik:",
   "sign_in_banner.create_account": "Opret konto",
   "sign_in_banner.follow_anyone": "Følg alle på tværs af fødiverset og se alt i kronologisk rækkefølge. Ingen algoritmer, annoncer eller clickbait i syne.",
@@ -1076,12 +916,9 @@
   "status.reblogs.empty": "Ingen har endnu fremhævet dette indlæg. Når nogen gør, vil det fremgå hér.",
   "status.redraft": "Slet og omskriv",
   "status.remove_bookmark": "Fjern bogmærke",
-<<<<<<< HEAD
-  "status.replied_in_thread": "Svaret i tråd",
-=======
   "status.remove_favourite": "Fjern fra favoritter",
   "status.replied_in_thread": "Svarede i tråd",
->>>>>>> v4.4.3
+
   "status.replied_to": "Svarede {name}",
   "status.reply": "Besvar",
   "status.replyAll": "Svar alle",
@@ -1138,11 +975,8 @@
   "video.expand": "Udvid video",
   "video.fullscreen": "Fuldskærm",
   "video.hide": "Skjul video",
-<<<<<<< HEAD
-  "video.mute": "Sluk for lyden",
-=======
   "video.mute": "Slå lyd fra",
->>>>>>> v4.4.3
+
   "video.pause": "Sæt på pause",
   "video.play": "Afspil",
   "video.skip_backward": "Overspring baglæns",

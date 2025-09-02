@@ -35,11 +35,8 @@ RSpec.describe PrecomputeFeedService do
         account.request_follow!(requested_account)
         account.mute!(muted_account)
 
-<<<<<<< HEAD
-        list.accounts << followed_account
-=======
         AddAccountsToListService.new.call(list, [followed_account])
->>>>>>> v4.4.3
+
       end
 
       it "fills a user's home and list timelines with the expected posts" do

@@ -2,12 +2,9 @@
 
 class WebPushRequest
   SIGNATURE_ALGORITHM = 'p256ecdsa'
-<<<<<<< HEAD
-  AUTH_HEADER = 'WebPush'
-=======
   LEGACY_AUTH_HEADER = 'WebPush'
   STANDARD_AUTH_HEADER = 'vapid'
->>>>>>> v4.4.3
+
   PAYLOAD_EXPIRATION = 24.hours
   JWT_ALGORITHM = 'ES256'
   JWT_TYPE = 'JWT'
@@ -15,10 +12,8 @@ class WebPushRequest
   attr_reader :web_push_subscription
 
   delegate(
-<<<<<<< HEAD
-=======
     :standard,
->>>>>>> v4.4.3
+
     :endpoint,
     :key_auth,
     :key_p256dh,
@@ -33,27 +28,15 @@ class WebPushRequest
     @audience ||= Addressable::URI.parse(endpoint).normalized_site
   end
 
-<<<<<<< HEAD
-  def authorization_header
-    [AUTH_HEADER, encoded_json_web_token].join(' ')
-=======
   def legacy_authorization_header
     [LEGACY_AUTH_HEADER, encoded_json_web_token].join(' ')
->>>>>>> v4.4.3
+
   end
 
   def crypto_key_header
     [SIGNATURE_ALGORITHM, vapid_key.public_key_for_push_header].join('=')
   end
 
-<<<<<<< HEAD
-  def encrypt(payload)
-    Webpush::Encryption.encrypt(payload, key_p256dh, key_auth)
-  end
-
-  private
-
-=======
   def legacy_encrypt(payload)
     Webpush::Legacy::Encryption.encrypt(payload, key_p256dh, key_auth)
   end
@@ -76,7 +59,7 @@ class WebPushRequest
     "t=#{encoded_json_web_token},k=#{vapid_key.public_key_for_push_header}"
   end
 
->>>>>>> v4.4.3
+
   def encoded_json_web_token
     JWT.encode(
       web_token_payload,
@@ -100,13 +83,9 @@ class WebPushRequest
 
   def vapid_key
     @vapid_key ||= Webpush::VapidKey.from_keys(
-<<<<<<< HEAD
-      Rails.configuration.x.vapid_public_key,
-      Rails.configuration.x.vapid_private_key
-=======
       Rails.configuration.x.vapid.public_key,
       Rails.configuration.x.vapid.private_key
->>>>>>> v4.4.3
+
     )
   end
 

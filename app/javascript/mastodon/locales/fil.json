@@ -51,10 +51,7 @@
   "account.mute_notifications_short": "I-mute ang mga abiso",
   "account.mute_short": "I-mute",
   "account.muted": "Naka-mute",
-<<<<<<< HEAD
-  "account.mutual": "Ka-mutual",
-=======
->>>>>>> v4.4.3
+
   "account.no_bio": "Walang nakalaan na paglalarawan.",
   "account.open_original_page": "Buksan ang pinagmulang pahina",
   "account.posts": "Mga post",
@@ -137,11 +134,7 @@
   "confirmations.delete_list.confirm": "Tanggalin",
   "confirmations.delete_list.message": "Sigurado ka bang gusto mong burahin ang listahang ito?",
   "confirmations.discard_edit_media.confirm": "Ipagpaliban",
-<<<<<<< HEAD
-  "confirmations.edit.confirm": "Baguhin",
-  "confirmations.reply.confirm": "Tumugon",
-=======
->>>>>>> v4.4.3
+
   "content_warning.show_more": "Magpakita ng higit pa",
   "conversation.mark_as_read": "Markahan bilang nabasa na",
   "conversation.open": "Tingnan ang pag-uusap",
@@ -196,15 +189,9 @@
   "empty_column.hashtag": "Wala pang laman ang hashtag na ito.",
   "empty_column.home": "Walang laman ang timeline ng tahanan mo! Sumunod sa marami pang tao para mapunan ito.",
   "empty_column.list": "Wala pang laman ang listahang ito. Kapag naglathala ng mga bagong post ang mga miyembro ng listahang ito, makikita iyon dito.",
-<<<<<<< HEAD
-  "empty_column.lists": "Wala ka pang mga listahan. Kapag gumawa ka ng isa, makikita yun dito.",
   "empty_column.notification_requests": "Malinis na lahat! Walang anuman dito. Kapag nakatanggap ka ng mga bagong abiso, makikita sila dito na batay sa iyong mga setting.",
   "errors.unexpected_crash.report_issue": "Iulat ang isyu",
-  "explore.search_results": "Mga resulta ng paghahanap",
-=======
-  "empty_column.notification_requests": "Malinis na lahat! Walang anuman dito. Kapag nakatanggap ka ng mga bagong abiso, makikita sila dito na batay sa iyong mga setting.",
-  "errors.unexpected_crash.report_issue": "Iulat ang isyu",
->>>>>>> v4.4.3
+
   "explore.suggested_follows": "Mga tao",
   "explore.trending_links": "Mga balita",
   "filter_modal.select_filter.search": "Hanapin o gumawa",
@@ -250,16 +237,8 @@
   "lightbox.previous": "Nakaraan",
   "link_preview.author": "Ni/ng {name}",
   "lists.delete": "Burahin ang listahan",
-<<<<<<< HEAD
-  "lists.edit.submit": "Baguhin ang pamagat",
-  "lists.new.create": "Idagdag sa talaan",
-  "lists.new.title_placeholder": "Bagong pangalan ng talaan",
   "lists.replies_policy.none": "Walang simuman",
-  "lists.replies_policy.title": "Ipakita ang mga tugon sa:",
-  "lists.subheading": "Iyong mga talaan",
-=======
-  "lists.replies_policy.none": "Walang simuman",
->>>>>>> v4.4.3
+
   "loading_indicator.label": "Kumakarga…",
   "media_gallery.hide": "Itago",
   "mute_modal.hide_from_notifications": "Itago mula sa mga abiso",
@@ -320,10 +299,7 @@
   "privacy.unlisted.short": "Hindi nakalista",
   "privacy_policy.last_updated": "Huling nabago noong {date}",
   "recommended": "Inirekomenda",
-<<<<<<< HEAD
-  "regeneration_indicator.label": "Kumakarga…",
-=======
->>>>>>> v4.4.3
+
   "relative_time.days": "{number}a",
   "relative_time.full.days": "{number, plural, one {# araw} other {# na araw}} ang nakalipas",
   "relative_time.full.hours": "{number, plural, one {# oras} other {# na oras}} ang nakalipas",

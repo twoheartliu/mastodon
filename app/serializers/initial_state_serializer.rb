@@ -16,16 +16,6 @@ class InitialStateSerializer < ActiveModel::Serializer
     store = default_meta_store
 
     if object.current_account
-<<<<<<< HEAD
-      store[:me]                  = object.current_account.id.to_s
-      store[:boost_modal]         = object_account_user.setting_boost_modal
-      store[:delete_modal]        = object_account_user.setting_delete_modal
-      store[:auto_play_gif]       = object_account_user.setting_auto_play_gif
-      store[:display_media]       = object_account_user.setting_display_media
-      store[:expand_spoilers]     = object_account_user.setting_expand_spoilers
-      store[:reduce_motion]       = object_account_user.setting_reduce_motion
-      store[:disable_swiping]     = object_account_user.setting_disable_swiping
-=======
       store[:me]                = object.current_account.id.to_s
       store[:boost_modal]       = object_account_user.setting_boost_modal
       store[:delete_modal]      = object_account_user.setting_delete_modal
@@ -35,7 +25,7 @@ class InitialStateSerializer < ActiveModel::Serializer
       store[:expand_spoilers]   = object_account_user.setting_expand_spoilers
       store[:reduce_motion]     = object_account_user.setting_reduce_motion
       store[:disable_swiping]   = object_account_user.setting_disable_swiping
->>>>>>> v4.4.3
+
       store[:disable_hover_cards] = object_account_user.setting_disable_hover_cards
       store[:advanced_layout]     = object_account_user.setting_advanced_layout
       store[:layout_type]         = object_account_user.setting_layout

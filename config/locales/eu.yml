@@ -205,10 +205,8 @@ eu:
         destroy_user_role: Ezabatu rola
         disable_2fa_user: Desgaitu 2FA
         disable_custom_emoji: Desgaitu emoji pertsonalizatua
-<<<<<<< HEAD
-=======
         disable_relay: Erreleboa desaktibatu
->>>>>>> v4.4.3
+
         disable_sign_in_token_auth_user: Desgaitu email token autentifikazioa erabiltzailearentzat
         disable_user: Desgaitu erabiltzailea
         enable_custom_emoji: Gaitu emoji pertsonalizatua

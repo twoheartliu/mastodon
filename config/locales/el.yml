@@ -270,17 +270,12 @@ el:
         destroy_user_role_html: Ο/Η %{name} διέγραψε τον ρόλο του %{target}
         disable_2fa_user_html: Ο/Η %{name} απενεργοποίησε την απαίτηση για ταυτοποίηση δύο παραγόντων για τον χρήστη %{target}
         disable_custom_emoji_html: Ο/Η %{name} απενεργοποίησε το emoji %{target}
-<<<<<<< HEAD
-        disable_sign_in_token_auth_user_html: Ο χρήστης %{name} απενεργοποίησε την ταυτοποίηση χαρακτηριστικού μέσω e-mail για %{target}
-        disable_user_html: Ο/Η %{name} απενεργοποίησε τη σύνδεση για τον χρήστη %{target}
-        enable_custom_emoji_html: Ο/Η %{name} ενεργοποίησε το emoji %{target}
-=======
         disable_relay_html: Ο χρήστης %{name} απενεργοποίησε το relay %{target}
         disable_sign_in_token_auth_user_html: Ο χρήστης %{name} απενεργοποίησε την ταυτοποίηση χαρακτηριστικού μέσω e-mail για %{target}
         disable_user_html: Ο/Η %{name} απενεργοποίησε τη σύνδεση για τον χρήστη %{target}
         enable_custom_emoji_html: Ο/Η %{name} ενεργοποίησε το emoji %{target}
         enable_relay_html: Ο χρήστης %{name} ενεργοποίησε το relay %{target}
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user_html: Ο χρήστης %{name} ενεργοποίησε την πιστοποίηση αναγνωριστικού email του %{target}
         enable_user_html: Ο/Η %{name} ενεργοποίησε τη σύνδεση για τον χρήστη %{target}
         memorialize_account_html: O/H %{name} μετέτρεψε τον λογαριασμό του %{target} σε σελίδα εις μνήμην
@@ -1247,11 +1242,8 @@ el:
     set_new_password: Ορισμός νέου συνθηματικού
     setup:
       email_below_hint_html: Έλεγξε τον φάκελο ανεπιθύμητης αλληλογραφίας ή ζήτα καινούργιο. Μπορείς να διορθώσεις τη διεύθυνση email σου αν είναι λάθος.
-<<<<<<< HEAD
-      email_settings_hint_html: Πάτησε το σύνδεσμο που σου στείλαμε για να επαληθεύσεις το %{email}. Θα σε περιμένουμε εδώ.
-=======
       email_settings_hint_html: Κάνε κλικ στο σύνδεσμο που στείλαμε στο %{email} για να αρχίσεις να χρησιμοποιείς το Mastodon. Θα περιμένουμε εδώ.
->>>>>>> v4.4.3
+
       link_not_received: Δεν έλαβες τον σύνδεσμο;
       new_confirmation_instructions_sent: Θα λάβεις ένα νέο email με το σύνδεσμο επιβεβαίωσης σε λίγα λεπτά!
       title: Ελέγξτε τα εισερχόμενά σας
@@ -1272,11 +1264,9 @@ el:
       view_strikes: Προβολή προηγούμενων ποινών εναντίον του λογαριασμού σας
     too_fast: Η φόρμα υποβλήθηκε πολύ γρήγορα, προσπαθήστε ξανά.
     use_security_key: Χρήση κλειδιού ασφαλείας
-<<<<<<< HEAD
-=======
     user_agreement_html: Έχω διαβάσει με τους <a href="%{terms_of_service_path}" target="_blank">όρους παροχής υπηρεσιών</a> και την <a href="%{privacy_policy_path}" target="_blank">πολιτική απορρήτου</a>
     user_privacy_agreement_html: Έχω διαβάσει και συμφωνώ με την πολιτική απορρήτου <a href="%{privacy_policy_path}" target="_blank"></a>
->>>>>>> v4.4.3
+
   author_attribution:
     example_title: Δείγμα κειμένου
     hint_html: Γράφεις ειδήσεις ή blog άρθρα εκτός του Mastodon; Έλεγξε πώς μπορείς να πάρεις τα εύσημα όταν μοιράζονται στο Mastodon.
@@ -1775,11 +1765,8 @@ el:
   scheduled_statuses:
     over_daily_limit: Έχεις υπερβεί το όριο των %{limit} προγραμματισμένων αναρτήσεων για εκείνη τη μέρα
     over_total_limit: Έχεις υπερβεί το όριο των %{limit} προγραμματισμένων αναρτήσεων
-<<<<<<< HEAD
-    too_soon: Η προγραμματισμένη ημερομηνία πρέπει να είναι στο μέλλον
-=======
     too_soon: η ημερομηνία πρέπει να είναι στο μέλλον
->>>>>>> v4.4.3
+
   self_destruct:
     lead_html: Δυστυχώς, το <strong>%{domain}</strong> κλείνει οριστικά. Αν είχατε λογαριασμό εκεί, δεν θα μπορείτε να συνεχίσετε τη χρήση του, αλλά μπορείτε ακόμα να ζητήσετε ένα αντίγραφο ασφαλείας των δεδομένων σας.
     title: Αυτός ο διακομιστής κλείνει οριστικά
@@ -2092,10 +2079,7 @@ el:
       post_action: Σύνθεση
       post_step: Πες γεια στον κόσμο με κείμενο, φωτογραφίες, βίντεο ή δημοσκοπήσεις.
       post_title: Κάνε την πρώτη σου ανάρτηση
-<<<<<<< HEAD
-      share_action: Κοινοποίηση
-=======
->>>>>>> v4.4.3
+
       share_step: Πες στους φίλους σου πώς να σε βρουν στο Mastodon.
       share_title: Μοιραστείτε το προφίλ σας στο Mastodon
       sign_in_action: Σύνδεση

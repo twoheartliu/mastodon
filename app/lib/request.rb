@@ -75,10 +75,7 @@ class Request
     @url         = Addressable::URI.parse(url).normalize
     @http_client = options.delete(:http_client)
     @allow_local = options.delete(:allow_local)
-<<<<<<< HEAD
-    @full_path   = !options.delete(:omit_query_string)
-=======
->>>>>>> v4.4.3
+
     @options     = {
       follow: {
         max_hops: 3,
@@ -105,11 +102,8 @@ class Request
 
     key_id = ActivityPub::TagManager.instance.key_uri_for(actor)
     keypair = sign_with.present? ? OpenSSL::PKey::RSA.new(sign_with) : actor.keypair
-<<<<<<< HEAD
-    @signing = HttpSignatureDraft.new(keypair, key_id, full_path: @full_path)
-=======
     @signing = HttpSignatureDraft.new(keypair, key_id)
->>>>>>> v4.4.3
+
 
     self
   end

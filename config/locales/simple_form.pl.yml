@@ -3,11 +3,8 @@ pl:
   simple_form:
     hints:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Jedna na linię. Chroni przed fałszywym przypisaniem wpisów.
-=======
         attribution_domains: Jedna na linię.
->>>>>>> v4.4.3
+
         discoverable: Twój profil i publiczne wpisy mogą być promowane lub polecane na Mastodonie i twój profil może być sugerowany innym użytkownikom.
         display_name: Twoje imię lub pseudonim.
         fields: Co ci się tylko podoba – twoja strona domowa, zaimki, wiek…
@@ -158,11 +155,8 @@ pl:
         url: Dokąd będą wysłane zdarzenia
     labels:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Strony które mogą ci przypisywać autorstwo.
-=======
         attribution_domains: Strony które mogą ci przypisywać autorstwo
->>>>>>> v4.4.3
+
         discoverable: Udostępniaj profil i wpisy funkcjom odkrywania
         fields:
           name: Nazwa

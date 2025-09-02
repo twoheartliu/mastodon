@@ -20,10 +20,7 @@ ja:
           invalid: 有効なドメイン名ではありません
       messages:
         invalid_domain_on_line: "%{value} は有効なドメイン名ではありません"
-<<<<<<< HEAD
-        too_many_lines: "%{limit} 行の制限を超えています。"
-=======
->>>>>>> v4.4.3
+
       models:
         account:
           attributes:

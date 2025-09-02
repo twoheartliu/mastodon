@@ -417,15 +417,6 @@
   "ignore_notifications_modal.not_followers_title": "Ignoruoti pranešimus iš žmonių, kurie tave neseka?",
   "ignore_notifications_modal.not_following_title": "Ignoruoti pranešimus iš žmonių, kuriuos neseki?",
   "ignore_notifications_modal.private_mentions_title": "Ignoruoti pranešimus iš neprašytų privačių paminėjimų?",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "Su „Mastodon“ paskyra galite pamėgti šį įrašą, kad autorius žinotų, jog vertinti tai ir išsaugoti jį vėliau.",
-  "interaction_modal.description.follow": "Su „Mastodon“ paskyra galite sekti {name}, kad gautumėte jų įrašus pagrindiniame sraute.",
-  "interaction_modal.description.reblog": "Su Mastodon paskyra gali pakelti šią įrašą ir pasidalyti juo su savo sekėjais.",
-  "interaction_modal.description.reply": "Su Mastodon paskyra gali atsakyti į šį įrašą.",
-  "interaction_modal.login.action": "Į pagrindinį puslapį",
-  "interaction_modal.login.prompt": "Tavo pagrindinio serverio domenas, pvz., mastodon.social.",
-  "interaction_modal.no_account_yet": "Nesi Mastodon?",
-=======
   "info_button.label": "Žinynas",
   "info_button.what_is_alt_text": "<h1>Kas yra alternatyvusis tekstas?</h1> <p>Alternatyvusis tekstas pateikia vaizdų aprašymus asmenims su regos sutrikimais, turintiems mažo pralaidumo ryšį arba ieškantiems papildomo konteksto.</p> <p>Galite pagerinti prieinamumą ir suprantamumą visiems, jei parašysite aiškų, glaustą ir objektyvų alternatyvųjį tekstą.</p> <ul> <li>Užfiksuokite svarbiausius elementus.</li> <li>Apibendrinkite tekstą vaizduose.</li> <li>Naudokite įprasta sakinio struktūrą.</li> <li>Venkite nereikalingos informacijos.</li> <li>Sutelkite dėmesį į tendencijas ir pagrindines išvadas sudėtinguose vaizdiniuose (tokiuose kaip diagramos ar žemėlapiai).</li> </ul>",
   "interaction_modal.action.favourite": "Kad tęstumėte, turite pamėgti iš savo paskyros.",
@@ -435,7 +426,7 @@
   "interaction_modal.action.vote": "Kad tęstumėte, turite balsuoti iš savo paskyros.",
   "interaction_modal.go": "Eiti",
   "interaction_modal.no_account_yet": "Dar neturite paskyros?",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "Kitame serveryje",
   "interaction_modal.on_this_server": "Šiame serveryje",
   "interaction_modal.title.favourite": "Pamėgti {name} įrašą",
@@ -557,11 +548,9 @@
   "notification.admin.report_statuses_other": "{name} pranešė {target}",
   "notification.admin.sign_up": "{name} užsiregistravo",
   "notification.admin.sign_up.name_and_others": "{name} ir {count, plural, one {# kitas} few {# kiti} many {# kito} other {# kitų}} užsiregistravo",
-<<<<<<< HEAD
-=======
   "notification.annual_report.message": "Jūsų laukia {year} #Wrapstodon! Atskleiskite savo metų svarbiausius įvykius ir įsimintinas akimirkas platformoje „Mastodon“.",
   "notification.annual_report.view": "Peržiūrėti #Wrapstodon",
->>>>>>> v4.4.3
+
   "notification.favourite": "{name} pamėgo tavo įrašą",
   "notification.favourite_pm": "{name} pamėgo jūsų privatų paminėjimą",
   "notification.follow": "{name} seka tave",
@@ -703,13 +692,9 @@
   "privacy_policy.title": "Privatumo politika",
   "recommended": "Rekomenduojama",
   "refresh": "Atnaujinti",
-<<<<<<< HEAD
-  "regeneration_indicator.label": "Įkeliama…",
-  "regeneration_indicator.sublabel": "Ruošiamas jūsų pagrindinis srautas!",
-=======
   "regeneration_indicator.please_stand_by": "Laukite.",
   "regeneration_indicator.preparing_your_home_feed": "Ruošimas jūsų pagrindinis srautas…",
->>>>>>> v4.4.3
+
   "relative_time.days": "{number} d.",
   "relative_time.full.days": "prieš {number, plural, one {# dieną} few {# dienas} many {# dienos} other {# dienų}}",
   "relative_time.full.hours": "prieš {number, plural, one {# valandą} few {# valandas} many {# valandos} other {# valandų}}",

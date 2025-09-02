@@ -1,10 +1,8 @@
 {
   "about.blocks": "Server moderati",
   "about.contact": "Contatti:",
-<<<<<<< HEAD
-=======
   "about.default_locale": "Predefinito",
->>>>>>> v4.4.3
+
   "about.disclaimer": "Mastodon è un software libero e open-source e un marchio di Mastodon gGmbH.",
   "about.domain_blocks.no_reason_available": "Motivo non disponibile",
   "about.domain_blocks.preamble": "Mastodon, generalmente, ti consente di visualizzare i contenuti e interagire con gli utenti da qualsiasi altro server nel fediverso. Queste sono le eccezioni che sono state fatte su questo particolare server.",
@@ -715,28 +713,7 @@
   "onboarding.profile.title": "Configurazione del profilo",
   "onboarding.profile.upload_avatar": "Carica l'immagine del profilo",
   "onboarding.profile.upload_header": "Carica l'intestazione del profilo",
-<<<<<<< HEAD
-  "onboarding.share.lead": "Fai sapere alle persone come possono trovarti su Mastodon!",
-  "onboarding.share.message": "Sono {username} su #Mastodon! Vieni a seguirmi su {url}",
-  "onboarding.share.next_steps": "Possibili passaggi successivi:",
-  "onboarding.share.title": "Condividi il tuo profilo",
-  "onboarding.start.lead": "Il tuo nuovo account Mastodon è pronto. Ecco come puoi sfruttarlo al meglio:",
-  "onboarding.start.skip": "Vuoi saltare tutto questo?",
-  "onboarding.start.title": "Ce l'hai fatta!",
-  "onboarding.steps.follow_people.body": "Gestisci la tua cronologia. Riempila di persone interessanti.",
-  "onboarding.steps.follow_people.title": "Segui {count, plural, one {una persona} other {# persone}}",
-  "onboarding.steps.publish_status.body": "",
-  "onboarding.steps.publish_status.title": "Scrivi il tuo primo post",
-  "onboarding.steps.setup_profile.body": "Gli altri hanno maggiori probabilità di interagire con te se completi il tuo profilo.",
-  "onboarding.steps.setup_profile.title": "Personalizza il tuo profilo",
-  "onboarding.steps.share_profile.body": "Fai sapere ai tuoi amici come trovarti su Mastodonte",
-  "onboarding.steps.share_profile.title": "Condividi il tuo profilo",
-  "onboarding.tips.2fa": "<strong>Lo sapevi?</strong> Puoi proteggere il tuo account impostando l'autenticazione a due fattori nelle impostazioni del tuo account. Funziona con qualsiasi app TOTP di tua scelta, nessun numero di telefono necessario!",
-  "onboarding.tips.accounts_from_other_servers": "<strong>Lo sapevi?</strong> Dal momento che Mastodon è decentralizzato, alcuni profili che incontrerai sono ospitati su server diversi dal tuo. Ma puoi interagire con loro senza problemi! Il loro server è nella seconda metà del loro nome utente!",
-  "onboarding.tips.migration": "<strong>Lo sapevi?</strong> Se ritieni che {domain} non sia un'ottima scelta di server per te in futuro, puoi spostarti su un altro server Mastodon senza perdere i tuoi seguaci. Puoi persino ospitare il tuo server!",
-  "onboarding.tips.verification": "<strong>Lo sapevi?</strong> Puoi verificare il tuo account inserendo un collegamento al tuo profilo Mastodon sul tuo sito web e aggiungendo il sito web al tuo profilo. Nessuna spesa o documento necessario!",
-=======
->>>>>>> v4.4.3
+
   "password_confirmation.exceeds_maxlength": "La conferma della password supera la lunghezza massima della password",
   "password_confirmation.mismatching": "Le password non corrispondono",
   "picture_in_picture.restore": "Ripristinala",
@@ -752,11 +729,8 @@
   "poll_button.remove_poll": "Rimuovi il sondaggio",
   "privacy.change": "Modifica privacy del post",
   "privacy.direct.long": "Tutti quelli menzionati nel post",
-<<<<<<< HEAD
-  "privacy.direct.short": "Persone specifiche",
-=======
   "privacy.direct.short": "Menzione privata",
->>>>>>> v4.4.3
+
   "privacy.private.long": "Solo i tuoi follower",
   "privacy.private.short": "Follower",
   "privacy.public.long": "Chiunque dentro e fuori Mastodon",
@@ -959,11 +933,7 @@
   "upload_button.label": "Aggiungi un file immagine, video o audio",
   "upload_error.limit": "Limite di caricamento dei file superato.",
   "upload_error.poll": "Caricamento del file non consentito con i sondaggi.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Descrizione per persone con deficit uditivi",
-  "upload_form.description": "Descrizione per ipovedenti",
-=======
->>>>>>> v4.4.3
+
   "upload_form.drag_and_drop.instructions": "Per selezionare un allegato multimediale, premi Spazio o Invio. Mentre trascini, usa i tasti con le frecce per spostare l'allegato multimediale in una qualsiasi direzione. Premi di nuovo Spazio o Invio per rilasciare l'allegato multimediale nella sua nuova posizione, oppure premi Esc per annullare.",
   "upload_form.drag_and_drop.on_drag_cancel": "Il trascinamento è stato annullato. L'allegato multimediale {item} è stato eliminato.",
   "upload_form.drag_and_drop.on_drag_end": "L'allegato multimediale {item} è stato eliminato.",

@@ -93,13 +93,11 @@
   "alert.unexpected.message": "Afito un yerro no asperado.",
   "alert.unexpected.title": "Atyo!",
   "alt_text_badge.title": "Teksto alternativo",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Adjusta teksto alternativo",
   "alt_text_modal.cancel": "Anula",
   "alt_text_modal.change_thumbnail": "Troka minyatura",
   "alt_text_modal.done": "Fecho",
->>>>>>> v4.4.3
+
   "announcement.announcement": "Pregon",
   "annual_report.summary.archetype.pollster": "El anketero",
   "annual_report.summary.followers.followers": "suivantes",
@@ -386,17 +384,8 @@
   "ignore_notifications_modal.not_followers_title": "Inyorar avizos de personas a las kualas no te sigen?",
   "ignore_notifications_modal.not_following_title": "Inyorar avizos de personas a las kualas no siges?",
   "ignore_notifications_modal.private_mentions_title": "Ignorar avizos de mensyones privadas no solisitadas?",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "Kon un kuento en Mastodon, puedes markar esta publikasyon komo favorita para ke el autor sepa ke te plaze i para guadrarla para dempues.",
-  "interaction_modal.description.follow": "Kon un kuento en Mastodon, puedes segir a {name} para risivir sus publikasyones en tu linya temporal prinsipala.",
-  "interaction_modal.description.reblog": "Kon un kuento en Mastodon, puedes repartajar esta publikasyon para amostrarla a tus suivantes.",
-  "interaction_modal.description.reply": "Kon un kuento en Mastodon, puedes arispondir a esta publikasyon.",
-  "interaction_modal.login.action": "Va a tu sirvidor",
-  "interaction_modal.login.prompt": "Domeno del sirvidor de tu kuento, por enshemplo mastodon.social",
-  "interaction_modal.no_account_yet": "No tyenes kuento de Mastodon?",
-=======
   "info_button.label": "Ayuda",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "En otro sirvidor",
   "interaction_modal.on_this_server": "En este sirvidor",
   "interaction_modal.title.favourite": "Endika ke te plaze publikasyon de {name}",
@@ -754,10 +743,8 @@
   "status.reblogs.empty": "Ainda nadie tiene repartajado esta publikasyon. Kuando algien lo aga, se amostrara aki.",
   "status.redraft": "Efasa i eskrive de muevo",
   "status.remove_bookmark": "Kita markador",
-<<<<<<< HEAD
-=======
   "status.remove_favourite": "Kita de los favoritos",
->>>>>>> v4.4.3
+
   "status.replied_in_thread": "Arispondo en filo",
   "status.replied_to": "Arispondio a {name}",
   "status.reply": "Arisponde",

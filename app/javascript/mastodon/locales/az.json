@@ -23,15 +23,6 @@
   "account.copy": "Profil linkini kopyala",
   "account.direct": "@{name} istifadəçisini fərdi olaraq etiketlə",
   "account.disable_notifications": "@{name} paylaşım edəndə mənə bildiriş göndərməyi dayandır",
-<<<<<<< HEAD
-  "account.domain_blocked": "Domen bloklanıb",
-  "account.edit_profile": "Profili redaktə et",
-  "account.enable_notifications": "@{name} paylaşım edəndə mənə bildiriş göndər",
-  "account.endorse": "Profildə seçilmişlərə əlavə et",
-  "account.featured_tags.last_status_at": "Son paylaşım {date} tarixində olub",
-  "account.featured_tags.last_status_never": "Paylaşım yoxdur",
-  "account.featured_tags.title": "{name} istifadəçisinin seçilmiş heşteqləri",
-=======
   "account.domain_blocking": "Domenin bloklanması",
   "account.edit_profile": "Profili redaktə et",
   "account.enable_notifications": "@{name} paylaşım edəndə mənə bildiriş göndər",
@@ -39,7 +30,7 @@
   "account.featured.hashtags": "Etiketler",
   "account.featured_tags.last_status_at": "Son paylaşım {date} tarixində olub",
   "account.featured_tags.last_status_never": "Paylaşım yoxdur",
->>>>>>> v4.4.3
+
   "account.follow": "İzlə",
   "account.follow_back": "Sən də izlə",
   "account.followers": "İzləyicilər",
@@ -62,10 +53,7 @@
   "account.mute_notifications_short": "Bildirişləri səssizləşdir",
   "account.mute_short": "Səssizləşdir",
   "account.muted": "Səssizləşdirilib",
-<<<<<<< HEAD
-  "account.mutual": "Ortaq",
-=======
->>>>>>> v4.4.3
+
   "account.no_bio": "Təsvir göstərilməyib.",
   "account.open_original_page": "Orijinal səhifəni aç",
   "account.posts": "Paylaşım",
@@ -99,9 +87,6 @@
   "alert.unexpected.message": "Bilinməyən bir xəta baş verdi.",
   "alert.unexpected.title": "Ah!",
   "alt_text_badge.title": "Alternativ mətn",
-<<<<<<< HEAD
-  "announcement.announcement": "Elan",
-=======
   "alt_text_modal.add_alt_text": "Alternativ mətn əlavə et",
   "alt_text_modal.add_text_from_image": "Şəkildəki mətni əlavə et",
   "alt_text_modal.cancel": "İmtina",
@@ -129,7 +114,7 @@
   "annual_report.summary.percentile.text": "<topLabel>Bu sizi {domain} istifadəçilərinin ilk</topLabel><percentage></percentage><bottomLabel>qoyur.</bottomLabel>",
   "annual_report.summary.percentile.we_wont_tell_bernie": "Bunu Berniyə deməyəcəyik.",
   "annual_report.summary.thanks": "Mastodonun bir parçası olduğunuz üçün təşəkkür edirik!",
->>>>>>> v4.4.3
+
   "attachments_list.unprocessed": "(emal edilməyib)",
   "audio.hide": "Audionu gizlət",
   "block_modal.remote_users_caveat": "Biz {domain} serverindən qərarınıza hörmət etməsini xahiş edəcəyik. Bununla belə, bəzi serverlər blokları fərqli şəkildə idarə edə bildiyi üçün uyğunluğa zəmanət verilmir. İctimai paylaşımlar hələ də daxil olmayan istifadəçilərə görünə bilər.",
@@ -153,10 +138,8 @@
   "bundle_column_error.routing.body": "Tələb olunan səhifəni tapmaq mümkün olmadı. Ünvan çubuğundakı URL-nin düzgün olduğuna əminsiniz?",
   "bundle_column_error.routing.title": "404",
   "bundle_modal_error.close": "Bağla",
-<<<<<<< HEAD
-=======
   "bundle_modal_error.message": "Bu ekranı yükləyərkən xəta baş verdi.",
->>>>>>> v4.4.3
+
   "bundle_modal_error.retry": "Yenidən cəhd et",
   "closed_registrations.other_server_instructions": "Mastodon desentralizasiya edilmiş olduğu üçün başqa bir serverdə hesab yarada və hələ də bu serverdən istifadə edə bilərsiniz.",
   "closed_registrations_modal.description": "{domain} serverində hesab yaratmaq hazırda mümkün deyil, lakin nəzərə alın ki, Mastodondan istifadə etmək üçün xüsusi olaraq {domain} serverində hesaba ehtiyacınız yoxdur.",
@@ -167,25 +150,18 @@
   "column.blocks": "Bloklanmış istifadəçilər",
   "column.bookmarks": "Əlfəcinlər",
   "column.community": "Lokal zaman qrafiki",
-<<<<<<< HEAD
-  "column.direct": "Fərdi teqlər",
-  "column.directory": "Profillər arasında gəz",
-  "column.domain_blocks": "Bloklanmış domenlər",
-=======
   "column.create_list": "Siyahı yarat",
   "column.direct": "Fərdi teqlər",
   "column.directory": "Profillər arasında gəz",
   "column.domain_blocks": "Bloklanmış domenlər",
   "column.edit_list": "Siyahını redaktə et",
->>>>>>> v4.4.3
+
   "column.favourites": "Sevimlilər",
   "column.firehose": "Canlı lentlər",
   "column.follow_requests": "İzləyici sorğuları",
   "column.home": "Ana səhifə",
-<<<<<<< HEAD
-=======
   "column.list_members": "Siyahı üzvlərini idarə et",
->>>>>>> v4.4.3
+
   "column.lists": "Siyahılar",
   "column.mutes": "Səssizləşdirilmiş istifadəçilər",
   "column.notifications": "Bildirişlər",
@@ -198,11 +174,8 @@
   "column_header.pin": "Bərkit",
   "column_header.show_settings": "Parametrləri göstər",
   "column_header.unpin": "Bərkitmə",
-<<<<<<< HEAD
-  "column_subheading.settings": "Parametrlər",
-=======
   "column_search.cancel": "İmtina",
->>>>>>> v4.4.3
+
   "community.column_settings.local_only": "Sadəcə lokalda",
   "community.column_settings.media_only": "Sadəcə media",
   "community.column_settings.remote_only": "Sadəcə uzaq serverlər",
@@ -220,18 +193,13 @@
   "compose_form.poll.duration": "Sorğunun müddəti",
   "compose_form.poll.multiple": "Çoxlu cavab",
   "compose_form.poll.option_placeholder": "Seçim {number}",
-<<<<<<< HEAD
-=======
   "compose_form.poll.single": "Tək cavab",
->>>>>>> v4.4.3
+
   "compose_form.poll.switch_to_multiple": "Çoxsaylı cavablara icazə vermək üçün sorğunu redaktə et",
   "compose_form.poll.switch_to_single": "Tək cavaba icazə vermək üçün sorğunu redaktə et",
   "compose_form.poll.type": "Stil",
   "compose_form.publish": "Paylaş",
-<<<<<<< HEAD
-  "compose_form.publish_form": "Yeni paylaşım",
-=======
->>>>>>> v4.4.3
+
   "compose_form.reply": "Cavabla",
   "compose_form.save_changes": "Yenilə",
   "compose_form.spoiler.marked": "Məzmun xəbərdarlığını sil",
@@ -247,14 +215,6 @@
   "confirmations.delete_list.title": "Siyahı silinsin?",
   "confirmations.discard_edit_media.confirm": "Ləğv et",
   "confirmations.discard_edit_media.message": "Media təsvirində və ya önizləmədə yadda saxlanmamış dəyişiklikləriniz var, ləğv edilsin?",
-<<<<<<< HEAD
-  "confirmations.edit.confirm": "Redaktə et",
-  "confirmations.edit.message": "Redaktə etmək hazırda tərtib etdiyiniz mesajın üzərinə yazacaq. Davam etmək istədiyinizə əminsiniz?",
-  "confirmations.edit.title": "Paylaşım yenidə yazılsın?",
-  "confirmations.logout.confirm": "Çıxış et",
-  "confirmations.logout.message": "Çıxmaq istədiyinizə əminsiniz?",
-  "confirmations.logout.title": "Çıxış edilsin?",
-=======
   "confirmations.follow_to_list.confirm": "İzlə və siyahıya əlavə et",
   "confirmations.follow_to_list.message": "{name} istifadəçisini siyahıya əlavə etmək üçün onu izləməlisiniz.",
   "confirmations.follow_to_list.title": "İstifadəçini izlə?",
@@ -265,17 +225,12 @@
   "confirmations.missing_alt_text.message": "Paylaşımınız alternativ mətn ehtiva etmir. Təsvir əlavə etmək onun daha çox insan üçün əlçatan olmasına kömək edir.",
   "confirmations.missing_alt_text.secondary": "Yenə də paylaş",
   "confirmations.missing_alt_text.title": "Alternativ mətn əlavə edilsin?",
->>>>>>> v4.4.3
+
   "confirmations.mute.confirm": "Səssizləşdir",
   "confirmations.redraft.confirm": "Sil və qaralamaya köçür",
   "confirmations.redraft.message": "Bu paylaşımı silmək və qaralamaya köçürmək istədiyinizə əminsiniz? Bəyənmələr və gücləndirmələr itəcək və orijinal paylaşıma olan cavablar tənha qalacaq.",
   "confirmations.redraft.title": "Paylaşım silinsin & qaralamaya köçürülsün?",
-<<<<<<< HEAD
-  "confirmations.reply.confirm": "Cavabla",
-  "confirmations.reply.message": "İndi cavab vermək hal-hazırda yazdığınız mesajın üzərinə yazacaq. Davam etmək istədiyinizə əminsiniz?",
-  "confirmations.reply.title": "Paylaşım yenidən yazılsın?",
-=======
->>>>>>> v4.4.3
+
   "confirmations.unfollow.confirm": "İzləmədən çıxar",
   "confirmations.unfollow.message": "{name} izləmədən çıxmaq istədiyinizə əminsiniz?",
   "confirmations.unfollow.title": "İstifadəçi izləmədən çıxarılsın?",
@@ -297,10 +252,8 @@
   "disabled_account_banner.text": "Sizin hesabınız {disabledAccount} hal-hazırda deaktiv edilib.",
   "dismissable_banner.community_timeline": "Bunlar, hesabları {domain} serverində yerləşən insanların ən son ictimai paylaşımlarıdır.",
   "dismissable_banner.dismiss": "Bağla",
-<<<<<<< HEAD
-=======
   "dismissable_banner.public_timeline": "Bunlar, {domain} saytında insanların izlədiyi fediversedəki insanların ən son ictimai paylaşımlarıdır.",
->>>>>>> v4.4.3
+
   "domain_block_modal.block": "Serveri blokla",
   "domain_block_modal.block_account_instead": "@{name} istifadəçisini blokla",
   "domain_block_modal.they_can_interact_with_old_posts": "Bu serverdən olan insanlar köhnə paylaşımlarınızla əlaqə qura bilər.",

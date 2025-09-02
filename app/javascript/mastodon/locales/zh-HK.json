@@ -43,10 +43,8 @@
   "account.followers": "追蹤者",
   "account.followers.empty": "尚未有人追蹤這位使用者。",
   "account.followers_counter": "{count, plural, other {{counter} 個追蹤者}}",
-<<<<<<< HEAD
-=======
   "account.followers_you_know_counter": "你認識的 {counter} 人",
->>>>>>> v4.4.3
+
   "account.following": "正在追蹤",
   "account.follows.empty": "這位使用者尚未追蹤任何人。",
   "account.go_to_profile": "前往個人檔案",
@@ -96,11 +94,9 @@
   "alert.unexpected.message": "發生意外錯誤。",
   "alert.unexpected.title": "失敗！",
   "alt_text_badge.title": "替代文字",
-<<<<<<< HEAD
-=======
   "alt_text_modal.cancel": "取消",
   "alt_text_modal.done": "完成",
->>>>>>> v4.4.3
+
   "announcement.announcement": "公告",
   "annual_report.summary.thanks": "感謝您成為 Mastodon 的一份子！",
   "attachments_list.unprocessed": "（未處理）",
@@ -202,10 +198,8 @@
   "confirmations.unfollow.title": "取消追蹤使用者？",
   "content_warning.hide": "隱藏嘟文",
   "content_warning.show": "仍要顯示",
-<<<<<<< HEAD
-=======
   "content_warning.show_more": "顯示更多",
->>>>>>> v4.4.3
+
   "conversation.delete": "刪除對話",
   "conversation.mark_as_read": "標為已讀",
   "conversation.open": "檢視對話",
@@ -360,17 +354,8 @@
   "home.pending_critical_update.title": "有重要的安全更新！",
   "home.show_announcements": "顯示公告",
   "ignore_notifications_modal.ignore": "忽略推播通知",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "有了 Mastodon 的帳號，你便可以把這篇帖文加入最愛，讓作者知道你欣賞他的作品，並可以稍後再閱讀。",
-  "interaction_modal.description.follow": "在 Mastodon 上有個帳號的話，您可以追蹤 {name} 以於首頁時間軸接收他們的帖文。",
-  "interaction_modal.description.reblog": "在 Mastodon 上有個帳號的話，您可以向自己的追縱者們轉發此帖文。",
-  "interaction_modal.description.reply": "在 Mastodon 上擁有帳號的話，您可以回覆此帖文。",
-  "interaction_modal.login.action": "帶我到主頁",
-  "interaction_modal.login.prompt": "主伺服器的網域，例如 mastodon.social",
-  "interaction_modal.no_account_yet": "還未加入 Mastodon？",
-=======
   "info_button.label": "幫助",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "於不同伺服器",
   "interaction_modal.on_this_server": "於此伺服器",
   "interaction_modal.title.favourite": "把 {name} 的帖文加入最愛",

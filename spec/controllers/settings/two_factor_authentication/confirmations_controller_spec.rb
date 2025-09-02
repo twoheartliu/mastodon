@@ -16,11 +16,6 @@ RSpec.describe Settings::TwoFactorAuthentication::ConfirmationsController do
     end
 
     def qr_code_markup
-<<<<<<< HEAD
-      RQRCode::QRCode.new(
-        'otpauth://totp/cb6e6126.ngrok.io:local-part%40domain?secret=thisisasecretforthespecofnewview&issuer=cb6e6126.ngrok.io'
-      ).as_svg(padding: 0, module_size: 4, use_path: true)
-=======
       RQRCode::QRCode
         .new(totp_provisioning_uri)
         .as_svg(padding: 0, module_size: 4, use_path: true)
@@ -30,7 +25,7 @@ RSpec.describe Settings::TwoFactorAuthentication::ConfirmationsController do
       ROTP::TOTP
         .new(otp_secret_value, issuer: Rails.configuration.x.local_domain)
         .provisioning_uri(user.email)
->>>>>>> v4.4.3
+
     end
   end
 

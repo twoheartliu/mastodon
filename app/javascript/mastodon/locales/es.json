@@ -68,10 +68,8 @@
   "account.open_original_page": "Abrir página original",
   "account.posts": "Publicaciones",
   "account.posts_with_replies": "Publicaciones y respuestas",
-<<<<<<< HEAD
-=======
   "account.remove_from_followers": "Eliminar {name} de tus seguidores",
->>>>>>> v4.4.3
+
   "account.report": "Reportar a @{name}",
   "account.requested": "Esperando aprobación. Haz clic para cancelar la solicitud de seguimiento",
   "account.requested_follow": "{name} ha solicitado seguirte",
@@ -103,9 +101,6 @@
   "alert.unexpected.message": "Hubo un error inesperado.",
   "alert.unexpected.title": "¡Ups!",
   "alt_text_badge.title": "Texto alternativo",
-<<<<<<< HEAD
-  "announcement.announcement": "Comunicación",
-=======
   "alt_text_modal.add_alt_text": "Añadir texto alternativo",
   "alt_text_modal.add_text_from_image": "Añadir texto a partir de la imagen",
   "alt_text_modal.cancel": "Cancelar",
@@ -133,7 +128,7 @@
   "annual_report.summary.percentile.text": "<topLabel>Eso te coloca en el top</topLabel><percentage></percentage><bottomLabel>de usuarios de {domain}.</bottomLabel>",
   "annual_report.summary.percentile.we_wont_tell_bernie": "No se lo diremos a Bernie.",
   "annual_report.summary.thanks": "¡Gracias por ser parte de Mastodon!",
->>>>>>> v4.4.3
+
   "attachments_list.unprocessed": "(sin procesar)",
   "audio.hide": "Ocultar audio",
   "block_modal.remote_users_caveat": "Le pediremos al servidor {domain} que respete tu decisión. Sin embargo, el cumplimiento no está garantizado, ya que algunos servidores pueden manejar bloqueos de forma distinta. Los mensajes públicos pueden ser todavía visibles para los usuarios que no hayan iniciado sesión.",
@@ -452,15 +447,6 @@
   "ignore_notifications_modal.not_followers_title": "¿Ignorar notificaciones de personas que no te siguen?",
   "ignore_notifications_modal.not_following_title": "¿Ignorar notificaciones de personas a las que no sigues?",
   "ignore_notifications_modal.private_mentions_title": "¿Ignorar notificaciones de menciones privadas no solicitadas?",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "Con una cuenta en Mastodon, puedes marcar como favorita esta publicación para que el autor sepa que te gusta, y guardala para más adelante.",
-  "interaction_modal.description.follow": "Con una cuenta en Mastodon, puedes seguir {name} para recibir sus publicaciones en tu página de inicio.",
-  "interaction_modal.description.reblog": "Con una cuenta en Mastodon, puedes impulsar esta publicación para compartirla con tus propios seguidores.",
-  "interaction_modal.description.reply": "Con una cuenta en Mastodon, puedes responder a esta publicación.",
-  "interaction_modal.login.action": "Ir a Inicio",
-  "interaction_modal.login.prompt": "Dominio de tu servidor, por ejemplo mastodon.social",
-  "interaction_modal.no_account_yet": "¿Aún no tienes cuenta en Mastodon?",
-=======
   "info_button.label": "Ayuda",
   "info_button.what_is_alt_text": "<h1>¿Qué es el texto alternativo?</h1> <p>El texto alternativo proporciona descripciones de las imágenes para personas con problemas de visión, conexiones con poco ancho de banda o que buscan un contexto adicional.</p> <p>Puedes mejorar la accesibilidad y la comprensión para todos escribiendo un texto alternativo claro, conciso y objetivo.</p> <ul><li>Captura los elementos importantes.</li><li>Resume el texto en imágenes.</li><li>Usa una estructura de frases normal.</li><li>Evita la información redundante.</li><li>Céntrate en las tendencias y conclusiones clave de los elementos visuales complejos (como diagramas o mapas).</li></ul>",
   "interaction_modal.action.favourite": "Para continuar, tienes que marcar como favorito desde tu cuenta.",
@@ -470,7 +456,7 @@
   "interaction_modal.action.vote": "Para continuar, tienes que votar desde tu cuenta.",
   "interaction_modal.go": "Ir",
   "interaction_modal.no_account_yet": "¿Todavía no tienes cuenta?",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "En un servidor diferente",
   "interaction_modal.on_this_server": "En este servidor",
   "interaction_modal.title.favourite": "Marcar como favorita la publicación de {name}",
@@ -514,10 +500,8 @@
   "keyboard_shortcuts.toggle_hidden": "Mostrar/ocultar texto tras aviso de contenido (CW)",
   "keyboard_shortcuts.toggle_sensitivity": "Mostrar/ocultar multimedia",
   "keyboard_shortcuts.toot": "Comenzar una nueva publicación",
-<<<<<<< HEAD
-=======
   "keyboard_shortcuts.translate": "para traducir una publicación",
->>>>>>> v4.4.3
+
   "keyboard_shortcuts.unfocus": "Quitar el foco de la caja de redacción/búsqueda",
   "keyboard_shortcuts.up": "Moverse hacia arriba en la lista",
   "lightbox.close": "Cerrar",
@@ -614,11 +598,8 @@
   "notification.favourite_pm": "{name} ha marcado como favorita tu mención privada",
   "notification.favourite_pm.name_and_others_with_link": "{name} y <a>{count, plural, one {# más} other {# más}}</a> han marcado como favorita tu mención privada",
   "notification.follow": "{name} te empezó a seguir",
-<<<<<<< HEAD
-  "notification.follow.name_and_others": "{name} y <a>{count, plural, one {# otro} other {# otros}}</a> te siguieron",
-=======
   "notification.follow.name_and_others": "{name} y <a>{count, plural, one {# otro} other {otros #}}</a> te siguieron",
->>>>>>> v4.4.3
+
   "notification.follow_request": "{name} ha solicitado seguirte",
   "notification.follow_request.name_and_others": "{name} y {count, plural, one {# más} other {# más}} han solicitado seguirte",
   "notification.label.mention": "Mención",
@@ -721,22 +702,12 @@
   "notifications_permission_banner.enable": "Habilitar notificaciones de escritorio",
   "notifications_permission_banner.how_to_control": "Para recibir notificaciones cuando Mastodon no esté abierto, habilite las notificaciones de escritorio. Puedes controlar con precisión qué tipos de interacciones generan notificaciones de escritorio a través del botón {icon} de arriba una vez que estén habilitadas.",
   "notifications_permission_banner.title": "Nunca te pierdas nada",
-<<<<<<< HEAD
-  "onboarding.action.back": "Llévame atrás",
-  "onboarding.actions.back": "Llévame atrás",
-  "onboarding.actions.go_to_explore": "Llévame a tendencias",
-  "onboarding.actions.go_to_home": "Ir a mi página de inicio",
-  "onboarding.compose.template": "¡Hola #Mastodon!",
-  "onboarding.follows.empty": "Desafortunadamente, no se pueden mostrar resultados en este momento. Puedes intentar usar la búsqueda o navegar por la página de exploración para encontrar personas a las que seguir, o inténtalo de nuevo más tarde.",
-  "onboarding.follows.lead": "Tu página de inicio es la forma principal de experimentar Mastodon. Cuanta más personas sigas, más activa e interesante será. Para empezar, aquí hay algunas sugerencias:",
-  "onboarding.follows.title": "Personaliza tu página de inicio",
-=======
   "onboarding.follows.back": "Atrás",
   "onboarding.follows.done": "Hecho",
   "onboarding.follows.empty": "Desafortunadamente, no se pueden mostrar resultados en este momento. Puedes intentar usar la búsqueda o navegar por la página de exploración para encontrar personas a las que seguir, o inténtalo de nuevo más tarde.",
   "onboarding.follows.search": "Buscar",
   "onboarding.follows.title": "Sigue personas para comenzar",
->>>>>>> v4.4.3
+
   "onboarding.profile.discoverable": "Hacer que mi perfil aparezca en búsquedas",
   "onboarding.profile.discoverable_hint": "Cuando permites que tu perfil aparezca en búsquedas en Mastodon, tus publicaciones podrán aparecer en los resultados de búsqueda y en tendencias, y tu perfil podrá recomendarse a gente con intereses similares a los tuyos.",
   "onboarding.profile.display_name": "Nombre para mostrar",
@@ -747,28 +718,7 @@
   "onboarding.profile.title": "Configuración del perfil",
   "onboarding.profile.upload_avatar": "Subir foto de perfil",
   "onboarding.profile.upload_header": "Subir encabezado de perfil",
-<<<<<<< HEAD
-  "onboarding.share.lead": "¡Cuéntale a otras personas cómo te pueden encontrar en Mastodon!",
-  "onboarding.share.message": "¡Soy {username} en #Mastodon! Ven a seguirme en {url}",
-  "onboarding.share.next_steps": "Posibles siguientes pasos:",
-  "onboarding.share.title": "Comparte tu perfil",
-  "onboarding.start.lead": "Ahora eres parte de Mastodon, una plataforma única y descentralizada de redes sociales donde tú —no un algoritmo— personalizarás tu propia experiencia. Vamos a introducirte en esta nueva frontera social:",
-  "onboarding.start.skip": "¿No necesitas ayuda para empezar?",
-  "onboarding.start.title": "¡Lo has logrado!",
-  "onboarding.steps.follow_people.body": "Seguir personas interesante es de lo que trata Mastodon.",
-  "onboarding.steps.follow_people.title": "Personaliza tu página de inicio",
-  "onboarding.steps.publish_status.body": "Di hola al mundo con texto, fotos, vídeos o encuestas {emoji}",
-  "onboarding.steps.publish_status.title": "Escribe tu primera publicación",
-  "onboarding.steps.setup_profile.body": "Aumenta tus interacciones con un perfil completo.",
-  "onboarding.steps.setup_profile.title": "Personaliza tu perfil",
-  "onboarding.steps.share_profile.body": "¡Dile a tus amigos cómo encontrarte en Mastodon!",
-  "onboarding.steps.share_profile.title": "Comparte tu perfil de Mastodon",
-  "onboarding.tips.2fa": "<strong>¿Sabías?</strong> Puedes proteger tu cuenta configurando la autenticación de dos factores en la configuración de tu cuenta. Funciona con cualquier aplicación TOTP de tu elección, ¡no necesitas número de teléfono!",
-  "onboarding.tips.accounts_from_other_servers": "<strong>¿Sabías que?</strong> Como Mastodon es descentralizado, algunos perfiles que encuentras están alojados en servidores distintos del tuyo. Y sin embargo, ¡puedes interactuar con ellos! ¡Su servidor corresponde a la segunda mitad de su nombre de usuario!",
-  "onboarding.tips.migration": "<strong>¿Sabías?</strong> Si en el futuro piensas que {domain} no es el servidor adecuado para ti, puedes moverte a otro servidor de Mastodon sin perder a tus seguidores. ¡Incluso puedes alojar tu propio servidor!",
-  "onboarding.tips.verification": "<strong>¿Sabías?</strong> Puedes verificar tu cuenta poniendo un enlace a tu perfil de Mastodon en tu propio sitio web y añadiendo el sitio web a tu perfil. ¡No se necesitan comisiones ni documentos!",
-=======
->>>>>>> v4.4.3
+
   "password_confirmation.exceeds_maxlength": "La contraseña de confirmación excede la longitud máxima de la contraseña",
   "password_confirmation.mismatching": "La contraseña de confirmación no coincide",
   "picture_in_picture.restore": "Restaurar",
@@ -796,13 +746,9 @@
   "privacy_policy.title": "Política de Privacidad",
   "recommended": "Recomendado",
   "refresh": "Actualizar",
-<<<<<<< HEAD
-  "regeneration_indicator.label": "Cargando…",
-  "regeneration_indicator.sublabel": "¡Tu página de inicio se está preparando!",
-=======
   "regeneration_indicator.please_stand_by": "Espera, por favor.",
   "regeneration_indicator.preparing_your_home_feed": "Preparando tu página de inicio…",
->>>>>>> v4.4.3
+
   "relative_time.days": "{number} d",
   "relative_time.full.days": "hace {number, plural, one {# día} other {# días}}",
   "relative_time.full.hours": "hace {number, plural, one {# hora} other {# horas}}",
@@ -857,11 +803,8 @@
   "report.thanks.title_actionable": "Gracias por informar, estudiaremos esto.",
   "report.unfollow": "Dejar de seguir a @{name}",
   "report.unfollow_explanation": "Estás siguiendo esta cuenta. Para dejar de ver sus publicaciones en tu página de inicio, deja de seguirla.",
-<<<<<<< HEAD
-  "report_notification.attached_statuses": "{count, plural, one {{count} publicación} other {{count} publicaciones}} adjunta(s)",
-=======
   "report_notification.attached_statuses": "{count, plural, one {{count} publicación adjunta} other {{count} publicaciones adjuntas}}",
->>>>>>> v4.4.3
+
   "report_notification.categories.legal": "Legal",
   "report_notification.categories.legal_sentence": "contenido ilegal",
   "report_notification.categories.other": "Otros",
@@ -1002,21 +945,7 @@
   "upload_form.drag_and_drop.on_drag_over": "El archivo adjunto {item} se ha movido.",
   "upload_form.drag_and_drop.on_drag_start": "Se ha recogido el archivo adjunto {item}.",
   "upload_form.edit": "Editar",
-<<<<<<< HEAD
-  "upload_form.thumbnail": "Cambiar miniatura",
-  "upload_form.video_description": "Describir para personas con problemas auditivos o visuales",
-  "upload_modal.analyzing_picture": "Analizando imagen…",
-  "upload_modal.apply": "Aplicar",
-  "upload_modal.applying": "Aplicando…",
-  "upload_modal.choose_image": "Elegir imagen",
-  "upload_modal.description_placeholder": "Un rápido zorro marrón salta sobre el perro perezoso",
-  "upload_modal.detect_text": "Detectar texto de la imagen",
-  "upload_modal.edit_media": "Editar multimedia",
-  "upload_modal.hint": "Haga clic o arrastre el círculo en la vista previa para elegir el punto focal que siempre estará a la vista en todas las miniaturas.",
-  "upload_modal.preparing_ocr": "Preparando OCR…",
-  "upload_modal.preview_label": "Vista previa ({ratio})",
-=======
->>>>>>> v4.4.3
+
   "upload_progress.label": "Subiendo...",
   "upload_progress.processing": "Procesando…",
   "username.taken": "Ese nombre de usuario ya está en uso. Prueba con otro",

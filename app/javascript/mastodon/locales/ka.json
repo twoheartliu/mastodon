@@ -54,10 +54,7 @@
   "column_header.pin": "მიმაგრება",
   "column_header.show_settings": "პარამეტრების ჩვენება",
   "column_header.unpin": "მოხსნა",
-<<<<<<< HEAD
-  "column_subheading.settings": "პარამეტრები",
-=======
->>>>>>> v4.4.3
+
   "community.column_settings.media_only": "მხოლოდ მედია",
   "compose_form.direct_message_warning_learn_more": "გაიგე მეტი",
   "compose_form.encryption_warning": "Posts on Mastodon are not end-to-end encrypted. Do not share any dangerous information over Mastodon.",

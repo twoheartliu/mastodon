@@ -3,11 +3,8 @@ ia:
   simple_form:
     hints:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Un per linea. Protege contra false attributiones.
-=======
         attribution_domains: Un per linea. Protege contra false attributiones.
->>>>>>> v4.4.3
+
         discoverable: Tu messages public e tu profilo pote esser mittite in evidentia o recommendate in varie areas de Mastodon e tu profilo pote esser suggerite a altere usatores.
         display_name: Tu prenomine e nomine de familia o tu pseudonymo.
         fields: Tu pagina principal, pronomines, etate, tote lo que tu vole.
@@ -64,10 +61,8 @@ ia:
         setting_display_media_default: Celar le medios marcate como sensibile
         setting_display_media_hide_all: Sempre celar contento multimedial
         setting_display_media_show_all: Sempre monstrar contento multimedial
-<<<<<<< HEAD
-=======
         setting_system_scrollbars_ui: Se applica solmente al navigatores de scriptorio basate sur Safari e Chrome
->>>>>>> v4.4.3
+
         setting_use_blurhash: Le imagines degradate se basa sur le colores del visuales celate, ma illos offusca tote le detalios
         setting_use_pending_items: Requirer un clic pro monstrar nove messages in vice de rolar automaticamente le fluxo
         username: Tu pote usar litteras, numeros e tractos de sublineamento
@@ -96,10 +91,8 @@ ia:
         favicon: WEBP, PNG, GIF o JPG. Supplanta le favicone predefinite de Mastodon con un icone personalisate.
         mascot: Illo substitue le illustration in le interfacie web avantiate.
         media_cache_retention_period: Le files multimedial de messages producite per usatores distante se immagazina in cache sur tu servitor. Quando iste option es definite a un valor positive, tal files essera delite post le numero specificate de dies. Si alcuno requesta le datos multimedial post lor deletion, illos essera re-discargate si le contento original es ancora disponibile. Debite a limitationes sur le frequentia con que le cartas de previsualisation de ligamines se connecte al sitos de tertios, il es recommendate definir iste valor a al minus 14 dies, alteremente le previsualisationes de ligamines non essera actualisate sur demanda ante ille tempore.
-<<<<<<< HEAD
-=======
         min_age: Le usatores debera confirmar lor data de nascentia durante le inscription
->>>>>>> v4.4.3
+
         peers_api_enabled: Un lista de nomines de dominio que iste servitor ha incontrate in le fediverso. Iste datos non indica si tu es in federation con un servitor date, ma solmente que tu servitor lo cognosce. Isto es usate per servicios que collige statisticas general sur le federation.
         profile_directory: Le directorio de profilos lista tote le usatores que ha optate pro esser discoperibile.
         require_invite_text: Quando le inscriptiones require approbation manual, rende obligatori, plus tosto que optional, le entrata de texto “Perque vole tu junger te?”
@@ -167,11 +160,8 @@ ia:
         url: A ubi le eventos essera inviate
     labels:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Sitos web autorisate a accreditar te
-=======
         attribution_domains: Sitos web autorisate a accreditar te
->>>>>>> v4.4.3
+
         discoverable: Evidentiar le profilo e messages in le algorithmos de discoperta
         fields:
           name: Etiquetta

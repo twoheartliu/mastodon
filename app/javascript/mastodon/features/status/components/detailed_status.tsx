@@ -15,15 +15,11 @@ import AlternateEmailIcon from '@/material-icons/400-24px/alternate_email.svg?re
 import { AnimatedNumber } from 'mastodon/components/animated_number';
 import { Avatar } from 'mastodon/components/avatar';
 import { ContentWarning } from 'mastodon/components/content_warning';
-<<<<<<< HEAD
-import EditedTimestamp from 'mastodon/components/edited_timestamp';
-import { FilterWarning } from 'mastodon/components/filter_warning';
-=======
 import { DisplayName } from 'mastodon/components/display_name';
 import { EditedTimestamp } from 'mastodon/components/edited_timestamp';
 import { FilterWarning } from 'mastodon/components/filter_warning';
 import { FormattedDateWrapper } from 'mastodon/components/formatted_date';
->>>>>>> v4.4.3
+
 import type { StatusLike } from 'mastodon/components/hashtag_bar';
 import { getHashtagBarForStatus } from 'mastodon/components/hashtag_bar';
 import { Icon } from 'mastodon/components/icon';
@@ -232,11 +228,8 @@ export const DetailedStatus: React.FC<{
         />
       );
     }
-<<<<<<< HEAD
-  } else if (status.get('card')) {
-=======
   } else if (status.get('card') && !status.get('quote')) {
->>>>>>> v4.4.3
+
     media = (
       <Card
         sensitive={status.get('sensitive')}

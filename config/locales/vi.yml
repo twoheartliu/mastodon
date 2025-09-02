@@ -184,10 +184,8 @@ vi:
         create_domain_block: Chặn máy chủ
         create_email_domain_block: Chặn tên miền email
         create_ip_block: Chặn IP
-<<<<<<< HEAD
-=======
         create_relay: Tạo relay
->>>>>>> v4.4.3
+
         create_unavailable_domain: Bỏ liên hợp
         create_user_role: Tạo vai trò
         demote_user: Hạ vai trò
@@ -209,18 +207,14 @@ vi:
         disable_sign_in_token_auth_user: Tắt xác minh bằng email cho người dùng
         disable_user: Vô hiệu hóa đăng nhập
         enable_custom_emoji: Cho phép emoji
-<<<<<<< HEAD
-=======
         enable_relay: Bật relay
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user: Bật xác minh bằng email cho người dùng
         enable_user: Cho phép đăng nhập
         memorialize_account: Gán tưởng niệm
         promote_user: Nâng vai trò
-<<<<<<< HEAD
-=======
         publish_terms_of_service: Đăng Điều khoản Dịch vụ
->>>>>>> v4.4.3
+
         reject_appeal: Từ chối khiếu nại
         reject_user: Từ chối đăng ký
         remove_avatar_user: Xóa ảnh đại diện
@@ -258,10 +252,8 @@ vi:
         create_domain_block_html: "%{name} đã chặn máy chủ %{target}"
         create_email_domain_block_html: "%{name} đã chặn tên miền email %{target}"
         create_ip_block_html: "%{name} đã chặn IP %{target}"
-<<<<<<< HEAD
-=======
         create_relay_html: "%{name} đã tạo relay %{target}"
->>>>>>> v4.4.3
+
         create_unavailable_domain_html: "%{name} đã bỏ liên hợp với máy chủ %{target}"
         create_user_role_html: "%{name} đã tạo vai trò %{target}"
         demote_user_html: "%{name} đã hạ vai trò của %{target}"
@@ -273,10 +265,8 @@ vi:
         destroy_email_domain_block_html: "%{name} đã bỏ chặn email %{target}"
         destroy_instance_html: "%{name} đã thanh trừng máy chủ %{target}"
         destroy_ip_block_html: "%{name} đã bỏ chặn IP %{target}"
-<<<<<<< HEAD
-=======
         destroy_relay_html: "%{name} đã xóa relay %{target}"
->>>>>>> v4.4.3
+
         destroy_status_html: "%{name} đã xóa tút của %{target}"
         destroy_unavailable_domain_html: "%{name} tiếp tục liên hợp với máy chủ %{target}"
         destroy_user_role_html: "%{name} đã xóa vai trò %{target}"
@@ -286,18 +276,14 @@ vi:
         disable_sign_in_token_auth_user_html: "%{name} đã tắt xác minh email của %{target}"
         disable_user_html: "%{name} đã vô hiệu hóa đăng nhập %{target}"
         enable_custom_emoji_html: "%{name} đã cho phép emoji %{target}"
-<<<<<<< HEAD
-=======
         enable_relay_html: "%{name} đã bật relay %{target}"
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user_html: "%{name} đã bật xác minh email của %{target}"
         enable_user_html: "%{name} đã bỏ vô hiệu hóa đăng nhập %{target}"
         memorialize_account_html: "%{name} đã biến tài khoản %{target} thành một trang tưởng niệm"
         promote_user_html: "%{name} đã nâng vai trò của %{target}"
-<<<<<<< HEAD
-=======
         publish_terms_of_service_html: "%{name} đã cập nhật điều khoản dịch vụ"
->>>>>>> v4.4.3
+
         reject_appeal_html: "%{name} đã từ chối khiếu nại từ %{target}"
         reject_user_html: "%{name} đã từ chối đăng ký từ %{target}"
         remove_avatar_user_html: "%{name} đã xóa ảnh đại diện của %{target}"
@@ -905,12 +891,9 @@ vi:
       reblogs: Lượt đăng lại
       replied_to_html: Trả lời đến %{acct_link}
       status_changed: Tút đã sửa
-<<<<<<< HEAD
-      title: Tất cả tút
-=======
       status_title: Đăng bởi @%{name}
       title: Tút từ tài khoản - @%{name}
->>>>>>> v4.4.3
+
       trending: Xu hướng
       view_publicly: Xem công khai
       visibility: Hiển thị
@@ -1272,20 +1255,14 @@ vi:
     user_privacy_agreement_html: Tôi đã đọc và đồng ý <a href="%{privacy_policy_path}" target="_blank">chính sách bảo mật</a>
   author_attribution:
     example_title: Văn bản mẫu
-<<<<<<< HEAD
-    hint_html: Bạn là nhà báo hoặc blogger bên ngoài Mastodon? Kiểm soát cách bài viết của bạn được ghi nhận khi chia sẻ trên Mastodon.
-=======
     hint_html: Bạn là nhà báo hoặc blogger? Kiểm soát cách ghi nhận bài viết của bạn khi chúng được chia sẻ trên Mastodon.
->>>>>>> v4.4.3
+
     instructions: 'Đặt mã này trong HTML bài viết:'
     more_from_html: Viết bởi %{name}
     s_blog: "%{name}'s Blog"
     then_instructions: Sau đó, thêm URL của báo/blog trong trường bên dưới.
-<<<<<<< HEAD
-    title: Ghi nhận người đăng
-=======
     title: Ghi nhận tác giả
->>>>>>> v4.4.3
+
   challenge:
     confirm: Tiếp tục
     hint_html: "<strong>Mẹo:</strong> Chúng tôi sẽ không hỏi lại mật khẩu của bạn sau này."
@@ -1882,15 +1859,6 @@ vi:
     enabled_hint: Trừ những ngoại lệ bên dưới
     exceptions: Ngoại lệ
     explanation: Số lượng tút sẽ tăng dần theo năm tháng. Bạn nên xóa những tút cũ khi tới một thời điểm nhất định.
-<<<<<<< HEAD
-    ignore_favs: Bỏ qua số lượt thích
-    ignore_reblogs: Bỏ qua lượt đăng lại
-    interaction_exceptions: Ngoại lệ dựa trên tương tác
-    interaction_exceptions_explanation: Lưu ý là không có gì đảm bảo rằng các tút sẽ bị xóa nếu chúng bị giảm lượt thích hoặc đăng lại, dù đã từng đạt.
-    keep_direct: Giữ lại tin nhắn
-    keep_direct_hint: Không xóa tin nhắn của bạn
-    keep_media: Giữ lại những tút có đính kèm media
-=======
     ignore_favs: Số lượt thích
     ignore_reblogs: Số lượt đăng lại
     interaction_exceptions: Ngoại lệ dựa theo tương tác
@@ -1898,7 +1866,7 @@ vi:
     keep_direct: Giữ lại những tút nhắn riêng
     keep_direct_hint: Không xóa những tút nhắn riêng của bạn
     keep_media: Giữ lại những tút có media
->>>>>>> v4.4.3
+
     keep_media_hint: Không xóa những tút có đính kèm media của bạn
     keep_pinned: Giữ lại những tút đã ghim
     keep_pinned_hint: Không xóa những tút đã ghim của bạn

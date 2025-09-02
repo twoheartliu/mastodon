@@ -28,10 +28,7 @@
   "account.endorse": "Izpostavi v profilu",
   "account.featured_tags.last_status_at": "Zadnja objava {date}",
   "account.featured_tags.last_status_never": "Ni objav",
-<<<<<<< HEAD
-  "account.featured_tags.title": "Izpostavljeni ključniki osebe {name}",
-=======
->>>>>>> v4.4.3
+
   "account.follow": "Sledi",
   "account.follow_back": "Sledi nazaj",
   "account.followers": "Sledilci",
@@ -87,9 +84,6 @@
   "alert.unexpected.message": "Zgodila se je nepričakovana napaka.",
   "alert.unexpected.title": "Ojoj!",
   "alt_text_badge.title": "Nadomestno besedilo",
-<<<<<<< HEAD
-  "announcement.announcement": "Oznanilo",
-=======
   "alt_text_modal.add_alt_text": "Dodaj nadomestno besedilo",
   "alt_text_modal.add_text_from_image": "Dodaj besedilo iz slike",
   "alt_text_modal.cancel": "Prekliči",
@@ -117,7 +111,7 @@
   "annual_report.summary.percentile.text": "<topLabel>S tem ste se uvrstili med zgornjih </topLabel><percentage></percentage><bottomLabel> uporabnikov domene {domain}.</bottomLabel>",
   "annual_report.summary.percentile.we_wont_tell_bernie": "Živi duši ne bomo povedali.",
   "annual_report.summary.thanks": "Hvala, ker ste del Mastodona!",
->>>>>>> v4.4.3
+
   "attachments_list.unprocessed": "(neobdelano)",
   "audio.hide": "Skrij zvok",
   "block_modal.remote_users_caveat": "Strežnik {domain} bomo pozvali, naj spoštuje vašo odločitev. Kljub temu pa ni gotovo, da bo strežnik prošnjo upošteval, saj nekateri strežniki blokiranja obravnavajo drugače. Javne objave bodo morda še vedno vidne neprijavljenim uporabnikom.",
@@ -192,11 +186,8 @@
   "compose_form.poll.duration": "Trajanje ankete",
   "compose_form.poll.multiple": "Izbira več možnosti",
   "compose_form.poll.option_placeholder": "Možnost {number}",
-<<<<<<< HEAD
-  "compose_form.poll.single": "Izberite eno možnost",
-=======
   "compose_form.poll.single": "Izbira ene možnosti",
->>>>>>> v4.4.3
+
   "compose_form.poll.switch_to_multiple": "Spremenite anketo, da omogočite izbiro več možnosti",
   "compose_form.poll.switch_to_single": "Spremenite anketo, da omogočite izbiro ene možnosti",
   "compose_form.poll.type": "Slog",
@@ -216,14 +207,6 @@
   "confirmations.delete_list.title": "Želite izbrisati seznam?",
   "confirmations.discard_edit_media.confirm": "Opusti",
   "confirmations.discard_edit_media.message": "Spremenjenega opisa predstavnosti ali predogleda niste shranili. Želite spremembe kljub temu opustiti?",
-<<<<<<< HEAD
-  "confirmations.edit.confirm": "Uredi",
-  "confirmations.edit.message": "Urejanje bo prepisalo sporočilo, ki ga trenutno sestavljate. Ali ste prepričani, da želite nadaljevati?",
-  "confirmations.edit.title": "Želite prepisati objavo?",
-  "confirmations.logout.confirm": "Odjava",
-  "confirmations.logout.message": "Ali ste prepričani, da se želite odjaviti?",
-  "confirmations.logout.title": "Se želite odjaviti?",
-=======
   "confirmations.follow_to_list.confirm": "Sledi in dodaj na seznam",
   "confirmations.follow_to_list.message": "Osebi {name} morate slediti, preden jo lahko dodate na seznam.",
   "confirmations.follow_to_list.title": "Naj sledim uporabniku?",
@@ -234,17 +217,12 @@
   "confirmations.missing_alt_text.message": "Vaša objava vsebuje predstavnosti brez nadomestnega besedila. Če jih dodatno opišete, bodo dostopne večji množici ljudi.",
   "confirmations.missing_alt_text.secondary": "Vseeno objavi",
   "confirmations.missing_alt_text.title": "Dodam nadomestno besedilo?",
->>>>>>> v4.4.3
+
   "confirmations.mute.confirm": "Utišaj",
   "confirmations.redraft.confirm": "Izbriši in preoblikuj",
   "confirmations.redraft.message": "Ali ste prepričani, da želite izbrisati to objavo in jo preoblikovati? Izkazi priljubljenosti in izpostavitve bodo izgubljeni, odgovori na izvirno objavo pa bodo osiroteli.",
   "confirmations.redraft.title": "Želite izbrisati in preoblikovati objavo?",
-<<<<<<< HEAD
-  "confirmations.reply.confirm": "Odgovori",
-  "confirmations.reply.message": "Odgovarjanje bo prepisalo sporočilo, ki ga trenutno sestavljate. Ali ste prepričani, da želite nadaljevati?",
-  "confirmations.reply.title": "Želite prepisati objavo?",
-=======
->>>>>>> v4.4.3
+
   "confirmations.unfollow.confirm": "Ne sledi več",
   "confirmations.unfollow.message": "Ali ste prepričani, da ne želite več slediti {name}?",
   "confirmations.unfollow.title": "Želite nehati spremljati uporabnika?",
@@ -323,10 +301,7 @@
   "empty_column.hashtag": "V tem ključniku ni še nič.",
   "empty_column.home": "Vaša domača časovnica je prazna! Sledite več osebam, da jo zapolnite.",
   "empty_column.list": "Na tem seznamu ni ničesar. Ko bodo člani tega seznama kaj objavili, se bodo te objave pojavile tukaj.",
-<<<<<<< HEAD
-  "empty_column.lists": "Nimate seznamov. Ko ga boste ustvarili, se bo prikazal tukaj.",
-=======
->>>>>>> v4.4.3
+
   "empty_column.mutes": "Niste utišali še nobenega uporabnika.",
   "empty_column.notification_requests": "Vse prebrano! Tu ni ničesar več. Ko prejmete nova obvestila, se bodo pojavila tu glede na vaše nastavitve.",
   "empty_column.notifications": "Nimate še nobenih obvestil. Povežite se z drugimi, da začnete pogovor.",
@@ -434,15 +409,6 @@
   "ignore_notifications_modal.not_followers_title": "Naj prezrem obvestila ljudi, ki vam ne sledijo?",
   "ignore_notifications_modal.not_following_title": "Naj prezrem obvestila ljudi, ki jim ne sledite?",
   "ignore_notifications_modal.private_mentions_title": "Naj prezrem obvestila od nezaželenih zasebnih omemb?",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "Z računom na Mastodonu lahko to objavo postavite med priljubljene in tako avtorju nakažete, da jo cenite, in jo shranite za kasneje.",
-  "interaction_modal.description.follow": "Z računom na Mastodonu lahko sledite {name}, da prejemate njihove objave v svoj domači vir.",
-  "interaction_modal.description.reblog": "Z računom na Mastodonu lahko izpostavite to objavo, tako da jo delite s svojimi sledilci.",
-  "interaction_modal.description.reply": "Z računom na Mastodonu lahko odgovorite na to objavo.",
-  "interaction_modal.login.action": "Vrni me domov",
-  "interaction_modal.login.prompt": "Domena vašega domačega strežnika, npr. mastodon.social",
-  "interaction_modal.no_account_yet": "Niste na Mastodonu?",
-=======
   "info_button.label": "Pomoč",
   "info_button.what_is_alt_text": "<h1>Kaj je nadomestno besedilo?</h1> <p>Z nadomestnim besedilom dodatno opišemo sliko in tako pomagamo slabovidnim, ljudem s slabo internetno povezavo in tistim, ki jim manjka kontekst.</p> <p>Vaša objava bo veliko bolj dostopna in razumljiva, če boste napisali jasno, jedrnato in nepristransko nadomestno besedilo.</p> <ul> <li>Izpostavite pomembne elemente.</li> <li>Povzemite besedilo v slikah.</li> <li>Pišite v celih stavkih.</li> <li>Zajemite bistvo, ne dolgovezite.</li> <li>Opišite težnje in ključna odkritja, ki ste jih razbrali iz zapletenih grafik (npr. diagramov ali zemljevidov).</li> </ul>",
   "interaction_modal.action.favourite": "Med priljubljene lahko dodate, ko se vpišete v svoj račun.",
@@ -452,7 +418,7 @@
   "interaction_modal.action.vote": "Glasujete lahko šele, ko se vpišete v svoj račun.",
   "interaction_modal.go": "Naprej",
   "interaction_modal.no_account_yet": "Še nimate računa?",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "Na drugem strežniku",
   "interaction_modal.on_this_server": "Na tem strežniku",
   "interaction_modal.title.favourite": "Daj objavo {name} med priljubljene",
@@ -574,17 +540,13 @@
   "notification.admin.report_statuses_other": "{name} je prijavil/a {target}",
   "notification.admin.sign_up": "{name} se je vpisal/a",
   "notification.admin.sign_up.name_and_others": "Prijavili so se {name} in {count, plural, one {# druga oseba} two {# drugi osebi} few {# druge osebe} other {# drugih oseb}}",
-<<<<<<< HEAD
-  "notification.favourite": "{name} je vzljubil/a vašo objavo",
-  "notification.favourite.name_and_others_with_link": "{name} in <a>{count, plural, one {# druga oseba} two {# drugi osebi} few {# druge osebe} other {# drugih oseb}}</a> je dodalo vašo objavo med priljubljene",
-=======
   "notification.annual_report.message": "Čaka vas vaš #Wrapstodon {year}! Razkrijte svoje letošnje nepozabne trenutke na Mastodonu!",
   "notification.annual_report.view": "Pokaži #Wrapstodon",
   "notification.favourite": "{name} je vzljubil/a vašo objavo",
   "notification.favourite.name_and_others_with_link": "{name} in <a>{count, plural, one {# druga oseba} two {# drugi osebi} few {# druge osebe} other {# drugih oseb}}</a> je dodalo vašo objavo med priljubljene",
   "notification.favourite_pm": "{name} je dodalo vašo zasebno omembo med priljubljene",
   "notification.favourite_pm.name_and_others_with_link": "{name} in <a>{count, plural, one {# druga oseba} two {# drugi osebi} few {# druge osebe} other {# drugih oseb}}</a> je dodalo vašo zasebno omembo med priljubljene",
->>>>>>> v4.4.3
+
   "notification.follow": "{name} vam sledi",
   "notification.follow.name_and_others": "{name} in {count, plural, one {<a># druga oseba</a> sta ti sledila} two {<a># drugi osebi</a> so ti sledili} few {<a># druge osebe</a> so ti sledili} other {<a># drugih oseb</a> ti je sledilo}}",
   "notification.follow_request": "{name} vam želi slediti",
@@ -871,10 +833,8 @@
   "status.reblogs.empty": "Nihče še ni izpostavil te objave. Ko se bo to zgodilo, se bodo pojavile tukaj.",
   "status.redraft": "Izbriši in preoblikuj",
   "status.remove_bookmark": "Odstrani zaznamek",
-<<<<<<< HEAD
-=======
   "status.remove_favourite": "Odstrani iz priljubljenih",
->>>>>>> v4.4.3
+
   "status.replied_in_thread": "Odgovor iz niti",
   "status.replied_to": "Odgovoril/a {name}",
   "status.reply": "Odgovori",
@@ -914,11 +874,7 @@
   "upload_button.label": "Dodajte slike, video ali zvočno datoteko",
   "upload_error.limit": "Omejitev prenosa datoteke je presežena.",
   "upload_error.poll": "Prenos datoteke z anketami ni dovoljen.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Opiši za osebe z okvaro sluha",
-  "upload_form.description": "Opišite za slabovidne",
-=======
->>>>>>> v4.4.3
+
   "upload_form.drag_and_drop.instructions": "Predstavnostno priponko lahko poberete tako, da pritisnete preslednico ali vnašalko. S puščicami na tipkovnici premikate priponko v posamezno smer. Priponko lahko odložite na novem položaju s ponovnim pritiskom na preslednico ali vnašalko ali pa dejanje prekličete s tipko ubežnica.",
   "upload_form.drag_and_drop.on_drag_cancel": "Premikanje priponke je preklicano. Predstavnostna priponka {item} je padla nazaj na prejšnje mesto.",
   "upload_form.drag_and_drop.on_drag_end": "Predstavnostna priponka {item} je padla nazaj.",

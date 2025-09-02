@@ -3,13 +3,9 @@ ru:
   activerecord:
     attributes:
       poll:
-<<<<<<< HEAD
-        expires_at: Срок окончания голосования
-        options: Варианты
-=======
         expires_at: Продолжительность опроса
         options: Варианты ответа
->>>>>>> v4.4.3
+
       user:
         agreement: Пользовательское соглашение
         email: Адрес электронной почты

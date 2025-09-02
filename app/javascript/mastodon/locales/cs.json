@@ -100,8 +100,6 @@
   "alert.unexpected.message": "Objevila se neočekávaná chyba.",
   "alert.unexpected.title": "Jejda!",
   "alt_text_badge.title": "Popisek",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Přidat popisek",
   "alt_text_modal.add_text_from_image": "Přidat text z obrázku",
   "alt_text_modal.cancel": "Zrušit",
@@ -109,7 +107,7 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Popište to pro osoby se sluchovým postižením…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "Popište to pro osoby se zrakovým postižením…",
   "alt_text_modal.done": "Hotovo",
->>>>>>> v4.4.3
+
   "announcement.announcement": "Oznámení",
   "annual_report.summary.archetype.booster": "Lovec obsahu",
   "annual_report.summary.archetype.lurker": "Špión",
@@ -283,11 +281,8 @@
   "domain_pill.activitypub_like_language": "ActivityPub je jako jazyk, kterým Mastodon mluví s jinými sociálními sítěmi.",
   "domain_pill.server": "Server",
   "domain_pill.their_handle": "Handle:",
-<<<<<<< HEAD
-  "domain_pill.their_server": "Jejich digitální domov, kde žijí jejich všechny příspěvky.",
-=======
   "domain_pill.their_server": "Jejich digitální domov, kde žijí všechny jejich příspěvky.",
->>>>>>> v4.4.3
+
   "domain_pill.their_username": "Jejich jedinečný identifikátor na jejich serveru. Je možné, že na jiných serverech jsou uživatelé se stejným uživatelským jménem.",
   "domain_pill.username": "Uživatelské jméno",
   "domain_pill.whats_in_a_handle": "Co obsahuje handle?",
@@ -313,12 +308,10 @@
   "emoji_button.search_results": "Výsledky hledání",
   "emoji_button.symbols": "Symboly",
   "emoji_button.travel": "Cestování a místa",
-<<<<<<< HEAD
-=======
   "empty_column.account_featured.me": "Zatím jste nic nezvýraznili. Věděli jste, že na svém profilu můžete zvýraznit hashtagy, které používáte nejvíce, a dokonce účty vašich přátel?",
   "empty_column.account_featured.other": "{acct} zatím nic nezvýraznili. Věděli jste, že na svém profilu můžete zvýraznit hashtagy, které používáte nejvíce, a dokonce účty vašich přátel?",
   "empty_column.account_featured_other.unknown": "Tento účet zatím nemá nic zvýrazněného.",
->>>>>>> v4.4.3
+
   "empty_column.account_hides_collections": "Tento uživatel se rozhodl tuto informaci nezveřejňovat",
   "empty_column.account_suspended": "Účet je pozastaven",
   "empty_column.account_timeline": "Nejsou tu žádné příspěvky!",
@@ -436,10 +429,8 @@
   "hints.profiles.see_more_posts": "Zobrazit další příspěvky na {domain}",
   "hints.threads.replies_may_be_missing": "Odpovědi z jiných serverů mohou chybět.",
   "hints.threads.see_more": "Zobrazit další odpovědi na {domain}",
-<<<<<<< HEAD
-=======
   "home.column_settings.show_quotes": "Zobrazit citace",
->>>>>>> v4.4.3
+
   "home.column_settings.show_reblogs": "Zobrazit boosty",
   "home.column_settings.show_replies": "Zobrazit odpovědi",
   "home.hide_announcements": "Skrýt oznámení",
@@ -458,15 +449,6 @@
   "ignore_notifications_modal.not_followers_title": "Ignorovat oznámení od lidí, kteří vás nesledují?",
   "ignore_notifications_modal.not_following_title": "Ignorovat oznámení od lidí, které nesledujete?",
   "ignore_notifications_modal.private_mentions_title": "Ignorovat oznámení z nevyžádaných soukromých zmínek?",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "Pokud máte účet na Mastodonu, můžete tento příspěvek označit jako oblíbený a dát tak autorovi najevo, že si ho vážíte, a uložit si ho na později.",
-  "interaction_modal.description.follow": "S účtem na Mastodonu můžete sledovat uživatele {name} a přijímat příspěvky ve vašem domovském kanálu.",
-  "interaction_modal.description.reblog": "S účtem na Mastodonu můžete boostnout tento příspěvek a sdílet jej s vlastními sledujícími.",
-  "interaction_modal.description.reply": "S účtem na Mastodonu můžete odpovědět na tento příspěvek.",
-  "interaction_modal.login.action": "Domů",
-  "interaction_modal.login.prompt": "Doména vašeho domovského serveru, např. mastodon.social",
-  "interaction_modal.no_account_yet": "Nejste na Mastodonu?",
-=======
   "info_button.label": "Nápověda",
   "info_button.what_is_alt_text": "<h1>Co je to alt text?</h1> <p>Alt text poskytuje popis obrázků pro lidi se zrakovými postižením, špatným připojením něbo těm, kteří potřebují více kontextu.</p> <p>Můžete zlepšit přístupnost a porozumění napsáním jasného, stručného a objektivního alt textu.</p> <ul> <li>Zachyťte důležité prvky</li> <li>Shrňte text v obrázku</li> <li>Použijte pravidelnou větnou skladbu</li> <li>Vyhněte se nadbytečným informacím</li> <li>U komplexních vizualizací (diagramy, mapy...) se zaměřte na trendy a klíčová zjištění</li> </ul>",
   "interaction_modal.action.favourite": "Chcete-li pokračovat, musíte oblíbit z vašeho účtu.",
@@ -476,7 +458,7 @@
   "interaction_modal.action.vote": "Chcete-li pokračovat, musíte hlasovat z vašeho účtu.",
   "interaction_modal.go": "Přejít",
   "interaction_modal.no_account_yet": "Ještě nemáte účet?",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "Na jiném serveru",
   "interaction_modal.on_this_server": "Na tomto serveru",
   "interaction_modal.title.favourite": "Oblíbit si příspěvek od uživatele {name}",
@@ -572,15 +554,11 @@
   "mute_modal.you_wont_see_mentions": "Neuvidíte příspěvky, které je zmiňují.",
   "mute_modal.you_wont_see_posts": "Stále budou moci vidět vaše příspěvky, ale vy jejich neuvidíte.",
   "navigation_bar.about": "O aplikaci",
-<<<<<<< HEAD
-  "navigation_bar.administration": "Administrace",
-  "navigation_bar.advanced_interface": "Otevřít v pokročilém webovém rozhraní",
-=======
   "navigation_bar.account_settings": "Heslo a zabezpečení",
   "navigation_bar.administration": "Administrace",
   "navigation_bar.advanced_interface": "Otevřít v pokročilém webovém rozhraní",
   "navigation_bar.automated_deletion": "Automatické mazání příspěvků",
->>>>>>> v4.4.3
+
   "navigation_bar.blocks": "Blokovaní uživatelé",
   "navigation_bar.bookmarks": "Záložky",
   "navigation_bar.direct": "Soukromé zmínky",
@@ -596,10 +574,8 @@
   "navigation_bar.live_feed_public": "Živý kanál (veřejný)",
   "navigation_bar.logout": "Odhlásit se",
   "navigation_bar.moderation": "Moderace",
-<<<<<<< HEAD
-=======
   "navigation_bar.more": "Více",
->>>>>>> v4.4.3
+
   "navigation_bar.mutes": "Skrytí uživatelé",
   "navigation_bar.opened_in_classic_interface": "Příspěvky, účty a další specifické stránky jsou ve výchozím nastavení otevřeny v klasickém webovém rozhraní.",
   "navigation_bar.preferences": "Předvolby",
@@ -618,17 +594,13 @@
   "notification.admin.report_statuses_other": "{name} nahlásili {target}",
   "notification.admin.sign_up": "Uživatel {name} se zaregistroval",
   "notification.admin.sign_up.name_and_others": "{name} a {count, plural, one {# další} few {# další} many {# dalších} other {# dalších}} se zaregistrovali",
-<<<<<<< HEAD
-  "notification.favourite": "{name} si oblíbil*a váš příspěvek",
-  "notification.favourite.name_and_others_with_link": "{name} a {count, plural, one {<a># další</a> si oblíbil} few {<a># další</a> si oblíbili} other {<a># dalších</a> si oblíbilo}} Váš příspěvek",
-=======
   "notification.annual_report.message": "Váš #Wrapstodon {year} na Vás čeká! Podívejte se, jak vypadal tento Váš rok na Mastodonu!",
   "notification.annual_report.view": "Zobrazit #Wrapstodon",
   "notification.favourite": "{name} si oblíbil váš příspěvek",
   "notification.favourite.name_and_others_with_link": "{name} a {count, plural, one {<a># další</a> si oblíbil} few {<a># další</a> si oblíbili} other {<a># dalších</a> si oblíbilo}} Váš příspěvek",
   "notification.favourite_pm": "{name} si oblíbil vaši soukromou zmínku",
   "notification.favourite_pm.name_and_others_with_link": "{name} a {count, plural, one {<a># další</a> si oblíbil} few {<a># další</a> si oblíbili} other {<a># dalších</a> si oblíbilo}} Vaši soukromou zmínku",
->>>>>>> v4.4.3
+
   "notification.follow": "Uživatel {name} vás začal sledovat",
   "notification.follow.name_and_others": "{name} a {count, plural, one {<a># další</a> Vás začal sledovat} few {<a># další</a> Vás začali sledovat} other {<a># dalších</a> Vás začalo sledovat}}",
   "notification.follow_request": "Uživatel {name} požádal o povolení vás sledovat",
@@ -733,22 +705,12 @@
   "notifications_permission_banner.enable": "Povolit oznámení na ploše",
   "notifications_permission_banner.how_to_control": "Chcete-li dostávat oznámení, i když nemáte Mastodon otevřený, povolte oznámení na ploše. Můžete si zvolit, o kterých druzích interakcí chcete být oznámením na ploše informování pod tlačítkem {icon} výše.",
   "notifications_permission_banner.title": "Nenechte si nic uniknout",
-<<<<<<< HEAD
-  "onboarding.action.back": "Vrátit se zpět",
-  "onboarding.actions.back": "Vrátit se zpět",
-  "onboarding.actions.go_to_explore": "Podívejte se, co je populární",
-  "onboarding.actions.go_to_home": "Přejít na svůj domovský feed",
-  "onboarding.compose.template": "Ahoj #Mastodon!",
-  "onboarding.follows.empty": "Bohužel, žádné výsledky nelze momentálně zobrazit. Můžete zkusit najít uživatele ke sledování za pomocí vyhledávání nebo na stránce „Objevit“, nebo to zkuste znovu později.",
-  "onboarding.follows.lead": "Domovský kanál je hlavní metodou zažívání Mastodonu. Čím více lidí sledujete, tím aktivnější a zajímavější bude. Pro začnutí, zde máte několik návrhů:",
-  "onboarding.follows.title": "Přispůsobit vlastní domovský kanál",
-=======
   "onboarding.follows.back": "Zpět",
   "onboarding.follows.done": "Hotovo",
   "onboarding.follows.empty": "Bohužel, žádné výsledky nelze momentálně zobrazit. Můžete zkusit najít uživatele ke sledování za pomocí vyhledávání nebo na stránce „Objevit“, nebo to zkuste znovu později.",
   "onboarding.follows.search": "Hledat",
   "onboarding.follows.title": "Sledujte lidi a začněte",
->>>>>>> v4.4.3
+
   "onboarding.profile.discoverable": "Udělat svůj profil vyhledatelným",
   "onboarding.profile.discoverable_hint": "Když se rozhodnete být vyhledatelný na Mastodonu, vaše příspěvky se mohou objevit ve výsledcích vyhledávání a v populárních, a váš profil může být navrhován lidem s podobnými zájmy.",
   "onboarding.profile.display_name": "Zobrazované jméno",
@@ -934,10 +896,8 @@
   "status.reblogs.empty": "Tento příspěvek ještě nikdo neboostnul. Pokud to někdo udělá, zobrazí se zde.",
   "status.redraft": "Smazat a přepsat",
   "status.remove_bookmark": "Odstranit ze záložek",
-<<<<<<< HEAD
-=======
   "status.remove_favourite": "Odebrat z oblíbených",
->>>>>>> v4.4.3
+
   "status.replied_in_thread": "Odpověděli ve vlákně",
   "status.replied_to": "Odpověděl/a uživateli {name}",
   "status.reply": "Odpovědět",
@@ -980,11 +940,7 @@
   "upload_button.label": "Přidat obrázky, video nebo audio soubor",
   "upload_error.limit": "Byl překročen limit nahraných souborů.",
   "upload_error.poll": "Nahrávání souborů není povoleno s anketami.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Popis pro sluchově postižené",
-  "upload_form.description": "Popis pro zrakově postižené",
-=======
->>>>>>> v4.4.3
+
   "upload_form.drag_and_drop.instructions": "Chcete-li zvednout přílohu, stiskněte mezerník nebo enter. Při přetažení použijte klávesnicové šipky k přesunutí mediální přílohy v libovolném směru. Stiskněte mezerník nebo enter pro vložení přílohy do nové pozice, nebo stiskněte Esc pro ukončení.",
   "upload_form.drag_and_drop.on_drag_cancel": "Přetažení bylo zrušeno. Příloha {item} byla vrácena.",
   "upload_form.drag_and_drop.on_drag_end": "Příloha {item} byla vrácena.",

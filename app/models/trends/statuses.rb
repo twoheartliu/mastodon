@@ -89,9 +89,6 @@ class Trends::Statuses < Trends::Base
   private
 
   def eligible?(status)
-<<<<<<< HEAD
-    status.created_at.past? && status.public_visibility? && status.account.discoverable? && !status.account.silenced? && !status.account.sensitized? && status.spoiler_text.blank? && !status.sensitive? && !status.reply? && valid_locale?(status.language)
-=======
     status.created_at.past? &&
       opted_into_trends?(status) &&
       !sensitive_content?(status) &&
@@ -115,7 +112,7 @@ class Trends::Statuses < Trends::Base
       quote.quoted_status.present? &&
       opted_into_trends?(quote.quoted_status) &&
       !sensitive_content?(quote.quoted_status)
->>>>>>> v4.4.3
+
   end
 
   def calculate_scores(statuses, at_time)

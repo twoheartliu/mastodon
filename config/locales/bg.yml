@@ -1223,11 +1223,8 @@ bg:
     set_new_password: Задаване на нова парола
     setup:
       email_below_hint_html: Проверете папката си за спам или поискайте друго е-писмо. Може да поправите адреса на имейла си, ако е грешен.
-<<<<<<< HEAD
-      email_settings_hint_html: Щракнете на връзката за потвърждаване, която ви изпратихме до %{email}. Ще ви почакаме тук.
-=======
       email_settings_hint_html: Щракнете на връзката, която изпратихме до %{email}, за да започнете да употребявате Mastodon. Ще изчакаме точно тук.
->>>>>>> v4.4.3
+
       link_not_received: Не получихте ли връзка?
       new_confirmation_instructions_sent: До няколко минути ще получите друго е-писмо с връзка за потвърждаване!
       title: Проверете входящата си поща
@@ -1248,11 +1245,9 @@ bg:
       view_strikes: Преглед на предишните предупреждения против акаунта ви
     too_fast: Образецът подаден пребързо, опитайте пак.
     use_security_key: Употреба на ключ за сигурност
-<<<<<<< HEAD
-=======
     user_agreement_html: Прочетох и се съгласявам с <a href="%{terms_of_service_path}" target="_blank">условията на услугата</a> и <a href="%{privacy_policy_path}" target="_blank">политиката за поверителност</a>
     user_privacy_agreement_html: Прочетох и има съгласието ми за <a href="%{privacy_policy_path}" target="_blank">политиката за поверителност</a>
->>>>>>> v4.4.3
+
   author_attribution:
     example_title: Примерен текст
     hint_html: Пишете ли новинарски статии или блогове извън Mastodon? Управлявайте как ви приписват авторството, когато са споделени в Mastodon.

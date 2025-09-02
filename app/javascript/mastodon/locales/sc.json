@@ -99,14 +99,12 @@
   "alert.unexpected.message": "Ddoe est istada una faddina.",
   "alert.unexpected.title": "Oh!",
   "alt_text_badge.title": "Testu alternativu",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Agiunghe testu alternativu",
   "alt_text_modal.add_text_from_image": "Agiunghe testu dae un'immàgine",
   "alt_text_modal.cancel": "Annulla",
   "alt_text_modal.change_thumbnail": "Càmbia sa miniadura",
   "alt_text_modal.done": "Fatu",
->>>>>>> v4.4.3
+
   "announcement.announcement": "Annùntziu",
   "annual_report.summary.archetype.booster": "Semper a s'ùrtima",
   "annual_report.summary.followers.followers": "sighiduras",
@@ -213,12 +211,7 @@
   "confirmations.discard_draft.edit.cancel": "Sighi cun s'editzione",
   "confirmations.discard_edit_media.confirm": "Iscarta",
   "confirmations.discard_edit_media.message": "Tenes modìficas non sarvadas a is descritziones o a is anteprimas de is cuntenutos, ddas boles iscartare su matessi?",
-<<<<<<< HEAD
-  "confirmations.edit.confirm": "Modìfica",
-  "confirmations.edit.message": "Modifichende immoe as a subrascrìere su messàgiu chi ses iscriende. Seguru chi boles sighire?",
-  "confirmations.edit.title": "Boles subraiscrìere sa publicatzione?",
-=======
->>>>>>> v4.4.3
+
   "confirmations.logout.confirm": "Essi·nche",
   "confirmations.logout.message": "Seguru chi boles essire?",
   "confirmations.logout.title": "Boles serrare sa sessione?",
@@ -226,12 +219,7 @@
   "confirmations.redraft.confirm": "Cantzella e torra a fàghere",
   "confirmations.redraft.message": "Seguru chi boles cantzellare e torrare a fàghere custa publicatzione? As a pèrdere is preferidos e is cumpartziduras, e is rispostas a su messàgiu originale ant a abarrare òrfanas.",
   "confirmations.redraft.title": "Boles cantzellare e torrare a iscrìere sa publicatzione?",
-<<<<<<< HEAD
-  "confirmations.reply.confirm": "Risponde",
-  "confirmations.reply.message": "Rispondende immoe as a subrascrìere su messàgiu chi ses iscriende. Seguru chi boles sighire?",
-  "confirmations.reply.title": "Boles subraiscrìere sa publicatzione?",
-=======
->>>>>>> v4.4.3
+
   "confirmations.unfollow.confirm": "Non sigas prus",
   "confirmations.unfollow.message": "Seguru chi non boles sighire prus a {name}?",
   "confirmations.unfollow.title": "Boles tzessare de sighire s'utente?",
@@ -312,10 +300,8 @@
   "explore.trending_links": "Noas",
   "explore.trending_statuses": "Publicatziones",
   "explore.trending_tags": "Etichetas",
-<<<<<<< HEAD
-=======
   "featured_carousel.slide": "{index} de {total}",
->>>>>>> v4.4.3
+
   "filter_modal.added.context_mismatch_title": "Su cuntestu non currispondet.",
   "filter_modal.added.expired_title": "Filtru iscadidu.",
   "filter_modal.added.review_and_configure_title": "Cunfiguratziones de filtru",
@@ -393,17 +379,11 @@
   "ignore_notifications_modal.filter_instead": "Opuru filtra",
   "ignore_notifications_modal.filter_to_act_users": "As a pòdere ancora atzetare, refudare o sinnalare a utentes",
   "ignore_notifications_modal.filter_to_avoid_confusion": "Filtrare agiudat a evitare possìbiles confusiones",
-<<<<<<< HEAD
-  "interaction_modal.description.reply": "Podes rispòndere a custa publicatzione cun unu contu de Mastodon.",
-  "interaction_modal.login.action": "Torra a sa pàgina printzipale",
-  "interaction_modal.login.prompt": "Su domìniu de su serbidore domèsticu tuo, pro esempru mastodon.social",
-  "interaction_modal.no_account_yet": "Non ses in Mastodon?",
-=======
   "info_button.label": "Agiudu",
   "interaction_modal.go": "Sighi",
   "interaction_modal.no_account_yet": "Non tenes galu perunu contu?",
   "interaction_modal.on_another_server": "In un'àteru serbidore",
->>>>>>> v4.4.3
+
   "interaction_modal.on_this_server": "In custu serbidore",
   "interaction_modal.title.follow": "Sighi a {name}",
   "interaction_modal.title.reply": "Risponde a sa publicatzione de {name}",
@@ -451,23 +431,12 @@
   "lightbox.previous": "Pretzedente",
   "lightbox.zoom_in": "Ismànnia finas a sa mannària atuale",
   "limited_account_hint.title": "Custu profilu est istadu cuadu dae sa moderatzione de {domain}.",
-<<<<<<< HEAD
-  "link_preview.shares": "{count, plural, one {{counter} publicatzione} other {{counter} publicatziones}}",
-  "lists.account.add": "Agiunghe a sa lista",
-  "lists.account.remove": "Boga dae sa lista",
-  "lists.delete": "Cantzella sa lista",
-  "lists.edit": "Modìfica sa lista",
-  "lists.edit.submit": "Muda su tìtulu",
-  "lists.exclusive": "Cua custas publicatziones dae sa pàgina printzipale",
-  "lists.new.create": "Agiunghe lista",
-  "lists.new.title_placeholder": "Tìtulu de sa lista noa",
-=======
   "link_preview.author": "Dae {name}",
   "link_preview.shares": "{count, plural, one {{counter} publicatzione} other {{counter} publicatziones}}",
   "lists.delete": "Cantzella sa lista",
   "lists.edit": "Modìfica sa lista",
   "lists.remove_member": "Cantzella",
->>>>>>> v4.4.3
+
   "lists.replies_policy.followed": "Cale si siat persone chi sighis",
   "lists.replies_policy.list": "Persones de sa lista",
   "lists.replies_policy.none": "Nemos",
@@ -488,15 +457,11 @@
   "mute_modal.you_wont_see_mentions": "No as a bìdere is publicatziones chi mèntovent a custa persone.",
   "mute_modal.you_wont_see_posts": "At a pòdere bìdere is publicatziones tuas, però tue no as a bìdere cussas suas.",
   "navigation_bar.about": "Informatziones",
-<<<<<<< HEAD
-  "navigation_bar.administration": "Amministratzione",
-  "navigation_bar.advanced_interface": "Aberi s'interfache web avantzada",
-=======
   "navigation_bar.account_settings": "Crae e seguresa",
   "navigation_bar.administration": "Amministratzione",
   "navigation_bar.advanced_interface": "Aberi s'interfache web avantzada",
   "navigation_bar.automated_deletion": "Cantzelladura automàtica de publicatziones",
->>>>>>> v4.4.3
+
   "navigation_bar.blocks": "Persones blocadas",
   "navigation_bar.bookmarks": "Sinnalibros",
   "navigation_bar.direct": "Mentziones privadas",
@@ -512,16 +477,10 @@
   "navigation_bar.live_feed_public": "Canale in direta (pùblicu)",
   "navigation_bar.logout": "Essi",
   "navigation_bar.moderation": "Moderatzione",
-<<<<<<< HEAD
-  "navigation_bar.mutes": "Persones a sa muda",
-  "navigation_bar.opened_in_classic_interface": "Publicatziones, contos e àteras pàginas ispetzìficas sunt abertas in manera predefinida in s'interfache web clàssica.",
-  "navigation_bar.personal": "Informatziones personales",
-  "navigation_bar.pins": "Publicatziones apicadas",
-=======
   "navigation_bar.more": "Àteru",
   "navigation_bar.mutes": "Persones a sa muda",
   "navigation_bar.opened_in_classic_interface": "Publicatziones, contos e àteras pàginas ispetzìficas sunt abertas in manera predefinida in s'interfache web clàssica.",
->>>>>>> v4.4.3
+
   "navigation_bar.preferences": "Preferèntzias",
   "navigation_bar.search": "Chirca",
   "navigation_bar.search_trends": "Chirca / in tendèntzia",
@@ -649,10 +608,7 @@
   "poll_button.remove_poll": "Cantzella su sondàgiu",
   "privacy.change": "Modìfica s'istadu de riservadesa",
   "privacy.direct.long": "Totu is utentes mentovados in sa publicatzione",
-<<<<<<< HEAD
-  "privacy.direct.short": "Persones ispetzìficas",
-=======
->>>>>>> v4.4.3
+
   "privacy.private.long": "Isceti chie ti sighit",
   "privacy.private.short": "Sighiduras",
   "privacy.public.long": "Cale si siat persone a intro o a foras de Mastodon",
@@ -732,16 +688,10 @@
   "search_results.accounts": "Profilos",
   "search_results.all": "Totus",
   "search_results.hashtags": "Etichetas",
-<<<<<<< HEAD
-  "search_results.nothing_found": "Impossìbile agatare currispondèntzias pro custos tèrmines de chirca",
-  "search_results.see_all": "Bide totu",
-  "search_results.statuses": "Publicatziones",
-  "search_results.title": "Chirca {q}",
-=======
   "search_results.see_all": "Bide totu",
   "search_results.statuses": "Publicatziones",
   "search_results.title": "Chirca \"{q}\"",
->>>>>>> v4.4.3
+
   "server_banner.about_active_users": "Gente chi at impreadu custu serbidore is ùrtimas 30 dies (Utentes cun Atividade a su Mese)",
   "server_banner.active_users": "utentes ativos",
   "server_banner.administered_by": "Amministradu dae:",

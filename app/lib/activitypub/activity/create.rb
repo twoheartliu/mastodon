@@ -59,11 +59,9 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
       @status = Status.create!(@params)
       attach_tags(@status)
       attach_mentions(@status)
-<<<<<<< HEAD
-=======
       attach_counts(@status)
       attach_quote(@status)
->>>>>>> v4.4.3
+
     end
 
     resolve_thread(@status)
@@ -254,11 +252,8 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
     return if account.nil?
 
     @mentions << Mention.new(account: account, silent: false)
-<<<<<<< HEAD
-  rescue Mastodon::UnexpectedResponseError, HTTP::TimeoutError, HTTP::ConnectionError, OpenSSL::SSL::SSLError
-=======
   rescue Mastodon::UnexpectedResponseError, *Mastodon::HTTP_CONNECTION_ERRORS
->>>>>>> v4.4.3
+
     @unresolved_mentions << tag['href']
   end
 

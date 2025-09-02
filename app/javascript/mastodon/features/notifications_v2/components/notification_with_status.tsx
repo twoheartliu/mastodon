@@ -12,11 +12,8 @@ import {
 } from 'mastodon/actions/statuses';
 import type { IconProp } from 'mastodon/components/icon';
 import { Icon } from 'mastodon/components/icon';
-<<<<<<< HEAD
-import Status from 'mastodon/containers/status_container';
-=======
 import { StatusQuoteManager } from 'mastodon/components/status_quoted';
->>>>>>> v4.4.3
+
 import { getStatusHidden } from 'mastodon/selectors/filters';
 import { useAppSelector, useAppDispatch } from 'mastodon/store';
 

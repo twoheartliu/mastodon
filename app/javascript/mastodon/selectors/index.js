@@ -6,10 +6,7 @@ import { me } from '../initial_state';
 import { getFilters } from './filters';
 
 export { makeGetAccount } from "./accounts";
-<<<<<<< HEAD
-=======
 export { getStatusList } from "./statuses";
->>>>>>> v4.4.3
 
 export const makeGetStatus = () => {
   return createSelector(

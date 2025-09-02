@@ -3,11 +3,8 @@ eo:
   simple_form:
     hints:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Unu por linio. Protektas kontraŭ falsaj atribuoj.
-=======
         attribution_domains: Unu por linio. Protektas kontraŭ falsaj atribuoj.
->>>>>>> v4.4.3
+
         discoverable: Viaj publikaj afiŝoj kaj profilo povas esti prezentitaj aŭ rekomenditaj en diversaj lokoj de Mastodon kaj via profilo povas esti proponita al aliaj uzantoj.
         display_name: Via plena nomo aŭ via kromnomo.
         fields: Via retpaĝo, pronomoj, aĝo, ĉio, kion vi volas.
@@ -60,18 +57,12 @@ eo:
         scopes: Kiujn API-ojn la aplikaĵo permesiĝos atingi. Se vi elektas supran amplekson, vi ne bezonas elekti la individuajn.
         setting_aggregate_reblogs: Ne montri novajn plusendojn de mesaĝoj lastatempe plusenditaj (nur efikas al nove ricevitaj plusendoj)
         setting_always_send_emails: Normale, la sciigoj per retpoŝto ne estos senditaj kiam vi uzas Mastodon aktive
-<<<<<<< HEAD
-        setting_default_sensitive: Tiklaj vidaŭdaĵoj estas implicite kaŝitaj kaj povas esti montritaj per alklako
-        setting_display_media_default: Kaŝi plurmediojn markitajn kiel tiklaj
-        setting_display_media_hide_all: Ĉiam kaŝi la vidaŭdaĵojn
-        setting_display_media_show_all: Ĉiam montri la vidaŭdaĵojn
-=======
         setting_default_sensitive: La tiklaj vidaŭdaĵoj estas implicite kaŝitaj kaj povas esti malkaŝitaj per alklako
         setting_display_media_default: Kaŝi plurmediojn markitajn kiel tiklaj
         setting_display_media_hide_all: Ĉiam kaŝi la vidaŭdaĵojn
         setting_display_media_show_all: Ĉiam montri la vidaŭdaĵojn
         setting_system_scrollbars_ui: Aplikas nur por surtablaj retumiloj baziĝas de Safari kaj Chrome
->>>>>>> v4.4.3
+
         setting_use_blurhash: Transirojn estas bazita sur la koloroj de la kaŝitaj aŭdovidaĵoj sed ne montri iun ajn detalon
         setting_use_pending_items: Kaŝi tempoliniajn ĝisdatigojn malantaŭ klako anstataŭ aŭtomate rulumi la fluon
         username: Vi povas uzi literojn, ciferojn kaj substrekojn
@@ -100,10 +91,8 @@ eo:
         favicon: WEBP, PNG, GIF aŭ JPG. Anstataŭigas la defaŭltan Mastodon-favikono kun propra bildsimbolo.
         mascot: Anstatauigi la ilustraĵon en la altnivela retinterfaco.
         media_cache_retention_period: Amaskomunikilaj dosieroj de afiŝoj faritaj de foraj uzantoj estas konservitaj en kaŝmemoro en via servilo. Kiam agordita al pozitiva valoro, amaskomunikilaro estos forigita post la specifita nombro da tagoj. Se la amaskomunikilaro-datumoj estas petitaj post kiam ĝi estas forigita, ĝi estos re-elŝutita, se la fonta enhavo ankoraŭ disponeblas. Pro limigoj pri kiom ofte ligaj antaŭrigardaj kartoj enketas retejojn de ekstera liveranto, oni rekomendas agordi ĉi tiun valoron al almenaŭ 14 tagoj, aŭ ligaj antaŭrigardaj kartoj ne estos ĝisdatigitaj laŭpostule antaŭ tiu tempo.
-<<<<<<< HEAD
-=======
         min_age: Uzantoj demandos konfirmi siajn naskiĝtagon dum registrado
->>>>>>> v4.4.3
+
         peers_api_enabled: Listo de domajnaj nomoj kiujn ĉi tiu servilo renkontis en la fediverso. Neniuj datumoj estas inkluditaj ĉi tie pri ĉu vi federacias kun donita servilo, nur ke via servilo scias pri ĝi. Ĉi tio estas uzata de servoj kiuj kolektas statistikojn pri federacio en ĝenerala signifo.
         profile_directory: La profilujo listigas ĉiujn uzantojn kiu volonte malkovrebli.
         require_invite_text: Kiam registroj bezonas permanan aprobon, igi la "Kial vi volas aliĝi?" tekstoenigon deviga anstau nedeviga
@@ -175,11 +164,8 @@ eo:
         url: Kien eventoj sendotas
     labels:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Retejoj permesitaj krediti vin
-=======
         attribution_domains: Retejoj permesitaj krediti vin
->>>>>>> v4.4.3
+
         discoverable: Elstarigi profilon kaj afiŝojn en eltrovantaj algoritmoj
         fields:
           name: Etikedo

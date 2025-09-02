@@ -3,11 +3,8 @@ es:
   about:
     about_mastodon_html: 'La red social del futuro: ¡Sin anuncios, sin vigilancia corporativa, diseño ético, y descentralización! ¡Sé dueño de tu información con Mastodon!'
     contact_missing: No establecido
-<<<<<<< HEAD
-    contact_unavailable: No disponible
-=======
     contact_unavailable: N/D
->>>>>>> v4.4.3
+
     hosted_on: Mastodon alojado en %{domain}
     title: Acerca de
   accounts:
@@ -984,8 +981,6 @@ es:
       search: Buscar
       title: Etiquetas
       updated_msg: La configuración de etiquetas se actualizó correctamente
-<<<<<<< HEAD
-=======
     terms_of_service:
       back: Volver a los términos del servicio
       changelog: Qué ha cambiado
@@ -1016,7 +1011,7 @@ es:
       published_on_html: Publicado el %{date}
       save_draft: Guardar borrador
       title: Términos del Servicio
->>>>>>> v4.4.3
+
     title: Administración
     trends:
       allow: Permitir
@@ -1248,11 +1243,8 @@ es:
     set_new_password: Establecer nueva contraseña
     setup:
       email_below_hint_html: Comprueba tu carpeta de correo no deseado o solicita otro enlace de confirmación. Puedes corregir tu dirección de correo electrónico si está mal.
-<<<<<<< HEAD
-      email_settings_hint_html: Haz clic en el enlace que te hemos enviado para verificar %{email}. Te esperamos aquí.
-=======
       email_settings_hint_html: Haz clic en el enlace que enviamos a %{email} para comenzar a usar Mastodon. Estaremos esperando aquí mismo.
->>>>>>> v4.4.3
+
       link_not_received: "¿No recibiste un enlace?"
       new_confirmation_instructions_sent: "¡Recibirás un nuevo correo electrónico con el enlace de confirmación en unos minutos!"
       title: Revisa tu bandeja de entrada
@@ -1885,13 +1877,11 @@ es:
       limit: Ya has fijado el número máximo de publicaciones
       ownership: La publicación de otra persona no puede fijarse
       reblog: Una publicación impulsada no puede fijarse
-<<<<<<< HEAD
-=======
     quote_policies:
       followers: Solo tus seguidores
       nobody: Nadie
       public: Cualquiera
->>>>>>> v4.4.3
+
     title: "%{name}: «%{quote}»"
     visibilities:
       direct: Directa

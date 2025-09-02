@@ -165,11 +165,8 @@ hu:
         url: Ahová az eseményket küldjük
     labels:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Weboldalak, melyek szerzőként tüntethetnek fel
-=======
         attribution_domains: Weboldalak, melyek szerzőként tüntethetnek fel
->>>>>>> v4.4.3
+
         discoverable: Profil és bejegyzések szerepeltetése a felfedezési algoritmusokban
         fields:
           name: Címke

@@ -248,15 +248,10 @@
   "confirmations.unfollow.confirm": "Bỏ theo dõi",
   "confirmations.unfollow.message": "Bạn có chắc muốn bỏ theo dõi {name}?",
   "confirmations.unfollow.title": "Bỏ theo dõi",
-<<<<<<< HEAD
-  "content_warning.hide": "Ẩn lại",
-  "content_warning.show": "Nhấn để xem",
-  "content_warning.show_more": "Hiện thêm",
-=======
   "content_warning.hide": "Thu gọn",
   "content_warning.show": "Vẫn xem",
   "content_warning.show_more": "Mở rộng",
->>>>>>> v4.4.3
+
   "conversation.delete": "Xóa tin nhắn này",
   "conversation.mark_as_read": "Đánh dấu là đã đọc",
   "conversation.open": "Xem toàn bộ tin nhắn",
@@ -593,17 +588,13 @@
   "notification.admin.report_statuses_other": "{name} báo cáo {target}",
   "notification.admin.sign_up": "{name} tham gia máy chủ của bạn",
   "notification.admin.sign_up.name_and_others": "{name} và {count, plural, other {# người}} đã đăng ký",
-<<<<<<< HEAD
-  "notification.favourite": "{name} đã thích tút của bạn",
-  "notification.favourite.name_and_others_with_link": "{name} và <a>{count, plural, other {# người khác}}</a> đã thích tút của bạn",
-=======
   "notification.annual_report.message": "#Wrapstodon {year} của bạn có rồi đây! Hãy chia sẻ những điểm nhấn và khoảnh khắc đáng nhớ trên Mastodon của bạn trong năm qua!",
   "notification.annual_report.view": "Xem #Wrapstodon",
   "notification.favourite": "{name} đã thích tút của bạn",
   "notification.favourite.name_and_others_with_link": "{name} và <a>{count, plural, other {# người khác}}</a> đã thích tút của bạn",
   "notification.favourite_pm": "{name} đã thích nhắn riêng từ bạn",
   "notification.favourite_pm.name_and_others_with_link": "{name} và <a>{count, plural, other {# người khác}}</a> đã thích nhắn riêng từ bạn",
->>>>>>> v4.4.3
+
   "notification.follow": "{name} đã theo dõi bạn",
   "notification.follow.name_and_others": "{name} và <a>{count, plural, other {# người khác}}</a> theo dõi bạn",
   "notification.follow_request": "{name} yêu cầu theo dõi bạn",
@@ -612,11 +603,8 @@
   "notification.label.private_mention": "Nhắn riêng",
   "notification.label.private_reply": "Trả lời riêng",
   "notification.label.reply": "Trả lời",
-<<<<<<< HEAD
-  "notification.mention": "Lượt nhắc",
-=======
   "notification.mention": "Nhắc đến bạn",
->>>>>>> v4.4.3
+
   "notification.mentioned_you": "{name} nhắc đến bạn",
   "notification.moderation-warning.learn_more": "Tìm hiểu",
   "notification.moderation_warning": "Bạn vừa nhận một cảnh báo kiểm duyệt",
@@ -627,13 +615,9 @@
   "notification.moderation_warning.action_sensitive": "Tút của bạn sẽ bị đánh dấu nhạy cảm kể từ bây giờ.",
   "notification.moderation_warning.action_silence": "Tài khoản của bạn đã bị hạn chế.",
   "notification.moderation_warning.action_suspend": "Tài khoản của bạn đã bị vô hiệu hóa.",
-<<<<<<< HEAD
-  "notification.own_poll": "Cuộc bình chọn của bạn đã kết thúc",
-  "notification.poll": "Cuộc bình chọn mà bạn tham gia đã kết thúc",
-=======
   "notification.own_poll": "Vốt của bạn đã kết thúc",
   "notification.poll": "Vốt mà bạn tham gia đã kết thúc",
->>>>>>> v4.4.3
+
   "notification.reblog": "{name} đăng lại tút của bạn",
   "notification.reblog.name_and_others_with_link": "{name} và <a>{count, plural, other {# người khác}}</a> đã đăng lại tút của bạn",
   "notification.relationships_severance_event": "Mất kết nối với {name}",
@@ -673,11 +657,8 @@
   "notifications.column_settings.filter_bar.category": "Phân loại thông báo",
   "notifications.column_settings.follow": "Người theo dõi:",
   "notifications.column_settings.follow_request": "Yêu cầu theo dõi:",
-<<<<<<< HEAD
-  "notifications.column_settings.group": "Nhóm",
-=======
   "notifications.column_settings.group": "Gộp lại",
->>>>>>> v4.4.3
+
   "notifications.column_settings.mention": "Lượt nhắc đến:",
   "notifications.column_settings.poll": "Kết quả vốt:",
   "notifications.column_settings.push": "Thông báo đẩy",

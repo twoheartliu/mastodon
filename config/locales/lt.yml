@@ -611,13 +611,10 @@ lt:
       no_status_selected: Jokie įrašai nebuvo pakeisti, nes nė vienas buvo pasirinktas
       open: Atidaryti įrašą
       original_status: Originalus įrašas
-<<<<<<< HEAD
-      title: Paskyros įrašai
-=======
       replied_to_html: Atsakyta į %{acct_link}
       status_title: Paskelbė @%{name}
       title: Paskyros įrašai – @%{name}
->>>>>>> v4.4.3
+
       trending: Tendencinga
       view_publicly: Peržiūrėti viešai
       with_media: Su medija
@@ -861,22 +858,16 @@ lt:
     security: Apsauga
     set_new_password: Nustatyti naują slaptažodį
     setup:
-<<<<<<< HEAD
-      email_settings_hint_html: Spustelėkite mūsų atsiųstą nuorodą, kad patvirtintumėte %{email}. Mes lauksime čia.
-=======
       email_settings_hint_html: Spustelėkite nuorodą, kurią atsiuntėme adresu %{email}, kad pradėtumėte naudoti „Mastodon“. Lauksime čia.
->>>>>>> v4.4.3
+
       link_not_received: Negavai nuorodos?
       title: Patikrinti pašto dėžutę
     sign_in:
       preamble_html: Prisijunk su savo <strong>%{domain}</strong> kredencialais. Jei tavo yra kitame serveryje, čia prisijungti negalėsi.
       title: Prisijungti prie %{domain}
     sign_up:
-<<<<<<< HEAD
-      preamble: Su paskyra šiame „Mastodon“ serveryje galėsite sekti bet kurį kitą tinkle esantį asmenį, nepriklausomai nuo to, kur yra jų paskyra.
-=======
       preamble: Su šio „Mastodon“ serverio paskyra galėsite sekti bet kurį kitą fediversijoje esantį asmenį, nepriklausomai nuo to, kur yra jo paskyra.
->>>>>>> v4.4.3
+
     status:
       account_status: Paskyros būsena
       redirecting_to: Tavo paskyra yra neaktyvi, nes šiuo metu ji nukreipiama į %{acct}.
@@ -1135,11 +1126,8 @@ lt:
   scheduled_statuses:
     over_daily_limit: Jūs pasieketė limitą (%{limit}) galimų toot'ų per dieną
     over_total_limit: Jūs pasieketė %{limit} limitą galimų toot'ų
-<<<<<<< HEAD
-    too_soon: Suplanuota data turi būti ateityje.
-=======
     too_soon: data turi būti ateityje.
->>>>>>> v4.4.3
+
   sessions:
     activity: Paskutinė veikla
     browser: Naršyklė

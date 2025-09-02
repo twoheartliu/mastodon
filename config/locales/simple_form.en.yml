@@ -3,11 +3,8 @@ en:
   simple_form:
     hints:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: One per line. Protects from false attributions.
-=======
         attribution_domains: One per line. Protects from false attributions.
->>>>>>> v4.4.3
+
         discoverable: Your public posts and profile may be featured or recommended in various areas of Mastodon and your profile may be suggested to other users.
         display_name: Your full name or your fun name.
         fields: Your homepage, pronouns, age, anything you want.
@@ -169,11 +166,8 @@ en:
         url: Where events will be sent to
     labels:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Websites allowed to credit you
-=======
         attribution_domains: Websites allowed to credit you
->>>>>>> v4.4.3
+
         discoverable: Feature profile and posts in discovery algorithms
         fields:
           name: Label

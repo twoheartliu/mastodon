@@ -30,11 +30,9 @@ class Web::PushSubscription < ApplicationRecord
 
   delegate :locale, to: :user
 
-<<<<<<< HEAD
-=======
   generates_token_for :unsubscribe, expires_in: Web::PushNotificationWorker::TTL
 
->>>>>>> v4.4.3
+
   def pushable?(notification)
     policy_allows_notification?(notification) && alert_enabled_for_notification_type?(notification)
   end
@@ -52,19 +50,7 @@ class Web::PushSubscription < ApplicationRecord
 
   private
 
-<<<<<<< HEAD
-  def find_or_create_access_token
-    Doorkeeper::AccessToken.find_or_create_for(
-      application: Doorkeeper::Application.find_by(superapp: true),
-      resource_owner: user_id || session_activation.user_id,
-      scopes: Doorkeeper::OAuth::Scopes.from_string('read write follow push'),
-      expires_in: Doorkeeper.configuration.access_token_expires_in,
-      use_refresh_token: Doorkeeper.configuration.refresh_token_enabled?
-    )
-  end
 
-=======
->>>>>>> v4.4.3
   def alert_enabled_for_notification_type?(notification)
     truthy?(data&.dig('alerts', notification.type.to_s))
   end

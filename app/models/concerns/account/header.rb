@@ -3,20 +3,12 @@
 module Account::Header
   extend ActiveSupport::Concern
 
-<<<<<<< HEAD
-  IMAGE_MIME_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'].freeze
-  LIMIT = 2.megabytes
-
-  HEADER_DIMENSIONS = [1500, 500].freeze
-  HEADER_GEOMETRY = [HEADER_DIMENSIONS.first, HEADER_DIMENSIONS.last].join('x')
-  MAX_PIXELS = HEADER_DIMENSIONS.first * HEADER_DIMENSIONS.last
-=======
   HEADER_IMAGE_MIME_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'].freeze
   HEADER_LIMIT = Rails.configuration.x.use_vips ? 8.megabytes : 2.megabytes
   HEADER_DIMENSIONS = [1500, 500].freeze
   HEADER_GEOMETRY = [HEADER_DIMENSIONS.first, HEADER_DIMENSIONS.last].join('x')
   HEADER_MAX_PIXELS = HEADER_DIMENSIONS.first * HEADER_DIMENSIONS.last
->>>>>>> v4.4.3
+
 
   class_methods do
     def header_styles(file)

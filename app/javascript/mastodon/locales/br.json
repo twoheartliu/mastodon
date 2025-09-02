@@ -173,12 +173,8 @@
   "confirmations.delete_list.title": "Dilemel al listenn?",
   "confirmations.discard_edit_media.confirm": "Nac'hañ",
   "confirmations.discard_edit_media.message": "Bez ez eus kemmoù n'int ket enrollet e deskrivadur ar media pe ar rakwel, nullañ anezho evelato?",
-<<<<<<< HEAD
-  "confirmations.edit.confirm": "Kemmañ",
-  "confirmations.edit.message": "Kemmañ bremañ a zilamo ar gemennadenn emaoc'h o skrivañ. Sur e oc'h e fell deoc'h kenderc'hel ganti?",
-=======
   "confirmations.follow_to_list.title": "Heuliañ an implijer·ez?",
->>>>>>> v4.4.3
+
   "confirmations.logout.confirm": "Digevreañ",
   "confirmations.logout.message": "Ha sur oc'h e fell deoc'h digevreañ ?",
   "confirmations.mute.confirm": "Kuzhat",

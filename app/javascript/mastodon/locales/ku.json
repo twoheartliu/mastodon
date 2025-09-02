@@ -51,12 +51,9 @@
   "account.mute_notifications_short": "Agahdariyan bêdeng bike",
   "account.mute_short": "Bêdeng bike",
   "account.muted": "Bêdengkirî",
-<<<<<<< HEAD
-  "account.mutual": "Hevpar",
-=======
   "account.muting": "Bêdengkirin",
   "account.mutual": "Hûn hevdû dişopînin",
->>>>>>> v4.4.3
+
   "account.no_bio": "Ti danasîn nehatiye tevlîkirin.",
   "account.open_original_page": "Rûpela resen veke",
   "account.posts": "Şandî",
@@ -173,11 +170,7 @@
   "confirmations.mute.confirm": "Bêdeng bike",
   "confirmations.redraft.confirm": "Jê bibe & ji nû ve serrast bike",
   "confirmations.redraft.message": "Bi rastî tu dixwazî şandî ye jê bibî û ji nû ve reşnivîsek çê bikî? Bijarte û şandî wê wenda bibin û bersivên ji bo şandiyê resen wê sêwî bimînin.",
-<<<<<<< HEAD
-  "confirmations.reply.confirm": "Bersivê bide",
-  "confirmations.reply.message": "Bersiva niha li ser peyama ku tu niha berhev dikî dê binivsîne. Ma pê bawer î ku tu dixwazî bidomînî?",
-=======
->>>>>>> v4.4.3
+
   "confirmations.unfollow.confirm": "Neşopîne",
   "confirmations.unfollow.message": "Ma tu dixwazî ku dev ji şopa {name} berdî?",
   "content_warning.show_more": "Bêtir nîşan bide",
@@ -194,11 +187,7 @@
   "disabled_account_banner.text": "Ajimêrê te {disabledAccount} niha neçalak e.",
   "dismissable_banner.community_timeline": "Ev şandiyên giştî yên herî dawî ji kesên ku ajimêrê wan ji aliyê {domain} ve têne pêşkêşkirin.",
   "dismissable_banner.dismiss": "Paşguh bike",
-<<<<<<< HEAD
-  "dismissable_banner.explore_links": "Ev çîrokên nûçeyan niha li ser vê û rajekarên din ên tora nenavendî ji aliyê mirovan ve têne axaftin.",
-  "dismissable_banner.explore_tags": "Ev hashtagên ji vê û rajekarên din ên di tora nenavendî de niha li ser vê rajekarê balê dikşînin.",
-=======
->>>>>>> v4.4.3
+
   "domain_block_modal.block": "Rajekar asteng bike",
   "domain_pill.server": "Rajekar",
   "domain_pill.username": "Navê bikarhêner",

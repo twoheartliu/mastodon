@@ -3,11 +3,8 @@ ca:
   simple_form:
     hints:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Un per línia. Protegeix de falses atribucions.
-=======
         attribution_domains: Un per línia. Protegeix de falses atribucions.
->>>>>>> v4.4.3
+
         discoverable: El teu perfil i els teus tuts públics poden aparèixer o ser recomanats en diverses àreas de Mastodon i el teu perfil pot ser suggerit a altres usuaris.
         display_name: El teu nom complet o el teu nom divertit.
         fields: La teva pàgina d'inici, pronoms, edat, el que vulguis.
@@ -168,11 +165,8 @@ ca:
         url: On els esdeveniments seran enviats
     labels:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Webs que us poden donar crèdit
-=======
         attribution_domains: Llocs web que us poden donar crèdit
->>>>>>> v4.4.3
+
         discoverable: Permet el perfil i el tuts en els algorismes de descobriment
         fields:
           name: Etiqueta

@@ -100,8 +100,6 @@
   "alert.unexpected.message": "لقد طرأ خطأ غير متوقّع.",
   "alert.unexpected.title": "المعذرة!",
   "alt_text_badge.title": "نص بديل",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "أضف نصًا بديلًا",
   "alt_text_modal.add_text_from_image": "أضف النص من الصورة",
   "alt_text_modal.cancel": "إلغاء",
@@ -109,7 +107,7 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "قم بوصفها للأشخاص ذوي الإعاقة السمعية…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "قم بوصفها للأشخاص ذوي الإعاقة البصرية…",
   "alt_text_modal.done": "تمّ",
->>>>>>> v4.4.3
+
   "announcement.announcement": "إعلان",
   "annual_report.summary.archetype.booster": "The cool-hunter",
   "annual_report.summary.archetype.lurker": "المتصفح الصامت",
@@ -365,11 +363,9 @@
   "filter_modal.select_filter.subtitle": "استخدم فئة موجودة أو قم بإنشاء فئة جديدة",
   "filter_modal.select_filter.title": "تصفية هذا المنشور",
   "filter_modal.title.status": "تصفية منشور",
-<<<<<<< HEAD
-=======
   "filter_warning.matches_filter": "يطابق عامل التصفية “<span>{title}</span>”",
   "filtered_notifications_banner.pending_requests": "من {count, plural, zero {}=0 {لا أحد} one {شخص واحد قد تعرفه} two {# شخص قد تعرفهما} few {# أشخاص قد تعرفهم} many {# أشخاص قد تعرفهم} other {# أشخاص قد تعرفهم}}",
->>>>>>> v4.4.3
+
   "filtered_notifications_banner.title": "الإشعارات المصفاة",
   "firehose.all": "الكل",
   "firehose.local": "هذا الخادم",

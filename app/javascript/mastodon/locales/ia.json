@@ -97,8 +97,6 @@
   "alert.unexpected.message": "Un error inexpectate ha occurrite.",
   "alert.unexpected.title": "Ups!",
   "alt_text_badge.title": "Texto alternative",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Adder texto alternative",
   "alt_text_modal.add_text_from_image": "Adder texto ab imagine",
   "alt_text_modal.cancel": "Cancellar",
@@ -106,7 +104,7 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Describe isto pro personas con impedimentos auditive…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "Describe isto pro personas con impedimentos visual…",
   "alt_text_modal.done": "Preste",
->>>>>>> v4.4.3
+
   "announcement.announcement": "Annuncio",
   "annual_report.summary.archetype.booster": "Le impulsator",
   "annual_report.summary.archetype.lurker": "Le lector",
@@ -557,17 +555,13 @@
   "notification.admin.report_statuses_other": "{name} ha reportate {target}",
   "notification.admin.sign_up": "{name} se ha inscribite",
   "notification.admin.sign_up.name_and_others": "{name} e {count, plural, one {# altere persona} other {# altere personas}} se ha inscribite",
-<<<<<<< HEAD
-  "notification.favourite": "{name} ha marcate tu message como favorite",
-  "notification.favourite.name_and_others_with_link": "{name} e <a>{count, plural, one {# altere} other {# alteres}}</a> ha marcate tu message como favorite",
-=======
   "notification.annual_report.message": "Tu summario #Wrapstodon pro {year} attende! Revela le momentos saliente e memorabile de tu anno sur Mastodon!",
   "notification.annual_report.view": "Visitar summario #Wrapstodon",
   "notification.favourite": "{name} ha marcate tu message como favorite",
   "notification.favourite.name_and_others_with_link": "{name} e <a>{count, plural, one {# altere} other {# alteres}}</a> ha marcate tu message como favorite",
   "notification.favourite_pm": "{name} ha marcate tu mention privte como favorite",
   "notification.favourite_pm.name_and_others_with_link": "{name} e <a>{count, plural, one {# altere} other {# alteres}}</a> ha marcate tu mention private como favorite",
->>>>>>> v4.4.3
+
   "notification.follow": "{name} te seque",
   "notification.follow.name_and_others": "{name} e <a>{count, plural, one {# other} other {# alteres}}</a> te seque",
   "notification.follow_request": "{name} ha requestate de sequer te",
@@ -893,11 +887,7 @@
   "upload_button.label": "Adde imagines, un video o un file de audio",
   "upload_error.limit": "Limite de incargamento de files excedite.",
   "upload_error.poll": "Incargamento de files non permittite con sondages.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Describe lo pro le gente con difficultates auditive",
-  "upload_form.description": "Describe lo pro le gente con difficultates visual",
-=======
->>>>>>> v4.4.3
+
   "upload_form.drag_and_drop.instructions": "Pro prender un annexo multimedial, preme sur le barra de spatios o Enter. Trahente lo, usa le claves de flecha pro displaciar le annexo multimedial in un certe direction. Preme le barra de spatios o Enter de novo pro deponer le annexo multimedial in su nove position, o preme sur Escape pro cancellar.",
   "upload_form.drag_and_drop.on_drag_cancel": "Le displaciamento ha essite cancellate. Le annexo multimedial {item} ha essite deponite.",
   "upload_form.drag_and_drop.on_drag_end": "Le annexo multimedial {item} ha essite deponite.",

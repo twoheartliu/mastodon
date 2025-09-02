@@ -100,8 +100,6 @@
   "alert.unexpected.message": "不明なエラーが発生しました。",
   "alert.unexpected.title": "エラー！",
   "alt_text_badge.title": "代替テキスト",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "代替テキストを追加",
   "alt_text_modal.add_text_from_image": "画像からテキストを追加",
   "alt_text_modal.cancel": "キャンセル",
@@ -109,7 +107,7 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "耳の不自由な方のために説明してください…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "目が不自由な方のために説明してください…",
   "alt_text_modal.done": "完了",
->>>>>>> v4.4.3
+
   "announcement.announcement": "お知らせ",
   "annual_report.summary.archetype.booster": "トレンドハンター",
   "annual_report.summary.archetype.lurker": "ROM専",
@@ -133,13 +131,9 @@
   "attachments_list.unprocessed": "(未処理)",
   "audio.hide": "音声を閉じる",
   "block_modal.remote_users_caveat": "このサーバーはあなたのブロックの意思を尊重するように {domain} へ通知します。しかし、サーバーによってはブロック機能の扱いが異なる場合もありえるため、相手のサーバー側で求める通りの処理が行われる確証はありません。また、公開投稿はユーザーがログアウト状態であれば閲覧できる可能性があります。",
-<<<<<<< HEAD
-  "block_modal.show_less": "注意事項を閉じる",
-  "block_modal.show_more": "注意事項",
-=======
   "block_modal.show_less": "表示を減らす",
   "block_modal.show_more": "続きを表示",
->>>>>>> v4.4.3
+
   "block_modal.they_cant_mention": "相手はあなたへの返信やフォローができなくなります。",
   "block_modal.they_cant_see_posts": "相手はあなたの投稿を閲覧できなくなり、あなたも相手の投稿を閲覧できなくなります。",
   "block_modal.they_will_know": "ブロックは相手からわかります。",
@@ -592,17 +586,13 @@
   "notification.admin.report_statuses_other": "{name}さんが{target}さんを通報しました",
   "notification.admin.sign_up": "{name}さんがサインアップしました",
   "notification.admin.sign_up.name_and_others": "{name}さんとほか{count, plural, other {#人}}がサインアップしました",
-<<<<<<< HEAD
-  "notification.favourite": "{name}さんがお気に入りしました",
-  "notification.favourite.name_and_others_with_link": "{name}さんと<a>ほか{count, plural, other {#人}}</a>がお気に入りしました",
-=======
   "notification.annual_report.message": "「あなたの{year}年の#Wrapstodonが待っています！Mastodonであなたの年のハイライトや思い出の瞬間を公開しましょう！」と訳せます。",
   "notification.annual_report.view": "#Wrapstodon を表示",
   "notification.favourite": "{name}さんがお気に入りしました",
   "notification.favourite.name_and_others_with_link": "{name}さんと<a>ほか{count, plural, other {#人}}</a>がお気に入りしました",
   "notification.favourite_pm": "{name} があなたのプライベートメンションをお気に入りにしました",
   "notification.favourite_pm.name_and_others_with_link": "{name} と <a>{count, plural, other {#人}}</a> があなたのプライベートメンションをお気に入りにしました",
->>>>>>> v4.4.3
+
   "notification.follow": "{name}さんにフォローされました",
   "notification.follow.name_and_others": "{name}さんと<a>ほか{count, plural, other {#人}}</a>にフォローされました",
   "notification.follow_request": "{name}さんがあなたにフォローリクエストしました",
@@ -897,10 +887,8 @@
   "status.reblogs.empty": "まだ誰もブーストしていません。ブーストされるとここに表示されます。",
   "status.redraft": "削除して下書きに戻す",
   "status.remove_bookmark": "ブックマークを削除",
-<<<<<<< HEAD
-=======
   "status.remove_favourite": "お気に入りから削除",
->>>>>>> v4.4.3
+
   "status.replied_in_thread": "ほかのユーザーへ",
   "status.replied_to": "{name}さんへの返信",
   "status.reply": "返信",
@@ -943,11 +931,7 @@
   "upload_button.label": "メディアを追加 (複数の画像または1つの動画か音声ファイル)",
   "upload_error.limit": "アップロードできる上限を超えています。",
   "upload_error.poll": "アンケートではファイルをアップロードできません。",
-<<<<<<< HEAD
-  "upload_form.audio_description": "聴き取りが難しいユーザーへの説明",
-  "upload_form.description": "視覚的に閲覧が難しいユーザーへの説明",
-=======
->>>>>>> v4.4.3
+
   "upload_form.drag_and_drop.instructions": "メディア添付ファイルを選択するには、スペースキーまたはエンターキーを押してください。ドラッグ中は、矢印キーを使ってメディア添付ファイルを任意の方向に移動できます。再度スペースキーまたはエンターキーを押すと新しい位置にメディア添付ファイルをドロップできます。キャンセルするにはエスケープキーを押してください。",
   "upload_form.drag_and_drop.on_drag_cancel": "ドラッグがキャンセルされました。メディア添付ファイル {item} がドロップされました。",
   "upload_form.drag_and_drop.on_drag_end": "メディア添付ファイル {item} がドロップされました。",

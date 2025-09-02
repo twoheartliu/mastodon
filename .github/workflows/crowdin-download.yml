@@ -52,11 +52,8 @@ jobs:
 
       # Create or update the pull request
       - name: Create Pull Request
-<<<<<<< HEAD
-        uses: peter-evans/create-pull-request@v7.0.5
-=======
         uses: peter-evans/create-pull-request@v7
->>>>>>> v4.4.3
+
         with:
           commit-message: 'New Crowdin translations'
           title: 'New Crowdin Translations (automated)'

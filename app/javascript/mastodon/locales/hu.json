@@ -100,8 +100,6 @@
   "alert.unexpected.message": "Váratlan hiba történt.",
   "alert.unexpected.title": "Hoppá!",
   "alt_text_badge.title": "Helyettesítő szöveg",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Helyettesítő szöveg hozzáadása",
   "alt_text_modal.add_text_from_image": "Szöveg hozzáadása a képből",
   "alt_text_modal.cancel": "Mégse",
@@ -109,7 +107,7 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Írd le a hallássérültek számára…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "Írd le a látássérültek számára…",
   "alt_text_modal.done": "Kész",
->>>>>>> v4.4.3
+
   "announcement.announcement": "Közlemény",
   "annual_report.summary.archetype.booster": "A cool-vadász",
   "annual_report.summary.archetype.lurker": "A settenkedő",
@@ -700,16 +698,9 @@
   "notifications_permission_banner.enable": "Asztali értesítések engedélyezése",
   "notifications_permission_banner.how_to_control": "Ahhoz, hogy értesítéseket kapj akkor, amikor a Mastodon nincs megnyitva, engedélyezd az asztali értesítéseket. Pontosan be tudod állítani, hogy milyen interakciókról értesülj a fenti {icon} gombon keresztül, ha egyszer már engedélyezted őket.",
   "notifications_permission_banner.title": "Soha ne mulassz el semmit",
-<<<<<<< HEAD
-  "onboarding.action.back": "Vissza",
-  "onboarding.actions.back": "Vissza",
-  "onboarding.actions.go_to_explore": "Felkapottak megtekintése",
-  "onboarding.actions.go_to_home": "Ugrás a kezdőlapod hírfolyamára",
-  "onboarding.compose.template": "Üdvözlet, #Mastodon!",
-=======
   "onboarding.follows.back": "Vissza",
   "onboarding.follows.done": "Kész",
->>>>>>> v4.4.3
+
   "onboarding.follows.empty": "Sajnos jelenleg nem jeleníthető meg eredmény. Kipróbálhatod a keresést vagy böngészheted a felfedező oldalon a követni kívánt személyeket, vagy próbáld meg később.",
   "onboarding.follows.search": "Keresés",
   "onboarding.follows.title": "A kezdéshez kezdj el embereket követni",
@@ -750,13 +741,9 @@
   "privacy_policy.title": "Adatvédelmi szabályzat",
   "recommended": "Ajánlott",
   "refresh": "Frissítés",
-<<<<<<< HEAD
-  "regeneration_indicator.label": "Betöltés…",
-  "regeneration_indicator.sublabel": "A kezdőlapod hírfolyama épp készül!",
-=======
   "regeneration_indicator.please_stand_by": "Kis türelmet.",
   "regeneration_indicator.preparing_your_home_feed": "Kezdőlapi hírfolyam előkészítése…",
->>>>>>> v4.4.3
+
   "relative_time.days": "{number}n",
   "relative_time.full.days": "{number, plural, one {# napja} other {# napja}}",
   "relative_time.full.hours": "{number, plural, one {# órája} other {# órája}}",
@@ -924,10 +911,8 @@
   "subscribed_languages.save": "Változások mentése",
   "subscribed_languages.target": "Feliratkozott nyelvek módosítása {target} esetében",
   "tabs_bar.home": "Kezdőlap",
-<<<<<<< HEAD
-=======
   "tabs_bar.menu": "Menü",
->>>>>>> v4.4.3
+
   "tabs_bar.notifications": "Értesítések",
   "tabs_bar.publish": "Új bejegyzés",
   "tabs_bar.search": "Keresés",
@@ -949,11 +934,7 @@
   "upload_button.label": "Képek, videó vagy audiófájl hozzáadása",
   "upload_error.limit": "A fájlfeltöltési korlát elérésre került.",
   "upload_error.poll": "Szavazásnál nem lehet fájlt feltölteni.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Leírás siket vagy hallássérült emberek számára",
-  "upload_form.description": "Leírás vak vagy gyengénlátó emberek számára",
-=======
->>>>>>> v4.4.3
+
   "upload_form.drag_and_drop.instructions": "Egy médiamelléklet kiválasztásához nyomj Szóközt vagy Entert. Húzás közben használd a nyílgombokat a médiamelléklet adott irányba történő mozgatásához. A médiamelléklet új pozícióba helyezéséhez nyomd meg a Szóközt vagy az Entert, vagy a megszakításhoz nyomd meg az Esc gombot.",
   "upload_form.drag_and_drop.on_drag_cancel": "Az áthúzás megszakítva. A(z) {item} médiamelléklet el lett dobva.",
   "upload_form.drag_and_drop.on_drag_end": "A(z) {item} médiamelléklet el lett dobva.",

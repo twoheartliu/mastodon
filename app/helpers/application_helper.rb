@@ -238,8 +238,6 @@ module ApplicationHelper
     I18n.t 'user_mailer.welcome.hashtags_recent_count', people: number_with_delimiter(people), count: people
   end
 
-<<<<<<< HEAD
-=======
   def app_store_url_ios
     'https://apps.apple.com/app/mastodon-for-iphone-and-ipad/id1571998974'
   end
@@ -248,7 +246,7 @@ module ApplicationHelper
     'https://play.google.com/store/apps/details?id=org.joinmastodon.android'
   end
 
->>>>>>> v4.4.3
+
   private
 
   def storage_host_var

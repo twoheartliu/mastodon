@@ -47,13 +47,9 @@ RSpec.describe NotificationMailer do
         .and have_standard_headers('mention').for(receiver)
     end
 
-<<<<<<< HEAD
-    include_examples 'delivery to non functional user'
-    include_examples 'delivery without status'
-=======
     it_behaves_like 'delivery to non functional user'
     it_behaves_like 'delivery without status'
->>>>>>> v4.4.3
+
   end
 
   describe 'follow' do
@@ -91,13 +87,9 @@ RSpec.describe NotificationMailer do
         .and have_standard_headers('favourite').for(receiver)
     end
 
-<<<<<<< HEAD
-    include_examples 'delivery to non functional user'
-    include_examples 'delivery without status'
-=======
     it_behaves_like 'delivery to non functional user'
     it_behaves_like 'delivery without status'
->>>>>>> v4.4.3
+
   end
 
   describe 'reblog' do
@@ -117,13 +109,9 @@ RSpec.describe NotificationMailer do
         .and have_standard_headers('reblog').for(receiver)
     end
 
-<<<<<<< HEAD
-    include_examples 'delivery to non functional user'
-    include_examples 'delivery without status'
-=======
     it_behaves_like 'delivery to non functional user'
     it_behaves_like 'delivery without status'
->>>>>>> v4.4.3
+
   end
 
   describe 'follow_request' do

@@ -49,13 +49,11 @@ es-MX:
           attributes:
             reblog:
               taken: de la publicación ya existe
-<<<<<<< HEAD
-=======
         terms_of_service:
           attributes:
             effective_date:
               too_soon: es demasiado pronto, debe ser posterior al %{date}
->>>>>>> v4.4.3
+
         user:
           attributes:
             date_of_birth:

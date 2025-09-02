@@ -172,9 +172,6 @@ export function createNotificationGroupFromJSON(
         sampleAccountIds,
       };
     }
-<<<<<<< HEAD
-
-=======
     case 'annual_report': {
       const { annual_report, ...groupWithoutAnnualReport } = group;
       return {
@@ -184,7 +181,7 @@ export function createNotificationGroupFromJSON(
         sampleAccountIds,
       };
     }
->>>>>>> v4.4.3
+
     default:
       return {
         sampleAccountIds,

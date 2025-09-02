@@ -229,11 +229,8 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
       account ||= ActivityPub::FetchRemoteAccountService.new.call(href, request_id: @request_id)
 
       account&.id
-<<<<<<< HEAD
-    rescue Mastodon::UnexpectedResponseError, HTTP::TimeoutError, HTTP::ConnectionError, OpenSSL::SSL::SSLError
-=======
     rescue Mastodon::UnexpectedResponseError, *Mastodon::HTTP_CONNECTION_ERRORS
->>>>>>> v4.4.3
+
       # Since previous mentions are about already-known accounts,
       # they don't try to resolve again and won't fall into this case.
       # In other words, this failure case is only for new mentions and won't

@@ -3,11 +3,8 @@ it:
   simple_form:
     hints:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Uno per riga. Protegge da false attribuzioni.
-=======
         attribution_domains: Uno per riga. Protegge da false attribuzioni.
->>>>>>> v4.4.3
+
         discoverable: I tuoi post pubblici e il tuo profilo potrebbero essere presenti o consigliati in varie aree di Mastodon e il tuo profilo potrebbe essere suggerito ad altri utenti.
         display_name: Il tuo nome completo o il tuo soprannome.
         fields: La tua homepage, i pronomi, l'età, tutto quello che vuoi.
@@ -169,11 +166,8 @@ it:
         url: Dove gli eventi saranno inviati
     labels:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Siti web autorizzati ad accreditarti
-=======
         attribution_domains: Siti web autorizzati ad accreditarti
->>>>>>> v4.4.3
+
         discoverable: Include il profilo e i post negli algoritmi di scoperta
         fields:
           name: Etichetta

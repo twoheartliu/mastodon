@@ -30,14 +30,8 @@ class ActivityPub::SynchronizeFollowersService < BaseService
     # Account record, and should we not do that, we should have sent a Delete.
     # In any case there is not much we can do if that occurs.
 
-<<<<<<< HEAD
-    # TODO: this will need changes when switching to numeric IDs
-
-    usernames = items.filter_map { |uri| ActivityPub::TagManager.instance.uri_to_local_id(uri, :username)&.downcase }
-    Account.local.with_username(usernames)
-=======
     ActivityPub::TagManager.instance.uris_to_local_accounts(items)
->>>>>>> v4.4.3
+
   end
 
   def remove_unexpected_local_followers!

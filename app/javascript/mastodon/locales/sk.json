@@ -93,12 +93,10 @@
   "alert.unexpected.message": "Vyskytla sa nečakaná chyba.",
   "alert.unexpected.title": "Ups!",
   "alt_text_badge.title": "Alternatívny popis",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_text_from_image": "Pridaj text z obrázka",
   "alt_text_modal.cancel": "Zrušiť",
   "alt_text_modal.done": "Hotovo",
->>>>>>> v4.4.3
+
   "announcement.announcement": "Oznámenie",
   "annual_report.summary.archetype.oracle": "Veštec",
   "annual_report.summary.followers.followers": "sledovatelia",
@@ -388,15 +386,6 @@
   "ignore_notifications_modal.not_followers_title": "Nevšímať si oznámenia od ľudí, ktorí ťa nenasledujú?",
   "ignore_notifications_modal.not_following_title": "Nevšímať si oznámenia od ľudí, ktorých nenasleduješ?",
   "ignore_notifications_modal.private_mentions_title": "Nevšímať si oznámenia o nevyžiadaných súkromných spomínaniach?",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "S účtom na Mastodone môžete tento príspevok ohviezdičkovať, tak dať autorovi vedieť, že sa vám páči, a uložiť si ho na neskôr.",
-  "interaction_modal.description.follow": "S účtom na Mastodone môžete {name} sledovať a vidieť ich príspevky vo svojom domovskom kanáli.",
-  "interaction_modal.description.reblog": "S účtom na Mastodone môžete tento príspevok zdeľať so svojimi sledovateľmi.",
-  "interaction_modal.description.reply": "S účtom na Mastodone môžete na tento príspevok odpovedať.",
-  "interaction_modal.login.action": "Prejsť domov",
-  "interaction_modal.login.prompt": "Doména vášho domovského servera, napr. mastodon.social",
-  "interaction_modal.no_account_yet": "Nie ste na Mastodone?",
-=======
   "info_button.label": "Pomoc",
   "interaction_modal.action.favourite": "Pre pokračovanie si musíš obľúbiť zo svojho účtu.",
   "interaction_modal.action.follow": "Pre pokračovanie musíš nasledovať zo svojho účtu.",
@@ -404,7 +393,7 @@
   "interaction_modal.action.vote": "Pre pokračovanie musíš hlasovať s tvojho účtu.",
   "interaction_modal.go": "Prejdi",
   "interaction_modal.no_account_yet": "Ešte nemáš účet?",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "Na inom serveri",
   "interaction_modal.on_this_server": "Na tomto serveri",
   "interaction_modal.title.favourite": "Ohviezdičkovať príspevok od {name}",
@@ -460,17 +449,13 @@
   "link_preview.author": "Autor: {name}",
   "link_preview.more_from_author": "Viac od {name}",
   "link_preview.shares": "{count, plural, one {{counter} príspevok} other {{counter} príspevkov}}",
-<<<<<<< HEAD
-  "lists.account.add": "Pridať do zoznamu",
-  "lists.account.remove": "Odstrániť zo zoznamu",
-=======
   "lists.add_member": "Pridaj",
   "lists.add_to_list": "Pridaj do zoznamu",
   "lists.add_to_lists": "Pridaj {name} do zoznamov",
   "lists.create": "Vytvor",
   "lists.create_a_list_to_organize": "Vytvor nový zoznam pre spravovanie tvojej domovskej osi",
   "lists.create_list": "Vytvor zoznam",
->>>>>>> v4.4.3
+
   "lists.delete": "Vymazať zoznam",
   "lists.done": "Hotovo",
   "lists.edit": "Upraviť zoznam",
@@ -613,13 +598,9 @@
   "onboarding.follows.back": "Späť",
   "onboarding.follows.done": "Hotovo",
   "onboarding.follows.empty": "Žiaľ, momentálne sa nedajú zobraziť žiadne výsledky. Môžete skúsiť použiť vyhľadávanie alebo navštíviť stránku objavovania a nájsť ľudí, ktorých chcete sledovať, alebo to skúste znova neskôr.",
-<<<<<<< HEAD
-  "onboarding.follows.lead": "Váš domovský kanál je váš hlavný spôsob objavovania Mastodonu. Čím viac ľudí sledujete, tým bude aktívnejší a zaujímavejší. Tu je pár tipov na začiatok:",
-  "onboarding.follows.title": "Prispôsob si svoj domovský kanál",
-=======
   "onboarding.follows.search": "Hľadať",
   "onboarding.follows.title": "Pre začiatok nasleduj ľudí",
->>>>>>> v4.4.3
+
   "onboarding.profile.discoverable": "Nastavte svoj profil ako objaviteľný",
   "onboarding.profile.discoverable_hint": "Keď si na Mastodone zapnete objaviteľnosť, vaše príspevky sa môžu zobrazovať vo výsledkoch vyhľadávania a v populárnych. Váš profil môže byť navyše navrhovaný ľuďom, s ktorými máte podobné záujmy.",
   "onboarding.profile.display_name": "Používateľské meno",
@@ -657,13 +638,9 @@
   "privacy_policy.title": "Pravidlá ochrany súkromia",
   "recommended": "Odporúčané",
   "refresh": "Obnoviť",
-<<<<<<< HEAD
-  "regeneration_indicator.label": "Načítavanie…",
-  "regeneration_indicator.sublabel": "Tvoj domovský kanál sa pripravuje!",
-=======
   "regeneration_indicator.please_stand_by": "Prosím, čakajte.",
   "regeneration_indicator.preparing_your_home_feed": "Pripravuje sa tvoj domáci kanál…",
->>>>>>> v4.4.3
+
   "relative_time.days": "{number} dní",
   "relative_time.full.days": "Pred {number, plural, one {# dňom} other {# dňami}}",
   "relative_time.full.hours": "Pred {number, plural, one {# hodinou} other {# hodinami}}",
@@ -797,10 +774,8 @@
   "status.reblogs.empty": "Nikto ešte tento príspevok nezdieľal. Keď tak niekto urobí, zobrazí sa to tu.",
   "status.redraft": "Vymazať a prepísať",
   "status.remove_bookmark": "Odstrániť záložku",
-<<<<<<< HEAD
-=======
   "status.remove_favourite": "Odstráň z obľúbených",
->>>>>>> v4.4.3
+
   "status.replied_in_thread": "Odpovedal/a vo vlákne",
   "status.replied_to": "Odpoveď na {name}",
   "status.reply": "Odpovedať",

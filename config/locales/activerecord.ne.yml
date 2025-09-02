@@ -29,10 +29,8 @@ ne:
           attributes:
             website:
               invalid: मान्य URL होइन
-<<<<<<< HEAD
-=======
         list_account:
           attributes:
             account_id:
               taken: पहिले नै सूचीमा छ
->>>>>>> v4.4.3
+

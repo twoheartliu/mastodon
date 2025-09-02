@@ -100,8 +100,6 @@
   "alert.unexpected.message": "Προέκυψε απροσδόκητο σφάλμα.",
   "alert.unexpected.title": "Ουπς!",
   "alt_text_badge.title": "Εναλλακτικό κείμενο",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Προσθήκη εναλλακτικού κειμένου",
   "alt_text_modal.add_text_from_image": "Προσθήκη κειμένου από εικόνα",
   "alt_text_modal.cancel": "Ακύρωση",
@@ -109,7 +107,7 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Περιέγραψε αυτό για άτομα με προβλήματα ακοής…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "Περιέγραψε αυτό για άτομα με προβλήματα όρασης…",
   "alt_text_modal.done": "Ολοκληρώθηκε",
->>>>>>> v4.4.3
+
   "announcement.announcement": "Ανακοίνωση",
   "annual_report.summary.archetype.booster": "Ο κυνηγός των φοβερών",
   "annual_report.summary.archetype.lurker": "Ο διακριτικός",
@@ -448,15 +446,6 @@
   "ignore_notifications_modal.not_followers_title": "Αγνόηση ειδοποιήσεων από άτομα που δε σας ακολουθούν;",
   "ignore_notifications_modal.not_following_title": "Αγνόηση ειδοποιήσεων από άτομα που δεν ακολουθείς;",
   "ignore_notifications_modal.private_mentions_title": "Αγνόηση ειδοποιήσεων από μη ζητηθείσες ιδιωτικές αναφορές;",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "Με ένα συντάκτη στο Mastodon μπορείς να αγαπήσεις αυτή την ανάρτηση, για να ενημερώσεις τον συγγραφέα ότι την εκτιμάς και να την αποθηκεύσεις για αργότερα.",
-  "interaction_modal.description.follow": "Με έναν λογαριασμό Mastodon, μπορείς να ακολουθήσεις τον/την {name} ώστε να λαμβάνεις τις αναρτήσεις του/της στη δική σου ροή.",
-  "interaction_modal.description.reblog": "Με ένα λογαριασμό Mastodon, μπορείς να ενισχύσεις αυτή την ανάρτηση για να τη μοιραστείς με τους δικούς σου ακολούθους.",
-  "interaction_modal.description.reply": "Με ένα λογαριασμό Mastodon, μπορείς να απαντήσεις σε αυτή την ανάρτηση.",
-  "interaction_modal.login.action": "Πήγαινέ με στην αρχική σελίδα",
-  "interaction_modal.login.prompt": "Τομέας του οικιακού σου διακομιστή, πχ. mastodon.social",
-  "interaction_modal.no_account_yet": "Δεν είστε στο Mastodon;",
-=======
   "info_button.label": "Βοήθεια",
   "info_button.what_is_alt_text": "Το εναλλακτικό κείμενο παρέχει περιγραφές εικόνας για άτομα με προβλήματα όρασης, διαδικτυακές συνδέσεις χαμηλής ταχύτητας ή για άτομα που αναζητούν επιπλέον περιεχόμενο.\\n\\nΜπορείς να βελτιώσεις την προσβασιμότητα και την κατανόηση για όλους, γράφοντας σαφές, συνοπτικό και αντικειμενικό εναλλακτικό κείμενο.\\n\\n<ul><li>Κατέγραψε σημαντικά στοιχεία</li>\\n<li>Συνόψισε το κείμενο στις εικόνες</li>\\n<li>Χρησιμοποίησε δομή κανονικής πρότασης</li>\\n<li>Απέφυγε περιττές πληροφορίες</li>\\n<li>Εστίασε στις τάσεις και τα βασικά ευρήματα σε σύνθετα οπτικά στοιχεία (όπως διαγράμματα ή χάρτες)</li></ul>",
   "interaction_modal.action.favourite": "Για να συνεχίσεις, θα πρέπει να αγαπήσεις από τον λογαριασμό σου.",
@@ -466,7 +455,7 @@
   "interaction_modal.action.vote": "Για να συνεχίσεις, θα πρέπει να ψηφίσεις από τον λογαριασμό σου.",
   "interaction_modal.go": "Πάμε",
   "interaction_modal.no_account_yet": "Δεν έχεις ακόμη λογαριασμό;",
->>>>>>> v4.4.3
+
   "interaction_modal.on_another_server": "Σε διαφορετικό διακομιστή",
   "interaction_modal.on_this_server": "Σε αυτόν τον διακομιστή",
   "interaction_modal.title.favourite": "Αγάπησε την ανάρτηση του χρήστη {name}",
@@ -604,13 +593,10 @@
   "notification.annual_report.view": "Προβολή #Wrapstodon",
   "notification.favourite": "{name} αγάπησε την ανάρτηση σου",
   "notification.favourite.name_and_others_with_link": "{name} και <a>{count, plural, one {# ακόμη} other {# ακόμη}}</a> αγάπησαν την ανάρτησή σου",
-<<<<<<< HEAD
-  "notification.follow": "Ο/Η {name} σε ακολούθησε",
-=======
   "notification.favourite_pm": "Ο χρήστης {name} αγάπησε την ιδιωτική σου επισήμανση",
   "notification.favourite_pm.name_and_others_with_link": "Ο χρήστης {name} και <a>{count, plural, one {# ακόμη} other {# ακόμη}}</a> αγάπησαν την ιδωτική σου επισήμανση",
   "notification.follow": "Ο χρήστης {name} σε ακολούθησε",
->>>>>>> v4.4.3
+
   "notification.follow.name_and_others": "Ο χρήστης {name} και <a>{count, plural, one {# ακόμη} other {# ακόμη}}</a> σε ακολούθησαν",
   "notification.follow_request": "Ο/H {name} ζήτησε να σε ακολουθήσει",
   "notification.follow_request.name_and_others": "{name} και {count, plural, one {# άλλος} other {# άλλοι}} ζήτησαν να σε ακολουθήσουν",
@@ -947,11 +933,7 @@
   "upload_button.label": "Πρόσθεσε εικόνες, ένα βίντεο ή ένα αρχείο ήχου",
   "upload_error.limit": "Υπέρβαση ορίου μεγέθους ανεβασμένων αρχείων.",
   "upload_error.poll": "Στις δημοσκοπήσεις δεν επιτρέπεται η μεταφόρτωση αρχείου.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Περιγραφή για άτομα με προβλήματα ακοής",
-  "upload_form.description": "Περιγραφή για άτομα με προβλήματα όρασης",
-=======
->>>>>>> v4.4.3
+
   "upload_form.drag_and_drop.instructions": "Για να επιλέξετε ένα συνημμένο αρχείο πολυμέσων, πατήστε το Space ή το Enter. Ενώ το σέρνετε, χρησιμοποιήστε τα πλήκτρα βέλους για να μετακινήσετε το συνημμένο αρχείο πολυμέσων προς οποιαδήποτε κατεύθυνση. Πατήστε ξανά το Space ή το Enter για να αποθέσετε το συνημμένο αρχείο πολυμέσων στη νέα του θέση ή πατήστε το Escape για ακύρωση.",
   "upload_form.drag_and_drop.on_drag_cancel": "Η μετακίνηση ακυρώθηκε. Έγινε απόθεση του συνημμένου αρχείου πολυμέσων «{item}».",
   "upload_form.drag_and_drop.on_drag_end": "Έγινε απόθεση του συνημμένου αρχείου πολυμέσων «{item}».",

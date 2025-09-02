@@ -1,11 +1,8 @@
 # frozen_string_literal: true
 
 class PollOptionsValidator < ActiveModel::Validator
-<<<<<<< HEAD
-  MAX_OPTIONS      = 12
-=======
   MAX_OPTIONS      = 4
->>>>>>> v4.4.3
+
   MAX_OPTION_CHARS = 50
 
   def validate(poll)

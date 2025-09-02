@@ -270,17 +270,12 @@ gl:
         destroy_user_role_html: "%{name} eliminou o rol %{target}"
         disable_2fa_user_html: "%{name} desactivou o requerimento do segundo factor para a usuaria %{target}"
         disable_custom_emoji_html: "%{name} desactivou o emoji %{target}"
-<<<<<<< HEAD
-        disable_sign_in_token_auth_user_html: "%{name} desactivou a autenticación por token no correo para %{target}"
-        disable_user_html: "%{name} desactivou as credenciais para a usuaria %{target}"
-        enable_custom_emoji_html: "%{name} activou o emoji %{target}"
-=======
         disable_relay_html: "%{name} desactivou o repetidor %{target}"
         disable_sign_in_token_auth_user_html: "%{name} desactivou a autenticación por token no correo para %{target}"
         disable_user_html: "%{name} desactivou as credenciais para a usuaria %{target}"
         enable_custom_emoji_html: "%{name} activou o emoji %{target}"
         enable_relay_html: "%{name} activou o repetidor %{target}"
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user_html: "%{name} activou a autenticación con token no correo para %{target}"
         enable_user_html: "%{name} activou as credenciais para a usuaria %{target}"
         memorialize_account_html: "%{name} convertiu a conta de %{target} nunha páxina para o recordo"
@@ -1901,11 +1896,8 @@ gl:
     ignore_favs: Ignorar favoritas
     ignore_reblogs: Ignorar promocións
     interaction_exceptions: Excepcións baseadas en interaccións
-<<<<<<< HEAD
-    interaction_exceptions_explanation: Ten en conta que non hai garantía de que se eliminen as túas publicacións se baixan do límite de promocións ou favorecementos se nalgún momento o tivesen superado.
-=======
     interaction_exceptions_explanation: Ten en conta que non hai garantía de que se eliminen as túas publicacións se baixan do límite de promocións ou favorecementos se nalgún momento o tivese superado.
->>>>>>> v4.4.3
+
     keep_direct: Manter mensaxes directas
     keep_direct_hint: Non borrar ningunha das túas mensaxes directas
     keep_media: Manter publicacións que conteñen multimedia

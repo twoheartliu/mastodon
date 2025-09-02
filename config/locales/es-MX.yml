@@ -199,10 +199,8 @@ es-MX:
         destroy_email_domain_block: Eliminar bloqueo de dominio de correo electrónico
         destroy_instance: Purgar dominio
         destroy_ip_block: Eliminar regla IP
-<<<<<<< HEAD
-=======
         destroy_relay: Eliminar Relé
->>>>>>> v4.4.3
+
         destroy_status: Eliminar Publicación
         destroy_unavailable_domain: Eliminar Dominio No Disponible
         destroy_user_role: Destruir Rol
@@ -267,26 +265,19 @@ es-MX:
         destroy_email_domain_block_html: "%{name} desbloqueó el dominio de correo electrónico %{target}"
         destroy_instance_html: "%{name} purgó el dominio %{target}"
         destroy_ip_block_html: "%{name} eliminó una regla para la IP %{target}"
-<<<<<<< HEAD
-=======
         destroy_relay_html: "%{name} eliminó el relé %{target}"
->>>>>>> v4.4.3
+
         destroy_status_html: "%{name} eliminó la publicación por %{target}"
         destroy_unavailable_domain_html: "%{name} reanudó las entregas al dominio %{target}"
         destroy_user_role_html: "%{name} eliminó el rol %{target}"
         disable_2fa_user_html: "%{name} desactivó el requisito de dos factores para el usuario %{target}"
         disable_custom_emoji_html: "%{name} desactivó el emoji %{target}"
-<<<<<<< HEAD
-        disable_sign_in_token_auth_user_html: "%{name} desactivó la autenticación por token de correo electrónico para %{target}"
-        disable_user_html: "%{name} deshabilitó el inicio de sesión para el usuario %{target}"
-        enable_custom_emoji_html: "%{name} activó el emoji %{target}"
-=======
         disable_relay_html: "%{name} desactivó el relé %{target}"
         disable_sign_in_token_auth_user_html: "%{name} desactivó la autenticación por token de correo electrónico para %{target}"
         disable_user_html: "%{name} deshabilitó el inicio de sesión para el usuario %{target}"
         enable_custom_emoji_html: "%{name} activó el emoji %{target}"
         enable_relay_html: "%{name} activó el relé %{target}"
->>>>>>> v4.4.3
+
         enable_sign_in_token_auth_user_html: "%{name} activó autenticación por token de correo electrónico para %{target}"
         enable_user_html: "%{name} habilitó el inicio de sesión para el usuario %{target}"
         memorialize_account_html: "%{name} convirtió la cuenta de %{target} en una página in memoriam"
@@ -903,10 +894,8 @@ es-MX:
       media:
         title: Multimedia
       metadata: Metadatos
-<<<<<<< HEAD
-=======
       no_history: Esta publicación no ha sido editada
->>>>>>> v4.4.3
+
       no_status_selected: No se cambió ninguna publicación al no seleccionar ninguna
       open: Abrir publicación
       original_status: Publicación original
@@ -995,8 +984,6 @@ es-MX:
       search: Buscar
       title: Etiquetas
       updated_msg: Etiquetas actualizadas exitosamente
-<<<<<<< HEAD
-=======
     terms_of_service:
       back: Regresar a las condiciones del servicio
       changelog: Lo que ha cambiado
@@ -1027,7 +1014,7 @@ es-MX:
       published_on_html: Publicado el %{date}
       save_draft: Guardar borrador
       title: Condiciones del servicio
->>>>>>> v4.4.3
+
     title: Administración
     trends:
       allow: Permitir
@@ -1780,11 +1767,8 @@ es-MX:
   scheduled_statuses:
     over_daily_limit: Has superado el límite de %{limit} publicaciones programadas para ese día
     over_total_limit: Has superado el límite de %{limit} publicaciones programadas
-<<<<<<< HEAD
-    too_soon: La fecha programada debe estar en el futuro
-=======
     too_soon: la fecha debe ser en el futuro
->>>>>>> v4.4.3
+
   self_destruct:
     lead_html: Desafortunadamente, <strong>%{domain}</strong> está cerrando de manera permanente. Si tenías una cuenta ahí, no puedes continuar utilizándolo, pero puedes solicitar un respaldo de tus datos.
     title: Este servidor está cerrando
@@ -1896,13 +1880,11 @@ es-MX:
       limit: Ya has fijado el número máximo de publicaciones
       ownership: La publicación de alguien más no puede fijarse
       reblog: No se puede fijar una publicación impulsada
-<<<<<<< HEAD
-=======
     quote_policies:
       followers: Solo tus seguidores
       nobody: Nadie
       public: Cualquiera
->>>>>>> v4.4.3
+
     title: "%{name}: «%{quote}»"
     visibilities:
       direct: Directa
