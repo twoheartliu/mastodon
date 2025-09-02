@@ -5,7 +5,11 @@ require 'rails_helper'
 RSpec.describe DomainAllowPolicy do
   subject { described_class }
 
+<<<<<<< HEAD
   let(:admin)   { Fabricate(:user, role: UserRole.find_by(name: 'Admin')).account }
+=======
+  let(:admin)   { Fabricate(:admin_user).account }
+>>>>>>> v4.4.3
   let(:john)    { Fabricate(:account) }
 
   permissions :index?, :show?, :create?, :destroy? do

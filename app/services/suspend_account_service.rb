@@ -15,12 +15,13 @@ class SuspendAccountService < BaseService
     unmerge_from_home_timelines!
     unmerge_from_list_timelines!
     privatize_media_attachments!
+    remove_from_trends!
   end
 
   private
 
   def reject_remote_follows!
-    return if @account.local? || !@account.activitypub?
+    return if @account.local? || !@account.activitypub? || @account.suspension_origin_remote?
 
     # When suspending a remote account, the account obviously doesn't
     # actually become suspended on its origin server, i.e. unlike a
@@ -63,8 +64,10 @@ class SuspendAccountService < BaseService
   end
 
   def privatize_media_attachments!
-    attachment_names = MediaAttachment.attachment_definitions.keys
+    UpdateMediaAttachmentsPermissionsService.new.call(@account.media_attachments, :private)
+  end
 
+<<<<<<< HEAD
     @account.media_attachments.find_each do |media_attachment|
       attachment_names.each do |attachment_name|
         attachment = media_attachment.public_send(attachment_name)
@@ -99,6 +102,10 @@ class SuspendAccountService < BaseService
         end
       end
     end
+=======
+  def remove_from_trends!
+    StatusTrend.where(account: @account).delete_all
+>>>>>>> v4.4.3
   end
 
   def signed_activity_json

@@ -6,6 +6,7 @@
 class HttpSignatureDraft
   REQUEST_TARGET = '(request-target)'
 
+<<<<<<< HEAD
   def initialize(keypair, key_id, full_path: true)
     @keypair = keypair
     @key_id = key_id
@@ -14,6 +15,15 @@ class HttpSignatureDraft
 
   def request_target(verb, url)
     if url.query.nil? || !@full_path
+=======
+  def initialize(keypair, key_id)
+    @keypair = keypair
+    @key_id = key_id
+  end
+
+  def request_target(verb, url)
+    if url.query.nil?
+>>>>>>> v4.4.3
       "#{verb} #{url.path}"
     else
       "#{verb} #{url.path}?#{url.query}"

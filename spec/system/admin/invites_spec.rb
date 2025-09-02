@@ -6,7 +6,11 @@ RSpec.describe 'Admin Invites' do
   describe 'Invite interaction' do
     let!(:invite) { Fabricate(:invite, expires_at: nil) }
 
+<<<<<<< HEAD
     let(:user) { Fabricate(:user, role: UserRole.find_by(name: 'Admin')) }
+=======
+    let(:user) { Fabricate(:admin_user) }
+>>>>>>> v4.4.3
 
     before { sign_in user }
 
@@ -57,7 +61,11 @@ RSpec.describe 'Admin Invites' do
     end
 
     def max_use_field
+<<<<<<< HEAD
       I18n.t('simple_form.labels.defaults.max_uses')
+=======
+      form_label('defaults.max_uses')
+>>>>>>> v4.4.3
     end
   end
 end

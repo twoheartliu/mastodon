@@ -24,3 +24,13 @@ fil:
       title: Gawin ang moderation na aksiyon sa %{acct}
     account_moderation_notes:
       create: Mag-iwan ng note
+<<<<<<< HEAD
+=======
+    fasp:
+      providers:
+        save: Iimbak
+    rules:
+      add_translation: Magdagdag ng pagsasalin
+      translation: Pagsasalin
+      translations: Mga Pagsasalin
+>>>>>>> v4.4.3

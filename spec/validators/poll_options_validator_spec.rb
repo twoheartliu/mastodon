@@ -41,5 +41,34 @@ RSpec.describe PollOptionsValidator do
         expect(errors).to have_received(:add)
       end
     end
+<<<<<<< HEAD
+=======
+
+    describe 'character length of poll options' do
+      context 'when poll has acceptable length options' do
+        let(:options) { %w(test this) }
+
+        it 'has no errors' do
+          expect(errors).to_not have_received(:add)
+        end
+      end
+
+      context 'when poll has multibyte and ZWJ emoji options' do
+        let(:options) { ['✨' * described_class::MAX_OPTION_CHARS, '🏳️‍⚧️' * described_class::MAX_OPTION_CHARS] }
+
+        it 'has no errors' do
+          expect(errors).to_not have_received(:add)
+        end
+      end
+
+      context 'when poll has options that are too long' do
+        let(:options) { ['ok', 'a' * (described_class::MAX_OPTION_CHARS**2)] }
+
+        it 'has errors' do
+          expect(errors).to have_received(:add)
+        end
+      end
+    end
+>>>>>>> v4.4.3
   end
 end

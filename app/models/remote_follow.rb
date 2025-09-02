@@ -66,7 +66,11 @@ class RemoteFollow
 
   def acct_resource
     @acct_resource ||= Webfinger.new("acct:#{acct}").perform
+<<<<<<< HEAD
   rescue Webfinger::Error, HTTP::ConnectionError
+=======
+  rescue Webfinger::Error, *Mastodon::HTTP_CONNECTION_ERRORS
+>>>>>>> v4.4.3
     nil
   end
 

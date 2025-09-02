@@ -59,6 +59,7 @@ class UnsuspendAccountService < BaseService
   end
 
   def publish_media_attachments!
+<<<<<<< HEAD
     attachment_names = MediaAttachment.attachment_definitions.keys
 
     @account.media_attachments.find_each do |media_attachment|
@@ -95,6 +96,9 @@ class UnsuspendAccountService < BaseService
         end
       end
     end
+=======
+    UpdateMediaAttachmentsPermissionsService.new.call(@account.media_attachments, :public)
+>>>>>>> v4.4.3
   end
 
   def signed_activity_json

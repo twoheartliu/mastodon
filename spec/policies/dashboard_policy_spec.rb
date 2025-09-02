@@ -5,7 +5,11 @@ require 'rails_helper'
 RSpec.describe DashboardPolicy do
   subject { described_class }
 
+<<<<<<< HEAD
   let(:admin) { Fabricate(:user, role: UserRole.find_by(name: 'Admin')).account }
+=======
+  let(:admin) { Fabricate(:admin_user).account }
+>>>>>>> v4.4.3
   let(:account) { Fabricate(:account) }
 
   permissions :index? do

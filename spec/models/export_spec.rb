@@ -87,6 +87,7 @@ RSpec.describe Export do
           include('one@local.host'),
           include(be_present)
         )
+<<<<<<< HEAD
     end
   end
 
@@ -172,6 +173,22 @@ RSpec.describe Export do
 
     it 'returns the total number of account domain blocks' do
       expect(subject.total_domain_blocks).to eq(2)
+=======
+    end
+  end
+
+  describe '#to_blocked_domains_csv' do
+    before { Fabricate.times(2, :account_domain_block, account: account) }
+
+    let(:export) { CSV.parse(subject.to_blocked_domains_csv) }
+
+    it 'returns a csv of the blocked domains' do
+      expect(export)
+        .to contain_exactly(
+          include(/example/),
+          include(/example/)
+        )
+>>>>>>> v4.4.3
     end
   end
 end

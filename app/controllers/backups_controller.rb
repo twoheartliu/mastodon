@@ -12,6 +12,7 @@ class BackupsController < ApplicationController
   BACKUP_LINK_TIMEOUT = 1.hour.freeze
 
   def download
+<<<<<<< HEAD
     case Paperclip::Attachment.default_options[:storage]
     when :s3, :azure
       redirect_to @backup.dump.expiring_url(BACKUP_LINK_TIMEOUT.to_i), allow_other_host: true
@@ -24,6 +25,9 @@ class BackupsController < ApplicationController
     when :filesystem
       redirect_to full_asset_url(@backup.dump.url), allow_other_host: true
     end
+=======
+    redirect_to expiring_asset_url(@backup.dump, BACKUP_LINK_TIMEOUT), allow_other_host: true
+>>>>>>> v4.4.3
   end
 
   private
