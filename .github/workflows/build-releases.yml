@@ -32,7 +32,7 @@ jobs:
     with:
       file_to_build: streaming/Dockerfile
       push_to_images: |
-        twoheartliu/mastodon-streaming
+        twoheart/mastodon-streaming
         ghcr.io/twoheartliu/mastodon-streaming
       # Do not use cache when building releases, so apt update is always ran and the release always contain the latest packages
       cache: false
