@@ -12,7 +12,8 @@
       "Bash(grep:*)",
       "Bash(corepack enable)",
       "Bash(yarn lint:js:*)",
-      "Bash(yarn build:*)"
+      "Bash(yarn build:*)",
+      "Bash(ruby:*)"
     ],
     "deny": [],
     "ask": []
