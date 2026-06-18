@@ -1,8 +1,1 @@
 default: styles/application.scss
-contrast: styles/contrast.scss
-mastodon-light: styles/mastodon-light.scss
-fanfou-classic: styles/fanfou-classic.scss
-tangerineui: styles/tangerineui.scss
-tangerineui-purple: styles/tangerineui-purple.scss
-tangerineui-cherry: styles/tangerineui-cherry.scss
-tangerineui-lagoon: styles/tangerineui-lagoon.scss

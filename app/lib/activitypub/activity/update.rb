@@ -13,6 +13,8 @@ class ActivityPub::Activity::Update < ActivityPub::Activity
       update_account
     elsif supported_object_type? || converted_object_type?
       update_status
+    elsif equals_or_includes_any?(@object['type'], ['FeaturedCollection'])
+      update_collection
     end
   end
 
@@ -40,6 +42,13 @@ class ActivityPub::Activity::Update < ActivityPub::Activity
 
     ActivityPub::ProcessStatusUpdateService.new.call(@status, @json, @object, request_id: @options[:request_id])
   end
+
+  def update_collection
+    return reject_payload! if non_matching_uri_hosts?(@account.uri, object_uri)
+
+    ActivityPub::ProcessFeaturedCollectionService.new.call(@account, @object)
+  end
+
 
   def object_too_old?
     @object['published'].present? && @object['published'].to_datetime < OBJECT_AGE_THRESHOLD.ago
