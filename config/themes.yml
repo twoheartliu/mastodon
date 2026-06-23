@@ -1,1 +1,3 @@
 default: styles/application.scss
+
+vermilion_seal: styles/vermilion_seal.scss

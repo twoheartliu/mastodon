@@ -2193,6 +2193,7 @@ en:
     title: The terms of service of %{domain} are changing
   themes:
     default: Mastodon
+    vermilion_seal: Vermilion Seal
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
