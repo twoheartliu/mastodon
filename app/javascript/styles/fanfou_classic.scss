@@ -1,0 +1,69 @@
+@use 'mastodon/variables';
+@use 'mastodon/mixins';
+@use 'fonts/roboto';
+@use 'fonts/roboto-mono';
+
+@use 'mastodon/reset';
+@use 'fanfou_classic_theme';
+@use 'mastodon/basics';
+@use 'mastodon/branding';
+@use 'mastodon/containers';
+@use 'mastodon/lists';
+@use 'mastodon/widgets';
+@use 'mastodon/forms';
+@use 'mastodon/accounts';
+@use 'mastodon/components';
+@use 'mastodon/polls';
+@use 'mastodon/modal';
+@use 'mastodon/emoji_picker';
+@use 'mastodon/about';
+@use 'mastodon/tables';
+@use 'mastodon/admin';
+@use 'mastodon/dashboard';
+@use 'mastodon/rtl';
+@use 'mastodon/rich_text';
+
+// Light scheme: Fanfou's actual space background — teal base with starfield image.
+[data-color-scheme='light'] body {
+  background: #acdae5 url(//static2.fanfou.com/img/bg/0.png) no-repeat 0 0;
+  background-attachment: fixed;
+}
+
+// -- Fanfou Classic theme-specific component overrides --
+
+// Navigation panel: Fanfou green sidebar — light mode only.
+[data-color-scheme='light'] .navigation-panel {
+  background-color: var(--color-space-green-100);
+  border-left: 1px solid var(--color-space-green-300);
+}
+
+// Column header: remove the border so it blends with the rounded panel.
+[data-color-scheme='light'] .column-header {
+  border: none;
+}
+
+// Mobile layout: remove extra padding so the background shows through edge-to-edge.
+.columns-area--mobile {
+  padding: 0;
+}
+
+// Push main columns down slightly and add rounded corners.
+// Only on desktop — keep mobile layout unchanged.
+@media screen and (min-width: 1175px) {
+
+  .columns-area__panels__main,
+  .columns-area__panels__pane__inner,
+  .navigation-panel {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  [data-color-scheme='light'] .columns-area__panels__main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  [data-color-scheme='light'] .column>.scrollable {
+    border: none;
+  }
+}

@@ -2143,6 +2143,7 @@ zh-CN:
     title: "%{domain} 更新了服务条款"
   themes:
     default: Mastodon
+    fanfou_classic: 饭否经典
     vermilion_seal: 素笺朱印
   time:
     formats:

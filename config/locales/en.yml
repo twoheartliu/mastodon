@@ -2193,6 +2193,7 @@ en:
     title: The terms of service of %{domain} are changing
   themes:
     default: Mastodon
+    fanfou_classic: Fanfou Classic
     vermilion_seal: Vermilion Seal
   time:
     formats:
