@@ -7,12 +7,10 @@
   --color-text-secondary: var(--color-space-night-600);
   --color-text-tertiary: var(--color-space-night-500); // legacy
   --color-text-inverted: var(--color-white);
-  --color-text-brand: var(--color-space-blue-600);
-  --color-text-brand-soft: color-mix(
-    in oklab,
-    var(--color-text-primary),
-    var(--color-text-brand)
-  ); // legacy
+  --color-text-brand: var(--color-space-blue-500);
+  --color-text-brand-soft: color-mix(in oklab,
+      var(--color-text-primary),
+      var(--color-text-brand)); // legacy
 
   --color-text-on-brand-base: var(--color-white);
   --color-text-brand-on-inverted: var(--color-space-blue-500); // legacy

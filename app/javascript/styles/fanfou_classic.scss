@@ -66,4 +66,9 @@
   [data-color-scheme='light'] .column>.scrollable {
     border: none;
   }
+
+  [data-color-scheme='light'] .notification__filter-bar,
+  .account__section-headline {
+    border: none;
+  }
 }
