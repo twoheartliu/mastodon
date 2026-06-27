@@ -6,6 +6,12 @@
   gap: 20px;
   font-size: 13px;
   color: var(--color-text-secondary);
+  opacity: 0;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
 
   &[data-context='default'] {
     padding: 20px 0;

@@ -2,3 +2,4 @@ default: styles/application.scss
 
 fanfou_classic: styles/fanfou_classic.scss
 vermilion_seal: styles/vermilion_seal.scss
+space_fanfou: styles/space_fanfou.scss

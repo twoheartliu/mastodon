@@ -2195,6 +2195,7 @@ en:
     default: Mastodon
     fanfou_classic: Fanfou Classic
     vermilion_seal: Vermilion Seal
+    space_fanfou: Space Fanfou
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
