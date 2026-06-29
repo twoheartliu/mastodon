@@ -61,9 +61,10 @@ class OnThisDay
 
     return Status.none if start_year > end_year
 
-    all_statuses = Status.none
+    cst_zone = self.class.cst_time_zone
 
-    (start_year..end_year).each do |year|
+    # Collect UTC ranges for each past year (CST day boundaries)
+    ranges = (start_year..end_year).filter_map do |year|
       begin
         Date.new(year, month, day)
       rescue Date::Error
@@ -71,25 +72,32 @@ class OnThisDay
         next
       end
 
-      cst_begin = self.class.cst_time_zone.local(year, month, day).beginning_of_day
-      cst_end   = self.class.cst_time_zone.local(year, month, day).end_of_day
+      cst_begin = cst_zone.local(year, month, day).beginning_of_day
+      cst_end   = cst_zone.local(year, month, day).end_of_day
       next if cst_end >= Time.now.utc
 
-      year_statuses = @account.statuses
-                              .distributable_visibility
-                              .without_reblogs
-                              .without_replies
-                              .kept
-                              .where(created_at: cst_begin..cst_end)
-
-      all_statuses = all_statuses.or(Status.where(id: year_statuses.select(:id)))
+      cst_begin..cst_end
     end
 
-    # Respect blocks and mutes
-    all_statuses = all_statuses.not_excluded_by_account(@account)
-    all_statuses = all_statuses.not_domain_blocked_by_account(@account)
+    return Status.none if ranges.empty?
 
-    all_statuses.order(created_at: :asc)
+    # Build direct OR of BETWEEN conditions using Arel — avoids subqueries
+    # that cause PG statement timeout on large accounts.
+    status_table = Status.arel_table
+    date_condition = ranges.reduce(nil) do |acc, range|
+      cond = status_table[:created_at].between(range)
+      acc ? acc.or(cond) : cond
+    end
+
+    @account.statuses
+            .distributable_visibility
+            .without_reblogs
+            .without_replies
+            .kept
+            .where(date_condition)
+            .not_excluded_by_account(@account)
+            .not_domain_blocked_by_account(@account)
+            .order(created_at: :asc)
   end
 
   # Build the data JSONB hash from queried statuses.
