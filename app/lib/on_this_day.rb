@@ -50,7 +50,8 @@ class OnThisDay
   private
 
   # Query statuses from the same month+day in past years (registration year through last year).
-  # Visibility: public + unlisted only. Excludes reblogs, replies (except self-replies).
+  # Visibility: public, unlisted and private (excludes direct messages).
+  # Excludes reblogs, replies (except self-replies).
   # Respects current blocks and mutes.
   # Sorted by created_at ascending (chronological order from morning to night).
   def find_statuses
@@ -90,7 +91,7 @@ class OnThisDay
     end
 
     @account.statuses
-            .distributable_visibility
+            .where(visibility: %i(public unlisted private))
             .without_reblogs
             .without_replies
             .kept
