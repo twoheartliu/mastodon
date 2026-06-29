@@ -51,7 +51,7 @@
 // 1. BODY: Fanfou's teal starfield background — same as Fanfou Classic.
 //    The textured background gives the frosted-glass sidebar something to blur.
 [data-color-scheme='light'] body {
-  background: #acdae5 url('../images/fanfou-bg.png') no-repeat 0 0 / cover;
+  background: #acdae5 url('../images/fanfou-bg.png') no-repeat center center / cover;
   background-attachment: fixed;
 }
 
