@@ -26,6 +26,9 @@ class Api::V1::OnThisDayController < Api::BaseController
     on_this_day = OnThisDay.new(current_account)
     on_this_day.generate if on_this_day.state == 'pending'
     render json: { state: on_this_day.state, date: OnThisDay.today_cst.to_s }
+  rescue => e
+    Rails.logger.error "OnThisDay#state failed: #{e.class}: #{e.message}"
+    render json: { state: 'error', date: OnThisDay.today_cst.to_s }, status: 500
   end
 
   private
