@@ -49,6 +49,7 @@ interface InitialStateMeta {
   terms_of_service_enabled: boolean;
   emoji_style?: string;
   wrapstodon?: InitialStateWrapstodon | null;
+  on_this_day?: InitialStateOnThisDay | null;
 }
 
 interface IntialStateRole {
@@ -63,6 +64,11 @@ interface IntialStateRole {
 interface InitialStateWrapstodon {
   year: number;
   state: ApiAnnualReportState;
+}
+
+interface InitialStateOnThisDay {
+  state: 'ready' | 'empty' | 'pending';
+  date: string;
 }
 
 interface InitialStateCompose {
@@ -147,6 +153,7 @@ export const statusPageUrl = getMeta('status_page_url');
 export const sso_redirect = getMeta('sso_redirect');
 export const termsOfServiceEnabled = getMeta('terms_of_service_enabled');
 export const wrapstodon = getMeta('wrapstodon');
+export const onThisDay = getMeta('on_this_day');
 
 const displayNames =
   // Intl.DisplayNames can be undefined in old browsers

@@ -51,6 +51,7 @@ import { selectUnreadNotificationGroupsCount } from 'mastodon/selectors/notifica
 import { useAppSelector, useAppDispatch } from 'mastodon/store';
 
 import { AnnualReportNavItem } from '../annual_report/nav_item';
+import { OnThisDayNavItem } from '../on_this_day/nav_item';
 
 import { DisabledAccountBanner } from './components/disabled_account_banner';
 import { FollowedTagsPanel } from './components/followed_tags_panel';
@@ -328,6 +329,10 @@ export const NavigationPanel: React.FC<{ multiColumn?: boolean }> = ({
 
             <li>
               <FollowRequestsLink />
+            </li>
+
+            <li>
+              <OnThisDayNavItem />
             </li>
 
             <li>

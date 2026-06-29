@@ -33,6 +33,7 @@ class InitialStateSerializer < ActiveModel::Serializer
       store[:show_trends]       = Setting.trends && object_account_user.setting_trends
       store[:emoji_style]       = object_account_user.settings['web.emoji_style']
       store[:wrapstodon]        = wrapstodon
+      store[:on_this_day]       = on_this_day
     else
       store[:auto_play_gif] = Setting.auto_play_gif
       store[:display_media] = Setting.display_media
@@ -103,6 +104,17 @@ class InitialStateSerializer < ActiveModel::Serializer
       year: current_campaign,
       state: AnnualReport.new(object.current_account, current_campaign).state,
     }
+  end
+
+  def on_this_day
+    return unless object.current_account
+
+    unless object.current_account.user.setting_on_this_day_enabled
+      return { state: 'empty', date: OnThisDay.today_cst.to_s }
+    end
+
+    on_this_day = OnThisDay.new(object.current_account)
+    { state: on_this_day.state, date: OnThisDay.today_cst.to_s }
   end
 
   def default_meta_store

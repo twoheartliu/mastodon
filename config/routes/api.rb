@@ -89,6 +89,12 @@ namespace :api, format: false do
       end
     end
 
+    resource :on_this_day, only: [:show], controller: :on_this_day do
+      member do
+        get :state
+      end
+    end
+
     resources :announcements, only: [:index] do
       scope module: :announcements do
         resources :reactions, only: [:update, :destroy]

@@ -76,6 +76,10 @@
       interval: 1 hour
       class: Scheduler::CollectionItemCleanupScheduler
       queue: scheduler
+    on_this_day_scheduler:
+      cron: '5 16 * * *'
+      class: Scheduler::OnThisDayScheduler
+      queue: scheduler
     repair_remote_collections_scheduler:
       every: ['24h', first_in: '1s']
       class: Scheduler::RepairRemoteCollectionsScheduler

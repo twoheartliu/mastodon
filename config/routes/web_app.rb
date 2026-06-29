@@ -24,6 +24,7 @@
   /mutes
   /notifications_v2/(*any)
   /notifications/(*any)
+  /on_this_day
   /pinned
   /profile/(*any)
   /public

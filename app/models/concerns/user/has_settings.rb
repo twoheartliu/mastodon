@@ -115,6 +115,10 @@ module User::HasSettings
     settings['web.disable_hover_cards']
   end
 
+  def setting_on_this_day_enabled
+    settings['on_this_day_enabled']
+  end
+
   def setting_always_send_emails
     settings['always_send_emails']
   end

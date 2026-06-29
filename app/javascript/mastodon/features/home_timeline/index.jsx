@@ -28,6 +28,7 @@ import { ColumnSettings } from './components/column_settings';
 import { CriticalUpdateBanner } from './components/critical_update_banner';
 import { Announcements } from './components/announcements';
 import { AnnualReportTimeline } from '../annual_report/timeline';
+import { OnThisDayTimeline } from '../on_this_day/timeline';
 
 const messages = defineMessages({
   title: { id: 'column.home', defaultMessage: 'Home' },
@@ -130,7 +131,8 @@ class HomeTimeline extends PureComponent {
     const { signedIn } = this.props.identity;
     const banners = [
       <CriticalUpdateBanner key='critical-update-banner' />,
-      <AnnualReportTimeline key='annual-report' />
+      <AnnualReportTimeline key='annual-report' />,
+      <OnThisDayTimeline key='on-this-day' />,
     ];
 
     let announcementsButton;

@@ -267,6 +267,10 @@ export function ListEdit () {
   return import('../../lists/new');
 }
 
+export function OnThisDay () {
+  return import('../../on_this_day/page');
+}
+
 export function ListMembers () {
   return import('../../lists/members');
 }

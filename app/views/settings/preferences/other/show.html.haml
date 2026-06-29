@@ -15,6 +15,11 @@
                  recommended: true,
                  wrapper: :with_label
 
+      = ff.input :on_this_day_enabled,
+                 hint: I18n.t('simple_form.hints.defaults.setting_on_this_day_enabled'),
+                 label: I18n.t('simple_form.labels.defaults.setting_on_this_day_enabled'),
+                 wrapper: :with_label
+
   %h2= t 'preferences.public_timelines'
 
   .fields-group

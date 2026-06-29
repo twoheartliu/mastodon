@@ -56,6 +56,7 @@ import {
   Notifications,
   NotificationRequests,
   NotificationRequest,
+  OnThisDay,
   FollowRequests,
   FavouritedStatuses,
   BookmarkedStatuses,
@@ -221,6 +222,7 @@ class SwitchingColumnsArea extends PureComponent {
 
             <WrappedRoute path='/bookmarks' component={BookmarkedStatuses} content={children} />
             <WrappedRoute path='/pinned' component={PinnedStatuses} content={children} />
+            <WrappedRoute path='/on_this_day' component={OnThisDay} content={children} />
 
             <WrappedRoute path='/start/profile' exact component={OnboardingProfile} content={children} />
             <WrappedRoute path={['/start', '/start/follows']} exact component={OnboardingFollows} content={children} />

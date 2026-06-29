@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 60px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background:
+    radial-gradient(at 30% 85%, #1a6b4022 0, transparent 50%),
+    radial-gradient(at 80% 10%, #1a5b6b22 0, transparent 50%),
+    radial-gradient(at 15% 20%, #5b1a6b22 0, transparent 50%)
+      var(--color-bg-primary);
+  border-bottom: 1px solid var(--color-border-primary);
+  position: relative;
+  pointer-events: all;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .newBadge {
+    display: inline-block;
+    background: var(--color-bg-brand-soft);
+    color: var(--color-text-primary);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .closeButton {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    margin-inline: 0;
+  }
+
+  :global(.modal-root__modal) & {
+    border-radius: 16px;
+  }
+}
