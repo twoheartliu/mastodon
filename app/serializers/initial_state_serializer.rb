@@ -108,10 +108,7 @@ class InitialStateSerializer < ActiveModel::Serializer
 
   def on_this_day
     return unless object.current_account
-
-    unless object.current_account.user.setting_on_this_day_enabled
-      return { state: 'empty', date: OnThisDay.today_cst.to_s }
-    end
+    return unless object.current_account.user.setting_on_this_day_enabled
 
     on_this_day = OnThisDay.new(object.current_account)
     { state: on_this_day.state, date: OnThisDay.today_cst.to_s }

@@ -20,7 +20,7 @@ export const OnThisDayNavItem: React.FC = () => {
     void dispatch(checkOnThisDay());
   }, [dispatch]);
 
-  if (!state || state === 'empty') {
+  if (!state || state === 'pending') {
     return null;
   }
 
