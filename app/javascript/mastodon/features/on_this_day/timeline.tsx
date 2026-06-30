@@ -26,7 +26,7 @@ export const OnThisDayTimeline: FC = () => {
     history.push('/on_this_day');
   }, [dismiss, history]);
 
-  if (!date || !state || wasDismissed || state === 'empty') {
+  if (!date || !state || wasDismissed || state === 'empty' || state === 'disabled') {
     return null;
   }
 

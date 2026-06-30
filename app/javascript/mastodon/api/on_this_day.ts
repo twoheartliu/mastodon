@@ -2,7 +2,7 @@ import api, { apiRequestGet } from '../api';
 import type { ApiAccountJSON } from '../api_types/accounts';
 import type { ApiStatusJSON } from '../api_types/statuses';
 
-export type ApiOnThisDayState = 'ready' | 'empty' | 'pending';
+export type ApiOnThisDayState = 'ready' | 'empty' | 'pending' | 'disabled';
 
 export interface ApiOnThisDayStateResponse {
   state: ApiOnThisDayState;

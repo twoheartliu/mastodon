@@ -67,7 +67,7 @@ interface InitialStateWrapstodon {
 }
 
 interface InitialStateOnThisDay {
-  state: 'ready' | 'empty' | 'pending';
+  state: 'ready' | 'empty' | 'pending' | 'disabled';
   date: string;
 }
 

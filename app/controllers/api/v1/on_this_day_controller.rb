@@ -3,7 +3,7 @@
 class Api::V1::OnThisDayController < Api::BaseController
   before_action -> { doorkeeper_authorize! :read, :'read:statuses' }
   before_action :require_user!
-  before_action :require_on_this_day_enabled!
+  before_action :require_on_this_day_enabled!, only: [:show]
 
   def show
     record = OnThisDayRecord.find_by(
@@ -23,6 +23,10 @@ class Api::V1::OnThisDayController < Api::BaseController
   end
 
   def state
+    unless current_account.user.setting_on_this_day_enabled
+      return render json: { state: 'disabled', date: OnThisDay.today_cst.to_s }
+    end
+
     on_this_day = OnThisDay.new(current_account)
     on_this_day.generate if on_this_day.state == 'pending'
     render json: { state: on_this_day.state, date: OnThisDay.today_cst.to_s }

@@ -39,9 +39,11 @@ export const OnThisDayPage: FC = () => {
     return Object.keys(data.years).sort((a, b) => Number(b) - Number(a));
   }, [data]);
 
-  const isLoading = !data && !error && state !== 'empty';
+  const isLoading = !data && !error && state !== 'empty' && state !== 'disabled';
 
   const showError = error && !data;
+
+  const showDisabled = state === 'disabled' && !data && !error;
 
   return (
     <Column>
@@ -69,6 +71,24 @@ export const OnThisDayPage: FC = () => {
             <FormattedMessage
               id='on_this_day.page.error'
               defaultMessage='Failed to load memories. Try again later.'
+            />
+          </p>
+        </div>
+      ) : showDisabled ? (
+        <div className={styles.wrapper}>
+          <Helmet>
+            <title>On This Day</title>
+          </Helmet>
+          <h1 className={styles.heading}>
+            <FormattedMessage
+              id='on_this_day.page.heading'
+              defaultMessage='On This Day'
+            />
+          </h1>
+          <p className={styles.emptyMessage}>
+            <FormattedMessage
+              id='on_this_day.page.disabled'
+              defaultMessage='On This Day is not enabled. You can enable it in your preferences.'
             />
           </p>
         </div>
