@@ -104,6 +104,10 @@
     border: none;
   }
 
+  [data-color-scheme='light'] .column-back-button {
+    border: none;
+  }
+
   // Dark-mode shadows need higher opacity to read against dark backgrounds.
   [data-color-scheme='dark'] .columns-area__panels__main,
   [data-color-scheme='dark'] .navigation-panel {
