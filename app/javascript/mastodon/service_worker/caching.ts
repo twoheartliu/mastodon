@@ -18,8 +18,6 @@ export async function cacheRoot() {
 export function handleFetch(event: FetchEvent) {
   const url = new URL(event.request.url);
 
-  // Skip non-http/https URLs (e.g., chrome-extension://, moz-extension://)
-  // — Cache API does not support these schemes and will throw.
   if (url.protocol !== 'http:' && url.protocol !== 'https:') {
     return;
   }
