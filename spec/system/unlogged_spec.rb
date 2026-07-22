@@ -9,9 +9,7 @@ RSpec.describe 'UnloggedBrowsing', :js, :streaming do
     visit root_path
   end
 
-  it 'loads the home page' do
-    expect(subject).to have_css('div.app-holder')
-
-    expect(subject).to have_css('main.columns-area__panels__main')
+  it 'is redirected to the static welcome page' do
+    expect(subject).to have_current_path('/overview')
   end
 end

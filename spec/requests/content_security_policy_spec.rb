@@ -6,7 +6,9 @@ RSpec.describe 'Content-Security-Policy' do
   before { allow(SecureRandom).to receive(:base64).with(16).and_return('ZbA+JmE7+bK8F5qvADZHuQ==') }
 
   it 'sets the expected CSP headers' do
-    get '/'
+    # NOTE: 未登录访问 '/' 会重定向到 /overview 静态欢迎页，
+    # 因此改用同样渲染 Web 应用的 '/home' 来检查 CSP 头
+    get '/home'
 
     expect(response_csp_headers)
       .to match_array(expected_csp_headers)

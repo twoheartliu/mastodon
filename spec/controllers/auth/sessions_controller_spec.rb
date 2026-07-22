@@ -58,7 +58,7 @@ RSpec.describe Auth::SessionsController do
         end
 
         it 'redirects to home and logs the user in' do
-          expect(response).to redirect_to(root_path)
+          expect(response).to redirect_to('/home')
 
           expect(controller.current_user).to be_instance_of(User)
         end
@@ -89,7 +89,7 @@ RSpec.describe Auth::SessionsController do
         end
 
         it 'redirects to home and logs the user in' do
-          expect(response).to redirect_to(root_path)
+          expect(response).to redirect_to('/home')
 
           expect(controller.current_user).to eq user
         end
@@ -108,7 +108,7 @@ RSpec.describe Auth::SessionsController do
           expect { subject }
             .to change(user.login_activities.where(success: true), :count).by(1)
 
-          expect(response).to redirect_to(root_path)
+          expect(response).to redirect_to('/home')
 
           expect(controller.current_user).to eq user
         end
@@ -130,7 +130,7 @@ RSpec.describe Auth::SessionsController do
           emails = capture_emails { subject }
 
           expect(response)
-            .to redirect_to(root_path)
+            .to redirect_to('/home')
 
           expect(controller.current_user)
             .to eq user
@@ -151,7 +151,7 @@ RSpec.describe Auth::SessionsController do
         end
 
         it 'redirects to home and logs the user in' do
-          expect(response).to redirect_to(root_path)
+          expect(response).to redirect_to('/home')
 
           expect(controller.current_user).to eq user
         end
@@ -179,7 +179,7 @@ RSpec.describe Auth::SessionsController do
         let(:accept_language) { 'fr' }
 
         it 'redirects to home' do
-          expect(response).to redirect_to(root_path)
+          expect(response).to redirect_to('/home')
         end
       end
 
@@ -194,7 +194,7 @@ RSpec.describe Auth::SessionsController do
           let(:single_user_mode) { true }
 
           it 'redirects to home' do
-            expect(response).to redirect_to(root_path)
+            expect(response).to redirect_to('/home')
           end
         end
 
@@ -204,6 +204,17 @@ RSpec.describe Auth::SessionsController do
           it "redirects back to the user's page" do
             expect(response).to redirect_to(short_account_path(username: user.account))
           end
+        end
+      end
+
+      context 'when coming from the static welcome page' do
+        before do
+          allow(controller).to receive(:stored_location_for).with(:user).and_return('/overview')
+          post :create, params: { user: { email: user.email, password: user.password } }
+        end
+
+        it 'redirects to the home timeline instead of the welcome page' do
+          expect(response).to redirect_to('/home')
         end
       end
     end
@@ -303,7 +314,7 @@ RSpec.describe Auth::SessionsController do
           end
 
           it 'redirects to home and logs the user in' do
-            expect(response).to redirect_to(root_path)
+            expect(response).to redirect_to('/home')
 
             expect(controller.current_user).to eq user
           end
@@ -330,7 +341,7 @@ RSpec.describe Auth::SessionsController do
           end
 
           it 'redirects to home and logs the user in' do
-            expect(response).to redirect_to(root_path)
+            expect(response).to redirect_to('/home')
 
             expect(controller.current_user).to eq user
           end
@@ -411,7 +422,7 @@ RSpec.describe Auth::SessionsController do
           end
 
           it 'instructs the browser to redirect to home, logs the user in, and updates the sign count' do
-            expect(response.parsed_body[:redirect_path]).to eq(root_path)
+            expect(response.parsed_body[:redirect_path]).to eq('/home')
 
             expect(controller.current_user).to eq user
 
