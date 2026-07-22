@@ -62,10 +62,11 @@ class Auth::SessionsController < Devise::SessionsController
   def after_sign_in_path_for(resource)
     last_url = stored_location_for(:user)
 
-    if home_paths(resource).include?(last_url)
-      root_path
+    # 登录成功后总是进入 /home，绝不回到静态欢迎页 /overview
+    if last_url.blank? || last_url == '/overview' || home_paths(resource).include?(last_url)
+      '/home'
     else
-      last_url || root_path
+      last_url
     end
   end
 
