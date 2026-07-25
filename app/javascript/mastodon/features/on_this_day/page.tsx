@@ -13,6 +13,7 @@ import { StatusQuoteManager } from '@/mastodon/components/status_quoted';
 import {
   checkOnThisDay,
   fetchOnThisDayData,
+  fetchOnThisDayState,
 } from '@/mastodon/reducers/slices/on_this_day';
 import { useAppDispatch, useAppSelector } from '@/mastodon/store';
 
@@ -33,6 +34,20 @@ export const OnThisDayPage: FC = () => {
       void dispatch(fetchOnThisDayData());
     }
   }, [dispatch, data, state]);
+
+  // While the record is being generated in the background (state is
+  // 'pending'), poll until it resolves to 'ready' or 'empty'
+  useEffect(() => {
+    if (state !== 'pending') return;
+
+    const timer = setTimeout(() => {
+      void dispatch(fetchOnThisDayState());
+    }, 3_000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [dispatch, state]);
 
   const years = useMemo(() => {
     if (!data?.years) return [];

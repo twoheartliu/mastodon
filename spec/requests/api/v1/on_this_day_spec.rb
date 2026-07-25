@@ -42,13 +42,24 @@ RSpec.describe 'OnThisDay' do
     context 'when the feature is enabled' do
       let(:scopes) { 'read' }
 
-      it 'generates a record on demand and returns the empty state when there is no history' do
+      it 'enqueues record generation and returns the pending state when no record exists' do
         expect { get '/api/v1/on_this_day/state', headers: headers }
-          .to change(OnThisDayRecord.where(account: user.account), :count).by(1)
+          .to not_change(OnThisDayRecord, :count)
 
+        expect(GenerateOnThisDayWorker)
+          .to have_enqueued_sidekiq_job(user.account_id)
         expect(response).to have_http_status(200)
         expect(response.parsed_body)
-          .to include(state: 'empty', date: OnThisDay.today_cst.to_s)
+          .to include(state: 'pending', date: OnThisDay.today_cst.to_s)
+      end
+
+      it 'does not enqueue generation again when a record already exists' do
+        Fabricate(:on_this_day_record, account: user.account)
+
+        get '/api/v1/on_this_day/state', headers: headers
+
+        expect(GenerateOnThisDayWorker)
+          .to_not have_enqueued_sidekiq_job
       end
 
       it 'returns the ready state when a record with statuses exists' do
