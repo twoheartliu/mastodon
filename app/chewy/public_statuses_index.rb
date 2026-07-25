@@ -19,12 +19,21 @@ class PublicStatusesIndex < Chewy::Index
         type: 'stemmer',
         language: 'possessive_english',
       },
+
+      # Group adjacent CJK characters into overlapping bigrams so that
+      # searching a Chinese word matches the exact substring instead of
+      # the individual characters scattered anywhere in the document.
+      # output_unigrams keeps single characters searchable.
+      cjk_bigram: {
+        type: 'cjk_bigram',
+        output_unigrams: true,
+      },
     },
 
     analyzer: {
       verbatim: {
         tokenizer: 'uax_url_email',
-        filter: %w(lowercase),
+        filter: %w(lowercase cjk_bigram),
       },
 
       content: {
@@ -33,6 +42,7 @@ class PublicStatusesIndex < Chewy::Index
           lowercase
           asciifolding
           cjk_width
+          cjk_bigram
           elision
           english_possessive_stemmer
           english_stop
