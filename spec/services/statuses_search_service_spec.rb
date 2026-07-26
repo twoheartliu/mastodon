@@ -36,6 +36,16 @@ RSpec.describe StatusesSearchService do
         expect(subject.call('猫', single_char.account, limit: 5))
           .to include(single_char)
       end
+
+      it 'matches documents whose words are not adjacent when no exact substring exists' do
+        split_words = Fabricate(:status, text: '今日翻到了三年前的回忆')
+        partial     = Fabricate(:status, text: '今日天气不错')
+
+        results = subject.call('今日回忆', split_words.account, limit: 5)
+
+        expect(results).to include(split_words)
+        expect(results).to_not include(partial)
+      end
     end
   end
 end

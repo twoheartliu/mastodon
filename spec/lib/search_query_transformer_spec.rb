@@ -50,6 +50,38 @@ RSpec.describe SearchQueryTransformer do
     end
   end
 
+  context 'with a CJK term producing 3+ bigrams' do
+    let(:query) { '今日回忆' }
+
+    it 'requires all but one bigram instead of a strict AND' do
+      expect(subject.send(:must_clauses).map(&:to_query))
+        .to contain_exactly(
+          multi_match: {
+            type: 'most_fields',
+            query: '今日回忆',
+            fields: ['text', 'text.stemmed'],
+            minimum_should_match: 2,
+          }
+        )
+    end
+  end
+
+  context 'with a short CJK term' do
+    let(:query) { '学习' }
+
+    it 'keeps the strict AND operator' do
+      expect(subject.send(:must_clauses).map(&:to_query))
+        .to contain_exactly(
+          multi_match: {
+            type: 'most_fields',
+            query: '学习',
+            fields: ['text', 'text.stemmed'],
+            operator: 'and',
+          }
+        )
+    end
+  end
+
   context 'with "hello -world"' do
     let(:query) { 'hello -world' }
 

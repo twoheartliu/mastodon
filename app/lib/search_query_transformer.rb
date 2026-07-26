@@ -114,6 +114,16 @@ class SearchQueryTransformer < Parslet::Transform
   end
 
   class TermClause
+    # A term consisting only of CJK characters is analyzed into overlapping
+    # bigrams at search time (see the cjk_bigram_search filter). Requiring
+    # ALL bigrams makes the query an exact substring match, which returns
+    # nothing for keyword-style queries whose words are not adjacent in the
+    # document (e.g. 今日回忆). For terms long enough to produce 3+ bigrams,
+    # require all but one instead: exact substring matches still rank first,
+    # documents missing only the cross-word bigram are kept, and documents
+    # with merely scattered characters (at most one bigram) stay filtered.
+    CJK_TERM_PATTERN = /\A[\p{Han}\p{Hiragana}\p{Katakana}\p{Hangul}]+\z/
+
     attr_reader :operator, :term
 
     def initialize(operator, term)
@@ -125,8 +135,25 @@ class SearchQueryTransformer < Parslet::Transform
       if @term.start_with?('#')
         { match: { tags: { query: @term, operator: 'and' } } }
       else
-        { multi_match: { type: 'most_fields', query: @term, fields: ['text', 'text.stemmed'], operator: 'and' } }
+        query = { type: 'most_fields', query: @term, fields: ['text', 'text.stemmed'], operator: 'and' }
+
+        if (bigrams = cjk_bigram_count) >= 3
+          query.delete(:operator)
+          query[:minimum_should_match] = bigrams - 1
+        end
+
+        { multi_match: query }
       end
+    end
+
+    private
+
+    # Number of bigrams the search analyzer produces for a pure CJK term
+    # (one per adjacent character pair), or 0 for non-CJK terms.
+    def cjk_bigram_count
+      return 0 unless @term.match?(CJK_TERM_PATTERN)
+
+      @term.length - 1
     end
   end
 
