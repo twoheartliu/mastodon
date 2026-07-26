@@ -28,12 +28,26 @@ class StatusesIndex < Chewy::Index
         type: 'cjk_bigram',
         output_unigrams: true,
       },
+
+      # Search-time counterpart: emit only bigrams for CJK runs (lone
+      # characters are still emitted). With unigrams present, the match
+      # query would treat each unigram+bigram pair as synonyms and the
+      # adjacency requirement would be lost.
+      cjk_bigram_search: {
+        type: 'cjk_bigram',
+        output_unigrams: false,
+      },
     },
 
     analyzer: {
       verbatim: {
         tokenizer: 'uax_url_email',
         filter: %w(lowercase cjk_bigram),
+      },
+
+      verbatim_search: {
+        tokenizer: 'uax_url_email',
+        filter: %w(lowercase cjk_bigram_search),
       },
 
       content: {
@@ -43,6 +57,20 @@ class StatusesIndex < Chewy::Index
           asciifolding
           cjk_width
           cjk_bigram
+          elision
+          english_possessive_stemmer
+          english_stop
+          english_stemmer
+        ),
+      },
+
+      content_search: {
+        tokenizer: 'standard',
+        filter: %w(
+          lowercase
+          asciifolding
+          cjk_width
+          cjk_bigram_search
           elision
           english_possessive_stemmer
           english_stop
@@ -67,7 +95,7 @@ class StatusesIndex < Chewy::Index
   root date_detection: false do
     field(:id, type: 'long')
     field(:account_id, type: 'long')
-    field(:text, type: 'text', analyzer: 'verbatim', value: ->(status) { status.searchable_text }) { field(:stemmed, type: 'text', analyzer: 'content') }
+    field(:text, type: 'text', analyzer: 'verbatim', search_analyzer: 'verbatim_search', value: ->(status) { status.searchable_text }) { field(:stemmed, type: 'text', analyzer: 'content', search_analyzer: 'content_search') }
     field(:tags, type: 'text', analyzer: 'hashtag',  value: ->(status) { status.tags.map(&:display_name) })
     field(:searchable_by, type: 'long', value: ->(status) { status.searchable_by })
     field(:language, type: 'keyword')
