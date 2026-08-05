@@ -5,9 +5,8 @@ import { FormattedMessage } from 'react-intl';
 
 import { Helmet } from '@unhead/react/helmet';
 
-import Column from '@/mastodon/components/column';
-import ColumnHeader from '@/mastodon/components/column_header';
-import HistoryIcon from '@/material-icons/400-24px/history.svg?react';
+import { Column } from '@/mastodon/components/column';
+import { ColumnHeader } from '@/mastodon/components/column_header';
 import { LoadingIndicator } from '@/mastodon/components/loading_indicator';
 import { StatusQuoteManager } from '@/mastodon/components/status_quoted';
 import {
@@ -16,6 +15,7 @@ import {
   fetchOnThisDayState,
 } from '@/mastodon/reducers/slices/on_this_day';
 import { useAppDispatch, useAppSelector } from '@/mastodon/store';
+import HistoryIcon from '@/material-icons/400-24px/history.svg?react';
 
 import styles from './page.module.scss';
 
@@ -25,7 +25,7 @@ export const OnThisDayPage: FC = () => {
 
   // Always check state on mount (handles direct URL access)
   useEffect(() => {
-    void dispatch(checkOnThisDay());
+    dispatch(checkOnThisDay());
   }, [dispatch]);
 
   // Fetch full data when state becomes ready
@@ -54,7 +54,8 @@ export const OnThisDayPage: FC = () => {
     return Object.keys(data.years).sort((a, b) => Number(b) - Number(a));
   }, [data]);
 
-  const isLoading = !data && !error && state !== 'empty' && state !== 'disabled';
+  const isLoading =
+    !data && !error && state !== 'empty' && state !== 'disabled';
 
   const showError = error && !data;
 
@@ -149,4 +150,5 @@ export const OnThisDayPage: FC = () => {
   );
 };
 
+// eslint-disable-next-line import/no-default-export -- Used by async components.
 export default OnThisDayPage;
