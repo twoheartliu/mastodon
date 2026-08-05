@@ -28,7 +28,7 @@
 // -- Space Fanfou theme-specific component overrides --
 
 // 0. ITEM LIST — subtle hover highlight on article rows.
-[data-color-scheme='light'] .item-list>article {
+[data-color-scheme='light'] .item-list > article {
   .status__action-bar {
     opacity: 0.6;
     transition: opacity 0.2s;
@@ -45,27 +45,29 @@
 
 [data-color-scheme='light'] .compose-form__highlightable:hover {
   border-color: #c1c1c1;
-  box-shadow: inset 0 0 6px rgba(158, 158, 168, .1)
+  box-shadow: inset 0 0 6px rgba(158, 158, 168, 10%);
 }
 
 // 1. BODY: Fanfou's teal starfield background — same as Fanfou Classic.
 //    The textured background gives the frosted-glass sidebar something to blur.
 [data-color-scheme='light'] body {
-  background: linear-gradient(to bottom, #7DCADE 0%, #B1DAE1 35%, #B1DAE1 100%);
+  background: linear-gradient(to bottom, #7dcade 0%, #b1dae1 35%, #b1dae1 100%);
   background-attachment: fixed;
 }
 
 // 2. FROSTED GLASS SIDEBAR — light mode only.
 //    pane__inner is position:fixed so it floats above the body's starfield.
 //    backdrop-filter blurs the teal+starfield behind the sidebar.
-[data-color-scheme='light'] .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
+[data-color-scheme='light']
+  .columns-area__panels__pane--navigational
+  .columns-area__panels__pane__inner {
   -webkit-backdrop-filter: blur(24px);
   backdrop-filter: blur(24px);
 }
 
 // Frosted glass sidebar — navigation-panel carries the semi-transparent background.
 [data-color-scheme='light'] .navigation-panel {
-  background-color: rgba(255, 255, 255, 0.78);
+  background-color: rgba(255, 255, 255, 78%);
   border-left: none;
 }
 
@@ -75,13 +77,12 @@
 }
 
 // 4. ROUNDED CORNERS + SUBTLE SHADOWS — desktop only.
-@media screen and (min-width: 1175px) {
-
+@media screen and (width >= 1175px) {
   .columns-area__panels__main,
   .navigation-panel {
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 20%);
   }
 
   // pane__inner: border-radius only, no shadow (sidebar stays clean).
@@ -95,7 +96,7 @@
     margin-bottom: 10px;
   }
 
-  [data-color-scheme='light'] .column>.scrollable {
+  [data-color-scheme='light'] .column > .scrollable {
     border: none;
   }
 
@@ -111,13 +112,12 @@
   // Dark-mode shadows need higher opacity to read against dark backgrounds.
   [data-color-scheme='dark'] .columns-area__panels__main,
   [data-color-scheme='dark'] .navigation-panel {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 45%);
   }
 }
 
 // 5. RESPECT reduced-motion preference.
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {

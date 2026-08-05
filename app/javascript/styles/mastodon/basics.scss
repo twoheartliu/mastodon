@@ -31,7 +31,6 @@ html {
 }
 
 html.has-modal {
-
   &,
   body {
     touch-action: none;
@@ -119,7 +118,7 @@ body {
     height: 100%;
     overflow: hidden;
 
-    &>div {
+    & > div {
       height: 100%;
     }
 
@@ -206,10 +205,9 @@ button {
 }
 
 .app-holder {
-
   &,
-  &>div,
-  &>noscript {
+  & > div,
+  & > noscript {
     display: flex;
     width: 100%;
     align-items: center;
@@ -217,25 +215,23 @@ button {
     outline: 0 !important;
   }
 
-  &>noscript {
+  & > noscript {
     min-height: 100vh;
     min-height: 100dvh;
   }
 }
 
 .layout-single-column .app-holder {
-
   &,
-  &>div {
+  & > div {
     min-height: 100vh;
     min-height: 100dvh;
   }
 }
 
 .layout-multiple-columns .app-holder {
-
   &,
-  &>div {
+  & > div {
     height: 100%;
   }
 }
@@ -249,7 +245,7 @@ button {
   color: var(--color-text-error);
   text-align: center;
 
-  &>div {
+  & > div {
     max-width: 500px;
   }
 

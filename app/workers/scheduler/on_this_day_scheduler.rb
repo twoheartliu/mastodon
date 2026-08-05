@@ -9,9 +9,9 @@ class Scheduler::OnThisDayScheduler
   # Generates records for all confirmed users, except those who explicitly disabled the feature.
   def perform
     User.confirmed
-        .where.not("settings->>'on_this_day_enabled' = 'false'")
-        .includes(:account)
-        .find_each do |user|
+      .where.not("settings->>'on_this_day_enabled' = 'false'")
+      .includes(:account)
+      .find_each do |user|
       GenerateOnThisDayWorker.perform_async(user.account_id) if user.account
     end
   end

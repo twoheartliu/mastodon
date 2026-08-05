@@ -1,14 +1,14 @@
 import { useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 
 import { FormattedMessage } from 'react-intl';
 
 import classNames from 'classnames';
+import { Link, useLocation } from 'react-router-dom';
 
-import HistoryIcon from '@/material-icons/400-24px/history.svg?react';
 import { Icon } from '@/mastodon/components/icon';
 import { checkOnThisDay } from '@/mastodon/reducers/slices/on_this_day';
 import { useAppDispatch, useAppSelector } from '@/mastodon/store';
+import HistoryIcon from '@/material-icons/400-24px/history.svg?react';
 
 export const OnThisDayNavItem: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -17,7 +17,7 @@ export const OnThisDayNavItem: React.FC = () => {
   const active = location.pathname.startsWith('/on_this_day');
 
   useEffect(() => {
-    void dispatch(checkOnThisDay());
+    dispatch(checkOnThisDay());
   }, [dispatch]);
 
   if (!state || state === 'pending' || state === 'disabled') {
@@ -29,7 +29,7 @@ export const OnThisDayNavItem: React.FC = () => {
       to='/on_this_day'
       className={classNames('column-link column-link--transparent', { active })}
     >
-      <Icon icon={HistoryIcon} width='24' height='24' />
+      <Icon id='history' icon={HistoryIcon} width='24' height='24' />
       <FormattedMessage
         id='on_this_day.nav_item.title'
         defaultMessage='On This Day'

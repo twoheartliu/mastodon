@@ -23,8 +23,8 @@ class OnThisDayPresenter
 
   def statuses
     @statuses ||= Status.where(id: record.status_ids)
-                        .with_includes
-                        .order(created_at: :asc)
+      .with_includes
+      .order(created_at: :asc)
   end
 
   def self.model_name

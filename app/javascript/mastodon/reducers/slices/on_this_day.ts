@@ -63,7 +63,7 @@ export const { setData } = onThisDaySlice.actions;
 // Called on initial load to check if we need to refresh state.
 export const checkOnThisDay = createAppThunk(
   `${onThisDaySlice.name}/checkOnThisDay`,
-  (_arg: unknown, { dispatch, getState }) => {
+  (_arg, { dispatch, getState }) => {
     const { state } = getState().onThisDay;
     if (!state || state === 'pending') {
       void dispatch(fetchOnThisDayState());

@@ -18,7 +18,7 @@ export const OnThisDayTimeline: FC = () => {
 
   // Check state on mount
   useEffect(() => {
-    void dispatch(checkOnThisDay());
+    dispatch(checkOnThisDay());
   }, [dispatch]);
 
   const handleShow = useCallback(() => {
@@ -26,7 +26,13 @@ export const OnThisDayTimeline: FC = () => {
     history.push('/on_this_day');
   }, [dismiss, history]);
 
-  if (!date || !state || wasDismissed || state === 'empty' || state === 'disabled') {
+  if (
+    !date ||
+    !state ||
+    wasDismissed ||
+    state === 'empty' ||
+    state === 'disabled'
+  ) {
     return null;
   }
 
