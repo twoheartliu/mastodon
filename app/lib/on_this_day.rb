@@ -91,21 +91,21 @@ class OnThisDay
     end
 
     @account.statuses
-            .where(visibility: %i(public unlisted private))
-            .without_reblogs
-            .without_replies
-            .kept
-            .where(date_condition)
-            .not_excluded_by_account(@account)
-            .not_domain_blocked_by_account(@account)
-            .order(created_at: :asc)
+      .where(visibility: %i(public unlisted private))
+      .without_reblogs
+      .without_replies
+      .kept
+      .where(date_condition)
+      .not_excluded_by_account(@account)
+      .not_domain_blocked_by_account(@account)
+      .order(created_at: :asc)
   end
 
   # Build the data JSONB hash from queried statuses.
   # Groups status IDs by year, oldest year first in the hash.
   def build_data(statuses)
     grouped = statuses.group_by { |s| s.created_at.year }
-                      .transform_values { |list| list.map(&:id).map(&:to_s) }
+      .transform_values { |list| list.map { |status| status.id.to_s } }
 
     { 'years' => grouped }
   end

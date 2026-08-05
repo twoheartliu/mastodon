@@ -11,9 +11,11 @@ export interface OnThisDayAnnouncementProps {
   onDismiss: () => void;
 }
 
-export const OnThisDayAnnouncement: React.FC<
-  OnThisDayAnnouncementProps
-> = ({ state, onShow, onDismiss }) => (
+export const OnThisDayAnnouncement: React.FC<OnThisDayAnnouncementProps> = ({
+  state,
+  onShow,
+  onDismiss,
+}) => (
   <div className={styles.wrapper}>
     <span className={styles.newBadge}>
       <FormattedMessage

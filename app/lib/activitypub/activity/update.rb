@@ -49,7 +49,6 @@ class ActivityPub::Activity::Update < ActivityPub::Activity
     ActivityPub::ProcessFeaturedCollectionService.new.call(@account, @object)
   end
 
-
   def object_too_old?
     @object['published'].present? && @object['published'].to_datetime < OBJECT_AGE_THRESHOLD.ago
   rescue Date::Error

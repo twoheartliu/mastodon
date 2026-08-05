@@ -8,9 +8,11 @@
   --color-text-tertiary: var(--color-space-night-500); // legacy
   --color-text-inverted: var(--color-white);
   --color-text-brand: var(--color-space-blue-500);
-  --color-text-brand-soft: color-mix(in oklab,
-      var(--color-text-primary),
-      var(--color-text-brand)); // legacy
+  --color-text-brand-soft: color-mix(
+    in oklab,
+    var(--color-text-primary),
+    var(--color-text-brand)
+  ); // legacy
 
   --color-text-on-brand-base: var(--color-white);
   --color-text-brand-on-inverted: var(--color-space-blue-500); // legacy
@@ -33,12 +35,17 @@
   --color-bg-primary: var(--color-white);
   --overlay-strength-secondary: 5%;
   --color-bg-secondary: var(--color-space-teal-50);
-  --color-bg-tertiary: var(--color-space-teal-100); // legacy — subtle teal tint like Fanfou sidebar
+  --color-bg-tertiary: var(
+    --color-space-teal-100
+  ); // legacy — subtle teal tint like Fanfou sidebar
 
   // Utility
   --color-bg-inverted: var(--color-space-night-950);
   --color-bg-overlay-base: #{utils.css-alpha(var(--color-space-night-950), 55%)};
-  --color-bg-overlay-highlight: #{utils.css-alpha(var(--color-space-night-950), 5%)};
+  --color-bg-overlay-highlight: #{utils.css-alpha(
+      var(--color-space-night-950),
+      5%
+    )};
   --color-bg-overlay: var(--color-bg-primary); // legacy
   --color-bg-media-base: var(--color-black); // legacy
   --color-bg-media: #{utils.css-alpha(var(--color-bg-media-base), 65%)}; // legacy

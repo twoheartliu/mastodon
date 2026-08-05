@@ -26,7 +26,7 @@
 
 // Light scheme: Fanfou's actual space background — teal base with starfield image.
 [data-color-scheme='light'] body {
-  background: linear-gradient(to bottom, #7DCADE 0%, #B1DAE1 35%, #B1DAE1 100%);
+  background: linear-gradient(to bottom, #7dcade 0%, #b1dae1 35%, #b1dae1 100%);
   background-attachment: fixed;
 }
 
@@ -50,8 +50,7 @@
 
 // Push main columns down slightly and add rounded corners.
 // Only on desktop — keep mobile layout unchanged.
-@media screen and (min-width: 1175px) {
-
+@media screen and (width >= 1175px) {
   .columns-area__panels__main,
   .columns-area__panels__pane__inner,
   .navigation-panel {
@@ -64,7 +63,7 @@
     margin-bottom: 10px;
   }
 
-  [data-color-scheme='light'] .column>.scrollable {
+  [data-color-scheme='light'] .column > .scrollable {
     border: none;
   }
 
