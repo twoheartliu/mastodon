@@ -39,7 +39,7 @@
 
 ## 工程与运维
 
-- 版本号采用四段式（`v4.6.3.x`），第四段为本分支的递增发布号；发版 = 推送分支 + 同名 tag，CI 构建镜像。
-- Docker 镜像推送至 `ghcr.io/twoheartliu/mastodon` 与 `ghcr.io/twoheartliu/mastodon-streaming`（`.github/workflows/` 已改为 fork 配置）。
+- 版本号采用四段式（`vX.Y.Z.N`），第四段为本分支的递增发布号；发版 = 推送分支 + 同名 tag，CI 构建镜像。
+- Docker 镜像推送至 `ghcr.io/nofan-xyz/mastodon` 与 `ghcr.io/nofan-xyz/mastodon-streaming`（`.github/workflows/` 已改为 fork 配置）。
 - git pre-commit 钩子已禁用。
 - 已移除曾引入的 Tangerine UI 主题。
