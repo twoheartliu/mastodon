@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 import CampaignIcon from '@/material-icons/400-24px/campaign.svg?react';
 import HomeIcon from '@/material-icons/400-24px/home-fill.svg?react';
 import { injectIntl } from '@/mastodon/components/intl';
-import { SymbolLogo } from 'mastodon/components/logo';
+import { IconLogo } from 'mastodon/components/logo';
 import { fetchAnnouncements, toggleShowAnnouncements } from 'mastodon/actions/announcements';
 import { IconWithBadge } from 'mastodon/components/icon_with_badge';
 import { NotSignedInIndicator } from 'mastodon/components/not_signed_in_indicator';
@@ -155,7 +155,7 @@ class HomeTimeline extends PureComponent {
       <Column bindToDocument={!multiColumn} ref={this.setRef} label={intl.formatMessage(messages.title)}>
         <ColumnHeader
           icon='home'
-          iconComponent={matchesBreakpoint ? SymbolLogo : HomeIcon}
+          iconComponent={matchesBreakpoint ? IconLogo : HomeIcon}
           active={hasUnread}
           title={intl.formatMessage(messages.title)}
           onPin={this.handlePin}

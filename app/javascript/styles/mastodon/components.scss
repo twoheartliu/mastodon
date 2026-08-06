@@ -3718,6 +3718,26 @@ a.account__display-name {
     min-height: 0;
     overflow-y: auto;
     scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+      border-radius: 4px;
+    }
+
+    &:hover,
+    &:focus-within {
+      scrollbar-color: var(--color-border-primary) transparent;
+
+      &::-webkit-scrollbar-thumb {
+        background: var(--color-border-primary);
+      }
+    }
   }
 
   &__list-panel {

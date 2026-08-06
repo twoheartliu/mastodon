@@ -1,0 +1,28 @@
+@font-face {
+  font-family: mastodon-font-monospace;
+  src: url('@/fonts/geist/GeistMonoVariable.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: mastodon-font-monospace;
+  src: url('@/fonts/geist/GeistMonoVariableItalic.woff2')
+    format('woff2-variations');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: mastodon-font-monospace;
+  src:
+    local('PingFang SC'),
+    local('Microsoft YaHei'),
+    local('Noto Sans CJK SC'),
+    local('Source Han Sans SC'),
+    local('Noto Sans SC'),
+    local('WenQuanYi Micro Hei');
+  font-display: swap;
+}

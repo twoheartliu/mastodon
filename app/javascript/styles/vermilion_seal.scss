@@ -22,3 +22,13 @@
 @use 'mastodon/dashboard';
 @use 'mastodon/rtl';
 @use 'mastodon/rich_text';
+
+// Logo follows the theme brand color
+.logo {
+  fill: var(--color-text-brand);
+}
+
+.logo--icon {
+  color: var(--color-text-brand);
+  fill: var(--color-text-brand);
+}

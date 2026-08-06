@@ -22,6 +22,6 @@ module BrandingHelper
   end
 
   def render_logo
-    image_tag(frontend_asset_path('images/logo.svg'), alt: 'Mastodon', class: 'logo logo--icon')
+    _logo_as_symbol_icon
   end
 end

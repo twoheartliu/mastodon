@@ -1,0 +1,70 @@
+@mixin palette {
+  --color-white: #fff;
+  --color-black: #000;
+
+  // Neutral
+  --color-grey-50: #fafafa;
+  --color-grey-100: #f4f4f4;
+  --color-grey-200: #e4e4e4;
+  --color-grey-300: #d4d4d4;
+  --color-grey-400: #a1a1a1;
+  --color-grey-500: #737373;
+  --color-grey-600: #525252;
+  --color-grey-700: #404040;
+  --color-grey-800: #262626;
+  --color-grey-900: #171717;
+  --color-grey-950: #0a0a0a;
+
+  // Red
+  --color-red-50: #fef2f2;
+  --color-red-100: #ffe2e2;
+  --color-red-200: #ffc9c9;
+  --color-red-300: #ffa2a2;
+  --color-red-400: #ff6467;
+  --color-red-500: #fb2c36;
+  --color-red-600: #e7000b;
+  --color-red-700: #c10007;
+  --color-red-800: #9f0712;
+  --color-red-900: #82181a;
+  --color-red-950: #460809;
+
+  // Yellow
+  --color-yellow-50: #fffbeb;
+  --color-yellow-100: #fef3c6;
+  --color-yellow-200: #fee685;
+  --color-yellow-300: #ffd230;
+  --color-yellow-400: #ffb900;
+  --color-yellow-500: #fe9a00;
+  --color-yellow-600: #e17100;
+  --color-yellow-700: #bb4d00;
+  --color-yellow-800: #973c00;
+  --color-yellow-900: #7b3306;
+  --color-yellow-950: #461901;
+
+  // Green
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-200: #b9f8cf;
+  --color-green-300: #7bf1a8;
+  --color-green-400: #05df72;
+  --color-green-500: #00c950;
+  --color-green-600: #00a63e;
+  --color-green-700: #008236;
+  --color-green-800: #016630;
+  --color-green-900: #0d542b;
+  --color-green-950: #032e15;
+
+  // Vercel surfaces
+  --color-graphite-ink: #2c3033;
+  --color-graphite-ink-hover: #383c40;
+  --color-graphite-ink-light: #54585d;
+  --color-graphite-ink-light-hover: #62666b;
+  --color-graphite-bg-light-primary: #fff;
+  --color-graphite-bg-light-secondary: #fafafa;
+  --color-graphite-bg-light-tertiary: #f4f4f4;
+  --color-graphite-bg-dark-primary: #141414;
+  --color-graphite-bg-dark-secondary: #1a1a1a;
+  --color-graphite-bg-dark-tertiary: #222;
+  --color-graphite-bg-dark-hover: #1e1e1e;
+  --color-graphite-border-dark: #2e2e2e;
+}

@@ -1,0 +1,66 @@
+@use 'mastodon/variables';
+@use 'mastodon/mixins';
+@use 'fonts/geist';
+@use 'fonts/geist-mono';
+
+@use 'mastodon/reset';
+@use 'graphite_theme';
+@use 'mastodon/basics';
+@use 'mastodon/branding';
+@use 'mastodon/containers';
+@use 'mastodon/lists';
+@use 'mastodon/widgets';
+@use 'mastodon/forms';
+@use 'mastodon/accounts';
+@use 'mastodon/components';
+@use 'mastodon/polls';
+@use 'mastodon/modal';
+@use 'mastodon/emoji_picker';
+@use 'mastodon/about';
+@use 'mastodon/tables';
+@use 'mastodon/admin';
+@use 'mastodon/dashboard';
+@use 'mastodon/rtl';
+@use 'mastodon/rich_text';
+
+// Monochrome identity overrides
+.logo {
+  fill: var(--color-grey-600);
+}
+
+[data-color-scheme='light'] .logo {
+  color: var(--color-grey-800);
+}
+
+.icon-verified path {
+  fill: var(--color-text-brand);
+}
+
+// Links remain distinguishable without color
+.status__content a {
+  --text-decoration-default: underline;
+  --text-decoration-hover: none;
+}
+
+// Navigation state feedback
+.column-link.active {
+  font-weight: 500;
+}
+
+// Primary buttons: cool graphite gradient (light mode only)
+[data-color-scheme='light'] .button {
+  background-image: linear-gradient(
+    0deg,
+    var(--color-graphite-ink) 0%,
+    var(--color-graphite-ink-light) 100%
+  );
+
+  &:hover,
+  &:focus-visible {
+    background-image: linear-gradient(
+      0deg,
+      var(--color-graphite-ink-hover) 0%,
+      var(--color-graphite-ink-light-hover) 100%
+    );
+  }
+}

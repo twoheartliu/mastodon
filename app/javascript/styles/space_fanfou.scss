@@ -126,3 +126,13 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+// Logo follows the theme brand color
+.logo {
+  fill: var(--color-text-brand);
+}
+
+.logo--icon {
+  color: var(--color-text-brand);
+  fill: var(--color-text-brand);
+}
