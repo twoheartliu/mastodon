@@ -3,18 +3,18 @@
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 1.6;
   color: var(--color-text-secondary);
-  opacity: 0;
+  opacity: 0.6;
   transition: opacity 0.2s;
 
   &:hover {
-    opacity: 0.9;
+    opacity: 1;
   }
 
   &[data-context='default'] {
-    padding: 20px 0;
+    padding: 16px 0;
   }
 
   &[data-context='multi-column'] {
@@ -33,12 +33,6 @@
   }
 }
 
-.heading {
-  display: inline;
-  margin-inline-end: 0.3em;
-  font-weight: 500;
-}
-
 .list {
   display: inline;
 
@@ -55,12 +49,13 @@
   }
 
   a {
-    color: var(--color-text-secondary);
-    text-decoration: underline;
+    color: inherit;
+    text-decoration: none;
 
     &:hover,
     &:focus,
     &:active {
+      color: var(--color-text-primary);
       text-decoration: none;
     }
   }
@@ -68,4 +63,7 @@
 
 .version {
   white-space: nowrap;
+  font-family: mastodon-font-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.02em;
 }

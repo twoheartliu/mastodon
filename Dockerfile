@@ -32,6 +32,8 @@ ARG MASTODON_VERSION_PRERELEASE=""
 ARG MASTODON_VERSION_METADATA=""
 # Will be available as Mastodon::Version.source_commit
 ARG SOURCE_COMMIT=""
+# Will be available as Mastodon::Version fork revision (e.g. v4.6.4.9)
+ARG SOURCE_TAG=""
 
 # Allow Ruby on Rails to serve static files
 # See: https://docs.joinmastodon.org/admin/config/#rails_serve_static_files
@@ -51,6 +53,7 @@ ENV \
   MASTODON_VERSION_PRERELEASE="${MASTODON_VERSION_PRERELEASE}" \
   MASTODON_VERSION_METADATA="${MASTODON_VERSION_METADATA}" \
   SOURCE_COMMIT="${SOURCE_COMMIT}" \
+  SOURCE_TAG="${SOURCE_TAG}" \
   RAILS_SERVE_STATIC_FILES="${RAILS_SERVE_STATIC_FILES}" \
   RUBY_YJIT_ENABLE="${RUBY_YJIT_ENABLE}" \
   TZ="${TZ}"

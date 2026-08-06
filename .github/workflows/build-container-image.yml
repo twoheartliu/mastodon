@@ -85,6 +85,7 @@ jobs:
             MASTODON_VERSION_PRERELEASE=${{ inputs.version_prerelease }}
             MASTODON_VERSION_METADATA=${{ inputs.version_metadata }}
             SOURCE_COMMIT=${{ github.sha }}
+            SOURCE_TAG=${{ github.ref_name }}
           platforms: ${{ matrix.platform }}
           provenance: false
           push: ${{ inputs.push_to_images != '' }}

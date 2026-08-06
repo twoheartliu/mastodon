@@ -16,6 +16,19 @@ module Mastodon
       4
     end
 
+    def fork_revision
+      @fork_revision ||= configured_fork_revision || default_fork_revision
+    end
+
+    def default_fork_revision
+      0
+    end
+
+    def configured_fork_revision
+      tag = source_configuration[:tag].to_s.sub(/\Av/i, '').split('.')
+      tag.length >= 4 ? tag[3].to_i : nil
+    end
+
     def default_prerelease
       ''
     end
@@ -29,7 +42,7 @@ module Mastodon
     end
 
     def to_a
-      [major, minor, patch].compact
+      [major, minor, patch, fork_revision].reject(&:zero?)
     end
 
     def to_s
