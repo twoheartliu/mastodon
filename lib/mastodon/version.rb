@@ -42,7 +42,7 @@ module Mastodon
     end
 
     def to_a
-      [major, minor, patch, fork_revision].reject(&:zero?)
+      [major, minor, patch, fork_revision]
     end
 
     def to_s
