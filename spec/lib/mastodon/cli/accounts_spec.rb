@@ -36,10 +36,10 @@ RSpec.describe Mastodon::CLI::Accounts do
 
     shared_examples 'a new user with given email address and username' do
       it 'creates user and accounts from options and displays success message' do
-        allow(SecureRandom).to receive(:hex).and_return('test_password')
+        allow(SecureRandom).to receive(:hex).and_return('0abcdef0')
 
         expect { subject }
-          .to output_results('OK', 'New password: test_password')
+          .to output_results('OK', 'New password: 0abcdef0')
         expect(user_from_options).to be_present
         expect(account_from_options).to be_present
       end
@@ -363,7 +363,7 @@ RSpec.describe Mastodon::CLI::Accounts do
 
         let(:user) { Fabricate(:user, password: original_password) }
         let(:original_password) { 'foobar12345' }
-        let(:new_password) { 'new_password12345' }
+        let(:new_password) { '0abcdef0' }
 
         it 'returns a new password for the user' do
           allow(SecureRandom).to receive(:hex).and_return(new_password)
@@ -655,7 +655,7 @@ RSpec.describe Mastodon::CLI::Accounts do
 
     context 'when there are duplicate URI accounts' do
       before do
-        Fabricate.times(2, :account, domain: 'host.example', uri: uri)
+        Fabricate.times(2, :account, domain: 'host.example', uri: uri, legacy_keypair: true)
         allow(ActivityPub::FetchRemoteAccountService).to receive(:new).and_return(service_double)
       end
 
@@ -951,15 +951,15 @@ RSpec.describe Mastodon::CLI::Accounts do
       let(:arguments) { [account.username] }
 
       it 'correctly rotates keys for the specified account' do
-        old_private_key = account.private_key
-        old_public_key = account.public_key
+        old_private_key = account.keypair.private_key
+        old_public_key = account.keypair.public_key
 
         expect { subject }
           .to output_results('OK')
         account.reload
 
-        expect(account.private_key).to_not eq(old_private_key)
-        expect(account.public_key).to_not eq(old_public_key)
+        expect(account.keypair.private_key).to_not eq(old_private_key)
+        expect(account.keypair.public_key).to_not eq(old_public_key)
       end
 
       it 'broadcasts the new keys for the specified account' do
@@ -969,6 +969,30 @@ RSpec.describe Mastodon::CLI::Accounts do
           .to output_results('OK')
 
         expect(ActivityPub::UpdateDistributionWorker).to have_received(:perform_in).with(anything, account.id, anything).once
+      end
+
+      context 'when the account only has a legacy key' do
+        let(:account) { Fabricate(:account, legacy_keypair: true) }
+
+        before do
+          account.keypairs.delete_all
+        end
+
+        it 'signs the update with the old legacy key URI' do
+          options = nil
+
+          allow(ActivityPub::UpdateDistributionWorker).to receive(:perform_in) do |_, _, opts|
+            options = opts
+          end
+
+          expect { subject }
+            .to output_results('OK')
+
+          sign_with = Keypair.from_worker_arg(account.reload, options['sign_with'])
+
+          expect(sign_with.full_uri).to eq(ActivityPub::TagManager.instance.key_uri_for(account))
+          expect(sign_with.keypair).to be_a(OpenSSL::PKey::RSA)
+        end
       end
     end
 
@@ -986,15 +1010,15 @@ RSpec.describe Mastodon::CLI::Accounts do
       let(:options) { { all: true } }
 
       it 'correctly rotates keys for all local accounts' do
-        old_private_keys = accounts.map(&:private_key)
-        old_public_keys = accounts.map(&:public_key)
+        old_private_keys = accounts.map { |account| account.keypair.private_key }
+        old_public_keys = accounts.map { |account| account.keypair.public_key }
 
         expect { subject }
           .to output_results('rotated')
         accounts.each(&:reload)
 
-        expect(accounts.map(&:private_key)).to_not eq(old_private_keys)
-        expect(accounts.map(&:public_key)).to_not eq(old_public_keys)
+        expect(accounts.map { |account| account.keypair.private_key }).to_not eq(old_private_keys)
+        expect(accounts.map { |account| account.keypair.public_key }).to_not eq(old_public_keys)
       end
 
       it 'broadcasts the new keys for each account' do
