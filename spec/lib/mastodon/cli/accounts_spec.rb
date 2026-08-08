@@ -4,6 +4,8 @@ require 'rails_helper'
 require 'mastodon/cli/accounts'
 
 RSpec.describe Mastodon::CLI::Accounts do
+  include JsonLdHelper
+
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }
@@ -993,6 +995,30 @@ RSpec.describe Mastodon::CLI::Accounts do
           expect(sign_with.full_uri).to eq(ActivityPub::TagManager.instance.key_uri_for(account))
           expect(sign_with.keypair).to be_a(OpenSSL::PKey::RSA)
         end
+
+        it 'delivers an Update signed with the old legacy key end-to-end' do
+          old_public_key = account.public_key
+          old_key_uri = ActivityPub::TagManager.instance.key_uri_for(account)
+          inbox_url = 'https://example.com/inbox'
+          options = nil
+          delivered_json = nil
+
+          Fabricate(:account, protocol: :activitypub, inbox_url: inbox_url, domain: 'example.com').follow!(account)
+          stub_request(:post, inbox_url).to_return(status: 200)
+          allow(ActivityPub::UpdateDistributionWorker).to receive(:perform_in) { |_, _, opts| options = opts }
+          allow(ActivityPub::DeliveryWorker).to receive(:push_bulk) { |inboxes, _, &block| inboxes.each { |inbox| delivered_json = block.call(inbox) } }
+
+          expect { subject }.to output_results('OK')
+
+          ActivityPub::UpdateDistributionWorker.new.perform(account.id, options)
+
+          expect(valid_signature?(JSON.parse(delivered_json.first), old_public_key, old_key_uri)).to be true
+
+          ActivityPub::DeliveryWorker.new.perform(*delivered_json)
+
+          expect(a_request(:post, inbox_url).with(headers: { 'Signature' => /keyId="#{Regexp.escape(old_key_uri)}"/ }))
+            .to have_been_made.once
+        end
       end
     end
 
@@ -1563,5 +1589,16 @@ RSpec.describe Mastodon::CLI::Accounts do
         it_behaves_like 'a successful migration'
       end
     end
+  end
+
+  private
+
+  def valid_signature?(payload, public_key, key_uri)
+    signature = payload['signature']
+    return false if signature.nil? || signature['creator'] != key_uri
+
+    to_be_signed = Digest::SHA256.hexdigest(canonicalize(signature.without('type', 'id', 'signatureValue').merge('@context' => ActivityPub::LinkedDataSignature::CONTEXT))) +
+                   Digest::SHA256.hexdigest(canonicalize(payload.without('signature')))
+    OpenSSL::PKey::RSA.new(public_key).verify(OpenSSL::Digest.new('SHA256'), Base64.decode64(signature['signatureValue']), to_be_signed)
   end
 end
