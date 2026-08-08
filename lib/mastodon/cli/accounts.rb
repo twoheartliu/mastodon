@@ -623,6 +623,7 @@ module Mastodon::CLI
         {
           'sign_with' => {
             'private_key' => old_key.private_key,
+            'uri' => old_key.uri,
             'local_fragment' => old_key.local_fragment,
             'type' => old_key.type,
           },

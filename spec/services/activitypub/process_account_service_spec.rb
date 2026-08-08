@@ -306,7 +306,6 @@ RSpec.describe ActivityPub::ProcessAccountService do
     end
   end
 
-(Change new local accounts to use the `Keypair` model instead of legacy attributes (#39684))
   context 'with attribution domains' do
     let(:payload) do
       {

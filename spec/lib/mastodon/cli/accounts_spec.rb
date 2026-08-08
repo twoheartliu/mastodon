@@ -970,6 +970,30 @@ RSpec.describe Mastodon::CLI::Accounts do
 
         expect(ActivityPub::UpdateDistributionWorker).to have_received(:perform_in).with(anything, account.id, anything).once
       end
+
+      context 'when the account only has a legacy key' do
+        let(:account) { Fabricate(:account, legacy_keypair: true) }
+
+        before do
+          account.keypairs.delete_all
+        end
+
+        it 'signs the update with the old legacy key URI' do
+          options = nil
+
+          allow(ActivityPub::UpdateDistributionWorker).to receive(:perform_in) do |_, _, opts|
+            options = opts
+          end
+
+          expect { subject }
+            .to output_results('OK')
+
+          sign_with = Keypair.from_worker_arg(account.reload, options['sign_with'])
+
+          expect(sign_with.full_uri).to eq(ActivityPub::TagManager.instance.key_uri_for(account))
+          expect(sign_with.keypair).to be_a(OpenSSL::PKey::RSA)
+        end
+      end
     end
 
     context 'when the given username is not found' do
