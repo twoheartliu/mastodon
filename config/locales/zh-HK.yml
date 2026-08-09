@@ -1657,6 +1657,9 @@ zh-HK:
       too_late: 對此次警告提出申訴已經太遲
   tags:
     does_not_match_previous_name: 和舊有名稱並不符合
+  themes:
+    mastodon-bird-ui-auto: Mastodon Bird UI
+    default: Mastodon
   time:
     formats:
       default: "%Y年%b月%d日 %H:%M"

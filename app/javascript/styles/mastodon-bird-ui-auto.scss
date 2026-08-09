@@ -1,0 +1,15 @@
+@use 'application';
+@use 'mastodon-bird-ui';
+@use 'mastodon-bird-ui/on-this-day-fix';
+@use 'mastodon-bird-ui/nofan-tweaks';
+@use 'mastodon-bird-ui/variables/light-mixin' as light;
+
+[data-color-scheme="light"] {
+  @include light.tokens;
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-color-scheme]) {
+    @include light.tokens;
+  }
+}

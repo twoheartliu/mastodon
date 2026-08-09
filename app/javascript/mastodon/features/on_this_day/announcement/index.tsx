@@ -16,7 +16,7 @@ export const OnThisDayAnnouncement: React.FC<OnThisDayAnnouncementProps> = ({
   onShow,
   onDismiss,
 }) => (
-  <div className={styles.wrapper}>
+  <div className={styles.wrapper} role='status' aria-live='polite'>
     <span className={styles.newBadge}>
       <FormattedMessage
         id='on_this_day.announcement.badge'

@@ -36,12 +36,6 @@
   fill: var(--color-text-brand);
 }
 
-// Links remain distinguishable without color
-.status__content a {
-  --text-decoration-default: underline;
-  --text-decoration-hover: none;
-}
-
 // Navigation state feedback
 .column-link.active {
   font-weight: 500;
@@ -54,6 +48,51 @@
     var(--color-graphite-ink) 0%,
     var(--color-graphite-ink-light) 100%
   );
+
+  &:hover,
+  &:focus-visible {
+    background-image: linear-gradient(
+      0deg,
+      var(--color-graphite-ink-hover) 0%,
+      var(--color-graphite-ink-light-hover) 100%
+    );
+  }
+}
+
+// Profile actions (Edit profile / Follow / Unfollow): the secondary style
+// renders near-black text on a transparent background in monochrome light
+// mode. Use the solid graphite gradient with white text, like the compose
+// publish button.
+[data-color-scheme='light'] [class*="_comp_account_header__buttons"] .button {
+  background-image: linear-gradient(
+    0deg,
+    var(--color-graphite-ink) 0%,
+    var(--color-graphite-ink-light) 100%
+  );
+  border-color: transparent;
+  color: var(--color-white);
+
+  &:hover,
+  &:focus-visible {
+    background-image: linear-gradient(
+      0deg,
+      var(--color-graphite-ink-hover) 0%,
+      var(--color-graphite-ink-light-hover) 100%
+    );
+  }
+}
+
+// Same treatment for the buttons inside user cards (hover card, directory
+// cards), where the self-account Edit profile button is secondary-styled.
+[data-color-scheme='light'] .hover-card .button-secondary,
+[data-color-scheme='light'] .account-card__actions__button .button-secondary {
+  background-image: linear-gradient(
+    0deg,
+    var(--color-graphite-ink) 0%,
+    var(--color-graphite-ink-light) 100%
+  );
+  border-color: transparent;
+  color: var(--color-white);
 
   &:hover,
   &:focus-visible {

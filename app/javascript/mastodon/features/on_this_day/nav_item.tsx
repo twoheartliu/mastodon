@@ -30,10 +30,12 @@ export const OnThisDayNavItem: React.FC = () => {
       className={classNames('column-link column-link--transparent', { active })}
     >
       <Icon id='history' icon={HistoryIcon} width='24' height='24' />
-      <FormattedMessage
-        id='on_this_day.nav_item.title'
-        defaultMessage='On This Day'
-      />
+      <span>
+        <FormattedMessage
+          id='on_this_day.nav_item.title'
+          defaultMessage='On This Day'
+        />
+      </span>
     </Link>
   );
 };

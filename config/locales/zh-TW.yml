@@ -2146,6 +2146,7 @@ zh-TW:
     review_link: 檢視服務條款
     title: "%{domain} 之服務條款正在悄悄發生變化"
   themes:
+    mastodon-bird-ui-auto: Mastodon Bird UI
     default: Mastodon
   time:
     formats:

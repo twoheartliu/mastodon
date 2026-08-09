@@ -1,41 +1,171 @@
 .wrapper {
-  padding: 20px 16px;
+  padding: 28px 16px 32px;
+  animation: fade-in-up 200ms ease-out;
 }
 
-.heading {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 24px;
+// Hero: the date is the subject of this page, not the feature name
+.hero {
+  margin-bottom: 28px;
   text-align: center;
 }
 
-.emptyMessage {
-  text-align: center;
+.heroDate {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.heroSummary {
   color: var(--color-text-secondary);
-  padding: 40px 20px;
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 8px 0 0;
 }
 
+// Ledger line: year + relative distance floating on a hairline, the
+// signature element — archive rhythm for a memory journal
 .yearSection {
-  margin-bottom: 32px;
+  animation: fade-in-up 200ms ease-out both;
+  animation-delay: var(--reveal-delay, 0ms);
+  margin-bottom: 28px;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.yearHeading {
+// Year heading: plain text
+.yearDivider {
+  border-bottom: 1px solid var(--color-border-primary);
+  color: var(--color-text-secondary);
   font-size: 18px;
   font-weight: 600;
-  color: var(--color-text-secondary);
-  margin-bottom: 12px;
+  margin: 0 0 12px;
   padding-bottom: 4px;
-  border-bottom: 1px solid var(--color-border-primary);
+  text-transform: none;
 }
 
 .statusList {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 12px 32px;
+  text-align: center;
+}
+
+.emptyIcon {
+  background: var(--color-bg-brand-soft);
+  border-radius: 50%;
+  color: var(--color-text-brand);
+  height: 28px;
+  margin-bottom: 20px;
+  padding: 18px;
+  width: 28px;
+}
+
+.emptyMessage {
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.emptyAction {
+  margin-top: 20px;
+}
+
+// Skeleton loading state, mirrors the real layout to avoid layout shift
+.skeletonHeader {
+  background: var(--color-bg-secondary);
+  border-radius: 8px;
+  height: 44px;
+  margin: 0 auto 10px;
+  width: 45%;
+}
+
+.skeletonSummary {
+  background: var(--color-bg-secondary);
+  border-radius: 6px;
+  height: 16px;
+  margin: 0 auto 32px;
+  width: 35%;
+}
+
+.skeletonRow {
+  margin-bottom: 28px;
+}
+
+.skeletonDivider {
+  background: var(--color-bg-secondary);
+  border-radius: 6px;
+  height: 18px;
+  margin-bottom: 12px;
+  width: 180px;
+}
+
+.skeletonCard {
+  background: var(--color-bg-secondary);
+  border-radius: 8px;
+  height: 96px;
+  margin-bottom: 8px;
+}
+
+.skeletonHeader,
+.skeletonSummary,
+.skeletonDivider,
+.skeletonCard {
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes skeleton-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.45;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wrapper,
+  .yearSection {
+    animation: none;
+  }
+
+  .skeletonHeader,
+  .skeletonSummary,
+  .skeletonDivider,
+  .skeletonCard {
+    animation: none;
+  }
+}
+
+@media screen and (width <= 480px) {
+  .heroDate {
+    font-size: 32px;
+  }
 }
