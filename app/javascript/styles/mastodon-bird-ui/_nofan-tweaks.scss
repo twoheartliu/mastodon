@@ -1,0 +1,183 @@
+// nofan fork tweaks: brighter input fields and search bar.
+// Bird UI's dark scheme renders inputs with a very dark translucent navy
+// (rgb(39 44 64 / 50%)) and dim gray text; we raise field visibility and
+// text contrast in both color schemes.
+
+// Dark scheme (default)
+:root,
+html:not([data-color-scheme]) {
+  --color-field-border: rgb(133 142 171 / 30%);
+  --color-field-placeholder: #8f98b5;
+}
+
+// Light scheme. Must apply through BOTH light-mode paths: the
+// data-color-scheme attribute (Appearance setting) and the system
+// prefers-color-scheme fallback without the attribute.
+@mixin nofan-light-tokens {
+  --color-field: #fff;
+  --color-field-border: #d8d2e0;
+  --color-field-placeholder: rgb(15 20 25);
+
+  // Light scheme compose highlightable: white field, no border in any
+  // state.
+  .layout-single-column .compose-form .compose-form__highlightable,
+  .layout-multiple-columns .compose-form .compose-form__highlightable {
+    background-color: #fff;
+    border: 0;
+  }
+
+  // The autosuggest wrapper and the buttons bar also switch to
+  // var(--color-bg-compose-form-focus) on focus; Bird UI's light tokens set
+  // that to a translucent purple-gray (rgb(147 136 166 / 30%)) which loads
+  // after our tokens, so hardcode the light tone here too.
+  .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within,
+  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within,
+  .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within~.compose-form__buttons-wrapper,
+  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within~.compose-form__buttons-wrapper,
+  .layout-single-column .compose-form__highlightable .compose-form__autosuggest-wrapper:focus-within~.compose-form__buttons-wrapper,
+  .layout-multiple-columns .compose-form__highlightable .compose-form__autosuggest-wrapper:focus-within~.compose-form__buttons-wrapper {
+    background-color: #fff;
+    border-color: #fff;
+  }
+
+  // Focus outlines come from the brand blue (--color-border-brand #6364ff)
+  // via --outline-focus-default. The compose box drops it in every state —
+  // otherwise the 2px ring re-appears during the blur transition and
+  // flashes. Generic inputs keep a softened light neutral.
+  .compose-form__highlightable {
+    outline: 0;
+  }
+
+  input[type='text']:focus,
+  input[type='number']:focus,
+  input[type='email']:focus,
+  input[type='password']:focus,
+  input[type='url']:focus,
+  input[type='datetime-local']:focus,
+  textarea:focus {
+    outline-color: #f2f2f2;
+  }
+}
+
+[data-color-scheme='light'] {
+  @include nofan-light-tokens;
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-color-scheme]) {
+    @include nofan-light-tokens;
+  }
+
+  .compose-form__highlightable {
+    background-color: #fff;
+  }
+}
+
+.layout-single-column,
+.layout-multiple-columns {
+
+  // Twitter-style sidebar: larger nav labels
+  .navigation-panel .column-link {
+    font-size: 20px;
+    padding-block: 20px;
+  }
+
+  // More room between the label text and the hover pill: extend the link's
+  // inline padding in lockstep with the pill's insets (below), so the pill
+  // stays flush with the panel edge while the icon/text keep air on both
+  // sides (icon 16px, text 30px).
+  .navigation-panel__menu>li>.column-link:not(.navigation-panel__compose-button),
+  .navigation-panel__list-panel__header>.column-link {
+    padding-inline-start: calc(var(--gap-column-link) + 6px);
+    padding-inline-end: calc(var(--gap-column-link) * 1.5 + 15px);
+  }
+
+  // Bird UI sizes .column-link icons to 22px but also gives `> i` a
+  // min-width of 1.3em, stretching the inline-flex <i> wrappers used by
+  // IconWithBadge (Notifications, Follow requests) to 26px and shifting
+  // their label right. The hover pill is anchored to the label <span>, so
+  // that 4px difference pushes the pill past the panel's left edge on every
+  // item without a badge. Neutralize it so all icons are 22px wide.
+  .navigation-panel .column-link>i {
+    min-width: 0;
+  }
+
+  // Hover pill: span the full .column-link width like Twitter, instead of
+  // hugging only the label text. Left offset = link padding-inline-start
+  // (var(--gap-column-link) + 6px) + icon (22px) + column-gap (14px); right
+  // offset matches the extended padding-inline-end above so the pill stays
+  // flush while the text keeps air; vertical offsets match the 20px
+  // padding-block set above. Covers the main menu links plus the Lists /
+  // Followed hashtags header links; nested panel items keep their own pill.
+  .navigation-panel__menu>li>.column-link:not(.navigation-panel__compose-button)>span::before,
+  .navigation-panel__list-panel__header>.column-link>span::before {
+    inset-inline-start: calc(-1 * (var(--gap-column-link) + 6px + 22px + 14px));
+    inset-inline-end: calc(-1 * (var(--gap-column-link) * 1.5 + 15px));
+    top: calc(-10px - var(--gap-column-link));
+    bottom: calc(-10px - var(--gap-column-link));
+  }
+
+  // Nav scrollbar: reveal only on hover, like the classic themes. Bird UI
+  // keeps a permanently visible 4px scrollbar on .navigation-panel__menu;
+  // make it transparent until the menu is hovered/focused, then show the
+  // same 4px rounded thumb in the border color.
+  .navigation-panel__menu {
+    scrollbar-color: transparent transparent;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+
+    &:hover,
+    &:focus-within {
+      scrollbar-color: var(--color-border) transparent;
+
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--color-border);
+      }
+    }
+  }
+
+  // Match Bird UI's mobile-compact rule specificity so 20px holds on all
+  // widths (its rule wins at ≤759px otherwise)
+  .columns-area__panels__pane--navigational .columns-area__panels__pane__inner .navigation-panel .column-link {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  // Keep list sub-items readable but slightly smaller
+  .navigation-panel__list-panel .column-link {
+    font-size: 18px;
+  }
+
+  // Followed hashtags: same treatment as list items
+  .navigation-panel .hashtag-bar {
+    font-size: 16px;
+
+    .link-button {
+      font-size: 16px;
+    }
+  }
+
+  // Search input and generic text inputs: lighter field, readable text
+  .search.active .search__input,
+  input.setting-text,
+  .search__input {
+    background-color: var(--color-field);
+    border-color: var(--color-field-border);
+    color: var(--color-light-text);
+  }
+
+  // Readable placeholders everywhere
+  .compose-form__autosuggest-wrapper textarea::placeholder,
+  .report-dialog-modal__textarea::placeholder,
+  .poll__option input[type='text']::placeholder,
+  .search__input::placeholder,
+  input::placeholder,
+  input.setting-text::placeholder,
+  .emoji-mart-search>input::placeholder {
+    color: var(--color-field-placeholder);
+    opacity: 1;
+  }
+}

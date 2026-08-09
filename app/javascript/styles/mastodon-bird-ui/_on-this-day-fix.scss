@@ -1,0 +1,10 @@
+// nofan fork fix: restore the On This Day (那年今日) sidebar icon.
+// Bird UI's icon replacement system (_icon-replacements.scss) hides every
+// .column-link .icon path and only paints replacements for stock Mastodon
+// nav icons; the custom history icon has no replacement, so it vanished.
+.layout-single-column,
+.layout-multiple-columns {
+  .column-link .icon.icon-history path {
+    display: block;
+  }
+}
