@@ -27,6 +27,10 @@ html:not([data-color-scheme]) {
   --color-field-border: #d8d2e0;
   --color-field-placeholder: rgb(15 20 25);
 
+  // Light scheme keeps the stock Bird UI frame/quote colors; the token must
+  // resolve so the shared --color-border-main rules stay valid.
+  --color-border-main: #eff3f4;
+
   // Light scheme compose highlightable: white field, no border in any
   // state.
   .layout-single-column .compose-form .compose-form__highlightable,
@@ -94,6 +98,80 @@ html:not([data-color-scheme]) {
   // Settings divider inside the collapsed header section
   .column-header__collapsible hr {
     border-top-color: var(--color-border-main);
+  }
+
+  // Quote posts: Twitter-style filled card. Core draws .status__quote as a
+  // transparent box with a border only — with the dark frame color that box
+  // now vanishes into the page background. Twitter fills its quote tweets
+  // with the same tone as the frame; do the same so the quoted post reads
+  // as a card. Border-radius matches the theme's 16px instead of core's 12.
+  .status__quote {
+    background-color: var(--color-border-main);
+    border-color: var(--color-border-main);
+    border-radius: var(--border-radius);
+  }
+
+  // Quote post header: vertically center avatar + name + username and make
+  // the header tall enough for the 32px quote avatar. Bird UI pins the
+  // header to 24px and `align-items: flex-start`, so the avatar overflows
+  // downward and covers the quoted text.
+  .status__quote .status .status__info {
+    align-items: center;
+    height: auto;
+    padding-bottom: 8px;
+
+    .status__display-name {
+      align-items: center;
+    }
+
+    // Bird UI renders nickname and username inline (row flex) with different
+    // font sizes. Use center alignment so the smaller username box sits
+    // optically level with the nickname, rather than baseline alignment which
+    // pushes the username down by its shorter ascenders.
+    .display-name {
+      align-items: center;
+    }
+  }
+
+  // Quote post layout fix (composer preview). Bird UI reorders .status__info
+  // children with `order` and uses `justify-content: flex-start`; this shoves
+  // the cancel button to the far left. Restore the default header flow only
+  // when the cancel button is present, so avatar/name stay left and the
+  // date/cancel button stay right.
+  .status__quote .status__info:has(.status__quote-cancel) {
+    justify-content: space-between;
+
+    .status__display-name {
+      margin-inline-end: auto;
+      order: 0;
+    }
+
+    .status__relative-time {
+      order: 0;
+    }
+  }
+
+  // Bird UI's timeline gutter padding (avatar + gap) leaks into quoted
+  // statuses, indenting quote text/media by the small 32px avatar width.
+  // Inside the quote box everything should sit at the box padding. Use the
+  // same specificity as Bird UI's gutter rules so these resets win by
+  // cascade order.
+  .status__quote .status:not(.status--in-thread) .status__content,
+  .status__quote .status:not(.status--in-thread) .status__action-bar,
+  .status__quote .status:not(.status--in-thread) .attachment-list,
+  .status__quote .status:not(.status--in-thread) .hashtag-bar {
+    padding-inline-start: 0;
+  }
+
+  .status__quote .status:not(.status--in-thread) .status__content,
+  .status__quote .status:not(.status--in-thread) .status__action-bar,
+  .status__quote .status:not(.status--in-thread) .media-gallery,
+  .status__quote .status:not(.status--in-thread) .video-player,
+  .status__quote .status:not(.status--in-thread) .audio-player,
+  .status__quote .status:not(.status--in-thread) .attachment-list,
+  .status__quote .status:not(.status--in-thread) .hashtag-bar,
+  .status__quote .status__quote-author-button {
+    margin-inline-start: 0;
   }
 
   // Twitter-style sidebar: larger nav labels
