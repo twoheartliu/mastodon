@@ -8,6 +8,15 @@
 html:not([data-color-scheme]) {
   --color-field-border: rgb(133 142 171 / 30%);
   --color-field-placeholder: #8f98b5;
+
+  // Main frame color for the dark scheme. Bird UI draws the main column
+  // frame with the near-white #eff3f4 border, which glares on the #1e2028
+  // background. Twitter's dark theme instead separates its main column with
+  // a tone only slightly lighter than the page background (#2f3336 on
+  // #000); mirror that tone here so the frame recedes instead of glowing.
+  --color-border-main: #2f3336;
+  --color-border-primary: #2f3336;
+  --color-border: #2f3336;
 }
 
 // Light scheme. Must apply through BOTH light-mode paths: the
@@ -75,6 +84,17 @@ html:not([data-color-scheme]) {
 
 .layout-single-column,
 .layout-multiple-columns {
+  // Column header frame: core and Bird UI both stroke .column-header with
+  // the near-white border token; switch it to the dark frame color so the
+  // header sits inside the timeline frame instead of glowing white.
+  .column-header {
+    border-color: var(--color-border-main);
+  }
+
+  // Settings divider inside the collapsed header section
+  .column-header__collapsible hr {
+    border-top-color: var(--color-border-main);
+  }
 
   // Twitter-style sidebar: larger nav labels
   .navigation-panel .column-link {
