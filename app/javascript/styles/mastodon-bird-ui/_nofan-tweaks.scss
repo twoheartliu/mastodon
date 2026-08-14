@@ -217,8 +217,13 @@ html:not([data-color-scheme]) {
 
   // Nav scrollbar: reveal only on hover, like the classic themes. Bird UI
   // keeps a permanently visible 4px scrollbar on .navigation-panel__menu;
-  // make it transparent until the menu is hovered/focused, then show the
-  // same 4px rounded thumb in the border color.
+  // make it transparent until the menu is hovered, then show the same 4px
+  // rounded thumb in the border color. Core Mastodon used to also reveal
+  // on :focus-within (components.scss), which kept the scrollbar visible
+  // after clicking a nav link; that reveal is removed there, and no other
+  // rule shows the scrollbar on focus, so the base transparent state
+  // covers the focused menu. Keyboard scrolling still works without the
+  // visual cue.
   .navigation-panel__menu {
     scrollbar-color: transparent transparent;
 
@@ -226,8 +231,7 @@ html:not([data-color-scheme]) {
       background-color: transparent;
     }
 
-    &:hover,
-    &:focus-within {
+    &:hover {
       scrollbar-color: var(--color-border) transparent;
 
       &::-webkit-scrollbar-thumb {
@@ -289,6 +293,14 @@ html:not([data-color-scheme]) {
 // sizing constraints from the heart micro-interaction; undo both so the
 // preview keeps the native control look.
 .media-modal {
+  // Idle heart on the near-black overlay. The timeline heart sprite
+  // (--icon-heart) is a gray tone that clashes with the footer's other
+  // buttons, which are white material icons (--color-text-on-media); the
+  // white column-link sprite is only white in the dark theme. Give the
+  // media modal its own white idle heart; the active state keeps the pink
+  // sprite (--icon-heart-active-red).
+  --icon-heart-on-media: url("data:image/svg+xml, %0A%3Csvg viewBox='0 0 24 24' color='inherit' width='20' height='20' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='%23ffffff' d='M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2zm-3.566 15.604a26.953 26.953 0 0 0 2.42-1.701C18.335 14.533 20 11.943 20 9c0-2.36-1.537-4-3.5-4c-1.076 0-2.24.57-3.086 1.414L12 7.828l-1.414-1.414C9.74 5.57 8.576 5 7.5 5C5.56 5 4 6.656 4 9c0 2.944 1.666 5.533 4.645 7.903c.745.592 1.54 1.145 2.421 1.7c.299.189.595.37.934.572c.339-.202.635-.383.934-.571z'/%3E%3C/svg%3E");
+
   // Restore native icon sizes, and let icons inherit the button color
   // instead of pinning them to --color-text-on-media: the footer action
   // icons must pick up the active tint (boosted = brand, favourited =
@@ -347,11 +359,11 @@ html:not([data-color-scheme]) {
     // Favourite button: reuse the timeline's heart treatment. _heart.scss
     // only replaces the star icon inside .status__action-bar, so the
     // preview footer still shows the native material star; mirror the
-    // timeline rules here (gray heart, red heart when active, native star
-    // path hidden). The pop sprite + animation on .activate are global
-    // rules and already apply to the footer.
+    // timeline rules here (white heart on the overlay, pink heart when
+    // active, native star path hidden). The pop sprite + animation on
+    // .activate are global rules and already apply to the footer.
     .icon-button .icon-star {
-      background-image: var(--icon-heart);
+      background-image: var(--icon-heart-on-media);
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -512,4 +524,14 @@ html.no-reduce-motion
 .detailed-status__action-bar .icon-button:hover > .icon,
 .detailed-status__action-bar .icon-button:focus > .icon {
   background-color: rgba(96, 105, 132, 15%);
+}
+
+// Favourite counter: _heart.scss paints the counter red on hover/active
+// (--color-red). Cancel it so the number follows the button's own color
+// (white in the media modal overlay, icon tone in the timelines).
+.layout-single-column button.icon-button:hover .icon-star ~ span,
+.layout-single-column button.icon-button.active .icon-star ~ span,
+.layout-multiple-columns button.icon-button:hover .icon-star ~ span,
+.layout-multiple-columns button.icon-button.active .icon-star ~ span {
+  color: inherit;
 }

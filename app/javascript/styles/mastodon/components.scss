@@ -3730,8 +3730,10 @@ a.account__display-name {
       border-radius: 4px;
     }
 
-    &:hover,
-    &:focus-within {
+    // Reveal on hover only. :focus-within used to reveal it as well, but
+    // clicking any nav link keeps the menu focused, so the scrollbar stayed
+    // visible after the mouse left until the user clicked outside.
+    &:hover {
       scrollbar-color: var(--color-border-primary) transparent;
 
       &::-webkit-scrollbar-thumb {
