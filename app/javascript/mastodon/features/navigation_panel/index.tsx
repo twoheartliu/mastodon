@@ -473,7 +473,7 @@ export const CollapsibleNavigationPanel: React.FC = () => {
         x({ value }: { value: number }) {
           if (value === 0) {
             dispatch(openNavigation());
-          } else if (isLtrDir ? value > 0 : value < 0) {
+          } else if (value === OPEN_MENU_OFFSET) {
             dispatch(closeNavigation());
           }
         },
@@ -513,6 +513,7 @@ export const CollapsibleNavigationPanel: React.FC = () => {
     },
     {
       from: () => [x.get(), 0],
+      axis: 'x',
       filterTaps: true,
       bounds: isLtrDir ? { left: 0 } : { right: 0 },
       rubberband: true,
