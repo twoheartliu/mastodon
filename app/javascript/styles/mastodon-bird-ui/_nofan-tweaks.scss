@@ -470,34 +470,57 @@ html.no-reduce-motion
 }
 
 .status__action-bar .icon-button > .icon {
-  // The icon is an <svg> (Icon renders the .icon class on the svg), and
-  // pseudo-elements do not paint on replaced elements, so the hover circle
-  // must be the icon's own background: symmetric padding grows the box to
-  // a 35px circle (21px + 2x7px) with a compensating negative margin so
-  // the layout size stays 21px. Centered by construction, independent of
-  // the counter width.
+  // Keep the feedback circle centered on the icon without changing the
+  // icon's box. Padding/negative-margin based circles make the SVG 33px
+  // wide and make the normal and persistent .activate states use different
+  // geometry.
   border-radius: 50%;
-  margin: -7px;
-  padding: 7px;
 }
 
 .status__action-bar .icon-button:hover > .icon,
 .status__action-bar .icon-button:focus > .icon {
   background-color: rgba(96, 105, 132, 15%);
+  box-shadow: 0 0 0 8px rgba(96, 105, 132, 15%);
 }
 
-// The icon padding above leaks into the bar: the icon box grows to 33px
-// and inflates the line box of the button's wrapper
-// (.status__action-bar__button-wrapper) to ~33.5px for every in-flow
-// button, while the star wrapper stays 23px because its icon is
-// absolutely positioned (out of flow). The bar centers the wrappers, so
-// the inflated wrappers push the reply/boost/bookmark glyphs ~4.75px
-// above the bar center while the heart stays dead center — the heart and
-// its counter render visibly lower than the other buttons. Make the
-// wrapper a flex container so its height tracks the button alone (24px)
-// and every glyph shares the same center.
-.status__action-bar .status__action-bar__button-wrapper {
-  display: flex;
+// The old 100px sprite never aligned with this fork's button geometry. Keep
+// the fixed-size red heart in the normal layout and animate that element with
+// Mastodon's native spring rotation instead. The animation only changes the
+// heart's transform, so its size and counter slot stay stable.
+html.no-reduce-motion
+  .status__action-bar
+  .icon-button.star-icon.activate
+  .icon-star,
+html.no-reduce-motion
+  .detailed-status__action-bar
+  .icon-button.star-icon.activate
+  .icon-star {
+  animation: spring-rotate-in 1s linear !important;
+  background-image: var(--icon-heart-active-red) !important;
+  content: none !important;
+  height: var(--size-icon);
+  left: auto;
+  margin: 0;
+  position: static;
+  top: auto;
+  transform: none;
+  transform-origin: 50% 50%;
+  width: var(--size-icon);
+}
+
+// Counter variant: center the absolutely positioned heart with auto margins
+// instead of translateY. That leaves transform entirely to the rotation
+// animation, avoiding a vertical jump while it runs.
+html.no-reduce-motion
+  .status
+  .icon-button.icon-button--with-counter.star-icon.activate
+  .icon-star {
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  transform: none;
 }
 
 // Detailed status page hover circle: same treatment as the timeline.
@@ -517,14 +540,16 @@ html.no-reduce-motion
 
 .detailed-status__action-bar .icon-button > .icon {
   border-radius: 50%;
-  margin: -7px;
-  padding: 7px;
 }
 
 .detailed-status__action-bar .icon-button:hover > .icon,
 .detailed-status__action-bar .icon-button:focus > .icon {
   background-color: rgba(96, 105, 132, 15%);
+  box-shadow: 0 0 0 8px rgba(96, 105, 132, 15%);
 }
+
+// The detailed bar uses the same fixed-size native rotation above, so its
+// icon-anchored circle stays centered throughout the animation.
 
 // Favourite counter: _heart.scss paints the counter red on hover/active
 // (--color-red). Cancel it so the number follows the button's own color
