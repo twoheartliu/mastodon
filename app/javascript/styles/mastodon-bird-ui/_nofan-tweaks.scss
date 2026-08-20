@@ -560,3 +560,11 @@ html.no-reduce-motion
 .layout-multiple-columns button.icon-button.active .icon-star ~ span {
   color: inherit;
 }
+
+// Search filter chips already render Mastodon's native close SVG. Bird UI's
+// global .icon-close replacement adds a second background-image on the same
+// element, producing a dark duplicate cross beside the native icon. Keep the
+// native SVG here so the chip has one theme-aware close glyph in every state.
+.search-filter-bar__chip .icon-close {
+  background-image: none;
+}

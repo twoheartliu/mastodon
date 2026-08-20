@@ -12,6 +12,7 @@ import TagIcon from '@/material-icons/400-24px/tag.svg?react';
 import { submitSearch, expandSearch } from 'mastodon/actions/search';
 import type { ApiSearchType } from 'mastodon/api_types/search';
 import { Account } from 'mastodon/components/account';
+import { Button } from 'mastodon/components/button';
 import { Column } from 'mastodon/components/column';
 import type { ColumnRef } from 'mastodon/components/column';
 import { ColumnHeader } from 'mastodon/components/column_header';
@@ -26,10 +27,25 @@ import { useAppDispatch, useAppSelector } from 'mastodon/store';
 
 import { CollectionListItem } from '../collections/components/collection_list_item';
 
+import { SearchFilterBar } from './components/search_filter_bar';
 import { SearchSection } from './components/search_section';
+import { clearSearchFilters, getSearchFilters } from './utils/search_query';
 
 const messages = defineMessages({
   title: { id: 'search_results.title', defaultMessage: 'Search for "{q}"' },
+  filteredNoResultsTitle: {
+    id: 'search_results.filtered_no_results_title',
+    defaultMessage: 'No posts match these filters',
+  },
+  filteredNoResultsDescription: {
+    id: 'search_results.filtered_no_results_description',
+    defaultMessage:
+      'Remove a filter above, or clear all filters to search again with the same keywords.',
+  },
+  clearFilters: {
+    id: 'search_results.clear_filters',
+    defaultMessage: 'Clear filters and search again',
+  },
 });
 
 const INITIAL_PAGE_LIMIT = 10;
@@ -74,13 +90,16 @@ export const SearchResults: React.FC<{ multiColumn: boolean }> = ({
 }) => {
   const columnRef = useRef<ColumnRef>(null);
   const intl = useIntl();
-  const [q] = useSearchParam('q');
+  const [q, setQuery] = useSearchParam('q');
   const [type, setType] = useSearchParam('type');
   const isLoading = useAppSelector((state) => state.search.loading);
   const results = useAppSelector((state) => state.search.results);
   const dispatch = useAppDispatch();
   const mappedType = typeFromParam(type);
   const trimmedValue = q?.trim() ?? '';
+  const searchFilters = getSearchFilters(trimmedValue);
+  const hasActiveStatusFilters =
+    mappedType === 'statuses' && searchFilters.hasActiveFilters;
 
   useEffect(() => {
     if (trimmedValue.length > 0) {
@@ -112,6 +131,17 @@ export const SearchResults: React.FC<{ multiColumn: boolean }> = ({
   const handleSelectStatuses = useCallback(() => {
     setType('statuses');
   }, [setType]);
+
+  const handleFilterQueryChange = useCallback(
+    (query: string) => {
+      setQuery(query);
+    },
+    [setQuery],
+  );
+
+  const handleClearFilters = useCallback(() => {
+    setQuery(clearSearchFilters(trimmedValue));
+  }, [setQuery, trimmedValue]);
 
   const handleLoadMore = useCallback(() => {
     if (mappedType !== 'all') {
@@ -240,6 +270,33 @@ export const SearchResults: React.FC<{ multiColumn: boolean }> = ({
     }
   }
 
+  const emptyMessage =
+    trimmedValue.length > 0 ? (
+      hasActiveStatusFilters ? (
+        <span className='search-filter-empty-state'>
+          <strong className='search-filter-empty-state__title'>
+            {intl.formatMessage(messages.filteredNoResultsTitle)}
+          </strong>
+          <span className='search-filter-empty-state__description'>
+            {intl.formatMessage(messages.filteredNoResultsDescription)}
+          </span>
+          <Button onClick={handleClearFilters}>
+            {intl.formatMessage(messages.clearFilters)}
+          </Button>
+        </span>
+      ) : (
+        <FormattedMessage
+          id='search_results.no_results'
+          defaultMessage='No results.'
+        />
+      )
+    ) : (
+      <FormattedMessage
+        id='search_results.no_search_yet'
+        defaultMessage='Try searching for posts, profiles or hashtags.'
+      />
+    );
+
   return (
     <Column
       bindToDocument={!multiColumn}
@@ -304,6 +361,13 @@ export const SearchResults: React.FC<{ multiColumn: boolean }> = ({
                 />
               </button>
             </div>
+
+            {mappedType === 'statuses' && (
+              <SearchFilterBar
+                query={trimmedValue}
+                onQueryChange={handleFilterQueryChange}
+              />
+            )}
           </>
         }
       />
@@ -315,19 +379,7 @@ export const SearchResults: React.FC<{ multiColumn: boolean }> = ({
           showLoading={isLoading && !results}
           onLoadMore={handleLoadMore}
           hasMore={hasMore}
-          emptyMessage={
-            trimmedValue.length > 0 ? (
-              <FormattedMessage
-                id='search_results.no_results'
-                defaultMessage='No results.'
-              />
-            ) : (
-              <FormattedMessage
-                id='search_results.no_search_yet'
-                defaultMessage='Try searching for posts, profiles or hashtags.'
-              />
-            )
-          }
+          emptyMessage={emptyMessage}
           bindToDocument
         >
           {filteredResults}

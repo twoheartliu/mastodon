@@ -20,7 +20,7 @@ export const ActionsModal: React.FC<{
           return <li key={`sep-${i}`} className='dropdown-menu__separator' />;
         }
 
-        const { text, highlighted, disabled, dangerous } = option;
+        const { text, highlighted, checked, disabled, dangerous } = option;
 
         let element: React.ReactElement;
 
@@ -30,6 +30,8 @@ export const ActionsModal: React.FC<{
               onClick={onClick}
               data-index={i}
               disabled={disabled}
+              aria-checked={checked}
+              role={checked === undefined ? undefined : 'menuitemcheckbox'}
               type='button'
             >
               <DropdownMenuItemContent item={option} />

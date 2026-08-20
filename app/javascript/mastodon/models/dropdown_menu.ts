@@ -8,6 +8,7 @@ interface BaseMenuItem {
   icon?: IconProp;
   iconId?: string;
   highlighted?: boolean;
+  checked?: boolean;
   disabled?: boolean;
   dangerous?: boolean;
 }
