@@ -7,7 +7,10 @@ export const textAtCursorMatchesToken = (
 ) => {
   let word: string;
 
-  const regex = new RegExp(`[${searchTokens.join('')}${WORD}+-]+$`, 'iu');
+  const regex = new RegExp(
+    `[${searchTokens.join('')}${WORD}+-]+(\\s[\\p{Script=Latin}\\p{Script=Cyrillic}\\p{M}]+)?$`,
+    'iu',
+  );
   const left = str.slice(0, caretPosition).search(regex);
   const right = str.slice(caretPosition).search(/\s/);
 
@@ -20,12 +23,12 @@ export const textAtCursorMatchesToken = (
   word = word.trim();
 
   if (word.length < 3 || (word[0] && !searchTokens.includes(word[0]))) {
-    return [null, null];
+    return [null, null] as const;
   }
 
   if (word.length > 0) {
-    return [left + 1, word];
+    return [left + 1, word] as const;
   } else {
-    return [null, null];
+    return [null, null] as const;
   }
 };
