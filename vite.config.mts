@@ -23,6 +23,7 @@ import { MastodonAssetsManifest } from './config/vite/plugin-assets-manifest';
 import { MastodonThemes } from './config/vite/plugin-mastodon-themes';
 import { MastodonServiceWorkerChunkPaths } from './config/vite/plugin-sw-chunk-paths';
 import { MastodonServiceWorkerLocales } from './config/vite/plugin-sw-locales';
+import { NofanThemes } from './config/vite/plugin-nofan-themes';
 
 const jsRoot = path.resolve(__dirname, 'app/javascript');
 
@@ -185,6 +186,7 @@ export const config: UserConfigFnPromise = async ({ mode, command }) => {
       }),
       formatjs(),
       MastodonThemes(),
+      NofanThemes(),
       MastodonAssetsManifest(),
       MastodonServiceWorkerLocales(),
       MastodonServiceWorkerChunkPaths(),
