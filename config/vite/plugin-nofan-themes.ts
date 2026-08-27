@@ -1,6 +1,7 @@
-/* This plugin registers glitch-style flavour/skin stylesheets as build
- * entrypoints. Phase 1 covers skins only; flavoured script packs arrive
- * with phase 2 (see flavours/*/theme.yml pack_directory consumers).
+/* This plugin registers glitch-style flavour and skin stylesheets as
+ * build entrypoints. Phase 1 covers skins only; flavoured script packs
+ * arrive with phase 2 (driven by the pack_directory key in each
+ * flavour theme.yml).
  */
 
 import fs from 'node:fs/promises';
