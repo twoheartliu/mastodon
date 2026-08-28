@@ -1602,6 +1602,9 @@ zh-CN:
     nofan:
       name: Nofan
       description: nofan 默认前端，可搭配不同皮肤。
+    fanfou:
+      name: 饭否网页版
+      description: 复刻经典饭否网页版：浅蓝画布、居中信息流、右侧栏。
   filters:
     contexts:
       account: 个人资料

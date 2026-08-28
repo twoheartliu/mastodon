@@ -1624,6 +1624,9 @@ en:
     nofan:
       name: Nofan
       description: The stock nofan frontend with selectable skins.
+    fanfou:
+      name: Fanfou Web
+      description: A recreation of the classic fanfou.com web interface.
   filters:
     contexts:
       account: Profiles

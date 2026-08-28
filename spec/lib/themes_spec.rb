@@ -6,8 +6,8 @@ RSpec.describe Themes do
   subject(:themes) { described_class.instance }
 
   describe '#flavours' do
-    it 'includes the nofan flavour' do
-      expect(themes.flavours).to include('nofan')
+    it 'includes every packaged flavour' do
+      expect(themes.flavours).to contain_exactly('nofan', 'fanfou')
     end
   end
 
@@ -30,8 +30,18 @@ RSpec.describe Themes do
       )
     end
 
+    it 'lists the fanfou flavour skins' do
+      expect(themes.skins_for('fanfou')).to eq(['default'])
+    end
+
     it 'returns an empty list for unknown flavours' do
       expect(themes.skins_for('nonexistent')).to eq([])
+    end
+  end
+
+  describe '#all_skins' do
+    it 'unions skins across flavours' do
+      expect(themes.all_skins).to include('default', 'graphite', 'fanfou_classic')
     end
   end
 end

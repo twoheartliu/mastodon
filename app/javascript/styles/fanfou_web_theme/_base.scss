@@ -1,0 +1,128 @@
+// Classic Fanfou web palette. The design is light-only, matching the
+// 2008-2013 fanfou.com screenshot; users who prefer dark keep another
+// skin/flavour selected.
+$ff-canvas-top: #a6cbe3;
+$ff-canvas-mid: #bcd9ea;
+$ff-canvas-bottom: #d7e8f3;
+$ff-card: #fff;
+$ff-card-border: #d5e2ec;
+$ff-link: #3b76a8;
+$ff-link-hover: #2a5d8a;
+$ff-text: #333;
+$ff-text-secondary: #7a92a5;
+$ff-accent-green: #5aa85a;
+
+// Page canvas: the light-blue gradient behind everything.
+body.layout-single-column {
+  background: linear-gradient(to bottom, $ff-canvas-top 0%, $ff-canvas-mid 55%, $ff-canvas-bottom 100%);
+  background-attachment: fixed;
+  color: $ff-text;
+}
+
+// Centered shell: feed on the left, sidebar on the right — the classic
+// fanfou arrangement. DOM order is [compose pane, main, nav]; explicit
+// orders pin nav to the right edge of the shell.
+.layout-single-column .columns-area__panels {
+  max-width: 1128px;
+  margin-inline: auto;
+  padding-top: 14px;
+}
+
+.layout-single-column .columns-area__panels__pane--compositional {
+  order: 0;
+}
+
+.layout-single-column .columns-area__panels__main {
+  order: 1;
+  background: $ff-card;
+  border: 1px solid $ff-card-border;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+  overflow: hidden;
+}
+
+.layout-single-column .columns-area__panels__pane--navigational {
+  order: 2;
+}
+
+// Right sidebar: white card with the fanfou link column look.
+.layout-single-column .navigation-panel {
+  background: $ff-card;
+  border: 1px solid $ff-card-border;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+  padding-top: 8px;
+
+  .column-link {
+    background: transparent;
+    border: 0;
+    color: $ff-link;
+    font-weight: 700;
+
+    &:hover,
+    &:focus-visible {
+      background: #eaf3fa;
+      color: $ff-link-hover;
+    }
+
+    .column-link__icon {
+      color: inherit;
+    }
+  }
+
+  .column-link--transparent.active,
+  .column-link.active {
+    background: #e2eef7;
+    color: $ff-link-hover;
+  }
+}
+
+// Feed header: flat white bar with fanfou-blue title instead of the
+// stock gradient header.
+.layout-single-column .column-header,
+.layout-single-column .column-back-button {
+  background: $ff-card;
+  border-color: $ff-card-border;
+  color: $ff-link;
+  text-shadow: none;
+}
+
+// Compose drawer: keep Mastodon's placement, restyle as a white card
+// with the fanfou green send button.
+.layout-single-column .compose-panel {
+  background: $ff-card;
+  border: 1px solid $ff-card-border;
+  border-radius: 6px;
+}
+
+.layout-single-column .compose-form .button.button--primary,
+.layout-single-column .compose-form .button.button-primary {
+  background: $ff-accent-green;
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    background: darken($ff-accent-green, 6%);
+  }
+}
+
+// Status rows: hairline separators, fanfou-blue author names.
+.layout-single-column .status {
+  border-bottom: 1px solid #eef3f7;
+}
+
+.layout-single-column .status__display-name,
+.layout-single-column .display-name__html {
+  color: $ff-link;
+}
+
+.layout-single-column .status__content,
+.layout-single-column .reply-indicator__content {
+  color: $ff-text;
+}
+
+// Secondary text (timestamps, "通过网页" equivalents).
+.layout-single-column .status__relative-time,
+.layout-single-column .display-name__account {
+  color: $ff-text-secondary;
+}
