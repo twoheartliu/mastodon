@@ -1620,6 +1620,10 @@ en:
   featured_tags:
     errors:
       limit: You have already featured the maximum number of hashtags
+  flavours:
+    nofan:
+      name: Nofan
+      description: The stock nofan frontend with selectable skins.
   filters:
     contexts:
       account: Profiles

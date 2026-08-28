@@ -1598,6 +1598,10 @@ zh-CN:
   featured_tags:
     errors:
       limit: 你所推荐的话题数已达上限
+  flavours:
+    nofan:
+      name: Nofan
+      description: nofan 默认前端，可搭配不同皮肤。
   filters:
     contexts:
       account: 个人资料
