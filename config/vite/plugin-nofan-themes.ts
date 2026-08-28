@@ -54,12 +54,18 @@ export function NofanThemes(): Plugin {
           return;
         }
 
-        // Rewrite the URL to the entrypoint if it matches a skin.
-        const filename = req.url.slice('/packs-dev/'.length).split(/[.?]/)[0] ?? '';
-        if (filename in entrypoints) {
-          req.url = `/packs-dev/${entrypoints[filename]}`;
-        }
-        next();
+        // Resolve lazily on each request so skins and flavours added
+        // while the dev server is running work without a restart. The
+        // config() scan remains the source of build-time entrypoints.
+        const name = req.url.slice('/packs-dev/'.length).split(/[.?]/)[0] ?? '';
+        resolveSkinEntrypoint(server.config.root, name)
+          .then((entry) => {
+            if (entry) {
+              req.url = `/packs-dev/${entry}`;
+            }
+            next();
+          })
+          .catch(next);
       });
     },
     handleHotUpdate({ modules, server }) {
@@ -162,4 +168,39 @@ async function findSkinEntry(dir: string): Promise<string | undefined> {
 
 function stripExtension(filename: string): string {
   return filename.replace(/\.(?:scss|css)$/i, '');
+}
+
+/**
+ * Locates the source file backing a `skins/<flavour>/<skin>` URL: either
+ * a directory skin (common/index/application entry) or a bare stylesheet.
+ */
+async function resolveSkinEntrypoint(
+  jsRoot: string,
+  name: string,
+): Promise<string | undefined> {
+  const segments = name.split('/').filter(Boolean);
+  if (segments.length !== 3 || segments.some((segment) => segment === '..')) {
+    return undefined;
+  }
+  const [, flavour, skin] = segments;
+  const base = path.join(jsRoot, 'skins', flavour, skin);
+
+  const candidates = [
+    ...SKIN_ENTRY_NAMES.flatMap((entry) => [
+      `${base}/${entry}.scss`,
+      `${base}/${entry}.css`,
+    ]),
+    `${base}.scss`,
+    `${base}.css`,
+  ];
+
+  for (const candidate of candidates) {
+    try {
+      await fs.access(path.resolve(candidate));
+      return candidate;
+    } catch {
+      // Try the next candidate.
+    }
+  }
+  return undefined;
 }
