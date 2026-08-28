@@ -53,6 +53,12 @@ body.layout-single-column {
   box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
   padding-top: 8px;
 
+  // The wordmark SVG overflows the 285px pane; classic fanfou had no
+  // logo in the sidebar either, so drop it.
+  .navigation-panel__logo {
+    display: none;
+  }
+
   .column-link {
     background: transparent;
     border: 0;
@@ -95,8 +101,7 @@ body.layout-single-column {
   border-radius: 6px;
 }
 
-.layout-single-column .compose-form .button.button--primary,
-.layout-single-column .compose-form .button.button-primary {
+.layout-single-column .compose-form__submit .button {
   background: $ff-accent-green;
 
   &:hover,
