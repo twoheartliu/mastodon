@@ -29,7 +29,13 @@ export const OnThisDayNavItem: React.FC = () => {
       to='/on_this_day'
       className={classNames('column-link column-link--transparent', { active })}
     >
-      <Icon id='history' icon={HistoryIcon} width='24' height='24' />
+      <Icon
+        id='history'
+        icon={HistoryIcon}
+        className='column-link__icon'
+        width='24'
+        height='24'
+      />
       <span>
         <FormattedMessage
           id='on_this_day.nav_item.title'
