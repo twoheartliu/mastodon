@@ -59,16 +59,29 @@ class Themes
     end
   end
 
+  # Flavours without an explicit skin preference list their skins
+  # alphabetically; these flavours pin their primary variant first.
+  PRIMARY_SKIN = {
+    'bird-ui' => 'mastodon-bird-ui-auto',
+    'tangerine-ui' => 'tangerine',
+  }.freeze
+
+  DEFAULT_FLAVOUR = 'mastodon-ui'
+
   def flavour(name)
     @flavours[name]
   end
 
   def flavours
-    @flavours.keys
+    names = @flavours.keys.sort
+    names.delete(DEFAULT_FLAVOUR) ? [DEFAULT_FLAVOUR, *names] : names
   end
 
   def skins_for(name)
-    @flavours.dig(name, 'skins') || []
+    skins = (@flavours.dig(name, 'skins') || []).sort
+    primary = PRIMARY_SKIN[name]
+
+    primary && skins.delete(primary) ? [primary, *skins] : skins
   end
 
   def all_skins
@@ -77,7 +90,7 @@ class Themes
 
   def flavours_and_skins
     flavours.map do |flavour|
-      [flavour, skins_for(flavour)]
+      [flavour, skins_for(flavour).map { |skin| [flavour, skin] }]
     end
   end
 end

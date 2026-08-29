@@ -1,0 +1,13 @@
+// nofan fork fixes for the Tangerine UI flavour, layered after the
+// upstream overlay by every skins/tangerine-ui/ shim.
+
+// The On This Day (那年今日) nav item uses .icon-history, which is not
+// in Tangerine's icon replacement system: known nav icons get their
+// paths hidden and an accent-colored outline data-URI painted over
+// them, so the custom icon keeps its raw filled glyph and renders
+// near-black next to accent-colored siblings. Paint it with the
+// palette accent instead; the column-link__icon sizing that the other
+// nav icons receive comes from the component, not from here.
+.app-body .navigation-panel .column-link .icon-history path {
+    fill: var(--color-accent);
+}

@@ -1,5 +1,0 @@
-# The fanfou flavour recreates the classic fanfou.com web interface
-# (light-blue canvas, centered feed, right-hand sidebar). Phase 1 shares
-# the stock React app via this pack_directory; dedicated JS widgets
-# (invite box, stats header) would move to their own pack later.
-pack_directory: app/javascript/entrypoints

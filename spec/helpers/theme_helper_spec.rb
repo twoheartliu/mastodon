@@ -7,23 +7,23 @@ RSpec.describe ThemeHelper do
     let(:result) { helper.theme_style_tags(theme) }
 
     context 'when using the default skin' do
-      let(:theme) { ['nofan', 'default'] }
+      let(:theme) { ['mastodon-ui', 'default'] }
 
       it 'returns the default stylesheet' do
         expect(html_links.last.attributes.symbolize_keys)
           .to include(
-            href: have_attributes(value: match(%r{/themes/default-\w+\.css}))
+            href: have_attributes(value: match(%r{/themes/default-[\w-]+\.css}))
           )
       end
     end
 
     context 'when using a themed skin' do
-      let(:theme) { ['nofan', 'fanfou_classic'] }
+      let(:theme) { ['mastodon-ui', 'fanfou_classic'] }
 
       it 'returns the skin stylesheet' do
         expect(html_links.last.attributes.symbolize_keys)
           .to include(
-            href: have_attributes(value: match(%r{/themes/fanfou_classic-\w+\.css}))
+            href: have_attributes(value: match(%r{/themes/fanfou_classic-[\w-]+\.css}))
           )
       end
     end
@@ -115,24 +115,24 @@ RSpec.describe ThemeHelper do
     subject { helper.current_theme }
 
     context 'when user is not signed in' do
-      it { is_expected.to eq(['nofan', 'default']) }
+      it { is_expected.to eq(['mastodon-ui', 'default']) }
 
       context 'when skin is changed in settings' do
         before { Setting.skin = 'fanfou_classic' }
 
-        it { is_expected.to eq(['nofan', 'fanfou_classic']) }
+        it { is_expected.to eq(['mastodon-ui', 'fanfou_classic']) }
       end
 
       context 'when skin is changed to an unknown value' do
         before { Setting.skin = 'fakethemename' }
 
-        it { is_expected.to eq(['nofan', 'default']) }
+        it { is_expected.to eq(['mastodon-ui', 'default']) }
       end
 
       context 'when flavour is changed to an unknown value' do
         before { Setting.flavour = 'notarealflavour' }
 
-        it { is_expected.to eq(['nofan', 'default']) }
+        it { is_expected.to eq(['mastodon-ui', 'default']) }
       end
     end
 
@@ -142,19 +142,19 @@ RSpec.describe ThemeHelper do
       let(:current_user) { Fabricate :user }
 
       context 'when user did not set a theme' do
-        it { is_expected.to eq(['nofan', 'default']) }
+        it { is_expected.to eq(['mastodon-ui', 'default']) }
       end
 
       context 'when user set a skin' do
-        before { current_user.settings.update(flavour: 'nofan', skin: 'graphite', noindex: false) }
+        before { current_user.settings.update(flavour: 'mastodon-ui', skin: 'graphite', noindex: false) }
 
-        it { is_expected.to eq(['nofan', 'graphite']) }
+        it { is_expected.to eq(['mastodon-ui', 'graphite']) }
       end
 
       context 'when user set an unknown skin' do
-        before { current_user.settings.update(flavour: 'nofan', skin: 'fakethemename', noindex: false) }
+        before { current_user.settings.update(flavour: 'mastodon-ui', skin: 'fakethemename', noindex: false) }
 
-        it { is_expected.to eq(['nofan', 'default']) }
+        it { is_expected.to eq(['mastodon-ui', 'default']) }
       end
     end
   end

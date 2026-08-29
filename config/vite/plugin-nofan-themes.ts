@@ -1,7 +1,7 @@
 /* This plugin registers glitch-style flavour and skin stylesheets as
- * build entrypoints. Phase 1 covers skins only; flavoured script packs
- * arrive with phase 2 (driven by the pack_directory key in each
- * flavour theme.yml).
+ * build entrypoints: skins from app/javascript/skins/<flavour>/<skin>,
+ * plus one entry per script for flavours with their own entrypoints
+ * directory (pack_directory pointing outside app/javascript/entrypoints).
  */
 
 import fs from 'node:fs/promises';
@@ -38,6 +38,7 @@ export function NofanThemes(): Plugin {
       const jsRoot = userConfig.root;
 
       await loadSkinEntrypoints(jsRoot, entrypoints);
+      await loadFlavourEntrypoints(jsRoot, entrypoints);
 
       return {
         build: {
@@ -149,6 +150,37 @@ async function loadSkinEntrypoints(jsRoot: string, entrypoints: Record<string, s
 async function readdirIfDirectory(dir: string): Promise<string[]> {
   const entries = await fs.readdir(dir, { withFileTypes: true });
   return entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name);
+}
+
+/**
+ * Flavours with their own entrypoints directory (pack_directory pointing
+ * outside app/javascript/entrypoints) get one build entry per script,
+ * named after its root-relative path so manifest lookups from
+ * flavoured_vite_typescript_tag resolve.
+ */
+async function loadFlavourEntrypoints(
+  jsRoot: string,
+  entrypoints: Record<string, string>,
+) {
+  const flavoursRoot = path.join(jsRoot, 'flavours');
+  const scriptTest = /\.[jt]sx?$/;
+
+  for (const flavour of await readdirIfDirectory(flavoursRoot)) {
+    const packDir = path.join(flavoursRoot, flavour, 'entrypoints');
+    let files: string[];
+    try {
+      files = (await fs.readdir(packDir)).filter((name) => scriptTest.test(name));
+    } catch {
+      continue; // Flavour without its own entrypoints (shared pack).
+    }
+
+    for (const name of files) {
+      const relative = path
+        .join('flavours', flavour, 'entrypoints', name.replace(scriptTest, ''))
+        .replaceAll(path.sep, '/');
+      entrypoints[relative] = path.join(packDir, name);
+    }
+  }
 }
 
 async function findSkinEntry(dir: string): Promise<string | undefined> {

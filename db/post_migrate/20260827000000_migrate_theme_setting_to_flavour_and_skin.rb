@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class MigrateThemeSettingToFlavourAndSkin < ActiveRecord::Migration[8.1]
-  DEFAULT_FLAVOUR = 'nofan'
+  DEFAULT_FLAVOUR = 'mastodon-ui'
 
   def up
     safety_assured do
@@ -11,7 +11,7 @@ class MigrateThemeSettingToFlavourAndSkin < ActiveRecord::Migration[8.1]
       # names), tag the default flavour, and drop the legacy key.
       execute <<~SQL.squish
         UPDATE users
-        SET settings = ((settings::jsonb || '{"flavour":"nofan"}'::jsonb || jsonb_build_object('skin', settings::jsonb->'theme')) - 'theme')::text
+        SET settings = ((settings::jsonb || '{"flavour":"mastodon-ui"}'::jsonb || jsonb_build_object('skin', settings::jsonb->'theme')) - 'theme')::text
         WHERE settings IS NOT NULL
           AND settings != ''
           AND settings::jsonb ? 'theme'

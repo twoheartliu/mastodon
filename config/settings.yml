@@ -22,7 +22,7 @@ defaults: &defaults
   # Deprecated: kept only so pre-4.x deployments still boot before admins re-run
   # `rake db:migrate`; superseded by flavour + skin below.
   theme: 'default'
-  flavour: 'nofan'
+  flavour: 'mastodon-ui'
   skin: 'default'
   thumbnail_description: ''
   trends: true

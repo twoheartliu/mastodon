@@ -57,7 +57,7 @@ module ThemeHelper
   end
 
   def current_flavour
-    [current_user&.setting_flavour, Setting.flavour, 'nofan'].find { |flavour| Themes.instance.flavours.include?(flavour) }
+    [current_user&.setting_flavour, Setting.flavour, 'mastodon-ui'].find { |flavour| Themes.instance.flavours.include?(flavour) }
   end
 
   def current_skin

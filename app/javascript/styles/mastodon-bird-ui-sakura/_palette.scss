@@ -1,0 +1,9 @@
+// Sakura palette token layer (dark/default scheme) from wxwmoe's
+// overlay. Loaded after the stock bird-ui variables by the sakura
+// entry so its :root values win the cascade; light scheme tokens live
+// in variables/sakura-light and are switched on by the entry.
+@use 'variables/tokens';
+@use 'variables/variables-base';
+@use 'variables/variables-high-contrast';
+@use 'variables/variables-ipad-landscape';
+@use 'variables/variables-mobile';

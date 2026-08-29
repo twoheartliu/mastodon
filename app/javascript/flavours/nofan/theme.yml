@@ -1,4 +1,0 @@
-# The nofan flavour wraps upstream's stock frontend. Its pack_directory
-# points at the shared entrypoint tree so flavoured script tags resolve
-# there without duplicating the React app (see phase 2 notes).
-pack_directory: app/javascript/entrypoints

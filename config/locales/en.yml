@@ -1621,12 +1621,15 @@ en:
     errors:
       limit: You have already featured the maximum number of hashtags
   flavours:
-    nofan:
-      name: Nofan
-      description: The stock nofan frontend with selectable skins.
-    fanfou:
-      name: Fanfou Web
-      description: A recreation of the classic fanfou.com web interface.
+    mastodon-ui:
+      name: Mastodon UI
+      description: The stock Mastodon frontend with selectable skins.
+    bird-ui:
+      name: Mastodon Bird UI
+      description: The Mastodon Bird UI frontend with selectable skins.
+    tangerine-ui:
+      name: Tangerine UI
+      description: The Tangerine UI frontend with selectable skins.
   filters:
     contexts:
       account: Profiles
@@ -2225,12 +2228,18 @@ en:
     review_link: Review terms of service
     title: The terms of service of %{domain} are changing
   themes:
-    mastodon-bird-ui-auto: Mastodon Bird UI
-    default: Mastodon
+    mastodon-bird-ui-auto: Auto
+    default: Default
     fanfou_classic: Fanfou Classic
     vermilion_seal: Vermilion Seal
     space_fanfou: Space Fanfou
     graphite: Graphite
+    tangerine: Tangerine
+    purple: Purple
+    cherry: Cherry
+    lagoon: Lagoon
+    granite: Granite
+    sakura: Sakura
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
