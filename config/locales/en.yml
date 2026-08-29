@@ -980,6 +980,8 @@ en:
           authenticated: Authenticated users only
           disabled: Require specific user role
           public: Everyone
+      flavour_and_skin:
+        title: Interface flavour and skin
       landing_page:
         hints:
           about_html: A page with the description, contact information, rules and other information regarding this server.

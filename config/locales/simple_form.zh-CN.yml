@@ -259,13 +259,12 @@ zh-CN:
         setting_display_media_show_all: 显示全部
         setting_emoji_style: 表情符号样式
         setting_expand_spoilers: 一律展开具有内容警告的嘟文
-        setting_flavour: 界面风味
+        setting_flavour_and_skin: 风味与皮肤
         setting_hide_network: 隐藏你的社交网络
         setting_missing_alt_text_modal: 发送没有设置替代文本的媒体内容前警告我
         setting_on_this_day_enabled: 那年今日
         setting_quick_boosting: 启用快速转嘟
         setting_reduce_motion: 降低过渡动画效果
-        setting_skin: 皮肤
         setting_system_font_ui: 使用系统默认字体
         setting_system_scrollbars_ui: 使用系统默认样式的滚动条
         setting_theme: 站点主题

@@ -18,6 +18,7 @@ class Form::AdminSettings
     theme
     flavour
     skin
+    flavour_and_skin
     activity_api_enabled
     peers_api_enabled
     preview_sensitive_media
@@ -141,6 +142,22 @@ class Form::AdminSettings
     rescue Mastodon::DimensionsValidationError => e
       errors.add(key.to_sym, e.message)
     end
+  end
+
+  # Composite of the `flavour` and `skin` settings, written by the
+  # grouped flavour/skin selector as a `flavour/skin` string. The
+  # writer fans the value out onto the two underlying keys so `save`
+  # persists them through the regular KEYS loop; the composite itself
+  # never reaches a `settings` row. The reader goes through the KEYS
+  # accessors so a re-rendered form reflects submitted values.
+  def flavour_and_skin
+    "#{flavour}/#{skin}"
+  end
+
+  def flavour_and_skin=(value)
+    flavour, skin = value.to_s.split('/', 2)
+    @flavour = flavour.presence
+    @skin = skin.presence
   end
 
   def save

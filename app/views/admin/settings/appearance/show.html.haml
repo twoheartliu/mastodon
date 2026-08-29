@@ -11,17 +11,14 @@
   %p.lead= t('admin.settings.appearance.preamble')
 
   .fields-group
-    - if Themes.instance.flavours.size > 1
-      = f.input :flavour,
-                collection: Themes.instance.flavours,
-                include_blank: false,
-                label_method: ->(flavour) { I18n.t("flavours.#{flavour}.name", default: flavour) },
-                wrapper: :with_label
-
-    = f.input :skin,
-              collection: Themes.instance.all_skins,
+    = f.input :flavour_and_skin,
+              as: :grouped_select,
+              collection: Themes.instance.flavours_and_skins,
+              group_method: :last,
+              group_label_method: ->(flavour_and_skin) { I18n.t("flavours.#{flavour_and_skin.first}.name", default: flavour_and_skin.first) },
+              label_method: ->(flavour_and_skin) { I18n.t("themes.#{flavour_and_skin.last}", default: flavour_and_skin.last) },
+              value_method: ->(flavour_and_skin) { flavour_and_skin.join('/') },
               include_blank: false,
-              label_method: ->(skin) { I18n.t("themes.#{skin}", default: skin) },
               wrapper: :with_label
 
   .fields-group

@@ -74,6 +74,40 @@ RSpec.describe UserSettings do
     it 'does not set values that are nil' do
       expect(subject.as_json).to_not include(default_privacy: nil)
     end
+
+    it 'routes virtual settings to their writers' do
+      subject.update(flavour_and_skin: 'bird-ui/mastodon-bird-ui-auto')
+
+      expect(subject['flavour']).to eq 'bird-ui'
+      expect(subject['skin']).to eq 'mastodon-bird-ui-auto'
+      expect(subject.as_json).to_not include(:flavour_and_skin)
+    end
+  end
+
+  describe '#flavour_and_skin' do
+    it 'joins the flavour and skin keys' do
+      subject['flavour'] = 'bird-ui'
+      subject['skin'] = 'mastodon-bird-ui-auto'
+
+      expect(subject.flavour_and_skin).to eq 'bird-ui/mastodon-bird-ui-auto'
+    end
+  end
+
+  describe '#flavour_and_skin=' do
+    it 'splits the pair onto the flavour and skin keys' do
+      subject.flavour_and_skin = 'bird-ui/mastodon-bird-ui-auto'
+
+      expect(subject['flavour']).to eq 'bird-ui'
+      expect(subject['skin']).to eq 'mastodon-bird-ui-auto'
+      expect(subject.as_json).to_not include(:flavour_and_skin)
+    end
+
+    it 'drops missing parts so they fall back to defaults' do
+      subject.flavour_and_skin = 'bird-ui/'
+
+      expect(subject['flavour']).to eq 'bird-ui'
+      expect(subject.as_json).to_not have_key(:skin)
+    end
   end
 
   describe '#as_json' do

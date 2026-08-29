@@ -964,6 +964,8 @@ zh-CN:
           authenticated: 仅已登录用户
           disabled: 需要特定的用户角色
           public: 每个人
+      flavour_and_skin:
+        title: 风味与皮肤
       landing_page:
         hints:
           about_html: 关于此服务器的描述、联系信息、规则及其他信息的页面。
