@@ -5,6 +5,8 @@ import { on } from 'delegated-events';
 
 import ready from '../mastodon/ready';
 
+import '../wxw_custom_emojis';
+
 const setAnnouncementEndsAttributes = (target: HTMLInputElement) => {
   const valid = target.value && target.validity.valid;
   const element = document.querySelector<HTMLInputElement>(

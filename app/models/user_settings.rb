@@ -24,6 +24,12 @@ class UserSettings
   setting :default_quote_policy, default: 'public', in: %w(public followers nobody)
   setting :email_subscriptions, default: false
 
+  namespace :wxw_emoji do
+    setting :picks, default: nil
+    setting :order, default: nil
+    setting :numbered, default: true
+  end
+
   setting_inverse_alias :indexable, :noindex
 
   namespace :web do
