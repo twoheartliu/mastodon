@@ -32,7 +32,7 @@ const setupSortable = (container: HTMLElement) => {
 
     const handle = event.target.closest<HTMLButtonElement>(handleSelector);
     const item = handle?.closest<HTMLElement>(itemSelector);
-    if (item?.parentElement !== container) return;
+    if (!handle || item?.parentElement !== container) return;
 
     event.preventDefault();
     active = { handle, item, pointerId: event.pointerId };
