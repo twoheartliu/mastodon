@@ -351,12 +351,17 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_27_000000) do
     t.string "original_filename", default: "", null: false
     t.boolean "overwrite", default: false, null: false
     t.integer "processed_items", default: 0, null: false
+    t.text "rejection_reason"
+    t.datetime "reviewed_at"
+    t.bigint "reviewed_by_account_id"
     t.integer "state", null: false
     t.integer "total_items", default: 0, null: false
     t.integer "type", null: false
     t.datetime "updated_at", null: false
     t.index ["account_id"], name: "index_bulk_imports_on_account_id"
+    t.index ["account_id"], name: "index_bulk_imports_on_active_fanfou_import", unique: true, where: "((type = 7) AND (state = ANY (ARRAY[0, 1, 2, 4])))"
     t.index ["id"], name: "index_bulk_imports_unconfirmed", where: "(state = 0)"
+    t.index ["reviewed_by_account_id"], name: "index_bulk_imports_on_reviewed_by_account_id"
   end
 
   create_table "canonical_email_blocks", force: :cascade do |t|
@@ -1217,6 +1222,18 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_27_000000) do
     t.index ["status_id"], name: "index_status_edits_on_status_id"
   end
 
+  create_table "status_import_references", force: :cascade do |t|
+    t.bigint "account_id", null: false
+    t.datetime "created_at", null: false
+    t.string "source", null: false
+    t.string "source_identifier", null: false
+    t.bigint "status_id", null: false
+    t.datetime "updated_at", null: false
+    t.index ["account_id", "source", "source_identifier"], name: "index_status_import_references_on_source", unique: true
+    t.index ["account_id"], name: "index_status_import_references_on_account_id"
+    t.index ["status_id"], name: "index_status_import_references_on_status_id"
+  end
+
   create_table "status_pins", force: :cascade do |t|
     t.bigint "account_id", null: false
     t.datetime "created_at", precision: nil, null: false
@@ -1489,6 +1506,35 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_27_000000) do
     t.index ["url"], name: "index_webhooks_on_url", unique: true
   end
 
+  create_table "wxw_emoji_packs", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.bigint "custom_emoji_category_id", null: false
+    t.boolean "default_enabled", default: false, null: false
+    t.string "name", default: "", null: false
+    t.integer "position", default: 0, null: false
+    t.bigint "section_id"
+    t.datetime "updated_at", null: false
+    t.index ["custom_emoji_category_id"], name: "index_wxw_emoji_packs_on_custom_emoji_category_id", unique: true
+    t.index ["section_id"], name: "index_wxw_emoji_packs_on_section_id"
+  end
+
+  create_table "wxw_emoji_sections", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "name", default: "", null: false
+    t.integer "position", default: 0, null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "wxw_emoji_translations", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "language", null: false
+    t.string "name", default: "", null: false
+    t.bigint "translatable_id", null: false
+    t.string "translatable_type", null: false
+    t.datetime "updated_at", null: false
+    t.index ["translatable_type", "translatable_id", "language"], name: "index_wxw_emoji_translations_on_owner_and_language", unique: true
+  end
+
   add_foreign_key "account_aliases", "accounts", on_delete: :cascade
   add_foreign_key "account_conversations", "accounts", on_delete: :cascade
   add_foreign_key "account_conversations", "conversations", on_delete: :cascade
@@ -1527,6 +1573,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_27_000000) do
   add_foreign_key "bookmarks", "accounts", on_delete: :cascade
   add_foreign_key "bookmarks", "statuses", on_delete: :cascade
   add_foreign_key "bulk_import_rows", "bulk_imports", on_delete: :cascade
+  add_foreign_key "bulk_imports", "accounts", column: "reviewed_by_account_id", on_delete: :nullify
   add_foreign_key "bulk_imports", "accounts", on_delete: :cascade
   add_foreign_key "canonical_email_blocks", "accounts", column: "reference_account_id", on_delete: :cascade
   add_foreign_key "collection_items", "accounts"
@@ -1621,6 +1668,8 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_27_000000) do
   add_foreign_key "severed_relationships", "relationship_severance_events", on_delete: :cascade
   add_foreign_key "status_edits", "accounts", on_delete: :nullify
   add_foreign_key "status_edits", "statuses", on_delete: :cascade
+  add_foreign_key "status_import_references", "accounts", on_delete: :cascade
+  add_foreign_key "status_import_references", "statuses", on_delete: :cascade
   add_foreign_key "status_pins", "accounts", name: "fk_d4cb435b62", on_delete: :cascade
   add_foreign_key "status_pins", "statuses", on_delete: :cascade
   add_foreign_key "status_stats", "statuses", on_delete: :cascade

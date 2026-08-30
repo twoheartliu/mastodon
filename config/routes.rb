@@ -232,6 +232,7 @@ Rails.application.routes.draw do
   resource :share, only: [:show]
 
   draw(:admin)
+  draw(:wxw_custom_emojis)
 
   get '/admin', to: redirect('/admin/dashboard', status: 302)
 

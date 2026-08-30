@@ -75,7 +75,7 @@ namespace :api, format: false do
       get '/streaming/(*any)'
     end
 
-    resources :custom_emojis, only: [:index]
+    resources :custom_emojis, only: [:index], controller: 'wxw_custom_emojis'
     resources :suggestions, only: [:index, :destroy]
     resources :scheduled_statuses, only: [:index, :show, :update, :destroy]
     resources :preferences, only: [:index]
