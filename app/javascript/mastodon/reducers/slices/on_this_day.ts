@@ -26,13 +26,15 @@ interface OnThisDaySliceState {
   error: boolean;
 }
 
+const initialState: OnThisDaySliceState = {
+  state: initialOnThisDay?.state,
+  date: initialOnThisDay?.date,
+  error: false,
+};
+
 const onThisDaySlice = createSlice({
   name: 'onThisDay',
-  initialState: {
-    state: initialOnThisDay?.state,
-    date: initialOnThisDay?.date,
-    error: false,
-  } as OnThisDaySliceState,
+  initialState,
   reducers: {
     setData(state, action: PayloadAction<ApiOnThisDayResponse>) {
       state.data = action.payload.data;

@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 
-import type { AppDispatch, RootState } from '@/mastodon/store';
+import type { RootState } from '@/mastodon/store';
 
 import { checkOnThisDay } from './on_this_day';
 
@@ -13,7 +13,7 @@ const checkWithState = (state: OnThisDayState) => {
       onThisDay: { state },
     }) as unknown as RootState;
 
-  checkOnThisDay()(dispatch as unknown as AppDispatch, getState);
+  checkOnThisDay()(dispatch, getState);
 
   return dispatch.mock.calls.filter(([action]) => typeof action === 'function');
 };

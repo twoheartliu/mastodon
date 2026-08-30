@@ -120,7 +120,10 @@ export function NofanThemes(): Plugin {
   };
 }
 
-async function loadSkinEntrypoints(jsRoot: string, entrypoints: Record<string, string>) {
+async function loadSkinEntrypoints(
+  jsRoot: string,
+  entrypoints: Record<string, string>,
+) {
   const skinsRoot = path.join(jsRoot, 'skins');
   let flavourNames: string[];
   try {
@@ -149,7 +152,9 @@ async function loadSkinEntrypoints(jsRoot: string, entrypoints: Record<string, s
 /** Flavours live one level below the skins root; anything else is ignored. */
 async function readdirIfDirectory(dir: string): Promise<string[]> {
   const entries = await fs.readdir(dir, { withFileTypes: true });
-  return entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name);
+  return entries
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name);
 }
 
 /**
@@ -169,7 +174,9 @@ async function loadFlavourEntrypoints(
     const packDir = path.join(flavoursRoot, flavour, 'entrypoints');
     let files: string[];
     try {
-      files = (await fs.readdir(packDir)).filter((name) => scriptTest.test(name));
+      files = (await fs.readdir(packDir)).filter((name) =>
+        scriptTest.test(name),
+      );
     } catch {
       continue; // Flavour without its own entrypoints (shared pack).
     }
@@ -214,7 +221,7 @@ async function resolveSkinEntrypoint(
   if (segments.length !== 3 || segments.some((segment) => segment === '..')) {
     return undefined;
   }
-  const [, flavour, skin] = segments;
+  const [, flavour, skin] = segments as [string, string, string];
   const base = path.join(jsRoot, 'skins', flavour, skin);
 
   const candidates = [
