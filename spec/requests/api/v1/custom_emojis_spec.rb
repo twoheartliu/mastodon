@@ -54,7 +54,7 @@ RSpec.describe 'Custom Emojis' do
       it 'is not included in the response' do
         get api_v1_custom_emojis_path
 
-        expect(response.parsed_body.map { |emoji| emoji['shortcode'] })
+        expect(response.parsed_body.pluck('shortcode'))
           .to contain_exactly('coolcat')
       end
     end
