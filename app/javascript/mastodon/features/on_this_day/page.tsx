@@ -7,9 +7,10 @@ import { useHistory } from 'react-router';
 
 import { Helmet } from '@unhead/react/helmet';
 
+import { focusCompose } from '@/mastodon/actions/compose';
+import { Button } from '@/mastodon/components/button';
 import { Column } from '@/mastodon/components/column';
 import { ColumnHeader } from '@/mastodon/components/column_header';
-import { Button } from '@/mastodon/components/button';
 import { Icon } from '@/mastodon/components/icon';
 import { StatusQuoteManager } from '@/mastodon/components/status_quoted';
 import {
@@ -17,7 +18,6 @@ import {
   fetchOnThisDayData,
   fetchOnThisDayState,
 } from '@/mastodon/reducers/slices/on_this_day';
-import { focusCompose } from '@/mastodon/actions/compose';
 import { useAppDispatch, useAppSelector } from '@/mastodon/store';
 import HistoryIcon from '@/material-icons/400-24px/history.svg?react';
 
@@ -131,7 +131,11 @@ export const OnThisDayPage: FC = () => {
             <title>{pageTitle}</title>
           </Helmet>
           <div className={styles.emptyState}>
-            <Icon id='history' icon={HistoryIcon} className={styles.emptyIcon} />
+            <Icon
+              id='history'
+              icon={HistoryIcon}
+              className={styles.emptyIcon}
+            />
             <h1 className={styles.heading}>
               <FormattedMessage
                 id='on_this_day.page.heading'
@@ -145,7 +149,13 @@ export const OnThisDayPage: FC = () => {
               />
             </p>
             <div className={styles.emptyAction}>
-              <Button text={intl.formatMessage({ id: 'on_this_day.page.retry', defaultMessage: 'Retry' })} onClick={handleRetry} />
+              <Button
+                text={intl.formatMessage({
+                  id: 'on_this_day.page.retry',
+                  defaultMessage: 'Retry',
+                })}
+                onClick={handleRetry}
+              />
             </div>
           </div>
         </div>
@@ -155,7 +165,11 @@ export const OnThisDayPage: FC = () => {
             <title>{pageTitle}</title>
           </Helmet>
           <div className={styles.emptyState}>
-            <Icon id='history' icon={HistoryIcon} className={styles.emptyIcon} />
+            <Icon
+              id='history'
+              icon={HistoryIcon}
+              className={styles.emptyIcon}
+            />
             <h1 className={styles.heading}>
               <FormattedMessage
                 id='on_this_day.page.heading'
@@ -169,7 +183,13 @@ export const OnThisDayPage: FC = () => {
               />
             </p>
             <div className={styles.emptyAction}>
-              <Button text={intl.formatMessage({ id: 'on_this_day.page.enable', defaultMessage: 'Enable in preferences' })} onClick={handleEnable} />
+              <Button
+                text={intl.formatMessage({
+                  id: 'on_this_day.page.enable',
+                  defaultMessage: 'Enable in preferences',
+                })}
+                onClick={handleEnable}
+              />
             </div>
           </div>
         </div>
@@ -197,9 +217,7 @@ export const OnThisDayPage: FC = () => {
                   defaultMessage='On this day, you left {count, plural, one {# memory} other {# memories}} on <brand>Mastodon</brand>'
                   values={{
                     count: totalCount,
-                    brand: (chunks) => (
-                      <span translate='no'>{chunks}</span>
-                    ),
+                    brand: (chunks) => <span translate='no'>{chunks}</span>,
                   }}
                 />
               </p>

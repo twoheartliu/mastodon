@@ -1,7 +1,6 @@
 // Mastodon Bird UI - Accessible variants: shared font-size and line-height tuning
 // Used by both the accessible and accessible-plus (ultra) variants. Rules read the
 // per-variant --font-size / --font-size-smaller tokens, so each variant scales them.
-// stylelint-disable plugin/no-unused-custom-properties, declaration-no-important, no-descending-specificity
 
 // Admin: comfortable line height for text such as spans
 .admin-wrapper span {

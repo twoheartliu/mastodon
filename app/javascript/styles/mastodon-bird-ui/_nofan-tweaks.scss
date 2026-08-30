@@ -43,12 +43,28 @@ html:not([data-color-scheme]) {
   // var(--color-bg-compose-form-focus) on focus; Bird UI's light tokens set
   // that to a translucent purple-gray (rgb(147 136 166 / 30%)) which loads
   // after our tokens, so hardcode the light tone here too.
-  .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within,
-  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within,
-  .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within~.compose-form__buttons-wrapper,
-  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within~.compose-form__buttons-wrapper,
-  .layout-single-column .compose-form__highlightable .compose-form__autosuggest-wrapper:focus-within~.compose-form__buttons-wrapper,
-  .layout-multiple-columns .compose-form__highlightable .compose-form__autosuggest-wrapper:focus-within~.compose-form__buttons-wrapper {
+  .layout-single-column
+    .compose-form
+    .compose-form__autosuggest-wrapper:focus-within,
+  .layout-multiple-columns
+    .compose-form
+    .compose-form__autosuggest-wrapper:focus-within,
+  .layout-single-column
+    .compose-form
+    .compose-form__autosuggest-wrapper:focus-within
+    ~ .compose-form__buttons-wrapper,
+  .layout-multiple-columns
+    .compose-form
+    .compose-form__autosuggest-wrapper:focus-within
+    ~ .compose-form__buttons-wrapper,
+  .layout-single-column
+    .compose-form__highlightable
+    .compose-form__autosuggest-wrapper:focus-within
+    ~ .compose-form__buttons-wrapper,
+  .layout-multiple-columns
+    .compose-form__highlightable
+    .compose-form__autosuggest-wrapper:focus-within
+    ~ .compose-form__buttons-wrapper {
     background-color: #fff;
     border-color: #fff;
   }
@@ -184,8 +200,10 @@ html:not([data-color-scheme]) {
   // inline padding in lockstep with the pill's insets (below), so the pill
   // stays flush with the panel edge while the icon/text keep air on both
   // sides (icon 16px, text 30px).
-  .navigation-panel__menu>li>.column-link:not(.navigation-panel__compose-button),
-  .navigation-panel__list-panel__header>.column-link {
+  .navigation-panel__menu
+    > li
+    > .column-link:not(.navigation-panel__compose-button),
+  .navigation-panel__list-panel__header > .column-link {
     padding-inline-start: calc(var(--gap-column-link) + 6px);
     padding-inline-end: calc(var(--gap-column-link) * 1.5 + 15px);
   }
@@ -196,7 +214,7 @@ html:not([data-color-scheme]) {
   // their label right. The hover pill is anchored to the label <span>, so
   // that 4px difference pushes the pill past the panel's left edge on every
   // item without a badge. Neutralize it so all icons are 22px wide.
-  .navigation-panel .column-link>i {
+  .navigation-panel .column-link > i {
     min-width: 0;
   }
 
@@ -207,8 +225,11 @@ html:not([data-color-scheme]) {
   // flush while the text keeps air; vertical offsets match the 20px
   // padding-block set above. Covers the main menu links plus the Lists /
   // Followed hashtags header links; nested panel items keep their own pill.
-  .navigation-panel__menu>li>.column-link:not(.navigation-panel__compose-button)>span::before,
-  .navigation-panel__list-panel__header>.column-link>span::before {
+  .navigation-panel__menu
+    > li
+    > .column-link:not(.navigation-panel__compose-button)
+    > span::before,
+  .navigation-panel__list-panel__header > .column-link > span::before {
     inset-inline-start: calc(-1 * (var(--gap-column-link) + 6px + 22px + 14px));
     inset-inline-end: calc(-1 * (var(--gap-column-link) * 1.5 + 15px));
     top: calc(-10px - var(--gap-column-link));
@@ -242,7 +263,10 @@ html:not([data-color-scheme]) {
 
   // Match Bird UI's mobile-compact rule specificity so 20px holds on all
   // widths (its rule wins at ≤759px otherwise)
-  .columns-area__panels__pane--navigational .columns-area__panels__pane__inner .navigation-panel .column-link {
+  .columns-area__panels__pane--navigational
+    .columns-area__panels__pane__inner
+    .navigation-panel
+    .column-link {
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -278,7 +302,7 @@ html:not([data-color-scheme]) {
   .search__input::placeholder,
   input::placeholder,
   input.setting-text::placeholder,
-  .emoji-mart-search>input::placeholder {
+  .emoji-mart-search > input::placeholder {
     color: var(--color-field-placeholder);
     opacity: 1;
   }
@@ -394,8 +418,7 @@ html:not([data-color-scheme]) {
     // popping sprite. Mirror the timeline: icon always absolute at its
     // flow position, counter fixed 4px past the 24px icon slot — constant
     // geometry in every state, matching the boost button's spacing.
-    button.icon-button.star-icon.icon-button--with-counter
-      .icon-star {
+    button.icon-button.star-icon.icon-button--with-counter .icon-star {
       left: 0;
       position: absolute;
     }

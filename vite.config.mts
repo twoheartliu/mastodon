@@ -21,9 +21,9 @@ import svgr from 'vite-plugin-svgr';
 
 import { MastodonAssetsManifest } from './config/vite/plugin-assets-manifest';
 import { MastodonThemes } from './config/vite/plugin-mastodon-themes';
+import { NofanThemes } from './config/vite/plugin-nofan-themes';
 import { MastodonServiceWorkerChunkPaths } from './config/vite/plugin-sw-chunk-paths';
 import { MastodonServiceWorkerLocales } from './config/vite/plugin-sw-locales';
-import { NofanThemes } from './config/vite/plugin-nofan-themes';
 
 const jsRoot = path.resolve(__dirname, 'app/javascript');
 

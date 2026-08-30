@@ -1,5 +1,5 @@
 // Hide labels for any field that has a link (show icon + URL only)
-@use "field-selectors" as *;
+@use 'field-selectors' as *;
 
 .layout-single-column,
 .layout-multiple-columns {

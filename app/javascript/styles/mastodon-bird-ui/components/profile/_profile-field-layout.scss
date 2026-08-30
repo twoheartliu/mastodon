@@ -1,5 +1,5 @@
 // Profile field layout - reset MiniCard grid to inline flex
-@use "field-selectors" as *;
+@use 'field-selectors' as *;
 
 .layout-single-column,
 .layout-multiple-columns {
@@ -43,30 +43,30 @@
   }
 
   // Verified field - reset background
-  #{$field-list} > div[class*="fieldVerified"] {
+  #{$field-list} > div[class*='fieldVerified'] {
     background-color: transparent;
   }
 
-  #{$field-list} > div[class*="fieldVerified"] dd a {
+  #{$field-list} > div[class*='fieldVerified'] dd a {
     color: var(--color-accent);
   }
 
   // Verified icon - replace with Bird UI style
-  #{$field-list} > #{$field-item} span[class*="fieldVerifiedIcon"] {
+  #{$field-list} > #{$field-item} span[class*='fieldVerifiedIcon'] {
     order: 3;
     position: relative;
     right: auto;
     top: auto;
   }
 
-  #{$field-list} > #{$field-item} span[class*="fieldVerifiedIcon"] svg {
+  #{$field-list} > #{$field-item} span[class*='fieldVerifiedIcon'] svg {
     background-image: var(--icon-verified-smaller);
     background-repeat: no-repeat;
     height: 15px;
     width: 15px;
   }
 
-  #{$field-list} > #{$field-item} span[class*="fieldVerifiedIcon"] svg path {
+  #{$field-list} > #{$field-item} span[class*='fieldVerifiedIcon'] svg path {
     display: none;
   }
 

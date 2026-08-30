@@ -1,8 +1,6 @@
 // Mastodon Bird UI - Semantic token overrides
 // Updated for v4.6.0-alpha.3-2026-01-24 file-based theme system with data-color-scheme/data-contrast attributes
 // Dark tokens apply by default - light themes override via _variables-light.scss
-// stylelint-disable no-duplicate-selectors
-// stylelint-disable plugin/no-unused-custom-properties
 
 // Dark theme tokens - apply by default when Bird UI is loaded
 // The stylesheet being loaded IS the theme selection
@@ -49,7 +47,6 @@ html:not([data-color-scheme]) {
   --color-text-favourite-highlight: #b5495b;
   --color-text-on-media: #fffffb;
   --color-text-status-links: #2ea9df;
-
   --color-text-inverted: #080808;
   --color-bg-overlay-base: rgb(8 8 8 / 60%);
   --color-bg-overlay-highlight: rgb(88 178 220 / 8%);
@@ -67,6 +64,7 @@ html:not([data-color-scheme]) {
   --color-poll-chart-leading: #58b2dc;
   --color-poll-selection: #2ea9df;
   --color-poll-check: #2ea9df;
+
   // Background tokens
   --color-bg-primary: #080808;
   --overlay-strength-secondary: 8%;
@@ -118,8 +116,7 @@ html:not([data-color-scheme]) {
   --shadow-strength-primary: 80%;
   --color-shadow-primary: rgb(8 8 8 / 80%);
   --dropdown-shadow:
-    0 20px 25px -5px rgb(15 37 64 / 80%),
-    0 8px 10px -6px rgb(15 37 64 / 80%);
+    0 20px 25px -5px rgb(15 37 64 / 80%), 0 8px 10px -6px rgb(15 37 64 / 80%);
   --overlay-icon-shadow: drop-shadow(0 0 8px rgb(8 8 8 / 80%));
 
   // Graph tokens

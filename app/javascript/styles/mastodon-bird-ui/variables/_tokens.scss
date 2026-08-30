@@ -1,8 +1,6 @@
 // Mastodon Bird UI - Semantic token overrides
 // Updated for v4.6.0-alpha.3-2026-01-24 file-based theme system with data-color-scheme/data-contrast attributes
 // Dark tokens apply by default - light themes override via _variables-light.scss
-// stylelint-disable no-duplicate-selectors
-// stylelint-disable plugin/no-unused-custom-properties
 
 // Dark theme tokens - apply by default when Bird UI is loaded
 // The stylesheet being loaded IS the theme selection
@@ -99,7 +97,7 @@
 }
 
 // High contrast theme - applies when user has high contrast preference
-html[data-contrast="high"] {
+html[data-contrast='high'] {
   // Higher contrast text
   --color-text-primary: #fff;
   --color-text-secondary: #a0a8c0;

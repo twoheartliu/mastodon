@@ -40,14 +40,11 @@ body.embed .video-player {
   margin-left: calc(var(--size-avatar) + var(--gap-default));
 }
 
-body.embed [data-component="Video"] > div {
+body.embed [data-component='Video'] > div {
   aspect-ratio: unset !important;
 }
 
-body.embed
-  .spoiler-button
-  + .media-gallery__item
-  > .media-gallery__preview {
+body.embed .spoiler-button + .media-gallery__item > .media-gallery__preview {
   margin-left: unset !important;
   max-height: unset !important;
   width: 100% !important;
@@ -101,19 +98,19 @@ body.embed > .activity-stream {
 
 body.embed .detailed-status__link > .fa-reply + span::after {
   color: var(--color-dim);
-  content: "Replies";
+  content: 'Replies';
   font-weight: var(--font-weight-semibold);
 }
 
 body.embed .detailed-status__link > .fa-retweet + span::after {
   color: var(--color-dim);
-  content: "Boosts";
+  content: 'Boosts';
   font-weight: var(--font-weight-semibold);
 }
 
 body.embed .detailed-status__link > .fa-star + span::after {
   color: var(--color-dim);
-  content: "Favourites";
+  content: 'Favourites';
   font-weight: var(--font-weight-semibold);
 }
 

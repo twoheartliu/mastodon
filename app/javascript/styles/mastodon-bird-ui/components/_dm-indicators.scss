@@ -13,7 +13,7 @@
     border-top: 20px solid var(--color-accent);
 
     // Add a ribbon to the corner
-    content: "";
+    content: '';
     height: 0;
     position: absolute;
     right: 0;
@@ -43,7 +43,6 @@
 
   // Unread conversation - background and ribbon
   .conversation.unread {
-    // stylelint-disable-next-line
     background: var(--color-bg-brand-softest);
     position: relative;
   }
@@ -51,7 +50,7 @@
   .conversation.unread::after {
     border-left: 20px solid transparent;
     border-top: 20px solid var(--color-accent);
-    content: "";
+    content: '';
     height: 0;
     position: absolute;
     right: 0;

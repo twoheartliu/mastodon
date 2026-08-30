@@ -4,9 +4,9 @@
   // GitHub
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="github.com" i])::after {
+    dl:has(dd[title*='github.com' i])::after {
     background-image: var(--icon-github);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -14,9 +14,9 @@
   // Discord
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="discord" i])::after {
+    dl:has(dd[title*='discord' i])::after {
     background-image: var(--icon-discord);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -24,9 +24,9 @@
   // LinkedIn
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="linkedin.com" i])::after {
+    dl:has(dd[title*='linkedin.com' i])::after {
     background-image: var(--icon-linkedin);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -34,9 +34,9 @@
   // Instagram
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="instagram.com" i])::after {
+    dl:has(dd[title*='instagram.com' i])::after {
     background-image: var(--icon-instagram);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -44,12 +44,12 @@
   // YouTube
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="youtube.com" i])::after,
+    dl:has(dd[title*='youtube.com' i])::after,
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="youtu.be" i])::after {
+    dl:has(dd[title*='youtu.be' i])::after {
     background-image: var(--icon-youtube);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -57,9 +57,9 @@
   // Twitch
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="twitch.tv" i])::after {
+    dl:has(dd[title*='twitch.tv' i])::after {
     background-image: var(--icon-twitch);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -67,12 +67,12 @@
   // Twitter/X
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="twitter.com" i])::after,
+    dl:has(dd[title*='twitter.com' i])::after,
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="x.com" i])::after {
+    dl:has(dd[title*='x.com' i])::after {
     background-image: var(--icon-twitter);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -80,9 +80,9 @@
   // Patreon
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="patreon.com" i])::after {
+    dl:has(dd[title*='patreon.com' i])::after {
     background-image: var(--icon-patreon);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -90,9 +90,9 @@
   // PayPal
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="paypal" i])::after {
+    dl:has(dd[title*='paypal' i])::after {
     background-image: var(--icon-paypal);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -100,12 +100,12 @@
   // Ko-fi
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="kofi.com" i])::after,
+    dl:has(dd[title*='kofi.com' i])::after,
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="ko-fi.com" i])::after {
+    dl:has(dd[title*='ko-fi.com' i])::after {
     background-image: var(--icon-kofi);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -113,9 +113,9 @@
   // Bandcamp
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="bandcamp.com" i])::after {
+    dl:has(dd[title*='bandcamp.com' i])::after {
     background-image: var(--icon-bandcamp);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -123,12 +123,12 @@
   // Facebook
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="facebook.com" i])::after,
+    dl:has(dd[title*='facebook.com' i])::after,
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="fb.com" i])::after {
+    dl:has(dd[title*='fb.com' i])::after {
     background-image: var(--icon-facebook);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -136,9 +136,9 @@
   // Friendica
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="friendica" i])::after {
+    dl:has(dd[title*='friendica' i])::after {
     background-image: var(--icon-friendica);
-    content: "";
+    content: '';
     height: 18.5px;
     transform: scale(0.9);
     width: 18.5px;
@@ -147,12 +147,12 @@
   // WordPress
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="wordpress.com" i])::after,
+    dl:has(dd[title*='wordpress.com' i])::after,
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="wordpress.org" i])::after {
+    dl:has(dd[title*='wordpress.org' i])::after {
     background-image: var(--icon-wordpress);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -160,18 +160,18 @@
   // Mastodon instances - detect by @ in URL or common instance domains
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="/@" i])::after,
+    dl:has(dd[title*='/@' i])::after,
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="mastodon.social" i])::after,
+    dl:has(dd[title*='mastodon.social' i])::after,
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="mastodon.online" i])::after,
+    dl:has(dd[title*='mastodon.online' i])::after,
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="masto.host" i])::after {
+    dl:has(dd[title*='masto.host' i])::after {
     background-image: var(--icon-mastodon);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -179,9 +179,9 @@
   // Threads
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="threads.net" i])::after {
+    dl:has(dd[title*='threads.net' i])::after {
     background-image: var(--icon-threads);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -189,12 +189,12 @@
   // Bluesky
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="bsky.app" i])::after,
+    dl:has(dd[title*='bsky.app' i])::after,
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="bsky.social" i])::after {
+    dl:has(dd[title*='bsky.social' i])::after {
     background-image: var(--icon-bluesky);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -202,12 +202,12 @@
   // Nostr - typically npub or other nostr formats
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="npub" i])::after,
+    dl:has(dd[title*='npub' i])::after,
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title*="nostr:" i])::after {
+    dl:has(dd[title*='nostr:' i])::after {
     background-image: var(--icon-nostr);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -215,40 +215,40 @@
   // Default link icon for all other links (that don't have platform-specific icons)
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:has(dd[title^="http"]):not(
+    dl:has(dd[title^='http']):not(
       :has(
-        dd[title*="github.com" i],
-        dd[title*="youtube.com" i],
-        dd[title*="youtu.be" i],
-        dd[title*="twitch.tv" i],
-        dd[title*="twitter.com" i],
-        dd[title*="x.com" i],
-        dd[title*="discord" i],
-        dd[title*="linkedin.com" i],
-        dd[title*="instagram.com" i],
-        dd[title*="ko-fi.com" i],
-        dd[title*="kofi.com" i],
-        dd[title*="paypal" i],
-        dd[title*="patreon.com" i],
-        dd[title*="threads.net" i],
-        dd[title*="bsky.app" i],
-        dd[title*="bsky.social" i],
-        dd[title*="bandcamp.com" i],
-        dd[title*="facebook.com" i],
-        dd[title*="fb.com" i],
-        dd[title*="wordpress.com" i],
-        dd[title*="wordpress.org" i],
-        dd[title*="/@" i],
-        dd[title*="mastodon.social" i],
-        dd[title*="mastodon.online" i],
-        dd[title*="masto.host" i],
-        dd[title*="friendica" i],
-        dd[title*="npub" i],
-        dd[title*="nostr:" i]
+        dd[title*='github.com' i],
+        dd[title*='youtube.com' i],
+        dd[title*='youtu.be' i],
+        dd[title*='twitch.tv' i],
+        dd[title*='twitter.com' i],
+        dd[title*='x.com' i],
+        dd[title*='discord' i],
+        dd[title*='linkedin.com' i],
+        dd[title*='instagram.com' i],
+        dd[title*='ko-fi.com' i],
+        dd[title*='kofi.com' i],
+        dd[title*='paypal' i],
+        dd[title*='patreon.com' i],
+        dd[title*='threads.net' i],
+        dd[title*='bsky.app' i],
+        dd[title*='bsky.social' i],
+        dd[title*='bandcamp.com' i],
+        dd[title*='facebook.com' i],
+        dd[title*='fb.com' i],
+        dd[title*='wordpress.com' i],
+        dd[title*='wordpress.org' i],
+        dd[title*='/@' i],
+        dd[title*='mastodon.social' i],
+        dd[title*='mastodon.online' i],
+        dd[title*='masto.host' i],
+        dd[title*='friendica' i],
+        dd[title*='npub' i],
+        dd[title*='nostr:' i]
       )
     )::after {
     background-image: var(--icon-link);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }
@@ -256,9 +256,9 @@
   // If the profile item has no link element, show just label icon
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
-    dl:not(:has(a)):not(:first-of-type)::after {
+    dl:not(:has(a), :first-of-type)::after {
     background-image: var(--icon-label);
-    content: "";
+    content: '';
     height: 18.5px;
     width: 18.5px;
   }

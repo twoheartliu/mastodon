@@ -1,11 +1,10 @@
 // Mastodon Bird UI - Accessible Plus variant
 // v4.6.0-alpha.3-2026-01-24 file-based theme system
 // See: https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/177
-@use "accessible-fonts";
+@use 'accessible-fonts';
 
 :root {
   // Override Mastodon 4.6.0+ semantic tokens for accessible theme
-  // stylelint-disable plugin/no-unused-custom-properties
   --color-bg-primary: #000;
   --color-text-brand: #0a9ff9;
   --color-text-brand-soft: #3db8ff;
@@ -64,7 +63,7 @@
 
   ._annual_report_announcement__wrapper h2,
   ._annual_report_announcement__wrapper p,
-  [role="dialog"] textarea,
+  [role='dialog'] textarea,
   time:not(.invisible),
   span:not(.invisible),
   li:not(.invisible) {
@@ -145,8 +144,12 @@ body .content-warning {
   }
 }
 
-.layout-single-column ._comp_account_header__bioButtonsWrapper dl[class*="fieldList"],
-.layout-multiple-columns ._comp_account_header__bioButtonsWrapper dl[class*="fieldList"] {
+.layout-single-column
+  ._comp_account_header__bioButtonsWrapper
+  dl[class*='fieldList'],
+.layout-multiple-columns
+  ._comp_account_header__bioButtonsWrapper
+  dl[class*='fieldList'] {
   row-gap: 16px;
 }
 
@@ -157,7 +160,7 @@ body .content-warning {
 }
 
 //  Custom for mementomori.social
-.status__content__text[lang="fi"].translate
+.status__content__text[lang='fi'].translate
   ~ .status__content__read-more-button {
   display: none;
 }
@@ -168,7 +171,6 @@ body .content-warning {
 }
 
 //  Add background color for the compose form
-//  stylelint-disable-next-line no-duplicate-selectors
 .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper,
 .layout-multiple-columns .compose-form .compose-form__buttons-wrapper,
 .layout-single-column .compose-form .compose-form__autosuggest-wrapper,

@@ -47,25 +47,57 @@
   --color-bg-brand-softest: var(--color-indigo-200);
   --color-bg-error-base: var(--color-red-500);
   --color-bg-error-base-hover: var(--color-red-600);
-  --color-bg-error-soft: color-mix(in srgb, var(--color-red-500) 12%, var(--color-white));
-  --color-bg-error-softest: color-mix(in srgb, var(--color-red-500) 6%, var(--color-white));
+  --color-bg-error-soft: color-mix(
+    in srgb,
+    var(--color-red-500) 12%,
+    var(--color-white)
+  );
+  --color-bg-error-softest: color-mix(
+    in srgb,
+    var(--color-red-500) 6%,
+    var(--color-white)
+  );
   --color-bg-warning-base: var(--color-yellow-200);
-  --color-bg-warning-soft: color-mix(in srgb, var(--color-yellow-200) 18%, var(--color-white));
-  --color-bg-warning-softest: color-mix(in srgb, var(--color-yellow-200) 9%, var(--color-white));
+  --color-bg-warning-soft: color-mix(
+    in srgb,
+    var(--color-yellow-200) 18%,
+    var(--color-white)
+  );
+  --color-bg-warning-softest: color-mix(
+    in srgb,
+    var(--color-yellow-200) 9%,
+    var(--color-white)
+  );
   --color-bg-success-base: var(--color-indigo-400);
-  --color-bg-success-soft: color-mix(in srgb, var(--color-indigo-400) 18%, #fff);
-  --color-bg-success-softest: color-mix(in srgb, var(--color-indigo-400) 9%, #fff);
+  --color-bg-success-soft: color-mix(
+    in srgb,
+    var(--color-indigo-400) 18%,
+    #fff
+  );
+  --color-bg-success-softest: color-mix(
+    in srgb,
+    var(--color-indigo-400) 9%,
+    #fff
+  );
   --color-border-primary: var(--color-indigo-200);
   --color-border-brand: var(--color-indigo-500);
   --color-border-brand-soft: var(--color-indigo-300);
   --color-border-error: var(--color-red-500);
   --color-border-media: #{utils.css-alpha(var(--color-white), 15%)};
   --color-border-error-soft: #{utils.css-alpha(var(--color-text-error), 50%)};
-  --color-border-warning-soft: #{utils.css-alpha(var(--color-text-warning), 50%)};
+  --color-border-warning-soft: #{utils.css-alpha(
+      var(--color-text-warning),
+      50%
+    )};
   --color-border-success-soft: var(--color-indigo-300);
   --shadow-strength-primary: 30%;
-  --color-shadow-primary: #{utils.css-alpha(var(--color-blue-950), var(--shadow-strength-primary))};
-  --dropdown-shadow: 0 20px 25px -5px var(--color-shadow-primary), 0 8px 10px -6px var(--color-shadow-primary);
+  --color-shadow-primary: #{utils.css-alpha(
+      var(--color-blue-950),
+      var(--shadow-strength-primary)
+    )};
+  --dropdown-shadow:
+    0 20px 25px -5px var(--color-shadow-primary),
+    0 8px 10px -6px var(--color-shadow-primary);
   --overlay-icon-shadow: drop-shadow(0 0 8px var(--color-shadow-primary));
   --color-graph-primary-stroke: var(--color-text-brand);
   --color-graph-primary-fill: var(--color-bg-brand-softest);
@@ -76,26 +108,36 @@
   --rich-text-container-color: var(--color-indigo-200);
   --rich-text-text-color: var(--color-grey-800);
   --rich-text-decorations-color: var(--color-indigo-500);
-  .poll__option:not(.dialog-option):not(.disabled):not(:has(> input:disabled)) > .poll__input:not(.disabled) {
+
+  .poll__option:not(.dialog-option, .disabled, :has(> input:disabled))
+    > .poll__input:not(.disabled) {
     border: 1px solid var(--color-border-brand);
     background: var(--color-bg-primary);
     box-shadow: none;
   }
-  .poll__option:not(.dialog-option):not(.disabled):not(:has(> input:disabled)) > .poll__input:not(.disabled):is(:active, :focus, :hover) {
+
+  .poll__option:not(.dialog-option, .disabled, :has(> input:disabled))
+    > .poll__input:not(.disabled):is(:active, :focus, :hover) {
     border-color: var(--color-border-brand);
     border-width: 1px;
   }
-  .poll__option:not(.dialog-option):not(.disabled):not(:has(> input:disabled)) > .poll__input:not(.disabled).active:not(.checkbox) {
+
+  .poll__option:not(.dialog-option, .disabled, :has(> input:disabled))
+    > .poll__input:not(.disabled).active:not(.checkbox) {
     background: var(--sakura-radio-dot);
     box-shadow: inset 0 0 0 4px var(--color-bg-primary);
   }
-  .poll__option:not(.dialog-option):not(.disabled):not(:has(> input:disabled)) > .poll__input:not(.disabled).checkbox.active {
+
+  .poll__option:not(.dialog-option, .disabled, :has(> input:disabled))
+    > .poll__input:not(.disabled).checkbox.active {
     color: var(--sakura-poll-checkmark);
     background: var(--color-bg-primary);
     box-shadow: none;
   }
-  .poll__option:not(.dialog-option):not(.disabled):not(:has(> input:disabled)) > .poll__input:not(.disabled).checkbox.active::after {
-    content: "";
+
+  .poll__option:not(.dialog-option, .disabled, :has(> input:disabled))
+    > .poll__input:not(.disabled).checkbox.active::after {
+    content: '';
     position: absolute;
     inset: 0;
     margin: auto;
@@ -106,7 +148,7 @@
     mask: var(--sakura-checkmark) center / 100% no-repeat;
   }
 
-  &:not([data-contrast='high']):not([data-contrast='high'] *) {
+  &:not([data-contrast='high'], [data-contrast='high'] *) {
     .search__input {
       border-color: var(--color-indigo-200);
       background: #fff;
@@ -161,7 +203,10 @@
       color: var(--color-text-primary);
     }
 
-    :is(.content-warning .link-button, .status__wrapper--filtered__button):is(:hover, :focus) {
+    :is(.content-warning .link-button, .status__wrapper--filtered__button):is(
+      :hover,
+      :focus
+    ) {
       background: #fdfafb;
     }
   }
@@ -191,8 +236,16 @@
   --color-bg-brand-base: var(--color-red-500);
   --color-bg-brand-base-hover: var(--color-red-700);
   --color-bg-success-base: var(--color-red-500);
-  --color-bg-success-soft: color-mix(in srgb, var(--color-red-500) 18%, var(--color-white));
-  --color-bg-success-softest: color-mix(in srgb, var(--color-red-500) 9%, var(--color-white));
+  --color-bg-success-soft: color-mix(
+    in srgb,
+    var(--color-red-500) 18%,
+    var(--color-white)
+  );
+  --color-bg-success-softest: color-mix(
+    in srgb,
+    var(--color-red-500) 9%,
+    var(--color-white)
+  );
   --color-border-brand: var(--color-red-700);
   --color-border-brand-soft: var(--color-red-200);
   --color-border-success-soft: var(--color-red-200);

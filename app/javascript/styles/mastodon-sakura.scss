@@ -10,7 +10,8 @@
   stop-color: var(--sakura-verified-end);
 }
 
-html[data-color-scheme="light"] :is(._comp_empty_state_empty_state__defaultImage, .empty-state svg) {
+html[data-color-scheme='light']
+  :is(._comp_empty_state_empty_state__defaultImage, .empty-state svg) {
   --color-shadow: #fcfaf2;
   --color-skin-1: #f8c3cd;
   --color-skin-2: #fffffb;
@@ -19,8 +20,10 @@ html[data-color-scheme="light"] :is(._comp_empty_state_empty_state__defaultImage
   --color-highlight: #fffffb;
 }
 
-html[data-color-scheme="dark"] :is(._comp_empty_state_empty_state__defaultImage, .empty-state svg),
-html:not([data-color-scheme]) :is(._comp_empty_state_empty_state__defaultImage, .empty-state svg) {
+html[data-color-scheme='dark']
+  :is(._comp_empty_state_empty_state__defaultImage, .empty-state svg),
+html:not([data-color-scheme])
+  :is(._comp_empty_state_empty_state__defaultImage, .empty-state svg) {
   --color-shadow: #0f2540;
   --color-skin-1: #2ea9df;
   --color-skin-2: #7db9de;
@@ -29,7 +32,8 @@ html:not([data-color-scheme]) :is(._comp_empty_state_empty_state__defaultImage, 
   --color-highlight: #7db9de;
 }
 
-html[data-color-scheme="light"][data-contrast="high"] :is(._comp_empty_state_empty_state__defaultImage, .empty-state svg) {
+html[data-color-scheme='light'][data-contrast='high']
+  :is(._comp_empty_state_empty_state__defaultImage, .empty-state svg) {
   --color-shadow: #fedfe1;
   --color-skin-1: #e16b8c;
   --color-skin-2: #fffffb;
@@ -38,7 +42,11 @@ html[data-color-scheme="light"][data-contrast="high"] :is(._comp_empty_state_emp
   --color-highlight: #fffffb;
 }
 
-html:is([data-color-scheme="dark"], :not([data-color-scheme]))[data-contrast="high"] :is(._comp_empty_state_empty_state__defaultImage, .empty-state svg) {
+html:is(
+    [data-color-scheme='dark'],
+    :not([data-color-scheme])
+  )[data-contrast='high']
+  :is(._comp_empty_state_empty_state__defaultImage, .empty-state svg) {
   --color-shadow: #0b346e;
   --color-skin-1: #58b2dc;
   --color-skin-2: #fffffb;
@@ -75,10 +83,18 @@ html:is([data-color-scheme="dark"], :not([data-color-scheme]))[data-contrast="hi
   color: var(--color-text-status-links);
 }
 
-.button.button-secondary:not(.button--destructive):not(:disabled):not(.disabled):is(:active, :focus, :hover) {
+.button.button-secondary:not(.button--destructive, :disabled, .disabled):is(
+    :active,
+    :focus,
+    :hover
+  ) {
   background-color: var(--color-bg-brand-softest);
 }
 
-.button.button-secondary.button--destructive:not(:disabled):not(.disabled):is(:active, :focus, :hover) {
+.button.button-secondary.button--destructive:not(:disabled, .disabled):is(
+    :active,
+    :focus,
+    :hover
+  ) {
   background-color: var(--color-bg-error-softest);
 }

@@ -34,10 +34,10 @@
   }
 
   // Rtl version
-  [dir="rtl"] .status__action-bar,
-  [dir="rtl"] .attachment-list,
-  [dir="rtl"] .status__content__read-more-button,
-  [dir="rtl"] .status .status__content {
+  [dir='rtl'] .status__action-bar,
+  [dir='rtl'] .attachment-list,
+  [dir='rtl'] .status__content__read-more-button,
+  [dir='rtl'] .status .status__content {
     padding-left: 0;
     padding-right: calc(var(--size-avatar) + var(--gap-default));
   }
