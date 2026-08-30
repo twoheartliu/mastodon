@@ -7,7 +7,9 @@ RSpec.describe 'Custom Emojis' do
 
   describe 'GET /api/v1/custom_emojis' do
     before do
-      Fabricate(:custom_emoji, domain: nil, disabled: false, visible_in_picker: true, shortcode: 'coolcat')
+      category = Fabricate(:custom_emoji_category)
+      Fabricate(:custom_emoji, domain: nil, disabled: false, visible_in_picker: true, shortcode: 'coolcat', category: category)
+      Wxw::EmojiPack.create!(custom_emoji_category: category, name: 'coolcat_pack', default_enabled: true)
     end
 
     context 'when logged out' do
@@ -41,6 +43,19 @@ RSpec.describe 'Custom Emojis' do
           .and have_attributes(
             first: include(shortcode: 'coolcat')
           )
+      end
+    end
+
+    context 'when the emoji is not in any published pack' do
+      before do
+        Fabricate(:custom_emoji, domain: nil, disabled: false, visible_in_picker: true, shortcode: 'lonelycat')
+      end
+
+      it 'is not included in the response' do
+        get api_v1_custom_emojis_path
+
+        expect(response.parsed_body.map { |emoji| emoji['shortcode'] })
+          .to contain_exactly('coolcat')
       end
     end
   end
