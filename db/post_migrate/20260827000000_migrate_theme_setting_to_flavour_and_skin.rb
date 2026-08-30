@@ -18,6 +18,8 @@ class MigrateThemeSettingToFlavourAndSkin < ActiveRecord::Migration[8.1]
           AND settings::jsonb->>'theme' IS NOT NULL
       SQL
 
+      sync_settings_id_sequence
+
       # Site-level defaults live as YAML-serialized rows (`Setting#value`
       # encodes with .to_yaml): decode the legacy var and mirror it onto
       # the new pair. The legacy row is kept for rollback reference.
@@ -44,6 +46,8 @@ class MigrateThemeSettingToFlavourAndSkin < ActiveRecord::Migration[8.1]
 
       skin_row = select_value("SELECT value FROM settings WHERE var = 'skin'")
       if skin_row.present?
+        sync_settings_id_sequence
+
         theme = YAML.safe_load(skin_row)
         upsert_setting('theme', theme)
         execute "DELETE FROM settings WHERE var = 'skin'"
@@ -52,6 +56,14 @@ class MigrateThemeSettingToFlavourAndSkin < ActiveRecord::Migration[8.1]
   end
 
   private
+
+  # Historical dumps can leave settings_id_seq behind the row ids, so an
+  # INSERT relying on the id default can collide with an existing key.
+  def sync_settings_id_sequence
+    execute <<~SQL.squish
+      SELECT setval('settings_id_seq', GREATEST(COALESCE((SELECT MAX(id) FROM settings), 1), 1))
+    SQL
+  end
 
   def upsert_setting(var, value)
     encoded = quote(value.to_yaml)
