@@ -57,7 +57,6 @@ zh-CN:
         setting_advanced_layout: 将 Mastodon 的界面显示为多列布局，允许你同时查看时间线、通知及可自主选择的第三列。屏幕尺寸较小的情况下不推荐使用。
         setting_aggregate_reblogs: 不显示最近已经被转嘟过的嘟文(只会影响新收到的转嘟)
         setting_always_send_emails: 一般情况下，如果你活跃使用 Mastodon，我们不会向你发送电子邮件通知
-        setting_on_this_day_enabled: 开启后，可通过侧边导航栏进入「那年今日」页面，回顾往年在同一天发布过的嘟文。
         setting_boost_modal: 如果启用，转嘟前会先打开确认对话框，以便更改转嘟的可见性。
         setting_default_quote_policy_private: Mastodon上发布的仅限关注者可见的嘟文无法被他人引用。
         setting_default_quote_policy_unlisted: 当其他人引用你时，他们的嘟文也会从热门时间线上隐藏。
@@ -66,6 +65,7 @@ zh-CN:
         setting_display_media_hide_all: 显示所有媒体前都显示警告
         setting_display_media_show_all: 显示所有媒体而不显示警告，包括被标记为敏感内容的媒体
         setting_emoji_style: 如何显示Emoji表情符号。选择“自动”将尝试使用原生Emoji，但在旧浏览器中会备选使用Twemoji。
+        setting_on_this_day_enabled: 开启后，可通过侧边导航栏进入「那年今日」页面，回顾往年在同一天发布过的嘟文。
         setting_quick_boosting_html: 如果启用，点击 %{boost_icon} 转嘟图标将立即转嘟，而非开启“转嘟/引用”的下拉式菜单。这会使引用嘟文操作的按钮移动到 %{options_icon} （选项）菜单中。
         setting_use_blurhash: 渐变是基于模糊后的隐藏内容生成的
         setting_use_pending_items: 点击查看时间线更新，而非自动滚动更新动态。
@@ -242,7 +242,6 @@ zh-CN:
         setting_advanced_layout: 启用高级 Web 界面
         setting_aggregate_reblogs: 在时间线中合并转嘟
         setting_always_send_emails: 总是发送电子邮件通知
-        setting_on_this_day_enabled: 那年今日
         setting_auto_play_gif: 自动播放 GIF 动画
         setting_boost_modal: 控制转嘟可见性
         setting_color_scheme: 配色方案
@@ -260,8 +259,10 @@ zh-CN:
         setting_display_media_show_all: 显示全部
         setting_emoji_style: 表情符号样式
         setting_expand_spoilers: 一律展开具有内容警告的嘟文
+        setting_flavour_and_skin: 风味与皮肤
         setting_hide_network: 隐藏你的社交网络
         setting_missing_alt_text_modal: 发送没有设置替代文本的媒体内容前警告我
+        setting_on_this_day_enabled: 那年今日
         setting_quick_boosting: 启用快速转嘟
         setting_reduce_motion: 降低过渡动画效果
         setting_system_font_ui: 使用系统默认字体

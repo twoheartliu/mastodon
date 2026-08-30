@@ -9,7 +9,12 @@ class UserSettings
 
   setting :always_send_emails, default: false
   setting :aggregate_reblogs, default: true
-  setting :theme, default: -> { ::Setting.theme }
+  setting :flavour, default: -> { ::Setting.flavour }
+  setting :skin, default: -> { ::Setting.skin }
+  # Virtual: only exists so `flavour_and_skin` params are permitted.
+  # The reader/writer below pair it with the two keys above; it is
+  # never stored under its own name.
+  setting :flavour_and_skin, default: nil
   setting :noindex, default: -> { ::Setting.noindex }
   setting :show_application, default: true
   setting :default_language, default: nil
@@ -94,7 +99,13 @@ class UserSettings
 
   def update(params)
     params.each do |k, v|
-      self[k] = v unless v.nil?
+      next if v.nil?
+
+      if respond_to?("#{k}=")
+        public_send("#{k}=", v)
+      else
+        self[k] = v
+      end
     end
   end
 
@@ -102,6 +113,19 @@ class UserSettings
     define_method(key) do
       self[key]
     end
+  end
+
+  # Composite of the `flavour` and `skin` keys, written by the grouped
+  # flavour/skin selector as a `flavour/skin` string. Persisted as the
+  # two underlying keys so they stay independently readable.
+  def flavour_and_skin
+    "#{self['flavour']}/#{self['skin']}"
+  end
+
+  def flavour_and_skin=(value)
+    flavour, skin = value.to_s.split('/', 2)
+    self['flavour'] = flavour.presence
+    self['skin'] = skin.presence
   end
 
   def as_json

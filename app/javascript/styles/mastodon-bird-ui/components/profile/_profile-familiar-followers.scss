@@ -10,7 +10,7 @@
   // New module class (post-#38863 upstream rename) needs explicit margin-bottom
   // so spacing after FamiliarFollowers stays consistent regardless of badges.
   // Reset upstream margin-top to avoid doubling against displayNameWrapper.
-  [class*="_comp_familiar_followers__wrapper"][class*="_comp_account_header__familiarFollowers"] {
+  [class*='_comp_familiar_followers__wrapper'][class*='_comp_account_header__familiarFollowers'] {
     margin-top: 0;
     margin-bottom: 16px;
   }

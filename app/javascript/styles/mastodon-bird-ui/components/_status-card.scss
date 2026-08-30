@@ -78,13 +78,11 @@
 
   // New Quote Posts feature after v4.5.0.alpha.2-2025-08-24
   .status__quote {
-    // stylelint-disable-next-line
     --status-gutter-width: calc(var(--size-avatar) + var(--gap-default));
   }
 
   // This is Mastodon core variable
   .detailed-status.status--has-quote .status__quote {
-    // stylelint-disable-next-line
     --status-gutter-width: 0;
   }
 
@@ -94,6 +92,7 @@
 
   .status__quote.status__quote--error {
     --surface-border-color: var(--color-border);
+
     background-color: var(--surface-border-color);
     border-color: var(--surface-border-color);
     color: var(--color-light-text);
@@ -111,7 +110,7 @@
   }
 
   // Disabled quote post selection
-  .dropdown-menu__item [aria-disabled="true"],
+  .dropdown-menu__item [aria-disabled='true'],
   .dropdown-menu__item :disabled,
   .dropdown-menu__item button:disabled {
     color: var(--color-dim);

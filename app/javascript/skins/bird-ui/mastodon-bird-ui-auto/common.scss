@@ -1,0 +1,3 @@
+// Skin shim around the Bird UI auto stylesheet; override layers belong
+// here next to the import once skins grow their own rules.
+@use '../../../styles/mastodon-bird-ui-auto';

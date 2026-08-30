@@ -17,8 +17,18 @@ module ThemeHelper
     content_tag(:script, entry[:contents], type: 'text/javascript')
   end
 
-  def theme_style_tags(theme)
-    vite_stylesheet_tag "themes/#{theme}", type: :virtual, media: 'all', crossorigin: 'anonymous'
+  def flavoured_vite_typescript_tag(pack_name, flavour: nil, **)
+    prefix = Themes.instance.flavour(flavour || current_flavour)
+      &.fetch('pack_directory', nil)
+      &.delete_prefix('app/javascript/')
+
+    vite_typescript_tag(prefix ? "#{prefix}/#{pack_name}" : pack_name, **)
+  end
+
+  def theme_style_tags(flavour_and_skin)
+    flavour, skin = flavour_and_skin
+
+    vite_stylesheet_tag "skins/#{flavour}/#{skin}", type: :virtual, media: 'all', crossorigin: 'anonymous'
   end
 
   def theme_color_tags(color_scheme)
@@ -46,16 +56,17 @@ module ThemeHelper
     )
   end
 
+  def current_flavour
+    [current_user&.setting_flavour, Setting.flavour, 'mastodon-ui'].find { |flavour| Themes.instance.flavours.include?(flavour) }
+  end
+
+  def current_skin
+    skins = Themes.instance.skins_for(current_flavour)
+    [current_user&.setting_skin, Setting.skin, 'default'].find { |skin| skins.include?(skin) }
+  end
+
   def current_theme
-    available_themes = Themes.instance.names
-
-    user_theme = current_user&.setting_theme
-    return user_theme if user_theme && available_themes.include?(user_theme)
-
-    site_theme = Setting.theme
-    return site_theme if available_themes.include?(site_theme)
-
-    'default' # Fallback
+    [current_flavour, current_skin]
   end
 
   def color_scheme

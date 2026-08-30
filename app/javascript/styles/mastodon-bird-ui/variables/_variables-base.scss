@@ -1,7 +1,7 @@
 // Force dark theme regardless of system preference or data-color-scheme attribute
 :root,
-[data-color-scheme="light"],
-[data-color-scheme="dark"],
+[data-color-scheme='light'],
+[data-color-scheme='dark'],
 html:not([data-color-scheme]) {
   // Brand colors
   --color-brand-mastodon: #6364ff;
@@ -29,7 +29,6 @@ html:not([data-color-scheme]) {
   --color-red: #f91880;
 
   // Comes from Mastodon core
-  // stylelint-disable-next-line
   --color-red-75: #f91880bf;
   --color-yellow: #ffac33;
   --color-light-shade: #ffffff05;
@@ -84,15 +83,12 @@ html:not([data-color-scheme]) {
   --size-avatar-small: 32px;
 
   // Comes from Mastodon core
-  // stylelint-disable-next-line
   --width-main-panel: 600px;
 
   // Comes from Mastodon core
-  // stylelint-disable-next-line
   --width-side-panel: 260px;
 
   // Comes from Mastodon core
-  // stylelint-disable-next-line
   --width-compose-panel: 350px;
   --border-radius: 16px;
   --border-radius-badges: 4px;

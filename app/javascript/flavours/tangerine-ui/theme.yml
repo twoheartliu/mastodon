@@ -1,0 +1,7 @@
+# The tangerine-ui flavour layers the Tangerine UI stylesheets (by
+# @nileane, continued as Tangerine Neue by @mattbirchler) over the stock
+# frontend. The look is pure CSS (see skins/tangerine-ui/ and
+# styles/tangerineui*/), so pack_directory points at the shared
+# entrypoint tree, exactly like mastodon-ui and bird-ui, and no app
+# code is duplicated.
+pack_directory: app/javascript/entrypoints

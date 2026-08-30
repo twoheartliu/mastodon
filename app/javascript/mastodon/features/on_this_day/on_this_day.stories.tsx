@@ -1,17 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { action } from 'storybook/actions';
 
-import type { AnyFunction, OmitValueType } from '@/mastodon/utils/types';
-
 import type { OnThisDayAnnouncementProps } from './announcement';
 import { OnThisDayAnnouncement } from './announcement';
 
-type Props = OmitValueType<
-  Omit<OnThisDayAnnouncementProps, 'state'> & {
-    reportState: OnThisDayAnnouncementProps['state'];
-  },
-  AnyFunction
->;
+interface StoryProps {
+  reportState: OnThisDayAnnouncementProps['state'];
+}
 
 const meta = {
   title: 'Components/OnThisDay/Announcement',
@@ -26,17 +21,16 @@ const meta = {
       options: ['ready', 'pending'],
     },
   },
-  render({ reportState, ...args }: Props) {
+  render({ reportState }: StoryProps) {
     return (
       <OnThisDayAnnouncement
         state={reportState}
-        {...args}
         onDismiss={action('dismissed announcement')}
         onShow={action('opened on this day')}
       />
     );
   },
-} satisfies Meta<Props>;
+} satisfies Meta<StoryProps>;
 
 export default meta;
 

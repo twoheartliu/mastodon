@@ -1,0 +1,5 @@
+// Skin shim around the wxw.moe Sakura (樱色) stylesheet — a NIPPON
+// COLORS sakura palette for the stock frontend, adapted from
+// wxwmoe/mastodon's overlay; override layers belong here next to the
+// import once skins grow their own rules.
+@use '../../../styles/mastodon-sakura';

@@ -964,6 +964,8 @@ zh-CN:
           authenticated: 仅已登录用户
           disabled: 需要特定的用户角色
           public: 每个人
+      flavour_and_skin:
+        title: 风味与皮肤
       landing_page:
         hints:
           about_html: 关于此服务器的描述、联系信息、规则及其他信息的页面。
@@ -1598,6 +1600,16 @@ zh-CN:
   featured_tags:
     errors:
       limit: 你所推荐的话题数已达上限
+  flavours:
+    mastodon-ui:
+      name: Mastodon UI
+      description: Mastodon 默认前端，可搭配不同皮肤。
+    bird-ui:
+      name: Mastodon Bird UI
+      description: Mastodon Bird UI 前端，可搭配不同皮肤。
+    tangerine-ui:
+      name: Tangerine UI
+      description: Tangerine UI 前端，可搭配不同皮肤。
   filters:
     contexts:
       account: 个人资料
@@ -2168,7 +2180,18 @@ zh-CN:
     review_link: 查看服务条款
     title: "%{domain} 更新了服务条款"
   themes:
-    default: Mastodon
+    default: 默认
+    fanfou_classic: 饭否经典
+    graphite: 松烟入墨
+    mastodon-bird-ui-auto: 自动
+    space_fanfou: 太空饭否
+    vermilion_seal: 素笺朱印
+    tangerine: 橘色
+    purple: 紫色
+    cherry: 樱桃色
+    lagoon: 潟湖色
+    granite: 花岗岩
+    sakura: 樱花
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"

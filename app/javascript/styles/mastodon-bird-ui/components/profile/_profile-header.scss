@@ -38,7 +38,7 @@
   .notification__report__actions .button,
   .column-inline-form button,
   .explore__suggestions .account-card__actions__button button,
-  [class*="_comp_account_header__buttons"] .button,
+  [class*='_comp_account_header__buttons'] .button,
   .account .account__relationship > .button,
   .notification .account__relationship > .button {
     background-color: transparent;
@@ -63,19 +63,19 @@
   .notification__report__actions .button,
   .column-inline-form button,
   .explore__suggestions .account-card__actions__button button,
-  [class*="_comp_account_header__buttons"] .button,
-  [class*="_comp_account_header__buttons"] .icon-button,
+  [class*='_comp_account_header__buttons'] .button,
+  [class*='_comp_account_header__buttons'] .icon-button,
   .notification .account__relationship > .button,
   .account .account__relationship > .button {
     border: 1px solid var(--color-outer-space);
   }
 
   // Fix focus overflow for 4.1.4-nightly
-  [class*="_comp_account_header__buttons"] {
+  [class*='_comp_account_header__buttons'] {
     overflow: visible;
   }
 
-  [class*="_comp_account_header__buttons"] .icon-button {
+  [class*='_comp_account_header__buttons'] .icon-button {
     align-items: center;
     border-bottom-left-radius: 9999px;
     border-bottom-right-radius: 9999px;
@@ -90,24 +90,24 @@
   }
 
   // Copy-icon size in profile
-  [class*="_comp_account_header__buttons"] .icon-button svg {
+  [class*='_comp_account_header__buttons'] .icon-button svg {
     height: 18px;
     width: 18px;
   }
 
   .column-inline-form button:hover,
   .explore__suggestions .account-card__actions__button button:hover,
-  [class*="_comp_account_header__buttons"] .icon-button.active {
+  [class*='_comp_account_header__buttons'] .icon-button.active {
     color: var(--color-light-text);
   }
 
-  [class*="_comp_account_header__buttons"] .icon-button .icon-bell-o,
-  [class*="_comp_account_header__buttons"] .icon-button .icon-bell {
+  [class*='_comp_account_header__buttons'] .icon-button .icon-bell-o,
+  [class*='_comp_account_header__buttons'] .icon-button .icon-bell {
     background-image: var(--icon-bell-header-tabs);
   }
 
-  [class*="_comp_account_header__buttons"] .icon-button.active .icon-bell-o,
-  [class*="_comp_account_header__buttons"] .icon-button.active .icon-bell {
+  [class*='_comp_account_header__buttons'] .icon-button.active .icon-bell-o,
+  [class*='_comp_account_header__buttons'] .icon-button.active .icon-bell {
     background-image: var(--icon-bell-header-tabs-active);
   }
 
@@ -115,8 +115,8 @@
   .account__header .icon-button:active,
   .account__header ._comp_account_header__followButton:hover,
   .explore__suggestions .account-card__actions__button button:hover,
-  [class*="_comp_account_header__buttons"] .button:focus,
-  [class*="_comp_account_header__buttons"] .button:hover,
+  [class*='_comp_account_header__buttons'] .button:focus,
+  [class*='_comp_account_header__buttons'] .button:hover,
   .notification .account__relationship > .button:hover,
   .notification .account__relationship > .button:focus,
   .account .account__relationship > .button:hover,
@@ -142,7 +142,7 @@
   .status__action-bar .icon-button::after {
     background-color: rgba(96, 105, 132, 15%);
     border-radius: 50%;
-    content: "";
+    content: '';
     height: 36px;
     left: 0;
     opacity: 0;

@@ -305,8 +305,8 @@ const SearchDateRangeForm: React.FC<{
     startInputRef.current?.focus({ preventScroll: true });
   }, []);
 
-  const handleSubmit: React.FormEventHandler<HTMLFormElement> = useCallback(
-    (event) => {
+  const handleSubmit = useCallback(
+    (event: React.SubmitEvent<HTMLFormElement>) => {
       event.preventDefault();
 
       if (isValid) {

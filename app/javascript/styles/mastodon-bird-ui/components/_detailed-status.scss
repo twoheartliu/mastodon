@@ -43,19 +43,19 @@
   // Textual labels for detailed metrics
   .detailed-status__link > .icon-reply + span::after {
     color: var(--color-dim);
-    content: "Replies";
+    content: 'Replies';
     font-weight: var(--font-weight-semibold);
   }
 
   .detailed-status__link > .icon-retweet + span::after {
     color: var(--color-dim);
-    content: "Boosts";
+    content: 'Boosts';
     font-weight: var(--font-weight-semibold);
   }
 
   .detailed-status__link > .icon-star + span::after {
     color: var(--color-dim);
-    content: "Favourites";
+    content: 'Favourites';
     font-weight: var(--font-weight-semibold);
   }
 

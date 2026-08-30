@@ -2,7 +2,7 @@
 // Targets the new _comp_tab_list__* module classes (post-#38863 upstream rename).
 .layout-single-column,
 .layout-multiple-columns {
-  [class*="_comp_tab_list__tabList"][class*="_comp_tab_list__withSpaceAndBorder"] {
+  [class*='_comp_tab_list__tabList'][class*='_comp_tab_list__withSpaceAndBorder'] {
     background-color: transparent;
     border-bottom: 1px solid var(--color-border);
     border-left: 0;
@@ -13,7 +13,7 @@
     padding: 0;
   }
 
-  [class*="_comp_tab_list__tabList"] [class*="_comp_tab_list__tab"] {
+  [class*='_comp_tab_list__tabList'] [class*='_comp_tab_list__tab'] {
     color: var(--color-dim);
     flex: 1 1 0;
     font-size: var(--font-size);
@@ -25,13 +25,13 @@
     transition: background 200ms;
   }
 
-  [class*="_comp_tab_list__tabList"] [class*="_comp_tab_list__tab"]:hover {
+  [class*='_comp_tab_list__tabList'] [class*='_comp_tab_list__tab']:hover {
     background-color: var(--color-column-link-hover);
     color: var(--color-light-text);
   }
 
   // Active tab
-  [class*="_comp_tab_list__tabList"] [class*="_comp_tab_list__tab"].active {
+  [class*='_comp_tab_list__tabList'] [class*='_comp_tab_list__tab'].active {
     border-bottom: 0;
     color: var(--color-light-text);
     font-weight: var(--font-weight-bold);
@@ -39,11 +39,12 @@
   }
 
   // Active tab indicator pill
-  [class*="_comp_tab_list__tabList"] [class*="_comp_tab_list__tab"].active::after {
+  [class*='_comp_tab_list__tabList']
+    [class*='_comp_tab_list__tab'].active::after {
     background-color: var(--color-accent);
     border-radius: 9999px;
     bottom: -1px;
-    content: "";
+    content: '';
     display: block;
     height: 4px;
     left: 50%;
@@ -53,7 +54,7 @@
   }
 
   // Filter dropdown (unchanged from before)
-  [class*="_v2__filtersWrapper"] {
+  [class*='_v2__filtersWrapper'] {
     padding: 0;
   }
 
@@ -62,12 +63,12 @@
     z-index: 4;
   }
 
-  [class*="_v2__filterOverlay"] {
+  [class*='_v2__filterOverlay'] {
     border: 0;
     box-shadow: 2px 4px 16px rgb(0 0 0 / 1%);
   }
 
-  [class*="_v2__filtersWrapper"] [class*="filterSelectButton"] {
+  [class*='_v2__filtersWrapper'] [class*='filterSelectButton'] {
     color: var(--color-dim);
     font-size: var(--font-size);
     font-weight: var(--font-weight-semibold);
@@ -75,7 +76,7 @@
     transition: background 200ms;
   }
 
-  [class*="_v2__filtersWrapper"] [class*="filterSelectButton"]:hover {
+  [class*='_v2__filtersWrapper'] [class*='filterSelectButton']:hover {
     background-color: var(--color-column-link-hover);
     color: var(--color-light-text);
   }

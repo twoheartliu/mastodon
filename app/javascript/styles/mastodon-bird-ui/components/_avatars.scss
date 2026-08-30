@@ -2,8 +2,8 @@
 .layout-single-column,
 .layout-multiple-columns {
   // Avatar
-  .status__avatar[style="width: 46px; height: 46px;"],
-  .account__avatar[style="width: 46px; height: 46px;"],
+  .status__avatar[style='width: 46px; height: 46px;'],
+  .account__avatar[style='width: 46px; height: 46px;'],
   .status__avatar {
     // Need to override inline styles
     height: var(--size-avatar) !important;

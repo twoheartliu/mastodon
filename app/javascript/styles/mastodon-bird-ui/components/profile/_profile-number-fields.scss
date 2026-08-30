@@ -11,7 +11,7 @@
   }
 
   // Move stats below bio and fields
-  [class*="_comp_number_fields__list"] {
+  [class*='_comp_number_fields__list'] {
     font-size: var(--font-size-smaller);
     gap: 4px calc(var(--gap-default) * 1.5);
     line-height: var(--line-height-mid) !important;
@@ -20,7 +20,7 @@
   }
 
   // Reverse order: number first, label after
-  [class*="_comp_number_fields__item"] {
+  [class*='_comp_number_fields__item'] {
     color: var(--color-dim);
     display: inline-flex;
     flex: 0 0 auto;
@@ -32,8 +32,8 @@
   }
 
   // Number styling - override lowercase and set bold
-  [class*="_comp_number_fields__item"] a,
-  [class*="_comp_number_fields__item"] strong {
+  [class*='_comp_number_fields__item'] a,
+  [class*='_comp_number_fields__item'] strong {
     color: var(--color-light-text);
     display: inline;
     font-size: var(--font-size-mid);

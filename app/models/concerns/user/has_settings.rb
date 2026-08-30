@@ -59,8 +59,12 @@ module User::HasSettings
     settings['noindex']
   end
 
-  def setting_theme
-    settings['theme']
+  def setting_flavour
+    settings['flavour']
+  end
+
+  def setting_skin
+    settings['skin']
   end
 
   def setting_color_scheme

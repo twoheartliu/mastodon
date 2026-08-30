@@ -6,13 +6,24 @@ RSpec.describe ThemeHelper do
   describe 'theme_style_tags' do
     let(:result) { helper.theme_style_tags(theme) }
 
-    context 'when using "default" theme' do
-      let(:theme) { 'default' }
+    context 'when using the default skin' do
+      let(:theme) { ['mastodon-ui', 'default'] }
 
       it 'returns the default stylesheet' do
         expect(html_links.last.attributes.symbolize_keys)
           .to include(
-            href: have_attributes(value: include('default'))
+            href: have_attributes(value: match(%r{/themes/default-[\w-]+\.css}))
+          )
+      end
+    end
+
+    context 'when using a themed skin' do
+      let(:theme) { ['mastodon-ui', 'fanfou_classic'] }
+
+      it 'returns the skin stylesheet' do
+        expect(html_links.last.attributes.symbolize_keys)
+          .to include(
+            href: have_attributes(value: match(%r{/themes/fanfou_classic-[\w-]+\.css}))
           )
       end
     end
@@ -104,23 +115,24 @@ RSpec.describe ThemeHelper do
     subject { helper.current_theme }
 
     context 'when user is not signed in' do
-      context 'when theme was not changed in settings' do
-        it { is_expected.to eq('default') }
+      it { is_expected.to eq(['mastodon-ui', 'default']) }
+
+      context 'when skin is changed in settings' do
+        before { Setting.skin = 'fanfou_classic' }
+
+        it { is_expected.to eq(['mastodon-ui', 'fanfou_classic']) }
       end
 
-      context 'when theme is changed in settings' do
-        before do
-          allow(Themes.instance).to receive(:names).and_return(%w(default contrast))
-          Setting.theme = 'contrast'
-        end
+      context 'when skin is changed to an unknown value' do
+        before { Setting.skin = 'fakethemename' }
 
-        it { is_expected.to eq('contrast') }
+        it { is_expected.to eq(['mastodon-ui', 'default']) }
       end
 
-      context 'when theme is changed to invalid value' do
-        before { Setting.theme = 'fakethemename' }
+      context 'when flavour is changed to an unknown value' do
+        before { Setting.flavour = 'notarealflavour' }
 
-        it { is_expected.to eq('default') }
+        it { is_expected.to eq(['mastodon-ui', 'default']) }
       end
     end
 
@@ -129,22 +141,20 @@ RSpec.describe ThemeHelper do
 
       let(:current_user) { Fabricate :user }
 
-      context 'when user did not set theme' do
-        it { is_expected.to eq('default') }
+      context 'when user did not set a theme' do
+        it { is_expected.to eq(['mastodon-ui', 'default']) }
       end
 
-      context 'when user set theme' do
-        before { current_user.settings.update(theme: 'alternate', noindex: false) }
+      context 'when user set a skin' do
+        before { current_user.settings.update(flavour: 'mastodon-ui', skin: 'graphite', noindex: false) }
 
-        context 'when theme is valid' do
-          before { allow(Themes.instance).to receive(:names).and_return %w(default alternate good evil) }
+        it { is_expected.to eq(['mastodon-ui', 'graphite']) }
+      end
 
-          it { is_expected.to eq('alternate') }
-        end
+      context 'when user set an unknown skin' do
+        before { current_user.settings.update(flavour: 'mastodon-ui', skin: 'fakethemename', noindex: false) }
 
-        context 'when theme is not valid' do
-          it { is_expected.to eq('default') }
-        end
+        it { is_expected.to eq(['mastodon-ui', 'default']) }
       end
     end
   end

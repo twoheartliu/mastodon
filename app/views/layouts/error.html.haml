@@ -9,7 +9,7 @@
     = vite_react_refresh_tag
     = vite_polyfills_tag
     = vite_typescript_tag 'theme-selection.ts', crossorigin: 'anonymous', blocking: 'render'
-    = theme_style_tags Setting.default_settings['theme']
+    = theme_style_tags [Setting.default_settings['flavour'], Setting.default_settings['skin']]
     = vite_typescript_tag 'error.ts', crossorigin: 'anonymous'
   %body.error
     .dialog

@@ -1,0 +1,4 @@
+# The mastodon-ui flavour is the stock Mastodon frontend. Its
+# pack_directory points at the shared entrypoint tree so flavoured
+# script tags resolve there without duplicating the React app.
+pack_directory: app/javascript/entrypoints

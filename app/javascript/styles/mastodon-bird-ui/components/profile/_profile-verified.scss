@@ -3,8 +3,13 @@
 .layout-multiple-columns {
   // Verified colors for Firefox before :has
   .account__details .verified-badge a,
-  ._comp_account_header__barWrapper ._comp_account_header__fieldList .verified__mark,
-  ._comp_account_header__barWrapper ._comp_account_header__fieldList .verified a,
+  ._comp_account_header__barWrapper
+    ._comp_account_header__fieldList
+    .verified__mark,
+  ._comp_account_header__barWrapper
+    ._comp_account_header__fieldList
+    .verified
+    a,
   ._comp_account_header__barWrapper
     ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
@@ -21,19 +26,27 @@
 
   // Reset verified colors
   .account__details .verified-badge a,
-  ._comp_account_header__barWrapper:has(._comp_account_header__fieldList .verified)
+  ._comp_account_header__barWrapper:has(
+      ._comp_account_header__fieldList .verified
+    )
     ._comp_account_header__fieldList
     .verified__mark,
-  ._comp_account_header__barWrapper:has(._comp_account_header__fieldList .verified)
+  ._comp_account_header__barWrapper:has(
+      ._comp_account_header__fieldList .verified
+    )
     ._comp_account_header__fieldList
     .verified
     a,
-  ._comp_account_header__barWrapper:has(._comp_account_header__fieldList .verified)
+  ._comp_account_header__barWrapper:has(
+      ._comp_account_header__fieldList .verified
+    )
     ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
     .verified
     a,
-  ._comp_account_header__barWrapper:has(._comp_account_header__fieldList .verified)
+  ._comp_account_header__barWrapper:has(
+      ._comp_account_header__fieldList .verified
+    )
     ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
     .verified
@@ -44,18 +57,22 @@
 
   // Replace verified__mark
   .account__details .verified-badge .verified-badge__mark,
-  ._comp_account_header__barWrapper:has(._comp_account_header__fieldList .verified)
+  ._comp_account_header__barWrapper:has(
+      ._comp_account_header__fieldList .verified
+    )
     ._comp_account_header__fieldList
     .verified__mark {
     background-image: var(--icon-verified-smaller);
     background-repeat: no-repeat;
-    content: "";
+    content: '';
     height: 15px;
     width: 15px;
   }
 
   .account__details .verified-badge .verified-badge__mark path,
-  ._comp_account_header__barWrapper:has(._comp_account_header__fieldList .verified)
+  ._comp_account_header__barWrapper:has(
+      ._comp_account_header__fieldList .verified
+    )
     ._comp_account_header__fieldList
     .verified__mark
     path {
@@ -63,7 +80,9 @@
   }
 
   .account__details .verified-badge,
-  ._comp_account_header__barWrapper:has(._comp_account_header__fieldList .verified)
+  ._comp_account_header__barWrapper:has(
+      ._comp_account_header__fieldList .verified
+    )
     ._comp_account_header__fieldList
     .verified
     dd {
@@ -73,7 +92,9 @@
   }
 
   .account__details .verified-badge .verified-badge__mark,
-  ._comp_account_header__barWrapper:has(._comp_account_header__fieldList .verified)
+  ._comp_account_header__barWrapper:has(
+      ._comp_account_header__fieldList .verified
+    )
     ._comp_account_header__fieldList
     .verified
     dd
@@ -84,7 +105,9 @@
   }
 
   .account__details .verified-badge > span,
-  ._comp_account_header__barWrapper:has(._comp_account_header__fieldList .verified)
+  ._comp_account_header__barWrapper:has(
+      ._comp_account_header__fieldList .verified
+    )
     ._comp_account_header__fieldList
     .verified
     dd
@@ -93,7 +116,10 @@
   }
 
   // Joined label - first dl is always "Joined"
-  ._comp_account_header__bioButtonsWrapper ._comp_account_header__fieldList dl:first-of-type dt {
+  ._comp_account_header__bioButtonsWrapper
+    ._comp_account_header__fieldList
+    dl:first-of-type
+    dt {
     display: inline-flex;
     font-weight: var(--font-weight-regular);
     gap: calc(var(--gap-default) / 2);
@@ -131,25 +157,25 @@
   // Verified badge in account list items (e.g. collections), mirrors the
   // profile field verified style: transparent background, accent link color,
   // Bird UI tick icon swapped in for the green gradient SVG.
-  [class*="_comp_account_list_item__verifiedBadge"] {
+  [class*='_comp_account_list_item__verifiedBadge'] {
     align-items: center;
     background-color: transparent;
     display: inline-flex;
     gap: 4px;
   }
 
-  [class*="_comp_account_list_item__verifiedBadge"] svg {
+  [class*='_comp_account_list_item__verifiedBadge'] svg {
     background-image: var(--icon-verified-smaller);
     background-repeat: no-repeat;
     height: 15px;
     width: 15px;
   }
 
-  [class*="_comp_account_list_item__verifiedBadge"] svg path {
+  [class*='_comp_account_list_item__verifiedBadge'] svg path {
     display: none;
   }
 
-  [class*="_comp_account_list_item__verifiedBadge"] a {
+  [class*='_comp_account_list_item__verifiedBadge'] a {
     color: var(--color-accent);
     font-weight: var(--font-weight-regular);
   }

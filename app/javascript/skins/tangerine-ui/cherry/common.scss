@@ -1,0 +1,4 @@
+// Skin shim around the Tangerine UI (cherry) stylesheet; override
+// layers belong here next to the import once skins grow their own rules.
+@use '../../../styles/tangerineui-cherry';
+@use '../../../styles/tangerine-ui/nofan-fixes';

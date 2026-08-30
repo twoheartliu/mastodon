@@ -980,6 +980,8 @@ en:
           authenticated: Authenticated users only
           disabled: Require specific user role
           public: Everyone
+      flavour_and_skin:
+        title: Interface flavour and skin
       landing_page:
         hints:
           about_html: A page with the description, contact information, rules and other information regarding this server.
@@ -1620,6 +1622,16 @@ en:
   featured_tags:
     errors:
       limit: You have already featured the maximum number of hashtags
+  flavours:
+    mastodon-ui:
+      name: Mastodon UI
+      description: The stock Mastodon frontend with selectable skins.
+    bird-ui:
+      name: Mastodon Bird UI
+      description: The Mastodon Bird UI frontend with selectable skins.
+    tangerine-ui:
+      name: Tangerine UI
+      description: The Tangerine UI frontend with selectable skins.
   filters:
     contexts:
       account: Profiles
@@ -2218,12 +2230,18 @@ en:
     review_link: Review terms of service
     title: The terms of service of %{domain} are changing
   themes:
-    mastodon-bird-ui-auto: Mastodon Bird UI
-    default: Mastodon
+    mastodon-bird-ui-auto: Auto
+    default: Default
     fanfou_classic: Fanfou Classic
     vermilion_seal: Vermilion Seal
     space_fanfou: Space Fanfou
     graphite: Graphite
+    tangerine: Tangerine
+    purple: Purple
+    cherry: Cherry
+    lagoon: Lagoon
+    granite: Granite
+    sakura: Sakura
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

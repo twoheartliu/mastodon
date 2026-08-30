@@ -46,9 +46,7 @@ export const LinkFooter: React.FC<{
         )}
         {canProfileDirectory && (
           <li>
-            <Link to='/directory'>
-              Profiles directory
-            </Link>
+            <Link to='/directory'>Profiles directory</Link>
           </li>
         )}
         {termsOfServiceEnabled && (

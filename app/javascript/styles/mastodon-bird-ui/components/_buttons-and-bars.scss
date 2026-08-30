@@ -62,13 +62,12 @@
   }
 
   // Fix Create account button not clickable on mobile
-  .ui__header:has(.button[href="/auth/sign_up"]) {
+  .ui__header:has(.button[href='/auth/sign_up']) {
     z-index: 4;
   }
 
   // Hidden things
-  .column-header
-    .column-header__icon:not(.icon-user-plus):not(.icon-user-times) {
+  .column-header .column-header__icon:not(.icon-user-plus, .icon-user-times) {
     display: none;
   }
 

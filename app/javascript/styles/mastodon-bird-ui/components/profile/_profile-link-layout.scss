@@ -2,7 +2,10 @@
 .layout-single-column,
 .layout-multiple-columns {
   // Truncate too long links in the profile, like Nostr
-  ._comp_account_header__bioButtonsWrapper ._comp_account_header__fieldList span > a:only-of-type {
+  ._comp_account_header__bioButtonsWrapper
+    ._comp_account_header__fieldList
+    span
+    > a:only-of-type {
     display: block;
     max-width: 220px;
     overflow: hidden;
@@ -19,8 +22,12 @@
   }
 
   // Icon positioning - icons appear before label/value
-  ._comp_account_header__bioButtonsWrapper ._comp_account_header__fieldList dl::before,
-  ._comp_account_header__bioButtonsWrapper ._comp_account_header__fieldList dl::after {
+  ._comp_account_header__bioButtonsWrapper
+    ._comp_account_header__fieldList
+    dl::before,
+  ._comp_account_header__bioButtonsWrapper
+    ._comp_account_header__fieldList
+    dl::after {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -33,30 +40,32 @@
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
     dl:has(
-      dd[title*="github.com" i],
-      dd[title*="youtube.com" i],
-      dd[title*="youtu.be" i],
-      dd[title*="twitch.tv" i],
-      dd[title*="twitter.com" i],
-      dd[title*="x.com" i],
-      dd[title*="discord" i],
-      dd[title*="linkedin.com" i],
-      dd[title*="instagram.com" i],
-      dd[title*="ko-fi.com" i],
-      dd[title*="kofi.com" i],
-      dd[title*="paypal" i],
-      dd[title*="patreon.com" i],
-      dd[title*="threads.net" i],
-      dd[title*="bsky.app" i],
-      dd[title*="bsky.social" i],
-      dd[title*="facebook.com" i],
-      dd[title*="fb.com" i],
-      dd[title*="bandcamp.com" i],
-      dd[title*="wordpress.com" i],
-      dd[title*="wordpress.org" i],
-      dd[title*="/@" i]
+      dd[title*='github.com' i],
+      dd[title*='youtube.com' i],
+      dd[title*='youtu.be' i],
+      dd[title*='twitch.tv' i],
+      dd[title*='twitter.com' i],
+      dd[title*='x.com' i],
+      dd[title*='discord' i],
+      dd[title*='linkedin.com' i],
+      dd[title*='instagram.com' i],
+      dd[title*='ko-fi.com' i],
+      dd[title*='kofi.com' i],
+      dd[title*='paypal' i],
+      dd[title*='patreon.com' i],
+      dd[title*='threads.net' i],
+      dd[title*='bsky.app' i],
+      dd[title*='bsky.social' i],
+      dd[title*='facebook.com' i],
+      dd[title*='fb.com' i],
+      dd[title*='bandcamp.com' i],
+      dd[title*='wordpress.com' i],
+      dd[title*='wordpress.org' i],
+      dd[title*='/@' i]
     ),
-  ._comp_account_header__bioButtonsWrapper ._comp_account_header__fieldList dl:has(a):not(:first-of-type) {
+  ._comp_account_header__bioButtonsWrapper
+    ._comp_account_header__fieldList
+    dl:has(a):not(:first-of-type) {
     max-width: 50%;
     order: 9999;
     width: auto;
@@ -66,28 +75,28 @@
   ._comp_account_header__bioButtonsWrapper
     ._comp_account_header__fieldList
     dl:has(
-      dd[title*="github.com" i],
-      dd[title*="youtube.com" i],
-      dd[title*="youtu.be" i],
-      dd[title*="twitch.tv" i],
-      dd[title*="twitter.com" i],
-      dd[title*="x.com" i],
-      dd[title*="discord" i],
-      dd[title*="linkedin.com" i],
-      dd[title*="instagram.com" i],
-      dd[title*="ko-fi.com" i],
-      dd[title*="kofi.com" i],
-      dd[title*="paypal" i],
-      dd[title*="patreon.com" i],
-      dd[title*="threads.net" i],
-      dd[title*="bsky.app" i],
-      dd[title*="bsky.social" i],
-      dd[title*="bandcamp.com" i],
-      dd[title*="facebook.com" i],
-      dd[title*="fb.com" i],
-      dd[title*="wordpress.com" i],
-      dd[title*="wordpress.org" i],
-      dd[title*="/@" i]
+      dd[title*='github.com' i],
+      dd[title*='youtube.com' i],
+      dd[title*='youtu.be' i],
+      dd[title*='twitch.tv' i],
+      dd[title*='twitter.com' i],
+      dd[title*='x.com' i],
+      dd[title*='discord' i],
+      dd[title*='linkedin.com' i],
+      dd[title*='instagram.com' i],
+      dd[title*='ko-fi.com' i],
+      dd[title*='kofi.com' i],
+      dd[title*='paypal' i],
+      dd[title*='patreon.com' i],
+      dd[title*='threads.net' i],
+      dd[title*='bsky.app' i],
+      dd[title*='bsky.social' i],
+      dd[title*='bandcamp.com' i],
+      dd[title*='facebook.com' i],
+      dd[title*='fb.com' i],
+      dd[title*='wordpress.com' i],
+      dd[title*='wordpress.org' i],
+      dd[title*='/@' i]
     )
     dt,
   ._comp_account_header__bioButtonsWrapper

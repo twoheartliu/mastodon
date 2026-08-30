@@ -19,7 +19,11 @@ defaults: &defaults
   show_staff_badge: true
   preview_sensitive_media: false
   noindex: false
+  # Deprecated: kept only so pre-4.x deployments still boot before admins re-run
+  # `rake db:migrate`; superseded by flavour + skin below.
   theme: 'default'
+  flavour: 'mastodon-ui'
+  skin: 'default'
   thumbnail_description: ''
   trends: true
   trendable_by_default: false
