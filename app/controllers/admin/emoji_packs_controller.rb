@@ -31,9 +31,8 @@ module Admin
       load_index
       if action_from_button == 'group'
         @pack_ids = selected_batch_ids
-        unless @pack_ids&.any?
-          return redirect_to admin_emoji_packs_path, alert: I18n.t('wxw_emoji.admin.packs.no_selection')
-        end
+        return redirect_to admin_emoji_packs_path, alert: I18n.t('wxw_emoji.admin.packs.no_selection') unless @pack_ids&.any?
+
         set_sections
         return render :group
       end
@@ -56,10 +55,10 @@ module Admin
     def update_group
       authorize :custom_emoji, :update?
       @pack_ids = submitted_group_ids
-      return head :unprocessable_entity unless @pack_ids&.any?
+      return head 422 unless @pack_ids&.any?
 
       @packs = Wxw::EmojiPack.where(id: @pack_ids).to_a
-      return head :unprocessable_entity unless @packs.size == @pack_ids.size
+      return head 422 unless @packs.size == @pack_ids.size
 
       section_id = params.dig(:emoji_packs, :section_id)
       section = Wxw::EmojiSection.find_by(id: Integer(section_id, exception: false)) if section_id.present?
@@ -143,19 +142,17 @@ module Admin
 
     def selected_batch_ids
       raw = params.expect(emoji_packs: {}).to_h
-      rows = raw.each_with_object({}) do |(id, values), result|
+      rows = {}
+      raw.each do |id, values|
         id = Integer(id, exception: false)
-        return unless id&.positive? && values.is_a?(Hash)
+        next unless id&.positive? && values.is_a?(Hash)
 
-        result[id] = values
+        rows[id] = values
       end
       return unless rows.size == raw.size && rows.keys.sort == @packs.map(&:id).sort
 
       valid_selections = %w(0 1)
-      @packs.each do |pack|
-        values = rows.fetch(pack.id)
-        return unless values['selected'].is_a?(String) && valid_selections.include?(values['selected'])
-      end
+      return unless rows.values.all? { |values| values['selected'].is_a?(String) && valid_selections.include?(values['selected']) }
 
       @packs.filter_map { |pack| pack.id if rows.fetch(pack.id)['selected'] == '1' }
     end

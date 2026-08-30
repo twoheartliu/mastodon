@@ -76,8 +76,8 @@ module Admin
       redirect_to admin_emoji_sections_path
     rescue ActionController::ParameterMissing
       render_invalid_submission
-    rescue ActiveRecord::RecordInvalid, ActiveRecord::RecordNotDestroyed => error
-      @section = error.record
+    rescue ActiveRecord::RecordInvalid, ActiveRecord::RecordNotDestroyed => e
+      @section = e.record
       render :index, status: 422
     end
 
@@ -113,19 +113,17 @@ module Admin
 
     def selected_batch_ids
       raw = params.expect(emoji_sections: {}).to_h
-      rows = raw.each_with_object({}) do |(id, values), result|
+      rows = {}
+      raw.each do |id, values|
         id = Integer(id, exception: false)
-        return unless id&.positive? && values.is_a?(Hash)
+        next unless id&.positive? && values.is_a?(Hash)
 
-        result[id] = values
+        rows[id] = values
       end
       return unless rows.size == raw.size && rows.keys.sort == @sections.map(&:id).sort
 
       valid_selections = %w(0 1)
-      @sections.each do |section|
-        values = rows.fetch(section.id)
-        return unless values['selected'].is_a?(String) && valid_selections.include?(values['selected'])
-      end
+      return unless rows.values.all? { |values| values['selected'].is_a?(String) && valid_selections.include?(values['selected']) }
 
       @sections.filter_map { |section| section.id if rows.fetch(section.id)['selected'] == '1' }
     end

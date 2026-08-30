@@ -13,7 +13,7 @@ const setupSortable = (container: HTMLElement) => {
     | undefined;
 
   const finish = (event: PointerEvent) => {
-    if (!active || active.pointerId !== event.pointerId) return;
+    if (active?.pointerId !== event.pointerId) return;
 
     active.item.classList.remove('wxw-sortable__item--dragging');
     if (active.handle.hasPointerCapture(event.pointerId)) {
@@ -32,7 +32,7 @@ const setupSortable = (container: HTMLElement) => {
 
     const handle = event.target.closest<HTMLButtonElement>(handleSelector);
     const item = handle?.closest<HTMLElement>(itemSelector);
-    if (!handle || !item || item.parentElement !== container) return;
+    if (item?.parentElement !== container) return;
 
     event.preventDefault();
     active = { handle, item, pointerId: event.pointerId };
@@ -41,7 +41,7 @@ const setupSortable = (container: HTMLElement) => {
   });
 
   container.addEventListener('pointermove', (event) => {
-    if (!active || active.pointerId !== event.pointerId) return;
+    if (active?.pointerId !== event.pointerId) return;
 
     event.preventDefault();
     const target = document
@@ -73,7 +73,7 @@ const setupSortable = (container: HTMLElement) => {
           return;
 
         const item = handle.closest<HTMLElement>(itemSelector);
-        if (!item || item.parentElement !== container) return;
+        if (item?.parentElement !== container) return;
 
         event.preventDefault();
         const items = Array.from(

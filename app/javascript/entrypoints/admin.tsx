@@ -4,6 +4,7 @@ import { decode, ValidationError } from 'blurhash';
 import { on } from 'delegated-events';
 
 import ready from '../mastodon/ready';
+
 import '../wxw_custom_emojis';
 
 const setAnnouncementEndsAttributes = (target: HTMLInputElement) => {

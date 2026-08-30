@@ -16,7 +16,12 @@
       .batch-table__toolbar__actions
         = form.button safe_join([material_symbol('save'), t('generic.save_changes')]), name: :save_order, class: 'table-action-link', type: :submit if can?(:update, :custom_emoji)
         = link_to safe_join([material_symbol('add'), t('wxw_emoji.admin.sections.add_new')]), new_admin_emoji_section_path, class: 'table-action-link' if can?(:create, :custom_emoji)
-        = form.button safe_join([material_symbol('close'), t('wxw_emoji.admin.sections.delete')]), name: :delete, class: 'table-action-link', type: :submit, data: { confirm: t('admin.accounts.are_you_sure') } if can?(:destroy, :custom_emoji)
+        - if can?(:destroy, :custom_emoji)
+          = form.button safe_join([material_symbol('close'), t('wxw_emoji.admin.sections.delete')]),
+                        name: :delete,
+                        class: 'table-action-link',
+                        type: :submit,
+                        data: { confirm: t('admin.accounts.are_you_sure') }
 
     - if @sections.empty?
       .batch-table__body
@@ -35,4 +40,10 @@
                 .wxw-emoji-pack-list__name= section.name_for(I18n.locale)
               .wxw-emoji-pack-list__meta
                 .wxw-emoji-pack-list__moves
-                  = form.button material_symbol('drag_indicator'), type: :button, class: 'wxw-sortable__handle', title: t('wxw_emoji.reorder_handle'), aria: { label: t('wxw_emoji.reorder_handle') }, data: { wxw_sortable_handle: true } if can?(:update, :custom_emoji)
+                  - if can?(:update, :custom_emoji)
+                    = form.button material_symbol('drag_indicator'),
+                                  type: :button,
+                                  class: 'wxw-sortable__handle',
+                                  title: t('wxw_emoji.reorder_handle'),
+                                  aria: { label: t('wxw_emoji.reorder_handle') },
+                                  data: { wxw_sortable_handle: true }

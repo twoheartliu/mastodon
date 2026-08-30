@@ -12,7 +12,7 @@ class Settings::Preferences::EmojiPacksController < Settings::Preferences::BaseC
     @reset_params = { pack_id: @selected_pack_id }
     @shortcode = params[:shortcode].to_s.strip
     @emojis = CustomEmoji.listed
-    if pack_id == 0
+    if pack_id.zero?
       category_ids = ::Wxw::EmojiPack.selection_for(current_user).map(&:custom_emoji_category_id)
       @emojis = @emojis.where(category_id: category_ids)
     elsif @selected_pack_id.present?
