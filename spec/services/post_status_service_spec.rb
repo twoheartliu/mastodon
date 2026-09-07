@@ -57,8 +57,8 @@ RSpec.describe PostStatusService do
 
     it 'returns existing status when used twice with idempotency key' do
       account = Fabricate(:account)
-      status1 = subject.call(account, text: 'test', idempotency: 'meepmeep', scheduled_at: future)
-      status2 = subject.call(account, text: 'test', idempotency: 'meepmeep', scheduled_at: future)
+      status1 = described_class.new.call(account, text: 'test', idempotency: 'meepmeep', scheduled_at: future)
+      status2 = described_class.new.call(account, text: 'test', idempotency: 'meepmeep', scheduled_at: future)
       expect(status2.id).to eq status1.id
     end
 
@@ -339,11 +339,36 @@ RSpec.describe PostStatusService do
     expect(status).to be_direct_visibility
   end
 
-  it 'returns existing status when used twice with idempotency key' do
-    account = Fabricate(:account)
-    status1 = subject.call(account, text: 'test', idempotency: 'meepmeep')
-    status2 = subject.call(account, text: 'test', idempotency: 'meepmeep')
-    expect(status2.id).to eq status1.id
+  context 'when an idempotency key is provided' do
+    let(:account) { Fabricate(:account) }
+
+    it 'creates and returns a status on the first request' do
+      status = described_class.new.call(account, text: 'test', idempotency: 'first-request')
+
+      expect(status)
+        .to be_persisted
+        .and have_attributes(text: 'test')
+    end
+
+    it 'returns the original status on retry without repeating post-processing' do
+      hashtags_service = instance_double(ProcessHashtagsService, call: nil)
+      allow(ProcessHashtagsService).to receive(:new).and_return(hashtags_service)
+      allow(LinkCrawlWorker).to receive(:perform_async)
+      allow(DistributionWorker).to receive(:perform_async)
+      allow(ActivityPub::DistributionWorker).to receive(:perform_async)
+
+      original_status = described_class.new.call(account, text: 'test', idempotency: 'retried-request')
+      retried_status = described_class.new.call(account, text: 'different text', idempotency: 'retried-request')
+
+      expect(retried_status).to eq(original_status)
+      expect(account.statuses.where(id: original_status.id)).to exist
+      expect(account.statuses.where(text: 'different text')).to_not exist
+      expect(hashtags_service).to have_received(:call).once.with(original_status)
+      expect(hashtags_service).to_not have_received(:call).with(nil)
+      expect(LinkCrawlWorker).to have_received(:perform_async).once.with(original_status.id)
+      expect(DistributionWorker).to have_received(:perform_async).once.with(original_status.id)
+      expect(ActivityPub::DistributionWorker).to have_received(:perform_async).once.with(original_status.id)
+    end
   end
 
   def create_status_with_options(**options)
