@@ -154,6 +154,22 @@ RSpec.describe '/api/v1/statuses' do
         end
       end
 
+      context 'with an idempotency key' do
+        let(:headers) { super().merge('Idempotency-Key' => 'retried-request') }
+
+        it 'returns the original status when the request is retried', :aggregate_failures do
+          expect do
+            post '/api/v1/statuses', headers: headers, params: params
+            original_status_id = response.parsed_body[:id]
+
+            post '/api/v1/statuses', headers: headers, params: params
+
+            expect(response).to have_http_status(200)
+            expect(response.parsed_body[:id]).to eq(original_status_id)
+          end.to change(user.account.statuses, :count).by(1)
+        end
+      end
+
       context 'without a quote policy' do
         let(:user) do
           Fabricate(:user, settings: { default_quote_policy: 'followers' })

@@ -45,10 +45,10 @@ class PostStatusService < BaseService
     @text        = @options[:text] || ''
     @in_reply_to = @options[:thread]
     @quoted_status = @options[:quoted_status]
+    preprocess_attributes!
 
-    with_idempotency do
+    duplicate_status = with_idempotency do
       validate_media!
-      preprocess_attributes!
 
       if scheduled?
         schedule_status!
@@ -56,6 +56,8 @@ class PostStatusService < BaseService
         process_status!
       end
     end
+
+    return duplicate_status if duplicate_status
 
     unless scheduled?
       postprocess_status!
@@ -234,7 +236,10 @@ class PostStatusService < BaseService
   end
 
   def with_idempotency
-    return yield unless idempotency_given?
+    unless idempotency_given?
+      yield
+      return
+    end
 
     with_redis_lock("idempotency:lock:status:#{@account.id}:#{@options[:idempotency]}") do
       return idempotency_duplicate if idempotency_duplicate?
@@ -243,6 +248,8 @@ class PostStatusService < BaseService
 
       redis.setex(idempotency_key, 3_600, @status.id)
     end
+
+    nil
   end
 
   def scheduled_in_the_past?
