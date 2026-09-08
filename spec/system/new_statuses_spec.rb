@@ -25,6 +25,32 @@ RSpec.describe 'NewStatuses', :inline_jobs, :js, :streaming do
       .to have_css('.status__content__text', text: status_text)
   end
 
+  it 'can be posted using Markdown' do
+    bob.settings[:show_content_type_choice] = true
+    bob.save!
+    visit_homepage
+
+    within('.compose-form') do
+      format_button_label = frontend_translations('compose.content-type.change')
+      format_button = find_button(format_button_label)
+
+      format_button.click
+      expect(format_button['aria-expanded']).to eq 'true'
+
+      click_on frontend_translations('compose.content-type.markdown')
+      expect(format_button['aria-expanded']).to eq 'false'
+      expect(page.evaluate_script("document.activeElement?.getAttribute('aria-label')")).to eq format_button_label
+
+      fill_in frontend_translations('compose_form.placeholder'), with: '**Markdown**'
+      click_on 'Post'
+    end
+
+    expect(page)
+      .to have_css('.status__content__text strong', text: 'Markdown')
+    expect(bob.account.statuses.first.content_type)
+      .to eq('text/markdown')
+  end
+
   def visit_homepage
     visit root_path
 

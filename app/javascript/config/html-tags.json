@@ -21,17 +21,29 @@
         "href": true,
         "rel": true,
         "translate": true,
-        "target": true
+        "target": true,
+        "title": true
+      }
+    },
+    "abbr": {
+      "attributes": {
+        "title": true
       }
     },
     "del": {},
     "s": {},
     "pre": {},
-    "blockquote": {},
+    "blockquote": {
+      "attributes": {
+        "cite": true
+      }
+    },
     "code": {},
     "b": {},
     "strong": {},
     "u": {},
+    "sub": {},
+    "sup": {},
     "i": {},
     "img": {
       "children": false,
@@ -42,6 +54,11 @@
       }
     },
     "em": {},
+    "h1": {},
+    "h2": {},
+    "h3": {},
+    "h4": {},
+    "h5": {},
     "ul": {},
     "ol": {
       "attributes": {

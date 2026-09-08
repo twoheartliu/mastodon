@@ -33,6 +33,14 @@ module SettingsHelper
     UserSettings.definition_for(value)&.in || []
   end
 
+  def default_content_type_label(content_type)
+    variant = content_type.split('/')[1]
+    safe_join([
+                t("simple_form.labels.defaults.setting_default_content_type_#{variant}"),
+                content_tag(:span, t("simple_form.hints.defaults.setting_default_content_type_#{variant}"), class: 'hint'),
+              ])
+  end
+
   def author_attribution_name(account)
     return if account.nil?
 

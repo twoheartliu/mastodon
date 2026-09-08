@@ -42,6 +42,7 @@ import {
   COMPOSE_SENSITIVITY_CHANGE,
   COMPOSE_SPOILERNESS_CHANGE,
   COMPOSE_SPOILER_TEXT_CHANGE,
+  COMPOSE_CONTENT_TYPE_CHANGE,
   COMPOSE_LANGUAGE_CHANGE,
   COMPOSE_COMPOSING_CHANGE,
   COMPOSE_EMOJI_INSERT,
@@ -56,7 +57,7 @@ import {
 } from '../actions/compose';
 import { REDRAFT } from '../actions/statuses';
 import { STORE_HYDRATE } from '../actions/store';
-import { me } from '../initial_state';
+import { defaultContentType, me } from '../initial_state';
 import { unescapeHTML } from '../utils/html';
 import { uuid } from '../uuid';
 
@@ -67,6 +68,7 @@ const initialState = ImmutableMap({
   spoiler_text: '',
   privacy: null,
   id: null,
+  content_type: defaultContentType || 'text/plain',
   text: '',
   focusDate: null,
   caretPosition: null,
@@ -120,6 +122,7 @@ function clearAll(state) {
   return state.withMutations(map => {
     map.set('id', null);
     map.set('text', '');
+    map.set('content_type', defaultContentType || 'text/plain');
     map.set('spoiler', false);
     map.set('spoiler_text', '');
     map.set('is_submitting', false);
@@ -413,6 +416,10 @@ export const composeReducer = (state = initialState, action) => {
     return state
       .set('spoiler_text', action.text)
       .set('idempotencyKey', uuid());
+  case COMPOSE_CONTENT_TYPE_CHANGE:
+    return state
+      .set('content_type', action.value)
+      .set('idempotencyKey', uuid());
   case COMPOSE_CHANGE:
     return state
       .set('text', action.text)
@@ -532,6 +539,7 @@ export const composeReducer = (state = initialState, action) => {
   case REDRAFT:
     return state.withMutations(map => {
       map.set('text', action.raw_text || unescapeHTML(expandMentions(action.status)));
+      map.set('content_type', action.content_type || 'text/plain');
       map.set('in_reply_to', action.status.get('in_reply_to_id'));
       map.set('privacy', action.status.get('visibility'));
       map.set('media_attachments', action.status.get('media_attachments').map((media) => media.set('unattached', true)));
@@ -570,6 +578,7 @@ export const composeReducer = (state = initialState, action) => {
     return state.withMutations(map => {
       map.set('id', action.status.get('id'));
       map.set('text', action.text);
+      map.set('content_type', action.content_type || 'text/plain');
       map.set('in_reply_to', action.status.get('in_reply_to_id'));
       map.set('privacy', action.status.get('visibility'));
       map.set('media_attachments', action.status.get('media_attachments'));

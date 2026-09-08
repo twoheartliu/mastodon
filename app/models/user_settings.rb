@@ -17,6 +17,8 @@ class UserSettings
   setting :flavour_and_skin, default: nil
   setting :noindex, default: -> { ::Setting.noindex }
   setting :show_application, default: true
+  setting :default_content_type, default: 'text/plain', in: HtmlAwareFormatter::STATUS_MIME_TYPES
+  setting :show_content_type_choice, default: true
   setting :default_language, default: nil
   setting :default_sensitive, default: false
   setting :default_privacy, default: nil, in: %w(public unlisted private)

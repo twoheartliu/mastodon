@@ -2523,9 +2523,11 @@ body.app-body {
   gap: 1px;
 }
 
-.app-body .compose-form__buttons .icon-button {
+.app-body .compose-form__buttons .icon-button,
+.app-body .compose-form__buttons .icon-button.inverted {
   padding: 6px;
   border-radius: 8px;
+  color: var(--color-accent);
   transition: all 0.2s;
 }
 
@@ -2536,6 +2538,7 @@ body.app-body {
 
 .app-body .compose-form__buttons .icon-button:is(.active, .active:hover) {
   background-color: var(--color-accent);
+  color: var(--color-accent-fg);
 }
 
 /* The paper-plane styling targets only the real submit button. On Glitch-soc,

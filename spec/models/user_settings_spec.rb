@@ -12,6 +12,14 @@ RSpec.describe UserSettings do
       it 'returns default value' do
         expect(subject[:always_send_emails]).to be false
       end
+
+      it 'uses plain text as the default posting format' do
+        expect(subject[:default_content_type]).to eq 'text/plain'
+      end
+
+      it 'shows the posting format selector by default' do
+        expect(subject[:show_content_type_choice]).to be true
+      end
     end
 
     context 'when setting is set' do
@@ -19,6 +27,12 @@ RSpec.describe UserSettings do
 
       it 'returns value' do
         expect(subject[:default_language]).to eq 'fr'
+      end
+
+      it 'uses an explicitly disabled posting format selector setting' do
+        json[:show_content_type_choice] = false
+
+        expect(subject[:show_content_type_choice]).to be false
       end
     end
 
@@ -57,6 +71,14 @@ RSpec.describe UserSettings do
 
       it 'raises an error when given an invalid value' do
         expect { subject[:'web.display_media'] = 'invalid value' }.to raise_error ArgumentError
+      end
+
+      it 'accepts a supported posting format' do
+        expect { subject[:default_content_type] = 'text/markdown' }.to change { subject[:default_content_type] }.from('text/plain').to('text/markdown')
+      end
+
+      it 'rejects an unsupported posting format' do
+        expect { subject[:default_content_type] = 'application/javascript' }.to raise_error ArgumentError
       end
     end
   end

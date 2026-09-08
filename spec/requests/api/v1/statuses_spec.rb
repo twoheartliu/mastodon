@@ -154,6 +154,39 @@ RSpec.describe '/api/v1/statuses' do
         end
       end
 
+      context 'with an explicit content type' do
+        let(:params) { { status: '**Hello**', content_type: 'text/markdown' } }
+
+        it 'stores the selected content type' do
+          subject
+
+          expect(response).to have_http_status(200)
+          expect(user.account.statuses.first.content_type).to eq 'text/markdown'
+          expect(response.parsed_body[:content]).to include '<strong>Hello</strong>'
+        end
+      end
+
+      context 'without an explicit content type' do
+        let(:user) { Fabricate(:user, settings: { default_content_type: 'text/html' }) }
+
+        it 'uses the account default content type' do
+          subject
+
+          expect(response).to have_http_status(200)
+          expect(user.account.statuses.first.content_type).to eq 'text/html'
+        end
+      end
+
+      context 'with an unsupported content type' do
+        let(:params) { { status: 'Hello', content_type: 'application/javascript' } }
+
+        it 'rejects the status' do
+          subject
+
+          expect(response).to have_http_status(422)
+        end
+      end
+
       context 'with an idempotency key' do
         let(:headers) { super().merge('Idempotency-Key' => 'retried-request') }
 
@@ -551,6 +584,18 @@ RSpec.describe '/api/v1/statuses' do
         expect(response.content_type)
           .to start_with('application/json')
         expect(status.reload.text).to eq 'I am updated'
+      end
+
+      context 'when changing the content type' do
+        let(:params) { { status: '**Updated**', content_type: 'text/markdown' } }
+
+        it 'updates the format and records it in edit history' do
+          subject
+
+          expect(response).to have_http_status(200)
+          expect(status.reload.content_type).to eq 'text/markdown'
+          expect(status.edits.last.content_type).to eq 'text/markdown'
+        end
       end
 
       context 'when updating only the quote policy' do

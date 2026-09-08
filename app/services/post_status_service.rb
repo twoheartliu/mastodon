@@ -30,6 +30,7 @@ class PostStatusService < BaseService
   # @option [Boolean] :sensitive
   # @option [String] :visibility
   # @option [String] :spoiler_text
+  # @option [String] :content_type
   # @option [String] :language
   # @option [String] :scheduled_at
   # @option [Hash] :poll Optional poll to attach
@@ -271,6 +272,7 @@ class PostStatusService < BaseService
       poll_attributes: poll_attributes,
       sensitive: @sensitive,
       spoiler_text: @options[:spoiler_text] || '',
+      content_type: @options[:content_type] || @account.user&.setting_default_content_type,
       visibility: @visibility,
       language: valid_locale_cascade(@options[:language], @account.user&.preferred_posting_language, I18n.default_locale),
       application: @options[:application],

@@ -59,6 +59,9 @@ en:
         setting_always_send_emails: Normally e-mail notifications won't be sent when you are actively using Mastodon
         setting_on_this_day_enabled: When enabled, a sidebar navigation item lets you view posts from this day in previous years on a dedicated page.
         setting_boost_modal: When enabled, boosting will first open a confirmation dialog in which you can change the visibility of your boost.
+        setting_default_content_type_html: Write posts using safe HTML. Unsupported tags and attributes are removed.
+        setting_default_content_type_markdown: Write posts using Markdown formatting.
+        setting_default_content_type_plain: Write posts without advanced formatting.
         setting_default_quote_policy_private: Followers-only posts authored on Mastodon can't be quoted by others.
         setting_default_quote_policy_unlisted: When people quote you, their post will also be hidden from trending timelines.
         setting_default_sensitive: Sensitive media is hidden by default and can be revealed with a click
@@ -67,6 +70,7 @@ en:
         setting_display_media_show_all: Show all media without warning, including media marked as sensitive
         setting_emoji_style: How to display emojis. "Auto" will try using native emoji, but falls back to Twemoji for legacy browsers.
         setting_quick_boosting_html: When enabled, clicking on the %{boost_icon} Boost icon will immediately boost instead of opening the boost/quote dropdown menu. Relocates the quoting action to the %{options_icon} (Options) menu.
+        setting_show_content_type_choice: Display a format selector in the compose toolbar.
         setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
         setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
         username: You can use letters, numbers, and underscores
@@ -249,6 +253,10 @@ en:
         setting_color_scheme: Color scheme
         setting_contrast: Contrast
         setting_default_language: Posting language
+        setting_default_content_type: Default posting format
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: Plain text
         setting_default_privacy: Posting visibility
         setting_default_quote_policy: Who can quote
         setting_default_sensitive: Always mark media as sensitive
@@ -264,6 +272,7 @@ en:
         setting_hide_network: Hide your social graph
         setting_missing_alt_text_modal: Warn me before posting media without alt text
         setting_quick_boosting: Enable quick boosting
+        setting_show_content_type_choice: Show format selector when composing posts
         setting_reduce_motion: Reduce motion in animations
         setting_system_font_ui: Use system's default font
         setting_system_scrollbars_ui: Use system's default scrollbar

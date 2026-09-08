@@ -1,0 +1,112 @@
+# frozen_string_literal: true
+
+class AdvancedTextFormatter < TextFormatter
+  class HTMLRenderer < Redcarpet::Render::HTML
+    def initialize(options, &block)
+      super(options)
+      @format_link = block
+    end
+
+    def block_code(code, _language)
+      <<~HTML
+        <pre><code>#{ERB::Util.h(code).gsub("\n", '<br/>')}</code></pre>
+      HTML
+    end
+
+    def autolink(link, link_type)
+      return link if link_type == :email
+
+      @format_link.call(link)
+    end
+  end
+
+  attr_reader :content_type
+
+  def initialize(text, options = {})
+    @content_type = options.delete(:content_type)
+    super
+    @text = format_markdown(text) if content_type == 'text/markdown'
+  end
+
+  def to_s
+    return add_quote_fallback('').html_safe if text.blank? # rubocop:disable Rails/OutputSafety
+
+    html = rewrite do |entity|
+      if entity[:url]
+        link_to_url(entity)
+      elsif entity[:hashtag]
+        link_to_hashtag(entity)
+      elsif entity[:screen_name]
+        link_to_mention(entity)
+      end
+    end
+
+    html = add_quote_fallback(html) if options[:quoted_status].present?
+
+    html.html_safe # rubocop:disable Rails/OutputSafety
+  end
+
+  def rewrite
+    if @tree.nil?
+      src = text.gsub(Sanitize::REGEX_UNSUITABLE_CHARS, '')
+      @tree = Nokogiri::HTML5.fragment(src)
+      document = @tree.document
+
+      @tree.xpath('.//text()[not(ancestor::a | ancestor::code)]').each do |text_node|
+        content = text_node.content
+        replacement = Nokogiri::XML::NodeSet.new(document)
+        processed_index = 0
+
+        Extractor.extract_entities_with_indices(content, extract_url_without_protocol: false) do |entity|
+          advance = entity[:indices].first - processed_index
+          replacement << Nokogiri::XML::Text.new(content[processed_index, advance], document) if advance.positive?
+          replacement << Nokogiri::HTML5.fragment(yield(entity))
+          processed_index = entity[:indices].last
+        end
+
+        replacement << Nokogiri::XML::Text.new(content[processed_index, content.size - processed_index], document) if processed_index < content.size
+
+        text_node.replace(replacement)
+      end
+    end
+
+    Sanitize.node!(@tree, Sanitize::Config::MASTODON_OUTGOING).to_html
+  end
+
+  private
+
+  def format_markdown(html)
+    html = markdown_formatter.render(html)
+    html.delete("\r").delete("\n")
+  end
+
+  def markdown_formatter
+    extensions = {
+      autolink: true,
+      no_intra_emphasis: true,
+      fenced_code_blocks: true,
+      disable_indented_code_blocks: true,
+      strikethrough: true,
+      lax_spacing: true,
+      space_after_headers: true,
+      superscript: true,
+      underline: true,
+      highlight: true,
+      footnotes: false,
+    }
+
+    renderer = HTMLRenderer.new({
+      filter_html: false,
+      escape_html: false,
+      no_images: true,
+      no_styles: true,
+      safe_links_only: true,
+      hard_wrap: true,
+      link_attributes: { target: '_blank', rel: 'nofollow noopener' },
+    }) do |url|
+      link_to_url({ url: url })
+    end
+
+    Redcarpet::Markdown.new(renderer, extensions)
+  end
+end

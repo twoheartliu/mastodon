@@ -5,6 +5,7 @@
 # Table name: statuses
 #
 #  id                           :bigint(8)        not null, primary key
+#  content_type                 :string
 #  deleted_at                   :datetime
 #  edited_at                    :datetime
 #  fetched_replies_at           :datetime
@@ -119,6 +120,7 @@ class Status < ApplicationRecord
 
   validates :uri, uniqueness: true, presence: true, unless: :local?
   validates :text, presence: true, unless: -> { with_media? || reblog? || with_quote? }
+  validates :content_type, inclusion: { in: HtmlAwareFormatter::STATUS_MIME_TYPES }, allow_nil: true
   validates_with StatusLengthValidator
   validates_with DisallowedHashtagsValidator
   validates :reblog, uniqueness: { scope: :account }, if: :reblog?
