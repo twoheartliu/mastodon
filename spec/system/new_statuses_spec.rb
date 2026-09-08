@@ -30,17 +30,22 @@ RSpec.describe 'NewStatuses', :inline_jobs, :js, :streaming do
     bob.save!
     visit_homepage
 
+    format_button_label = frontend_translations('compose.content-type.change')
+    format_button = nil
+
     within('.compose-form') do
-      format_button_label = frontend_translations('compose.content-type.change')
       format_button = find_button(format_button_label)
-
       format_button.click
-      expect(format_button['aria-expanded']).to eq 'true'
+    end
 
-      click_on frontend_translations('compose.content-type.markdown')
-      expect(format_button['aria-expanded']).to eq 'false'
-      expect(page.evaluate_script("document.activeElement?.getAttribute('aria-label')")).to eq format_button_label
+    expect(format_button['aria-expanded']).to eq 'true'
 
+    find('[role="option"]', text: frontend_translations('compose.content-type.markdown')).click
+
+    expect(format_button['aria-expanded']).to eq 'false'
+    expect(page.evaluate_script("document.activeElement?.getAttribute('aria-label')")).to eq format_button_label
+
+    within('.compose-form') do
       fill_in frontend_translations('compose_form.placeholder'), with: '**Markdown**'
       click_on 'Post'
     end
