@@ -28,7 +28,21 @@ RSpec.describe 'Sources' do
           id: status.id.to_s,
           text: status.text,
           spoiler_text: status.spoiler_text,
+          content_type: status.content_type,
         })
+      end
+
+      context 'when the post uses Markdown' do
+        let(:status) { Fabricate(:status, content_type: 'text/markdown', text: '**Hello**') }
+
+        it 'returns the original source and its content type' do
+          subject
+
+          expect(response.parsed_body).to include(
+            text: '**Hello**',
+            content_type: 'text/markdown'
+          )
+        end
       end
     end
 
@@ -61,6 +75,7 @@ RSpec.describe 'Sources' do
           id: status.id.to_s,
           text: status.text,
           spoiler_text: status.spoiler_text,
+          content_type: status.content_type,
         })
       end
     end

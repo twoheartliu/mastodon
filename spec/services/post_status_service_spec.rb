@@ -34,19 +34,20 @@ RSpec.describe PostStatusService do
 
     it 'schedules a status for future creation and does not create one immediately' do
       media = Fabricate(:media_attachment, account: account)
-      status = subject.call(account, text: 'Hi future!', media_ids: [media.id.to_s], scheduled_at: future)
+      status = subject.call(account, text: '**Hi future!**', content_type: 'text/markdown', media_ids: [media.id.to_s], scheduled_at: future)
 
       expect(status)
         .to be_a(ScheduledStatus)
         .and have_attributes(
           scheduled_at: eq(future),
           params: include(
-            'text' => eq('Hi future!'),
+            'text' => eq('**Hi future!**'),
+            'content_type' => eq('text/markdown'),
             'media_ids' => contain_exactly(media.id.to_s)
           )
         )
       expect(media.reload.status).to be_nil
-      expect(Status.where(text: 'Hi future!')).to_not exist
+      expect(Status.where(text: '**Hi future!**')).to_not exist
     end
 
     it 'does not change statuses_count of account or replies_count of thread previous status' do

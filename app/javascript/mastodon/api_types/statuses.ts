@@ -107,6 +107,7 @@ export interface ApiStatusJSON {
 
   filtered?: ApiFilterResultJSON[];
   content?: string;
+  content_type?: string;
   text?: string;
 
   reblog?: ApiStatusJSON;
@@ -134,6 +135,7 @@ export interface ApiStatusSourceJSON {
   id: string;
   text: string;
   spoiler_text: string;
+  content_type?: string;
 }
 
 export interface ApiStatusTranslationJSON {

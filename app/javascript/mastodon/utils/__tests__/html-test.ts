@@ -25,6 +25,17 @@ describe('html', () => {
       expect(output).toMatchSnapshot();
     });
 
+    it('preserves rich-text headings and their contents', () => {
+      const input = '<h1>Heading 1</h1><h2>Heading 2</h2><h3>Heading 3</h3>';
+      const output = html.htmlStringToComponents(input);
+
+      expect(output).toMatchObject([
+        { type: 'h1', props: { children: ['Heading 1'] } },
+        { type: 'h2', props: { children: ['Heading 2'] } },
+        { type: 'h3', props: { children: ['Heading 3'] } },
+      ]);
+    });
+
     it('ignores empty text nodes', () => {
       const input = '<p>   <span>lorem     ipsum</span>   </p>';
       const output = html.htmlStringToComponents(input);

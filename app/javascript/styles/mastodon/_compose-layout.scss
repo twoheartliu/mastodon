@@ -1,0 +1,24 @@
+// Keep the primary compose action in a stable row of its own. The toolbar
+// width can otherwise cross the flex-wrap threshold when the character count,
+// locale, font metrics, or available compose actions change.
+.compose-form__actions {
+  align-items: stretch;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.compose-form__buttons {
+  width: 100%;
+  min-width: 0;
+}
+
+.compose-form__submit {
+  width: 100%;
+  max-width: none;
+  flex: 0 0 auto;
+
+  .button[type='submit'] {
+    width: 100%;
+    max-width: none;
+  }
+}

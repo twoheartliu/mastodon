@@ -23,6 +23,7 @@ import UploadButtonContainer from '../containers/upload_button_container';
 import { countableText } from '../util/counter';
 
 import { CharacterCounter } from './character_counter';
+import { ContentTypeButton } from './content_type_button';
 import { EditIndicator } from './edit_indicator';
 import { LanguageDropdown } from './language_dropdown';
 import { NavigationBar } from './navigation_bar';
@@ -326,6 +327,7 @@ class ComposeForm extends ImmutablePureComponent {
                 <UploadButtonContainer />
                 <PollButtonContainer />
                 <SpoilerButtonContainer />
+                <ContentTypeButton />
                 <EmojiPickerDropdown onPickEmoji={this.handleEmojiPick} />
                 <CharacterCounter max={maxChars} text={this.getFulltextForCharacterCounting()} />
               </div>

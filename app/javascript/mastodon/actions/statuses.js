@@ -109,7 +109,7 @@ export function fetchStatusFail(id, error, skipLoading, parentQuotePostId) {
   };
 }
 
-export function redraft(status, raw_text, quoted_status_id = null) {
+export function redraft(status, raw_text, content_type, quoted_status_id = null) {
   return (dispatch, getState) => {
     const maxOptions = getState().server.server.item?.configuration.polls.max_options;
 
@@ -117,6 +117,7 @@ export function redraft(status, raw_text, quoted_status_id = null) {
       type: REDRAFT,
       status,
       raw_text,
+      content_type,
       quoted_status_id,
       maxOptions,
     });
@@ -135,7 +136,7 @@ export const editStatus = (id) => (dispatch, getState) => {
   api().get(`/api/v1/statuses/${id}/source`).then(response => {
     dispatch(fetchStatusSourceSuccess());
     ensureComposeIsVisible(getState);
-    dispatch(setComposeToStatus(status, response.data.text, response.data.spoiler_text));
+    dispatch(setComposeToStatus(status, response.data.text, response.data.spoiler_text, response.data.content_type));
   }).catch(error => {
     dispatch(fetchStatusSourceFail(error));
   });
@@ -170,7 +171,7 @@ export function deleteStatus(id, withRedraft = false) {
       dispatch(importFetchedAccount(response.data.account));
 
       if (withRedraft) {
-        dispatch(redraft(status, response.data.text, response.data.quote?.quoted_status?.id));
+        dispatch(redraft(status, response.data.text, response.data.content_type, response.data.quote?.quoted_status?.id));
         ensureComposeIsVisible(getState);
       } else {
         dispatch(showAlert({ message: messages.deleteSuccess }));

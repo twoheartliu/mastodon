@@ -27,6 +27,14 @@ RSpec.describe ActivityPub::NoteSerializer do
     })
   end
 
+  context 'with Markdown content' do
+    let!(:parent) { Fabricate(:status, account: account, visibility: :public, language: 'en', text: '**Hello**', content_type: 'text/markdown') }
+
+    it 'federates rendered HTML' do
+      expect(subject.dig('contentMap', 'en')).to include '<strong>Hello</strong>'
+    end
+  end
+
   def replies_collection_values
     include(
       'type' => eql('Collection'),

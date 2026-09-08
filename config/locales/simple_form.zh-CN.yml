@@ -58,6 +58,9 @@ zh-CN:
         setting_aggregate_reblogs: 不显示最近已经被转嘟过的嘟文(只会影响新收到的转嘟)
         setting_always_send_emails: 一般情况下，如果你活跃使用 Mastodon，我们不会向你发送电子邮件通知
         setting_boost_modal: 如果启用，转嘟前会先打开确认对话框，以便更改转嘟的可见性。
+        setting_default_content_type_html: 使用安全 HTML 编写嘟文，不支持的标签和属性会被移除。
+        setting_default_content_type_markdown: 使用 Markdown 格式编写嘟文。
+        setting_default_content_type_plain: 不使用高级格式编写嘟文。
         setting_default_quote_policy_private: Mastodon上发布的仅限关注者可见的嘟文无法被他人引用。
         setting_default_quote_policy_unlisted: 当其他人引用你时，他们的嘟文也会从热门时间线上隐藏。
         setting_default_sensitive: 敏感内容默认隐藏，并在点击后显示
@@ -67,6 +70,7 @@ zh-CN:
         setting_emoji_style: 如何显示Emoji表情符号。选择“自动”将尝试使用原生Emoji，但在旧浏览器中会备选使用Twemoji。
         setting_on_this_day_enabled: 开启后，可通过侧边导航栏进入「那年今日」页面，回顾往年在同一天发布过的嘟文。
         setting_quick_boosting_html: 如果启用，点击 %{boost_icon} 转嘟图标将立即转嘟，而非开启“转嘟/引用”的下拉式菜单。这会使引用嘟文操作的按钮移动到 %{options_icon} （选项）菜单中。
+        setting_show_content_type_choice: 在发帖工具栏中显示格式选择器。
         setting_use_blurhash: 渐变是基于模糊后的隐藏内容生成的
         setting_use_pending_items: 点击查看时间线更新，而非自动滚动更新动态。
         username: 你只能使用字母、数字和下划线
@@ -247,6 +251,10 @@ zh-CN:
         setting_color_scheme: 配色方案
         setting_contrast: 对比度
         setting_default_language: 发布语言
+        setting_default_content_type: 默认发布格式
+        setting_default_content_type_html: HTML
+        setting_default_content_type_markdown: Markdown
+        setting_default_content_type_plain: 纯文本
         setting_default_privacy: 嘟文可见性
         setting_default_quote_policy: 谁可以引用
         setting_default_sensitive: 始终标记媒体为敏感内容
@@ -264,6 +272,7 @@ zh-CN:
         setting_missing_alt_text_modal: 发送没有设置替代文本的媒体内容前警告我
         setting_on_this_day_enabled: 那年今日
         setting_quick_boosting: 启用快速转嘟
+        setting_show_content_type_choice: 发帖时显示格式选择器
         setting_reduce_motion: 降低过渡动画效果
         setting_system_font_ui: 使用系统默认字体
         setting_system_scrollbars_ui: 使用系统默认样式的滚动条

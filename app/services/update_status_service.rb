@@ -14,6 +14,7 @@ class UpdateStatusService < BaseService
   # @option options [Hash] :poll
   # @option options [String] :text
   # @option options [String] :spoiler_text
+  # @option options [String] :content_type
   # @option options [Boolean] :sensitive
   # @option options [String] :language
   def call(status, account_id, options = {})
@@ -116,6 +117,7 @@ class UpdateStatusService < BaseService
       @status.text = @options.delete(:spoiler_text) || '' if @status.text.blank? && @status.quote.blank?
     end
     @status.spoiler_text = @options[:spoiler_text] || '' if @options.key?(:spoiler_text)
+    @status.content_type = @options[:content_type] || @status.content_type
     @status.sensitive    = @options[:sensitive] || @options[:spoiler_text].present? if @options.key?(:sensitive) || @options.key?(:spoiler_text)
     @status.language     = valid_locale_cascade(@options[:language], @status.language, @status.account.user&.preferred_posting_language, I18n.default_locale)
     @status.quote_approval_policy = @options[:quote_approval_policy] if @options[:quote_approval_policy].present?
