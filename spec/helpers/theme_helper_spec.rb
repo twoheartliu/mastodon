@@ -12,7 +12,7 @@ RSpec.describe ThemeHelper do
       it 'returns the default stylesheet' do
         expect(html_links.last.attributes.symbolize_keys)
           .to include(
-            href: have_attributes(value: match(%r{/themes/default-[\w-]+\.css}))
+            href: have_attributes(value: match(%r{/assets/skins/mastodon-ui/default-[\w-]+\.css}))
           )
       end
     end
@@ -23,7 +23,7 @@ RSpec.describe ThemeHelper do
       it 'returns the skin stylesheet' do
         expect(html_links.last.attributes.symbolize_keys)
           .to include(
-            href: have_attributes(value: match(%r{/themes/fanfou_classic-[\w-]+\.css}))
+            href: have_attributes(value: match(%r{/assets/skins/mastodon-ui/fanfou_classic-[\w-]+\.css}))
           )
       end
     end
